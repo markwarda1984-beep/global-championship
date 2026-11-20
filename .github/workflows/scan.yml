@@ -1,0 +1,44 @@
+name: Championship price scan
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scan.py'
+      - 'watchlist.csv'
+      - 'requirements.txt'
+      - 'tests/**'
+      - '.github/workflows/scan.yml'
+  schedule:
+    - cron: '20 2,8,10,13,16,21 * * *'
+      timezone: 'Australia/Sydney'
+permissions:
+  contents: read
+concurrency:
+  group: championship-price-scan
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run local unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Run research-only market scan
+        run: python scan.py
+      - name: Upload dashboard and machine-readable reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: championship-dashboard-${{ github.run_number }}
+          path: data/
+          if-no-files-found: warn
+          retention-days: 7

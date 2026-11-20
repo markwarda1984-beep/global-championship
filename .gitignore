@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+.env
+# The daily generated files are downloaded as Actions artifacts, not committed.
+data/*
+!data/.gitkeep
