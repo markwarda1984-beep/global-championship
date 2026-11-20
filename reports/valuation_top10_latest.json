@@ -1,156 +1,276 @@
 {
-  "schema_version": "5.1-valuation-top10-1",
-  "published_at_utc": "2026-11-20T22:35:45.893190+00:00",
-  "source_valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-  "model_data_available_count": 118,
-  "eligible_for_research_count": 118,
+  "schema_version": "6.0-evidence-only-valuation-top10-1",
+  "published_at_utc": "2026-11-20T22:46:39.101908+00:00",
+  "source_valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+  "model_data_available_count": 5,
+  "eligible_for_research_count": 5,
   "ranked_top_10": [
     {
       "rank": 1,
-      "ticker": "SHEL",
-      "company": "Shell",
+      "ticker": "AAPL",
+      "company": "Apple",
       "currency": "USD",
       "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 93.58,
-      "bear_value": 62.4588,
-      "base_value": 128.2974,
-      "bull_value": 228.3718,
-      "model_watch_entry": 89.8082,
-      "pct_to_indicative_base": 37.1,
-      "pct_to_indicative_bear": -33.26,
-      "pct_to_unverified_watch_entry": -4.03,
-      "research_priority_score_not_probability": 20.2,
-      "fundamental_as_of": "2026-09-30",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "CYCLICAL_NEEDS_MULTIYEAR",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=10.0%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
+      "last_daily_close": 342.56,
+      "bear_value": 36.4325,
+      "base_value": 71.4402,
+      "bull_value": 111.1543,
+      "model_watch_entry": null,
+      "selected_6_0_entry": 60.7242,
+      "margin_of_safety_entries_60": {
+        "10pct": 64.2962,
+        "15pct": 60.7242,
+        "20pct": 57.1522
+      },
+      "pct_to_indicative_base": -79.15,
+      "pct_to_indicative_bear": -89.36,
+      "pct_to_unverified_watch_entry": null,
+      "research_priority_score_not_probability": 0.0,
+      "fundamental_as_of": null,
+      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "model_type": "NORMALIZED_EARNINGS_AND_DCF",
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 104195500000.0,
+        "median_annual_net_income_filed": 104502500000.0,
+        "historical_fcf_cagr_observed_pct": 10.962,
+        "assumed_forward_growth_capped_pct": 8.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 142749000000.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 14532182000.0,
+          "prior_shares": 14687356000.0,
+          "prior_as_of": "2026-04-17",
+          "observed_share_basis_change_pct": -1.057
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 14532182000.0,
+        "source_dates": {
+          "shares": "2026-10-23",
+          "net_income_fiscal_years": [
+            "2018-09-29",
+            "2019-09-28",
+            "2020-09-26",
+            "2021-09-25",
+            "2022-09-24",
+            "2023-09-30",
+            "2024-09-28",
+            "2025-09-27",
+            "2026-09-26"
+          ]
+        }
+      },
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "source_verification": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
+        "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "verified_buy_signal": false,
       "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
+      "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
       "evidence_qualified_for_asymmetry": false,
       "dilution_adjusted_scenarios": {
-        "bear": 54.312,
-        "base": 122.188,
-        "bull": 228.3718
+        "bear": 30.5703,
+        "base": 68.4869,
+        "bull": 127.7555
       },
       "missing_primary_evidence_flags": [
-        "PRIMARY_VS_VENDOR_SHARES_DISAGREE_OVER_10PCT"
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ]
     },
     {
       "rank": 2,
-      "ticker": "BP",
-      "company": "BP",
+      "ticker": "ABBV",
+      "company": "AbbVie",
       "currency": "USD",
       "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 42.75,
-      "bear_value": 26.3274,
-      "base_value": 54.0794,
-      "bull_value": 96.2624,
-      "model_watch_entry": 37.8556,
-      "pct_to_indicative_base": 26.5,
-      "pct_to_indicative_bear": -38.42,
-      "pct_to_unverified_watch_entry": -11.45,
-      "research_priority_score_not_probability": 17.02,
-      "fundamental_as_of": "2026-09-30",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "CYCLICAL_NEEDS_MULTIYEAR",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=10.0%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
+      "last_daily_close": 286.20001,
+      "bear_value": 24.2199,
+      "base_value": 51.1623,
+      "bull_value": 83.0849,
+      "model_watch_entry": null,
+      "selected_6_0_entry": 43.488,
+      "margin_of_safety_entries_60": {
+        "10pct": 46.0461,
+        "15pct": 43.488,
+        "20pct": 40.9298
+      },
+      "pct_to_indicative_base": -82.12,
+      "pct_to_indicative_bear": -91.54,
+      "pct_to_unverified_watch_entry": null,
+      "research_priority_score_not_probability": 0.0,
+      "fundamental_as_of": null,
+      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "model_type": "NORMALIZED_EARNINGS_AND_DCF",
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 19947000000.0,
+        "median_annual_net_income_filed": 4570500000.0,
+        "historical_fcf_cagr_observed_pct": -9.764,
+        "assumed_forward_growth_capped_pct": -5.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 4014700000.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 1767616306.0,
+          "prior_shares": 1766792821.0,
+          "prior_as_of": "2026-04-28",
+          "observed_share_basis_change_pct": 0.047
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 1767616306.0,
+        "source_dates": {
+          "shares": "2026-10-26",
+          "net_income_fiscal_years": [
+            "2017-12-31",
+            "2018-12-31",
+            "2019-12-31",
+            "2020-12-31",
+            "2021-12-31",
+            "2022-12-31",
+            "2023-12-31",
+            "2024-12-31",
+            "2025-12-31"
+          ]
+        }
+      },
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001551152.json",
+      "source_verification": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
+        "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "verified_buy_signal": false,
       "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
+      "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
       "evidence_qualified_for_asymmetry": false,
       "dilution_adjusted_scenarios": {
-        "bear": 22.8934,
-        "base": 51.5042,
-        "bull": 96.2624
+        "bear": 40.9843,
+        "base": 91.7445,
+        "bull": 171.0733
       },
       "missing_primary_evidence_flags": [
-        "ISSUED_SHARE_COUNTS_NOT_COMPARABLE"
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ]
     },
     {
       "rank": 3,
-      "ticker": "CRM",
-      "company": "Salesforce",
-      "currency": "USD",
-      "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 180.62,
-      "bear_value": 102.4174,
-      "base_value": 209.388,
-      "bull_value": 371.9004,
-      "model_watch_entry": 146.5716,
-      "pct_to_indicative_base": 15.93,
-      "pct_to_indicative_bear": -43.3,
-      "pct_to_unverified_watch_entry": -18.85,
-      "research_priority_score_not_probability": 12.74,
-      "fundamental_as_of": "2026-07-31",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "FCF_TO_EQUITY",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=5.4%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
-      "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
-      ],
-      "verified_buy_signal": false,
-      "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
-      "evidence_qualified_for_asymmetry": false,
-      "dilution_adjusted_scenarios": {
-        "bear": 89.0586,
-        "base": 199.4171,
-        "bull": 371.9004
-      },
-      "missing_primary_evidence_flags": [
-        "FCF_SOURCE_DISAGREEMENT_OVER_25PCT"
-      ]
-    },
-    {
-      "rank": 4,
       "ticker": "ADBE",
       "company": "Adobe",
       "currency": "USD",
       "quote_date": "2026-11-20T00:00:00",
       "last_daily_close": 217.71001,
-      "bear_value": 118.7656,
-      "base_value": 243.0958,
-      "bull_value": 432.0156,
-      "model_watch_entry": 170.1671,
-      "pct_to_indicative_base": 11.66,
-      "pct_to_indicative_bear": -45.45,
-      "pct_to_unverified_watch_entry": -21.84,
-      "research_priority_score_not_probability": 11.97,
-      "fundamental_as_of": "2026-08-28",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "FCF_TO_EQUITY",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=6.5%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
+      "bear_value": 85.8658,
+      "base_value": 174.277,
+      "bull_value": 276.312,
+      "model_watch_entry": null,
+      "selected_6_0_entry": 139.4216,
+      "margin_of_safety_entries_60": {
+        "10pct": 156.8493,
+        "15pct": 148.1354,
+        "20pct": 139.4216
+      },
+      "pct_to_indicative_base": -19.95,
+      "pct_to_indicative_bear": -60.56,
+      "pct_to_unverified_watch_entry": null,
+      "research_priority_score_not_probability": 0.0,
+      "fundamental_as_of": null,
+      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "model_type": "NORMALIZED_EARNINGS_AND_DCF",
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 7634500000.0,
+        "median_annual_net_income_filed": 5494000000.0,
+        "historical_fcf_cagr_observed_pct": 10.03,
+        "assumed_forward_growth_capped_pct": 8.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 7700400000.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 389200000.0,
+          "prior_shares": 404200000.0,
+          "prior_as_of": "2026-03-20",
+          "observed_share_basis_change_pct": -3.711
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 389200000.0,
+        "source_dates": {
+          "shares": "2026-09-18",
+          "net_income_fiscal_years": [
+            "2017-12-01",
+            "2018-11-30",
+            "2019-11-29",
+            "2020-11-27",
+            "2021-12-03",
+            "2022-12-02",
+            "2023-12-01",
+            "2024-11-29",
+            "2025-11-28"
+          ]
+        }
+      },
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
+      "source_verification": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
+        "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "verified_buy_signal": false,
       "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
+      "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
       "evidence_qualified_for_asymmetry": true,
       "dilution_adjusted_scenarios": {
         "bear": 103.2744,
@@ -160,228 +280,195 @@
       "missing_primary_evidence_flags": []
     },
     {
+      "rank": 4,
+      "ticker": "AMD",
+      "company": "AMD",
+      "currency": "USD",
+      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 424.39001,
+      "bear_value": 6.6004,
+      "base_value": 13.7766,
+      "bull_value": 22.1631,
+      "model_watch_entry": null,
+      "selected_6_0_entry": 11.0213,
+      "margin_of_safety_entries_60": {
+        "10pct": 12.3989,
+        "15pct": 11.7101,
+        "20pct": 11.0213
+      },
+      "pct_to_indicative_base": -96.75,
+      "pct_to_indicative_bear": -98.44,
+      "pct_to_unverified_watch_entry": null,
+      "research_priority_score_not_probability": 0.0,
+      "fundamental_as_of": null,
+      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "model_type": "NORMALIZED_EARNINGS_AND_DCF",
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 2760000000.0,
+        "median_annual_net_income_filed": 1480500000.0,
+        "historical_fcf_cagr_observed_pct": 29.308,
+        "assumed_forward_growth_capped_pct": 8.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 4681800000.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 1640087251.0,
+          "prior_shares": 1630600639.0,
+          "prior_as_of": "2026-04-29",
+          "observed_share_basis_change_pct": 0.582
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 1640087251.0,
+        "source_dates": {
+          "shares": "2026-10-28",
+          "net_income_fiscal_years": [
+            "2017-12-30",
+            "2018-12-29",
+            "2019-12-28",
+            "2020-12-26",
+            "2021-12-25",
+            "2022-12-31",
+            "2023-12-30",
+            "2024-12-28",
+            "2025-12-27"
+          ]
+        }
+      },
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json",
+      "source_verification": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "research_gaps": [
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
+        "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
+      ],
+      "verified_buy_signal": false,
+      "buy_readiness_pct": null,
+      "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
+      "evidence_qualified_for_asymmetry": false,
+      "dilution_adjusted_scenarios": {
+        "bear": 16.9336,
+        "base": 35.0636,
+        "bull": 59.3765
+      },
+      "missing_primary_evidence_flags": [
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+      ]
+    },
+    {
       "rank": 5,
-      "ticker": "OXY",
-      "company": "Occidental Petroleum",
+      "ticker": "AMGN",
+      "company": "Amgen",
       "currency": "USD",
       "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 53.9,
-      "bear_value": 28.7116,
-      "base_value": 58.9497,
-      "bull_value": 104.9104,
-      "model_watch_entry": 41.2648,
-      "pct_to_indicative_base": 9.37,
-      "pct_to_indicative_bear": -46.73,
-      "pct_to_unverified_watch_entry": -23.44,
-      "research_priority_score_not_probability": 11.88,
-      "fundamental_as_of": "2026-09-30",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "CYCLICAL_NEEDS_MULTIYEAR",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=9.5%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
-      "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
-      ],
-      "verified_buy_signal": false,
-      "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
-      "evidence_qualified_for_asymmetry": true,
-      "dilution_adjusted_scenarios": {
-        "bear": 24.9666,
-        "base": 56.1426,
-        "bull": 104.9104
+      "last_daily_close": 435.64001,
+      "bear_value": 57.4171,
+      "base_value": 109.5672,
+      "bull_value": 168.1938,
+      "model_watch_entry": null,
+      "selected_6_0_entry": 87.6538,
+      "margin_of_safety_entries_60": {
+        "10pct": 98.6105,
+        "15pct": 93.1321,
+        "20pct": 87.6538
       },
-      "missing_primary_evidence_flags": []
-    },
-    {
-      "rank": 6,
-      "ticker": "NFLX",
-      "company": "Netflix",
-      "currency": "USD",
-      "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 56.73,
-      "bear_value": 30.0553,
-      "base_value": 61.4815,
-      "bull_value": 109.2293,
-      "model_watch_entry": 43.037,
-      "pct_to_indicative_base": 8.38,
-      "pct_to_indicative_bear": -47.02,
-      "pct_to_unverified_watch_entry": -24.14,
-      "research_priority_score_not_probability": 11.59,
-      "fundamental_as_of": "2026-09-30",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "FCF_TO_EQUITY",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=5.9%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
+      "pct_to_indicative_base": -74.85,
+      "pct_to_indicative_bear": -86.82,
+      "pct_to_unverified_watch_entry": null,
+      "research_priority_score_not_probability": 0.0,
+      "fundamental_as_of": null,
+      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "model_type": "NORMALIZED_EARNINGS_AND_DCF",
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 8442500000.0,
+        "median_annual_net_income_filed": 6634500000.0,
+        "historical_fcf_cagr_observed_pct": -2.67,
+        "assumed_forward_growth_capped_pct": -2.67,
+        "illustrative_next_year_net_income_not_issuer_guidance": 7505134058.85,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 540911490.0,
+          "prior_shares": 539708274.0,
+          "prior_as_of": "2026-04-27",
+          "observed_share_basis_change_pct": 0.223
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 540911490.0,
+        "source_dates": {
+          "shares": "2026-10-29",
+          "net_income_fiscal_years": [
+            "2017-12-31",
+            "2018-12-31",
+            "2019-12-31",
+            "2020-12-31",
+            "2021-12-31",
+            "2022-12-31",
+            "2023-12-31",
+            "2024-12-31",
+            "2025-12-31"
+          ]
+        }
+      },
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000318154.json",
+      "source_verification": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
+        "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "verified_buy_signal": false,
       "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
+      "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
       "evidence_qualified_for_asymmetry": false,
       "dilution_adjusted_scenarios": {
-        "bear": 26.135,
-        "base": 58.5538,
-        "bull": 109.2293
+        "bear": 53.9609,
+        "base": 120.6641,
+        "bull": 224.8794
       },
       "missing_primary_evidence_flags": [
-        "FCF_SOURCE_DISAGREEMENT_OVER_25PCT"
-      ]
-    },
-    {
-      "rank": 7,
-      "ticker": "HD",
-      "company": "Home Depot",
-      "currency": "USD",
-      "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 339.04001,
-      "bear_value": 51.2588,
-      "base_value": 104.4178,
-      "bull_value": 185.1183,
-      "model_watch_entry": 73.0924,
-      "pct_to_indicative_base": -69.2,
-      "pct_to_indicative_bear": -84.88,
-      "pct_to_unverified_watch_entry": -78.44,
-      "research_priority_score_not_probability": 9.65,
-      "fundamental_as_of": "2026-11-01",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "FCF_TO_EQUITY",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=2.5%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
-      "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
-      ],
-      "verified_buy_signal": false,
-      "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
-      "evidence_qualified_for_asymmetry": false,
-      "dilution_adjusted_scenarios": null,
-      "missing_primary_evidence_flags": [
-        "PRIMARY_MODEL_NOT_CHECKED"
-      ]
-    },
-    {
-      "rank": 8,
-      "ticker": "INTU",
-      "company": "Intuit",
-      "currency": "USD",
-      "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 270.44,
-      "bear_value": 128.904,
-      "base_value": 263.7319,
-      "bull_value": 468.5896,
-      "model_watch_entry": 184.6123,
-      "pct_to_indicative_base": -2.48,
-      "pct_to_indicative_bear": -52.34,
-      "pct_to_unverified_watch_entry": -31.74,
-      "research_priority_score_not_probability": 9.64,
-      "fundamental_as_of": "2026-10-31",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "FCF_TO_EQUITY",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=6.0%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
-      "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
-      ],
-      "verified_buy_signal": false,
-      "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
-      "evidence_qualified_for_asymmetry": false,
-      "dilution_adjusted_scenarios": null,
-      "missing_primary_evidence_flags": [
-        "PRIMARY_MODEL_NOT_CHECKED"
-      ]
-    },
-    {
-      "rank": 9,
-      "ticker": "PANW",
-      "company": "Palo Alto Networks",
-      "currency": "USD",
-      "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 343.32001,
-      "bear_value": 30.8353,
-      "base_value": 63.3392,
-      "bull_value": 112.745,
-      "model_watch_entry": 44.3375,
-      "pct_to_indicative_base": -81.55,
-      "pct_to_indicative_bear": -91.02,
-      "pct_to_unverified_watch_entry": -87.09,
-      "research_priority_score_not_probability": 9.64,
-      "fundamental_as_of": "2026-10-31",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "FCF_TO_EQUITY",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=10.0%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
-      "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
-      ],
-      "verified_buy_signal": false,
-      "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
-      "evidence_qualified_for_asymmetry": false,
-      "dilution_adjusted_scenarios": null,
-      "missing_primary_evidence_flags": [
-        "PRIMARY_MODEL_NOT_CHECKED"
-      ]
-    },
-    {
-      "rank": 10,
-      "ticker": "LOW",
-      "company": "Lowe's",
-      "currency": "USD",
-      "quote_date": "2026-11-20T00:00:00",
-      "last_daily_close": 220.84,
-      "bear_value": 55.5982,
-      "base_value": 113.5689,
-      "bull_value": 201.6258,
-      "model_watch_entry": 79.4982,
-      "pct_to_indicative_base": -48.57,
-      "pct_to_indicative_bear": -74.82,
-      "pct_to_unverified_watch_entry": -64.0,
-      "research_priority_score_not_probability": 9.62,
-      "fundamental_as_of": "2026-10-30",
-      "valuation_snapshot_utc": "2026-11-20T22:10:59.791102+00:00",
-      "model_type": "FCF_TO_EQUITY",
-      "assumptions": "equity FCF/share; 5-year cash-flow DCF; baseline growth=4.7%; baseline discount=14.0%; terminal growth=2%; bear uses 20% FCF haircut and higher discount rate; bull uses optimistic assumptions",
-      "source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
-      "source_verification": "UNOFFICIAL_DATA_NOT_INDEPENDENTLY_CHECKED",
-      "research_gaps": [
-        "Confirm audited filings and normalised earnings",
-        "Verify dilution, debt, upcoming catalyst and downside scenario",
-        "Independently review valuation assumptions and FX"
-      ],
-      "verified_buy_signal": false,
-      "buy_readiness_pct": null,
-      "decision": "VALUATION RESEARCH PRIORITY — NOT A BUY",
-      "evidence_qualified_for_asymmetry": false,
-      "dilution_adjusted_scenarios": null,
-      "missing_primary_evidence_flags": [
-        "PRIMARY_MODEL_NOT_CHECKED"
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ]
     }
   ],
   "exclusion_counts": {
-    "no_indicative_model": 82,
-    "stale_or_incomplete": 0
+    "not_validated_or_missing": 195
   },
   "verified_buy_count": 0,
   "orders_enabled": false,
-  "warning": "Ranked only among eligible unverified scenario models; not 10 best investments or predicted winners. No independent filing validation, time-horizon assumptions, or probability estimates. Evidence-gated asymmetric ranking is separately reported; this existing Top 10 remains unverified.",
+  "warning": "Only CURRENT Championship 6.0 issuer-primary validated scenarios. All former provisional entries RETIRED, no fallback. No orders. Supplemental 5.4 asymmetry scenarios are separate and not purchase targets.",
   "evidence_qualified_top10_count": 2
 }
