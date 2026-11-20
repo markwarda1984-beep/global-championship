@@ -1,0 +1,22 @@
+{
+  "schema_version": "6.0-full-cycle-primary-evidence-1",
+  "published_at_utc": "2026-11-20T22:36:08.455618+00:00",
+  "original_watchlist_count": 200,
+  "discovery_company_count": 4,
+  "reported_count": 204,
+  "validated_inputs_count": 0,
+  "not_validated_count": 204,
+  "ranked_research_top10": [],
+  "missing_evidence_flag_counts": {
+    "PRIMARY_XBRL_NOT_COLLECTED": 163,
+    "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED": 41
+  },
+  "value_definition": "Evidence-backed inputs and ASSUMED forecasts. Estimated intrinsic value is NOT an objective certified value.",
+  "data_completeness_warning": "Cyclicals require seven years of issuer earnings/FCF. Specialist sectors cannot be auto-valued without relevant issuer assets/AFFO/clinical economics.",
+  "ranking_method": "Base upside divided by max(5%, loss to bear scenario), no likelihood, excludes NOT VALIDATED",
+  "price_source": "Yahoo daily bars from existing Championship scanner; not executable or live bid/ask",
+  "research_only": true,
+  "orders_enabled": false,
+  "orders_generated": 0,
+  "validated_buy_signal_count": 0
+}
