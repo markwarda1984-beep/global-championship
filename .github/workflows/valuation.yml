@@ -1,0 +1,48 @@
+name: Championship 4.0 weekly valuation research
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'valuation_engine.py'
+      - 'tests/test_valuation_engine.py'
+      - '.github/workflows/valuation.yml'
+  schedule:
+    - cron: '10 3 * * 0'
+      timezone: 'Australia/Sydney'
+permissions:
+  contents: read
+concurrency:
+  group: championship-valuation-research
+  cancel-in-progress: false
+jobs:
+  valuation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run all offline scanner and model tests
+        run: python -m unittest discover -s tests -v
+      - name: Obtain latest available 200 daily-bar prices
+        run: python scan.py
+      - name: Assess all 200 company fundamentals and estimate indicative scenarios
+        run: python valuation_engine.py --workers 3 --max-minutes 28
+      - name: Upload all 200 valuation research rows and data provenance
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: championship-valuation-4-${{ github.run_number }}
+          path: |
+            data/valuation_200.csv
+            data/valuation_200.json
+            data/valuation_200.html
+            data/valuation_200_run_summary.json
+          if-no-files-found: warn
+          retention-days: 14
