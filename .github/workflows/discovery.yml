@@ -7,6 +7,8 @@ on:
       - 'discovery_engine.py'
       - 'intelligence_layer_51.py'
       - 'evidence_upgrade_54.py'
+      - 'championship_60.py'
+      - 'settings/championship_60.json'
       - 'settings/discovery_claims_54.json'
       - 'discovery_seeds.csv'
       - 'tests/test_discovery_engine.py'
@@ -42,6 +44,22 @@ jobs:
         run: python discovery_engine.py
       - name: Verify primary-source provenance and prepare underfollowed research queue
         run: python intelligence_layer_51.py --mode discovery
+      - name: Incrementally collect first-party SEC series for 200 plus discovered tickers
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python championship_60.py --mode evidence-update
+      - name: Check SEC cache remains research-only
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          c=json.loads(Path('reports/primary_series_cache_60.json').read_text())
+          assert c['orders_enabled'] is False
+          assert c['original_200_unchanged'] is True
+          assert c['schema_version'].startswith('6.0')
+          assert all(not x.get('orders_enabled') for x in c['companies'].values())
+          print('Incremental SEC coverage:',len(c['companies']))
+          PY
       - name: Validate and publish research-only watchlists
         run: |
           python - <<'PY'
@@ -69,6 +87,7 @@ jobs:
           PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/primary_series_cache_60.json
           git add reports/discovery_latest.json reports/discovery_watchlist.json reports/research_queue_latest.json
           if ! git diff --cached --quiet; then
             git commit -m "data: update underfollowed discovery radar [skip ci]"
@@ -101,5 +120,6 @@ jobs:
             reports/discovery_latest.json
             reports/discovery_watchlist.json
             reports/research_queue_latest.json
+            reports/primary_series_cache_60.json
           if-no-files-found: warn
           retention-days: 14

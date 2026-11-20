@@ -9,6 +9,8 @@ on:
       - 'report_bridge.py'
       - 'intelligence_layer_51.py'
       - 'evidence_upgrade_54.py'
+      - 'championship_60.py'
+      - 'settings/championship_60.json'
       - 'settings/dilution_stress_54.json'
       - 'settings/intelligence_51.json'
       - 'README_INTELLIGENCE_51.md'
@@ -50,6 +52,29 @@ jobs:
         run: python report_bridge.py
       - name: Generate research Top 10, Australian tax-offset sensitivities, change feed and journal
         run: python intelligence_layer_51.py --mode scan
+      - name: Championship 6.0 evidence-gated 200-plus-discovery dated-price report
+        run: python championship_60.py --mode scan
+      - name: Verify all 200 stocks, new leads, null missing targets, and zero orders
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('reports/valuation_60_latest.json').read_text())
+          assert data['original_watchlist_count']==200
+          assert data['reported_count']==len(data['companies'])
+          assert data['orders_enabled'] is False and data['orders_generated']==0
+          assert data['validated_buy_signal_count']==0
+          assert sum(x['universe']=='ORIGINAL_200' for x in data['companies'])==200
+          for row in data['companies']:
+            assert row['orders_enabled'] is False and row['research_only'] is True
+            if row['validation_status']=='NOT VALIDATED':
+              assert row['verified_intrinsic_value'] is None and row['selected_entry'] is None
+              assert not any(x is not None for x in row['margin_of_safety_entries'].values())
+            else:
+              assert row['primary_source_evidence']['source_hash_sha256']
+              assert row['selected_margin_of_safety_pct'] in (10,15,20)
+          print('6.0 research-only report validated')
+          PY
       - name: Verify safe evidence-gated ranking and offset scenarios
         run: |
           python - <<'PY'
@@ -66,6 +91,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/valuation_60_latest.json reports/valuation_60_summary.json
           git add reports/latest.json reports/changes_latest.json reports/valuation_top10_latest.json reports/offset_comparison_latest.json reports/decision_journal.json reports/intelligence_latest.json reports/asymmetry_latest.json
           if [ -f reports/fx_aud_latest.json ]; then git add reports/fx_aud_latest.json; fi
           if ! git diff --cached --quiet; then
@@ -95,6 +121,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: championship-200-dashboard-${{ github.run_number }}
-          path: data/
+          path: |
+            data/
+            reports/valuation_60_latest.json
+            reports/valuation_60_summary.json
           if-no-files-found: warn
           retention-days: 14

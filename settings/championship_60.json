@@ -1,0 +1,60 @@
+{
+  "schema_version": "6.0-model-settings-1",
+  "max_new_sec_companies_per_discovery_run": 12,
+  "sec_refresh_days": 30,
+  "minimum_recent_price_max_age_days": 7,
+  "minimum_stable_annual_years": 4,
+  "minimum_cyclical_annual_years": 7,
+  "minimum_bank_annual_years": 4,
+  "dilution_stress_pct": {
+    "bear": 15,
+    "base": 5,
+    "bull": 0
+  },
+  "dcf": {
+    "forecast_years": 5,
+    "base_cost_of_equity_pct": 14,
+    "bear_cost_of_equity_pct": 18,
+    "bull_cost_of_equity_pct": 12,
+    "terminal_growth_pct": 2,
+    "growth_cap_low_pct": -5,
+    "growth_cap_high_pct": 8,
+    "bear_growth_adjustment_pct": -5,
+    "bull_growth_adjustment_pct": 4
+  },
+  "normalized_earnings": {
+    "base_capitalization_yield_pct": 10,
+    "bear_yield_pct": 14,
+    "bull_yield_pct": 8,
+    "earnings_weight_pct": 40
+  },
+  "cyclical": {
+    "base_capitalization_yield_pct": 12,
+    "bear_yield_pct": 18,
+    "bull_yield_pct": 9,
+    "normalization_years": 7
+  },
+  "bank_book": {
+    "cost_of_equity_base_pct": 13,
+    "bear_pct": 17,
+    "bull_pct": 11,
+    "terminal_growth_pct": 2
+  },
+  "safety": {
+    "levels_pct": [
+      10,
+      15,
+      20
+    ],
+    "default_pct": 15
+  },
+  "momentum": {
+    "positive_20d_threshold_pct": 3,
+    "negative_20d_threshold_pct": -3,
+    "positive_earnings_yoy_pct": 5,
+    "negative_earnings_yoy_pct": -5
+  },
+  "asset_nav": "REQUIRES_VALIDATED_ISSUER_ASSET_APPRAISALS_WITH_LIABILITIES_AND_SHARE_BASIS",
+  "forward_earnings": "MODELLED_FROM_VERIFIED_HISTORY_NOT_VERIFIED_COMPANY_GUIDANCE",
+  "source_risk": "No independent audit, business-quality guarantee, or validated long-run forecast. No trades."
+}

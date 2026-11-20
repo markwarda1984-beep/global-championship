@@ -7,6 +7,8 @@ on:
       - 'valuation_engine.py'
       - 'intelligence_layer_51.py'
       - 'evidence_upgrade_54.py'
+      - 'championship_60.py'
+      - 'settings/championship_60.json'
       - 'settings/dilution_stress_54.json'
       - 'tests/test_valuation_engine.py'
       - '.github/workflows/valuation.yml'
@@ -47,10 +49,23 @@ jobs:
         run: python evidence_upgrade_54.py --mode financials
       - name: Publish weekly evidence-ranked valuation and AUD offset sensitivities
         run: python intelligence_layer_51.py --mode valuation
+      - name: Championship 6.0 weekly full-cycle valuations from verified primary series
+        run: python championship_60.py --mode weekly
+      - name: Verify weekly 6.0 model validation flags
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('reports/valuation_60_weekly.json').read_text())
+          assert d['original_watchlist_count']==200
+          assert d['orders_enabled'] is False and d['validated_buy_signal_count']==0
+          assert all(x['selected_entry'] is None for x in d['companies'] if x['validation_status']=='NOT VALIDATED')
+          PY
       - name: Publish weekly valuation report to repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/valuation_60_weekly.json reports/valuation_60_weekly_summary.json
           git add reports/valuation_latest.json reports/valuation_top10_weekly.json reports/offset_comparison_weekly.json reports/asymmetry_weekly.json reports/primary_financials_latest.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh Championship valuation [skip ci]"
@@ -86,5 +101,7 @@ jobs:
             data/valuation_200_run_summary.json
             reports/primary_financials_latest.json
             reports/asymmetry_weekly.json
+            reports/valuation_60_weekly.json
+            reports/valuation_60_weekly_summary.json
           if-no-files-found: warn
           retention-days: 14

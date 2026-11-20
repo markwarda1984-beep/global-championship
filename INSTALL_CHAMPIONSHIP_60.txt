@@ -1,0 +1,25 @@
+CHAMPIONSHIP 6.0 — RESEARCH ONLY, ZERO TRADING
+
+Upload package to: markwarda1984-beep/global-championship
+
+1. Extract files from this ZIP directly into Documents/global-championship.
+2. Preserve the .git directory, .github directory and all existing code/data.
+3. Replace only .github/workflows/scan.yml, discovery.yml and valuation.yml.
+4. GitSync: three dots beside Sync Changes → Upload Changes (NOT Upload + Overwrite).
+5. Github Actions will run all offline tests and produce the reports. The SEC_USER_AGENT secret remains necessary.
+6. Ask ChatGPT to verify the three workflow runs and read:
+   - reports/primary_series_cache_60.json
+   - reports/valuation_60_latest.json
+   - reports/valuation_60_summary.json
+   - reports/valuation_60_weekly.json
+   - reports/valuation_60_weekly_summary.json
+
+New research code: championship_60.py
+Config: settings/championship_60.json
+Tests: tests/test_championship_60.py
+Full disclosure: README_CHAMPIONSHIP_60.md
+
+IMPORTANT: The first scan can precede SEC evidence harvesting. NOT VALIDATED
+and null intrinsic values/entry targets are deliberate, never errors to fill
+with imaginary values. Full ASX, ADR, NAV, specialist coverage requires more
+first-party evidence. No automated orders, no trade placement.
