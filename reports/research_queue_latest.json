@@ -1,0 +1,136 @@
+{
+  "schema_version": "5.1-source-evidence-queue-1",
+  "published_at_utc": "2026-11-20T21:53:40.330558+00:00",
+  "discovery_snapshot_utc": "2026-11-20T21:53:38.431760+00:00",
+  "original_200_unchanged": true,
+  "source_verified_reference_count": 3,
+  "not_yet_verified_count": 1,
+  "claim_verified_count": 0,
+  "records": [
+    {
+      "ticker": "DUG.AX",
+      "company": "DUG Technology",
+      "theme": "AI computing and high-performance computing",
+      "status": "PENDING_EVIDENCE",
+      "source_url": "https://dug.com/wp-content/uploads/2026/11/291116_DUG_Trading_Update_Revenue_up_49_and_Contracted_Revenue_up_52_to_US103.4_million_ASX.pdf",
+      "evidence_date": "2026-11-16",
+      "evidence_kind": "CURATED_OFFICIAL_DISCLOSURE_REFERENCE",
+      "discovery_source": "seed file (human-curated public source)",
+      "source_host": "dug.com",
+      "primary_source_verified": true,
+      "primary_claim_verified": false,
+      "verification": {
+        "primary_source_verified": true,
+        "primary_claim_verified": false,
+        "verification_level": "OFFICIAL_PUBLISHER_URL_REACHABLE_ONLY",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_verification": "Issuer URL returned 200; contents, announcement date and company claims NOT verified"
+      },
+      "in_source_verified_research_queue": true,
+      "last_daily_close": 1.765,
+      "quote_date": "2026-11-20",
+      "median_dollar_volume_20d": 184401.62,
+      "market_cap_unverified": null,
+      "gaps": [
+        "MARKET_CAP_UNVERIFIED",
+        "Read official filing and independently verify economics, dilution and valuation"
+      ],
+      "decision": "SOURCE-TRIAGED RESEARCH ONLY — NOT BUY APPROVAL"
+    },
+    {
+      "ticker": "EOS.AX",
+      "company": "Electro Optic Systems",
+      "theme": "Defence and counter-drone systems",
+      "status": "PENDING_EVIDENCE",
+      "source_url": "https://announcements.asx.com.au/asxpdf/20261109/pdf/076ckp4b5j6xrw.pdf",
+      "evidence_date": "2026-11-09",
+      "evidence_kind": "CURATED_OFFICIAL_DISCLOSURE_REFERENCE",
+      "discovery_source": "seed file (human-curated public source)",
+      "source_host": "announcements.asx.com.au",
+      "primary_source_verified": true,
+      "primary_claim_verified": false,
+      "verification": {
+        "primary_source_verified": true,
+        "primary_claim_verified": false,
+        "verification_level": "OFFICIAL_PUBLISHER_URL_REACHABLE_ONLY",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_verification": "Issuer URL returned 200; contents, announcement date and company claims NOT verified"
+      },
+      "in_source_verified_research_queue": true,
+      "last_daily_close": 6.64,
+      "quote_date": "2026-11-20",
+      "median_dollar_volume_20d": 21665134.61,
+      "market_cap_unverified": null,
+      "gaps": [
+        "MARKET_CAP_UNVERIFIED",
+        "Read official filing and independently verify economics, dilution and valuation"
+      ],
+      "decision": "SOURCE-TRIAGED RESEARCH ONLY — NOT BUY APPROVAL"
+    },
+    {
+      "ticker": "PENG",
+      "company": "Penguin Solutions",
+      "theme": "AI infrastructure",
+      "status": "PENDING_EVIDENCE",
+      "source_url": "https://ir.penguinsolutions.com/news/news-details/2026/Marvell-and-Penguin-Solutions-Collaborate-to-Address-Data-Center-AI-Memory-and-Accelerate-Inference-at-Scale/default.aspx",
+      "evidence_date": "2026-11-16",
+      "evidence_kind": "CURATED_OFFICIAL_DISCLOSURE_REFERENCE",
+      "discovery_source": "seed file (human-curated public source)",
+      "source_host": "ir.penguinsolutions.com",
+      "primary_source_verified": true,
+      "primary_claim_verified": false,
+      "verification": {
+        "primary_source_verified": true,
+        "primary_claim_verified": false,
+        "verification_level": "OFFICIAL_PUBLISHER_URL_REACHABLE_ONLY",
+        "http_status": 200,
+        "content_type": "text/html",
+        "content_verification": "Issuer URL returned 200; contents, announcement date and company claims NOT verified"
+      },
+      "in_source_verified_research_queue": true,
+      "last_daily_close": 36.05,
+      "quote_date": "2026-11-20",
+      "median_dollar_volume_20d": 114000487.02,
+      "market_cap_unverified": null,
+      "gaps": [
+        "MARKET_CAP_UNVERIFIED",
+        "Read official filing and independently verify economics, dilution and valuation"
+      ],
+      "decision": "SOURCE-TRIAGED RESEARCH ONLY — NOT BUY APPROVAL"
+    },
+    {
+      "ticker": "BTDR",
+      "company": "Bitdeer Technologies",
+      "theme": "Bitcoin and AI computing infrastructure",
+      "status": "PENDING_EVIDENCE",
+      "source_url": "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-reports-unaudited-third-quarter-2026-results-record",
+      "evidence_date": "2026-11-10",
+      "evidence_kind": "CURATED_OFFICIAL_DISCLOSURE_REFERENCE",
+      "discovery_source": "seed file (human-curated public source)",
+      "source_host": "ir.bitdeer.com",
+      "primary_source_verified": false,
+      "primary_claim_verified": false,
+      "verification": {
+        "primary_source_verified": false,
+        "primary_claim_verified": false,
+        "verification_level": "PUBLISHER_URL_UNVERIFIED_HTTP_OR_TYPE",
+        "http_status": 403
+      },
+      "in_source_verified_research_queue": false,
+      "last_daily_close": 2.955,
+      "quote_date": "2026-11-20",
+      "median_dollar_volume_20d": 76736346.36,
+      "market_cap_unverified": null,
+      "gaps": [
+        "OFFICIAL_EVIDENCE_NOT_VERIFIED",
+        "MARKET_CAP_UNVERIFIED",
+        "Read official filing and independently verify economics, dilution and valuation"
+      ],
+      "decision": "SOURCE-TRIAGED RESEARCH ONLY — NOT BUY APPROVAL"
+    }
+  ],
+  "warning": "Only official-source metadata/URL reachability verified. No PDF or disclosure claims, trading thesis or valuations have been independently validated.",
+  "orders_enabled": false
+}
