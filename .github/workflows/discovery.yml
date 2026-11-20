@@ -6,6 +6,8 @@ on:
     paths:
       - 'discovery_engine.py'
       - 'intelligence_layer_51.py'
+      - 'evidence_upgrade_54.py'
+      - 'settings/discovery_claims_54.json'
       - 'discovery_seeds.csv'
       - 'tests/test_discovery_engine.py'
       - '.github/workflows/discovery.yml'
@@ -50,6 +52,8 @@ jobs:
           queue=json.loads(Path('reports/research_queue_latest.json').read_text())
           assert queue['orders_enabled'] is False
           assert queue['original_200_unchanged'] is True
+          assert queue.get('schema_version','').startswith('5.4')
+          assert all(not x.get('primary_claim_verified') or x.get('substantive_evidence',{}).get('issuer_claims_supported_in_source') for x in queue.get('records',[]))
           assert latest['orders_enabled'] is False
           assert registry['orders_enabled'] is False
           assert registry['original_200_unchanged'] is True

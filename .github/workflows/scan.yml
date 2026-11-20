@@ -8,6 +8,8 @@ on:
       - 'opportunity_engine.py'
       - 'report_bridge.py'
       - 'intelligence_layer_51.py'
+      - 'evidence_upgrade_54.py'
+      - 'settings/dilution_stress_54.json'
       - 'settings/intelligence_51.json'
       - 'README_INTELLIGENCE_51.md'
       - 'decisions/manual_decisions.json'
@@ -48,11 +50,23 @@ jobs:
         run: python report_bridge.py
       - name: Generate research Top 10, Australian tax-offset sensitivities, change feed and journal
         run: python intelligence_layer_51.py --mode scan
+      - name: Verify safe evidence-gated ranking and offset scenarios
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path('reports/asymmetry_latest.json').read_text())
+          o=json.loads(Path('reports/offset_comparison_latest.json').read_text())
+          assert a['orders_enabled'] is False
+          assert all(x['primary_model_economics_verified'] for x in a['evidence_qualified_top10'])
+          assert {'illustrative_5_8','unconfirmed_6_01'} <= {x['id'] for x in o['offset_rate_scenarios']}
+          assert o['orders_enabled'] is False
+          PY
       - name: Publish machine-readable report to repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/latest.json reports/changes_latest.json reports/valuation_top10_latest.json reports/offset_comparison_latest.json reports/decision_journal.json reports/intelligence_latest.json
+          git add reports/latest.json reports/changes_latest.json reports/valuation_top10_latest.json reports/offset_comparison_latest.json reports/decision_journal.json reports/intelligence_latest.json reports/asymmetry_latest.json
           if [ -f reports/fx_aud_latest.json ]; then git add reports/fx_aud_latest.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh Championship 200-stock report [skip ci]"

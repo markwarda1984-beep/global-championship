@@ -3,7 +3,7 @@
 Read-only outputs. Never executes, creates, transmits, suggests, or approves orders.
 Valuation Top 10 is a *source-labelled RESEARCH queue*, not a list of verified buys.
 Source verification distinguishes primary filing METADATA, URL reachability,
-and substantive claim verification (the latter is NEVER automated here).
+and issuer-reported claims detected in source text (not independently audited).
 """
 from __future__ import annotations
 
@@ -351,6 +351,19 @@ def after_tax_comparison(top10: dict, assumptions: dict, fx: dict, now: datetime
         if mr is None or not 0 <= mr <= 60:
             raise ValueError("Invalid tax scenario")
     offset = amount * rate / 100 * months / 12
+    rates = assumptions.get('offset_rate_scenarios', [])
+    if not rates:
+        rates = [{'id':'illustrative_5_8','annual_rate_pct':rate,
+                  'confirmation':'ILLUSTRATIVE_NOT_LIVE','rate_source':'legacy configurable working assumption'}]
+    benchmarks=[]
+    for r in rates:
+        named_rate=number(r.get('annual_rate_pct'))
+        if not r.get('id') or named_rate is None or not 0 <= named_rate <= 30:
+            raise ValueError('Invalid configurable offset scenario')
+        benchmarks.append({'id':r['id'],'annual_rate_pct':named_rate,
+             'confirmation':r.get('confirmation','UNCONFIRMED_NOT_LIVE'),
+             'rate_source':r.get('rate_source','USER_CONFIGURED_NOT_LIVE'),
+             'offset_savings_aud':round(amount*named_rate/100*months/12,2)})
     entries = []
     for c in top10.get("ranked_top_10", []):
         ccy = str(c.get("currency", "")).upper()
@@ -382,6 +395,10 @@ def after_tax_comparison(top10: dict, assumptions: dict, fx: dict, now: datetime
                         "illustrative_after_tax_profit_aud": round(net_profit, 2),
                         "less_offset_savings_aud": round(net_profit - offset, 2),
                         "beats_offset_in_this_hypothetical_scenario": net_profit > offset,
+                        "offset_comparisons_by_rate": {z['id']:{
+                            'net_profit_minus_offset_aud':round(net_profit-z['offset_savings_aud'],2),
+                            'beats_this_offset_scenario':net_profit>z['offset_savings_aud']}
+                            for z in benchmarks},
                     }
                 row["hypothetical_outcomes"][scenario] = people_scenarios
         entries.append(row)
@@ -389,6 +406,10 @@ def after_tax_comparison(top10: dict, assumptions: dict, fx: dict, now: datetime
             "principal_aud": amount, "horizon_months": months,
             "annual_owner_occupied_mortgage_rate_assumption_pct": rate,
             "offset_savings_aud_for_horizon": round(offset, 2), "offset_savings_tax_treatment": "Owner-occupied interest avoided (not taxable bank interest)",
+            "offset_rate_scenarios":benchmarks,
+            "rate_confirmation_policy":"5.8% IS EDITABLE ILLUSTRATION; 6.01% IS UNCONFIRMED. Neither is a live St George quote.",
+            "fees_aud":{"buy":buy_fee,"sell":sell_fee},
+            "fx_spread_pct_each_way":fx_spread,
             "tax_method": "NO_DISCOUNT_FULL_GAIN_MARGINAL_TAX_STRESS_ONLY",
             "assumed_fx_at_exit": "unchanged; FX returns not forecast", "fx_quote": fx,
             "tax_scenarios": people, "ranked_research_scenarios": entries,
@@ -485,6 +506,10 @@ def run(root: Path = BASE, mode: str = "scan", offline: bool = False, *,
             session = requests.Session()
             session.headers.update({"User-Agent": "Championship-Research/5.1 primary-source-provenance-only"})
         queue = research_queue(registry, discovery, now, session=session, allow_network=not offline)
+        # Source-text extraction and exact configured-claim matching: no URL-only approval.
+        from evidence_upgrade_54 import enrich_queue
+        claims = read(root / "settings" / "discovery_claims_54.json", {})
+        queue = enrich_queue(queue, claims, session, now, allow_network=not offline)
         write(reports / "research_queue_latest.json", queue)
         return queue
     if mode not in ("scan", "valuation"):
@@ -495,6 +520,32 @@ def run(root: Path = BASE, mode: str = "scan", offline: bool = False, *,
     assert_safety(scan)
     valuation = read(reports / "valuation_latest.json", {})
     top = valuation_top10(scan, valuation, now)
+    from evidence_upgrade_54 import asymmetry_report
+    raw_evidence = read(reports / "primary_financials_latest.json", {})
+    if not isinstance(raw_evidence,dict) or not raw_evidence:
+        raw_evidence = {'schema_version':'5.4-sec-primary-financials-1',
+            'status':'NO_PRIMARY_ECONOMIC_EVIDENCE_CHECKED_YET',
+            'companies':{},'orders_enabled':False,'research_only':True}
+        write(reports / "primary_financials_latest.json", raw_evidence)
+    # Stale SEC reads cannot promote models into an evidence-qualified ranking.
+    if date_age(raw_evidence.get("published_at_utc"), now) is None or \
+            date_age(raw_evidence.get("published_at_utc"), now) > 31:
+        raw_evidence = {}
+    stress_cfg = read(root / "settings" / "dilution_stress_54.json", {})
+    stresses = stress_cfg.get('hypothetical_future_issuance_pct', {})
+    asymmetry = asymmetry_report(scan, valuation, raw_evidence, now,
+        stress_bear=float(stresses.get('bear', 15))/100,
+        stress_base=float(stresses.get('base', 5))/100,
+        stress_bull=float(stresses.get('bull', 0))/100)
+    scenario_by_ticker = {x['ticker']:x for x in
+        [*asymmetry['evidence_qualified_top10'],*asymmetry['unverified_scenario_review_queue']]}
+    for item in top['ranked_top_10']:
+        check=scenario_by_ticker.get(item['ticker'])
+        item['evidence_qualified_for_asymmetry']=bool(check and check['primary_model_economics_verified'])
+        item['dilution_adjusted_scenarios']=check.get('dilution_adjusted_values') if check else None
+        item['missing_primary_evidence_flags']=check.get('source_flags',[]) if check else ['PRIMARY_MODEL_NOT_CHECKED']
+    top['evidence_qualified_top10_count']=asymmetry['evidence_qualified_count']
+    top['warning'] += ' Evidence-gated asymmetric ranking is separately reported; this existing Top 10 remains unverified.'
     cfg = read(root / "settings" / "intelligence_51.json")
     if not isinstance(cfg, dict):
         raise ValueError("Missing intelligence assumptions")
@@ -503,7 +554,8 @@ def run(root: Path = BASE, mode: str = "scan", offline: bool = False, *,
     if mode == "valuation":
         write(reports / "valuation_top10_weekly.json", top)
         write(reports / "offset_comparison_weekly.json", comparison)
-        return {"valuation_top10": top, "offset": comparison}
+        write(reports / "asymmetry_weekly.json", asymmetry)
+        return {"valuation_top10": top, "offset": comparison, "asymmetry":asymmetry}
     previous = read(root / "data" / "intel51_prior_report.json")
     changes = scan_changes(previous, scan, now)
     queue = read(reports / "research_queue_latest.json", {})
@@ -512,17 +564,21 @@ def run(root: Path = BASE, mode: str = "scan", offline: bool = False, *,
     journal = append_journal(journal_prev, journal_events(changes, queue, top, now, manual), now)
     write(reports / "changes_latest.json", changes)
     write(reports / "valuation_top10_latest.json", top)
+    write(reports / "asymmetry_latest.json", asymmetry)
     write(reports / "offset_comparison_latest.json", comparison)
     write(reports / "decision_journal.json", journal)
     summary = {"schema_version": "5.1-intelligence-index-1", "published_at_utc": now.isoformat(),
                "base_scanner_count": 200, "discovery_pipeline_preserved": True,
                "change_summary": {k: changes[k] for k in ("comparison_status", "new_daily_bar_count", "same_bar_revision_count", "research_field_change_count")},
                "research_queue_source_verified_count": queue.get("source_verified_reference_count"),
-               "valuation_top10_count": len(top["ranked_top_10"]), "journal_entries": journal["entry_count"],
+               "valuation_top10_count": len(top["ranked_top_10"]),
+               "evidence_qualified_asymmetric_count": asymmetry['evidence_qualified_count'],
+               "journal_entries": journal["entry_count"],
                "offset_comparison_status": "SCENARIOS_WITH_LIMITATIONS",
                "reports": ["reports/changes_latest.json", "reports/research_queue_latest.json",
                            "reports/valuation_top10_latest.json", "reports/offset_comparison_latest.json",
-                           "reports/decision_journal.json"],
+                           "reports/decision_journal.json", "reports/asymmetry_latest.json",
+                           "reports/primary_financials_latest.json"],
                "research_only": True, "orders_enabled": False}
     write(reports / "intelligence_latest.json", summary)
     return summary

@@ -3,21 +3,43 @@
   "account_currency": "AUD",
   "comparison_principal_aud": 1000.0,
   "owner_occupied_offset_rate_pct": 5.8,
-  "offset_rate_source": "USER-EDITABLE ILLUSTRATION — NOT A LIVE LOAN QUOTE",
+  "offset_rate_source": "USER-EDITABLE ILLUSTRATION \u2014 5.8% IS NOT A VERIFIED LOAN QUOTE",
   "comparison_months": 13,
   "illustrative_brokerage_aud_buy": 3.0,
   "illustrative_brokerage_aud_sell": 3.0,
   "illustrative_fx_spread_pct_each_way": 0.5,
   "tax_scenarios": [
-    {"id": "income_158k", "description": "Illustrative $158k Australian taxable income: 37% resident marginal plus assumed 2% Medicare", "marginal_plus_medicare_pct": 39.0},
-    {"id": "income_110k", "description": "Illustrative $110k Australian taxable income: 30% resident marginal plus assumed 2% Medicare", "marginal_plus_medicare_pct": 32.0}
+    {
+      "id": "income_158k",
+      "description": "Illustrative $158k Australian taxable income: 37% resident marginal plus assumed 2% Medicare",
+      "marginal_plus_medicare_pct": 39.0
+    },
+    {
+      "id": "income_110k",
+      "description": "Illustrative $110k Australian taxable income: 30% resident marginal plus assumed 2% Medicare",
+      "marginal_plus_medicare_pct": 32.0
+    }
   ],
   "cgt_comparison_method": "CONSERVATIVE_NO_DISCOUNT_STRESS_ONLY",
-  "tax_law_warning": "Post-1-July-2027 Australian CGT reform may replace the 50% discount with indexation and a minimum-tax regime; this simplified full-gain marginal tax is a cautious sensitivity, NOT a calculation of the actual liability. Requires accountant verification.",
+  "tax_law_warning": "Australian CGT reforms applying from 1 July 2027 may require splitting pre-/post-commencement gains and indexation. The conservative full-gain marginal-rate stress is NOT actual tax payable; confirm current ATO requirements and transaction dates.",
   "tax_sources": [
     "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
     "https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax",
     "https://moneysmart.gov.au/home-loans/mortgage-offset-accounts"
   ],
-  "notes": "Assumed fixed FX through scenario, no dividends, inflation, Medicare variations, capital-loss offsets, stamp duty, additional levies or slippage. Model fair values are NOT timed forecasts. All pricing and tax estimates are hypothetical."
+  "notes": "Assumed fixed FX through scenario, no dividends, inflation, Medicare variations, capital-loss offsets, stamp duty, additional levies or slippage. Model fair values are NOT timed forecasts. All pricing and tax estimates are hypothetical.",
+  "offset_rate_scenarios": [
+    {
+      "id": "illustrative_5_8",
+      "annual_rate_pct": 5.8,
+      "confirmation": "ILLUSTRATIVE_NOT_LIVE",
+      "rate_source": "User scenario; confirm actual variable mortgage rate and offset terms"
+    },
+    {
+      "id": "unconfirmed_6_01",
+      "annual_rate_pct": 6.01,
+      "confirmation": "UNCONFIRMED_NOT_LIVE",
+      "rate_source": "Unconfirmed historical rate; do not treat as the current St George rate"
+    }
+  ]
 }

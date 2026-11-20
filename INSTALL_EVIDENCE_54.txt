@@ -1,0 +1,23 @@
+Championship 5.4 primary-evidence and dilution upgrade
+
+1. Extract this ZIP into Documents/global-championship, preserving the .git directory
+   and nested .github/workflows/ directory. Overwrite the listed matching files only.
+   Do NOT use GitSync Upload + Overwrite; use three dots beside Sync Changes -> Upload Changes.
+2. Keep the existing SEC_USER_AGENT secret unchanged. No credentials are in this ZIP.
+3. The upload changes source code, so three existing GitHub Actions workflows start automatically.
+   Verify all three conclude SUCCESS, then read the new reports:
+      reports/research_queue_latest.json
+      reports/primary_financials_latest.json
+      reports/asymmetry_latest.json
+      reports/asymmetry_weekly.json
+      reports/offset_comparison_latest.json
+      reports/offset_comparison_weekly.json
+      reports/intelligence_latest.json
+4. Empty evidence-qualified rankings are expected when source claims, share counts, or
+   cash-flow dates cannot be verified. Never confuse URL 200 with a verified claim.
+5. Reply Done to ChatGPT to verify live reports and the exact original 200 ticker count.
+
+Source scripts not replaced: scan.py, discovery_engine.py, valuation_engine.py,
+report_bridge.py, opportunity_engine.py, watchlist.csv.
+
+This is research-only. No trades and no broker controls.

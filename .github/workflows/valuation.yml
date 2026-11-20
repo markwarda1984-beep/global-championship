@@ -6,6 +6,8 @@ on:
     paths:
       - 'valuation_engine.py'
       - 'intelligence_layer_51.py'
+      - 'evidence_upgrade_54.py'
+      - 'settings/dilution_stress_54.json'
       - 'tests/test_valuation_engine.py'
       - '.github/workflows/valuation.yml'
   schedule:
@@ -39,13 +41,17 @@ jobs:
         run: |
           mkdir -p reports
           cp data/valuation_200.json reports/valuation_latest.json
+      - name: Fetch bounded first-party SEC financial statements (missing facts stay unverified)
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python evidence_upgrade_54.py --mode financials
       - name: Publish weekly evidence-ranked valuation and AUD offset sensitivities
         run: python intelligence_layer_51.py --mode valuation
       - name: Publish weekly valuation report to repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/valuation_latest.json reports/valuation_top10_weekly.json reports/offset_comparison_weekly.json
+          git add reports/valuation_latest.json reports/valuation_top10_weekly.json reports/offset_comparison_weekly.json reports/asymmetry_weekly.json reports/primary_financials_latest.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh Championship valuation [skip ci]"
             # Different scheduled workflows may update main within milliseconds.
@@ -78,5 +84,7 @@ jobs:
             data/valuation_200.json
             data/valuation_200.html
             data/valuation_200_run_summary.json
+            reports/primary_financials_latest.json
+            reports/asymmetry_weekly.json
           if-no-files-found: warn
           retention-days: 14
