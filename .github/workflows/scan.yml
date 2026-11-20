@@ -47,8 +47,25 @@ jobs:
           git add reports/latest.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh Championship 200-stock report [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            # Different scheduled workflows may update main within milliseconds.
+            # Fetch/rebase before each bounded push retry; never force-push.
+            published=false
+            for attempt in 1 2 3 4 5 6; do
+              git fetch origin main
+              git rebase FETCH_HEAD
+              if git push origin HEAD:main; then
+                published=true
+                echo "Research report published successfully (attempt ${attempt}/6)"
+                break
+              fi
+              if [ "${attempt}" -eq 6 ]; then
+                echo "::error title=Report publishing conflict::Failed after six retries. Report remains in run artifacts."
+                exit 1
+              fi
+              echo "::warning title=Concurrent report update::Another workflow changed main; retrying publish (${attempt}/6)"
+              sleep $((attempt * 2))
+            done
+            test "$published" = true
           fi
       - name: Upload all 200 rows, dashboard and JSON
         if: always()
