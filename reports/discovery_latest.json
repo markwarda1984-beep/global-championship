@@ -1,7 +1,7 @@
 {
-  "schema_version": "5.1-discovery-radar-1",
-  "published_at_utc": "2026-11-20T21:02:41.636125+00:00",
-  "source_coverage": "PARTIAL_OR_UNAVAILABLE",
+  "schema_version": "5.2-discovery-radar-1",
+  "published_at_utc": "2026-11-20T21:19:53.953761+00:00",
+  "source_coverage": "CORE_SOURCES_AVAILABLE_WITH_FALLBACK",
   "total_discovered_ever": 4,
   "monitor_count": 0,
   "pending_count": 4,
@@ -17,7 +17,7 @@
     },
     "sec_8k": {
       "status": "ok",
-      "latest_feed_matched_listed_tickers": 69,
+      "latest_feed_matched_listed_tickers": 77,
       "coverage": "at most latest 100 filings; not an exhaustive market screen"
     },
     "gdelt": {
@@ -25,7 +25,22 @@
       "http_status": 429,
       "checked_theme": 3,
       "reason": "gdelt_doc: rate_limited_429",
-      "next_action": "Retry on next scheduled run; do not immediately repeat 429"
+      "next_attempt_at_utc": "2026-11-21T09:19:53.953761+00:00",
+      "next_action": "RSS fallback; retry only after persistent cooldown"
+    },
+    "gdelt_control": {
+      "gdelt_retry_at_utc": "2026-11-21T09:19:53.953761+00:00",
+      "gdelt_consecutive_429": 1
+    },
+    "google_news": {
+      "status": "ok",
+      "checked_theme": 3,
+      "article_count": 9,
+      "coverage": "RSS headline sample only; source articles not independently verified"
+    },
+    "bing_news": {
+      "status": "not_needed",
+      "reason": "GDELT/Google news source was usable"
     },
     "new_lead_coverage": {
       "corroborated_sec_and_news": 0,
@@ -44,7 +59,7 @@
   "research_only": true,
   "orders_enabled": false,
   "limitations": [
-    "US SEC 8-K latest feed is not exhaustive; GDELT news coverage is incomplete",
+    "US SEC 8-K feed is not exhaustive; GDELT, Google News RSS and Bing News RSS are sampling sources with no guaranteed availability",
     "ASX general-market discovery not yet implemented; curated ASX seeds only",
     "Cited filing/announcement is not automatically checked for investment merit",
     "Liquidity, market cap, quote and valuation can be missing or delayed",
