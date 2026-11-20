@@ -161,3 +161,122 @@ class DiscoveryTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# Championship 5.1 reliability regressions.
+class DiscoveryReliability51Tests(unittest.TestCase):
+    def test_sec_contact_requires_real_email_shaped_identifier(self):
+        self.assertFalse(d.valid_sec_contact(''))
+        self.assertFalse(d.valid_sec_contact('Championship-Research/5.0 (+github URL only)'))
+        self.assertFalse(d.valid_sec_contact('Research contact@example.com\nInjected: header'))
+        self.assertTrue(d.valid_sec_contact('Research Team contact@user-owned-domain.com'))
+
+    def test_403_is_not_retried(self):
+        class Response:
+            status_code = 403
+        session = unittest.mock.Mock()
+        session.get.return_value = Response()
+        with self.assertRaises(d.SourceFetchError) as ctx, patch.object(d.time, 'sleep') as sleep:
+            d.fetch_with_retry(session, d.SEC_TICKERS, source='sec_directory')
+        self.assertEqual(ctx.exception.code, 403)
+        self.assertEqual(session.get.call_count, 1)
+        sleep.assert_not_called()
+
+    def test_429_is_not_retried_or_hammered(self):
+        class Response:
+            status_code = 429
+        session = unittest.mock.Mock()
+        session.get.return_value = Response()
+        with self.assertRaises(d.SourceFetchError) as ctx, patch.object(d.time, 'sleep') as sleep:
+            d.fetch_with_retry(session, d.GDELT, source='gdelt_doc')
+        self.assertEqual(ctx.exception.code, 429)
+        self.assertEqual(session.get.call_count, 1)
+        sleep.assert_not_called()
+
+    def test_503_retry_once_then_success(self):
+        import requests
+        first = unittest.mock.Mock()
+        first.status_code = 503
+        first.raise_for_status.side_effect = requests.HTTPError('503', response=first)
+        second = unittest.mock.Mock()
+        second.status_code = 200
+        second.raise_for_status.return_value = None
+        sess = unittest.mock.Mock()
+        sess.get.side_effect = [first, second]
+        with patch.object(d.time, 'sleep') as sleep:
+            self.assertIs(d.fetch_with_retry(sess, 'https://example.org/test'), second)
+        self.assertEqual(sess.get.call_count, 2)
+        sleep.assert_called_once()
+
+    def test_unconfigured_sec_skipped_gdelt_failure_reported(self):
+        class Resp:
+            status_code = 429
+        sess = unittest.mock.Mock()
+        sess.get.return_value = Resp()
+        with patch.object(d.time, 'sleep') as sleep:
+            leads, health = d.discover_external(sess, NOW, sec_configured=False)
+        self.assertEqual(leads, [])
+        self.assertEqual(health['sec_8k']['status'], 'configuration_required')
+        self.assertEqual(health['gdelt']['status'], 'rate_limited')
+        self.assertEqual(sess.get.call_count, 1)
+        sleep.assert_not_called()
+
+    def test_one_rotating_gdelt_topic_per_run(self):
+        class Resp:
+            status_code = 200
+            def raise_for_status(self): pass
+            def json(self): return {'articles': []}
+        for hour, expected_theme in [(2, 1), (8, 2), (10, 3), (13, 1), (16, 2), (21, 3)]:
+            sess = unittest.mock.Mock()
+            sess.get.return_value = Resp()
+            result, health = d.discover_external(sess, NOW.replace(hour=hour), sec_configured=False)
+            self.assertEqual(result, [])
+            self.assertEqual(sess.get.call_count, 1)
+            self.assertEqual(health['gdelt']['checked_theme'], expected_theme)
+            self.assertEqual(health['gdelt']['status'], 'ok')
+
+    def test_secondary_news_ticker_is_pending_even_if_liquid(self):
+        news = {'title': 'AI data center startup signs major contract (NASDAQ: TEST)',
+                'url': 'https://example-news.com/news/item', 'seendate': '20261120T120000Z'}
+        leads = d.extract_unverified_news_leads([news], NOW)
+        self.assertEqual([x['ticker'] for x in leads], ['TEST'])
+        self.assertEqual(leads[0]['evidence_kind'], 'SECONDARY_NEWS_TICKER_LEAD_UNVERIFIED')
+        reg = d.evaluate(leads, {'TEST': quote()}, {}, set(), NOW)
+        self.assertEqual(reg['candidates']['TEST']['status'], 'PENDING_EVIDENCE')
+        self.assertIn('PRIMARY_DISCLOSURE_NOT_VERIFIED', reg['candidates']['TEST']['concerns'])
+        self.assertIsNone(reg['candidates']['TEST']['buy_readiness'])
+        self.assertFalse(reg['orders_enabled'])
+
+    def test_secondary_news_does_not_override_primary_evidence(self):
+        good = d.evaluate([candidate('TEST')], {'TEST': quote()}, {}, set(), NOW)
+        lead = {'ticker':'TEST','company':'AI business in headline',
+                'evidence_date':'2026-11-20','evidence_url':'https://example.com/story',
+                'evidence_kind':'SECONDARY_NEWS_TICKER_LEAD_UNVERIFIED'}
+        next_ = d.evaluate([lead], {'TEST': quote()}, {'candidates':good['candidates']}, set(), NOW)
+        self.assertEqual(next_['candidates']['TEST']['status'], 'MONITOR')
+        self.assertEqual(next_['candidates']['TEST']['evidence_kind'], 'SEC_8K_FILING_REFERENCE')
+
+    def test_gdelt_absent_date_or_naked_ticker_is_rejected(self):
+        bad = [
+            {'title':'AI company signs contract (NASDAQ: TEST)', 'url':'https://news.example.org/s'},
+            {'title':'AI company signs contract TEST', 'url':'https://news.example.org/s', 'seendate':'20261120T120000Z'},
+            {'title':'AI company signs contract (NASDAQ: TEST)', 'url':'http://news.example.org/s', 'seendate':'20261120T120000Z'},
+        ]
+        self.assertEqual(d.extract_unverified_news_leads(bad, NOW), [])
+
+    def test_first_party_corroboration_promotes_secondary_lead(self):
+        first = d.evaluate([{'ticker':'TEST', 'company':'story', 'theme':'AI',
+             'evidence_date':'2026-11-20','evidence_url':'https://news.example.org/a',
+             'evidence_kind':'SECONDARY_NEWS_TICKER_LEAD_UNVERIFIED'}],
+             {'TEST':quote()}, {}, set(), NOW)
+        second = d.evaluate([candidate('TEST')], {'TEST':quote()},
+            {'candidates':first['candidates']}, set(), NOW)
+        self.assertEqual(second['candidates']['TEST']['status'], 'MONITOR')
+        self.assertEqual(second['candidates']['TEST']['evidence_kind'], 'SEC_8K_FILING_REFERENCE')
+
+    def test_source_coverage_badge_warns_on_partial(self):
+        reg = d.evaluate([], {}, {}, set(), NOW)
+        snap = d.make_snapshot(reg, {'sec_8k': {'status':'configuration_required'},
+            'gdelt': {'status':'ok'}}, NOW)
+        self.assertEqual(snap['source_coverage'], 'PARTIAL_OR_UNAVAILABLE')
+        self.assertEqual(snap['monitor_count'], 0)
+        self.assertTrue(snap['schema_version'].startswith('5.1'))

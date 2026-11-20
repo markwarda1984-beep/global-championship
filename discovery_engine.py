@@ -1,11 +1,11 @@
-"""Championship 5.0: incremental, read-only, evidence-gated discovery radar.
+"""Championship 5.1: resilient, incremental, read-only discovery radar.
 
 Purpose: separate, expandable stock monitoring outside the fixed 200 ticker scan.
 New ticker admission means research monitoring only, NEVER fair-value validation,
 a trade recommendation, a buy signal, or broker execution.
 
 Sources: SEC EDGAR current 8-K Atom feed + SEC listed ticker directory;
-GDELT news articles provide *leads* only, which must align with an SEC filing.
+GDELT news articles are unverified leads; they NEVER qualify for MONITOR without a primary disclosure.
 Curated seed disclosures explicitly provided in discovery_seeds.csv can bootstrap
 ASX and US research monitoring, if recent and liquid.
 
@@ -60,6 +60,8 @@ MAX_MARKET_CAP = 20_000_000_000.0
 MAX_CANDIDATES_PER_RUN = 35
 MAX_REGISTRY_SIZE = 1500
 MAX_OPEN_RESEARCH = 160
+MAX_NEWS_ONLY_PER_RUN = 8
+SEC_CONTACT_PATTERN = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
 TODAY = lambda: datetime.now(timezone.utc)
 LOGGER = logging.getLogger("championship_discovery")
 
@@ -215,6 +217,73 @@ def extract_news_matches(articles: list[dict], filings: dict[str, dict]) -> list
     return list(result.values())
 
 
+def gdelt_seen_date(article: dict, now: datetime) -> str | None:
+    """Recognize GDELT's YYYYMMDDTHHMMSSZ timestamps; reject undated rumours."""
+    raw = str(article.get("seendate", "") or article.get("date", "")).strip()
+    date = iso_date(raw)
+    if date is None:
+        try:
+            date = datetime.strptime(raw.rstrip("Z"), "%Y%m%dT%H%M%S").replace(tzinfo=timezone.utc)
+        except ValueError:
+            return None
+    return date.isoformat() if is_recent(date.isoformat(), now, 10) else None
+
+
+def extract_unverified_news_leads(articles: list[dict], now: datetime) -> list[dict]:
+    """Extract explicit exchange:ticker references, NEVER a primary filing claim.
+
+    A GDELT article can be mislabelled or speculative. This function only adds a
+    PENDING_EVIDENCE lead, even when liquidity and market cap pass the gate.
+    """
+    results: dict[str, dict] = {}
+    pattern = re.compile(r"\b(NASDAQ|NYSE|ASX)\s*:\s*\$?([A-Z][A-Z0-9.\-]{0,10})\b", re.I)
+    for article in articles:
+        if not isinstance(article, dict):
+            continue
+        title = str(article.get("title", ""))[:350]
+        lower = title.lower()
+        if not any(re.search(r"\b" + re.escape(t) + r"\b", lower) for t in THEME_TERMS):
+            continue
+        if not any(re.search(r"\b" + re.escape(t) + r"\b", lower) for t in EVENT_TERMS):
+            continue
+        date = gdelt_seen_date(article, now)
+        if date is None:
+            continue
+        url = str(article.get("url", ""))[:550]
+        try:
+            parsed = urlparse(url)
+            if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
+                continue
+        except ValueError:
+            continue
+        for match in pattern.finditer(title):
+            exchange, raw = match.groups()
+            ticker = safe_ticker(raw)
+            if not ticker:
+                continue
+            ticker = ticker + ".AX" if exchange.upper() == "ASX" and not ticker.endswith(".AX") else ticker
+            if ticker in results:
+                continue
+            results[ticker] = {
+                "ticker": ticker, "company": title[:160],
+                "theme": "unverified event-driven news ticker lead",
+                "evidence_date": date, "evidence_url": url,
+                "evidence_kind": "SECONDARY_NEWS_TICKER_LEAD_UNVERIFIED",
+                "discovery_source": "GDELT news (secondary, unverified)",
+                "corroboration": "Exchange ticker only appears in news headline; verify issuer identity and primary filing",
+                "news_title": title,
+            }
+            if len(results) >= MAX_NEWS_ONLY_PER_RUN:
+                return list(results.values())
+    return list(results.values())
+
+
+def valid_sec_contact(value: str) -> bool:
+    """SEC asks automated clients to identify themselves with a working contact."""
+    return bool(value and len(value) <= 250 and "\n" not in value and "\r" not in value
+                and SEC_CONTACT_PATTERN.search(value))
+
+
 def market_checks(quote: dict | None, *, capital_limit: float = MAX_MARKET_CAP) -> tuple[bool, list[str]]:
     """Liquidity/quote checks; a passing result is NOT valuation or business diligence."""
     if quote is None:
@@ -251,12 +320,19 @@ def evaluate(candidates: list[dict], quotes: dict, previous: dict, original: set
         ticker = safe_ticker(c.get("ticker", ""))
         if not ticker or ticker in original or ticker in seen:
             continue
-        seen.add(ticker)
         if not str(c.get("evidence_url", "")).startswith("https://") or not is_recent(c.get("evidence_date", ""), now):
             continue
+        prior = result.get(ticker, {})
+        primary = c.get("evidence_kind") in {"SEC_8K_FILING_REFERENCE", "CURATED_OFFICIAL_DISCLOSURE_REFERENCE"}
+        if not primary and prior.get("evidence_kind") in {"SEC_8K_FILING_REFERENCE", "CURATED_OFFICIAL_DISCLOSURE_REFERENCE"}:
+            # A later unverified headline must not overwrite an existing primary reference.
+            continue
+        seen.add(ticker)
         quote = quotes.get(ticker)
         eligible, concerns = market_checks(quote)
-        prior = result.get(ticker, {})
+        if not primary:
+            eligible = False
+            concerns = ["PRIMARY_DISCLOSURE_NOT_VERIFIED"] + concerns
         if prior.get("status") == "MANUAL_EXCLUDE":
             continue
         is_new = ticker not in result
@@ -264,7 +340,7 @@ def evaluate(candidates: list[dict], quotes: dict, previous: dict, original: set
         merged = {**prior, "ticker": ticker, "company": c.get("company"), "theme": c.get("theme", "unspecified"),
                   "status": status, "last_researched_utc": now.isoformat(), "evidence_url": c["evidence_url"],
                   "evidence_date": c["evidence_date"], "evidence_kind": c.get("evidence_kind", "UNKNOWN"),
-                  "discovery_source": c.get("discovery_source"), "corroboration": c.get("corroboration"),
+                  "discovery_source": c.get("discovery_source"), "corroboration": c.get("corroboration"), "primary_disclosure_reference": primary,
                   "last_quote": quote or None, "concerns": concerns,
                   "review_status": "RESEARCH ONLY — PRIMARY DISCLOSURE CONTENT/VALUATION NOT CONFIRMED",
                   "buy_readiness": None, "orders_enabled": False}
@@ -299,7 +375,7 @@ def evaluate(candidates: list[dict], quotes: dict, previous: dict, original: set
             prior.pop("archive_reason", None)
             events["revived"].append(ticker)
     # Preserve old entries even if above cap; new discovery admission must not evict history.
-    return {"schema_version": "5.0-discovery-radar-1", "updated_at_utc": now.isoformat(),
+    return {"schema_version": "5.1-discovery-radar-1", "updated_at_utc": now.isoformat(),
             "original_200_unchanged": True, "candidates": dict(sorted(result.items())),
             "events": events, "orders_enabled": False}
 
@@ -309,7 +385,10 @@ def make_snapshot(registry: dict, health: dict, now: datetime) -> dict:
     counts = {s: sum(c.get("status") == s for c in candidates.values()) for s in
               ("MONITOR", "PENDING_EVIDENCE", "ARCHIVED_MONITORING", "MANUAL_EXCLUDE")}
     active = [x for x in candidates.values() if x.get("status") == "MONITOR"]
-    return {"schema_version": "5.0-discovery-radar-1", "published_at_utc": now.isoformat(),
+    remote_checks = [health.get("sec_8k", {}).get("status"), health.get("gdelt", {}).get("status")]
+    source_coverage = "COMPLETE_FOR_CONFIGURED_SAMPLES" if all(x == "ok" for x in remote_checks) else "PARTIAL_OR_UNAVAILABLE"
+    return {"schema_version": "5.1-discovery-radar-1", "published_at_utc": now.isoformat(),
+            "source_coverage": source_coverage,
             "total_discovered_ever": len(candidates), "monitor_count": counts["MONITOR"],
             "pending_count": counts["PENDING_EVIDENCE"], "archived_count": counts["ARCHIVED_MONITORING"],
             "newly_monitored": registry["events"]["newly_monitored"],
@@ -322,46 +401,102 @@ def make_snapshot(registry: dict, health: dict, now: datetime) -> dict:
                             "ASX general-market discovery not yet implemented; curated ASX seeds only",
                             "Cited filing/announcement is not automatically checked for investment merit",
                             "Liquidity, market cap, quote and valuation can be missing or delayed",
-                            "No price level, readiness percent, trade or expected return is automatically validated"]}
+                            "No price level, readiness percent, trade or expected return is automatically validated",
+                            "News-only ticker mentions remain PENDING_EVIDENCE even if liquidity tests pass"]}
 
 
-def fetch_with_retry(session, url: str, *, params: dict | None = None) -> Any:
-    last = None
-    for attempt in range(3):
+class SourceFetchError(RuntimeError):
+    def __init__(self, source: str, code: int | None, message: str):
+        super().__init__(f"{source}: {message}")
+        self.code = code
+
+
+def fetch_with_retry(session, url: str, *, params: dict | None = None, source: str = "source") -> Any:
+    """Retry transient 5xx/timeouts only; do NOT hammer a 403 or 429 source."""
+    import requests
+    last: Exception | None = None
+    for attempt in range(2):
         try:
             response = session.get(url, params=params, timeout=18)
+            code = int(getattr(response, "status_code", 200))
+            if code in (401, 403, 429):
+                detail = "access_denied_403" if code == 403 else ("rate_limited_429" if code == 429 else "unauthorized_401")
+                raise SourceFetchError(source, code, detail)
             response.raise_for_status()
             return response
-        except Exception as exc:
+        except SourceFetchError:
+            raise
+        except requests.HTTPError as exc:
+            status = getattr(getattr(exc, "response", None), "status_code", None)
             last = exc
-            if attempt < 2:
-                time.sleep(1.0 * (attempt + 1))
-    raise RuntimeError(f"Fetch failed for {urlparse(url).netloc}: {type(last).__name__}: {last}")
+            if status not in (500, 502, 503, 504) or attempt == 1:
+                raise SourceFetchError(source, status, f"http_{status or 'unknown'}") from exc
+        except (requests.Timeout, requests.ConnectionError) as exc:
+            last = exc
+            if attempt == 1:
+                raise SourceFetchError(source, None, f"transient_network_{type(exc).__name__}") from exc
+        if attempt == 0:
+            time.sleep(2.0)
+    raise SourceFetchError(source, None, f"upstream_unavailable_{type(last).__name__}")
 
 
-def discover_external(session, now: datetime) -> tuple[list[dict], dict]:
+def discover_external(session, now: datetime, *, sec_configured: bool = True) -> tuple[list[dict], dict]:
+    """One GDELT theme per run; SEC failure cannot conceal news-only candidates."""
     health: dict[str, Any] = {}
     filings: dict[str, dict] = {}
-    try:
-        directory = sec_cik_map(fetch_with_retry(session, SEC_TICKERS).json())
-        response = fetch_with_retry(session, SEC_FEED, params={
-            "action": "getcurrent", "type": "8-K", "owner": "include", "count": "100", "output": "atom"})
-        filings = parse_sec_atom(response.text, directory, now)
-        health["sec_8k"] = {"status": "ok", "latest_feed_matched_listed_tickers": len(filings),
-                             "coverage": "at most latest 100 filings; some issuers or filings may be missed"}
-    except Exception as exc:
-        health["sec_8k"] = {"status": "unavailable", "error": str(exc)[:300]}
-    articles: list[dict] = []
-    for i, query in enumerate(QUERY_TERMS):
+    if not sec_configured:
+        health["sec_8k"] = {
+            "status": "configuration_required",
+            "reason": "SEC_USER_AGENT must contain a genuine contact email in GitHub Actions secrets",
+            "coverage": "SEC filings NOT checked (not equivalent to no new filings)"}
+    else:
         try:
-            response = fetch_with_retry(session, GDELT, params={"query": query, "mode": "artlist",
-                                                               "format": "json", "timespan": "1week",
-                                                               "maxrecords": "50", "sort": "datedesc"})
-            articles += response.json().get("articles", [])
-            health[f"gdelt_theme_{i+1}"] = {"status": "ok"}
-        except Exception as exc:
-            health[f"gdelt_theme_{i+1}"] = {"status": "unavailable", "error": str(exc)[:300]}
-    return extract_news_matches(articles, filings), health
+            directory = sec_cik_map(fetch_with_retry(session, SEC_TICKERS, source="sec_ticker_directory").json())
+            response = fetch_with_retry(session, SEC_FEED, source="sec_latest_8k", params={
+                "action": "getcurrent", "type": "8-K", "owner": "include", "count": "100", "output": "atom"})
+            filings = parse_sec_atom(response.text, directory, now)
+            health["sec_8k"] = {"status": "ok", "latest_feed_matched_listed_tickers": len(filings),
+                                 "coverage": "at most latest 100 filings; not an exhaustive market screen"}
+        except SourceFetchError as exc:
+            status = "access_denied" if exc.code in (401, 403) else ("rate_limited" if exc.code == 429 else "unavailable")
+            health["sec_8k"] = {"status": status, "http_status": exc.code, "reason": str(exc)[:180],
+                                 "coverage": "SEC filings NOT checked (not equivalent to no new filings)"}
+        except (ValueError, ET.ParseError) as exc:
+            health["sec_8k"] = {"status": "unavailable", "reason": "invalid SEC response or ticker mapping", "error_type": type(exc).__name__}
+
+    # Six scheduled runs/day cover three topics twice, without GDELT request bursts.
+    slot = (2, 8, 10, 13, 16, 21).index(now.hour) if now.hour in (2, 8, 10, 13, 16, 21) else now.hour % 6
+    theme_index = slot % len(QUERY_TERMS)
+    articles: list[dict] = []
+    try:
+        response = fetch_with_retry(session, GDELT, source="gdelt_doc", params={
+            "query": QUERY_TERMS[theme_index], "mode": "artlist", "format": "json",
+            "timespan": "1week", "maxrecords": "50", "sort": "datedesc"})
+        data = response.json()
+        if not isinstance(data, dict) or not isinstance(data.get("articles", []), list):
+            raise ValueError("Invalid GDELT JSON article format")
+        articles = data.get("articles", [])
+        health["gdelt"] = {"status": "ok", "checked_theme": theme_index + 1,
+                            "themes_total": len(QUERY_TERMS), "article_count": len(articles),
+                            "coverage": "One rotating topic per scheduled run; not exhaustive"}
+    except SourceFetchError as exc:
+        status = "rate_limited" if exc.code == 429 else ("access_denied" if exc.code in (401, 403) else "unavailable")
+        health["gdelt"] = {"status": status, "http_status": exc.code,
+                           "checked_theme": theme_index + 1, "reason": str(exc)[:180],
+                           "next_action": "Retry on next scheduled run; do not immediately repeat 429"}
+    except (ValueError, TypeError) as exc:
+        health["gdelt"] = {"status": "unavailable", "checked_theme": theme_index + 1,
+                           "reason": "Invalid or incomplete GDELT response", "error_type": type(exc).__name__}
+
+    verified_leads = extract_news_matches(articles, filings)
+    secondary_leads = extract_unverified_news_leads(articles, now)
+    # Source-priority deduplication: SEC-correlated names replace secondary tips.
+    verified_tickers = {c["ticker"] for c in verified_leads}
+    secondary_leads = [c for c in secondary_leads if c["ticker"] not in verified_tickers]
+    health["new_lead_coverage"] = {"corroborated_sec_and_news": len(verified_leads),
+                                   "secondary_only_pending": len(secondary_leads),
+                                   "disclosure_validated": False}
+    return verified_leads + secondary_leads, health
 
 
 def rotate_price_queue(new_names: list[str], prior_names: list[str], now: datetime,
@@ -437,11 +572,15 @@ def run(*, root: Path = BASE, offline: bool = False) -> dict:
         health["quotes"] = {"status": "offline: no market data"}
     else:
         import requests
-        ua = os.environ.get("SEC_USER_AGENT", "").strip() or (
-            f"Championship-Research/5.0 (+https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'markwarda1984-beep/global-championship')}/issues)")
+        ua = os.environ.get("SEC_USER_AGENT", "").strip()
         session = requests.Session()
-        session.headers.update({"User-Agent": ua, "Accept": "application/json, application/atom+xml, */*"})
-        external, remote_health = discover_external(session, now)
+        # Never invent a contact email. Unconfigured SEC discovery is explicitly skipped.
+        if valid_sec_contact(ua):
+            session.headers.update({"User-Agent": ua})
+        else:
+            session.headers.update({"User-Agent": "Championship-Discovery/5.1 research-only"})
+        session.headers.update({"Accept": "application/json, application/atom+xml, */*"})
+        external, remote_health = discover_external(session, now, sec_configured=valid_sec_contact(ua))
         health.update(remote_health)
         # New leads are checked first; existing research names rotate fairly as list grows.
         new_names = [c["ticker"] for c in seeds + external if c["ticker"] not in original]
