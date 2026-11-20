@@ -1,17 +1,13 @@
 {
-  "schema_version": "5.0-discovery-radar-1",
-  "published_at_utc": "2026-11-20T20:44:47.845721+00:00",
+  "schema_version": "5.1-discovery-radar-1",
+  "published_at_utc": "2026-11-20T20:55:13.275103+00:00",
+  "source_coverage": "PARTIAL_OR_UNAVAILABLE",
   "total_discovered_ever": 4,
   "monitor_count": 0,
   "pending_count": 4,
   "archived_count": 0,
   "newly_monitored": [],
-  "new_pending": [
-    "DUG.AX",
-    "PENG",
-    "EOS.AX",
-    "BTDR"
-  ],
+  "new_pending": [],
   "newly_archived": [],
   "revived": [],
   "source_health": {
@@ -20,18 +16,21 @@
       "count": 4
     },
     "sec_8k": {
-      "status": "unavailable",
-      "error": "Fetch failed for www.sec.gov: HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/files/company_tickers_exchange.json"
+      "status": "configuration_required",
+      "reason": "SEC_USER_AGENT must contain a genuine contact email in GitHub Actions secrets",
+      "coverage": "SEC filings NOT checked (not equivalent to no new filings)"
     },
-    "gdelt_theme_1": {
-      "status": "ok"
+    "gdelt": {
+      "status": "rate_limited",
+      "http_status": 429,
+      "checked_theme": 3,
+      "reason": "gdelt_doc: rate_limited_429",
+      "next_action": "Retry on next scheduled run; do not immediately repeat 429"
     },
-    "gdelt_theme_2": {
-      "status": "unavailable",
-      "error": "Fetch failed for api.gdeltproject.org: HTTPError: 429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22counter+drone%22+OR+%22satellite%22+OR+%22small+modular+reactor%22%29+%28contract+OR+order+OR+approval%29&mode=artlist&format=json&timespan=1week&max"
-    },
-    "gdelt_theme_3": {
-      "status": "ok"
+    "new_lead_coverage": {
+      "corroborated_sec_and_news": 0,
+      "secondary_only_pending": 0,
+      "disclosure_validated": false
     },
     "quotes": {
       "status": "ok",
@@ -49,6 +48,7 @@
     "ASX general-market discovery not yet implemented; curated ASX seeds only",
     "Cited filing/announcement is not automatically checked for investment merit",
     "Liquidity, market cap, quote and valuation can be missing or delayed",
-    "No price level, readiness percent, trade or expected return is automatically validated"
+    "No price level, readiness percent, trade or expected return is automatically validated",
+    "News-only ticker mentions remain PENDING_EVIDENCE even if liquidity tests pass"
   ]
 }
