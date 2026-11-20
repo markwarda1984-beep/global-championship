@@ -1,11 +1,11 @@
 {
-  "schema_version": "5.1-source-evidence-queue-1",
-  "published_at_utc": "2026-11-20T21:53:40.330558+00:00",
-  "discovery_snapshot_utc": "2026-11-20T21:53:38.431760+00:00",
+  "schema_version": "5.4-substantive-evidence-1",
+  "published_at_utc": "2026-11-20T22:16:13.316471+00:00",
+  "discovery_snapshot_utc": "2026-11-20T22:16:11.159209+00:00",
   "original_200_unchanged": true,
-  "source_verified_reference_count": 3,
-  "not_yet_verified_count": 1,
-  "claim_verified_count": 0,
+  "source_verified_reference_count": 2,
+  "not_yet_verified_count": 2,
+  "claim_verified_count": 2,
   "records": [
     {
       "ticker": "DUG.AX",
@@ -18,7 +18,7 @@
       "discovery_source": "seed file (human-curated public source)",
       "source_host": "dug.com",
       "primary_source_verified": true,
-      "primary_claim_verified": false,
+      "primary_claim_verified": true,
       "verification": {
         "primary_source_verified": true,
         "primary_claim_verified": false,
@@ -36,7 +36,37 @@
         "MARKET_CAP_UNVERIFIED",
         "Read official filing and independently verify economics, dilution and valuation"
       ],
-      "decision": "SOURCE-TRIAGED RESEARCH ONLY — NOT BUY APPROVAL"
+      "decision": "SOURCE-CHECKED RESEARCH ONLY — ISSUER CLAIM IS NOT INDEPENDENTLY AUDITED",
+      "substantive_evidence": {
+        "ticker": "DUG.AX",
+        "source_url": "https://dug.com/wp-content/uploads/2026/11/291116_DUG_Trading_Update_Revenue_up_49_and_Contracted_Revenue_up_52_to_US103.4_million_ASX.pdf",
+        "document_read": true,
+        "issuer_in_document": true,
+        "claim_verified": true,
+        "issuer_claims_supported_in_source": [
+          {
+            "claim_id": "issuer_reported_revenue_growth_49pct",
+            "verification_level": "ISSUER_REPORTS_STATEMENT_NOT_INDEPENDENTLY_AUDITED",
+            "source_url": "https://dug.com/wp-content/uploads/2026/11/291116_DUG_Trading_Update_Revenue_up_49_and_Contracted_Revenue_up_52_to_US103.4_million_ASX.pdf",
+            "page": 1,
+            "evidence_excerpt": "ASX Release 16 November 2026 Trading Update: Revenue up 49% and Contracted Revenue up 52% to US$103.4 million DUG Technology Ltd (ASX: DUG) (“DUG” or the “Company”) provides a trading update for the four months to 31 October 2026 (“FY27 YTD”), ahead of its Annual General Meeting on 19 November 2026. FINANCIAL RESULTS FY27 YTD1 US$’m FY26 YTD1 US$’m Change % Total revenue 34.4 23.1 49% Multi-Client revenue2 7.6 0.1 n.m. Services revenue2 15.6 20.0 (22%) Software revenue 4.0 2.2 84% HPC revenue 7.2 0.9 715% EBITDA 8.8 6.1 45% EBITDA margin 25.7% 26.3% (0.6) pts Normalised EBITDA3 11.3 6.1 86% Normalised EBITDA margin 33.0% 26.3% 6.7 pts 1 FY27 YT",
+            "checked_at_utc": "2026-11-20T22:16:13.316471+00:00",
+            "sha256": "da79f9f674b5ef597c3f1bee5129ab362675c23ee80bb9ac81fe99d30c52aafd"
+          }
+        ],
+        "evidence_flags": [],
+        "checked_at_utc": "2026-11-20T22:16:13.316471+00:00",
+        "orders_enabled": false,
+        "http_status": 200,
+        "extraction_status": "PDF_TEXT_EXTRACTED",
+        "sha256": "da79f9f674b5ef597c3f1bee5129ab362675c23ee80bb9ac81fe99d30c52aafd",
+        "document_size_bytes": 330705,
+        "content_type": "application/pdf",
+        "extracted_pages": 4,
+        "declared_source_date": "2026-11-16",
+        "document_date_found": true,
+        "issuer_claims_found_in_text": true
+      }
     },
     {
       "ticker": "EOS.AX",
@@ -48,7 +78,7 @@
       "evidence_kind": "CURATED_OFFICIAL_DISCLOSURE_REFERENCE",
       "discovery_source": "seed file (human-curated public source)",
       "source_host": "announcements.asx.com.au",
-      "primary_source_verified": true,
+      "primary_source_verified": false,
       "primary_claim_verified": false,
       "verification": {
         "primary_source_verified": true,
@@ -58,16 +88,36 @@
         "content_type": "application/pdf",
         "content_verification": "Issuer URL returned 200; contents, announcement date and company claims NOT verified"
       },
-      "in_source_verified_research_queue": true,
+      "in_source_verified_research_queue": false,
       "last_daily_close": 6.64,
       "quote_date": "2026-11-20",
       "median_dollar_volume_20d": 21665134.61,
       "market_cap_unverified": null,
       "gaps": [
         "MARKET_CAP_UNVERIFIED",
-        "Read official filing and independently verify economics, dilution and valuation"
+        "Read official filing and independently verify economics, dilution and valuation",
+        "PRIMARY_CLAIM_NOT_SUBSTANTIATED_IN_DOCUMENT"
       ],
-      "decision": "SOURCE-TRIAGED RESEARCH ONLY — NOT BUY APPROVAL"
+      "decision": "SOURCE-CHECKED RESEARCH ONLY — ISSUER CLAIM IS NOT INDEPENDENTLY AUDITED",
+      "substantive_evidence": {
+        "ticker": "EOS.AX",
+        "source_url": "https://announcements.asx.com.au/asxpdf/20261109/pdf/076ckp4b5j6xrw.pdf",
+        "document_read": false,
+        "issuer_in_document": false,
+        "claim_verified": false,
+        "issuer_claims_supported_in_source": [],
+        "evidence_flags": [
+          "DOCUMENT_TEXT_UNAVAILABLE"
+        ],
+        "checked_at_utc": "2026-11-20T22:16:13.316471+00:00",
+        "orders_enabled": false,
+        "http_status": 200,
+        "extraction_status": "ENCRYPTED_PDF",
+        "sha256": "297504cbdb9b810dd19796bdc8ed006c41afe96be839b4637dbf47dfbe24812e",
+        "document_size_bytes": 409094,
+        "content_type": "application/pdf",
+        "extracted_pages": 0
+      }
     },
     {
       "ticker": "PENG",
@@ -80,7 +130,7 @@
       "discovery_source": "seed file (human-curated public source)",
       "source_host": "ir.penguinsolutions.com",
       "primary_source_verified": true,
-      "primary_claim_verified": false,
+      "primary_claim_verified": true,
       "verification": {
         "primary_source_verified": true,
         "primary_claim_verified": false,
@@ -92,13 +142,43 @@
       "in_source_verified_research_queue": true,
       "last_daily_close": 36.05,
       "quote_date": "2026-11-20",
-      "median_dollar_volume_20d": 114000487.02,
+      "median_dollar_volume_20d": 114059789.26,
       "market_cap_unverified": null,
       "gaps": [
         "MARKET_CAP_UNVERIFIED",
         "Read official filing and independently verify economics, dilution and valuation"
       ],
-      "decision": "SOURCE-TRIAGED RESEARCH ONLY — NOT BUY APPROVAL"
+      "decision": "SOURCE-CHECKED RESEARCH ONLY — ISSUER CLAIM IS NOT INDEPENDENTLY AUDITED",
+      "substantive_evidence": {
+        "ticker": "PENG",
+        "source_url": "https://ir.penguinsolutions.com/news/news-details/2026/Marvell-and-Penguin-Solutions-Collaborate-to-Address-Data-Center-AI-Memory-and-Accelerate-Inference-at-Scale/default.aspx",
+        "document_read": true,
+        "issuer_in_document": true,
+        "claim_verified": true,
+        "issuer_claims_supported_in_source": [
+          {
+            "claim_id": "issuer_announced_marvell_collaboration",
+            "verification_level": "ISSUER_REPORTS_STATEMENT_NOT_INDEPENDENTLY_AUDITED",
+            "source_url": "https://ir.penguinsolutions.com/news/news-details/2026/Marvell-and-Penguin-Solutions-Collaborate-to-Address-Data-Center-AI-Memory-and-Accelerate-Inference-at-Scale/default.aspx",
+            "page": 1,
+            "evidence_excerpt": "Penguin Solutions - Marvell and Penguin Solutions Collaborate to Address Data Center AI Memory and Accelerate Inference at Scale Skip to main content Overview IR Events Financials Quarterly Results Annual Reports SEC Filings Annual Stock Holder Meeting Stock Data Stock Quote & Historical Charts Analyst Coverage Governance Governance Documents Committee Composition Whistleblower Hotline Resources Investor Email Alerts Investor FAQs Investor Contacts News News Details View All News Marvell and Penguin Solutions Collaborate to Address Data Center AI Memory and Accelerate Inference at Scale November 16, 2026 Downl",
+            "checked_at_utc": "2026-11-20T22:16:13.316471+00:00",
+            "sha256": "c504ba39058af8d40e9ef8f23c3c5bf032594f8c35bcedbcd7e4e038382d9f6d"
+          }
+        ],
+        "evidence_flags": [],
+        "checked_at_utc": "2026-11-20T22:16:13.316471+00:00",
+        "orders_enabled": false,
+        "http_status": 200,
+        "extraction_status": "HTML_TEXT_EXTRACTED",
+        "sha256": "c504ba39058af8d40e9ef8f23c3c5bf032594f8c35bcedbcd7e4e038382d9f6d",
+        "document_size_bytes": 113481,
+        "content_type": "text/html",
+        "extracted_pages": 1,
+        "declared_source_date": "2026-11-16",
+        "document_date_found": true,
+        "issuer_claims_found_in_text": true
+      }
     },
     {
       "ticker": "BTDR",
@@ -126,11 +206,26 @@
       "gaps": [
         "OFFICIAL_EVIDENCE_NOT_VERIFIED",
         "MARKET_CAP_UNVERIFIED",
-        "Read official filing and independently verify economics, dilution and valuation"
+        "Read official filing and independently verify economics, dilution and valuation",
+        "PRIMARY_CLAIM_NOT_SUBSTANTIATED_IN_DOCUMENT"
       ],
-      "decision": "SOURCE-TRIAGED RESEARCH ONLY — NOT BUY APPROVAL"
+      "decision": "SOURCE-CHECKED RESEARCH ONLY — ISSUER CLAIM IS NOT INDEPENDENTLY AUDITED",
+      "substantive_evidence": {
+        "ticker": "BTDR",
+        "source_url": "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-reports-unaudited-third-quarter-2026-results-record",
+        "document_read": false,
+        "issuer_in_document": false,
+        "claim_verified": false,
+        "issuer_claims_supported_in_source": [],
+        "evidence_flags": [
+          "DOCUMENT_HTTP_403"
+        ],
+        "checked_at_utc": "2026-11-20T22:16:13.316471+00:00",
+        "orders_enabled": false,
+        "http_status": 403
+      }
     }
   ],
-  "warning": "Only official-source metadata/URL reachability verified. No PDF or disclosure claims, trading thesis or valuations have been independently validated.",
+  "warning": "Issuer/source text and configured claims checked. Matches show only what issuer reports; do not independently validate financial statements, economics, or investment merit.",
   "orders_enabled": false
 }
