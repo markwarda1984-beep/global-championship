@@ -1,4 +1,4 @@
-name: Championship 5.1 underfollowed discovery radar
+name: Championship 5.2 underfollowed discovery radar
 on:
   workflow_dispatch:
   push:
@@ -48,14 +48,14 @@ jobs:
           assert registry['orders_enabled'] is False
           assert registry['original_200_unchanged'] is True
           assert isinstance(registry['candidates'], dict)
-          assert latest.get('schema_version', '').startswith('5.1')
-          assert latest.get('source_coverage') in ('COMPLETE_FOR_CONFIGURED_SAMPLES', 'PARTIAL_OR_UNAVAILABLE')
+          assert latest.get('schema_version', '').startswith('5.2')
+          assert latest.get('source_coverage') in ('COMPLETE_FOR_CONFIGURED_SAMPLES', 'CORE_SOURCES_AVAILABLE_WITH_FALLBACK', 'PARTIAL_OR_UNAVAILABLE')
           assert all(c.get('buy_readiness') is None and not c.get('orders_enabled') for c in registry['candidates'].values())
-          for name in ('sec_8k', 'gdelt'):
+          for name in ('sec_8k', 'gdelt', 'google_news', 'bing_news'):
             source=latest.get('source_health', {}).get(name, {})
-            if source.get('status') != 'ok':
+            if source.get('status') not in ('ok', 'not_needed'):
               print(f"::warning title=Discovery source incomplete::{name}: {source.get('status', 'missing')} - see reports/discovery_latest.json")
-          print('Verified 5.1 discovery reports: no trades, fixed 200 untouched, source health explicit')
+          print('Verified 5.2 discovery reports: no trades, fixed 200 untouched, source health explicit')
           PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

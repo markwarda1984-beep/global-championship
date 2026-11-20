@@ -217,7 +217,9 @@ class DiscoveryReliability51Tests(unittest.TestCase):
         self.assertEqual(leads, [])
         self.assertEqual(health['sec_8k']['status'], 'configuration_required')
         self.assertEqual(health['gdelt']['status'], 'rate_limited')
-        self.assertEqual(sess.get.call_count, 1)
+        self.assertEqual(sess.get.call_count, 3)  # GDELT then Google and Bing RSS fallbacks
+        self.assertEqual(health['google_news']['status'], 'rate_limited')
+        self.assertEqual(health['bing_news']['status'], 'rate_limited')
         sleep.assert_not_called()
 
     def test_one_rotating_gdelt_topic_per_run(self):
@@ -279,4 +281,4 @@ class DiscoveryReliability51Tests(unittest.TestCase):
             'gdelt': {'status':'ok'}}, NOW)
         self.assertEqual(snap['source_coverage'], 'PARTIAL_OR_UNAVAILABLE')
         self.assertEqual(snap['monitor_count'], 0)
-        self.assertTrue(snap['schema_version'].startswith('5.1'))
+        self.assertTrue(snap['schema_version'].startswith('5.2'))

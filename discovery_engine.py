@@ -1,11 +1,11 @@
-"""Championship 5.1: resilient, incremental, read-only discovery radar.
+"""Championship 5.2: resilient, multi-source, read-only discovery radar.
 
 Purpose: separate, expandable stock monitoring outside the fixed 200 ticker scan.
 New ticker admission means research monitoring only, NEVER fair-value validation,
 a trade recommendation, a buy signal, or broker execution.
 
 Sources: SEC EDGAR current 8-K Atom feed + SEC listed ticker directory;
-GDELT news articles are unverified leads; they NEVER qualify for MONITOR without a primary disclosure.
+GDELT and Google News RSS headlines are secondary leads, never MONITOR-eligible without a primary disclosure.
 Curated seed disclosures explicitly provided in discovery_seeds.csv can bootstrap
 ASX and US research monitoring, if recent and liquid.
 
@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+from email.utils import parsedate_to_datetime
 import json
 import logging
 import os
@@ -32,6 +33,8 @@ BASE = Path(__file__).resolve().parent
 SEC_TICKERS = "https://www.sec.gov/files/company_tickers_exchange.json"
 SEC_FEED = "https://www.sec.gov/cgi-bin/browse-edgar"
 GDELT = "https://api.gdeltproject.org/api/v2/doc/doc"
+GOOGLE_NEWS_RSS = "https://news.google.com/rss/search"
+BING_NEWS_RSS = "https://www.bing.com/news/search"
 TRUSTED_SEED_HOSTS = {
     "dug.com", "www.dug.com", "announcements.asx.com.au",
     "investorhub.eos-aus.com", "eos-aus.com",
@@ -53,6 +56,11 @@ QUERY_TERMS = (
     '("AI infrastructure" OR "data center" OR "GPU cluster") (contract OR earnings OR agreement)',
     '("counter drone" OR "satellite" OR "small modular reactor") (contract OR order OR approval)',
     '("phase 3" OR photonics OR "rare earth") (results OR contract OR award)',
+)
+GOOGLE_NEWS_TERMS = (
+    '"AI infrastructure" contract OR "data center" deal OR "GPU cloud" agreement when:7d',
+    '"counter drone" contract OR satellite order OR "nuclear" approval when:7d',
+    '"phase 3" results OR photonics contract OR "rare earth" award when:7d',
 )
 MIN_PRICE = 0.50
 MIN_MEDIAN_DOLLAR_VOLUME = 150_000.0
@@ -207,7 +215,7 @@ def extract_news_matches(articles: list[dict], filings: dict[str, dict]) -> list
             title_normalized = normalize_company(title)
             if re.search(r"\b" + re.escape(name) + r"\b", title_normalized):
                 matches.append({**record, "ticker": ticker, "theme": "event-driven small-cap lead",
-                                "discovery_source": "GDELT news lead AND public SEC 8-K",
+                                "discovery_source": ("Bing News RSS lead AND public SEC 8-K" if article.get("source") == "bing_news_rss" else "Google News RSS lead AND public SEC 8-K" if article.get("source") == "google_news_rss" else "GDELT news lead AND public SEC 8-K"),
                                 "corroboration": "Independent news article matched named SEC filer; contents not verified",
                                 "news_title": title, "news_url": str(article.get("url", ""))[:500]})
                 break
@@ -232,7 +240,7 @@ def gdelt_seen_date(article: dict, now: datetime) -> str | None:
 def extract_unverified_news_leads(articles: list[dict], now: datetime) -> list[dict]:
     """Extract explicit exchange:ticker references, NEVER a primary filing claim.
 
-    A GDELT article can be mislabelled or speculative. This function only adds a
+    A news article can be mislabelled or speculative. This function only adds a
     PENDING_EVIDENCE lead, even when liquidity and market cap pass the gate.
     """
     results: dict[str, dict] = {}
@@ -269,13 +277,46 @@ def extract_unverified_news_leads(articles: list[dict], now: datetime) -> list[d
                 "theme": "unverified event-driven news ticker lead",
                 "evidence_date": date, "evidence_url": url,
                 "evidence_kind": "SECONDARY_NEWS_TICKER_LEAD_UNVERIFIED",
-                "discovery_source": "GDELT news (secondary, unverified)",
+                "discovery_source": ("Bing News RSS (secondary, unverified)" if article.get("source") == "bing_news_rss" else "Google News RSS (secondary, unverified)" if article.get("source") == "google_news_rss" else "GDELT news (secondary, unverified)"),
                 "corroboration": "Exchange ticker only appears in news headline; verify issuer identity and primary filing",
                 "news_title": title,
             }
             if len(results) >= MAX_NEWS_ONLY_PER_RUN:
                 return list(results.values())
     return list(results.values())
+
+
+def parse_google_news_rss(xml_text: str, now: datetime, limit: int = 60,
+                          source: str = "google_news_rss") -> list[dict]:
+    """Parse only dated, HTTPS RSS news *links*, never claim they are primary filings.
+
+    Google News RSS is an uncontracted public feed; results may be stale or
+    incomplete. Its links can be opaque Google redirects rather than publisher URLs.
+    """
+    root = ET.fromstring(xml_text)
+    if root.tag != "rss":
+        raise ValueError("Not a Google News RSS document")
+    articles: list[dict] = []
+    seen: set[str] = set()
+    for item in root.findall("./channel/item"):
+        title = " ".join((item.findtext("title") or "").split())[:350]
+        url = (item.findtext("link") or "").strip()[:550]
+        pub_date = (item.findtext("pubDate") or "").strip()
+        try:
+            date = parsedate_to_datetime(pub_date).astimezone(timezone.utc)
+            parsed_url = urlparse(url)
+        except (TypeError, ValueError, IndexError, AttributeError):
+            continue
+        if (not title or not url or url in seen or parsed_url.scheme != "https"
+                or not parsed_url.hostname or parsed_url.username or parsed_url.password
+                or not is_recent(date.isoformat(), now, 10)):
+            continue
+        seen.add(url)
+        articles.append({"title": title, "url": url,
+                         "seendate": date.isoformat(), "source": source})
+        if len(articles) >= limit:
+            break
+    return articles
 
 
 def valid_sec_contact(value: str) -> bool:
@@ -375,7 +416,7 @@ def evaluate(candidates: list[dict], quotes: dict, previous: dict, original: set
             prior.pop("archive_reason", None)
             events["revived"].append(ticker)
     # Preserve old entries even if above cap; new discovery admission must not evict history.
-    return {"schema_version": "5.1-discovery-radar-1", "updated_at_utc": now.isoformat(),
+    return {"schema_version": "5.2-discovery-radar-1", "updated_at_utc": now.isoformat(),
             "original_200_unchanged": True, "candidates": dict(sorted(result.items())),
             "events": events, "orders_enabled": False}
 
@@ -385,9 +426,13 @@ def make_snapshot(registry: dict, health: dict, now: datetime) -> dict:
     counts = {s: sum(c.get("status") == s for c in candidates.values()) for s in
               ("MONITOR", "PENDING_EVIDENCE", "ARCHIVED_MONITORING", "MANUAL_EXCLUDE")}
     active = [x for x in candidates.values() if x.get("status") == "MONITOR"]
-    remote_checks = [health.get("sec_8k", {}).get("status"), health.get("gdelt", {}).get("status")]
-    source_coverage = "COMPLETE_FOR_CONFIGURED_SAMPLES" if all(x == "ok" for x in remote_checks) else "PARTIAL_OR_UNAVAILABLE"
-    return {"schema_version": "5.1-discovery-radar-1", "published_at_utc": now.isoformat(),
+    sec_ok = health.get("sec_8k", {}).get("status") == "ok"
+    gdelt_ok = health.get("gdelt", {}).get("status") == "ok"
+    fallback_ok = any(health.get(name, {}).get("status") == "ok" for name in ("google_news", "bing_news"))
+    source_coverage = ("COMPLETE_FOR_CONFIGURED_SAMPLES" if sec_ok and gdelt_ok else
+                       "CORE_SOURCES_AVAILABLE_WITH_FALLBACK" if sec_ok and fallback_ok else
+                       "PARTIAL_OR_UNAVAILABLE")
+    return {"schema_version": "5.2-discovery-radar-1", "published_at_utc": now.isoformat(),
             "source_coverage": source_coverage,
             "total_discovered_ever": len(candidates), "monitor_count": counts["MONITOR"],
             "pending_count": counts["PENDING_EVIDENCE"], "archived_count": counts["ARCHIVED_MONITORING"],
@@ -397,7 +442,7 @@ def make_snapshot(registry: dict, health: dict, now: datetime) -> dict:
             "revived": registry["events"]["revived"], "source_health": health,
             "active_watchlist": sorted(active, key=lambda x: x["ticker"]),
             "research_only": True, "orders_enabled": False,
-            "limitations": ["US SEC 8-K latest feed is not exhaustive; GDELT news coverage is incomplete",
+            "limitations": ["US SEC 8-K feed is not exhaustive; GDELT, Google News RSS and Bing News RSS are sampling sources with no guaranteed availability",
                             "ASX general-market discovery not yet implemented; curated ASX seeds only",
                             "Cited filing/announcement is not automatically checked for investment merit",
                             "Liquidity, market cap, quote and valuation can be missing or delayed",
@@ -406,9 +451,11 @@ def make_snapshot(registry: dict, health: dict, now: datetime) -> dict:
 
 
 class SourceFetchError(RuntimeError):
-    def __init__(self, source: str, code: int | None, message: str):
+    def __init__(self, source: str, code: int | None, message: str,
+                 retry_after_seconds: int | None = None):
         super().__init__(f"{source}: {message}")
         self.code = code
+        self.retry_after_seconds = retry_after_seconds
 
 
 def fetch_with_retry(session, url: str, *, params: dict | None = None, source: str = "source") -> Any:
@@ -421,7 +468,14 @@ def fetch_with_retry(session, url: str, *, params: dict | None = None, source: s
             code = int(getattr(response, "status_code", 200))
             if code in (401, 403, 429):
                 detail = "access_denied_403" if code == 403 else ("rate_limited_429" if code == 429 else "unauthorized_401")
-                raise SourceFetchError(source, code, detail)
+                retry_hint = None
+                if code == 429:
+                    retry_raw = getattr(response, "headers", {}).get("Retry-After", "")
+                    try:
+                        retry_hint = max(0, min(int(retry_raw), 7 * 24 * 3600))
+                    except (TypeError, ValueError, OverflowError):
+                        pass
+                raise SourceFetchError(source, code, detail, retry_hint)
             response.raise_for_status()
             return response
         except SourceFetchError:
@@ -440,8 +494,13 @@ def fetch_with_retry(session, url: str, *, params: dict | None = None, source: s
     raise SourceFetchError(source, None, f"upstream_unavailable_{type(last).__name__}")
 
 
-def discover_external(session, now: datetime, *, sec_configured: bool = True) -> tuple[list[dict], dict]:
-    """One GDELT theme per run; SEC failure cannot conceal news-only candidates."""
+def discover_external(session, now: datetime, *, sec_configured: bool = True,
+                      source_state: dict | None = None) -> tuple[list[dict], dict]:
+    """SEC corroboration + rate-limited GDELT with independent RSS fallback.
+
+    A 429 opens a *persistent* cooldown, carried through the tracked registry.
+    No attempt is made to sidestep rate limits or rotate request identity/IP.
+    """
     health: dict[str, Any] = {}
     filings: dict[str, dict] = {}
     if not sec_configured:
@@ -464,33 +523,99 @@ def discover_external(session, now: datetime, *, sec_configured: bool = True) ->
         except (ValueError, ET.ParseError) as exc:
             health["sec_8k"] = {"status": "unavailable", "reason": "invalid SEC response or ticker mapping", "error_type": type(exc).__name__}
 
-    # Six scheduled runs/day cover three topics twice, without GDELT request bursts.
+    # Six scheduled runs/day cover three topics twice, without request bursts.
     slot = (2, 8, 10, 13, 16, 21).index(now.hour) if now.hour in (2, 8, 10, 13, 16, 21) else now.hour % 6
     theme_index = slot % len(QUERY_TERMS)
     articles: list[dict] = []
+    last = source_state if isinstance(source_state, dict) else {}
+    retry_at = iso_date(last.get("gdelt_retry_at_utc", ""))
     try:
-        response = fetch_with_retry(session, GDELT, source="gdelt_doc", params={
-            "query": QUERY_TERMS[theme_index], "mode": "artlist", "format": "json",
-            "timespan": "1week", "maxrecords": "50", "sort": "datedesc"})
-        data = response.json()
-        if not isinstance(data, dict) or not isinstance(data.get("articles", []), list):
-            raise ValueError("Invalid GDELT JSON article format")
-        articles = data.get("articles", [])
-        health["gdelt"] = {"status": "ok", "checked_theme": theme_index + 1,
-                            "themes_total": len(QUERY_TERMS), "article_count": len(articles),
-                            "coverage": "One rotating topic per scheduled run; not exhaustive"}
-    except SourceFetchError as exc:
-        status = "rate_limited" if exc.code == 429 else ("access_denied" if exc.code in (401, 403) else "unavailable")
-        health["gdelt"] = {"status": status, "http_status": exc.code,
-                           "checked_theme": theme_index + 1, "reason": str(exc)[:180],
-                           "next_action": "Retry on next scheduled run; do not immediately repeat 429"}
-    except (ValueError, TypeError) as exc:
-        health["gdelt"] = {"status": "unavailable", "checked_theme": theme_index + 1,
-                           "reason": "Invalid or incomplete GDELT response", "error_type": type(exc).__name__}
+        streak = max(0, min(int(last.get("gdelt_consecutive_429", 0)), 8))
+    except (ValueError, TypeError):
+        streak = 0
+
+    if retry_at is not None and now < retry_at:
+        health["gdelt"] = {"status": "cooldown", "checked_theme": theme_index + 1,
+                           "next_attempt_at_utc": retry_at.isoformat(),
+                           "reason": "Prior 429: respect provider limit across scheduled runs"}
+    else:
+        try:
+            response = fetch_with_retry(session, GDELT, source="gdelt_doc", params={
+                "query": QUERY_TERMS[theme_index], "mode": "artlist", "format": "json",
+                "timespan": "1week", "maxrecords": "50", "sort": "datedesc"})
+            data = response.json()
+            if not isinstance(data, dict) or not isinstance(data.get("articles", []), list):
+                raise ValueError("Invalid GDELT JSON article format")
+            # Filter unsafe/undated articles before either SEC match or ticker mention.
+            articles = [a for a in data.get("articles", []) if
+                        isinstance(a, dict) and gdelt_seen_date(a, now)
+                        and str(a.get("url", "")).startswith("https://")]
+            health["gdelt"] = {"status": "ok", "checked_theme": theme_index + 1,
+                                "themes_total": len(QUERY_TERMS), "article_count": len(articles),
+                                "coverage": "One rotating topic per run; not exhaustive"}
+            streak, retry_at = 0, None
+        except SourceFetchError as exc:
+            status = "rate_limited" if exc.code == 429 else ("access_denied" if exc.code in (401, 403) else "unavailable")
+            # Never hammer a cloud-shared IP: exponential cross-run cooldown.
+            if exc.code in (401, 403, 429):
+                delay = min(72 * 3600, (12 * 3600) * 2 ** min(streak, 3))
+                if exc.retry_after_seconds is not None:
+                    delay = max(delay, exc.retry_after_seconds)
+                retry_at = now + timedelta(seconds=delay)
+                streak = min(streak + 1, 8)
+            health["gdelt"] = {"status": status, "http_status": exc.code,
+                               "checked_theme": theme_index + 1, "reason": str(exc)[:180],
+                               "next_attempt_at_utc": retry_at.isoformat() if retry_at else None,
+                               "next_action": "RSS fallback; retry only after persistent cooldown"}
+        except (ValueError, TypeError) as exc:
+            health["gdelt"] = {"status": "unavailable", "checked_theme": theme_index + 1,
+                               "reason": "Invalid or incomplete GDELT response", "error_type": type(exc).__name__}
+    health["gdelt_control"] = {"gdelt_retry_at_utc": retry_at.isoformat() if retry_at else None,
+                               "gdelt_consecutive_429": streak}
+
+    # Use a genuinely distinct provider. This is not a GDELT proxy or rate-limit bypass.
+    # Google News RSS is a public, unguaranteed feed; failure is also reported.
+    if health["gdelt"]["status"] != "ok":
+        try:
+            resp = fetch_with_retry(session, GOOGLE_NEWS_RSS, source="google_news_rss",
+                                    params={"q": GOOGLE_NEWS_TERMS[theme_index],
+                                            "hl": "en-AU", "gl": "AU", "ceid": "AU:en"})
+            articles = parse_google_news_rss(resp.text, now)
+            health["google_news"] = {"status": "ok", "checked_theme": theme_index + 1,
+                                     "article_count": len(articles),
+                                     "coverage": "RSS headline sample only; source articles not independently verified"}
+        except SourceFetchError as exc:
+            status = "rate_limited" if exc.code == 429 else ("access_denied" if exc.code in (401, 403) else "unavailable")
+            health["google_news"] = {"status": status, "http_status": exc.code,
+                                     "reason": str(exc)[:180], "checked_theme": theme_index + 1}
+        except (ValueError, ET.ParseError, TypeError) as exc:
+            health["google_news"] = {"status": "unavailable", "reason": "Invalid RSS format",
+                                     "error_type": type(exc).__name__, "checked_theme": theme_index + 1}
+    else:
+        health["google_news"] = {"status": "not_needed", "reason": "GDELT returned a valid response"}
+
+    # Separate tertiary source if Google News RSS is blocked or has no recent hits.
+    if health["gdelt"]["status"] != "ok" and not articles:
+        try:
+            response = fetch_with_retry(session, BING_NEWS_RSS, source="bing_news_rss",
+                                        params={"q": GOOGLE_NEWS_TERMS[theme_index].replace(" when:7d", ""),
+                                                "format": "rss"})
+            articles = parse_google_news_rss(response.text, now, source="bing_news_rss")
+            health["bing_news"] = {"status": "ok", "checked_theme": theme_index + 1,
+                                   "article_count": len(articles),
+                                   "coverage": "Bing RSS headline sample only; links are not primary filings"}
+        except SourceFetchError as exc:
+            status = "rate_limited" if exc.code == 429 else ("access_denied" if exc.code in (401, 403) else "unavailable")
+            health["bing_news"] = {"status": status, "http_status": exc.code,
+                                   "reason": str(exc)[:180], "checked_theme": theme_index + 1}
+        except (ValueError, ET.ParseError, TypeError) as exc:
+            health["bing_news"] = {"status": "unavailable", "reason": "Invalid RSS format",
+                                   "error_type": type(exc).__name__, "checked_theme": theme_index + 1}
+    else:
+        health["bing_news"] = {"status": "not_needed", "reason": "GDELT/Google news source was usable"}
 
     verified_leads = extract_news_matches(articles, filings)
     secondary_leads = extract_unverified_news_leads(articles, now)
-    # Source-priority deduplication: SEC-correlated names replace secondary tips.
     verified_tickers = {c["ticker"] for c in verified_leads}
     secondary_leads = [c for c in secondary_leads if c["ticker"] not in verified_tickers]
     health["new_lead_coverage"] = {"corroborated_sec_and_news": len(verified_leads),
@@ -578,9 +703,10 @@ def run(*, root: Path = BASE, offline: bool = False) -> dict:
         if valid_sec_contact(ua):
             session.headers.update({"User-Agent": ua})
         else:
-            session.headers.update({"User-Agent": "Championship-Discovery/5.1 research-only"})
+            session.headers.update({"User-Agent": "Championship-Discovery/5.2 research-only"})
         session.headers.update({"Accept": "application/json, application/atom+xml, */*"})
-        external, remote_health = discover_external(session, now, sec_configured=valid_sec_contact(ua))
+        external, remote_health = discover_external(session, now,
+            sec_configured=valid_sec_contact(ua), source_state=previous.get("source_state"))
         health.update(remote_health)
         # New leads are checked first; existing research names rotate fairly as list grows.
         new_names = [c["ticker"] for c in seeds + external if c["ticker"] not in original]
@@ -601,6 +727,11 @@ def run(*, root: Path = BASE, offline: bool = False) -> dict:
             seen.add(s)
             candidates.append(c)
     registry = evaluate(candidates, quotes, previous, original, now)
+    # Keep GDELT backoff across independent Actions runs via committed watchlist JSON.
+    if offline:
+        registry["source_state"] = previous.get("source_state", {})
+    else:
+        registry["source_state"] = health.get("gdelt_control", {})
     snapshot = make_snapshot(registry, health, now)
     write_json(registry_path, {k: v for k, v in registry.items() if k != "events"})
     write_json(report_path, snapshot)
