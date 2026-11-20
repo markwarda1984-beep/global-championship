@@ -7,6 +7,10 @@ on:
       - 'scan.py'
       - 'opportunity_engine.py'
       - 'report_bridge.py'
+      - 'intelligence_layer_51.py'
+      - 'settings/intelligence_51.json'
+      - 'README_INTELLIGENCE_51.md'
+      - 'decisions/manual_decisions.json'
       - 'watchlist.csv'
       - 'requirements.txt'
       - 'tests/**'
@@ -38,13 +42,18 @@ jobs:
         run: python scan.py
       - name: Run research triage with explicit non-trading guards
         run: python opportunity_engine.py
+      - name: Snapshot previous report for scan-to-scan changes
+        run: python intelligence_layer_51.py --mode snapshot
       - name: Build 200-stock report for ChatGPT
         run: python report_bridge.py
+      - name: Generate research Top 10, Australian tax-offset sensitivities, change feed and journal
+        run: python intelligence_layer_51.py --mode scan
       - name: Publish machine-readable report to repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/latest.json
+          git add reports/latest.json reports/changes_latest.json reports/valuation_top10_latest.json reports/offset_comparison_latest.json reports/decision_journal.json reports/intelligence_latest.json
+          if [ -f reports/fx_aud_latest.json ]; then git add reports/fx_aud_latest.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh Championship 200-stock report [skip ci]"
             # Different scheduled workflows may update main within milliseconds.
