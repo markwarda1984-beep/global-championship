@@ -1,0 +1,72 @@
+{
+  "patch_id": "Championship 6.0 legacy-entry retirement hotfix",
+  "purpose": "Remove unverified 4.0 provisional entry calculations including previous NVDA 33.3938 and route active reports exclusively through 6.0 primary-evidence qualified inputs",
+  "tested_unit_tests": 175,
+  "patched_files": {
+    "report_bridge.py": {
+      "sha256": "238a9f59e181300503c8e0bbf952b80e383bd01b4045bd68628e65bf774bc267",
+      "bytes": 8351
+    },
+    "valuation_engine.py": {
+      "sha256": "af1fbd88930cad1097bd57c0dd41d15075920e3695ee496414ac2e8d3555df31",
+      "bytes": 22348
+    },
+    "opportunity_engine.py": {
+      "sha256": "614314e50d5e660154b7ef9df87fb6c3bb78ed4e2d0cc1a86b519c3826f97e50",
+      "bytes": 9813
+    },
+    "intelligence_layer_51.py": {
+      "sha256": "5a6885f803c00f84faae0918a404b87529e0bcb4d6152eb32bae2d209799e8b3",
+      "bytes": 39805
+    },
+    "championship_60.py": {
+      "sha256": "b50045cad6a3d82fd92fc679a8175bfe43cac739411e2a312463d972eb41be4b",
+      "bytes": 43464
+    },
+    ".github/workflows/scan.yml": {
+      "sha256": "f1e04bd72dbf4c7b2b6f0a749970abf1538688d57aad7bffb2618e3a0558bf1a",
+      "bytes": 6862
+    },
+    ".github/workflows/valuation.yml": {
+      "sha256": "b4d417c6174ecebceb1ba31aa63431e8d1359a359812e945aea8ea4cf4cb9cc0",
+      "bytes": 5185
+    },
+    "tests/test_60_entry_retirement.py": {
+      "sha256": "1d10b52c665dc4be0f89dae15c6ad77461d78c982004be70a7cbe13017e29ccc",
+      "bytes": 9998
+    },
+    "tests/test_report_bridge.py": {
+      "sha256": "f51366a73ea506dd23c5f0d8e2cc885e4d56ac037fff5ba38374ee336784a821",
+      "bytes": 1529
+    },
+    "tests/test_valuation_engine.py": {
+      "sha256": "74fd5721b52528d2c908d60842892787415e6336433f063e3a23116d49b36f1a",
+      "bytes": 8988
+    },
+    "README_CHAMPIONSHIP_60_ENTRY_RETIREMENT.md": {
+      "sha256": "113c891969b42a33c06f13141b74593c08240e282e9dac24733277d1d52d2e04",
+      "bytes": 2381
+    },
+    "INSTALL_RETIRE_LEGACY_60.txt": {
+      "sha256": "b945e5e83ecc2a4a46afab6d6e579c49fd48141c0bf95ddea7842181880e1594",
+      "bytes": 1123
+    }
+  },
+  "protected_files_unchanged": [
+    "watchlist.csv",
+    "scan.py",
+    "discovery_engine.py",
+    "evidence_upgrade_54.py",
+    ".github/workflows/discovery.yml",
+    "settings/championship_60.json",
+    "settings/intelligence_51.json",
+    "decisions/manual_decisions.json"
+  ],
+  "expected_daily_schedules": [
+    "20 2,8,10,13,16,21 * * *",
+    "35 2,8,10,13,16,21 * * *"
+  ],
+  "expected_weekly_schedule": "10 3 * * 0",
+  "permissions": "GitHub connector cannot write; user GitSync upload required",
+  "trades_enabled": false
+}

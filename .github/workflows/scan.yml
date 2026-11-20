@@ -48,12 +48,12 @@ jobs:
         run: python opportunity_engine.py
       - name: Snapshot previous report for scan-to-scan changes
         run: python intelligence_layer_51.py --mode snapshot
-      - name: Build 200-stock report for ChatGPT
-        run: python report_bridge.py
-      - name: Generate research Top 10, Australian tax-offset sensitivities, change feed and journal
-        run: python intelligence_layer_51.py --mode scan
       - name: Championship 6.0 evidence-gated 200-plus-discovery dated-price report
         run: python championship_60.py --mode scan
+      - name: Build 200-stock report for ChatGPT (6.0 entries only)
+        run: python report_bridge.py
+      - name: Generate evidence-only Top 10, AUD offset sensitivities, change feed and journal
+        run: python intelligence_layer_51.py --mode scan
       - name: Verify all 200 stocks, new leads, null missing targets, and zero orders
         run: |
           python - <<'PY'
@@ -73,6 +73,18 @@ jobs:
             else:
               assert row['primary_source_evidence']['source_hash_sha256']
               assert row['selected_margin_of_safety_pct'] in (10,15,20)
+          legacy=json.loads(Path('reports/latest.json').read_text())
+          assert legacy['schema_version'].startswith('6.0')
+          assert all(x['provisional_entry'] is None and x['pct_above_entry'] is None for x in legacy['stocks'])
+          assert all(x['selected_entry_60'] is None for x in legacy['stocks'] if x['validation_status_60']=='NOT VALIDATED')
+          nvda=next(x for x in legacy['stocks'] if x['ticker']=='NVDA')
+          assert nvda['provisional_entry'] is None
+          t=json.loads(Path('reports/valuation_top10_latest.json').read_text())
+          assert t['schema_version'].startswith('6.0')
+          assert all(x['model_watch_entry'] is None for x in t['ranked_top_10'])
+          comparison=json.loads(Path('reports/offset_comparison_latest.json').read_text())
+          assert len(comparison['ranked_research_scenarios'])==len(t['ranked_top_10'])
+          print('Retired US$33.39 NVDA provisional entry; all active reports use 6.0 evidence only')
           print('6.0 research-only report validated')
           PY
       - name: Verify safe evidence-gated ranking and offset scenarios

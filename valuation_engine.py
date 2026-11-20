@@ -279,21 +279,19 @@ def evaluate(meta: dict, price_row: dict, feed: dict | None, now: datetime) -> d
                    caveats="Model range failed validation")
         return out
 
-    # These levels are provisional model hypotheses, never validated purchase prices.
-    haircut = .40 if vol is not None and vol >= 80 else .30
-    entry = base * (1 - haircut)
-    deep = min(entry * .75, bear * .90)
+    # Championship 6.0 supersedes the former 30%/40% heuristic entry formula.
+    # Keep the unofficial scenarios for historical research diagnostics only.
+    # Unverified vendor data must NEVER yield an actionable entry or target.
     out.update(
         model_status="INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
         model_quality="LOW: UNOFFICIAL, LATEST SNAPSHOT, SENSITIVITY-BASED",
         bear_value=round(bear, 4), base_value=round(base, 4), bull_value=round(bull, 4),
-        model_watch_entry=round(entry, 4), model_deep_entry=round(deep, 4),
-        pct_to_watch_entry=percentage(price, entry), upside_to_base_pct=percentage(base, price),
+        model_watch_entry=None, model_deep_entry=None,
+        pct_to_watch_entry=None, upside_to_base_pct=percentage(base, price),
         model_assumptions=assumptions,
-        caveats="Yahoo-derived fields are unverified; scenarios use assumptions, not forecast certainty; "
-                "cross-check filings, multiple and adverse event risk before valuation validation",
-        review_flag=("POTENTIAL DISCOUNT — VERIFY FUNDAMENTALS" if price is not None and price <= entry
-                     else "RESEARCH ONLY — ABOVE INDICATIVE ENTRY"),
+        caveats="Entry calculation RETIRED in Championship 6.0; Yahoo-derived scenarios are UNVERIFIED; "
+                "source-primary issuer records and future dilution must be validated before any research entry",
+        review_flag="NOT VALIDATED — CHAMPIONSHIP 6.0 PRIMARY EVIDENCE REQUIRED",
     )
     return out
 

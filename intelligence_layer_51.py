@@ -305,6 +305,64 @@ def valuation_top10(scan: dict, valuation: dict | None, now: datetime) -> dict:
             "warning": "Ranked only among eligible unverified scenario models; not 10 best investments or predicted winners. No independent filing validation, time-horizon assumptions, or probability estimates."}
 
 
+def evidence_qualified_top10(scan: dict, primary60: dict | None, now: datetime) -> dict:
+    """Only current 6.0 issuer-primary scenarios may enter active Top 10 and tax simulations.
+
+    Retains existing report schema for downstream consumers, but never projects an
+    unofficial model watch-entry into another supposedly evidence-based report.
+    Missing or stale 6.0 report gives empty ranking, never a fallback buy level.
+    """
+    assert_safety(scan)
+    from report_bridge import checked_championship60, evidence_entry, numeric, VALID_STATUS
+    base = {str(x['ticker']).upper():x for x in scan['stocks']}
+    rows=checked_championship60(primary60, set(base))
+    eligible=[]
+    for ticker,stock in base.items():
+        val=rows.get(ticker)
+        px=numeric(stock.get('last_daily_close'))
+        matched=evidence_entry(val,ticker,px,stock.get('currency'),stock.get('quote_date'))
+        if not matched or date_age(matched.get('report_as_of_utc'),now) not in range(0,15):
+            continue
+        bear,mid,bull=(numeric(matched.get(k)) for k in ('bear','base','bull'))
+        if not (bear and mid and bull and bear<=mid<=bull):
+            continue
+        entry=numeric(matched.get('selected_entry'))
+        if not entry:
+            continue
+        risk_downside=max(5.0,(1-bear/px)*100)
+        base_upside=(mid/px-1)*100
+        eligible.append({'ticker':ticker,'company':stock.get('company'),
+            'currency':stock.get('currency'),'quote_date':stock.get('quote_date'),
+            'last_daily_close':px,'bear_value':bear,'base_value':mid,'bull_value':bull,
+            'model_watch_entry':None, # RETIRED: former Yahoo heuristic
+            'selected_6_0_entry':entry,
+            'margin_of_safety_entries_60':matched.get('margin_of_safety_entries'),
+            'pct_to_indicative_base':round(base_upside,2),
+            'pct_to_indicative_bear':round((bear/px-1)*100,2),
+            'pct_to_unverified_watch_entry':None,
+            'research_priority_score_not_probability':round(max(0.0,base_upside)/risk_downside,3),
+            'fundamental_as_of':None,
+            'valuation_snapshot_utc':primary60.get('published_at_utc'),
+            'model_type':matched.get('sector_method'),
+            'assumptions':matched.get('assumptions'),
+            'source':matched.get('primary_source_evidence',{}).get('url'),
+            'source_verification':'PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL',
+            'research_gaps':matched.get('risks',[]),
+            'verified_buy_signal':False,'buy_readiness_pct':None,
+            'decision':'6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES'})
+    eligible.sort(key=lambda x:(-x['research_priority_score_not_probability'],x['ticker']))
+    return {'schema_version':'6.0-evidence-only-valuation-top10-1',
+      'published_at_utc':now.isoformat(),
+      'source_valuation_snapshot_utc':(primary60 or {}).get('published_at_utc'),
+      'model_data_available_count':(primary60 or {}).get('validated_inputs_count',0),
+      'eligible_for_research_count':len(eligible),
+      'ranked_top_10':[{'rank':i+1,**row} for i,row in enumerate(eligible[:10])],
+      'exclusion_counts':{'not_validated_or_missing':200-len(eligible)},
+      'verified_buy_count':0,'orders_enabled':False,
+      'warning':'Only CURRENT Championship 6.0 issuer-primary validated scenarios. '
+                'All former provisional entries RETIRED, no fallback. No orders.'}
+
+
 def fx_aud_rate(path: Path, now: datetime, *, allow_network: bool = False) -> dict:
     """Fetch a bounded, unofficial AUD/USD daily close; never invent FX on failure."""
     saved = read(path, {})
@@ -519,7 +577,8 @@ def run(root: Path = BASE, mode: str = "scan", offline: bool = False, *,
         raise ValueError("Missing reports/latest.json")
     assert_safety(scan)
     valuation = read(reports / "valuation_latest.json", {})
-    top = valuation_top10(scan, valuation, now)
+    primary_60 = read(reports / ('valuation_60_weekly.json' if mode == 'valuation' else 'valuation_60_latest.json'), {})
+    top = evidence_qualified_top10(scan, primary_60, now)
     from evidence_upgrade_54 import asymmetry_report
     raw_evidence = read(reports / "primary_financials_latest.json", {})
     if not isinstance(raw_evidence,dict) or not raw_evidence:
@@ -545,7 +604,7 @@ def run(root: Path = BASE, mode: str = "scan", offline: bool = False, *,
         item['dilution_adjusted_scenarios']=check.get('dilution_adjusted_values') if check else None
         item['missing_primary_evidence_flags']=check.get('source_flags',[]) if check else ['PRIMARY_MODEL_NOT_CHECKED']
     top['evidence_qualified_top10_count']=asymmetry['evidence_qualified_count']
-    top['warning'] += ' Evidence-gated asymmetric ranking is separately reported; this existing Top 10 remains unverified.'
+    top['warning'] += ' Supplemental 5.4 asymmetry scenarios are separate and not purchase targets.'
     cfg = read(root / "settings" / "intelligence_51.json")
     if not isinstance(cfg, dict):
         raise ValueError("Missing intelligence assumptions")

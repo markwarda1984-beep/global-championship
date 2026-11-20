@@ -9,8 +9,8 @@ class ReportBridgeTests(unittest.TestCase):
                   for i in range(200)]
         report = build({'stocks': stocks, 'scan_utc': '2026-11-20T00:00:00Z'})
         self.assertEqual(report['universe_count'], 200)
-        self.assertEqual(len(report['closest_to_buy_top_10']), 10)
-        self.assertEqual(report['closest_to_buy_top_10'][0]['ticker'], 'T0')
+        self.assertEqual(len(report['closest_to_buy_top_10']), 0)
+        self.assertEqual(report['retired_legacy_provisional_entry_count'], 200)
         self.assertTrue(all(x['buy_readiness_pct'] is None for x in report['stocks']))
         self.assertFalse(report['orders_enabled'])
     def test_duplicate_rejected(self):
@@ -21,7 +21,7 @@ class ReportBridgeTests(unittest.TestCase):
                        buy_validation='UNRESEARCHED') for i in range(200)]
         val = {'stocks':[{'ticker':'T0','model_watch_entry':120,'model_status':'INDICATIVE MODEL','price_currency':'EUR'}]}
         r = build({'stocks':stocks}, val)
-        self.assertEqual(r['stocks'][0]['provisional_entry'],90)
-        self.assertIn('STATISTICAL',r['stocks'][0]['entry_basis'])
+        self.assertIsNone(r['stocks'][0]['provisional_entry'])
+        self.assertIn('RETIRED',r['stocks'][0]['entry_basis'])
 
 if __name__ == '__main__': unittest.main()

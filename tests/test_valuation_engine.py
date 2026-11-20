@@ -36,7 +36,8 @@ class ValuationResearchTests(unittest.TestCase):
         self.assertTrue(row["model_status"].startswith("INDICATIVE"))
         self.assertLess(row["bear_value"], row["base_value"])
         self.assertLess(row["base_value"], row["bull_value"])
-        self.assertLess(row["model_deep_entry"], row["model_watch_entry"])
+        self.assertIsNone(row["model_deep_entry"])
+        self.assertIsNone(row["model_watch_entry"])
         self.assertEqual(row["manual_validation"], "NEVER AUTO VALIDATED")
 
     def test_riskier_stocks_have_wider_model_discount(self):
@@ -44,8 +45,9 @@ class ValuationResearchTests(unittest.TestCase):
         high["volatility_20d_annual_pct"] = 100.0
         low = ve.evaluate(meta(), stock(), {"info": info()}, NOW)
         risky = ve.evaluate(meta(), high, {"info": info()}, NOW)
-        self.assertLess(risky["model_watch_entry"] / risky["base_value"],
-                        low["model_watch_entry"] / low["base_value"])
+        self.assertIsNone(risky["model_watch_entry"])
+        self.assertIsNone(low["model_watch_entry"])
+        self.assertIn("RETIRED",risky["caveats"])
 
     def test_negative_fcf_does_not_invent_value(self):
         row = ve.evaluate(meta(), stock(), {"info": info(freeCashflow=-1000)}, NOW)

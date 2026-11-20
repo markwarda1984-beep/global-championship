@@ -1,0 +1,18 @@
+CHAMPIONSHIP 6.0 -- RETIRE LEGACY NVDA ENTRY HOTFIX
+
+1. In Android Files, extract this ZIP into Documents/global-championship.
+2. Retain your existing .git folder, existing reports, watchlist.csv,
+   scanner, discovery, existing workflows and settings.
+3. Replace only the matching files listed in PATCH_MANIFEST_60_ENTRY_RETIREMENT.json.
+4. In GitSync, select three dots beside Sync Changes -> Upload Changes.
+   DO NOT choose Upload + Overwrite.
+5. The push triggers 200-stock scan, 5.2 discovery and weekly valuation.
+6. In GitHub Actions check that all three workflows finish successfully.
+7. Open reports/latest.json: find NVDA and confirm provisional_entry is null,
+   validation_status_60 is NOT VALIDATED unless valid primary evidence exists.
+8. Open reports/valuation_latest.json and confirm NVDA model_watch_entry is null.
+9. Check both Top 10 files and both offset files use only qualified 6.0 cases.
+
+Unverified old US$33.3938 was a provisional heuristic, not a verified buy price.
+No trades are permitted, placed or enabled. This ZIP does NOT contain the live
+reports or the unchanged original 200-stock list.

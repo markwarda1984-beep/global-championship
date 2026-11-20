@@ -77,13 +77,11 @@ def technical_priority(row: dict) -> tuple[float | None, str, list[str]]:
 def assess(row: dict) -> dict:
     score, label, notes = technical_priority(row)
     price = finite_number(row.get("price"))
-    validated = finite_number(row.get("validated_buy_price"))
-    fv = finite_number(row.get("fair_value_estimate"))
-    research_date = row.get("fair_value_date") or ""
-    method = row.get("valuation_method") or ""
-    buy_validation = str(row.get("buy_validation", "UNRESEARCHED"))
-    # Parsed CSV metadata does not verify financial source integrity.
-    evidence_complete = bool(validated and fv and research_date and method and buy_validation == "VALIDATED")
+    # Do not promote watchlist CSV declarations into verified fair value.
+    # Championship 6.0 primary filings are the only entry-price authority.
+    validated = None
+    fv = None
+    evidence_complete = False
     gaps = []
     if not evidence_complete:
         gaps.append("Source-check fair value and buy price")
@@ -108,11 +106,11 @@ def assess(row: dict) -> dict:
         "historical_watch_price": row.get("technical_watch_zone"),
         "historical_deep_price": row.get("technical_deep_zone"),
         "validated_buy_price": validated if evidence_complete else None,
-        "provisional_research_buy": row.get("manual_provisional_buy_price"),
+        "provisional_research_buy": None,
         "distance_above_historical_watch_pct": row.get("distance_to_watch_zone_pct"),
         "distance_above_validated_buy_pct": row.get("distance_to_validated_buy_pct") if evidence_complete else None,
         "fair_value_estimate": fv if evidence_complete else None,
-        "valuation_evidence_status": "DOCUMENTED (NOT EXTERNALLY VERIFIED)" if evidence_complete else "MISSING",
+        "valuation_evidence_status": "CHAMPIONSHIP 6.0 ONLY — LEGACY ENTRIES RETIRED",
         "data_status": row.get("data_status", ""),
         "research_decision": decision,
         "missing_research": "; ".join(gaps),

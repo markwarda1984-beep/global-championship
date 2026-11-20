@@ -47,10 +47,10 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python evidence_upgrade_54.py --mode financials
-      - name: Publish weekly evidence-ranked valuation and AUD offset sensitivities
-        run: python intelligence_layer_51.py --mode valuation
       - name: Championship 6.0 weekly full-cycle valuations from verified primary series
         run: python championship_60.py --mode weekly
+      - name: Publish weekly evidence-only Top 10 and AUD offset sensitivities
+        run: python intelligence_layer_51.py --mode valuation
       - name: Verify weekly 6.0 model validation flags
         run: |
           python - <<'PY'
@@ -60,6 +60,12 @@ jobs:
           assert d['original_watchlist_count']==200
           assert d['orders_enabled'] is False and d['validated_buy_signal_count']==0
           assert all(x['selected_entry'] is None for x in d['companies'] if x['validation_status']=='NOT VALIDATED')
+          t=json.loads(Path('reports/valuation_top10_weekly.json').read_text())
+          assert t['schema_version'].startswith('6.0')
+          assert all(x['model_watch_entry'] is None for x in t['ranked_top_10'])
+          v=json.loads(Path('reports/valuation_latest.json').read_text())
+          assert all(x.get('model_watch_entry') is None and x.get('model_deep_entry') is None for x in v['stocks'])
+          print('Weekly legacy watch entry calculation fully retired; 6.0 evidence gate governs all active entries')
           PY
       - name: Publish weekly valuation report to repository
         run: |
