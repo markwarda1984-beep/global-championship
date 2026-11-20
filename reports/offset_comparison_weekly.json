@@ -1,0 +1,155 @@
+{
+  "schema_version": "5.1-aftertax-offset-sensitivity-1",
+  "published_at_utc": "2026-11-20T21:54:01.309343+00:00",
+  "principal_aud": 1000.0,
+  "horizon_months": 13.0,
+  "annual_owner_occupied_mortgage_rate_assumption_pct": 5.8,
+  "offset_savings_aud_for_horizon": 62.83,
+  "offset_savings_tax_treatment": "Owner-occupied interest avoided (not taxable bank interest)",
+  "tax_method": "NO_DISCOUNT_FULL_GAIN_MARGINAL_TAX_STRESS_ONLY",
+  "assumed_fx_at_exit": "unchanged; FX returns not forecast",
+  "fx_quote": {
+    "status": "unavailable",
+    "reason": "No fresh verifiable FX observation supplied",
+    "previous_quote_date": null
+  },
+  "tax_scenarios": [
+    {
+      "id": "income_158k",
+      "description": "Illustrative $158k Australian taxable income: 37% resident marginal plus assumed 2% Medicare",
+      "marginal_plus_medicare_pct": 39.0
+    },
+    {
+      "id": "income_110k",
+      "description": "Illustrative $110k Australian taxable income: 30% resident marginal plus assumed 2% Medicare",
+      "marginal_plus_medicare_pct": 32.0
+    }
+  ],
+  "ranked_research_scenarios": [
+    {
+      "rank": 1,
+      "ticker": "SHEL",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 2,
+      "ticker": "BP",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 3,
+      "ticker": "CRM",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 4,
+      "ticker": "ADBE",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 5,
+      "ticker": "OXY",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 6,
+      "ticker": "NFLX",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 7,
+      "ticker": "HD",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 8,
+      "ticker": "INTU",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 9,
+      "ticker": "PANW",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 10,
+      "ticker": "LOW",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-20T21:53:45.792328+00:00",
+      "aud_per_currency": null,
+      "status": "BLOCKED_MISSING_FRESH_AUD_FX",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {},
+      "verified_buy_signal": false
+    }
+  ],
+  "tax_law_warning": "Post-1-July-2027 Australian CGT reform may replace the 50% discount with indexation and a minimum-tax regime; this simplified full-gain marginal tax is a cautious sensitivity, NOT a calculation of the actual liability. Requires accountant verification.",
+  "source_urls": [
+    "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+    "https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax",
+    "https://moneysmart.gov.au/home-loans/mortgage-offset-accounts"
+  ],
+  "warnings": [
+    "Model fair values are NOT 13-month predictions; bear/base/bull scenarios only",
+    "13-month horizon may cross July 2027 CGT reform; actual tax treatment NOT computed",
+    "No automatic 50% CGT discount is applied; this is a conservative sensitivity not personalised tax advice",
+    "Capital losses not immediately deductible against salary; dividends and realised FX movements excluded",
+    "Brokerage and FX cost figures are EDITABLE ILLUSTRATIVE assumptions, not quotes",
+    "Mortgage offset comparison requires loan balance in excess of offset and owner-occupied non-deductible interest"
+  ],
+  "orders_enabled": false
+}
