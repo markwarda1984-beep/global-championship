@@ -1,6 +1,6 @@
 {
   "schema_version": "5.1-discovery-radar-1",
-  "published_at_utc": "2026-11-20T20:55:13.275103+00:00",
+  "published_at_utc": "2026-11-20T21:02:41.636125+00:00",
   "source_coverage": "PARTIAL_OR_UNAVAILABLE",
   "total_discovered_ever": 4,
   "monitor_count": 0,
@@ -16,9 +16,9 @@
       "count": 4
     },
     "sec_8k": {
-      "status": "configuration_required",
-      "reason": "SEC_USER_AGENT must contain a genuine contact email in GitHub Actions secrets",
-      "coverage": "SEC filings NOT checked (not equivalent to no new filings)"
+      "status": "ok",
+      "latest_feed_matched_listed_tickers": 69,
+      "coverage": "at most latest 100 filings; not an exhaustive market screen"
     },
     "gdelt": {
       "status": "rate_limited",
