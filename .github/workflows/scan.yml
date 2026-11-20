@@ -1,4 +1,4 @@
-name: Championship price scan
+name: Championship intensive 200-stock scan
 on:
   workflow_dispatch:
   push:
@@ -18,9 +18,9 @@ concurrency:
   group: championship-price-scan
   cancel-in-progress: false
 jobs:
-  scan:
+  intensive_scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -30,15 +30,15 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
-      - name: Run local unit tests
+      - name: Run offline tests for all 200 stocks
         run: python -m unittest discover -s tests -v
-      - name: Run research-only market scan
+      - name: Run independent 200-stock research scan
         run: python scan.py
-      - name: Upload dashboard and machine-readable reports
+      - name: Upload all 200 rows, dashboard and JSON
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: championship-dashboard-${{ github.run_number }}
+          name: championship-200-dashboard-${{ github.run_number }}
           path: data/
           if-no-files-found: warn
-          retention-days: 7
+          retention-days: 14

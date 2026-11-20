@@ -1,54 +1,65 @@
-# Global Investment Championship — research-only cloud scanner
+# Global Investment Championship — 200-stock intensive scanner
 
-This 30-stock starter monitors prices from **Yahoo Finance historical daily bars** and separately monitors **Bitcoin BTC/AUD and BTC/USD** on Kraken's public ticker endpoint. It does **not** place trades, log into brokerage accounts, use secrets, or connect to a broker.
+**Monitoring only.** No broker access, no orders, no automatic purchases, no credentials.
 
-## What you'll get
+This **upgrades** your existing 30-stock scanner to an equally detailed **200-stock** global watchlist. All original 30 names are preserved, including the **BABA $75 USD PROVISIONAL** watch price; the other 170 include US technology/AI, energy/materials, healthcare, finance, industrials, consumer, Australian ASX and international ADRs. We deliberately do **not** treat the top 20–30 as the only names needing research.
 
-Every successful scan uploads a seven-day-retained GitHub Actions ZIP artifact containing:
+## Every stock, every run
 
-- `index.html` — phone-friendly research dashboard with recent daily-close sparklines
-- `latest.csv` — 30-stock comparison table, including local currency, research level, and data quality status
-- `latest.json` — machine-readable stock history, Bitcoin bid/ask/last, timestamps, and monitoring-only metadata
+For **each of the 200**, the dashboard and CSV show:
 
-`watchlist.csv` has 30 unique securities across Australia and international markets. **BABA $75 is a provisional, unvalidated research level, not a recommendation.** The remaining levels are intentionally blank. NVDA is currently tagged `NO BUY` for research purposes, not as a trading instruction. Prices are shown in each stock's quoted currency; there is no automatic FX conversion.
+| Field | Meaning |
+|---|---|
+| Last daily close and bar date | Last accessible daily price from Yahoo Finance. **Not live or executable.** |
+| Technical watch and deep zones | Automatically computed historical screening levels; **NOT verified purchase prices** |
+| Manually validated buy price | Populated **only when** a documented fair-value analysis, source date and rationale are supplied |
+| Manual provisional buy price | Existing research hypothesis (BABA), distinct from validated price |
+| Distance to watch / validated buy | % last close above or below the respective level |
+| Technical profile | 50-/200-day averages, 14-day RSI, 52-week low/high, % below high |
+| Movement / risk | 5/20/63-session returns, annualised 20d historical volatility, volume ratio vs last 20 sessions |
+| Data quality | Flagged unavailable, stale or incomplete daily-bar data |
+| Equal monitoring | All 200 rows use the same calculation and reporting rules |
 
-## Schedule (Sydney time, including DST)
+The HTML report is searchable and filterable on Android, and contains a **mini price-level graph and sparkline for every stock**. The machine-readable output is downloadable as `latest.csv` and `latest.json`.
 
-Runs daily at **02:20, 08:20, 10:20, 13:20, 16:20 and 21:20** using GitHub Actions' `timezone: Australia/Sydney` schedule option. The workflow supports **Run workflow** manually and performs one integration run when the source is pushed to `main`. GitHub may delay or drop scheduled jobs; at daylight-saving spring transition, a nonexistent 02:20 time advances to the next valid time.
+Bitcoin independently displays AUD/USD ticker prices from Kraken's public spot ticker endpoint.
 
-## To view a report
+## About "really good" buy prices
 
-1. Open your repository's **Actions → Championship price scan**.
-2. Select the latest successful workflow run, or use **Run workflow** to request a new run.
-3. Under **Artifacts**, download `championship-dashboard-...`.
-4. Extract the artifact and open `index.html`. `latest.csv` can be opened in a spreadsheet.
+A low historical price **does not establish genuine value**. The historical watch zone is the lower of (1) the 25th-percentile daily close from the past year or (2) the 200-session average, where available. A **deep historical zone** is 15% lower. Both are deliberately labelled *statistical research zones*, not a company valuation, prediction, good purchase price, or a buy recommendation.
 
-This is a *downloadable report*, not a hosted dashboard. Each workflow run creates a new separate artifact; it does not update a single live web page.
+A validated buy level must come from **company-specific** analysis of earnings, free cash flow, debt/capital structure, industry outlook, dilution, valuation multiples and scenarios. The editable `watchlist.csv` provides `fair_value`, `fair_value_date`, `valuation_method`, `risk_note`, `buy_price`, and `buy_validation` to record this analysis **for every company**. No empty cell is secretly filled with a fabricated valuation. The system rejects rows marked `VALIDATED` without supporting fair-value metadata.
 
-## Test locally (Python 3.11+)
+This version **automates detailed quantitative monitoring of all 200**, but does **not** automatically complete expert company-level fair-value research, independently verify news or earnings, or produce personal tax advice. For full verified valuation coverage, a separate source-checked fundamentals/news research pipeline is required. Do not confuse a green chart indicator with approval to trade.
 
-```bash
-python -m unittest discover -s tests -v
+## Automatic schedule
+
+GitHub Actions schedules all 200 at **02:20, 08:20, 10:20, 13:20, 16:20, 21:20 Australia/Sydney** daily, including daylight saving. Runs can be delayed or occasionally omitted by GitHub. Yahoo Finance is unofficial and can rate limit or return missing results. A batch size of 25 reduces requests versus one-by-one downloads, but does **not** guarantee 200/200 coverage. The output always states the count and missing data.
+
+## Get report on your phone
+
+1. Open [the repository Actions tab](https://github.com/markwarda1984-beep/global-championship/actions).
+2. Select the newest **Championship intensive 200-stock scan** successful run.
+3. Under **Artifacts**, download `championship-200-dashboard-*`.
+4. Extract and open `index.html`; `latest.csv` contains all 200 rows. Artifacts expire after 14 days.
+
+## Upgrade from Android using GitSync
+
+1. **Do not erase your existing `.git` directory** in `Documents/global-championship`.
+2. Extract the 200-stock upgrade ZIP somewhere outside the GitSync folder.
+3. Enable **Show hidden system files** in Samsung My Files so `.github` is visible.
+4. Copy the *contents* of the extracted upgrade (not the outer directory) into `Documents/global-championship`, choosing **Replace existing files** for `scan.py`, `watchlist.csv`, `README.md`, `requirements.txt`, `tests/` and `.github/workflows/scan.yml`. Do not copy a `.git` directory; this package contains none.
+5. In GitSync, select **three dots next to Sync Changes → Upload Changes**. **Do not use Upload + Overwrite**.
+6. Confirm the push on GitHub and open the **Actions** tab to verify the online run succeeds.
+
+## Local testing
+
+With Python 3.11+ and dependencies installed:
+
+```
 python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
 python scan.py
 ```
 
-The unit tests are **offline**, using injected fake data; a successful unit test does not establish that external market-data feeds or GitHub Actions have succeeded. The scanner flags unavailable external quotes instead of inserting simulated prices into reports.
-
-## Security and scope
-
-- No trading integrations, exchange keys, secrets, order APIs, or executable recommendations.
-- Planned A$1,000 testing capital is **not yet funded**; confirmed holdings are an empty list.
-- Stock quotes are last available **daily bars, not live**; Bitcoin public bid/ask/last prices are informational.
-- This starter monitors only the 30 named stocks, **not** every global security. It does not provide validated intrinsic values, buy readiness scores, taxes, forecasts, or performance attribution.
-- **Do not commit passwords, personal financial details or API keys.** Your GitHub repository was public when this package was prepared. You can make it private via repository Settings → General → Danger Zone → Change repository visibility.
-
-## Windows one-command deployment option
-
-If a connected app cannot write to GitHub: extract this ZIP on Windows with **Git for Windows** installed and your GitHub authentication configured. In PowerShell opened in the extracted folder, run:
-
-```powershell
-./publish-to-github.ps1
-```
-
-This script clones the repository, copies the scanner and workflow, commits and pushes to `main` **without force-pushing**. You may need to allow execution for this session (`Set-ExecutionPolicy -Scope Process RemoteSigned`) and enter your own GitHub credentials through Git Credential Manager. Check GitHub **Actions** for the first run after pushing.
+Offline unit tests simulate data and do **not** prove online quotes work. A live GitHub workflow run must be checked to confirm actual coverage. No brokerage integrations are present.
