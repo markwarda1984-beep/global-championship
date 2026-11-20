@@ -63,3 +63,20 @@ python scan.py
 ```
 
 Offline unit tests simulate data and do **not** prove online quotes work. A live GitHub workflow run must be checked to confirm actual coverage. No brokerage integrations are present.
+
+## Championship 3.0: research triage and evidence gates
+
+A **separate read-only research layer** runs after each 200-stock price scan:
+
+- `opportunity_engine.py` processes **all 200**, no exceptions.
+- `opportunity_triage_200.html` is a searchable technical-research priority list.
+- `opportunity_triage_200.csv` includes the latest available daily price, unvalidated historical zones, manual price research, missing fundamental/catalyst evidence, and data quality.
+- `research_summary.json` explicitly reports valuation coverage and `orders_generated: 0`.
+
+The heuristic priority score is **not** a probability of profit, investment-quality score, predicted return or authorisation to trade. It has not been independently backtested. It never fabricates valuation or earnings data. Source-confirmed business valuations and event-driven intelligence require separate data collection and independent source review; no claim of that automation is made here.
+
+**Cory-style methodology used as an inspiration, not a verified replication:** evaluate business cycles, normalised earnings, company-specific valuation, and disciplined sizing. Growth and speculative firms require different models; historical price discounts alone do not make a bargain.
+
+**Future execution policy:** This repository contains no broker keys, live execution, trading endpoints, order templates or unattended buy/sell tasks. Any future integration would require a supported regulated brokerage connection and an explicit, individually approved order in the live account; a research score cannot execute an order. Until then, paper-trade proposals are for discussion only.
+
+Important caveats: 200 stocks share the same *technical* monitoring, but they do not yet have 200 independently source-checked fundamental valuations, earnings-event calendars or news monitoring. No out-of-sample performance track record exists for the ranking method. Rates, FX, slippage, tax, sector concentration, bankruptcy risk and survivorship bias can substantially alter results.
