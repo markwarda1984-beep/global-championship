@@ -1,0 +1,70 @@
+name: Championship 5.0 underfollowed discovery radar
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'discovery_engine.py'
+      - 'discovery_seeds.csv'
+      - 'tests/test_discovery_engine.py'
+      - '.github/workflows/discovery.yml'
+  schedule:
+    - cron: '35 2,8,10,13,16,21 * * *'
+      timezone: 'Australia/Sydney'
+permissions:
+  contents: write
+concurrency:
+  group: championship-discovery-radar
+  cancel-in-progress: false
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run entire offline test suite
+        run: python -m unittest discover -s tests -v
+      - name: Discover and screen external candidates — no broker or trading
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python discovery_engine.py
+      - name: Validate and publish research-only watchlists
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          latest=json.loads(Path('reports/discovery_latest.json').read_text())
+          registry=json.loads(Path('reports/discovery_watchlist.json').read_text())
+          assert latest['orders_enabled'] is False
+          assert registry['orders_enabled'] is False
+          assert registry['original_200_unchanged'] is True
+          assert isinstance(registry['candidates'], dict)
+          print('Verified discovery reports: no trade execution, fixed 200 untouched')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/discovery_latest.json reports/discovery_watchlist.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: update underfollowed discovery radar [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Upload research report for inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: championship-5-discovery-${{ github.run_number }}
+          path: |
+            reports/discovery_latest.json
+            reports/discovery_watchlist.json
+          if-no-files-found: warn
+          retention-days: 14

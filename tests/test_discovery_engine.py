@@ -1,0 +1,163 @@
+"""Offline unit tests: prove safe evidence gating, unchanged 200, no trades."""
+import csv
+import json
+import tempfile
+import unittest
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from unittest.mock import patch
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import discovery_engine as d
+
+NOW = datetime(2026, 11, 21, 0, 0, tzinfo=timezone.utc)
+
+
+def candidate(t="NEWW", url="https://www.sec.gov/Archives/edgar/data/1/abc.htm"):
+    return {"ticker": t, "company": "New Wave Technology", "theme": "AI compute",
+            "evidence_date": "2026-11-20T12:00:00Z", "evidence_url": url,
+            "evidence_kind": "SEC_8K_FILING_REFERENCE", "discovery_source": "SEC and GDELT"}
+
+
+def quote(price=3.2, med=400_000, cap=2e9, stale=0):
+    return {"price": price, "median_dollar_volume_20d": med,
+            "market_cap": cap, "stale_days": stale, "quote_date": "2026-11-20"}
+
+
+class DiscoveryTests(unittest.TestCase):
+    def test_trusted_seed_domains(self):
+        self.assertTrue(d.safe_primary("https://announcements.asx.com.au/asxpdf/example.pdf"))
+        self.assertTrue(d.safe_primary("https://ir.penguinsolutions.com/news"))
+        self.assertFalse(d.safe_primary("http://www.sec.gov/Archives/file"))
+        self.assertFalse(d.safe_primary("https://sec.gov.evil.test/file"))
+        self.assertFalse(d.safe_primary("https://fake.asx.com.au/file"))
+
+    def test_dates_reject_future_and_old(self):
+        self.assertTrue(d.is_recent("2026-11-20", NOW))
+        self.assertFalse(d.is_recent("2025-11-20", NOW))
+        self.assertFalse(d.is_recent("2026-12-30", NOW))
+
+    def test_sec_company_mapping(self):
+        dct = {"fields": ["cik", "name", "ticker", "exchange"],
+               "data": [[1616533, "Penguin Solutions Inc", "PENG", "Nasdaq"],
+                        [100, "Example ETF", "EX", "OTC"]]}
+        mapping = d.sec_cik_map(dct)
+        self.assertEqual(mapping["1616533"]["ticker"], "PENG")
+        self.assertNotIn("100", mapping)
+
+    def test_sec_feed_parsing(self):
+        xml = '''<feed xmlns="http://www.w3.org/2005/Atom">
+          <entry><title>8-K - Penguin Solutions (0001616533) (Filer)</title>
+          <updated>2026-11-20T12:20:00-05:00</updated>
+          <link href="https://www.sec.gov/Archives/edgar/data/1616533/abc-index.htm" />
+          <summary>8-K Items: 2.02</summary></entry></feed>'''
+        lookup = {"1616533": {"ticker": "PENG", "company": "Penguin Solutions Inc", "exchange": "NASDAQ"}}
+        results = d.parse_sec_atom(xml, lookup, NOW)
+        self.assertEqual(results["PENG"]["evidence_kind"], "SEC_8K_FILING_REFERENCE")
+        self.assertEqual(len(results), 1)
+
+    def test_lead_needs_topic_and_filing_and_name(self):
+        filing = {"PENG": {**candidate("PENG"), "company": "Penguin Solutions Inc"}}
+        articles = [
+            {"title": "Penguin Solutions announces AI infrastructure contract", "url": "https://example.org/a"},
+            {"title": "PENG stock rockets on rumours", "url": "https://example.org/b"},
+            {"title": "Other company announces AI infrastructure contract", "url": "https://example.org/c"},
+        ]
+        matched = d.extract_news_matches(articles, filing)
+        self.assertEqual(len(matched), 1)
+        self.assertEqual(matched[0]["ticker"], "PENG")
+
+    def test_older_candidates_rotate_into_price_checks(self):
+        old = [f"OLD{i}" for i in range(45)]
+        first = d.rotate_price_queue(["NEW1", "NEW2"], old, NOW, limit=15)
+        next_ = d.rotate_price_queue(["NEW1", "NEW2"], old, NOW + timedelta(hours=1), limit=15)
+        self.assertEqual(first[:2], ["NEW1", "NEW2"])
+        self.assertEqual(len(first), 15)
+        self.assertNotEqual(first[2:], next_[2:])
+        self.assertTrue(set(first + next_) & set(old))
+
+    def test_market_gate_blocks_thin_unverified_and_megacaps(self):
+        self.assertTrue(d.market_checks(quote())[0])
+        self.assertFalse(d.market_checks(quote(med=1_000))[0])
+        self.assertFalse(d.market_checks(quote(cap=None))[0])
+        self.assertFalse(d.market_checks(quote(cap=50_000_000_000))[0])
+        self.assertFalse(d.market_checks(quote(stale=9))[0])
+        self.assertFalse(d.market_checks(None)[0])
+
+    def test_new_monitor_and_no_trade(self):
+        registry = d.evaluate([candidate()], {"NEWW": quote()}, {}, {"OLD"}, NOW)
+        self.assertEqual(registry["candidates"]["NEWW"]["status"], "MONITOR")
+        self.assertEqual(registry["events"]["newly_monitored"], ["NEWW"])
+        self.assertIsNone(registry["candidates"]["NEWW"]["buy_readiness"])
+        self.assertFalse(registry["orders_enabled"])
+        self.assertNotIn("OLD", registry["candidates"])
+
+    def test_existing_200_always_excluded(self):
+        registry = d.evaluate([candidate("OLD")], {"OLD": quote()}, {}, {"OLD"}, NOW)
+        self.assertFalse(registry["candidates"])
+
+    def test_failed_liquidity_three_checks_archive_with_history(self):
+        first = d.evaluate([candidate()], {"NEWW": quote()}, {}, set(), NOW)
+        previous = {"candidates": first["candidates"]}
+        for i in range(1, 4):
+            result = d.evaluate([], {"NEWW": quote(med=900)}, previous, set(), NOW + timedelta(days=i))
+            previous = {"candidates": result["candidates"]}
+        self.assertEqual(previous["candidates"]["NEWW"]["status"], "ARCHIVED_MONITORING")
+        self.assertIn("archive_reason", previous["candidates"]["NEWW"])
+        again = d.evaluate([], {"NEWW": quote()}, previous, set(), NOW + timedelta(days=4))
+        self.assertEqual(again["candidates"]["NEWW"]["status"], "MONITOR")
+        self.assertEqual(again["events"]["revived"], ["NEWW"])
+
+    def test_feed_outage_does_not_archive(self):
+        first = d.evaluate([candidate()], {"NEWW": quote()}, {}, set(), NOW)
+        next_ = d.evaluate([], {}, {"candidates": first["candidates"]}, set(), NOW + timedelta(days=1))
+        self.assertEqual(next_["candidates"]["NEWW"]["status"], "MONITOR")
+        self.assertFalse(next_["events"]["newly_archived"])
+
+    def test_manual_exclusion_not_readded(self):
+        prev = {"candidates": {"NEWW": {"ticker": "NEWW", "status": "MANUAL_EXCLUDE"}}}
+        actual = d.evaluate([candidate()], {"NEWW": quote()}, prev, set(), NOW)
+        self.assertEqual(actual["candidates"]["NEWW"]["status"], "MANUAL_EXCLUDE")
+
+    def test_seed_list_has_official_references(self):
+        p = Path(__file__).resolve().parent.parent / "discovery_seeds.csv"
+        seeds = d.read_seeds(p, NOW)
+        self.assertEqual(set(x["ticker"] for x in seeds), {"DUG.AX", "EOS.AX", "PENG", "BTDR"})
+
+    def test_offline_snapshot_never_claims_live_trades(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            rows = [{"ticker": f"T{i:03d}"} for i in range(200)]
+            with (root / "watchlist.csv").open("w", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=["ticker"])
+                writer.writeheader()
+                writer.writerows(rows)
+            (root / "discovery_seeds.csv").write_text((Path(__file__).resolve().parent.parent / "discovery_seeds.csv").read_text())
+            with patch.object(d, "TODAY", return_value=NOW):
+                result = d.run(root=root, offline=True)
+            self.assertFalse(result["orders_enabled"])
+            self.assertEqual(result["pending_count"], 4)
+            self.assertEqual(result["monitor_count"], 0)
+            report = json.loads((root / "reports" / "discovery_latest.json").read_text())
+            self.assertTrue(report["research_only"])
+            self.assertEqual(len(report["new_pending"]), 4)
+            self.assertEqual(len(rows), 200)
+
+    def test_only_verified_market_data_promotes(self):
+        pending = d.evaluate([candidate()], {"NEWW": quote(cap=None)}, {}, set(), NOW)
+        self.assertEqual(pending["candidates"]["NEWW"]["status"], "PENDING_EVIDENCE")
+        next_ = d.evaluate([candidate()], {"NEWW": quote()}, {"candidates": pending["candidates"]}, set(), NOW)
+        self.assertEqual(next_["candidates"]["NEWW"]["status"], "MONITOR")
+
+    def test_report_is_safe_and_clearly_limited(self):
+        reg = d.evaluate([candidate()], {"NEWW": quote()}, {}, set(), NOW)
+        result = d.make_snapshot(reg, {"sec": {"status": "unavailable"}}, NOW)
+        self.assertEqual(result["monitor_count"], 1)
+        self.assertFalse(result["orders_enabled"])
+        self.assertTrue(result["limitations"])
+        self.assertEqual(result["source_health"]["sec"]["status"], "unavailable")
+
+
+if __name__ == "__main__":
+    unittest.main()

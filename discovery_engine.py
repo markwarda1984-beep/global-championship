@@ -1,0 +1,486 @@
+"""Championship 5.0: incremental, read-only, evidence-gated discovery radar.
+
+Purpose: separate, expandable stock monitoring outside the fixed 200 ticker scan.
+New ticker admission means research monitoring only, NEVER fair-value validation,
+a trade recommendation, a buy signal, or broker execution.
+
+Sources: SEC EDGAR current 8-K Atom feed + SEC listed ticker directory;
+GDELT news articles provide *leads* only, which must align with an SEC filing.
+Curated seed disclosures explicitly provided in discovery_seeds.csv can bootstrap
+ASX and US research monitoring, if recent and liquid.
+
+The system never claims complete global market coverage. Source failures are
+recorded, cannot be turned into 'no news' claims, and do not erase history.
+"""
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import logging
+import os
+import re
+import statistics
+import time
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from typing import Any
+from urllib.parse import urlencode, urlparse
+
+BASE = Path(__file__).resolve().parent
+SEC_TICKERS = "https://www.sec.gov/files/company_tickers_exchange.json"
+SEC_FEED = "https://www.sec.gov/cgi-bin/browse-edgar"
+GDELT = "https://api.gdeltproject.org/api/v2/doc/doc"
+TRUSTED_SEED_HOSTS = {
+    "dug.com", "www.dug.com", "announcements.asx.com.au",
+    "investorhub.eos-aus.com", "eos-aus.com",
+    "www.sec.gov", "sec.gov", "ir.bitdeer.com", "bitdeer.gcs-web.com",
+    "ir.penguinsolutions.com",
+}
+THEME_TERMS = (
+    "ai", "artificial intelligence", "data center", "datacenter", "gpu", "compute",
+    "semiconductor", "high performance computing", "photonics", "quantum",
+    "defense", "defence", "counter drone", "counter-drone", "space", "satellite",
+    "launch", "rocket", "biotech", "phase 3", "fda", "rare earth", "uranium",
+    "nuclear", "energy storage", "bitcoin", "crypto", "robotics",
+)
+EVENT_TERMS = (
+    "contract", "order", "agreement", "award", "approval", "trial", "results",
+    "revenue", "earnings", "backlog", "financing", "acquisition", "guidance",
+)
+QUERY_TERMS = (
+    '("AI infrastructure" OR "data center" OR "GPU cluster") (contract OR earnings OR agreement)',
+    '("counter drone" OR "satellite" OR "small modular reactor") (contract OR order OR approval)',
+    '("phase 3" OR photonics OR "rare earth") (results OR contract OR award)',
+)
+MIN_PRICE = 0.50
+MIN_MEDIAN_DOLLAR_VOLUME = 150_000.0
+MAX_MARKET_CAP = 20_000_000_000.0
+MAX_CANDIDATES_PER_RUN = 35
+MAX_REGISTRY_SIZE = 1500
+MAX_OPEN_RESEARCH = 160
+TODAY = lambda: datetime.now(timezone.utc)
+LOGGER = logging.getLogger("championship_discovery")
+
+
+def iso_date(text: str) -> datetime | None:
+    try:
+        d = datetime.fromisoformat(str(text).strip().replace("Z", "+00:00"))
+        return d.replace(tzinfo=timezone.utc) if not d.tzinfo else d.astimezone(timezone.utc)
+    except (ValueError, TypeError, AttributeError):
+        return None
+
+
+def is_recent(value: str, now: datetime, days: int = 45) -> bool:
+    d = iso_date(value)
+    return bool(d and now - timedelta(days=days) <= d <= now + timedelta(days=1))
+
+
+def safe_ticker(s: str) -> str | None:
+    value = str(s).strip().upper()
+    return value if re.fullmatch(r"[A-Z0-9.\-]{1,12}", value) else None
+
+
+def safe_primary(url: str) -> bool:
+    try:
+        p = urlparse(url)
+        return p.scheme == "https" and p.hostname in TRUSTED_SEED_HOSTS and not p.username and not p.password
+    except ValueError:
+        return False
+
+
+def load_original_200(path: Path) -> set[str]:
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        data = list(csv.DictReader(f))
+    result = [safe_ticker(x.get("ticker", "")) for x in data]
+    if len(result) != 200 or len(set(result)) != 200 or None in result:
+        raise ValueError("Original watchlist.csv must remain exactly 200 unique tickers")
+    return set(result)
+
+
+def read_seeds(path: Path, now: datetime) -> list[dict]:
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+    out = []
+    for row in rows:
+        ticker = safe_ticker(row.get("ticker", ""))
+        url = row.get("official_url", "").strip()
+        if not ticker or not safe_primary(url):
+            LOGGER.warning("Skipping untrusted/incomplete seed: %s", row.get("ticker"))
+            continue
+        if not is_recent(row.get("evidence_date", ""), now):
+            LOGGER.warning("Skipping outdated/future seed: %s", ticker)
+            continue
+        out.append({
+            "ticker": ticker,
+            "company": row.get("company", "").strip()[:160],
+            "theme": row.get("theme", "").strip()[:90],
+            "evidence_date": row["evidence_date"].strip(),
+            "evidence_url": url,
+            "evidence_kind": "CURATED_OFFICIAL_DISCLOSURE_REFERENCE",
+            "discovery_source": "seed file (human-curated public source)",
+            "corroboration": "Not independently parsed/validated by this automation",
+        })
+    return out
+
+
+def sec_cik_map(payload: Any) -> dict[str, dict]:
+    """Convert documented SEC JSON table format; never guess a ticker."""
+    if not isinstance(payload, dict) or not isinstance(payload.get("data"), list):
+        raise ValueError("Unrecognised SEC ticker directory")
+    fields = [str(c).strip().lower() for c in payload.get("fields", [])]
+    for field in ("cik", "name", "ticker", "exchange"):
+        if field not in fields:
+            raise ValueError(f"SEC mapping lacks {field}")
+    index = {name: fields.index(name) for name in ("cik", "name", "ticker", "exchange")}
+    result = {}
+    for line in payload["data"]:
+        try:
+            ticker = safe_ticker(line[index["ticker"]])
+            exchange = str(line[index["exchange"]]).upper().strip()
+            if ticker and exchange in {"NASDAQ", "NYSE", "NYSE AMERICAN", "NYSE ARCA"}:
+                result[str(int(line[index["cik"]]))] = {
+                    "ticker": ticker, "company": str(line[index["name"]])[:160], "exchange": exchange
+                }
+        except (TypeError, ValueError, IndexError):
+            continue
+    return result
+
+
+def parse_sec_atom(xml: str, lookup: dict[str, dict], now: datetime) -> dict[str, dict]:
+    ns = {"a": "http://www.w3.org/2005/Atom"}
+    root = ET.fromstring(xml)
+    out = {}
+    for entry in root.findall("a:entry", ns):
+        title = entry.findtext("a:title", "", ns)
+        summary = " ".join(entry.findtext("a:summary", "", ns).split())
+        link = entry.find("a:link", ns)
+        url = link.get("href", "") if link is not None else ""
+        if not url.startswith("https://www.sec.gov/"):
+            continue
+        cik = re.search(r"/data/(\d+)/", url)
+        if not cik:
+            cik = re.search(r"\((\d{10})\)", title)
+        if not cik:
+            continue
+        corp = lookup.get(str(int(cik.group(1))))
+        if not corp:
+            continue
+        published = entry.findtext("a:updated", "", ns) or entry.findtext("a:published", "", ns)
+        if not is_recent(published, now, 10):
+            continue
+        # RSS is a filing pointer, NOT verification that the event is positive.
+        t = corp["ticker"]
+        if t not in out or str(published) > str(out[t]["evidence_date"]):
+            out[t] = {**corp, "evidence_date": published, "evidence_url": url,
+                      "evidence_kind": "SEC_8K_FILING_REFERENCE", "filing_title": title[:250],
+                      "filing_summary": summary[:1200]}
+    return out
+
+
+def normalize_company(s: str) -> str:
+    text = re.sub(r"[^a-z0-9 ]", " ", s.lower())
+    text = re.sub(r"\b(incorporated|inc|corp|corporation|ltd|limited|holdings|group|class|co|plc)\b", " ", text)
+    return " ".join(text.split())
+
+
+def extract_news_matches(articles: list[dict], filings: dict[str, dict]) -> list[dict]:
+    """News coverage is a lead, not a primary source. Only SEC 8-K matches qualify."""
+    matches = []
+    for article in articles:
+        if not isinstance(article, dict):
+            continue
+        title = str(article.get("title", ""))[:300]
+        t_lower = title.lower()
+        if not any(re.search(r"\b" + re.escape(w) + r"\b", t_lower) for w in THEME_TERMS):
+            continue
+        if not any(re.search(r"\b" + re.escape(w) + r"\b", t_lower) for w in EVENT_TERMS):
+            continue
+        for ticker, record in filings.items():
+            name = normalize_company(record["company"])
+            if len(name) < 10 or len(name.split()) < 2:
+                continue
+            # Exact normalized company phrase avoids ambiguous symbol-only matches.
+            title_normalized = normalize_company(title)
+            if re.search(r"\b" + re.escape(name) + r"\b", title_normalized):
+                matches.append({**record, "ticker": ticker, "theme": "event-driven small-cap lead",
+                                "discovery_source": "GDELT news lead AND public SEC 8-K",
+                                "corroboration": "Independent news article matched named SEC filer; contents not verified",
+                                "news_title": title, "news_url": str(article.get("url", ""))[:500]})
+                break
+    result = {}
+    for x in matches:
+        result.setdefault(x["ticker"], x)
+    return list(result.values())
+
+
+def market_checks(quote: dict | None, *, capital_limit: float = MAX_MARKET_CAP) -> tuple[bool, list[str]]:
+    """Liquidity/quote checks; a passing result is NOT valuation or business diligence."""
+    if quote is None:
+        return False, ["QUOTE_UNAVAILABLE"]
+    problems = []
+    price = quote.get("price")
+    volume = quote.get("median_dollar_volume_20d")
+    age = quote.get("stale_days")
+    cap = quote.get("market_cap")
+    if not isinstance(price, (int, float)) or not MIN_PRICE <= price < 100000:
+        problems.append("PRICE_INELIGIBLE")
+    if not isinstance(volume, (int, float)) or volume < MIN_MEDIAN_DOLLAR_VOLUME:
+        problems.append("THIN_LIQUIDITY_OR_UNKNOWN")
+    if not isinstance(age, (int, float)) or age > 7 or age < 0:
+        problems.append("STALE_PRICE")
+    if cap is not None and (not isinstance(cap, (int, float)) or cap > capital_limit or cap <= 0):
+        problems.append("OUTSIDE_SMALL_MIDCAP_SCOPE")
+    if cap is None:
+        problems.append("MARKET_CAP_UNVERIFIED")
+    return len(problems) == 0, problems
+
+
+def evaluate(candidates: list[dict], quotes: dict, previous: dict, original: set[str], now: datetime) -> dict:
+    """Incremental, deterministic: all historical tracked names kept; no silent deletion."""
+    if any(not safe_ticker(s) for s in original):
+        raise ValueError("Original stock list malformed")
+    history = previous.get("candidates", {}) if isinstance(previous, dict) else {}
+    if not isinstance(history, dict):
+        history = {}
+    result = {k: dict(v) for k, v in history.items() if safe_ticker(k) and isinstance(v, dict)}
+    events = {"newly_monitored": [], "new_pending": [], "newly_archived": [], "revived": []}
+    seen = set()
+    for c in candidates[:MAX_CANDIDATES_PER_RUN]:
+        ticker = safe_ticker(c.get("ticker", ""))
+        if not ticker or ticker in original or ticker in seen:
+            continue
+        seen.add(ticker)
+        if not str(c.get("evidence_url", "")).startswith("https://") or not is_recent(c.get("evidence_date", ""), now):
+            continue
+        quote = quotes.get(ticker)
+        eligible, concerns = market_checks(quote)
+        prior = result.get(ticker, {})
+        if prior.get("status") == "MANUAL_EXCLUDE":
+            continue
+        is_new = ticker not in result
+        status = "MONITOR" if eligible else "PENDING_EVIDENCE"
+        merged = {**prior, "ticker": ticker, "company": c.get("company"), "theme": c.get("theme", "unspecified"),
+                  "status": status, "last_researched_utc": now.isoformat(), "evidence_url": c["evidence_url"],
+                  "evidence_date": c["evidence_date"], "evidence_kind": c.get("evidence_kind", "UNKNOWN"),
+                  "discovery_source": c.get("discovery_source"), "corroboration": c.get("corroboration"),
+                  "last_quote": quote or None, "concerns": concerns,
+                  "review_status": "RESEARCH ONLY — PRIMARY DISCLOSURE CONTENT/VALUATION NOT CONFIRMED",
+                  "buy_readiness": None, "orders_enabled": False}
+        merged.setdefault("first_seen_utc", now.isoformat())
+        merged["failed_checks"] = 0 if eligible else (int(prior.get("failed_checks", 0)) + 1)
+        result[ticker] = merged
+        if is_new:
+            events["newly_monitored" if eligible else "new_pending"].append(ticker)
+        elif prior.get("status") == "ARCHIVED_MONITORING" and eligible:
+            events["revived"].append(ticker)
+    for ticker, prior in list(result.items()):
+        if ticker in seen or ticker in original or prior.get("status") == "MANUAL_EXCLUDE":
+            continue
+        # Do not archive only because upstream feed is unavailable on a single run.
+        quote = quotes.get(ticker)
+        if quote is None:
+            continue
+        eligible, concerns = market_checks(quote)
+        failures = 0 if eligible else int(prior.get("failed_checks", 0)) + 1
+        prior["last_quote"] = quote
+        prior["last_researched_utc"] = now.isoformat()
+        prior["failed_checks"] = failures
+        prior["concerns"] = concerns
+        # Three consecutive objective price/liquidity failures -> archive monitoring,
+        # NOT a claim that its investment thesis failed.
+        if prior.get("status") == "MONITOR" and failures >= 3:
+            prior["status"] = "ARCHIVED_MONITORING"
+            prior["archive_reason"] = "3 consecutive failed liquidity/quote checks"
+            events["newly_archived"].append(ticker)
+        elif prior.get("status") == "ARCHIVED_MONITORING" and eligible:
+            prior["status"] = "MONITOR"
+            prior.pop("archive_reason", None)
+            events["revived"].append(ticker)
+    # Preserve old entries even if above cap; new discovery admission must not evict history.
+    return {"schema_version": "5.0-discovery-radar-1", "updated_at_utc": now.isoformat(),
+            "original_200_unchanged": True, "candidates": dict(sorted(result.items())),
+            "events": events, "orders_enabled": False}
+
+
+def make_snapshot(registry: dict, health: dict, now: datetime) -> dict:
+    candidates = registry["candidates"]
+    counts = {s: sum(c.get("status") == s for c in candidates.values()) for s in
+              ("MONITOR", "PENDING_EVIDENCE", "ARCHIVED_MONITORING", "MANUAL_EXCLUDE")}
+    active = [x for x in candidates.values() if x.get("status") == "MONITOR"]
+    return {"schema_version": "5.0-discovery-radar-1", "published_at_utc": now.isoformat(),
+            "total_discovered_ever": len(candidates), "monitor_count": counts["MONITOR"],
+            "pending_count": counts["PENDING_EVIDENCE"], "archived_count": counts["ARCHIVED_MONITORING"],
+            "newly_monitored": registry["events"]["newly_monitored"],
+            "new_pending": registry["events"]["new_pending"],
+            "newly_archived": registry["events"]["newly_archived"],
+            "revived": registry["events"]["revived"], "source_health": health,
+            "active_watchlist": sorted(active, key=lambda x: x["ticker"]),
+            "research_only": True, "orders_enabled": False,
+            "limitations": ["US SEC 8-K latest feed is not exhaustive; GDELT news coverage is incomplete",
+                            "ASX general-market discovery not yet implemented; curated ASX seeds only",
+                            "Cited filing/announcement is not automatically checked for investment merit",
+                            "Liquidity, market cap, quote and valuation can be missing or delayed",
+                            "No price level, readiness percent, trade or expected return is automatically validated"]}
+
+
+def fetch_with_retry(session, url: str, *, params: dict | None = None) -> Any:
+    last = None
+    for attempt in range(3):
+        try:
+            response = session.get(url, params=params, timeout=18)
+            response.raise_for_status()
+            return response
+        except Exception as exc:
+            last = exc
+            if attempt < 2:
+                time.sleep(1.0 * (attempt + 1))
+    raise RuntimeError(f"Fetch failed for {urlparse(url).netloc}: {type(last).__name__}: {last}")
+
+
+def discover_external(session, now: datetime) -> tuple[list[dict], dict]:
+    health: dict[str, Any] = {}
+    filings: dict[str, dict] = {}
+    try:
+        directory = sec_cik_map(fetch_with_retry(session, SEC_TICKERS).json())
+        response = fetch_with_retry(session, SEC_FEED, params={
+            "action": "getcurrent", "type": "8-K", "owner": "include", "count": "100", "output": "atom"})
+        filings = parse_sec_atom(response.text, directory, now)
+        health["sec_8k"] = {"status": "ok", "latest_feed_matched_listed_tickers": len(filings),
+                             "coverage": "at most latest 100 filings; some issuers or filings may be missed"}
+    except Exception as exc:
+        health["sec_8k"] = {"status": "unavailable", "error": str(exc)[:300]}
+    articles: list[dict] = []
+    for i, query in enumerate(QUERY_TERMS):
+        try:
+            response = fetch_with_retry(session, GDELT, params={"query": query, "mode": "artlist",
+                                                               "format": "json", "timespan": "1week",
+                                                               "maxrecords": "50", "sort": "datedesc"})
+            articles += response.json().get("articles", [])
+            health[f"gdelt_theme_{i+1}"] = {"status": "ok"}
+        except Exception as exc:
+            health[f"gdelt_theme_{i+1}"] = {"status": "unavailable", "error": str(exc)[:300]}
+    return extract_news_matches(articles, filings), health
+
+
+def rotate_price_queue(new_names: list[str], prior_names: list[str], now: datetime,
+                       limit: int = MAX_CANDIDATES_PER_RUN) -> list[str]:
+    """Price-check new leads first and rotate older monitored names fairly.
+
+    Coverage is intentionally bounded per run, NOT a claim of continuous quotes.
+    """
+    recent = list(dict.fromkeys(new_names))[:limit]
+    old = [x for x in dict.fromkeys(prior_names) if x not in recent]
+    remaining = max(0, limit - len(recent))
+    if not old or not remaining:
+        return recent
+    start = (now.date().toordinal() * 6 + now.hour) % len(old)
+    return recent + [old[(start + k) % len(old)] for k in range(min(remaining, len(old)))]
+
+
+def fetch_quotes(tickers: list[str], now: datetime, max_names: int = MAX_CANDIDATES_PER_RUN) -> tuple[dict, dict]:
+    """Yahoo daily bars; price/capitalisation delayed or unofficial; not executable."""
+    import yfinance as yf
+    quotes = {}
+    health = {"status": "ok", "attempted": min(len(tickers), max_names), "failed": 0}
+    for ticker in tickers[:max_names]:
+        try:
+            asset = yf.Ticker(ticker)
+            frame = asset.history(period="4mo", interval="1d", auto_adjust=False, actions=False)
+            if frame.empty or len(frame) < 25:
+                raise ValueError("fewer than 25 daily bars")
+            pairs = [(float(x), float(v)) for x, v in zip(frame["Close"].tail(20), frame["Volume"].tail(20))
+                     if x is not None and v is not None and float(x) > 0 and float(v) >= 0]
+            if len(pairs) < 15:
+                raise ValueError("incomplete price/volume history")
+            px = float(frame["Close"].iloc[-1])
+            qtime = frame.index[-1].to_pydatetime().date().isoformat()
+            day = datetime.fromisoformat(qtime).replace(tzinfo=timezone.utc)
+            if day > now + timedelta(days=1):
+                raise ValueError("future quote date")
+            median = statistics.median([p * v for p, v in pairs])
+            try:
+                cap = asset.fast_info.get("market_cap")
+                cap = float(cap) if cap is not None else None
+            except Exception:
+                cap = None
+            quotes[ticker] = {"price": round(px, 5), "quote_date": qtime,
+                              "stale_days": max(0, (now.date() - day.date()).days),
+                              "median_dollar_volume_20d": round(median, 2),
+                              "market_cap": cap, "price_source": "unofficial yfinance daily bars — not executable"}
+        except Exception as exc:
+            health["failed"] += 1
+            LOGGER.warning("Price check unavailable for %s: %s", ticker, str(exc)[:200])
+    return quotes, health
+
+
+def write_json(path: Path, obj: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(obj, indent=2, ensure_ascii=False, sort_keys=False) + "\n", encoding="utf-8")
+    tmp.replace(path)
+
+
+def run(*, root: Path = BASE, offline: bool = False) -> dict:
+    now = TODAY()
+    original = load_original_200(root / "watchlist.csv")
+    registry_path = root / "reports" / "discovery_watchlist.json"
+    report_path = root / "reports" / "discovery_latest.json"
+    previous = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}
+    seeds = read_seeds(root / "discovery_seeds.csv", now)
+    health: dict[str, Any] = {"curated_seeds": {"status": "ok", "count": len(seeds)}}
+    external: list[dict] = []
+    if offline:
+        health["external"] = {"status": "offline: no upstream checks"}
+        quotes = {}
+        health["quotes"] = {"status": "offline: no market data"}
+    else:
+        import requests
+        ua = os.environ.get("SEC_USER_AGENT", "").strip() or (
+            f"Championship-Research/5.0 (+https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'markwarda1984-beep/global-championship')}/issues)")
+        session = requests.Session()
+        session.headers.update({"User-Agent": ua, "Accept": "application/json, application/atom+xml, */*"})
+        external, remote_health = discover_external(session, now)
+        health.update(remote_health)
+        # New leads are checked first; existing research names rotate fairly as list grows.
+        new_names = [c["ticker"] for c in seeds + external if c["ticker"] not in original]
+        old_names = [t for t, v in previous.get("candidates", {}).items()
+                     if t not in original and v.get("status") in
+                     ("MONITOR", "PENDING_EVIDENCE", "ARCHIVED_MONITORING")]
+        names = rotate_price_queue(new_names, old_names, now)
+        quotes, quote_health = fetch_quotes(names, now)
+        quote_health["coverage"] = "bounded research sample, rotating existing names; not every candidate is requoted every run"
+        quote_health["available_candidates"] = len(set(new_names + old_names))
+        health["quotes"] = quote_health
+    # Limit discovery names without losing already monitored history.
+    seen = set()
+    candidates = []
+    for c in seeds + external:
+        s = c["ticker"]
+        if s not in seen and s not in original:
+            seen.add(s)
+            candidates.append(c)
+    registry = evaluate(candidates, quotes, previous, original, now)
+    snapshot = make_snapshot(registry, health, now)
+    write_json(registry_path, {k: v for k, v in registry.items() if k != "events"})
+    write_json(report_path, snapshot)
+    LOGGER.info("Discovery: %s monitoring, %s pending, %s archived, %s new",
+                snapshot["monitor_count"], snapshot["pending_count"], snapshot["archived_count"],
+                len(snapshot["newly_monitored"]))
+    return snapshot
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--offline", action="store_true", help="Generate non-live snapshot without data fetch")
+    parser.add_argument("--root", type=Path, default=BASE)
+    args = parser.parse_args()
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    outcome = run(root=args.root, offline=args.offline)
+    print(json.dumps({k: outcome[k] for k in
+                      ("monitor_count", "pending_count", "archived_count", "newly_monitored", "new_pending")}, indent=2))
+
+
+if __name__ == "__main__":
+    main()
