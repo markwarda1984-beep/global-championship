@@ -1,13 +1,13 @@
 {
   "schema_version": "6.0-coverage-progress-1",
-  "published_at_utc": "2026-11-21T02:02:17.234520+00:00",
+  "published_at_utc": "2026-11-21T03:07:21.775826+00:00",
   "original_watchlist_count": 200,
   "discovery_count": 4,
   "reported_count": 204,
-  "primary_series_records_count": 36,
-  "secondary_estimate_snapshots_count": 0,
+  "primary_series_records_count": 48,
+  "secondary_estimate_snapshots_count": 8,
   "primary_guidance_supported_count": 0,
-  "evidence_qualified_model_count": 8,
+  "evidence_qualified_model_count": 12,
   "validated_below_assumed_base_count": 0,
   "evidence_qualified_at_selected_margin_of_safety_count": 0,
   "evidence_qualified_below_base_research": [],
@@ -47,8 +47,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 83.31,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 81.08,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -131,8 +131,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 361.73001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 343.32001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -148,19 +148,19 @@
       "company": "NVIDIA",
       "universe": "ORIGINAL_200",
       "research_priority_only": true,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
-      "secondary_forward_eps_status": "NOT_COLLECTED",
-      "secondary_forward_eps_snapshot_at_utc": null,
-      "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
-      "issuer_guidance_source": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+      "secondary_forward_eps_status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "secondary_forward_eps_snapshot_at_utc": "2026-11-21T02:02:19.483808+00:00",
+      "issuer_guidance_status": "ISSUER_OR_DISCLOSURE_DATE_NOT_CONFIRMED",
+      "issuer_guidance_source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 145.98,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 125.53,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -185,10 +185,11 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
+        "DATED_PRICE_NOT_AVAILABLE",
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 14.86,
+      "price_as_of": null,
+      "latest_dated_price": null,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -327,8 +328,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 14.41,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 11.82,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -355,8 +356,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 9.78,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 8.775,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -383,8 +384,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 36.66,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 33.95,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -409,14 +410,14 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "missing_evidence_flags": [],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 489.19,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 424.39001,
       "qualifies_for_further_intrinsic_review": true,
       "below_assumed_base_intrinsic_value": false,
       "below_selected_margin_of_safety_entry": false,
       "evidence_qualified_base_value": 13.7766,
       "selected_margin_of_safety_entry": 11.0213,
-      "base_upside_pct": -97.18,
+      "base_upside_pct": -96.75,
       "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
@@ -426,19 +427,19 @@
       "company": "TSMC",
       "universe": "ORIGINAL_200",
       "research_priority_only": true,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
       "secondary_forward_eps_status": "NOT_COLLECTED",
       "secondary_forward_eps_snapshot_at_utc": null,
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 352.09,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 318.70999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -465,8 +466,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 1356.19995,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 1266.21997,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -493,8 +494,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 690.44,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 594.51001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -521,8 +522,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 153.67999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 143.49001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -549,8 +550,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 50.99,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 45.42,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -577,8 +578,8 @@
       "missing_evidence_flags": [
         "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 25.55,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 23.27,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -594,19 +595,20 @@
       "company": "Coinbase",
       "universe": "ORIGINAL_200",
       "research_priority_only": false,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001679788.json",
       "secondary_forward_eps_status": "NOT_COLLECTED",
       "secondary_forward_eps_snapshot_at_utc": null,
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 108.87,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 101.97,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -633,8 +635,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 86.13,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 77.8,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -883,14 +885,14 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "missing_evidence_flags": [],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 349.20999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 342.56,
       "qualifies_for_further_intrinsic_review": true,
       "below_assumed_base_intrinsic_value": false,
       "below_selected_margin_of_safety_entry": false,
       "evidence_qualified_base_value": 71.4402,
       "selected_margin_of_safety_entry": 60.7242,
-      "base_upside_pct": -79.54,
+      "base_upside_pct": -79.15,
       "selected_margin_of_safety_pct": 15,
       "buy_signal": false,
       "orders_enabled": false
@@ -900,26 +902,24 @@
       "company": "Microsoft",
       "universe": "ORIGINAL_200",
       "research_priority_only": true,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
-      "secondary_forward_eps_status": "NOT_COLLECTED",
-      "secondary_forward_eps_snapshot_at_utc": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "secondary_forward_eps_status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "secondary_forward_eps_snapshot_at_utc": "2026-11-21T02:02:19.483808+00:00",
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
-      "valuation_validation_status": "NOT VALIDATED",
-      "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 498.29999,
-      "qualifies_for_further_intrinsic_review": false,
-      "below_assumed_base_intrinsic_value": null,
-      "below_selected_margin_of_safety_entry": null,
-      "evidence_qualified_base_value": null,
-      "selected_margin_of_safety_entry": null,
-      "base_upside_pct": null,
-      "selected_margin_of_safety_pct": null,
+      "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "missing_evidence_flags": [],
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 484.51999,
+      "qualifies_for_further_intrinsic_review": true,
+      "below_assumed_base_intrinsic_value": false,
+      "below_selected_margin_of_safety_entry": false,
+      "evidence_qualified_base_value": 97.866,
+      "selected_margin_of_safety_entry": 78.2928,
+      "base_upside_pct": -79.8,
+      "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
     },
@@ -931,16 +931,16 @@
       "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_facts_observed_at_utc": "2026-11-20T22:35:41.888261+00:00",
       "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
-      "secondary_forward_eps_status": "NOT_COLLECTED",
-      "secondary_forward_eps_snapshot_at_utc": null,
+      "secondary_forward_eps_status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "secondary_forward_eps_snapshot_at_utc": "2026-11-21T02:02:19.483808+00:00",
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
         "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 257.37,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 246.82001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -956,26 +956,24 @@
       "company": "Alphabet",
       "universe": "ORIGINAL_200",
       "research_priority_only": true,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
-      "secondary_forward_eps_status": "NOT_COLLECTED",
-      "secondary_forward_eps_snapshot_at_utc": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+      "secondary_forward_eps_status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "secondary_forward_eps_snapshot_at_utc": "2026-11-21T02:02:19.483808+00:00",
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
-      "valuation_validation_status": "NOT VALIDATED",
-      "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 272.66,
-      "qualifies_for_further_intrinsic_review": false,
-      "below_assumed_base_intrinsic_value": null,
-      "below_selected_margin_of_safety_entry": null,
-      "evidence_qualified_base_value": null,
-      "selected_margin_of_safety_entry": null,
-      "base_upside_pct": null,
-      "selected_margin_of_safety_pct": null,
+      "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "missing_evidence_flags": [],
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 265.29001,
+      "qualifies_for_further_intrinsic_review": true,
+      "below_assumed_base_intrinsic_value": false,
+      "below_selected_margin_of_safety_entry": false,
+      "evidence_qualified_base_value": 60.9795,
+      "selected_margin_of_safety_entry": 48.7836,
+      "base_upside_pct": -77.01,
+      "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
     },
@@ -984,19 +982,19 @@
       "company": "Meta Platforms",
       "universe": "ORIGINAL_200",
       "research_priority_only": true,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
-      "secondary_forward_eps_status": "NOT_COLLECTED",
-      "secondary_forward_eps_snapshot_at_utc": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+      "secondary_forward_eps_status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "secondary_forward_eps_snapshot_at_utc": "2026-11-21T02:02:19.483808+00:00",
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 596.21997,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 560.84003,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1023,8 +1021,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 374.41,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 345.82001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1043,16 +1041,16 @@
       "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_facts_observed_at_utc": "2026-11-20T22:46:32.851111+00:00",
       "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json",
-      "secondary_forward_eps_status": "NOT_COLLECTED",
-      "secondary_forward_eps_snapshot_at_utc": null,
+      "secondary_forward_eps_status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "secondary_forward_eps_snapshot_at_utc": "2026-11-21T02:02:19.483808+00:00",
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
         "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 346.64999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 304.41,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1079,8 +1077,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 110.57,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 101.19,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1096,26 +1094,24 @@
       "company": "Salesforce",
       "universe": "ORIGINAL_200",
       "research_priority_only": true,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
-      "secondary_forward_eps_status": "NOT_COLLECTED",
-      "secondary_forward_eps_snapshot_at_utc": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json",
+      "secondary_forward_eps_status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "secondary_forward_eps_snapshot_at_utc": "2026-11-21T02:02:19.483808+00:00",
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
-      "valuation_validation_status": "NOT VALIDATED",
-      "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 183.31,
-      "qualifies_for_further_intrinsic_review": false,
-      "below_assumed_base_intrinsic_value": null,
-      "below_selected_margin_of_safety_entry": null,
-      "evidence_qualified_base_value": null,
-      "selected_margin_of_safety_entry": null,
-      "base_upside_pct": null,
-      "selected_margin_of_safety_pct": null,
+      "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "missing_evidence_flags": [],
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 180.62,
+      "qualifies_for_further_intrinsic_review": true,
+      "below_assumed_base_intrinsic_value": false,
+      "below_selected_margin_of_safety_entry": false,
+      "evidence_qualified_base_value": 105.7674,
+      "selected_margin_of_safety_entry": 84.6139,
+      "base_upside_pct": -41.44,
+      "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
     },
@@ -1133,14 +1129,14 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "missing_evidence_flags": [],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 221.67999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 217.71001,
       "qualifies_for_further_intrinsic_review": true,
       "below_assumed_base_intrinsic_value": false,
       "below_selected_margin_of_safety_entry": false,
       "evidence_qualified_base_value": 174.277,
       "selected_margin_of_safety_entry": 139.4216,
-      "base_upside_pct": -21.38,
+      "base_upside_pct": -19.95,
       "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
@@ -1161,8 +1157,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 88.87,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 87.61,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1189,8 +1185,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 268.59,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 254.82001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1217,8 +1213,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 166.46001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 157.37,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1245,8 +1241,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 303.67999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 274.95999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1273,8 +1269,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 243.46001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 229.44,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1301,8 +1297,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 205.71001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 194.82001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1329,8 +1325,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 131.46001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 124.56,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1357,8 +1353,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 206.85001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 191.46001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1385,8 +1381,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 297.01001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 285.89999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1413,8 +1409,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 133.00999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 134.64999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1441,8 +1437,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 310.01999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 270.44,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1469,8 +1465,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 131.97,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 123.72,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1497,8 +1493,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 65.6,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 63.47,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1525,8 +1521,8 @@
       "missing_evidence_flags": [
         "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 172.78999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 170.36,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1553,8 +1549,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 56.37,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 53.29,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1581,8 +1577,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 74.23,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 69.66,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1609,8 +1605,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 68.65,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 62.17,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1637,8 +1633,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 13.53,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 12.48,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1665,8 +1661,8 @@
       "missing_evidence_flags": [
         "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 56.91,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 54.0,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1693,8 +1689,8 @@
       "missing_evidence_flags": [
         "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 379.01999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 348.29001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1721,8 +1717,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 149.38,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 145.02,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1749,8 +1745,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 89.88,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 85.33,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1777,8 +1773,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 583.84998,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 577.03003,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1805,8 +1801,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 58.46,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 56.73,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1833,8 +1829,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 312.54001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 278.01999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1861,8 +1857,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 45.49,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 40.91,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1889,8 +1885,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 23.84,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 21.65,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1917,8 +1913,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 177.17,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 152.2,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1945,8 +1941,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 138.47,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 122.28,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -1973,8 +1969,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 162.00999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 149.94,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2001,8 +1997,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 158.92999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 159.99001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2029,8 +2025,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 206.5,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 208.37,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2046,19 +2042,19 @@
       "company": "ConocoPhillips",
       "universe": "ORIGINAL_200",
       "research_priority_only": false,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001163165.json",
       "secondary_forward_eps_status": "NOT_COLLECTED",
       "secondary_forward_eps_snapshot_at_utc": null,
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 134.99001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 136.12,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2085,8 +2081,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 47.9,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 45.89,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2113,8 +2109,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 149.49001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 148.60001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2130,19 +2126,19 @@
       "company": "Occidental Petroleum",
       "universe": "ORIGINAL_200",
       "research_priority_only": true,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000797468.json",
       "secondary_forward_eps_status": "NOT_COLLECTED",
       "secondary_forward_eps_snapshot_at_utc": null,
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 53.81,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 53.9,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2169,8 +2165,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 338.45999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 334.17999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2197,8 +2193,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 367.92999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 367.19,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2225,8 +2221,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 21.98,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 19.63,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2253,8 +2249,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 151.95,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 137.59,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2281,8 +2277,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 83.79,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 83.45,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2309,8 +2305,8 @@
       "missing_evidence_flags": [
         "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 252.03,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 237.41,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2337,8 +2333,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 124.15,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 115.25,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2365,8 +2361,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 20.84,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 19.85,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2393,8 +2389,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 3.81,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 3.36,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2421,8 +2417,8 @@
       "missing_evidence_flags": [
         "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 61.42,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 58.0,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2449,8 +2445,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 5.76,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 5.3,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2477,8 +2473,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 5.48,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 4.96,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2505,8 +2501,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 89.7,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 81.43,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2533,8 +2529,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 49.12,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 45.99,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2561,8 +2557,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 100.05,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 94.68,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2589,8 +2585,8 @@
       "missing_evidence_flags": [
         "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 158.24001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 151.3,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2617,8 +2613,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 116.13,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 109.91,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2645,8 +2641,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 32.39,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 30.6,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2673,8 +2669,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 1351.12,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 1347.10999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2701,8 +2697,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 38.87,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 37.82,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2729,8 +2725,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 330.48001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 339.85001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2757,8 +2753,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 267.14001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 270.47,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2783,14 +2779,14 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "missing_evidence_flags": [],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 283.54001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 286.20001,
       "qualifies_for_further_intrinsic_review": true,
       "below_assumed_base_intrinsic_value": false,
       "below_selected_margin_of_safety_entry": false,
       "evidence_qualified_base_value": 51.1623,
       "selected_margin_of_safety_entry": 43.488,
-      "base_upside_pct": -81.96,
+      "base_upside_pct": -82.12,
       "selected_margin_of_safety_pct": 15,
       "buy_signal": false,
       "orders_enabled": false
@@ -2811,8 +2807,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 132.81,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 133.72,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2839,8 +2835,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 27.54,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 27.4,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2865,14 +2861,14 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "missing_evidence_flags": [],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 438.82001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 435.64001,
       "qualifies_for_further_intrinsic_review": true,
       "below_assumed_base_intrinsic_value": false,
       "below_selected_margin_of_safety_entry": false,
       "evidence_qualified_base_value": 109.5672,
       "selected_margin_of_safety_entry": 87.6538,
-      "base_upside_pct": -75.03,
+      "base_upside_pct": -74.85,
       "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
@@ -2893,8 +2889,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 166.53,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 166.42999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2921,8 +2917,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 923.34003,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 920.69,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2949,8 +2945,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 520.65997,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 515.02002,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -2977,8 +2973,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 407.23999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 399.04999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3005,8 +3001,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 688.75,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 669.53998,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3033,8 +3029,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 227.56,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 220.36,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3059,14 +3055,14 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "missing_evidence_flags": [],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 42.99,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 41.98,
       "qualifies_for_further_intrinsic_review": true,
       "below_assumed_base_intrinsic_value": false,
       "below_selected_margin_of_safety_entry": false,
       "evidence_qualified_base_value": 13.9202,
       "selected_margin_of_safety_entry": 11.1362,
-      "base_upside_pct": -67.62,
+      "base_upside_pct": -66.84,
       "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
@@ -3087,8 +3083,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 100.61,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 99.94,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3115,8 +3111,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 80.19,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 79.32,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3143,8 +3139,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 175.41,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 174.35001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3171,8 +3167,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 320.22,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 310.53,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3199,8 +3195,8 @@
       "missing_evidence_flags": [
         "EQUITY_YEAR_COMPARABILITY_UNVERIFIED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 48.57,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 47.04,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3227,8 +3223,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 847.53003,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 790.69,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3255,8 +3251,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 174.98,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 165.67,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3283,8 +3279,8 @@
       "missing_evidence_flags": [
         "EQUITY_YEAR_COMPARABILITY_UNVERIFIED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 115.28,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 110.62,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3311,8 +3307,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 80.61,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 78.62,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3339,8 +3335,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 402.25,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 401.87,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3367,8 +3363,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 626.5,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 625.59003,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3393,14 +3389,14 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "missing_evidence_flags": [],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 311.10999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 301.70001,
       "qualifies_for_further_intrinsic_review": true,
       "below_assumed_base_intrinsic_value": false,
       "below_selected_margin_of_safety_entry": false,
       "evidence_qualified_base_value": 142.6389,
       "selected_margin_of_safety_entry": 114.1111,
-      "base_upside_pct": -54.15,
+      "base_upside_pct": -52.72,
       "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
@@ -3421,8 +3417,8 @@
       "missing_evidence_flags": [
         "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 572.03998,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 570.0,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3449,8 +3445,8 @@
       "missing_evidence_flags": [
         "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 1135.81006,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 1101.71997,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3477,8 +3473,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 92.12,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 90.16,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3505,8 +3501,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 92.13,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 88.54,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3534,8 +3530,8 @@
         "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
         "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 115.99,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 110.8,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3563,8 +3559,8 @@
         "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
         "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 116.29,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 111.16,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3591,8 +3587,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 170.88,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 170.0,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3619,8 +3615,8 @@
       "missing_evidence_flags": [
         "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 306.31,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 307.56,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3647,8 +3643,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 229.96001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 231.39,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3675,8 +3671,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 571.84998,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 565.5,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3703,8 +3699,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 193.44,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 190.17,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3731,8 +3727,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 542.31,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 534.31,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3759,8 +3755,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 347.34,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 341.5,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3787,8 +3783,8 @@
       "missing_evidence_flags": [
         "NORMALIZED_CYCLE_NONPOSITIVE"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 160.50999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 155.89,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3815,8 +3811,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 318.88,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 309.62,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3843,8 +3839,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 217.84,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 212.64,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3871,8 +3867,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 624.89001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 609.25,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3897,14 +3893,14 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "missing_evidence_flags": [],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 537.37,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 510.45001,
       "qualifies_for_further_intrinsic_review": true,
       "below_assumed_base_intrinsic_value": false,
       "below_selected_margin_of_safety_entry": false,
       "evidence_qualified_base_value": 114.2449,
       "selected_margin_of_safety_entry": 91.3959,
-      "base_upside_pct": -78.74,
+      "base_upside_pct": -77.62,
       "selected_margin_of_safety_pct": 20,
       "buy_signal": false,
       "orders_enabled": false
@@ -3925,8 +3921,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 330.57001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 311.32999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3953,8 +3949,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 184.99001,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 166.24001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -3981,8 +3977,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 587.42999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 559.03003,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4009,8 +4005,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 1059.56006,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 973.42999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4026,26 +4022,24 @@
       "company": "Costco",
       "universe": "ORIGINAL_200",
       "research_priority_only": false,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000909832.json",
       "secondary_forward_eps_status": "NOT_COLLECTED",
       "secondary_forward_eps_snapshot_at_utc": null,
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
-      "valuation_validation_status": "NOT VALIDATED",
-      "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 1093.82996,
-      "qualifies_for_further_intrinsic_review": false,
-      "below_assumed_base_intrinsic_value": null,
-      "below_selected_margin_of_safety_entry": null,
-      "evidence_qualified_base_value": null,
-      "selected_margin_of_safety_entry": null,
-      "base_upside_pct": null,
-      "selected_margin_of_safety_pct": null,
+      "valuation_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "missing_evidence_flags": [],
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 1102.15002,
+      "qualifies_for_further_intrinsic_review": true,
+      "below_assumed_base_intrinsic_value": false,
+      "below_selected_margin_of_safety_entry": false,
+      "evidence_qualified_base_value": 167.5538,
+      "selected_margin_of_safety_entry": 150.7984,
+      "base_upside_pct": -84.8,
+      "selected_margin_of_safety_pct": 10,
       "buy_signal": false,
       "orders_enabled": false
     },
@@ -4065,8 +4059,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 126.04,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 127.95,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4093,8 +4087,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 336.67999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 339.04001,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4121,8 +4115,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 219.14,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 220.84,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4149,8 +4143,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 34.33,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 32.92,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4877,8 +4871,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 66.38,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 61.9,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4905,8 +4899,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 25.64,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 24.9,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4933,8 +4927,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 86.0,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 83.68,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -4989,8 +4983,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 104.94,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 99.85,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5017,8 +5011,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 65.94,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 62.63,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5045,8 +5039,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 2.93,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 2.75,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5073,8 +5067,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 1355.48999,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 1355.0,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5101,8 +5095,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 11.82,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 11.27,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5129,8 +5123,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 203.23,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 198.92999,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5146,19 +5140,19 @@
       "company": "Shell",
       "universe": "ORIGINAL_200",
       "research_priority_only": true,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
-      "secondary_forward_eps_status": "NOT_COLLECTED",
-      "secondary_forward_eps_snapshot_at_utc": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001306965.json",
+      "secondary_forward_eps_status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "secondary_forward_eps_snapshot_at_utc": "2026-11-21T02:02:19.483808+00:00",
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 94.01,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 93.58,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5185,8 +5179,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 43.21,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 42.75,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5213,8 +5207,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 86.25,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 85.2,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5241,8 +5235,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 39.69,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 39.31,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5269,8 +5263,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 83.35,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 80.02,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5297,8 +5291,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 45.02,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 43.32,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5325,8 +5319,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 151.22,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 150.47,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5353,8 +5347,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 34.9,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 35.47,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5381,8 +5375,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 11.65,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 12.03,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5409,8 +5403,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 187.7,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 183.45,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5437,8 +5431,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 115.1,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 112.87,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5465,8 +5459,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 44.7,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 44.38,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5493,8 +5487,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 63.96,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 63.82,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5521,8 +5515,8 @@
       "missing_evidence_flags": [
         "PRIMARY_XBRL_NOT_COLLECTED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 45.92,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 45.69,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5549,8 +5543,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 124.58,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 122.4,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5566,19 +5560,19 @@
       "company": "Canadian Pacific Kansas City",
       "universe": "ORIGINAL_200",
       "research_priority_only": false,
-      "primary_financial_evidence_status": "NO_PRIMARY_FINANCIAL_SERIES_COLLECTED",
-      "primary_facts_observed_at_utc": null,
-      "primary_facts_url": null,
+      "primary_financial_evidence_status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_facts_observed_at_utc": "2026-11-21T02:02:13.399268+00:00",
+      "primary_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000016875.json",
       "secondary_forward_eps_status": "NOT_COLLECTED",
       "secondary_forward_eps_snapshot_at_utc": null,
       "issuer_guidance_status": "NO_PRIMARY_GUIDANCE_COLLECTED",
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 91.4,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 89.82,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5605,8 +5599,8 @@
       "missing_evidence_flags": [
         "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "price_as_of": "2026-11-19T00:00:00",
-      "latest_dated_price": 38.94,
+      "price_as_of": "2026-11-20T00:00:00",
+      "latest_dated_price": 37.75,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5631,10 +5625,10 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "QUOTE_PRIMARY_FILING_CURRENCY_OR_ADR_RATIO_UNVERIFIED"
+        "DATED_PRICE_NOT_AVAILABLE"
       ],
       "price_as_of": "2026-11-20",
-      "latest_dated_price": 2.955,
+      "latest_dated_price": null,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
@@ -5715,10 +5709,10 @@
       "issuer_guidance_source": null,
       "valuation_validation_status": "NOT VALIDATED",
       "missing_evidence_flags": [
-        "QUOTE_PRIMARY_FILING_CURRENCY_OR_ADR_RATIO_UNVERIFIED"
+        "DATED_PRICE_NOT_AVAILABLE"
       ],
       "price_as_of": "2026-11-20",
-      "latest_dated_price": 36.05,
+      "latest_dated_price": null,
       "qualifies_for_further_intrinsic_review": false,
       "below_assumed_base_intrinsic_value": null,
       "below_selected_margin_of_safety_entry": null,
