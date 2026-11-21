@@ -1,11 +1,11 @@
 {
   "schema_version": "6.0-full-cycle-primary-evidence-1",
-  "published_at_utc": "2026-11-21T03:07:21.700184+00:00",
+  "published_at_utc": "2026-11-21T06:15:09.869112+00:00",
   "original_watchlist_count": 200,
   "discovery_company_count": 4,
   "reported_count": 204,
-  "validated_inputs_count": 12,
-  "not_validated_count": 192,
+  "validated_inputs_count": 17,
+  "not_validated_count": 187,
   "ranked_research_top10": [
     {
       "ticker": "AAPL",
@@ -119,17 +119,19 @@
     }
   ],
   "missing_evidence_flag_counts": {
-    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 12,
+    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 14,
     "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED": 41,
-    "PRIMARY_XBRL_NOT_COLLECTED": 115,
+    "DATED_PRICE_NOT_AVAILABLE": 1,
+    "PRIMARY_XBRL_NOT_COLLECTED": 103,
     "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 4,
-    "DATED_PRICE_NOT_AVAILABLE": 3,
-    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 7,
+    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 9,
     "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 3,
     "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 3,
-    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 5,
+    "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW": 1,
+    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 7,
     "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 2,
-    "NORMALIZED_CYCLE_NONPOSITIVE": 1
+    "NORMALIZED_CYCLE_NONPOSITIVE": 1,
+    "QUOTE_PRIMARY_FILING_CURRENCY_OR_ADR_RATIO_UNVERIFIED": 2
   },
   "value_definition": "Evidence-backed inputs and ASSUMED forecasts. Estimated intrinsic value is NOT an objective certified value.",
   "data_completeness_warning": "Cyclicals require seven years of issuer earnings/FCF. Specialist sectors cannot be auto-valued without relevant issuer assets/AFFO/clinical economics.",
@@ -140,7 +142,7 @@
   "orders_generated": 0,
   "validated_buy_signal_count": 0,
   "forward_research_coverage": {
-    "company_snapshot_count": 8,
+    "company_snapshot_count": 16,
     "issuer_guidance_evidence_count": 0,
     "secondary_estimates_do_not_validate_intrinsic": true
   }
