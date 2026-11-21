@@ -1,12 +1,12 @@
 {
   "schema_version": "5.4-asymmetry-evidence-gated-1",
-  "published_at_utc": "2026-11-20T22:46:56.449517+00:00",
+  "published_at_utc": "2026-11-21T02:02:34.279219+00:00",
   "universe_count": 200,
-  "source_valuation_snapshot_utc": "2026-11-20T22:46:41.813076+00:00",
+  "source_valuation_snapshot_utc": "2026-11-21T02:02:23.695330+00:00",
   "verification_coverage": "FIRST_PASS_SEC_FILINGS_FOR_PRELIMINARY_TOP10_ONLY; NOT ALL_200",
   "evidence_qualified_count": 0,
-  "unverified_model_count": 118,
-  "not_modelled_or_invalid_count": 82,
+  "unverified_model_count": 122,
+  "not_modelled_or_invalid_count": 78,
   "evidence_qualified_top10": [],
   "unverified_scenario_review_queue": [
     {
@@ -259,6 +259,37 @@
     },
     {
       "research_position": 9,
+      "ticker": "ABNB",
+      "company": "Airbnb",
+      "currency": "USD",
+      "last_daily_close": 170.36,
+      "dilution_adjusted_values": {
+        "bear": 36.8496,
+        "base": 82.86,
+        "bull": 154.8327
+      },
+      "hypothetical_future_dilution_rates_pct": {
+        "bear": 15.0,
+        "base": 5.0,
+        "bull": 0.0
+      },
+      "issuer_filing_share_count": null,
+      "vendor_share_count": 424579862.0,
+      "share_basis_adjustment": null,
+      "base_upside_pct": -51.36,
+      "bear_downside_pct": -78.37,
+      "asymmetry_ratio_not_probability": 0.0,
+      "source_flags": [
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+      ],
+      "primary_model_economics_verified": false,
+      "verified_buy_signal": false,
+      "orders_enabled": false,
+      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
+      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
+    },
+    {
+      "research_position": 10,
       "ticker": "AEM",
       "company": "Agnico Eagle Mines",
       "currency": "USD",
@@ -278,37 +309,6 @@
       "share_basis_adjustment": null,
       "base_upside_pct": -70.92,
       "bear_downside_pct": -87.06,
-      "asymmetry_ratio_not_probability": 0.0,
-      "source_flags": [
-        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
-      ],
-      "primary_model_economics_verified": false,
-      "verified_buy_signal": false,
-      "orders_enabled": false,
-      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
-      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
-    },
-    {
-      "research_position": 10,
-      "ticker": "ALL.AX",
-      "company": "Aristocrat Leisure",
-      "currency": "AUD",
-      "last_daily_close": 64.66,
-      "dilution_adjusted_values": {
-        "bear": 5.1592,
-        "base": 11.4171,
-        "bull": 21.1572
-      },
-      "hypothetical_future_dilution_rates_pct": {
-        "bear": 15.0,
-        "base": 5.0,
-        "bull": 0.0
-      },
-      "issuer_filing_share_count": null,
-      "vendor_share_count": 592348586.0,
-      "share_basis_adjustment": null,
-      "base_upside_pct": -82.34,
-      "bear_downside_pct": -92.02,
       "asymmetry_ratio_not_probability": 0.0,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
