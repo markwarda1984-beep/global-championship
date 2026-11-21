@@ -1,11 +1,11 @@
 {
   "schema_version": "6.0-full-cycle-primary-evidence-1",
-  "published_at_utc": "2026-11-20T22:46:38.961319+00:00",
+  "published_at_utc": "2026-11-21T00:05:42.692580+00:00",
   "original_watchlist_count": 200,
   "discovery_company_count": 4,
   "reported_count": 204,
-  "validated_inputs_count": 5,
-  "not_validated_count": 199,
+  "validated_inputs_count": 6,
+  "not_validated_count": 198,
   "ranked_research_top10": [
     {
       "ticker": "AAPL",
@@ -61,16 +61,30 @@
       "bear_downside_pct": -86.82,
       "asymmetry_ratio_not_probability": 0.0,
       "momentum_mos_pct": 20
+    },
+    {
+      "ticker": "AXP",
+      "base": 142.6389,
+      "bear": 73.0811,
+      "bull": 221.9578,
+      "price": 301.70001,
+      "asymmetric_base_upside_pct": -52.72,
+      "bear_downside_pct": -75.78,
+      "asymmetry_ratio_not_probability": 0.0,
+      "momentum_mos_pct": 20
     }
   ],
   "missing_evidence_flag_counts": {
-    "PRIMARY_XBRL_NOT_COLLECTED": 151,
+    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 5,
     "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED": 41,
-    "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 1,
-    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 2,
+    "PRIMARY_XBRL_NOT_COLLECTED": 139,
+    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 4,
+    "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 3,
     "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 1,
+    "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 1,
     "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 1,
     "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 1,
+    "NORMALIZED_CYCLE_NONPOSITIVE": 1,
     "QUOTE_PRIMARY_FILING_CURRENCY_OR_ADR_RATIO_UNVERIFIED": 2
   },
   "value_definition": "Evidence-backed inputs and ASSUMED forecasts. Estimated intrinsic value is NOT an objective certified value.",

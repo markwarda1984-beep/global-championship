@@ -1,11 +1,11 @@
 {
   "schema_version": "6.0-full-cycle-primary-evidence-1",
-  "published_at_utc": "2026-11-20T22:46:38.961319+00:00",
+  "published_at_utc": "2026-11-21T00:05:42.692580+00:00",
   "original_watchlist_count": 200,
   "discovery_company_count": 4,
   "reported_count": 204,
-  "validated_inputs_count": 5,
-  "not_validated_count": 199,
+  "validated_inputs_count": 6,
+  "not_validated_count": 198,
   "ranked_research_top10": [
     {
       "ticker": "AAPL",
@@ -61,16 +61,30 @@
       "bear_downside_pct": -86.82,
       "asymmetry_ratio_not_probability": 0.0,
       "momentum_mos_pct": 20
+    },
+    {
+      "ticker": "AXP",
+      "base": 142.6389,
+      "bear": 73.0811,
+      "bull": 221.9578,
+      "price": 301.70001,
+      "asymmetric_base_upside_pct": -52.72,
+      "bear_downside_pct": -75.78,
+      "asymmetry_ratio_not_probability": 0.0,
+      "momentum_mos_pct": 20
     }
   ],
   "missing_evidence_flag_counts": {
-    "PRIMARY_XBRL_NOT_COLLECTED": 151,
+    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 5,
     "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED": 41,
-    "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 1,
-    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 2,
+    "PRIMARY_XBRL_NOT_COLLECTED": 139,
+    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 4,
+    "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 3,
     "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 1,
+    "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 1,
     "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 1,
     "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 1,
+    "NORMALIZED_CYCLE_NONPOSITIVE": 1,
     "QUOTE_PRIMARY_FILING_CURRENCY_OR_ADR_RATIO_UNVERIFIED": 2
   },
   "companies": [
@@ -100,8 +114,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "DECLINING",
+        "change_pct": -16.24
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — NO PRIMARY GUIDANCE OR CONSENSUS REVISION SERIES",
@@ -120,7 +134,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -133,7 +147,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BHP.AX",
@@ -195,7 +209,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CAT.AX",
@@ -256,7 +270,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PANW",
@@ -317,7 +331,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NVDA",
@@ -378,7 +392,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SLS",
@@ -439,7 +453,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "LYC.AX",
@@ -501,7 +515,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "LOT.AX",
@@ -563,7 +577,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "GG8.AX",
@@ -625,7 +639,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SFR.AX",
@@ -687,7 +701,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "IREN",
@@ -748,7 +762,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "LUNR",
@@ -809,7 +823,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MP",
@@ -870,7 +884,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AMD",
@@ -1125,7 +1139,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "TSM",
@@ -1186,7 +1200,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ASML",
@@ -1234,7 +1248,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -1247,7 +1261,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MU",
@@ -1308,7 +1322,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PLTR",
@@ -1369,7 +1383,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "RKLB",
@@ -1430,7 +1444,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ASTS",
@@ -1478,7 +1492,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -1491,7 +1505,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "COIN",
@@ -1551,7 +1565,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MSTR",
@@ -1612,7 +1626,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "RIO.AX",
@@ -1674,7 +1688,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "FMG.AX",
@@ -1736,7 +1750,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PDN.AX",
@@ -1798,7 +1812,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BOE.AX",
@@ -1860,7 +1874,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MIN.AX",
@@ -1922,7 +1936,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "WDS.AX",
@@ -1984,7 +1998,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CSL.AX",
@@ -2045,7 +2059,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "WTC.AX",
@@ -2106,7 +2120,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AAPL",
@@ -2361,7 +2375,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MSFT",
@@ -2422,7 +2436,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AMZN",
@@ -2483,7 +2497,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "GOOGL",
@@ -2544,7 +2558,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "META",
@@ -2605,7 +2619,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "TSLA",
@@ -2666,7 +2680,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AVGO",
@@ -2714,7 +2728,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -2727,7 +2741,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ORCL",
@@ -2788,7 +2802,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CRM",
@@ -2849,7 +2863,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ADBE",
@@ -3104,7 +3118,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NOW",
@@ -3165,7 +3179,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SNOW",
@@ -3226,7 +3240,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "DDOG",
@@ -3287,7 +3301,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NET",
@@ -3348,7 +3362,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CRWD",
@@ -3409,7 +3423,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ZS",
@@ -3470,7 +3484,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "FTNT",
@@ -3531,7 +3545,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "OKTA",
@@ -3592,7 +3606,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MDB",
@@ -3653,7 +3667,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "TEAM",
@@ -3714,7 +3728,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "INTU",
@@ -3775,7 +3789,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SHOP",
@@ -3836,7 +3850,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "UBER",
@@ -3897,7 +3911,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ABNB",
@@ -3958,7 +3972,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PYPL",
@@ -4019,7 +4033,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "XYZ",
@@ -4080,7 +4094,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "HOOD",
@@ -4140,7 +4154,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SOFI",
@@ -4200,7 +4214,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AFRM",
@@ -4260,7 +4274,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "APP",
@@ -4288,8 +4302,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 111.03
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — NO PRIMARY GUIDANCE OR CONSENSUS REVISION SERIES",
@@ -4308,7 +4322,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -4321,7 +4335,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "DUOL",
@@ -4382,7 +4396,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "RDDT",
@@ -4443,7 +4457,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SPOT",
@@ -4504,7 +4518,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NFLX",
@@ -4565,7 +4579,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "DELL",
@@ -4626,7 +4640,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "HPE",
@@ -4687,7 +4701,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SMCI",
@@ -4748,7 +4762,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ARM",
@@ -4776,8 +4790,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 14.14
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — NO PRIMARY GUIDANCE OR CONSENSUS REVISION SERIES",
@@ -4796,7 +4810,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -4809,7 +4823,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MRVL",
@@ -4870,7 +4884,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "QCOM",
@@ -4931,7 +4945,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "XOM",
@@ -4993,7 +5007,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CVX",
@@ -5055,7 +5069,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "COP",
@@ -5117,7 +5131,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SLB",
@@ -5179,7 +5193,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "EOG",
@@ -5241,7 +5255,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "OXY",
@@ -5303,7 +5317,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "VLO",
@@ -5365,7 +5379,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MPC",
@@ -5427,7 +5441,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ENPH",
@@ -5489,7 +5503,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "FSLR",
@@ -5551,7 +5565,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NEE",
@@ -5613,7 +5627,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CEG",
@@ -5675,7 +5689,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "VST",
@@ -5737,7 +5751,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "OKLO",
@@ -5798,7 +5812,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SMR",
@@ -5859,7 +5873,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CCJ",
@@ -5921,7 +5935,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "UEC",
@@ -5983,7 +5997,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "UUUU",
@@ -6045,7 +6059,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "LEU",
@@ -6107,7 +6121,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "FCX",
@@ -6169,7 +6183,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NEM",
@@ -6231,7 +6245,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AEM",
@@ -6293,7 +6307,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "WPM",
@@ -6355,7 +6369,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PAAS",
@@ -6417,7 +6431,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "LLY",
@@ -6478,7 +6492,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NVO",
@@ -6539,7 +6553,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "UNH",
@@ -6600,7 +6614,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "JNJ",
@@ -6661,7 +6675,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ABBV",
@@ -6903,7 +6917,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MRK",
@@ -6964,7 +6978,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PFE",
@@ -7025,7 +7039,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AMGN",
@@ -7280,7 +7294,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "GILD",
@@ -7341,7 +7355,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "REGN",
@@ -7402,7 +7416,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "VRTX",
@@ -7463,7 +7477,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ISRG",
@@ -7524,7 +7538,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "TMO",
@@ -7585,7 +7599,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "DHR",
@@ -7646,7 +7660,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BSX",
@@ -7707,7 +7721,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MDT",
@@ -7768,7 +7782,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "DXCM",
@@ -7829,7 +7843,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AZN",
@@ -7877,7 +7891,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -7890,7 +7904,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "JPM",
@@ -7951,7 +7965,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BAC",
@@ -7979,8 +7993,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 13.11
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — NO PRIMARY GUIDANCE OR CONSENSUS REVISION SERIES",
@@ -7999,7 +8013,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "EQUITY_YEAR_COMPARABILITY_UNVERIFIED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -8012,7 +8026,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "GS",
@@ -8073,7 +8087,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MS",
@@ -8134,7 +8148,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "C",
@@ -8195,7 +8209,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "WFC",
@@ -8256,7 +8270,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "V",
@@ -8317,7 +8331,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MA",
@@ -8378,36 +8392,36 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "AXP",
       "company": "American Express",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "validation_status": "NOT VALIDATED",
-      "verified_intrinsic_value": null,
-      "bear": null,
-      "base": null,
-      "bull": null,
+      "validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value": 142.6389,
+      "bear": 73.0811,
+      "base": 142.6389,
+      "bull": 221.9578,
       "margin_of_safety_entries": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 128.375,
+        "15pct": 121.2431,
+        "20pct": 114.1111
       },
       "price_distance_to_entries_pct": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 135.01,
+        "15pct": 148.84,
+        "20pct": 164.39
       },
-      "selected_margin_of_safety_pct": null,
-      "selected_entry": null,
+      "selected_margin_of_safety_pct": 20,
+      "selected_entry": 114.1111,
       "latest_dated_price": 301.70001,
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 6.95
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — NO PRIMARY GUIDANCE OR CONSENSUS REVISION SERIES",
@@ -8421,25 +8435,206 @@
         "change_20d_pct": -3.68,
         "change_63d_pct": -10.56
       },
-      "source_confidence": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "primary_source_evidence": null,
-      "assumptions": null,
+      "source_confidence": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "primary_source_evidence": {
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004962.json",
+        "cik": 4962,
+        "issuer": "AMERICAN EXPRESS CO",
+        "share_count_record": {
+          "value": 670552018.0,
+          "unit": "shares",
+          "start": null,
+          "end": "2026-10-15",
+          "filed": "2026-10-23",
+          "form": "10-Q",
+          "accession": "0000004962-26-000409",
+          "tag": "EntityCommonStockSharesOutstanding",
+          "taxonomy": "dei"
+        },
+        "source_hash_sha256": "239c8bdd03f75207d7cfae083bad9b0faa02f6c1d9ede722e6ba88060287ac88",
+        "annual_statements_used": [
+          {
+            "year_end": "2017-12-31",
+            "net_income": 2748000000.0,
+            "revenue": 24780000000.0,
+            "fcf": 12478000000.0,
+            "fcf_source_accessions": [
+              "0000004962-20-000030",
+              "0000004962-20-000030"
+            ],
+            "earnings_accession": "0000004962-20-000030",
+            "cash_period_start": "2017-01-01",
+            "cash_period_end": "2017-12-31"
+          },
+          {
+            "year_end": "2018-12-31",
+            "net_income": 6921000000.0,
+            "revenue": 26607000000.0,
+            "fcf": 7620000000.0,
+            "fcf_source_accessions": [
+              "0000004962-21-000013",
+              "0000004962-21-000013"
+            ],
+            "earnings_accession": "0000004962-21-000013",
+            "cash_period_start": "2018-01-01",
+            "cash_period_end": "2018-12-31"
+          },
+          {
+            "year_end": "2019-12-31",
+            "net_income": 6759000000.0,
+            "revenue": 28159000000.0,
+            "fcf": 11987000000.0,
+            "fcf_source_accessions": [
+              "0000004962-22-000008",
+              "0000004962-22-000008"
+            ],
+            "earnings_accession": "0000004962-22-000008",
+            "cash_period_start": "2019-01-01",
+            "cash_period_end": "2019-12-31"
+          },
+          {
+            "year_end": "2020-12-31",
+            "net_income": 3135000000.0,
+            "revenue": 21974000000.0,
+            "fcf": 4113000000.0,
+            "fcf_source_accessions": [
+              "0000004962-23-000006",
+              "0000004962-23-000006"
+            ],
+            "earnings_accession": "0000004962-23-000006",
+            "cash_period_start": "2020-01-01",
+            "cash_period_end": "2020-12-31"
+          },
+          {
+            "year_end": "2021-12-31",
+            "net_income": 8060000000.0,
+            "revenue": 27716000000.0,
+            "fcf": 13095000000.0,
+            "fcf_source_accessions": [
+              "0000004962-24-000013",
+              "0000004962-24-000013"
+            ],
+            "earnings_accession": "0000004962-24-000013",
+            "cash_period_start": "2021-01-01",
+            "cash_period_end": "2021-12-31"
+          },
+          {
+            "year_end": "2022-12-31",
+            "net_income": 7514000000.0,
+            "revenue": 34219000000.0,
+            "fcf": 19224000000.0,
+            "fcf_source_accessions": [
+              "0000004962-25-000016",
+              "0000004962-25-000016"
+            ],
+            "earnings_accession": "0000004962-25-000016",
+            "cash_period_start": "2022-01-01",
+            "cash_period_end": "2022-12-31"
+          },
+          {
+            "year_end": "2023-12-31",
+            "net_income": 8374000000.0,
+            "revenue": 37218000000.0,
+            "fcf": 16996000000.0,
+            "fcf_source_accessions": [
+              "0000004962-26-000080",
+              "0000004962-26-000080"
+            ],
+            "earnings_accession": "0000004962-26-000080",
+            "cash_period_start": "2023-01-01",
+            "cash_period_end": "2023-12-31"
+          },
+          {
+            "year_end": "2024-12-31",
+            "net_income": 10129000000.0,
+            "revenue": 38825000000.0,
+            "fcf": 12139000000.0,
+            "fcf_source_accessions": [
+              "0000004962-26-000080",
+              "0000004962-26-000080"
+            ],
+            "earnings_accession": "0000004962-26-000080",
+            "cash_period_start": "2024-01-01",
+            "cash_period_end": "2024-12-31"
+          },
+          {
+            "year_end": "2025-12-31",
+            "net_income": 10833000000.0,
+            "revenue": 41304000000.0,
+            "fcf": 16003000000.0,
+            "fcf_source_accessions": [
+              "0000004962-26-000080",
+              "0000004962-26-000080"
+            ],
+            "earnings_accession": "0000004962-26-000080",
+            "cash_period_start": "2025-01-01",
+            "cash_period_end": "2025-12-31"
+          }
+        ]
+      },
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 16499500000.0,
+        "median_annual_net_income_filed": 9251500000.0,
+        "historical_fcf_cagr_observed_pct": -5.93,
+        "assumed_forward_growth_capped_pct": -5.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 10291350000.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 670552018.0,
+          "prior_shares": 682326443.0,
+          "prior_as_of": "2026-04-17",
+          "observed_share_basis_change_pct": -1.726
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 670552018.0,
+        "source_dates": {
+          "shares": "2026-10-15",
+          "net_income_fiscal_years": [
+            "2017-12-31",
+            "2018-12-31",
+            "2019-12-31",
+            "2020-12-31",
+            "2021-12-31",
+            "2022-12-31",
+            "2023-12-31",
+            "2024-12-31",
+            "2025-12-31"
+          ]
+        }
+      },
       "asset_book_nav_reference": null,
-      "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "missing_evidence_flags": [],
       "risks": [
-        "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
         "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "buy_readiness": {
-        "status": "NOT VALIDATED",
+        "status": "WAIT_FOR_MARGIN_OF_SAFETY",
         "score_pct": null,
-        "reason": "No approved purchase target"
+        "reason": "Evidence-qualified scenario; no automatic trade approval"
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BRK-B",
@@ -8500,7 +8695,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BLK",
@@ -8528,8 +8723,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "DECLINING",
+        "change_pct": -12.81
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — NO PRIMARY GUIDANCE OR CONSENSUS REVISION SERIES",
@@ -8548,7 +8743,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation"
@@ -8560,7 +8755,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SCHW",
@@ -8620,7 +8815,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "KKR",
@@ -8680,7 +8875,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BX",
@@ -8740,7 +8935,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "APO",
@@ -8801,7 +8996,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ICE",
@@ -8862,7 +9057,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CME",
@@ -8923,7 +9118,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PGR",
@@ -8984,7 +9179,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "LMT",
@@ -9045,7 +9240,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "RTX",
@@ -9106,7 +9301,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NOC",
@@ -9167,7 +9362,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "GD",
@@ -9228,7 +9423,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BA",
@@ -9276,7 +9471,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "NORMALIZED_CYCLE_NONPOSITIVE"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -9290,7 +9485,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "GE",
@@ -9351,7 +9546,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "HON",
@@ -9412,7 +9607,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "DE",
@@ -9474,7 +9669,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CAT",
@@ -9536,7 +9731,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ETN",
@@ -9597,7 +9792,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "VRT",
@@ -9658,7 +9853,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PWR",
@@ -9719,7 +9914,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "URI",
@@ -9781,7 +9976,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "COST",
@@ -9842,7 +10037,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "WMT",
@@ -9903,7 +10098,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "HD",
@@ -9964,7 +10159,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "LOW",
@@ -10025,7 +10220,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NKE",
@@ -10086,7 +10281,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CBA.AX",
@@ -10147,7 +10342,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NAB.AX",
@@ -10208,7 +10403,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "WBC.AX",
@@ -10269,7 +10464,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ANZ.AX",
@@ -10330,7 +10525,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MQG.AX",
@@ -10391,7 +10586,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "QBE.AX",
@@ -10452,7 +10647,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SUN.AX",
@@ -10513,7 +10708,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "IAG.AX",
@@ -10574,7 +10769,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "WOW.AX",
@@ -10635,7 +10830,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "WES.AX",
@@ -10696,7 +10891,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "COL.AX",
@@ -10757,7 +10952,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "JBH.AX",
@@ -10818,7 +11013,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "REA.AX",
@@ -10879,7 +11074,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "XRO.AX",
@@ -10940,7 +11135,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CAR.AX",
@@ -11001,7 +11196,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PME.AX",
@@ -11062,7 +11257,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "COH.AX",
@@ -11123,7 +11318,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "RMD.AX",
@@ -11184,7 +11379,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "GMG.AX",
@@ -11245,7 +11440,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SCG.AX",
@@ -11306,7 +11501,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "TLS.AX",
@@ -11367,7 +11562,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ALL.AX",
@@ -11428,7 +11623,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "STO.AX",
@@ -11490,7 +11685,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ORG.AX",
@@ -11551,7 +11746,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PLS.AX",
@@ -11613,7 +11808,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BIDU",
@@ -11641,8 +11836,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "DECLINING",
+        "change_pct": -75.45
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — NO PRIMARY GUIDANCE OR CONSENSUS REVISION SERIES",
@@ -11661,7 +11856,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -11674,7 +11869,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "JD",
@@ -11735,7 +11930,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PDD",
@@ -11796,7 +11991,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "TCEHY",
@@ -11857,7 +12052,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NTES",
@@ -11918,7 +12113,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SE",
@@ -11979,7 +12174,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "GRAB",
@@ -12040,7 +12235,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "MELI",
@@ -12101,7 +12296,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NU",
@@ -12161,7 +12356,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SAP",
@@ -12222,7 +12417,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SHEL",
@@ -12284,7 +12479,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BP",
@@ -12346,7 +12541,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "TTE",
@@ -12408,7 +12603,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "EQNR",
@@ -12470,7 +12665,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "HSBC",
@@ -12531,7 +12726,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "UBS",
@@ -12592,7 +12787,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "NVS",
@@ -12653,7 +12848,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "IBN",
@@ -12714,7 +12909,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "INFY",
@@ -12775,7 +12970,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "RY",
@@ -12836,7 +13031,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "TD",
@@ -12897,7 +13092,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CNQ",
@@ -12959,7 +13154,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "SU",
@@ -13021,7 +13216,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "ENB",
@@ -13082,7 +13277,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CNI",
@@ -13143,7 +13338,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "CP",
@@ -13204,7 +13399,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BN",
@@ -13265,7 +13460,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "BTDR",
@@ -13326,7 +13521,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "DUG.AX",
@@ -13387,7 +13582,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "EOS.AX",
@@ -13448,7 +13643,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     },
     {
       "ticker": "PENG",
@@ -13509,7 +13704,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-20T22:46:38.961319+00:00"
+      "report_as_of_utc": "2026-11-21T00:05:42.692580+00:00"
     }
   ],
   "value_definition": "Evidence-backed inputs and ASSUMED forecasts. Estimated intrinsic value is NOT an objective certified value.",

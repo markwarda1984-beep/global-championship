@@ -1,9 +1,9 @@
 {
   "schema_version": "6.0-evidence-only-valuation-top10-1",
-  "published_at_utc": "2026-11-20T22:46:39.101908+00:00",
-  "source_valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
-  "model_data_available_count": 5,
-  "eligible_for_research_count": 5,
+  "published_at_utc": "2026-11-21T00:05:42.799395+00:00",
+  "source_valuation_snapshot_utc": "2026-11-21T00:05:42.692580+00:00",
+  "model_data_available_count": 6,
+  "eligible_for_research_count": 6,
   "ranked_top_10": [
     {
       "rank": 1,
@@ -27,7 +27,7 @@
       "pct_to_unverified_watch_entry": null,
       "research_priority_score_not_probability": 0.0,
       "fundamental_as_of": null,
-      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "valuation_snapshot_utc": "2026-11-21T00:05:42.692580+00:00",
       "model_type": "NORMALIZED_EARNINGS_AND_DCF",
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
@@ -119,7 +119,7 @@
       "pct_to_unverified_watch_entry": null,
       "research_priority_score_not_probability": 0.0,
       "fundamental_as_of": null,
-      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "valuation_snapshot_utc": "2026-11-21T00:05:42.692580+00:00",
       "model_type": "NORMALIZED_EARNINGS_AND_DCF",
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
@@ -211,7 +211,7 @@
       "pct_to_unverified_watch_entry": null,
       "research_priority_score_not_probability": 0.0,
       "fundamental_as_of": null,
-      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "valuation_snapshot_utc": "2026-11-21T00:05:42.692580+00:00",
       "model_type": "NORMALIZED_EARNINGS_AND_DCF",
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
@@ -271,13 +271,15 @@
       "verified_buy_signal": false,
       "buy_readiness_pct": null,
       "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
-      "evidence_qualified_for_asymmetry": true,
+      "evidence_qualified_for_asymmetry": false,
       "dilution_adjusted_scenarios": {
         "bear": 103.2744,
         "base": 231.5198,
         "bull": 432.0156
       },
-      "missing_primary_evidence_flags": []
+      "missing_primary_evidence_flags": [
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+      ]
     },
     {
       "rank": 4,
@@ -301,7 +303,7 @@
       "pct_to_unverified_watch_entry": null,
       "research_priority_score_not_probability": 0.0,
       "fundamental_as_of": null,
-      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "valuation_snapshot_utc": "2026-11-21T00:05:42.692580+00:00",
       "model_type": "NORMALIZED_EARNINGS_AND_DCF",
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
@@ -362,13 +364,9 @@
       "buy_readiness_pct": null,
       "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
       "evidence_qualified_for_asymmetry": false,
-      "dilution_adjusted_scenarios": {
-        "bear": 16.9336,
-        "base": 35.0636,
-        "bull": 59.3765
-      },
+      "dilution_adjusted_scenarios": null,
       "missing_primary_evidence_flags": [
-        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+        "PRIMARY_MODEL_NOT_CHECKED"
       ]
     },
     {
@@ -393,7 +391,7 @@
       "pct_to_unverified_watch_entry": null,
       "research_priority_score_not_probability": 0.0,
       "fundamental_as_of": null,
-      "valuation_snapshot_utc": "2026-11-20T22:46:38.961319+00:00",
+      "valuation_snapshot_utc": "2026-11-21T00:05:42.692580+00:00",
       "model_type": "NORMALIZED_EARNINGS_AND_DCF",
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
@@ -454,21 +452,105 @@
       "buy_readiness_pct": null,
       "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
       "evidence_qualified_for_asymmetry": false,
-      "dilution_adjusted_scenarios": {
-        "bear": 53.9609,
-        "base": 120.6641,
-        "bull": 224.8794
-      },
+      "dilution_adjusted_scenarios": null,
       "missing_primary_evidence_flags": [
-        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+        "PRIMARY_MODEL_NOT_CHECKED"
+      ]
+    },
+    {
+      "rank": 6,
+      "ticker": "AXP",
+      "company": "American Express",
+      "currency": "USD",
+      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 301.70001,
+      "bear_value": 73.0811,
+      "base_value": 142.6389,
+      "bull_value": 221.9578,
+      "model_watch_entry": null,
+      "selected_6_0_entry": 114.1111,
+      "margin_of_safety_entries_60": {
+        "10pct": 128.375,
+        "15pct": 121.2431,
+        "20pct": 114.1111
+      },
+      "pct_to_indicative_base": -52.72,
+      "pct_to_indicative_bear": -75.78,
+      "pct_to_unverified_watch_entry": null,
+      "research_priority_score_not_probability": 0.0,
+      "fundamental_as_of": null,
+      "valuation_snapshot_utc": "2026-11-21T00:05:42.692580+00:00",
+      "model_type": "NORMALIZED_EARNINGS_AND_DCF",
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 16499500000.0,
+        "median_annual_net_income_filed": 9251500000.0,
+        "historical_fcf_cagr_observed_pct": -5.93,
+        "assumed_forward_growth_capped_pct": -5.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 10291350000.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 670552018.0,
+          "prior_shares": 682326443.0,
+          "prior_as_of": "2026-04-17",
+          "observed_share_basis_change_pct": -1.726
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 670552018.0,
+        "source_dates": {
+          "shares": "2026-10-15",
+          "net_income_fiscal_years": [
+            "2017-12-31",
+            "2018-12-31",
+            "2019-12-31",
+            "2020-12-31",
+            "2021-12-31",
+            "2022-12-31",
+            "2023-12-31",
+            "2024-12-31",
+            "2025-12-31"
+          ]
+        }
+      },
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004962.json",
+      "source_verification": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "research_gaps": [
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
+        "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
+      ],
+      "verified_buy_signal": false,
+      "buy_readiness_pct": null,
+      "decision": "6.0 EVIDENCE-QUALIFIED RESEARCH ONLY — NO TRADES",
+      "evidence_qualified_for_asymmetry": false,
+      "dilution_adjusted_scenarios": null,
+      "missing_primary_evidence_flags": [
+        "PRIMARY_MODEL_NOT_CHECKED"
       ]
     }
   ],
   "exclusion_counts": {
-    "not_validated_or_missing": 195
+    "not_validated_or_missing": 194
   },
   "verified_buy_count": 0,
   "orders_enabled": false,
   "warning": "Only CURRENT Championship 6.0 issuer-primary validated scenarios. All former provisional entries RETIRED, no fallback. No orders. Supplemental 5.4 asymmetry scenarios are separate and not purchase targets.",
-  "evidence_qualified_top10_count": 2
+  "evidence_qualified_top10_count": 0
 }
