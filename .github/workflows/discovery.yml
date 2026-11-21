@@ -8,6 +8,7 @@ on:
       - 'intelligence_layer_51.py'
       - 'evidence_upgrade_54.py'
       - 'championship_60.py'
+      - 'forward_research_60.py'
       - 'settings/championship_60.json'
       - 'settings/discovery_claims_54.json'
       - 'discovery_seeds.csv'
@@ -48,6 +49,24 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python championship_60.py --mode evidence-update
+      - name: Collect bounded dated consensus research and official NVIDIA guidance
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python forward_research_60.py --mode update
+      - name: Verify consensus cannot validate intrinsic values or generate trades
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('reports/forward_estimates_60.json').read_text())
+          g=json.loads(Path('reports/issuer_guidance_60.json').read_text())
+          assert p['orders_enabled'] is False and g['orders_enabled'] is False
+          assert p['original_200_count']==200
+          assert all(v['orders_enabled'] is False and v['usable_for_intrinsic_validation'] is False
+                     for v in p['companies'].values())
+          assert all(v['orders_enabled'] is False for v in g['companies'].values())
+          print('Forward research provenance guarded: secondary estimates NEVER approve orders')
+          PY
       - name: Check SEC cache remains research-only
         run: |
           python - <<'PY'
@@ -88,6 +107,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/primary_series_cache_60.json
+          git add reports/forward_estimates_60.json reports/issuer_guidance_60.json
           git add reports/discovery_latest.json reports/discovery_watchlist.json reports/research_queue_latest.json
           if ! git diff --cached --quiet; then
             git commit -m "data: update underfollowed discovery radar [skip ci]"
@@ -121,5 +141,7 @@ jobs:
             reports/discovery_watchlist.json
             reports/research_queue_latest.json
             reports/primary_series_cache_60.json
+            reports/forward_estimates_60.json
+            reports/issuer_guidance_60.json
           if-no-files-found: warn
           retention-days: 14

@@ -1,0 +1,18 @@
+CHAMPIONSHIP 6.0 — COMPLETE COVERAGE & VERIFIED RESEARCH SHORTLIST PATCH
+=======================================================================
+This archive is a patch for the existing markwarda1984-beep/global-championship.
+
+1. On Android, extract the ZIP INTO Documents/global-championship.
+2. Preserve the existing .git folder, watchlist.csv, scan.py, all reports,
+   the discovery engine, the offset/tax models, and the decision journal.
+3. Use GitSync > three dots beside Sync Changes > Upload Changes.
+   DO NOT use Upload + Overwrite.
+4. In GitHub Actions, check the scanner, discovery, and weekly valuation jobs.
+5. In ChatGPT, ask: "Verify 6.0 workflow runs, NVIDIA filing coverage,
+   forward-estimates, issuer guidance, all 204 company rows, 0 orders,
+   and no legacy NVDA $33.39 entry."
+
+Local verification: python -m unittest discover -s tests -q
+Current source-validity gates: an inaccessible or unverified issuer filing never
+produces a validated intrinsic value, buy-readiness score or entry target.
+The fixed 200 stocks and schedules remain untouched.

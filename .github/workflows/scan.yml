@@ -10,6 +10,7 @@ on:
       - 'intelligence_layer_51.py'
       - 'evidence_upgrade_54.py'
       - 'championship_60.py'
+      - 'forward_research_60.py'
       - 'settings/championship_60.json'
       - 'settings/dilution_stress_54.json'
       - 'settings/intelligence_51.json'
@@ -50,6 +51,36 @@ jobs:
         run: python intelligence_layer_51.py --mode snapshot
       - name: Championship 6.0 evidence-gated 200-plus-discovery dated-price report
         run: python championship_60.py --mode scan
+      - name: Publish complete per-company SEC and forward-research coverage status
+        run: python forward_research_60.py --mode coverage
+      - name: Verify filing provenance and strictly evidence-qualified undervaluation queues
+        run: |
+          python - <<'PYVERIFY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('reports/coverage_60.json').read_text())
+          assert d['original_watchlist_count']==200
+          assert d['reported_count']==200+d['discovery_count']
+          assert len(d['companies'])==d['reported_count']
+          assert d['orders_enabled'] is False and d['orders_generated']==0
+          rows={r['ticker']:r for r in d['companies']}
+          assert len(rows)==len(d['companies'])
+          assert sum(r['universe']=='ORIGINAL_200' for r in rows.values())==200
+          assert d['evidence_qualified_at_selected_margin_of_safety_count']==len(d['evidence_qualified_at_selected_margin_of_safety'])
+          assert d['validated_below_assumed_base_count']==len(d['evidence_qualified_below_base_research'])
+          for k in ('evidence_qualified_below_base_research','evidence_qualified_at_selected_margin_of_safety'):
+            for x in d[k]:
+              r=rows[x['ticker']]
+              assert r['qualifies_for_further_intrinsic_review'] is True
+              assert r['selected_margin_of_safety_entry'] is not None
+              assert x['buy_signal'] is False and x['orders_enabled'] is False
+          for r in rows.values():
+            assert r['orders_enabled'] is False and r['buy_signal'] is False
+            if r['valuation_validation_status']=='NOT VALIDATED':
+              assert r['selected_margin_of_safety_entry'] is None
+              assert r['below_selected_margin_of_safety_entry'] is None
+          print('Verified 6.0 filing-provenance research shortlist (zero order signals)')
+          PYVERIFY
       - name: Build 200-stock report for ChatGPT (6.0 entries only)
         run: python report_bridge.py
       - name: Generate evidence-only Top 10, AUD offset sensitivities, change feed and journal
@@ -104,6 +135,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/valuation_60_latest.json reports/valuation_60_summary.json
+          git add reports/coverage_60.json
           git add reports/latest.json reports/changes_latest.json reports/valuation_top10_latest.json reports/offset_comparison_latest.json reports/decision_journal.json reports/intelligence_latest.json reports/asymmetry_latest.json
           if [ -f reports/fx_aud_latest.json ]; then git add reports/fx_aud_latest.json; fi
           if ! git diff --cached --quiet; then
@@ -137,5 +169,6 @@ jobs:
             data/
             reports/valuation_60_latest.json
             reports/valuation_60_summary.json
+            reports/coverage_60.json
           if-no-files-found: warn
           retention-days: 14

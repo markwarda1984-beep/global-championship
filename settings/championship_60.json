@@ -1,7 +1,7 @@
 {
   "schema_version": "6.0-model-settings-1",
   "max_new_sec_companies_per_discovery_run": 12,
-  "sec_refresh_days": 30,
+  "sec_refresh_days": 14,
   "minimum_recent_price_max_age_days": 7,
   "minimum_stable_annual_years": 4,
   "minimum_cyclical_annual_years": 7,
@@ -56,5 +56,28 @@
   },
   "asset_nav": "REQUIRES_VALIDATED_ISSUER_ASSET_APPRAISALS_WITH_LIABILITIES_AND_SHARE_BASIS",
   "forward_earnings": "MODELLED_FROM_VERIFIED_HISTORY_NOT_VERIFIED_COMPANY_GUIDANCE",
-  "source_risk": "No independent audit, business-quality guarantee, or validated long-run forecast. No trades."
+  "source_risk": "No independent audit, business-quality guarantee, or validated long-run forecast. No trades.",
+  "priority_tickers": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AMZN",
+    "AVGO",
+    "CRM",
+    "SHEL",
+    "BP",
+    "OXY",
+    "TSM",
+    "DUG.AX",
+    "EOS.AX",
+    "PENG",
+    "BTDR"
+  ],
+  "priority_selection_policy": "RESEARCH_EVIDENCE_GAPS_ONLY_NOT_INVESTMENT_RECOMMENDATIONS",
+  "max_new_forward_estimates_per_discovery_run": 8,
+  "forward_estimates_refresh_days": 14,
+  "forward_estimates_quality": "SECONDARY_UNOFFICIAL_NEVER_VALIDATES_PRIMARY_INTRINSIC",
+  "priority_sec_refresh_days": 2,
+  "priority_forward_estimates_refresh_days": 7
 }

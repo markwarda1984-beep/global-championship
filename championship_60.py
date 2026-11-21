@@ -631,14 +631,32 @@ def fetch_update(root:Path,now:datetime,cfg:dict,*,offline:bool=False,session:An
     # Cycle all available stocks; discovery candidates are first and never modify original 200.
     failures=cache.get('temporary_failures',{}) if isinstance(cache.get('temporary_failures'),dict) else {}
     eligible=[x for x in names if x['ticker'] in listed]
-    eligible.sort(key=lambda x:(0 if x['universe']=='DISCOVERY' else 1,x['ticker']))
+    # Research evidence triage (never buy priority): put NVIDIA and configured
+    # major gaps first, then discovery leads, then the rest of the fixed 200.
+    # Previously the alphabetical scan waited for hundreds of other issuers
+    # before reaching NVDA. After each successful fetch the cache suppresses
+    # redundant requests for 30 days, so all eligible stocks still advance.
+    priority=[str(t).upper() for t in cfg.get('priority_tickers',['NVDA'])]
+    if len(priority)>40 or any(not re.fullmatch(r'[A-Z0-9.\-]{1,12}',t) for t in priority):
+        raise ValueError('Invalid research priority config')
+    positions={t:i for i,t in enumerate(priority)}
+    eligible.sort(key=lambda x:(positions.get(x['ticker'],10000),
+                                0 if x['universe']=='DISCOVERY' else 1,x['ticker']))
+    out['research_priority_queue']=[x['ticker'] for x in eligible[:min(40,len(eligible))]]
+    out['research_priority_is_not_a_buy_signal']=True
     def needs_refresh(t):
         c=companies.get(t,{})
         f=failures.get(t,{})
         retry=dt(f.get('retry_after_utc'))
         if retry and retry>now.date():return False
-        return not dated_recent(c.get('observed_utc'),now,cfg['sec_refresh_days'])
-    selected=[x for x in eligible if needs_refresh(x['ticker'])][:cfg['max_new_sec_companies_per_discovery_run']]
+        refresh_days=(cfg.get('priority_sec_refresh_days',2) if t in positions
+                      else cfg['sec_refresh_days'])
+        return not dated_recent(c.get('observed_utc'),now,refresh_days)
+    pending=[x for x in eligible if needs_refresh(x['ticker'])]
+    selected=pending[:cfg['max_new_sec_companies_per_discovery_run']]
+    out['remaining_eligible_uncached_before_run']=len(pending)
+    out['selected_issuer_tickers']=[x['ticker'] for x in selected]
+    out['non_sec_listed_tickers']=[x['ticker'] for x in names if x['ticker'] not in listed]
     result=[]
     out['temporary_failures']=failures.copy()
     for name in selected:
@@ -684,6 +702,10 @@ def run(root:Path,mode:str,offline:bool=False,session:Any=None,now:datetime|None
                 'orders_enabled':False}
     if mode not in ('scan','weekly'):raise ValueError('Unknown mode')
     out=evaluate_all(root,now,cfg)
+    # External analyst forecasts and issuer guidance are separately attributed.
+    # Their arrival NEVER changes primary-evidence validation or entry prices.
+    from forward_research_60 import attach
+    out=attach(out,root)
     target='valuation_60_weekly.json' if mode=='weekly' else 'valuation_60_latest.json'
     write(root/'reports'/target,out)
     write(root/'reports'/('valuation_60_weekly_summary.json' if mode=='weekly' else 'valuation_60_summary.json'),
