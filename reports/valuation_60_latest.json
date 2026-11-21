@@ -1,11 +1,11 @@
 {
   "schema_version": "6.0-full-cycle-primary-evidence-1",
-  "published_at_utc": "2026-11-21T22:00:24.041694+00:00",
+  "published_at_utc": "2026-11-21T23:56:17.365542+00:00",
   "original_watchlist_count": 200,
   "discovery_company_count": 4,
   "reported_count": 204,
-  "validated_inputs_count": 27,
-  "not_validated_count": 177,
+  "validated_inputs_count": 30,
+  "not_validated_count": 174,
   "ranked_research_top10": [
     {
       "ticker": "AAPL",
@@ -119,18 +119,18 @@
     }
   ],
   "missing_evidence_flag_counts": {
-    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 19,
+    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 20,
     "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED": 41,
-    "PRIMARY_XBRL_NOT_COLLECTED": 68,
+    "PRIMARY_XBRL_NOT_COLLECTED": 56,
     "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 11,
     "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW": 3,
-    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 13,
-    "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL": 2,
+    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 16,
+    "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL": 4,
     "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 4,
     "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 4,
-    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 8,
+    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 10,
     "NORMALIZED_CYCLE_NONPOSITIVE": 2,
-    "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 4,
+    "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 5,
     "QUOTE_PRIMARY_FILING_CURRENCY_OR_ADR_RATIO_UNVERIFIED": 2
   },
   "companies": [
@@ -209,7 +209,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -337,7 +337,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -401,8 +401,25 @@
         "change_pct": null
       },
       "earnings_revisions": {
-        "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
-        "period_revisions": {},
+        "status": "SECONDARY_ONLY_NOT_VALIDATED",
+        "period_revisions": {
+          "0q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "0y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          }
+        },
         "verified_revision_signal": null,
         "can_override_primary_evidence": false
       },
@@ -429,13 +446,32 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
-        "status": "NOT COLLECTED",
-        "periods": {},
-        "source": null,
-        "source_url": null,
-        "as_of_utc": null,
+        "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+        "periods": {
+          "0y": {
+            "consensus_eps_average": -0.01932,
+            "low": -0.04295,
+            "high": 0.0,
+            "analysts_count": 3,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1y": {
+            "consensus_eps_average": 0.00038,
+            "low": -0.07,
+            "high": 0.043,
+            "analysts_count": 4,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          }
+        },
+        "source": "Yahoo Finance via unofficial yfinance",
+        "source_url": "https://finance.yahoo.com/quote/CAT.AX/analysis/",
+        "as_of_utc": "2026-11-21T22:10:07.173426+00:00",
         "data_quality": "UNOFFICIAL_SECONDARY_ESTIMATES_NOT_VERIFIED",
         "usable_to_validate_intrinsic_value": false
       },
@@ -502,7 +538,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -592,7 +628,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -642,7 +678,7 @@
       "issuer_forward_guidance": {
         "ticker": "NVDA",
         "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
-        "checked_at_utc": "2026-11-21T16:14:54.485717+00:00",
+        "checked_at_utc": "2026-11-21T22:10:07.173426+00:00",
         "status": "ISSUER_OR_DISCLOSURE_DATE_NOT_CONFIRMED",
         "reported_guidance": null,
         "evidence_sha256": null,
@@ -708,7 +744,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -782,7 +818,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -856,7 +892,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -930,7 +966,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -1004,7 +1040,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -1077,7 +1113,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -1150,7 +1186,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -1223,7 +1259,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -1507,7 +1543,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -1634,7 +1670,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -1761,7 +1797,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -1839,8 +1875,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 895.07
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
@@ -1858,7 +1894,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -1871,7 +1907,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -1944,7 +1980,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2017,7 +2053,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2107,7 +2143,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -2217,7 +2253,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2277,7 +2313,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -2290,7 +2326,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2364,7 +2400,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2438,7 +2474,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2512,7 +2548,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2603,7 +2639,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -2696,7 +2732,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2770,7 +2806,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2843,7 +2879,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -2916,7 +2952,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -3200,7 +3236,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -3521,7 +3557,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -3648,7 +3684,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -3969,7 +4005,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -4096,7 +4132,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -4206,7 +4242,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -4296,7 +4332,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -4406,7 +4442,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -4690,7 +4726,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -5011,7 +5047,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -5068,29 +5104,29 @@
       "company": "ServiceNow",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "validation_status": "NOT VALIDATED",
-      "verified_intrinsic_value": null,
-      "bear": null,
-      "base": null,
-      "bull": null,
+      "validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value": 23.898,
+      "bear": 11.4094,
+      "base": 23.898,
+      "bull": 38.5145,
       "margin_of_safety_entries": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 21.5082,
+        "15pct": 20.3133,
+        "20pct": 19.1184
       },
       "price_distance_to_entries_pct": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 307.33,
+        "15pct": 331.29,
+        "20pct": 358.25
       },
-      "selected_margin_of_safety_pct": null,
-      "selected_entry": null,
+      "selected_margin_of_safety_pct": 20,
+      "selected_entry": 19.1184,
       "latest_dated_price": 87.61,
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 22.67
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
@@ -5103,25 +5139,219 @@
         "change_20d_pct": -44.89,
         "change_63d_pct": -31.58
       },
-      "source_confidence": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "primary_source_evidence": null,
-      "assumptions": null,
+      "source_confidence": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "primary_source_evidence": {
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
+        "cik": 1373715,
+        "issuer": "SERVICENOW, INC.",
+        "share_count_record": {
+          "value": 1038000000.0,
+          "unit": "shares",
+          "start": null,
+          "end": "2026-09-30",
+          "filed": "2026-10-28",
+          "form": "10-Q",
+          "accession": "0001373715-26-000096",
+          "tag": "EntityCommonStockSharesOutstanding",
+          "taxonomy": "dei"
+        },
+        "source_hash_sha256": "d09be7589897c8ef5aeb9cbfacfd133ad29c020ee59ca68b66923d9b6aff952c",
+        "annual_statements_used": [
+          {
+            "year_end": "2016-12-31",
+            "net_income": -414249000.0,
+            "revenue": 1390985000.0,
+            "fcf": 53519000.0,
+            "fcf_source_accessions": [
+              "0001373715-19-000070",
+              "0001373715-19-000070"
+            ],
+            "earnings_accession": "0001373715-19-000070",
+            "cash_period_start": "2016-01-01",
+            "cash_period_end": "2016-12-31"
+          },
+          {
+            "year_end": "2017-12-31",
+            "net_income": -116846000.0,
+            "revenue": 1918494000.0,
+            "fcf": 492430000.0,
+            "fcf_source_accessions": [
+              "0001373715-20-000072",
+              "0001373715-20-000072"
+            ],
+            "earnings_accession": "0001373715-20-000072",
+            "cash_period_start": "2017-01-01",
+            "cash_period_end": "2017-12-31"
+          },
+          {
+            "year_end": "2018-12-31",
+            "net_income": -26704000.0,
+            "revenue": 2608816000.0,
+            "fcf": 586627000.0,
+            "fcf_source_accessions": [
+              "0001373715-21-000061",
+              "0001373715-21-000061"
+            ],
+            "earnings_accession": "0001373715-21-000061",
+            "cash_period_start": "2018-01-01",
+            "cash_period_end": "2018-12-31"
+          },
+          {
+            "year_end": "2019-12-31",
+            "net_income": 626698000.0,
+            "revenue": 3460000000.0,
+            "fcf": 971000000.0,
+            "fcf_source_accessions": [
+              "0001373715-22-000024",
+              "0001373715-22-000024"
+            ],
+            "earnings_accession": "0001373715-22-000024",
+            "cash_period_start": "2019-01-01",
+            "cash_period_end": "2019-12-31"
+          },
+          {
+            "year_end": "2020-12-31",
+            "net_income": 119000000.0,
+            "revenue": 4519000000.0,
+            "fcf": 1367000000.0,
+            "fcf_source_accessions": [
+              "0001373715-23-000035",
+              "0001373715-23-000035"
+            ],
+            "earnings_accession": "0001373715-23-000035",
+            "cash_period_start": "2020-01-01",
+            "cash_period_end": "2020-12-31"
+          },
+          {
+            "year_end": "2021-12-31",
+            "net_income": 230000000.0,
+            "revenue": 5896000000.0,
+            "fcf": 1799000000.0,
+            "fcf_source_accessions": [
+              "0001373715-24-000030",
+              "0001373715-24-000030"
+            ],
+            "earnings_accession": "0001373715-24-000030",
+            "cash_period_start": "2021-01-01",
+            "cash_period_end": "2021-12-31"
+          },
+          {
+            "year_end": "2022-12-31",
+            "net_income": 325000000.0,
+            "revenue": 7245000000.0,
+            "fcf": 2173000000.0,
+            "fcf_source_accessions": [
+              "0001373715-25-000010",
+              "0001373715-25-000010"
+            ],
+            "earnings_accession": "0001373715-25-000010",
+            "cash_period_start": "2022-01-01",
+            "cash_period_end": "2022-12-31"
+          },
+          {
+            "year_end": "2023-12-31",
+            "net_income": 1731000000.0,
+            "revenue": 8971000000.0,
+            "fcf": 2704000000.0,
+            "fcf_source_accessions": [
+              "0001373715-26-000007",
+              "0001373715-26-000007"
+            ],
+            "earnings_accession": "0001373715-26-000007",
+            "cash_period_start": "2023-01-01",
+            "cash_period_end": "2023-12-31"
+          },
+          {
+            "year_end": "2024-12-31",
+            "net_income": 1425000000.0,
+            "revenue": 10984000000.0,
+            "fcf": 3415000000.0,
+            "fcf_source_accessions": [
+              "0001373715-26-000007",
+              "0001373715-26-000007"
+            ],
+            "earnings_accession": "0001373715-26-000007",
+            "cash_period_start": "2024-01-01",
+            "cash_period_end": "2024-12-31"
+          },
+          {
+            "year_end": "2025-12-31",
+            "net_income": 1748000000.0,
+            "revenue": 13278000000.0,
+            "fcf": 4576000000.0,
+            "fcf_source_accessions": [
+              "0001373715-26-000007",
+              "0001373715-26-000007"
+            ],
+            "earnings_accession": "0001373715-26-000007",
+            "cash_period_start": "2025-01-01",
+            "cash_period_end": "2025-12-31"
+          }
+        ]
+      },
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 3059500000.0,
+        "median_annual_net_income_filed": 1578000000.0,
+        "historical_fcf_cagr_observed_pct": 28.177,
+        "assumed_forward_growth_capped_pct": 8.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 1887840000.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 1038000000.0,
+          "prior_shares": 1031000000.0,
+          "prior_as_of": "2026-03-31",
+          "observed_share_basis_change_pct": 0.679
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 1038000000.0,
+        "source_dates": {
+          "shares": "2026-09-30",
+          "net_income_fiscal_years": [
+            "2017-12-31",
+            "2018-12-31",
+            "2019-12-31",
+            "2020-12-31",
+            "2021-12-31",
+            "2022-12-31",
+            "2023-12-31",
+            "2024-12-31",
+            "2025-12-31"
+          ]
+        }
+      },
       "asset_book_nav_reference": null,
-      "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "missing_evidence_flags": [],
       "risks": [
-        "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
         "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "buy_readiness": {
-        "status": "NOT VALIDATED",
+        "status": "WAIT_FOR_MARGIN_OF_SAFETY",
         "score_pct": null,
-        "reason": "No approved purchase target"
+        "reason": "Evidence-qualified scenario; no automatic trade approval"
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5194,7 +5424,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5267,7 +5497,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5327,7 +5557,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -5340,7 +5570,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5413,7 +5643,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5486,7 +5716,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5559,7 +5789,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5632,7 +5862,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5705,7 +5935,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -5778,7 +6008,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -6045,7 +6275,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -6118,7 +6348,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -6191,7 +6421,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -6281,7 +6511,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -6391,7 +6621,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -6464,7 +6694,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -6536,7 +6766,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -6608,7 +6838,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -6697,7 +6927,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -6824,7 +7054,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -6934,7 +7164,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7007,7 +7237,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7080,7 +7310,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7100,29 +7330,29 @@
       "company": "Netflix",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "validation_status": "NOT VALIDATED",
-      "verified_intrinsic_value": null,
-      "bear": null,
-      "base": null,
-      "bull": null,
+      "validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value": 16.9075,
+      "bear": 8.6376,
+      "base": 16.9075,
+      "bull": 26.2804,
       "margin_of_safety_entries": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 15.2167,
+        "15pct": 14.3714,
+        "20pct": 13.526
       },
       "price_distance_to_entries_pct": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 272.81,
+        "15pct": 294.74,
+        "20pct": 319.41
       },
-      "selected_margin_of_safety_pct": null,
-      "selected_entry": null,
+      "selected_margin_of_safety_pct": 20,
+      "selected_entry": 13.526,
       "latest_dated_price": 56.73,
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 26.05
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
@@ -7135,25 +7365,219 @@
         "change_20d_pct": -13.85,
         "change_63d_pct": -29.1
       },
-      "source_confidence": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "primary_source_evidence": null,
-      "assumptions": null,
+      "source_confidence": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "primary_source_evidence": {
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001065280.json",
+        "cik": 1065280,
+        "issuer": "Netflix, Inc.",
+        "share_count_record": {
+          "value": 4106325903.0,
+          "unit": "shares",
+          "start": null,
+          "end": "2026-09-30",
+          "filed": "2026-10-21",
+          "form": "10-Q",
+          "accession": "0001065280-26-000291",
+          "tag": "EntityCommonStockSharesOutstanding",
+          "taxonomy": "dei"
+        },
+        "source_hash_sha256": "c6e4614cbf3c169d42e5b90ef8771ca46ae92505538a351e850f23c2997f34f0",
+        "annual_statements_used": [
+          {
+            "year_end": "2016-12-31",
+            "net_income": 186678000.0,
+            "revenue": 8830669000.0,
+            "fcf": -1581637000.0,
+            "fcf_source_accessions": [
+              "0001065280-19-000043",
+              "0001065280-19-000043"
+            ],
+            "earnings_accession": "0001065280-19-000043",
+            "cash_period_start": "2016-01-01",
+            "cash_period_end": "2016-12-31"
+          },
+          {
+            "year_end": "2017-12-31",
+            "net_income": 558929000.0,
+            "revenue": 11692713000.0,
+            "fcf": -1959250000.0,
+            "fcf_source_accessions": [
+              "0001065280-20-000040",
+              "0001065280-20-000040"
+            ],
+            "earnings_accession": "0001065280-20-000040",
+            "cash_period_start": "2017-01-01",
+            "cash_period_end": "2017-12-31"
+          },
+          {
+            "year_end": "2018-12-31",
+            "net_income": 1211242000.0,
+            "revenue": 15794341000.0,
+            "fcf": -2854425000.0,
+            "fcf_source_accessions": [
+              "0001065280-21-000040",
+              "0001065280-21-000040"
+            ],
+            "earnings_accession": "0001065280-21-000040",
+            "cash_period_start": "2018-01-01",
+            "cash_period_end": "2018-12-31"
+          },
+          {
+            "year_end": "2019-12-31",
+            "net_income": 1866916000.0,
+            "revenue": 20156447000.0,
+            "fcf": -3140357000.0,
+            "fcf_source_accessions": [
+              "0001065280-22-000036",
+              "0001065280-22-000036"
+            ],
+            "earnings_accession": "0001065280-22-000036",
+            "cash_period_start": "2019-01-01",
+            "cash_period_end": "2019-12-31"
+          },
+          {
+            "year_end": "2020-12-31",
+            "net_income": 2761395000.0,
+            "revenue": 24996056000.0,
+            "fcf": 1929154000.0,
+            "fcf_source_accessions": [
+              "0001065280-23-000035",
+              "0001065280-23-000035"
+            ],
+            "earnings_accession": "0001065280-23-000035",
+            "cash_period_start": "2020-01-01",
+            "cash_period_end": "2020-12-31"
+          },
+          {
+            "year_end": "2021-12-31",
+            "net_income": 5116228000.0,
+            "revenue": 29697844000.0,
+            "fcf": -131975000.0,
+            "fcf_source_accessions": [
+              "0001065280-24-000030",
+              "0001065280-24-000030"
+            ],
+            "earnings_accession": "0001065280-24-000030",
+            "cash_period_start": "2021-01-01",
+            "cash_period_end": "2021-12-31"
+          },
+          {
+            "year_end": "2022-12-31",
+            "net_income": 4491924000.0,
+            "revenue": 31615550000.0,
+            "fcf": 1618528000.0,
+            "fcf_source_accessions": [
+              "0001065280-25-000044",
+              "0001065280-25-000044"
+            ],
+            "earnings_accession": "0001065280-25-000044",
+            "cash_period_start": "2022-01-01",
+            "cash_period_end": "2022-12-31"
+          },
+          {
+            "year_end": "2023-12-31",
+            "net_income": 5407990000.0,
+            "revenue": 33723297000.0,
+            "fcf": 6925749000.0,
+            "fcf_source_accessions": [
+              "0001065280-26-000034",
+              "0001065280-26-000034"
+            ],
+            "earnings_accession": "0001065280-26-000034",
+            "cash_period_start": "2023-01-01",
+            "cash_period_end": "2023-12-31"
+          },
+          {
+            "year_end": "2024-12-31",
+            "net_income": 8711631000.0,
+            "revenue": 39000966000.0,
+            "fcf": 6921826000.0,
+            "fcf_source_accessions": [
+              "0001065280-26-000034",
+              "0001065280-26-000034"
+            ],
+            "earnings_accession": "0001065280-26-000034",
+            "cash_period_start": "2024-01-01",
+            "cash_period_end": "2024-12-31"
+          },
+          {
+            "year_end": "2025-12-31",
+            "net_income": 10981201000.0,
+            "revenue": 45183036000.0,
+            "fcf": 9461053000.0,
+            "fcf_source_accessions": [
+              "0001065280-26-000034",
+              "0001065280-26-000034"
+            ],
+            "earnings_accession": "0001065280-26-000034",
+            "cash_period_start": "2025-01-01",
+            "cash_period_end": "2025-12-31"
+          }
+        ]
+      },
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 6923787500.0,
+        "median_annual_net_income_filed": 7059810500.0,
+        "historical_fcf_cagr_observed_pct": 80.138,
+        "assumed_forward_growth_capped_pct": 8.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 11859697080.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 4106325903.0,
+          "prior_shares": 4212794271.0,
+          "prior_as_of": "2026-03-31",
+          "observed_share_basis_change_pct": -2.527
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 4106325903.0,
+        "source_dates": {
+          "shares": "2026-09-30",
+          "net_income_fiscal_years": [
+            "2017-12-31",
+            "2018-12-31",
+            "2019-12-31",
+            "2020-12-31",
+            "2021-12-31",
+            "2022-12-31",
+            "2023-12-31",
+            "2024-12-31",
+            "2025-12-31"
+          ]
+        }
+      },
       "asset_book_nav_reference": null,
-      "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "missing_evidence_flags": [],
       "risks": [
-        "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
         "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "buy_readiness": {
-        "status": "NOT VALIDATED",
+        "status": "WAIT_FOR_MARGIN_OF_SAFETY",
         "score_pct": null,
-        "reason": "No approved purchase target"
+        "reason": "Evidence-qualified scenario; no automatic trade approval"
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7420,7 +7844,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7493,7 +7917,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7566,7 +7990,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7656,7 +8080,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -7753,7 +8177,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -7766,7 +8190,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7839,7 +8263,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7913,7 +8337,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -7987,7 +8411,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -8061,7 +8485,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -8135,7 +8559,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -8209,7 +8633,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -8300,7 +8724,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -8411,7 +8835,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -8670,7 +9094,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -8929,7 +9353,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9003,7 +9427,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9044,8 +9468,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "FLAT",
+        "change_pct": -1.6
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
@@ -9063,7 +9487,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -9077,7 +9501,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9151,7 +9575,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9225,7 +9649,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9298,7 +9722,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9371,7 +9795,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9445,7 +9869,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9519,7 +9943,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9593,7 +10017,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9667,7 +10091,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9741,7 +10165,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9782,8 +10206,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 111.62
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
@@ -9801,7 +10225,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -9815,7 +10239,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -9906,7 +10330,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -10017,7 +10441,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -10091,7 +10515,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -10164,7 +10588,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -10237,7 +10661,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -10310,7 +10734,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -10577,7 +11001,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -10848,7 +11272,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -11074,7 +11498,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -11147,7 +11571,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -11431,7 +11855,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -11709,7 +12133,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -11782,7 +12206,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -11855,7 +12279,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -11928,7 +12352,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -12001,7 +12425,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -12268,7 +12692,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -12313,8 +12737,25 @@
         "change_pct": 56.66
       },
       "earnings_revisions": {
-        "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
-        "period_revisions": {},
+        "status": "SECONDARY_ONLY_NOT_VALIDATED",
+        "period_revisions": {
+          "0q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "0y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          }
+        },
         "verified_revision_signal": null,
         "can_override_primary_evidence": false
       },
@@ -12535,13 +12976,50 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
-        "status": "NOT COLLECTED",
-        "periods": {},
-        "source": null,
-        "source_url": null,
-        "as_of_utc": null,
+        "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+        "periods": {
+          "0q": {
+            "consensus_eps_average": 0.77579,
+            "low": 0.76864,
+            "high": 0.79,
+            "analysts_count": 23,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1q": {
+            "consensus_eps_average": 0.74394,
+            "low": 0.7,
+            "high": 0.78,
+            "analysts_count": 16,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "0y": {
+            "consensus_eps_average": 3.17194,
+            "low": 3.14761,
+            "high": 3.29,
+            "analysts_count": 28,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1y": {
+            "consensus_eps_average": 3.13004,
+            "low": 3.02438,
+            "high": 3.45,
+            "analysts_count": 28,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          }
+        },
+        "source": "Yahoo Finance via unofficial yfinance",
+        "source_url": "https://finance.yahoo.com/quote/BSX/analysis/",
+        "as_of_utc": "2026-11-21T22:10:07.173426+00:00",
         "data_quality": "UNOFFICIAL_SECONDARY_ESTIMATES_NOT_VERIFIED",
         "usable_to_validate_intrinsic_value": false
       },
@@ -12802,7 +13280,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -13069,7 +13547,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -13159,7 +13637,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -13260,7 +13738,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -13350,7 +13828,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -13460,7 +13938,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -13501,8 +13979,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "IMPROVING",
+        "change_pct": 25.92
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
@@ -13520,7 +13998,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "EQUITY_YEAR_COMPARABILITY_UNVERIFIED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -13533,7 +14011,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -13578,8 +14056,25 @@
         "change_pct": 12.81
       },
       "earnings_revisions": {
-        "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
-        "period_revisions": {},
+        "status": "SECONDARY_ONLY_NOT_VALIDATED",
+        "period_revisions": {
+          "0q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "0y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          }
+        },
         "verified_revision_signal": null,
         "can_override_primary_evidence": false
       },
@@ -13606,13 +14101,50 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
-        "status": "NOT COLLECTED",
-        "periods": {},
-        "source": null,
-        "source_url": null,
-        "as_of_utc": null,
+        "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+        "periods": {
+          "0q": {
+            "consensus_eps_average": 2.30066,
+            "low": 2.16,
+            "high": 2.38531,
+            "analysts_count": 8,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1q": {
+            "consensus_eps_average": 3.214,
+            "low": 3.08,
+            "high": 3.4,
+            "analysts_count": 5,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "0y": {
+            "consensus_eps_average": 11.4046,
+            "low": 11.22,
+            "high": 11.49,
+            "analysts_count": 10,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1y": {
+            "consensus_eps_average": 13.06276,
+            "low": 12.6,
+            "high": 14.03,
+            "analysts_count": 12,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          }
+        },
+        "source": "Yahoo Finance via unofficial yfinance",
+        "source_url": "https://finance.yahoo.com/quote/C/analysis/",
+        "as_of_utc": "2026-11-21T22:10:07.173426+00:00",
         "data_quality": "UNOFFICIAL_SECONDARY_ESTIMATES_NOT_VERIFIED",
         "usable_to_validate_intrinsic_value": false
       },
@@ -13679,7 +14211,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -13752,7 +14284,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -13825,7 +14357,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -14096,7 +14628,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -14178,8 +14710,25 @@
         "change_pct": -24.75
       },
       "earnings_revisions": {
-        "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
-        "period_revisions": {},
+        "status": "SECONDARY_ONLY_NOT_VALIDATED",
+        "period_revisions": {
+          "0q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "0y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          }
+        },
         "verified_revision_signal": null,
         "can_override_primary_evidence": false
       },
@@ -14206,13 +14755,50 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
-        "status": "NOT COLLECTED",
-        "periods": {},
-        "source": null,
-        "source_url": null,
-        "as_of_utc": null,
+        "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+        "periods": {
+          "0q": {
+            "consensus_eps_average": 6.13528,
+            "low": 5.84,
+            "high": 6.43055,
+            "analysts_count": 2,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1q": {
+            "consensus_eps_average": 5.46,
+            "low": 5.46,
+            "high": 5.46,
+            "analysts_count": 1,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "0y": {
+            "consensus_eps_average": 22.72563,
+            "low": 22.24,
+            "high": 23.14688,
+            "analysts_count": 3,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1y": {
+            "consensus_eps_average": 22.81662,
+            "low": 22.36,
+            "high": 23.22,
+            "analysts_count": 3,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          }
+        },
+        "source": "Yahoo Finance via unofficial yfinance",
+        "source_url": "https://finance.yahoo.com/quote/BRK-B/analysis/",
+        "as_of_utc": "2026-11-21T22:10:07.173426+00:00",
         "data_quality": "UNOFFICIAL_SECONDARY_ESTIMATES_NOT_VERIFIED",
         "usable_to_validate_intrinsic_value": false
       },
@@ -14295,7 +14881,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -14404,7 +14990,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -14477,7 +15063,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -14522,8 +15108,25 @@
         "change_pct": 8.74
       },
       "earnings_revisions": {
-        "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
-        "period_revisions": {},
+        "status": "SECONDARY_ONLY_NOT_VALIDATED",
+        "period_revisions": {
+          "0q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "0y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          }
+        },
         "verified_revision_signal": null,
         "can_override_primary_evidence": false
       },
@@ -14550,13 +15153,50 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
-        "status": "NOT COLLECTED",
-        "periods": {},
-        "source": null,
-        "source_url": null,
-        "as_of_utc": null,
+        "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+        "periods": {
+          "0q": {
+            "consensus_eps_average": 1.72348,
+            "low": 1.53662,
+            "high": 1.88,
+            "analysts_count": 18,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1q": {
+            "consensus_eps_average": 1.53607,
+            "low": 1.38,
+            "high": 1.77,
+            "analysts_count": 14,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "0y": {
+            "consensus_eps_average": 5.93179,
+            "low": 5.73058,
+            "high": 6.12,
+            "analysts_count": 23,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1y": {
+            "consensus_eps_average": 7.36091,
+            "low": 6.82,
+            "high": 7.95,
+            "analysts_count": 25,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          }
+        },
+        "source": "Yahoo Finance via unofficial yfinance",
+        "source_url": "https://finance.yahoo.com/quote/BX/analysis/",
+        "as_of_utc": "2026-11-21T22:10:07.173426+00:00",
         "data_quality": "UNOFFICIAL_SECONDARY_ESTIMATES_NOT_VERIFIED",
         "usable_to_validate_intrinsic_value": false
       },
@@ -14640,7 +15280,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -14944,7 +15584,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -15017,7 +15657,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -15090,7 +15730,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -15163,7 +15803,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -15236,7 +15876,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -15256,29 +15896,29 @@
       "company": "Northrop Grumman",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "validation_status": "NOT VALIDATED",
-      "verified_intrinsic_value": null,
-      "bear": null,
-      "base": null,
-      "bull": null,
+      "validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value": 214.106,
+      "bear": 116.0921,
+      "base": 214.106,
+      "bull": 321.3113,
       "margin_of_safety_entries": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 192.6954,
+        "15pct": 181.9901,
+        "20pct": 171.2848
       },
       "price_distance_to_entries_pct": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 177.28,
+        "15pct": 193.59,
+        "20pct": 211.94
       },
-      "selected_margin_of_safety_pct": null,
-      "selected_entry": null,
+      "selected_margin_of_safety_pct": 20,
+      "selected_entry": 171.2848,
       "latest_dated_price": 534.31,
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "FLAT",
+        "change_pct": 0.19
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
@@ -15291,25 +15931,219 @@
         "change_20d_pct": -3.11,
         "change_63d_pct": -2.73
       },
-      "source_confidence": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "primary_source_evidence": null,
-      "assumptions": null,
+      "source_confidence": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "primary_source_evidence": {
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001133421.json",
+        "cik": 1133421,
+        "issuer": "NORTHROP GRUMMAN CORP /DE/",
+        "share_count_record": {
+          "value": 142064489.0,
+          "unit": "shares",
+          "start": null,
+          "end": "2026-10-15",
+          "filed": "2026-10-20",
+          "form": "10-Q",
+          "accession": "0001133421-26-000038",
+          "tag": "EntityCommonStockSharesOutstanding",
+          "taxonomy": "dei"
+        },
+        "source_hash_sha256": "709c622524c7c770a9ec62208eae508f2e79a5b30755fc166a84a396ad178205",
+        "annual_statements_used": [
+          {
+            "year_end": "2016-12-31",
+            "net_income": 2043000000.0,
+            "revenue": 24706000000.0,
+            "fcf": 1893000000.0,
+            "fcf_source_accessions": [
+              "0001133421-19-000007",
+              "0001133421-19-000007"
+            ],
+            "earnings_accession": "0001133421-19-000007",
+            "cash_period_start": "2016-01-01",
+            "cash_period_end": "2016-12-31"
+          },
+          {
+            "year_end": "2017-12-31",
+            "net_income": 2869000000.0,
+            "revenue": 26004000000.0,
+            "fcf": 1685000000.0,
+            "fcf_source_accessions": [
+              "0001133421-20-000006",
+              "0001133421-20-000006"
+            ],
+            "earnings_accession": "0001133421-20-000006",
+            "cash_period_start": "2017-01-01",
+            "cash_period_end": "2017-12-31"
+          },
+          {
+            "year_end": "2018-12-31",
+            "net_income": 3229000000.0,
+            "revenue": 30095000000.0,
+            "fcf": 2578000000.0,
+            "fcf_source_accessions": [
+              "0001133421-21-000006",
+              "0001133421-21-000006"
+            ],
+            "earnings_accession": "0001133421-21-000006",
+            "cash_period_start": "2018-01-01",
+            "cash_period_end": "2018-12-31"
+          },
+          {
+            "year_end": "2019-12-31",
+            "net_income": 2248000000.0,
+            "revenue": 33841000000.0,
+            "fcf": 3033000000.0,
+            "fcf_source_accessions": [
+              "0001133421-22-000004",
+              "0001133421-22-000004"
+            ],
+            "earnings_accession": "0001133421-22-000004",
+            "cash_period_start": "2019-01-01",
+            "cash_period_end": "2019-12-31"
+          },
+          {
+            "year_end": "2020-12-31",
+            "net_income": 3189000000.0,
+            "revenue": 36799000000.0,
+            "fcf": 2885000000.0,
+            "fcf_source_accessions": [
+              "0001133421-23-000006",
+              "0001133421-23-000006"
+            ],
+            "earnings_accession": "0001133421-23-000006",
+            "cash_period_start": "2020-01-01",
+            "cash_period_end": "2020-12-31"
+          },
+          {
+            "year_end": "2021-12-31",
+            "net_income": 7005000000.0,
+            "revenue": 35667000000.0,
+            "fcf": 2152000000.0,
+            "fcf_source_accessions": [
+              "0001133421-24-000006",
+              "0001133421-24-000006"
+            ],
+            "earnings_accession": "0001133421-24-000006",
+            "cash_period_start": "2021-01-01",
+            "cash_period_end": "2021-12-31"
+          },
+          {
+            "year_end": "2022-12-31",
+            "net_income": 4896000000.0,
+            "revenue": 36602000000.0,
+            "fcf": 1466000000.0,
+            "fcf_source_accessions": [
+              "0001133421-25-000006",
+              "0001133421-25-000006"
+            ],
+            "earnings_accession": "0001133421-25-000006",
+            "cash_period_start": "2022-01-01",
+            "cash_period_end": "2022-12-31"
+          },
+          {
+            "year_end": "2023-12-31",
+            "net_income": 2056000000.0,
+            "revenue": 39290000000.0,
+            "fcf": 2100000000.0,
+            "fcf_source_accessions": [
+              "0001133421-26-000003",
+              "0001133421-26-000003"
+            ],
+            "earnings_accession": "0001133421-26-000003",
+            "cash_period_start": "2023-01-01",
+            "cash_period_end": "2023-12-31"
+          },
+          {
+            "year_end": "2024-12-31",
+            "net_income": 4174000000.0,
+            "revenue": 41033000000.0,
+            "fcf": 2621000000.0,
+            "fcf_source_accessions": [
+              "0001133421-26-000003",
+              "0001133421-26-000003"
+            ],
+            "earnings_accession": "0001133421-26-000003",
+            "cash_period_start": "2024-01-01",
+            "cash_period_end": "2024-12-31"
+          },
+          {
+            "year_end": "2025-12-31",
+            "net_income": 4182000000.0,
+            "revenue": 41954000000.0,
+            "fcf": 3307000000.0,
+            "fcf_source_accessions": [
+              "0001133421-26-000003",
+              "0001133421-26-000003"
+            ],
+            "earnings_accession": "0001133421-26-000003",
+            "cash_period_start": "2025-01-01",
+            "cash_period_end": "2025-12-31"
+          }
+        ]
+      },
+      "assumptions": {
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 2360500000.0,
+        "median_annual_net_income_filed": 4178000000.0,
+        "historical_fcf_cagr_observed_pct": 31.15,
+        "assumed_forward_growth_capped_pct": 8.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 4516560000.0,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
+        },
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
+        "historical_filing_share_count_check": {
+          "current_shares": 142064489.0,
+          "prior_shares": 142033476.0,
+          "prior_as_of": "2026-04-16",
+          "observed_share_basis_change_pct": 0.022
+        },
+        "hypothetical_future_issuance_pct": {
+          "bear": 15,
+          "base": 5,
+          "bull": 0
+        },
+        "issued_share_count_primary": 142064489.0,
+        "source_dates": {
+          "shares": "2026-10-15",
+          "net_income_fiscal_years": [
+            "2017-12-31",
+            "2018-12-31",
+            "2019-12-31",
+            "2020-12-31",
+            "2021-12-31",
+            "2022-12-31",
+            "2023-12-31",
+            "2024-12-31",
+            "2025-12-31"
+          ]
+        }
+      },
       "asset_book_nav_reference": null,
-      "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "missing_evidence_flags": [],
       "risks": [
-        "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
+        "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
+        "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
+        "SEC XBRL facts are issuer reported, not independently audited by this system",
         "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "buy_readiness": {
-        "status": "NOT VALIDATED",
+        "status": "WAIT_FOR_MARGIN_OF_SAFETY",
         "score_pct": null,
-        "reason": "No approved purchase target"
+        "reason": "Evidence-qualified scenario; no automatic trade approval"
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -15563,7 +16397,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -15654,7 +16488,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -15764,7 +16598,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -15837,7 +16671,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -16096,7 +16930,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -16141,8 +16975,25 @@
         "change_pct": -17.67
       },
       "earnings_revisions": {
-        "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
-        "period_revisions": {},
+        "status": "SECONDARY_ONLY_NOT_VALIDATED",
+        "period_revisions": {
+          "0q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "0y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          }
+        },
         "verified_revision_signal": null,
         "can_override_primary_evidence": false
       },
@@ -16329,13 +17180,50 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
-        "status": "NOT COLLECTED",
-        "periods": {},
-        "source": null,
-        "source_url": null,
-        "as_of_utc": null,
+        "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+        "periods": {
+          "0q": {
+            "consensus_eps_average": 6.45799,
+            "low": 5.78,
+            "high": 7.09,
+            "analysts_count": 21,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1q": {
+            "consensus_eps_average": 6.53584,
+            "low": 6.21,
+            "high": 6.97,
+            "analysts_count": 14,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "0y": {
+            "consensus_eps_average": 27.02847,
+            "low": 24.26,
+            "high": 28.0,
+            "analysts_count": 26,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1y": {
+            "consensus_eps_average": 32.1774,
+            "low": 28.58,
+            "high": 34.6,
+            "analysts_count": 27,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          }
+        },
+        "source": "Yahoo Finance via unofficial yfinance",
+        "source_url": "https://finance.yahoo.com/quote/CAT/analysis/",
+        "as_of_utc": "2026-11-21T22:10:07.173426+00:00",
         "data_quality": "UNOFFICIAL_SECONDARY_ESTIMATES_NOT_VERIFIED",
         "usable_to_validate_intrinsic_value": false
       },
@@ -16595,7 +17483,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -16668,7 +17556,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -16741,7 +17629,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -16815,7 +17703,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -17082,7 +17970,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -17155,7 +18043,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -17228,7 +18116,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -17495,7 +18383,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -17536,8 +18424,8 @@
       "price_currency": "USD",
       "price_as_of": "2026-11-20T00:00:00",
       "earnings_momentum": {
-        "status": "UNAVAILABLE",
-        "change_pct": null
+        "status": "FLAT",
+        "change_pct": -3.45
       },
       "earnings_revisions": {
         "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
@@ -17555,7 +18443,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -17568,7 +18456,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -17613,8 +18501,25 @@
         "change_pct": null
       },
       "earnings_revisions": {
-        "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
-        "period_revisions": {},
+        "status": "SECONDARY_ONLY_NOT_VALIDATED",
+        "period_revisions": {
+          "0q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "0y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          }
+        },
         "verified_revision_signal": null,
         "can_override_primary_evidence": false
       },
@@ -17641,13 +18546,32 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
-        "status": "NOT COLLECTED",
-        "periods": {},
-        "source": null,
-        "source_url": null,
-        "as_of_utc": null,
+        "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+        "periods": {
+          "0y": {
+            "consensus_eps_average": 6.66201,
+            "low": 6.38,
+            "high": 6.88,
+            "analysts_count": 14,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1y": {
+            "consensus_eps_average": 6.76813,
+            "low": 5.97,
+            "high": 7.02,
+            "analysts_count": 14,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          }
+        },
+        "source": "Yahoo Finance via unofficial yfinance",
+        "source_url": "https://finance.yahoo.com/quote/CBA.AX/analysis/",
+        "as_of_utc": "2026-11-21T22:10:07.173426+00:00",
         "data_quality": "UNOFFICIAL_SECONDARY_ESTIMATES_NOT_VERIFIED",
         "usable_to_validate_intrinsic_value": false
       },
@@ -17714,7 +18638,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -17787,7 +18711,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -17877,7 +18801,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -17960,7 +18884,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18033,7 +18957,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18106,7 +19030,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18179,7 +19103,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18252,7 +19176,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18325,7 +19249,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18398,7 +19322,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18471,7 +19395,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18544,7 +19468,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18617,7 +19541,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18662,8 +19586,25 @@
         "change_pct": null
       },
       "earnings_revisions": {
-        "status": "NOT VALIDATED — DATED CONSENSUS REVISION SERIES UNAVAILABLE",
-        "period_revisions": {},
+        "status": "SECONDARY_ONLY_NOT_VALIDATED",
+        "period_revisions": {
+          "0q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1q": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "0y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          },
+          "+1y": {
+            "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+            "revision_pct": null
+          }
+        },
         "verified_revision_signal": null,
         "can_override_primary_evidence": false
       },
@@ -18690,13 +19631,32 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
-        "status": "NOT COLLECTED",
-        "periods": {},
-        "source": null,
-        "source_url": null,
-        "as_of_utc": null,
+        "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+        "periods": {
+          "0y": {
+            "consensus_eps_average": 1.16419,
+            "low": 1.14232,
+            "high": 1.19,
+            "analysts_count": 13,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          },
+          "+1y": {
+            "consensus_eps_average": 1.30758,
+            "low": 1.27064,
+            "high": 1.35,
+            "analysts_count": 13,
+            "fiscal_period_end": null,
+            "period_identity_validated": false,
+            "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+          }
+        },
+        "source": "Yahoo Finance via unofficial yfinance",
+        "source_url": "https://finance.yahoo.com/quote/CAR.AX/analysis/",
+        "as_of_utc": "2026-11-21T22:10:07.173426+00:00",
         "data_quality": "UNOFFICIAL_SECONDARY_ESTIMATES_NOT_VERIFIED",
         "usable_to_validate_intrinsic_value": false
       },
@@ -18763,7 +19723,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18836,7 +19796,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18909,7 +19869,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -18982,7 +19942,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19055,7 +20015,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19128,7 +20088,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19218,7 +20178,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -19311,7 +20271,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19384,7 +20344,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19458,7 +20418,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19548,7 +20508,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -19658,7 +20618,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19731,7 +20691,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19804,7 +20764,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19864,7 +20824,7 @@
       "assumptions": null,
       "asset_book_nav_reference": null,
       "missing_evidence_flags": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "risks": [
         "Filing data, share basis, forecast and source gaps prevent evidence-qualified valuation",
@@ -19877,7 +20837,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -19950,7 +20910,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20023,7 +20983,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20096,7 +21056,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20168,7 +21128,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20241,7 +21201,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20332,7 +21292,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -20460,7 +21420,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -20571,7 +21531,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20645,7 +21605,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20718,7 +21678,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20791,7 +21751,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20864,7 +21824,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -20937,7 +21897,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21010,7 +21970,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21083,7 +22043,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21156,7 +22116,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21230,7 +22190,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21304,7 +22264,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21377,7 +22337,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21450,7 +22410,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21523,7 +22483,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21596,7 +22556,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "NOT COLLECTED",
         "periods": {},
@@ -21686,7 +22646,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -21813,7 +22773,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -21922,7 +22882,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -22031,7 +22991,7 @@
       },
       "research_only": true,
       "orders_enabled": false,
-      "report_as_of_utc": "2026-11-21T22:00:24.041694+00:00",
+      "report_as_of_utc": "2026-11-21T23:56:17.365542+00:00",
       "external_forward_earnings": {
         "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
         "periods": {
@@ -22093,7 +23053,7 @@
   "orders_generated": 0,
   "validated_buy_signal_count": 0,
   "forward_research_coverage": {
-    "company_snapshot_count": 39,
+    "company_snapshot_count": 47,
     "issuer_guidance_evidence_count": 0,
     "secondary_estimates_do_not_validate_intrinsic": true
   }

@@ -1,11 +1,11 @@
 {
   "schema_version": "6.0-full-cycle-primary-evidence-1",
-  "published_at_utc": "2026-11-21T22:00:24.041694+00:00",
+  "published_at_utc": "2026-11-21T23:56:17.365542+00:00",
   "original_watchlist_count": 200,
   "discovery_company_count": 4,
   "reported_count": 204,
-  "validated_inputs_count": 27,
-  "not_validated_count": 177,
+  "validated_inputs_count": 30,
+  "not_validated_count": 174,
   "ranked_research_top10": [
     {
       "ticker": "AAPL",
@@ -119,18 +119,18 @@
     }
   ],
   "missing_evidence_flag_counts": {
-    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 19,
+    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 20,
     "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED": 41,
-    "PRIMARY_XBRL_NOT_COLLECTED": 68,
+    "PRIMARY_XBRL_NOT_COLLECTED": 56,
     "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 11,
     "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW": 3,
-    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 13,
-    "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL": 2,
+    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 16,
+    "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL": 4,
     "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 4,
     "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 4,
-    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 8,
+    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 10,
     "NORMALIZED_CYCLE_NONPOSITIVE": 2,
-    "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 4,
+    "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 5,
     "QUOTE_PRIMARY_FILING_CURRENCY_OR_ADR_RATIO_UNVERIFIED": 2
   },
   "value_definition": "Evidence-backed inputs and ASSUMED forecasts. Estimated intrinsic value is NOT an objective certified value.",
@@ -142,7 +142,7 @@
   "orders_generated": 0,
   "validated_buy_signal_count": 0,
   "forward_research_coverage": {
-    "company_snapshot_count": 39,
+    "company_snapshot_count": 47,
     "issuer_guidance_evidence_count": 0,
     "secondary_estimates_do_not_validate_intrinsic": true
   }
