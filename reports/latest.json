@@ -1,14 +1,14 @@
 {
   "schema_version": "6.0-report-bridge-entry-retirement-1",
-  "published_at_utc": "2026-11-21T06:15:10.101717+00:00",
-  "scan_utc": "2026-11-21T06:14:58.628784+00:00",
-  "scan_sydney": "2026-11-21T17:14:58.628784+11:00",
+  "published_at_utc": "2026-11-21T11:08:04.281758+00:00",
+  "scan_utc": "2026-11-21T11:07:51.014448+00:00",
+  "scan_sydney": "2026-11-21T22:07:51.014448+11:00",
   "price_source": "YAHOO HISTORICAL DAILY BARS; NOT REAL TIME",
-  "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+  "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
   "valuation_source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
   "universe_count": 200,
-  "price_available_count": 199,
-  "model_available_count": 122,
+  "price_available_count": 200,
+  "model_available_count": 121,
   "valuation_rows_count": 200,
   "closest_to_buy_top_10": [
     {
@@ -39,7 +39,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -72,7 +72,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -105,7 +105,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -138,7 +138,73 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
+      "ticker": "GILD",
+      "company": "Gilead Sciences",
+      "currency": "USD",
+      "last_daily_close": 166.42999,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 53.8566,
+      "bear_60": 26.4189,
+      "base_60": 53.8566,
+      "bull_60": 85.6664,
+      "margin_of_safety_entries_60": {
+        "10pct": 48.4709,
+        "15pct": 45.7781,
+        "20pct": 43.0853
+      },
+      "selected_entry_60": 48.4709,
+      "selected_margin_of_safety_pct_60": 10,
+      "pct_above_selected_entry_60": 243.36,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
+      "ticker": "GD",
+      "company": "General Dynamics",
+      "currency": "USD",
+      "last_daily_close": 341.5,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 122.8019,
+      "bear_60": 63.5705,
+      "base_60": 122.8019,
+      "bull_60": 189.59,
+      "margin_of_safety_entries_60": {
+        "10pct": 110.5217,
+        "15pct": 104.3816,
+        "20pct": 98.2415
+      },
+      "selected_entry_60": 98.2415,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 247.61,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -171,7 +237,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -204,7 +270,40 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
+      "ticker": "ETN",
+      "company": "Eaton",
+      "currency": "USD",
+      "last_daily_close": 311.32999,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 84.8673,
+      "bear_60": 43.7033,
+      "base_60": 84.8673,
+      "bull_60": 131.3209,
+      "margin_of_safety_entries_60": {
+        "10pct": 76.3806,
+        "15pct": 72.1372,
+        "20pct": 67.8938
+      },
+      "selected_entry_60": 67.8938,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 358.55,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -237,106 +336,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "DHR",
-      "company": "Danaher",
-      "currency": "USD",
-      "last_daily_close": 220.36,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 52.2747,
-      "bear_60": 27.7112,
-      "base_60": 52.2747,
-      "bull_60": 79.7266,
-      "margin_of_safety_entries_60": {
-        "10pct": 47.0472,
-        "15pct": 44.4335,
-        "20pct": 41.8198
-      },
-      "selected_entry_60": 41.8198,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 426.93,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "GOOGL",
-      "company": "Alphabet",
-      "currency": "USD",
-      "last_daily_close": 265.29001,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 60.9795,
-      "bear_60": 31.9406,
-      "base_60": 60.9795,
-      "bull_60": 93.4574,
-      "margin_of_safety_entries_60": {
-        "10pct": 54.8816,
-        "15pct": 51.8326,
-        "20pct": 48.7836
-      },
-      "selected_entry_60": 48.7836,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 443.81,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "CAT",
-      "company": "Caterpillar",
-      "currency": "USD",
-      "last_daily_close": 510.45001,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 114.2449,
-      "bear_60": 69.5403,
-      "base_60": 114.2449,
-      "bull_60": 159.9428,
-      "margin_of_safety_entries_60": {
-        "10pct": 102.8204,
-        "15pct": 97.1082,
-        "20pct": 91.3959
-      },
-      "selected_entry_60": 91.3959,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 458.5,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -371,7 +371,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -404,7 +404,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -437,7 +437,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -470,7 +470,73 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
+      "ticker": "GILD",
+      "company": "Gilead Sciences",
+      "currency": "USD",
+      "last_daily_close": 166.42999,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 53.8566,
+      "bear_60": 26.4189,
+      "base_60": 53.8566,
+      "bull_60": 85.6664,
+      "margin_of_safety_entries_60": {
+        "10pct": 48.4709,
+        "15pct": 45.7781,
+        "20pct": 43.0853
+      },
+      "selected_entry_60": 48.4709,
+      "selected_margin_of_safety_pct_60": 10,
+      "pct_above_selected_entry_60": 243.36,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
+      "ticker": "GD",
+      "company": "General Dynamics",
+      "currency": "USD",
+      "last_daily_close": 341.5,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 122.8019,
+      "bear_60": 63.5705,
+      "base_60": 122.8019,
+      "bull_60": 189.59,
+      "margin_of_safety_entries_60": {
+        "10pct": 110.5217,
+        "15pct": 104.3816,
+        "20pct": 98.2415
+      },
+      "selected_entry_60": 98.2415,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 247.61,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -503,7 +569,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -536,7 +602,40 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
+      "ticker": "ETN",
+      "company": "Eaton",
+      "currency": "USD",
+      "last_daily_close": 311.32999,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 84.8673,
+      "bear_60": 43.7033,
+      "base_60": 84.8673,
+      "bull_60": 131.3209,
+      "margin_of_safety_entries_60": {
+        "10pct": 76.3806,
+        "15pct": 72.1372,
+        "20pct": 67.8938
+      },
+      "selected_entry_60": 67.8938,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 358.55,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -569,112 +668,13 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "DHR",
-      "company": "Danaher",
-      "currency": "USD",
-      "last_daily_close": 220.36,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 52.2747,
-      "bear_60": 27.7112,
-      "base_60": 52.2747,
-      "bull_60": 79.7266,
-      "margin_of_safety_entries_60": {
-        "10pct": 47.0472,
-        "15pct": 44.4335,
-        "20pct": 41.8198
-      },
-      "selected_entry_60": 41.8198,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 426.93,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "GOOGL",
-      "company": "Alphabet",
-      "currency": "USD",
-      "last_daily_close": 265.29001,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 60.9795,
-      "bear_60": 31.9406,
-      "base_60": 60.9795,
-      "bull_60": 93.4574,
-      "margin_of_safety_entries_60": {
-        "10pct": 54.8816,
-        "15pct": 51.8326,
-        "20pct": 48.7836
-      },
-      "selected_entry_60": 48.7836,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 443.81,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "CAT",
-      "company": "Caterpillar",
-      "currency": "USD",
-      "last_daily_close": 510.45001,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 114.2449,
-      "bear_60": 69.5403,
-      "base_60": 114.2449,
-      "bull_60": 159.9428,
-      "margin_of_safety_entries_60": {
-        "10pct": 102.8204,
-        "15pct": 97.1082,
-        "20pct": 91.3959
-      },
-      "selected_entry_60": 91.3959,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 458.5,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     }
   ],
-  "entry_eligible_count_60": 17,
+  "entry_eligible_count_60": 20,
   "retired_legacy_provisional_entry_count": 200,
   "stocks": [
     {
@@ -707,7 +707,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -742,7 +742,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -751,8 +751,8 @@
       "ticker": "CAT.AX",
       "company": "Catapult Sports",
       "currency": "AUD",
-      "last_daily_close": null,
-      "quote_date": null,
+      "last_daily_close": 2.68,
+      "quote_date": "2026-11-20T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -773,12 +773,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "DATED_PRICE_NOT_AVAILABLE"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
-      "data_status": "UNAVAILABLE",
+      "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -813,7 +812,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -848,7 +847,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -883,7 +882,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -918,7 +917,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -953,7 +952,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -988,7 +987,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1023,7 +1022,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1058,7 +1057,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1093,7 +1092,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1128,7 +1127,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1161,7 +1160,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1196,7 +1195,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1231,7 +1230,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1266,7 +1265,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1301,7 +1300,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1336,7 +1335,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1371,7 +1370,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1407,7 +1406,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1442,7 +1441,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1477,7 +1476,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk); Market cap/share-count/price mismatch (split or ADR risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1512,7 +1511,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1547,7 +1546,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1582,7 +1581,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1617,7 +1616,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1652,7 +1651,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1687,7 +1686,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk); Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1722,7 +1721,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1755,7 +1754,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1788,7 +1787,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1823,7 +1822,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1856,7 +1855,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1891,7 +1890,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1926,7 +1925,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1961,7 +1960,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -1996,7 +1995,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2029,7 +2028,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2062,7 +2061,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2097,7 +2096,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2132,7 +2131,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2167,7 +2166,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2202,7 +2201,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2237,7 +2236,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2272,7 +2271,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2303,11 +2302,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2342,7 +2341,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2377,7 +2376,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2412,7 +2411,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2447,7 +2446,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2482,7 +2481,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2517,7 +2516,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2551,8 +2550,8 @@
         "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk)",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2587,7 +2586,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2622,7 +2621,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2653,11 +2652,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2692,7 +2691,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2727,7 +2726,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2762,7 +2761,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2797,7 +2796,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2832,7 +2831,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2867,7 +2866,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2902,7 +2901,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2935,7 +2934,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -2970,7 +2969,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3005,7 +3004,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3040,7 +3039,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3075,7 +3074,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3110,7 +3109,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3145,7 +3144,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3180,7 +3179,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3215,7 +3214,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3250,7 +3249,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3285,7 +3284,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3320,7 +3319,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3355,7 +3354,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3390,7 +3389,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3423,7 +3422,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3454,11 +3453,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "NORMALIZED_CYCLE_NONPOSITIVE"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3493,7 +3492,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3528,7 +3527,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3563,7 +3562,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3598,7 +3597,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3633,7 +3632,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3668,7 +3667,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3703,7 +3702,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3738,7 +3737,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3773,7 +3772,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3804,11 +3803,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3843,7 +3842,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3878,7 +3877,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3913,7 +3912,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3948,7 +3947,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -3983,7 +3982,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4018,7 +4017,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4053,7 +4052,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4088,7 +4087,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4121,7 +4120,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4156,7 +4155,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4191,7 +4190,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4224,7 +4223,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4240,28 +4239,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 53.8566,
+      "bear_60": 26.4189,
+      "base_60": 53.8566,
+      "bull_60": 85.6664,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 48.4709,
+        "15pct": 45.7781,
+        "20pct": 43.0853
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 48.4709,
+      "selected_margin_of_safety_pct_60": 10,
+      "pct_above_selected_entry_60": 243.36,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -4294,7 +4291,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4329,7 +4326,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4364,7 +4361,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4399,7 +4396,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4432,7 +4429,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4465,7 +4462,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4500,7 +4497,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4533,7 +4530,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4568,7 +4565,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4603,7 +4600,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4638,7 +4635,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4669,11 +4666,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "EQUITY_YEAR_COMPARABILITY_UNVERIFIED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4708,7 +4705,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4743,7 +4740,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4778,7 +4775,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4813,7 +4810,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4848,7 +4845,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4881,7 +4878,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4916,7 +4913,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk); Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4951,7 +4948,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -4986,7 +4983,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5021,7 +5018,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5057,7 +5054,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk); Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5093,7 +5090,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5128,7 +5125,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5163,7 +5160,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5198,7 +5195,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5233,7 +5230,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5268,7 +5265,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5303,7 +5300,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5319,28 +5316,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 122.8019,
+      "bear_60": 63.5705,
+      "base_60": 122.8019,
+      "bull_60": 189.59,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 110.5217,
+        "15pct": 104.3816,
+        "20pct": 98.2415
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 98.2415,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 247.61,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -5373,7 +5368,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5404,11 +5399,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5439,11 +5434,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5476,7 +5471,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5509,7 +5504,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5525,28 +5520,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 84.8673,
+      "bear_60": 43.7033,
+      "base_60": 84.8673,
+      "bull_60": 131.3209,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 76.3806,
+        "15pct": 72.1372,
+        "20pct": 67.8938
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 67.8938,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 358.55,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -5579,7 +5572,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5614,7 +5607,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5649,7 +5642,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5682,7 +5675,7 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5717,7 +5710,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5748,11 +5741,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5787,7 +5780,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5822,7 +5815,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5857,7 +5850,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5892,7 +5885,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5927,7 +5920,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5962,7 +5955,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -5997,7 +5990,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6032,7 +6025,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6067,7 +6060,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6102,7 +6095,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6137,7 +6130,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6172,7 +6165,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6207,7 +6200,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6242,7 +6235,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6277,7 +6270,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6312,7 +6305,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6347,7 +6340,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6382,7 +6375,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6417,7 +6410,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6452,7 +6445,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6487,7 +6480,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6522,7 +6515,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6557,7 +6550,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6592,7 +6585,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6627,7 +6620,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6662,7 +6655,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6697,7 +6690,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6732,7 +6725,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6767,7 +6760,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6802,7 +6795,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6837,7 +6830,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6872,7 +6865,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6907,7 +6900,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6938,11 +6931,11 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -6977,7 +6970,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7012,7 +7005,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7047,7 +7040,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7082,7 +7075,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7117,7 +7110,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7152,7 +7145,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7187,7 +7180,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7222,7 +7215,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7257,7 +7250,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7292,7 +7285,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7327,7 +7320,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7362,7 +7355,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7397,7 +7390,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7432,7 +7425,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7467,7 +7460,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7502,7 +7495,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7537,7 +7530,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7572,7 +7565,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7607,7 +7600,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7642,7 +7635,7 @@
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
-      "valuation_as_of_utc": "2026-11-21T02:02:23.695330+00:00",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
@@ -7650,14 +7643,14 @@
   ],
   "bitcoin": {
     "XBTAUD": {
-      "last": 84434.3,
-      "bid": 84252.7,
-      "ask": 84404.7
+      "last": 87718.3,
+      "bid": 87699.4,
+      "ask": 87836.0
     },
     "XBTUSD": {
-      "last": 55607.9,
-      "bid": 55599.9,
-      "ask": 55606.3
+      "last": 57871.8,
+      "bid": 57872.3,
+      "ask": 57872.4
     }
   },
   "research_only": true,
