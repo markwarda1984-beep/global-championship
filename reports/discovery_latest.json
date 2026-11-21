@@ -1,6 +1,6 @@
 {
   "schema_version": "5.2-discovery-radar-1",
-  "published_at_utc": "2026-11-21T16:14:30.489062+00:00",
+  "published_at_utc": "2026-11-21T22:09:52.986357+00:00",
   "source_coverage": "CORE_SOURCES_AVAILABLE_WITH_FALLBACK",
   "total_discovered_ever": 4,
   "monitor_count": 0,
@@ -21,12 +21,10 @@
       "coverage": "at most latest 100 filings; not an exhaustive market screen"
     },
     "gdelt": {
-      "status": "rate_limited",
-      "http_status": 429,
+      "status": "cooldown",
       "checked_theme": 2,
-      "reason": "gdelt_doc: rate_limited_429",
       "next_attempt_at_utc": "2026-11-22T04:14:30.489062+00:00",
-      "next_action": "RSS fallback; retry only after persistent cooldown"
+      "reason": "Prior 429: respect provider limit across scheduled runs"
     },
     "gdelt_control": {
       "gdelt_retry_at_utc": "2026-11-22T04:14:30.489062+00:00",
