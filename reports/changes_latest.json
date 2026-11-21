@@ -1,46 +1,15 @@
 {
   "schema_version": "5.1-scan-changes-1",
-  "published_at_utc": "2026-11-21T11:08:04.336077+00:00",
-  "current_scan_utc": "2026-11-21T11:07:51.014448+00:00",
-  "prior_scan_utc": "2026-11-21T06:14:58.628784+00:00",
+  "published_at_utc": "2026-11-21T16:04:50.353941+00:00",
+  "current_scan_utc": "2026-11-21T16:04:41.812649+00:00",
+  "prior_scan_utc": "2026-11-21T11:07:51.014448+00:00",
   "comparison_status": "COMPARED",
   "universe_count": 200,
   "new_daily_bar_count": 0,
   "same_bar_revision_count": 0,
   "quote_date_regression_count": 0,
-  "research_field_change_count": 2,
-  "material_changes": [
-    {
-      "ticker": "CAT.AX",
-      "category": "UNCHANGED_OR_UNCOMPARABLE",
-      "old_quote_date": null,
-      "new_quote_date": "2026-11-20T00:00:00",
-      "old_daily_close": null,
-      "new_daily_close": 2.68,
-      "daily_bar_change_pct": null,
-      "research_field_changes": [
-        "data_status"
-      ],
-      "current_provisional_entry": null,
-      "research_only": true,
-      "buy_signal": false
-    },
-    {
-      "ticker": "ABNB",
-      "category": "UNCHANGED_OR_UNCOMPARABLE",
-      "old_quote_date": "2026-11-20T00:00:00",
-      "new_quote_date": "2026-11-20T00:00:00",
-      "old_daily_close": 170.36,
-      "new_daily_close": 170.36,
-      "daily_bar_change_pct": null,
-      "research_field_changes": [
-        "model_status"
-      ],
-      "current_provisional_entry": null,
-      "research_only": true,
-      "buy_signal": false
-    }
-  ],
+  "research_field_change_count": 0,
+  "material_changes": [],
   "data_revisions_and_regressions": [],
   "meaning": "Daily-bar change is between different quote sessions, NOT intraday gain, executable return or trade signal",
   "orders_enabled": false

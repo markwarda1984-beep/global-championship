@@ -1,8 +1,8 @@
 {
   "schema_version": "6.0-report-bridge-entry-retirement-1",
-  "published_at_utc": "2026-11-21T11:08:04.281758+00:00",
-  "scan_utc": "2026-11-21T11:07:51.014448+00:00",
-  "scan_sydney": "2026-11-21T22:07:51.014448+11:00",
+  "published_at_utc": "2026-11-21T16:04:50.306488+00:00",
+  "scan_utc": "2026-11-21T16:04:41.812649+00:00",
+  "scan_sydney": "2026-11-22T03:04:41.812649+11:00",
   "price_source": "YAHOO HISTORICAL DAILY BARS; NOT REAL TIME",
   "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
   "valuation_source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
@@ -78,6 +78,39 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
+      "ticker": "INTU",
+      "company": "Intuit",
+      "currency": "USD",
+      "last_daily_close": 270.44,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 176.786,
+      "bear_60": 85.8888,
+      "base_60": 176.786,
+      "bull_60": 282.3665,
+      "margin_of_safety_entries_60": {
+        "10pct": 159.1074,
+        "15pct": 150.2681,
+        "20pct": 141.4288
+      },
+      "selected_entry_60": 141.4288,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 91.22,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
       "ticker": "CRM",
       "company": "Salesforce",
       "currency": "USD",
@@ -138,6 +171,39 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
+      "ticker": "ICE",
+      "company": "Intercontinental Exchange",
+      "currency": "USD",
+      "last_daily_close": 170.0,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 58.9801,
+      "bear_60": 28.8882,
+      "base_60": 58.9801,
+      "bull_60": 93.8045,
+      "margin_of_safety_entries_60": {
+        "10pct": 53.0821,
+        "15pct": 50.1331,
+        "20pct": 47.1841
+      },
+      "selected_entry_60": 53.0821,
+      "selected_margin_of_safety_pct_60": 10,
+      "pct_above_selected_entry_60": 220.26,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
@@ -266,72 +332,6 @@
       "selected_entry_60": 148.6601,
       "selected_margin_of_safety_pct_60": 20,
       "pct_above_selected_entry_60": 309.83,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "ETN",
-      "company": "Eaton",
-      "currency": "USD",
-      "last_daily_close": 311.32999,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 84.8673,
-      "bear_60": 43.7033,
-      "base_60": 84.8673,
-      "bull_60": 131.3209,
-      "margin_of_safety_entries_60": {
-        "10pct": 76.3806,
-        "15pct": 72.1372,
-        "20pct": 67.8938
-      },
-      "selected_entry_60": 67.8938,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 358.55,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "AMGN",
-      "company": "Amgen",
-      "currency": "USD",
-      "last_daily_close": 435.64001,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 109.5672,
-      "bear_60": 57.4171,
-      "base_60": 109.5672,
-      "bull_60": 168.1938,
-      "margin_of_safety_entries_60": {
-        "10pct": 98.6105,
-        "15pct": 93.1321,
-        "20pct": 87.6538
-      },
-      "selected_entry_60": 87.6538,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 397.0,
       "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
@@ -410,6 +410,39 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
+      "ticker": "INTU",
+      "company": "Intuit",
+      "currency": "USD",
+      "last_daily_close": 270.44,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 176.786,
+      "bear_60": 85.8888,
+      "base_60": 176.786,
+      "bull_60": 282.3665,
+      "margin_of_safety_entries_60": {
+        "10pct": 159.1074,
+        "15pct": 150.2681,
+        "20pct": 141.4288
+      },
+      "selected_entry_60": 141.4288,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 91.22,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
       "ticker": "CRM",
       "company": "Salesforce",
       "currency": "USD",
@@ -470,6 +503,39 @@
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
+      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
+      "ticker": "ICE",
+      "company": "Intercontinental Exchange",
+      "currency": "USD",
+      "last_daily_close": 170.0,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 58.9801,
+      "bear_60": 28.8882,
+      "base_60": 58.9801,
+      "bull_60": 93.8045,
+      "margin_of_safety_entries_60": {
+        "10pct": 53.0821,
+        "15pct": 50.1331,
+        "20pct": 47.1841
+      },
+      "selected_entry_60": 53.0821,
+      "selected_margin_of_safety_pct_60": 10,
+      "pct_above_selected_entry_60": 220.26,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
@@ -606,75 +672,9 @@
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "ETN",
-      "company": "Eaton",
-      "currency": "USD",
-      "last_daily_close": 311.32999,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 84.8673,
-      "bear_60": 43.7033,
-      "base_60": 84.8673,
-      "bull_60": 131.3209,
-      "margin_of_safety_entries_60": {
-        "10pct": 76.3806,
-        "15pct": 72.1372,
-        "20pct": 67.8938
-      },
-      "selected_entry_60": 67.8938,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 358.55,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "AMGN",
-      "company": "Amgen",
-      "currency": "USD",
-      "last_daily_close": 435.64001,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 109.5672,
-      "bear_60": 57.4171,
-      "base_60": 109.5672,
-      "bull_60": 168.1938,
-      "margin_of_safety_entries_60": {
-        "10pct": 98.6105,
-        "15pct": 93.1321,
-        "20pct": 87.6538
-      },
-      "selected_entry_60": 87.6538,
-      "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 397.0,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
     }
   ],
-  "entry_eligible_count_60": 20,
+  "entry_eligible_count_60": 23,
   "retired_legacy_provisional_entry_count": 200,
   "stocks": [
     {
@@ -1053,7 +1053,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -2427,28 +2427,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 176.786,
+      "bear_60": 85.8888,
+      "base_60": 176.786,
+      "bull_60": 282.3665,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 159.1074,
+        "15pct": 150.2681,
+        "20pct": 141.4288
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 141.4288,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 91.22,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -2965,7 +2963,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -4068,28 +4066,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 77.9138,
+      "bear_60": 41.0916,
+      "base_60": 77.9138,
+      "bull_60": 118.982,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 70.1224,
+        "15pct": 66.2267,
+        "20pct": 62.331
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 62.331,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 333.93,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -4357,7 +4353,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -4596,7 +4592,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "EQUITY_YEAR_COMPARABILITY_UNVERIFIED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -5014,7 +5010,8 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -5106,28 +5103,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 58.9801,
+      "bear_60": 28.8882,
+      "base_60": 58.9801,
+      "bull_60": 93.8045,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 53.0821,
+        "15pct": 50.1331,
+        "20pct": 47.1841
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 53.0821,
+      "selected_margin_of_safety_pct_60": 10,
+      "pct_above_selected_entry_60": 220.26,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T08:55:47.469745+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -6756,7 +6751,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -7211,7 +7206,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -7351,7 +7346,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -7643,14 +7638,14 @@
   ],
   "bitcoin": {
     "XBTAUD": {
-      "last": 87718.3,
-      "bid": 87699.4,
-      "ask": 87836.0
+      "last": 90843.2,
+      "bid": 90496.3,
+      "ask": 90584.8
     },
     "XBTUSD": {
-      "last": 57871.8,
-      "bid": 57872.3,
-      "ask": 57872.4
+      "last": 59748.9,
+      "bid": 59748.8,
+      "ask": 59748.9
     }
   },
   "research_only": true,
