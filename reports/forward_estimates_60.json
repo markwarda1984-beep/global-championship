@@ -1,6 +1,6 @@
 {
   "schema_version": "6.0-dated-forward-estimates-1",
-  "published_at_utc": "2026-11-21T02:02:19.483808+00:00",
+  "published_at_utc": "2026-11-21T03:16:02.562558+00:00",
   "universe_count": 204,
   "original_200_count": 200,
   "discovery_count": 4,
@@ -892,25 +892,841 @@
       },
       "usable_for_intrinsic_validation": false,
       "orders_enabled": false
+    },
+    "BP": {
+      "ticker": "BP",
+      "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+      "source": "Yahoo Finance via unofficial yfinance",
+      "source_url": "https://finance.yahoo.com/quote/BP/analysis/",
+      "source_type": "SECONDARY_VENDOR_NOT_PRIMARY_FILING",
+      "forecast_currency": "UNVERIFIED",
+      "eps_share_basis": "UNVERIFIED",
+      "history": [
+        {
+          "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+          "periods": {
+            "0q": {
+              "consensus_eps_average": 2.25821,
+              "low": 1.67,
+              "high": 2.77,
+              "analysts_count": 10,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1q": {
+              "consensus_eps_average": 1.82147,
+              "low": 1.46,
+              "high": 2.27,
+              "analysts_count": 8,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "0y": {
+              "consensus_eps_average": 8.92746,
+              "low": 7.81,
+              "high": 10.25345,
+              "analysts_count": 16,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1y": {
+              "consensus_eps_average": 6.12597,
+              "low": 3.59,
+              "high": 9.01,
+              "analysts_count": 16,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            }
+          }
+        }
+      ],
+      "periods": {
+        "0q": {
+          "consensus_eps_average": 2.25821,
+          "low": 1.67,
+          "high": 2.77,
+          "analysts_count": 10,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1q": {
+          "consensus_eps_average": 1.82147,
+          "low": 1.46,
+          "high": 2.27,
+          "analysts_count": 8,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "0y": {
+          "consensus_eps_average": 8.92746,
+          "low": 7.81,
+          "high": 10.25345,
+          "analysts_count": 16,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1y": {
+          "consensus_eps_average": 6.12597,
+          "low": 3.59,
+          "high": 9.01,
+          "analysts_count": 16,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        }
+      },
+      "revisions": {
+        "0q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "0y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        }
+      },
+      "usable_for_intrinsic_validation": false,
+      "orders_enabled": false
+    },
+    "OXY": {
+      "ticker": "OXY",
+      "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+      "source": "Yahoo Finance via unofficial yfinance",
+      "source_url": "https://finance.yahoo.com/quote/OXY/analysis/",
+      "source_type": "SECONDARY_VENDOR_NOT_PRIMARY_FILING",
+      "forecast_currency": "UNVERIFIED",
+      "eps_share_basis": "UNVERIFIED",
+      "history": [
+        {
+          "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+          "periods": {
+            "0q": {
+              "consensus_eps_average": 1.4806,
+              "low": 1.29,
+              "high": 2.79899,
+              "analysts_count": 23,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1q": {
+              "consensus_eps_average": 1.98716,
+              "low": 0.66367,
+              "high": 2.43,
+              "analysts_count": 19,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "0y": {
+              "consensus_eps_average": 7.31797,
+              "low": 6.15,
+              "high": 8.20378,
+              "analysts_count": 23,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1y": {
+              "consensus_eps_average": 5.29275,
+              "low": 2.15312,
+              "high": 8.42,
+              "analysts_count": 25,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            }
+          }
+        }
+      ],
+      "periods": {
+        "0q": {
+          "consensus_eps_average": 1.4806,
+          "low": 1.29,
+          "high": 2.79899,
+          "analysts_count": 23,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1q": {
+          "consensus_eps_average": 1.98716,
+          "low": 0.66367,
+          "high": 2.43,
+          "analysts_count": 19,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "0y": {
+          "consensus_eps_average": 7.31797,
+          "low": 6.15,
+          "high": 8.20378,
+          "analysts_count": 23,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1y": {
+          "consensus_eps_average": 5.29275,
+          "low": 2.15312,
+          "high": 8.42,
+          "analysts_count": 25,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        }
+      },
+      "revisions": {
+        "0q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "0y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        }
+      },
+      "usable_for_intrinsic_validation": false,
+      "orders_enabled": false
+    },
+    "TSM": {
+      "ticker": "TSM",
+      "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+      "source": "Yahoo Finance via unofficial yfinance",
+      "source_url": "https://finance.yahoo.com/quote/TSM/analysis/",
+      "source_type": "SECONDARY_VENDOR_NOT_PRIMARY_FILING",
+      "forecast_currency": "UNVERIFIED",
+      "eps_share_basis": "UNVERIFIED",
+      "history": [
+        {
+          "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+          "periods": {
+            "0q": {
+              "consensus_eps_average": 5.1641,
+              "low": 5.102,
+              "high": 5.28,
+              "analysts_count": 8,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1q": {
+              "consensus_eps_average": 5.19402,
+              "low": 4.95,
+              "high": 5.4,
+              "analysts_count": 10,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "0y": {
+              "consensus_eps_average": 17.50426,
+              "low": 17.182,
+              "high": 17.95,
+              "analysts_count": 11,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1y": {
+              "consensus_eps_average": 23.38529,
+              "low": 21.45,
+              "high": 25.87,
+              "analysts_count": 13,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            }
+          }
+        }
+      ],
+      "periods": {
+        "0q": {
+          "consensus_eps_average": 5.1641,
+          "low": 5.102,
+          "high": 5.28,
+          "analysts_count": 8,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1q": {
+          "consensus_eps_average": 5.19402,
+          "low": 4.95,
+          "high": 5.4,
+          "analysts_count": 10,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "0y": {
+          "consensus_eps_average": 17.50426,
+          "low": 17.182,
+          "high": 17.95,
+          "analysts_count": 11,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1y": {
+          "consensus_eps_average": 23.38529,
+          "low": 21.45,
+          "high": 25.87,
+          "analysts_count": 13,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        }
+      },
+      "revisions": {
+        "0q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "0y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        }
+      },
+      "usable_for_intrinsic_validation": false,
+      "orders_enabled": false
+    },
+    "DUG.AX": {
+      "ticker": "DUG.AX",
+      "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+      "source": "Yahoo Finance via unofficial yfinance",
+      "source_url": "https://finance.yahoo.com/quote/DUG.AX/analysis/",
+      "source_type": "SECONDARY_VENDOR_NOT_PRIMARY_FILING",
+      "forecast_currency": "UNVERIFIED",
+      "eps_share_basis": "UNVERIFIED",
+      "history": [
+        {
+          "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+          "periods": {
+            "0y": {
+              "consensus_eps_average": 0.05234,
+              "low": 0.032,
+              "high": 0.067,
+              "analysts_count": 5,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1y": {
+              "consensus_eps_average": 0.09275,
+              "low": 0.0827,
+              "high": 0.10305,
+              "analysts_count": 5,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            }
+          }
+        }
+      ],
+      "periods": {
+        "0y": {
+          "consensus_eps_average": 0.05234,
+          "low": 0.032,
+          "high": 0.067,
+          "analysts_count": 5,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1y": {
+          "consensus_eps_average": 0.09275,
+          "low": 0.0827,
+          "high": 0.10305,
+          "analysts_count": 5,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        }
+      },
+      "revisions": {
+        "0q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "0y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        }
+      },
+      "usable_for_intrinsic_validation": false,
+      "orders_enabled": false
+    },
+    "EOS.AX": {
+      "ticker": "EOS.AX",
+      "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+      "source": "Yahoo Finance via unofficial yfinance",
+      "source_url": "https://finance.yahoo.com/quote/EOS.AX/analysis/",
+      "source_type": "SECONDARY_VENDOR_NOT_PRIMARY_FILING",
+      "forecast_currency": "UNVERIFIED",
+      "eps_share_basis": "UNVERIFIED",
+      "history": [
+        {
+          "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+          "periods": {
+            "0y": {
+              "consensus_eps_average": 0.049,
+              "low": 0.031,
+              "high": 0.067,
+              "analysts_count": 2,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1y": {
+              "consensus_eps_average": 0.17675,
+              "low": 0.144,
+              "high": 0.223,
+              "analysts_count": 4,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            }
+          }
+        }
+      ],
+      "periods": {
+        "0y": {
+          "consensus_eps_average": 0.049,
+          "low": 0.031,
+          "high": 0.067,
+          "analysts_count": 2,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1y": {
+          "consensus_eps_average": 0.17675,
+          "low": 0.144,
+          "high": 0.223,
+          "analysts_count": 4,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        }
+      },
+      "revisions": {
+        "0q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "0y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        }
+      },
+      "usable_for_intrinsic_validation": false,
+      "orders_enabled": false
+    },
+    "PENG": {
+      "ticker": "PENG",
+      "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+      "source": "Yahoo Finance via unofficial yfinance",
+      "source_url": "https://finance.yahoo.com/quote/PENG/analysis/",
+      "source_type": "SECONDARY_VENDOR_NOT_PRIMARY_FILING",
+      "forecast_currency": "UNVERIFIED",
+      "eps_share_basis": "UNVERIFIED",
+      "history": [
+        {
+          "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+          "periods": {
+            "0q": {
+              "consensus_eps_average": 1.04438,
+              "low": 0.91,
+              "high": 1.13,
+              "analysts_count": 8,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1q": {
+              "consensus_eps_average": 1.09725,
+              "low": 0.98,
+              "high": 1.18,
+              "analysts_count": 8,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "0y": {
+              "consensus_eps_average": 4.5585,
+              "low": 4.45,
+              "high": 4.81,
+              "analysts_count": 8,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1y": {
+              "consensus_eps_average": 5.256,
+              "low": 4.85,
+              "high": 5.73,
+              "analysts_count": 5,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            }
+          }
+        }
+      ],
+      "periods": {
+        "0q": {
+          "consensus_eps_average": 1.04438,
+          "low": 0.91,
+          "high": 1.13,
+          "analysts_count": 8,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1q": {
+          "consensus_eps_average": 1.09725,
+          "low": 0.98,
+          "high": 1.18,
+          "analysts_count": 8,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "0y": {
+          "consensus_eps_average": 4.5585,
+          "low": 4.45,
+          "high": 4.81,
+          "analysts_count": 8,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1y": {
+          "consensus_eps_average": 5.256,
+          "low": 4.85,
+          "high": 5.73,
+          "analysts_count": 5,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        }
+      },
+      "revisions": {
+        "0q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "0y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        }
+      },
+      "usable_for_intrinsic_validation": false,
+      "orders_enabled": false
+    },
+    "BTDR": {
+      "ticker": "BTDR",
+      "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+      "source": "Yahoo Finance via unofficial yfinance",
+      "source_url": "https://finance.yahoo.com/quote/BTDR/analysis/",
+      "source_type": "SECONDARY_VENDOR_NOT_PRIMARY_FILING",
+      "forecast_currency": "UNVERIFIED",
+      "eps_share_basis": "UNVERIFIED",
+      "history": [
+        {
+          "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+          "periods": {
+            "0q": {
+              "consensus_eps_average": -0.22667,
+              "low": -0.29,
+              "high": -0.16,
+              "analysts_count": 3,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1q": {
+              "consensus_eps_average": -0.20379,
+              "low": -0.29,
+              "high": -0.0025,
+              "analysts_count": 7,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "0y": {
+              "consensus_eps_average": -1.37333,
+              "low": -1.4,
+              "high": -1.33,
+              "analysts_count": 3,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1y": {
+              "consensus_eps_average": -0.59,
+              "low": -0.94,
+              "high": -0.32,
+              "analysts_count": 5,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            }
+          }
+        }
+      ],
+      "periods": {
+        "0q": {
+          "consensus_eps_average": -0.22667,
+          "low": -0.29,
+          "high": -0.16,
+          "analysts_count": 3,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1q": {
+          "consensus_eps_average": -0.20379,
+          "low": -0.29,
+          "high": -0.0025,
+          "analysts_count": 7,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "0y": {
+          "consensus_eps_average": -1.37333,
+          "low": -1.4,
+          "high": -1.33,
+          "analysts_count": 3,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1y": {
+          "consensus_eps_average": -0.59,
+          "low": -0.94,
+          "high": -0.32,
+          "analysts_count": 5,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        }
+      },
+      "revisions": {
+        "0q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "0y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        }
+      },
+      "usable_for_intrinsic_validation": false,
+      "orders_enabled": false
+    },
+    "AAPL": {
+      "ticker": "AAPL",
+      "status": "UNOFFICIAL_CONSENSUS_SNAPSHOT",
+      "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+      "source": "Yahoo Finance via unofficial yfinance",
+      "source_url": "https://finance.yahoo.com/quote/AAPL/analysis/",
+      "source_type": "SECONDARY_VENDOR_NOT_PRIMARY_FILING",
+      "forecast_currency": "UNVERIFIED",
+      "eps_share_basis": "UNVERIFIED",
+      "history": [
+        {
+          "observed_at_utc": "2026-11-21T03:16:02.562558+00:00",
+          "periods": {
+            "0q": {
+              "consensus_eps_average": 2.91173,
+              "low": 2.83,
+              "high": 3.18,
+              "analysts_count": 25,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1q": {
+              "consensus_eps_average": 2.15037,
+              "low": 1.83,
+              "high": 2.48998,
+              "analysts_count": 23,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "0y": {
+              "consensus_eps_average": 9.42944,
+              "low": 8.16,
+              "high": 10.28,
+              "analysts_count": 40,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            },
+            "+1y": {
+              "consensus_eps_average": 10.59913,
+              "low": 8.36,
+              "high": 12.2,
+              "analysts_count": 35,
+              "fiscal_period_end": null,
+              "period_identity_validated": false,
+              "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+            }
+          }
+        }
+      ],
+      "periods": {
+        "0q": {
+          "consensus_eps_average": 2.91173,
+          "low": 2.83,
+          "high": 3.18,
+          "analysts_count": 25,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1q": {
+          "consensus_eps_average": 2.15037,
+          "low": 1.83,
+          "high": 2.48998,
+          "analysts_count": 23,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "0y": {
+          "consensus_eps_average": 9.42944,
+          "low": 8.16,
+          "high": 10.28,
+          "analysts_count": 40,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        },
+        "+1y": {
+          "consensus_eps_average": 10.59913,
+          "low": 8.36,
+          "high": 12.2,
+          "analysts_count": 35,
+          "fiscal_period_end": null,
+          "period_identity_validated": false,
+          "data_quality": "SECONDARY_UNOFFICIAL_YAHOO_DATA_NOT_PRIMARY_VERIFIED"
+        }
+      },
+      "revisions": {
+        "0q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1q": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "0y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        },
+        "+1y": {
+          "status": "NOT VALIDATED — COMPARABLE DATED REVISIONS UNAVAILABLE",
+          "revision_pct": null
+        }
+      },
+      "usable_for_intrinsic_validation": false,
+      "orders_enabled": false
     }
   },
   "per_ticker_status": {
-    "NVDA": "SECONDARY_ESTIMATES_RECORDED",
-    "MSFT": "SECONDARY_ESTIMATES_RECORDED",
-    "GOOGL": "SECONDARY_ESTIMATES_RECORDED",
-    "META": "SECONDARY_ESTIMATES_RECORDED",
-    "AMZN": "SECONDARY_ESTIMATES_RECORDED",
-    "AVGO": "SECONDARY_ESTIMATES_RECORDED",
-    "CRM": "SECONDARY_ESTIMATES_RECORDED",
-    "SHEL": "SECONDARY_ESTIMATES_RECORDED",
-    "BP": "NOT_COLLECTED_OR_COOLDOWN",
-    "OXY": "NOT_COLLECTED_OR_COOLDOWN",
-    "TSM": "NOT_COLLECTED_OR_COOLDOWN",
-    "DUG.AX": "NOT_COLLECTED_OR_COOLDOWN",
-    "EOS.AX": "NOT_COLLECTED_OR_COOLDOWN",
-    "PENG": "NOT_COLLECTED_OR_COOLDOWN",
-    "BTDR": "NOT_COLLECTED_OR_COOLDOWN",
-    "AAPL": "NOT_COLLECTED_OR_COOLDOWN",
+    "NVDA": "CACHED_SECONDARY_SNAPSHOT",
+    "MSFT": "CACHED_SECONDARY_SNAPSHOT",
+    "GOOGL": "CACHED_SECONDARY_SNAPSHOT",
+    "META": "CACHED_SECONDARY_SNAPSHOT",
+    "AMZN": "CACHED_SECONDARY_SNAPSHOT",
+    "AVGO": "CACHED_SECONDARY_SNAPSHOT",
+    "CRM": "CACHED_SECONDARY_SNAPSHOT",
+    "SHEL": "CACHED_SECONDARY_SNAPSHOT",
+    "BP": "SECONDARY_ESTIMATES_RECORDED",
+    "OXY": "SECONDARY_ESTIMATES_RECORDED",
+    "TSM": "SECONDARY_ESTIMATES_RECORDED",
+    "DUG.AX": "SECONDARY_ESTIMATES_RECORDED",
+    "EOS.AX": "SECONDARY_ESTIMATES_RECORDED",
+    "PENG": "SECONDARY_ESTIMATES_RECORDED",
+    "BTDR": "SECONDARY_ESTIMATES_RECORDED",
+    "AAPL": "SECONDARY_ESTIMATES_RECORDED",
     "ABBV": "NOT_COLLECTED_OR_COOLDOWN",
     "ABNB": "NOT_COLLECTED_OR_COOLDOWN",
     "ADBE": "NOT_COLLECTED_OR_COOLDOWN",
@@ -1101,27 +1917,27 @@
     "ZS": "NOT_COLLECTED_OR_COOLDOWN"
   },
   "attempts_this_run": [
-    "NVDA",
-    "MSFT",
-    "GOOGL",
-    "META",
-    "AMZN",
-    "AVGO",
-    "CRM",
-    "SHEL"
+    "BP",
+    "OXY",
+    "TSM",
+    "DUG.AX",
+    "EOS.AX",
+    "PENG",
+    "BTDR",
+    "AAPL"
   ],
   "successful_snapshots_this_run": [
-    "NVDA",
-    "MSFT",
-    "GOOGL",
-    "META",
-    "AMZN",
-    "AVGO",
-    "CRM",
-    "SHEL"
+    "BP",
+    "OXY",
+    "TSM",
+    "DUG.AX",
+    "EOS.AX",
+    "PENG",
+    "BTDR",
+    "AAPL"
   ],
   "temporary_failures": {},
-  "snapshot_count": 8,
+  "snapshot_count": 16,
   "provider_cooldown_until_utc": null,
   "orders_enabled": false,
   "research_only": true,
