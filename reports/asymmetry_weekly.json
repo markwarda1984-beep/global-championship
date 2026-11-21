@@ -1,70 +1,13 @@
 {
   "schema_version": "5.4-asymmetry-evidence-gated-1",
-  "published_at_utc": "2026-11-20T22:36:08.379120+00:00",
+  "published_at_utc": "2026-11-20T22:46:56.449517+00:00",
   "universe_count": 200,
-  "source_valuation_snapshot_utc": "2026-11-20T22:35:48.014634+00:00",
+  "source_valuation_snapshot_utc": "2026-11-20T22:46:41.813076+00:00",
   "verification_coverage": "FIRST_PASS_SEC_FILINGS_FOR_PRELIMINARY_TOP10_ONLY; NOT ALL_200",
-  "evidence_qualified_count": 2,
-  "unverified_model_count": 119,
-  "not_modelled_or_invalid_count": 79,
-  "evidence_qualified_top10": [
-    {
-      "rank": 1,
-      "ticker": "ADBE",
-      "company": "Adobe",
-      "currency": "USD",
-      "last_daily_close": 217.71001,
-      "dilution_adjusted_values": {
-        "bear": 103.2744,
-        "base": 231.5198,
-        "bull": 432.0156
-      },
-      "hypothetical_future_dilution_rates_pct": {
-        "bear": 15.0,
-        "base": 5.0,
-        "bull": 0.0
-      },
-      "issuer_filing_share_count": 389200000.0,
-      "vendor_share_count": 389200000.0,
-      "share_basis_adjustment": 1.0,
-      "base_upside_pct": 6.34,
-      "bear_downside_pct": -52.56,
-      "asymmetry_ratio_not_probability": 0.121,
-      "source_flags": [],
-      "primary_model_economics_verified": true,
-      "verified_buy_signal": false,
-      "orders_enabled": false,
-      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review"
-    },
-    {
-      "rank": 2,
-      "ticker": "OXY",
-      "company": "Occidental Petroleum",
-      "currency": "USD",
-      "last_daily_close": 53.9,
-      "dilution_adjusted_values": {
-        "bear": 24.9666,
-        "base": 56.1426,
-        "bull": 104.9104
-      },
-      "hypothetical_future_dilution_rates_pct": {
-        "bear": 15.0,
-        "base": 5.0,
-        "bull": 0.0
-      },
-      "issuer_filing_share_count": 999894745.0,
-      "vendor_share_count": 999894745.0,
-      "share_basis_adjustment": 1.0,
-      "base_upside_pct": 4.16,
-      "bear_downside_pct": -53.68,
-      "asymmetry_ratio_not_probability": 0.078,
-      "source_flags": [],
-      "primary_model_economics_verified": true,
-      "verified_buy_signal": false,
-      "orders_enabled": false,
-      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review"
-    }
-  ],
+  "evidence_qualified_count": 0,
+  "unverified_model_count": 118,
+  "not_modelled_or_invalid_count": 82,
+  "evidence_qualified_top10": [],
   "unverified_scenario_review_queue": [
     {
       "research_position": 1,
@@ -82,14 +25,14 @@
         "base": 5.0,
         "bull": 0.0
       },
-      "issuer_filing_share_count": 5689891670.0,
+      "issuer_filing_share_count": null,
       "vendor_share_count": 2822583730.0,
       "share_basis_adjustment": null,
       "base_upside_pct": 30.57,
       "bear_downside_pct": -41.96,
       "asymmetry_ratio_not_probability": 0.729,
       "source_flags": [
-        "PRIMARY_VS_VENDOR_SHARES_DISAGREE_OVER_10PCT"
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ],
       "primary_model_economics_verified": false,
       "verified_buy_signal": false,
@@ -120,7 +63,7 @@
       "bear_downside_pct": -46.45,
       "asymmetry_ratio_not_probability": 0.441,
       "source_flags": [
-        "ISSUED_SHARE_COUNTS_NOT_COMPARABLE"
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ],
       "primary_model_economics_verified": false,
       "verified_buy_signal": false,
@@ -144,14 +87,14 @@
         "base": 5.0,
         "bull": 0.0
       },
-      "issuer_filing_share_count": 823000000.0,
+      "issuer_filing_share_count": null,
       "vendor_share_count": 823000000.0,
       "share_basis_adjustment": null,
       "base_upside_pct": 10.41,
       "bear_downside_pct": -50.69,
       "asymmetry_ratio_not_probability": 0.205,
       "source_flags": [
-        "FCF_SOURCE_DISAGREEMENT_OVER_25PCT"
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ],
       "primary_model_economics_verified": false,
       "verified_buy_signal": false,
@@ -161,6 +104,68 @@
     },
     {
       "research_position": 4,
+      "ticker": "ADBE",
+      "company": "Adobe",
+      "currency": "USD",
+      "last_daily_close": 217.71001,
+      "dilution_adjusted_values": {
+        "bear": 103.2744,
+        "base": 231.5198,
+        "bull": 432.0156
+      },
+      "hypothetical_future_dilution_rates_pct": {
+        "bear": 15.0,
+        "base": 5.0,
+        "bull": 0.0
+      },
+      "issuer_filing_share_count": null,
+      "vendor_share_count": 389200000.0,
+      "share_basis_adjustment": null,
+      "base_upside_pct": 6.34,
+      "bear_downside_pct": -52.56,
+      "asymmetry_ratio_not_probability": 0.121,
+      "source_flags": [
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+      ],
+      "primary_model_economics_verified": false,
+      "verified_buy_signal": false,
+      "orders_enabled": false,
+      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
+      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
+    },
+    {
+      "research_position": 5,
+      "ticker": "OXY",
+      "company": "Occidental Petroleum",
+      "currency": "USD",
+      "last_daily_close": 53.9,
+      "dilution_adjusted_values": {
+        "bear": 24.9666,
+        "base": 56.1426,
+        "bull": 104.9104
+      },
+      "hypothetical_future_dilution_rates_pct": {
+        "bear": 15.0,
+        "base": 5.0,
+        "bull": 0.0
+      },
+      "issuer_filing_share_count": null,
+      "vendor_share_count": 999894745.0,
+      "share_basis_adjustment": null,
+      "base_upside_pct": 4.16,
+      "bear_downside_pct": -53.68,
+      "asymmetry_ratio_not_probability": 0.078,
+      "source_flags": [
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+      ],
+      "primary_model_economics_verified": false,
+      "verified_buy_signal": false,
+      "orders_enabled": false,
+      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
+      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
+    },
+    {
+      "research_position": 6,
       "ticker": "NFLX",
       "company": "Netflix",
       "currency": "USD",
@@ -175,14 +180,14 @@
         "base": 5.0,
         "bull": 0.0
       },
-      "issuer_filing_share_count": 4106325903.0,
+      "issuer_filing_share_count": null,
       "vendor_share_count": 4106325903.0,
       "share_basis_adjustment": null,
       "base_upside_pct": 3.21,
       "bear_downside_pct": -53.93,
       "asymmetry_ratio_not_probability": 0.06,
       "source_flags": [
-        "FCF_SOURCE_DISAGREEMENT_OVER_25PCT"
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ],
       "primary_model_economics_verified": false,
       "verified_buy_signal": false,
@@ -191,7 +196,7 @@
       "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
     },
     {
-      "research_position": 5,
+      "research_position": 7,
       "ticker": "AAPL",
       "company": "Apple",
       "currency": "USD",
@@ -222,7 +227,7 @@
       "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
     },
     {
-      "research_position": 6,
+      "research_position": 8,
       "ticker": "ABBV",
       "company": "AbbVie",
       "currency": "USD",
@@ -253,7 +258,7 @@
       "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
     },
     {
-      "research_position": 7,
+      "research_position": 9,
       "ticker": "AEM",
       "company": "Agnico Eagle Mines",
       "currency": "USD",
@@ -284,7 +289,7 @@
       "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
     },
     {
-      "research_position": 8,
+      "research_position": 10,
       "ticker": "ALL.AX",
       "company": "Aristocrat Leisure",
       "currency": "AUD",
@@ -304,68 +309,6 @@
       "share_basis_adjustment": null,
       "base_upside_pct": -82.34,
       "bear_downside_pct": -92.02,
-      "asymmetry_ratio_not_probability": 0.0,
-      "source_flags": [
-        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
-      ],
-      "primary_model_economics_verified": false,
-      "verified_buy_signal": false,
-      "orders_enabled": false,
-      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
-      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
-    },
-    {
-      "research_position": 9,
-      "ticker": "AMD",
-      "company": "AMD",
-      "currency": "USD",
-      "last_daily_close": 424.39001,
-      "dilution_adjusted_values": {
-        "bear": 16.9336,
-        "base": 35.0636,
-        "bull": 59.3765
-      },
-      "hypothetical_future_dilution_rates_pct": {
-        "bear": 15.0,
-        "base": 5.0,
-        "bull": 0.0
-      },
-      "issuer_filing_share_count": null,
-      "vendor_share_count": 1655065573.0,
-      "share_basis_adjustment": null,
-      "base_upside_pct": -91.74,
-      "bear_downside_pct": -96.01,
-      "asymmetry_ratio_not_probability": 0.0,
-      "source_flags": [
-        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
-      ],
-      "primary_model_economics_verified": false,
-      "verified_buy_signal": false,
-      "orders_enabled": false,
-      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
-      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
-    },
-    {
-      "research_position": 10,
-      "ticker": "AMGN",
-      "company": "Amgen",
-      "currency": "USD",
-      "last_daily_close": 435.64001,
-      "dilution_adjusted_values": {
-        "bear": 53.9609,
-        "base": 120.6641,
-        "bull": 224.8794
-      },
-      "hypothetical_future_dilution_rates_pct": {
-        "bear": 15.0,
-        "base": 5.0,
-        "bull": 0.0
-      },
-      "issuer_filing_share_count": null,
-      "vendor_share_count": 540911490.0,
-      "share_basis_adjustment": null,
-      "base_upside_pct": -72.3,
-      "bear_downside_pct": -87.61,
       "asymmetry_ratio_not_probability": 0.0,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
