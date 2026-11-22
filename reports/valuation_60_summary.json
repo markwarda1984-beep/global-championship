@@ -1,11 +1,11 @@
 {
   "schema_version": "6.0-full-cycle-primary-evidence-1",
-  "published_at_utc": "2026-11-21T00:05:42.692580+00:00",
+  "published_at_utc": "2026-11-22T03:10:24.472369+00:00",
   "original_watchlist_count": 200,
   "discovery_company_count": 4,
   "reported_count": 204,
-  "validated_inputs_count": 6,
-  "not_validated_count": 198,
+  "validated_inputs_count": 31,
+  "not_validated_count": 173,
   "ranked_research_top10": [
     {
       "ticker": "AAPL",
@@ -72,19 +72,65 @@
       "bear_downside_pct": -75.78,
       "asymmetry_ratio_not_probability": 0.0,
       "momentum_mos_pct": 20
+    },
+    {
+      "ticker": "BSX",
+      "base": 13.9202,
+      "bear": 6.9098,
+      "bull": 21.9822,
+      "price": 41.98,
+      "asymmetric_base_upside_pct": -66.84,
+      "bear_downside_pct": -83.54,
+      "asymmetry_ratio_not_probability": 0.0,
+      "momentum_mos_pct": 20
+    },
+    {
+      "ticker": "CAT",
+      "base": 114.2449,
+      "bear": 69.5403,
+      "bull": 159.9428,
+      "price": 510.45001,
+      "asymmetric_base_upside_pct": -77.62,
+      "bear_downside_pct": -86.38,
+      "asymmetry_ratio_not_probability": 0.0,
+      "momentum_mos_pct": 20
+    },
+    {
+      "ticker": "COST",
+      "base": 167.5538,
+      "bear": 85.9619,
+      "bull": 259.8181,
+      "price": 1102.15002,
+      "asymmetric_base_upside_pct": -84.8,
+      "bear_downside_pct": -92.2,
+      "asymmetry_ratio_not_probability": 0.0,
+      "momentum_mos_pct": 10
+    },
+    {
+      "ticker": "CRM",
+      "base": 105.7674,
+      "bear": 50.0998,
+      "bull": 171.1348,
+      "price": 180.62,
+      "asymmetric_base_upside_pct": -41.44,
+      "bear_downside_pct": -72.26,
+      "asymmetry_ratio_not_probability": 0.0,
+      "momentum_mos_pct": 20
     }
   ],
   "missing_evidence_flag_counts": {
-    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 5,
+    "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED": 24,
     "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED": 41,
-    "PRIMARY_XBRL_NOT_COLLECTED": 139,
-    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 4,
-    "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 3,
-    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 1,
-    "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 1,
-    "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 1,
-    "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 1,
-    "NORMALIZED_CYCLE_NONPOSITIVE": 1,
+    "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 12,
+    "PRIMARY_XBRL_NOT_COLLECTED": 45,
+    "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW": 4,
+    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 17,
+    "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL": 5,
+    "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 5,
+    "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 5,
+    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 10,
+    "NORMALIZED_CYCLE_NONPOSITIVE": 2,
+    "EQUITY_YEAR_COMPARABILITY_UNVERIFIED": 6,
     "QUOTE_PRIMARY_FILING_CURRENCY_OR_ADR_RATIO_UNVERIFIED": 2
   },
   "value_definition": "Evidence-backed inputs and ASSUMED forecasts. Estimated intrinsic value is NOT an objective certified value.",
@@ -94,5 +140,10 @@
   "research_only": true,
   "orders_enabled": false,
   "orders_generated": 0,
-  "validated_buy_signal_count": 0
+  "validated_buy_signal_count": 0,
+  "forward_research_coverage": {
+    "company_snapshot_count": 55,
+    "issuer_guidance_evidence_count": 0,
+    "secondary_estimates_do_not_validate_intrinsic": true
+  }
 }
