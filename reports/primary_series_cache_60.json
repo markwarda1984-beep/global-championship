@@ -1,6 +1,6 @@
 {
   "schema_version": "6.0-primary-series-cache-1",
-  "published_at_utc": "2026-11-22T11:13:37.843636+00:00",
+  "published_at_utc": "2026-11-22T16:14:32.460070+00:00",
   "source": "SEC issuer-filed XBRL companyfacts; bounded incremental research",
   "original_200_unchanged": true,
   "companies": {
@@ -111251,6 +111251,4658 @@
       },
       "evidence_hash_sha256": "18004480e94d13e77aac81fcc3b392f95db25982b6dfe64017ea099ceb9be42e",
       "orders_enabled": false
+    },
+    "VST": {
+      "ticker": "VST",
+      "issuer_name": "Vistra Corp.",
+      "cik": 1692819,
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001692819.json",
+      "observed_utc": "2026-11-22T16:14:32.460070+00:00",
+      "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_source_type": "ISSUER_XBRL_SEC",
+      "primary_statements_are_issuer_reported": true,
+      "latest_share_count": {
+        "value": 339394683.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-11-02",
+        "filed": "2026-11-09",
+        "form": "10-Q",
+        "accession": "0001692819-26-000025",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei"
+      },
+      "annual_facts": {
+        "shares": [
+          {
+            "value": 338963642.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-02-24",
+            "filed": "2025-02-28",
+            "form": "10-K",
+            "accession": "0001692819-25-000013",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 339331954.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-05-02",
+            "filed": "2025-05-08",
+            "form": "10-Q",
+            "accession": "0001692819-25-000035",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 338820324.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-08-01",
+            "filed": "2025-08-08",
+            "form": "10-Q",
+            "accession": "0001692819-25-000085",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 338825490.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-10-31",
+            "filed": "2025-11-07",
+            "form": "10-Q",
+            "accession": "0001692819-25-000094",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 336954256.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-02-18",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 337182468.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-05-01",
+            "filed": "2026-05-08",
+            "form": "10-Q",
+            "accession": "0001692819-26-000014",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 335635195.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-08-03",
+            "filed": "2026-08-10",
+            "form": "10-Q",
+            "accession": "0001692819-26-000019",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 339394683.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-11-02",
+            "filed": "2026-11-09",
+            "form": "10-Q",
+            "accession": "0001692819-26-000025",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          }
+        ],
+        "revenue": [
+          {
+            "value": 9797000000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-26",
+            "form": "10-K",
+            "accession": "0001692819-21-000004",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 11547000000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-25",
+            "form": "10-K",
+            "accession": "0001692819-22-000005",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 10850000000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-03-01",
+            "form": "10-K",
+            "accession": "0001692819-23-000005",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 17700000000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-29",
+            "form": "10-K",
+            "accession": "0001692819-24-000012",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 15631000000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-28",
+            "form": "10-K",
+            "accession": "0001692819-25-000013",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 13804000000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 14761000000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 17586000000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "net_income": [
+          {
+            "value": -254000000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-28",
+            "form": "10-K",
+            "accession": "0001692819-20-000005",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -54000000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-26",
+            "form": "10-K",
+            "accession": "0001692819-21-000004",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 928000000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-25",
+            "form": "10-K",
+            "accession": "0001692819-22-000005",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 636000000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-03-01",
+            "form": "10-K",
+            "accession": "0001692819-23-000005",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -1274000000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-29",
+            "form": "10-K",
+            "accession": "0001692819-24-000012",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -1227000000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-28",
+            "form": "10-K",
+            "accession": "0001692819-25-000013",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1493000000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2659000000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 944000000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "operating_cash_flow": [
+          {
+            "value": 1386000000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-28",
+            "form": "10-K",
+            "accession": "0001692819-20-000005",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1471000000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-26",
+            "form": "10-K",
+            "accession": "0001692819-21-000004",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2736000000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-25",
+            "form": "10-K",
+            "accession": "0001692819-22-000005",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3337000000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-03-01",
+            "form": "10-K",
+            "accession": "0001692819-23-000005",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -206000000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-29",
+            "form": "10-K",
+            "accession": "0001692819-24-000012",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 485000000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-28",
+            "form": "10-K",
+            "accession": "0001692819-25-000013",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5453000000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4563000000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4070000000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "capex": [
+          {
+            "value": 114000000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-28",
+            "form": "10-K",
+            "accession": "0001692819-20-000005",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 530000000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-26",
+            "form": "10-K",
+            "accession": "0001692819-21-000004",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 713000000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-25",
+            "form": "10-K",
+            "accession": "0001692819-22-000005",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1259000000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-03-01",
+            "form": "10-K",
+            "accession": "0001692819-23-000005",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1033000000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-29",
+            "form": "10-K",
+            "accession": "0001692819-24-000012",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1301000000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-28",
+            "form": "10-K",
+            "accession": "0001692819-25-000013",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1676000000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2078000000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2752000000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "equity": [
+          {
+            "value": 5307000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-28",
+            "form": "10-K",
+            "accession": "0001692819-25-000013",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5656000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2024-05-10",
+            "form": "10-Q",
+            "accession": "0001692819-24-000033",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5593000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2024-08-09",
+            "form": "10-Q",
+            "accession": "0001692819-24-000061",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5441000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2024-11-08",
+            "form": "10-Q",
+            "accession": "0001692819-24-000069",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5570000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4825000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2025-05-08",
+            "form": "10-Q",
+            "accession": "0001692819-25-000035",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4823000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2025-08-08",
+            "form": "10-Q",
+            "accession": "0001692819-25-000085",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5210000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2025-11-07",
+            "form": "10-Q",
+            "accession": "0001692819-25-000094",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5097000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-09",
+            "form": "10-Q",
+            "accession": "0001692819-26-000025",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5597000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-05-08",
+            "form": "10-Q",
+            "accession": "0001692819-26-000014",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5482000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-10",
+            "form": "10-Q",
+            "accession": "0001692819-26-000019",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 6306000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-09",
+            "form": "10-Q",
+            "accession": "0001692819-26-000025",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "assets": [
+          {
+            "value": 32966000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-28",
+            "form": "10-K",
+            "accession": "0001692819-25-000013",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 38178000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2024-05-10",
+            "form": "10-Q",
+            "accession": "0001692819-24-000033",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 39125000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2024-08-09",
+            "form": "10-Q",
+            "accession": "0001692819-24-000061",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 37878000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2024-11-08",
+            "form": "10-Q",
+            "accession": "0001692819-24-000069",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 37770000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 38228000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2025-05-08",
+            "form": "10-Q",
+            "accession": "0001692819-25-000035",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 38146000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2025-08-08",
+            "form": "10-Q",
+            "accession": "0001692819-25-000085",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 38020000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2025-11-07",
+            "form": "10-Q",
+            "accession": "0001692819-25-000094",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 41550000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-09",
+            "form": "10-Q",
+            "accession": "0001692819-26-000025",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 41308000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-05-08",
+            "form": "10-Q",
+            "accession": "0001692819-26-000014",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 42603000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-10",
+            "form": "10-Q",
+            "accession": "0001692819-26-000019",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 45029000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-09",
+            "form": "10-Q",
+            "accession": "0001692819-26-000025",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "liabilities": [
+          {
+            "value": 27644000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-28",
+            "form": "10-K",
+            "accession": "0001692819-25-000013",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 30894000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2024-05-10",
+            "form": "10-Q",
+            "accession": "0001692819-24-000033",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 31818000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2024-08-09",
+            "form": "10-Q",
+            "accession": "0001692819-24-000061",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 29225000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2024-11-08",
+            "form": "10-Q",
+            "accession": "0001692819-24-000069",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 32187000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-27",
+            "form": "10-K",
+            "accession": "0001692819-26-000006",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 33390000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2025-05-08",
+            "form": "10-Q",
+            "accession": "0001692819-25-000035",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 33310000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2025-08-08",
+            "form": "10-Q",
+            "accession": "0001692819-25-000085",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 32797000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2025-11-07",
+            "form": "10-Q",
+            "accession": "0001692819-25-000094",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 36440000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-09",
+            "form": "10-Q",
+            "accession": "0001692819-26-000025",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 35698000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-05-08",
+            "form": "10-Q",
+            "accession": "0001692819-26-000014",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 37109000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-10",
+            "form": "10-Q",
+            "accession": "0001692819-26-000019",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 38566000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-09",
+            "form": "10-Q",
+            "accession": "0001692819-26-000025",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          }
+        ]
+      },
+      "evidence_hash_sha256": "43d1cd55106e8316f9b52b4d0c35adbcb9e042d3181de12b9367914fb6ee619e",
+      "orders_enabled": false
+    },
+    "WFC": {
+      "ticker": "WFC",
+      "issuer_name": "WELLS        FARGO & COMPANY/MN",
+      "cik": 72971,
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000072971.json",
+      "observed_utc": "2026-11-22T16:14:32.460070+00:00",
+      "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_source_type": "ISSUER_XBRL_SEC",
+      "primary_statements_are_issuer_reported": true,
+      "latest_share_count": {
+        "value": 3001850317.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-10-19",
+        "filed": "2026-10-28",
+        "form": "10-Q",
+        "accession": "0000072971-26-000327",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei"
+      },
+      "annual_facts": {
+        "shares": [
+          {
+            "value": 3288186582.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-02-14",
+            "filed": "2025-02-25",
+            "form": "10-K",
+            "accession": "0000072971-25-000066",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 3254182446.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-04-17",
+            "filed": "2025-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-25-000129",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 3203441209.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-07-23",
+            "filed": "2025-08-05",
+            "form": "10-Q",
+            "accession": "0000072971-25-000201",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 3139084542.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-10-22",
+            "filed": "2025-10-31",
+            "form": "10-Q",
+            "accession": "0000072971-25-000253",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 3085635641.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-02-13",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 3060189494.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-04-17",
+            "filed": "2026-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-26-000217",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 3023999336.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-07-17",
+            "filed": "2026-07-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000302",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 3001850317.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-10-19",
+            "filed": "2026-10-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000327",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          }
+        ],
+        "revenue": [
+          {
+            "value": 88267000000.0,
+            "unit": "USD",
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-27",
+            "form": "10-K",
+            "accession": "0000072971-19-000227",
+            "tag": "Revenues",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 88389000000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-27",
+            "form": "10-K",
+            "accession": "0000072971-20-000217",
+            "tag": "Revenues",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 86408000000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2020-02-27",
+            "form": "10-K",
+            "accession": "0000072971-20-000217",
+            "tag": "Revenues",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 85063000000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2020-02-27",
+            "form": "10-K",
+            "accession": "0000072971-20-000217",
+            "tag": "Revenues",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "net_income": [
+          {
+            "value": 22894000000.0,
+            "unit": "USD",
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-03-01",
+            "form": "10-K",
+            "accession": "0000072971-18-000272",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 21938000000.0,
+            "unit": "USD",
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-27",
+            "form": "10-K",
+            "accession": "0000072971-19-000227",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 22183000000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-27",
+            "form": "10-K",
+            "accession": "0000072971-20-000217",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 22393000000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-23",
+            "form": "10-K",
+            "accession": "0000072971-21-000197",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 19715000000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-22",
+            "form": "10-K",
+            "accession": "0000072971-22-000096",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3377000000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-21",
+            "form": "10-K",
+            "accession": "0000072971-23-000071",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 22109000000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-20",
+            "form": "10-K",
+            "accession": "0000072971-24-000064",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 13677000000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-25",
+            "form": "10-K",
+            "accession": "0000072971-25-000066",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 19142000000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 19722000000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 21338000000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "operating_cash_flow": [
+          {
+            "value": 18619000000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-27",
+            "form": "10-K",
+            "accession": "0000072971-20-000217",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 36073000000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-23",
+            "form": "10-K",
+            "accession": "0000072971-21-000197",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 6730000000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-22",
+            "form": "10-K",
+            "accession": "0000072971-22-000096",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2051000000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-21",
+            "form": "10-K",
+            "accession": "0000072971-23-000071",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -11525000000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-20",
+            "form": "10-K",
+            "accession": "0000072971-24-000064",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 27048000000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-25",
+            "form": "10-K",
+            "accession": "0000072971-25-000066",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 40358000000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3035000000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -19001000000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "capex": [],
+        "equity": [
+          {
+            "value": 185735000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-25",
+            "form": "10-K",
+            "accession": "0000072971-25-000066",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 180943000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2024-05-02",
+            "form": "10-Q",
+            "accession": "0000072971-24-000129",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 176430000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2024-08-01",
+            "form": "10-Q",
+            "accession": "0000072971-24-000185",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 183265000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2024-10-31",
+            "form": "10-Q",
+            "accession": "0000072971-24-000243",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 179120000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 181090000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2025-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-25-000129",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 181111000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2025-08-05",
+            "form": "10-Q",
+            "accession": "0000072971-25-000201",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 181154000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2025-10-31",
+            "form": "10-Q",
+            "accession": "0000072971-25-000253",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 181117000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-10-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000327",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 178396000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-26-000217",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 180190000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-07-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000302",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 175760000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-10-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000327",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "assets": [
+          {
+            "value": 1932468000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-25",
+            "form": "10-K",
+            "accession": "0000072971-25-000066",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1959153000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2025-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-25-000129",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1940073000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2025-08-05",
+            "form": "10-Q",
+            "accession": "0000072971-25-000201",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1922125000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2025-10-31",
+            "form": "10-Q",
+            "accession": "0000072971-25-000253",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1929845000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1950311000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2026-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-26-000217",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1981269000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2026-07-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000302",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2062926000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2026-10-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000327",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2148631000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-10-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000327",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2205752000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-26-000217",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2282201000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-07-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000302",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2253291000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-10-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000327",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "liabilities": [
+          {
+            "value": 1745025000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-25",
+            "form": "10-K",
+            "accession": "0000072971-25-000066",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1776479000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2024-05-02",
+            "form": "10-Q",
+            "accession": "0000072971-24-000129",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1761925000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2024-08-01",
+            "form": "10-Q",
+            "accession": "0000072971-24-000185",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1737114000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2024-10-31",
+            "form": "10-Q",
+            "accession": "0000072971-24-000243",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1748779000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-24",
+            "form": "10-K",
+            "accession": "0000072971-26-000133",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1767405000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2025-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-25-000129",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1798315000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2025-08-05",
+            "form": "10-Q",
+            "accession": "0000072971-25-000201",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1879914000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2025-10-31",
+            "form": "10-Q",
+            "accession": "0000072971-25-000253",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1965593000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-10-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000327",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2025439000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-04-29",
+            "form": "10-Q",
+            "accession": "0000072971-26-000217",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2099878000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-07-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000302",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2075414000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-10-28",
+            "form": "10-Q",
+            "accession": "0000072971-26-000327",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          }
+        ]
+      },
+      "evidence_hash_sha256": "9e21059b224ad8e8b79403eddf0c93421bd8bdb4233bd045d0306715cfe5d82f",
+      "orders_enabled": false
+    },
+    "WMT": {
+      "ticker": "WMT",
+      "issuer_name": "Walmart Inc.",
+      "cik": 104169,
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
+      "observed_utc": "2026-11-22T16:14:32.460070+00:00",
+      "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_source_type": "ISSUER_XBRL_SEC",
+      "primary_statements_are_issuer_reported": true,
+      "latest_share_count": {
+        "value": 7933746241.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-08-26",
+        "filed": "2026-08-28",
+        "form": "10-Q",
+        "accession": "0000104169-26-000154",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei"
+      },
+      "annual_facts": {
+        "shares": [
+          {
+            "value": 8033386215.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2024-12-04",
+            "filed": "2024-12-06",
+            "form": "10-Q",
+            "accession": "0000104169-24-000178",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 8016849444.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-03-12",
+            "filed": "2025-03-14",
+            "form": "10-K",
+            "accession": "0000104169-25-000021",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 7980418164.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-06-04",
+            "filed": "2025-06-06",
+            "form": "10-Q",
+            "accession": "0000104169-25-000090",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 7972851122.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-08-27",
+            "filed": "2025-08-29",
+            "form": "10-Q",
+            "accession": "0000104169-25-000137",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 7970166964.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-12-02",
+            "filed": "2025-12-03",
+            "form": "10-Q",
+            "accession": "0000104169-25-000191",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 7972402501.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-03-11",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 7958079155.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-05-27",
+            "filed": "2026-05-29",
+            "form": "10-Q",
+            "accession": "0000104169-26-000102",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 7933746241.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-08-26",
+            "filed": "2026-08-28",
+            "form": "10-Q",
+            "accession": "0000104169-26-000154",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          }
+        ],
+        "revenue": [
+          {
+            "value": 481317000000.0,
+            "unit": "USD",
+            "start": "2016-02-01",
+            "end": "2017-01-31",
+            "filed": "2019-03-28",
+            "form": "10-K",
+            "accession": "0000104169-19-000016",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 495761000000.0,
+            "unit": "USD",
+            "start": "2017-02-01",
+            "end": "2018-01-31",
+            "filed": "2020-03-20",
+            "form": "10-K",
+            "accession": "0000104169-20-000011",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 510329000000.0,
+            "unit": "USD",
+            "start": "2018-02-01",
+            "end": "2019-01-31",
+            "filed": "2021-03-19",
+            "form": "10-K",
+            "accession": "0000104169-21-000033",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 519926000000.0,
+            "unit": "USD",
+            "start": "2019-02-01",
+            "end": "2020-01-31",
+            "filed": "2022-03-18",
+            "form": "10-K",
+            "accession": "0000104169-22-000012",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 555233000000.0,
+            "unit": "USD",
+            "start": "2020-02-01",
+            "end": "2021-01-31",
+            "filed": "2023-03-17",
+            "form": "10-K",
+            "accession": "0000104169-23-000020",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 567762000000.0,
+            "unit": "USD",
+            "start": "2021-02-01",
+            "end": "2022-01-31",
+            "filed": "2024-03-15",
+            "form": "10-K",
+            "accession": "0000104169-24-000056",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 605881000000.0,
+            "unit": "USD",
+            "start": "2022-02-01",
+            "end": "2023-01-31",
+            "filed": "2025-03-14",
+            "form": "10-K",
+            "accession": "0000104169-25-000021",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 642637000000.0,
+            "unit": "USD",
+            "start": "2023-02-01",
+            "end": "2024-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 674538000000.0,
+            "unit": "USD",
+            "start": "2024-02-01",
+            "end": "2025-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 706413000000.0,
+            "unit": "USD",
+            "start": "2025-02-01",
+            "end": "2026-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "net_income": [
+          {
+            "value": 14694000000.0,
+            "unit": "USD",
+            "start": "2015-02-01",
+            "end": "2016-01-31",
+            "filed": "2018-03-30",
+            "form": "10-K",
+            "accession": "0000104169-18-000028",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 13643000000.0,
+            "unit": "USD",
+            "start": "2016-02-01",
+            "end": "2017-01-31",
+            "filed": "2019-03-28",
+            "form": "10-K",
+            "accession": "0000104169-19-000016",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 9862000000.0,
+            "unit": "USD",
+            "start": "2017-02-01",
+            "end": "2018-01-31",
+            "filed": "2020-03-20",
+            "form": "10-K",
+            "accession": "0000104169-20-000011",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 6670000000.0,
+            "unit": "USD",
+            "start": "2018-02-01",
+            "end": "2019-01-31",
+            "filed": "2021-03-19",
+            "form": "10-K",
+            "accession": "0000104169-21-000033",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 14881000000.0,
+            "unit": "USD",
+            "start": "2019-02-01",
+            "end": "2020-01-31",
+            "filed": "2022-03-18",
+            "form": "10-K",
+            "accession": "0000104169-22-000012",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 13510000000.0,
+            "unit": "USD",
+            "start": "2020-02-01",
+            "end": "2021-01-31",
+            "filed": "2023-03-17",
+            "form": "10-K",
+            "accession": "0000104169-23-000020",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 13673000000.0,
+            "unit": "USD",
+            "start": "2021-02-01",
+            "end": "2022-01-31",
+            "filed": "2024-03-15",
+            "form": "10-K",
+            "accession": "0000104169-24-000056",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 11680000000.0,
+            "unit": "USD",
+            "start": "2022-02-01",
+            "end": "2023-01-31",
+            "filed": "2025-03-14",
+            "form": "10-K",
+            "accession": "0000104169-25-000021",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 15511000000.0,
+            "unit": "USD",
+            "start": "2023-02-01",
+            "end": "2024-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 19436000000.0,
+            "unit": "USD",
+            "start": "2024-02-01",
+            "end": "2025-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 21893000000.0,
+            "unit": "USD",
+            "start": "2025-02-01",
+            "end": "2026-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "operating_cash_flow": [
+          {
+            "value": 27552000000.0,
+            "unit": "USD",
+            "start": "2015-02-01",
+            "end": "2016-01-31",
+            "filed": "2018-03-30",
+            "form": "10-K",
+            "accession": "0000104169-18-000028",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 31673000000.0,
+            "unit": "USD",
+            "start": "2016-02-01",
+            "end": "2017-01-31",
+            "filed": "2019-03-28",
+            "form": "10-K",
+            "accession": "0000104169-19-000016",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 28337000000.0,
+            "unit": "USD",
+            "start": "2017-02-01",
+            "end": "2018-01-31",
+            "filed": "2020-03-20",
+            "form": "10-K",
+            "accession": "0000104169-20-000011",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 27753000000.0,
+            "unit": "USD",
+            "start": "2018-02-01",
+            "end": "2019-01-31",
+            "filed": "2021-03-19",
+            "form": "10-K",
+            "accession": "0000104169-21-000033",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 25255000000.0,
+            "unit": "USD",
+            "start": "2019-02-01",
+            "end": "2020-01-31",
+            "filed": "2022-03-18",
+            "form": "10-K",
+            "accession": "0000104169-22-000012",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 36074000000.0,
+            "unit": "USD",
+            "start": "2020-02-01",
+            "end": "2021-01-31",
+            "filed": "2023-03-17",
+            "form": "10-K",
+            "accession": "0000104169-23-000020",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 24181000000.0,
+            "unit": "USD",
+            "start": "2021-02-01",
+            "end": "2022-01-31",
+            "filed": "2024-03-15",
+            "form": "10-K",
+            "accession": "0000104169-24-000056",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 28841000000.0,
+            "unit": "USD",
+            "start": "2022-02-01",
+            "end": "2023-01-31",
+            "filed": "2025-03-14",
+            "form": "10-K",
+            "accession": "0000104169-25-000021",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 35726000000.0,
+            "unit": "USD",
+            "start": "2023-02-01",
+            "end": "2024-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 36443000000.0,
+            "unit": "USD",
+            "start": "2024-02-01",
+            "end": "2025-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 41565000000.0,
+            "unit": "USD",
+            "start": "2025-02-01",
+            "end": "2026-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "capex": [
+          {
+            "value": 11477000000.0,
+            "unit": "USD",
+            "start": "2015-02-01",
+            "end": "2016-01-31",
+            "filed": "2018-03-30",
+            "form": "10-K",
+            "accession": "0000104169-18-000028",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 10619000000.0,
+            "unit": "USD",
+            "start": "2016-02-01",
+            "end": "2017-01-31",
+            "filed": "2019-03-28",
+            "form": "10-K",
+            "accession": "0000104169-19-000016",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 10051000000.0,
+            "unit": "USD",
+            "start": "2017-02-01",
+            "end": "2018-01-31",
+            "filed": "2020-03-20",
+            "form": "10-K",
+            "accession": "0000104169-20-000011",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 10344000000.0,
+            "unit": "USD",
+            "start": "2018-02-01",
+            "end": "2019-01-31",
+            "filed": "2021-03-19",
+            "form": "10-K",
+            "accession": "0000104169-21-000033",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 10705000000.0,
+            "unit": "USD",
+            "start": "2019-02-01",
+            "end": "2020-01-31",
+            "filed": "2022-03-18",
+            "form": "10-K",
+            "accession": "0000104169-22-000012",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 10264000000.0,
+            "unit": "USD",
+            "start": "2020-02-01",
+            "end": "2021-01-31",
+            "filed": "2023-03-17",
+            "form": "10-K",
+            "accession": "0000104169-23-000020",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 13106000000.0,
+            "unit": "USD",
+            "start": "2021-02-01",
+            "end": "2022-01-31",
+            "filed": "2024-03-15",
+            "form": "10-K",
+            "accession": "0000104169-24-000056",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 16857000000.0,
+            "unit": "USD",
+            "start": "2022-02-01",
+            "end": "2023-01-31",
+            "filed": "2025-03-14",
+            "form": "10-K",
+            "accession": "0000104169-25-000021",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 20606000000.0,
+            "unit": "USD",
+            "start": "2023-02-01",
+            "end": "2024-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 23783000000.0,
+            "unit": "USD",
+            "start": "2024-02-01",
+            "end": "2025-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 26642000000.0,
+            "unit": "USD",
+            "start": "2025-02-01",
+            "end": "2026-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "equity": [
+          {
+            "value": 79456000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-10-31",
+            "filed": "2024-12-06",
+            "form": "10-Q",
+            "accession": "0000104169-24-000178",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 83861000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-01-31",
+            "filed": "2025-03-14",
+            "form": "10-K",
+            "accession": "0000104169-25-000021",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 81293000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-04-30",
+            "filed": "2025-06-06",
+            "form": "10-Q",
+            "accession": "0000104169-25-000090",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 84423000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-07-31",
+            "filed": "2025-08-29",
+            "form": "10-Q",
+            "accession": "0000104169-25-000137",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 88108000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-10-31",
+            "filed": "2025-12-03",
+            "form": "10-Q",
+            "accession": "0000104169-25-000191",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 91013000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 83793000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-04-30",
+            "filed": "2026-05-29",
+            "form": "10-Q",
+            "accession": "0000104169-26-000102",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 90110000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-07-31",
+            "filed": "2026-08-28",
+            "form": "10-Q",
+            "accession": "0000104169-26-000154",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 96094000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-10-31",
+            "filed": "2025-12-03",
+            "form": "10-Q",
+            "accession": "0000104169-25-000191",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 99617000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-01-31",
+            "filed": "2026-08-28",
+            "form": "10-Q",
+            "accession": "0000104169-26-000154",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 94330000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-04-30",
+            "filed": "2026-05-29",
+            "form": "10-Q",
+            "accession": "0000104169-26-000102",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 98238000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-07-31",
+            "filed": "2026-08-28",
+            "form": "10-Q",
+            "accession": "0000104169-26-000154",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "assets": [
+          {
+            "value": 259174000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-10-31",
+            "filed": "2024-12-06",
+            "form": "10-Q",
+            "accession": "0000104169-24-000178",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 252399000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 254054000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-04-30",
+            "filed": "2025-06-06",
+            "form": "10-Q",
+            "accession": "0000104169-25-000090",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 254440000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-07-31",
+            "filed": "2025-08-29",
+            "form": "10-Q",
+            "accession": "0000104169-25-000137",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 263399000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-10-31",
+            "filed": "2025-12-03",
+            "form": "10-Q",
+            "accession": "0000104169-25-000191",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 260823000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-01-31",
+            "filed": "2026-03-13",
+            "form": "10-K",
+            "accession": "0000104169-26-000055",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 262372000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-04-30",
+            "filed": "2026-05-29",
+            "form": "10-Q",
+            "accession": "0000104169-26-000102",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 270837000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-07-31",
+            "filed": "2026-08-28",
+            "form": "10-Q",
+            "accession": "0000104169-26-000154",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 288655000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-10-31",
+            "filed": "2025-12-03",
+            "form": "10-Q",
+            "accession": "0000104169-25-000191",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 284668000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-01-31",
+            "filed": "2026-08-28",
+            "form": "10-Q",
+            "accession": "0000104169-26-000154",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 289607000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-04-30",
+            "filed": "2026-05-29",
+            "form": "10-Q",
+            "accession": "0000104169-26-000102",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 293914000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-07-31",
+            "filed": "2026-08-28",
+            "form": "10-Q",
+            "accession": "0000104169-26-000154",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "liabilities": []
+      },
+      "evidence_hash_sha256": "3f2d03bae6488b057f1d0560571b166f6174394011242f5621cd636d27f2c9c8",
+      "orders_enabled": false
+    },
+    "WPM": {
+      "ticker": "WPM",
+      "issuer_name": "WHEATON PRECIOUS METALS CORP.",
+      "cik": 1323404,
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001323404.json",
+      "observed_utc": "2026-11-22T16:14:32.460070+00:00",
+      "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_source_type": "ISSUER_XBRL_SEC",
+      "primary_statements_are_issuer_reported": true,
+      "latest_share_count": {
+        "value": 454033830.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2025-12-31",
+        "filed": "2026-03-31",
+        "form": "40-F",
+        "accession": "0001193125-26-134908",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei"
+      },
+      "annual_facts": {
+        "shares": [
+          {
+            "value": 444336361.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2018-12-31",
+            "filed": "2019-04-01",
+            "form": "40-F",
+            "accession": "0001193125-19-094594",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 448150003.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2019-12-31",
+            "filed": "2020-03-30",
+            "form": "40-F",
+            "accession": "0001193125-20-091051",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 449458394.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2020-12-31",
+            "filed": "2021-03-31",
+            "form": "40-F",
+            "accession": "0001193125-21-102453",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 450863952.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2021-12-31",
+            "filed": "2022-03-31",
+            "form": "40-F",
+            "accession": "0001193125-22-091967",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 452318526.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2022-12-31",
+            "filed": "2023-03-31",
+            "form": "40-F",
+            "accession": "0001193125-23-088220",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 453069254.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2024-03-28",
+            "form": "40-F",
+            "accession": "0001193125-24-080810",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 453677299.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2025-03-31",
+            "form": "40-F",
+            "accession": "0001193125-25-068900",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 454033830.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-03-31",
+            "form": "40-F",
+            "accession": "0001193125-26-134908",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          }
+        ],
+        "revenue": [],
+        "net_income": [],
+        "operating_cash_flow": [],
+        "capex": [],
+        "equity": [],
+        "assets": [],
+        "liabilities": []
+      },
+      "evidence_hash_sha256": "5de3d213ee05131608f8b6c1338f9cbea92de9d730955a094ee7f9488595d17f",
+      "orders_enabled": false
+    },
+    "XOM": {
+      "ticker": "XOM",
+      "issuer_name": "ExxonMobil Holdings Corporation",
+      "cik": 2115436,
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002115436.json",
+      "observed_utc": "2026-11-22T16:14:32.460070+00:00",
+      "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_source_type": "ISSUER_XBRL_SEC",
+      "primary_statements_are_issuer_reported": true,
+      "latest_share_count": {
+        "value": 4079222444.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-09-30",
+        "filed": "2026-11-02",
+        "form": "10-Q",
+        "accession": "0002115436-26-000020",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei"
+      },
+      "annual_facts": {
+        "shares": [
+          {
+            "value": 4111911960.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-03",
+            "form": "10-Q",
+            "accession": "0000034088-26-000093",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 4079222444.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-02",
+            "form": "10-Q",
+            "accession": "0002115436-26-000020",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          }
+        ],
+        "revenue": [],
+        "net_income": [],
+        "operating_cash_flow": [],
+        "capex": [],
+        "equity": [
+          {
+            "value": 259386000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-02",
+            "form": "10-Q",
+            "accession": "0002115436-26-000020",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 259380000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-03",
+            "form": "10-Q",
+            "accession": "0000034088-26-000093",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 265789000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-02",
+            "form": "10-Q",
+            "accession": "0002115436-26-000020",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "assets": [
+          {
+            "value": 448980000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-02",
+            "form": "10-Q",
+            "accession": "0002115436-26-000020",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 464482000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-03",
+            "form": "10-Q",
+            "accession": "0000034088-26-000093",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 470917000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-02",
+            "form": "10-Q",
+            "accession": "0002115436-26-000020",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "liabilities": [
+          {
+            "value": 182354000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-02",
+            "form": "10-Q",
+            "accession": "0002115436-26-000020",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 198371000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-03",
+            "form": "10-Q",
+            "accession": "0000034088-26-000093",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 198397000000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-02",
+            "form": "10-Q",
+            "accession": "0002115436-26-000020",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          }
+        ]
+      },
+      "evidence_hash_sha256": "bcb9e767a0da490755abd7ea0e051dd29b3050a481a18fa0693189231979007c",
+      "orders_enabled": false
+    },
+    "XYZ": {
+      "ticker": "XYZ",
+      "issuer_name": "Block, Inc.",
+      "cik": 1512673,
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001512673.json",
+      "observed_utc": "2026-11-22T16:14:32.460070+00:00",
+      "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_source_type": "ISSUER_XBRL_SEC",
+      "primary_statements_are_issuer_reported": true,
+      "latest_share_count": null,
+      "annual_facts": {
+        "shares": [],
+        "revenue": [
+          {
+            "value": 3205500000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2019-02-27",
+            "form": "10-K",
+            "accession": "0001512673-19-000003",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "net_income": [
+          {
+            "value": -179817000.0,
+            "unit": "USD",
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-27",
+            "form": "10-K",
+            "accession": "0001512673-18-000004",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -171590000.0,
+            "unit": "USD",
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-27",
+            "form": "10-K",
+            "accession": "0001512673-19-000003",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -62813000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-26",
+            "form": "10-K",
+            "accession": "0001628280-20-002303",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -38453000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-23",
+            "form": "10-K",
+            "accession": "0001512673-21-000008",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 375446000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-24",
+            "form": "10-K",
+            "accession": "0001628280-22-003825",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 213105000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-23",
+            "form": "10-K",
+            "accession": "0001628280-23-004840",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 166284000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-22",
+            "form": "10-K",
+            "accession": "0001628280-24-006354",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -540747000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-24",
+            "form": "10-K",
+            "accession": "0001628280-25-007376",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 9772000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2897047000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1305636000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "operating_cash_flow": [
+          {
+            "value": 21123000.0,
+            "unit": "USD",
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-27",
+            "form": "10-K",
+            "accession": "0001512673-18-000004",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 23131000.0,
+            "unit": "USD",
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-27",
+            "form": "10-K",
+            "accession": "0001512673-19-000003",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 127711000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-26",
+            "form": "10-K",
+            "accession": "0001628280-20-002303",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 295080000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-23",
+            "form": "10-K",
+            "accession": "0001512673-21-000008",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 327630000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-24",
+            "form": "10-K",
+            "accession": "0001628280-22-003825",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 173110000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-23",
+            "form": "10-K",
+            "accession": "0001628280-23-004840",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 847830000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-22",
+            "form": "10-K",
+            "accession": "0001628280-24-006354",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 175903000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-24",
+            "form": "10-K",
+            "accession": "0001628280-25-007376",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 100961000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1707350000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2579714000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "capex": [
+          {
+            "value": 37432000.0,
+            "unit": "USD",
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-27",
+            "form": "10-K",
+            "accession": "0001512673-18-000004",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 25433000.0,
+            "unit": "USD",
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-27",
+            "form": "10-K",
+            "accession": "0001512673-19-000003",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 26097000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-26",
+            "form": "10-K",
+            "accession": "0001628280-20-002303",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 61203000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-23",
+            "form": "10-K",
+            "accession": "0001512673-21-000008",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 62498000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-24",
+            "form": "10-K",
+            "accession": "0001628280-22-003825",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 138402000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-23",
+            "form": "10-K",
+            "accession": "0001628280-23-004840",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 134320000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-22",
+            "form": "10-K",
+            "accession": "0001628280-24-006354",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 170815000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-24",
+            "form": "10-K",
+            "accession": "0001628280-25-007376",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 151151000.0,
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 153947000.0,
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 155038000.0,
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "equity": [
+          {
+            "value": 18695256000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-24",
+            "form": "10-K",
+            "accession": "0001628280-25-007376",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 18970801000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2024-05-02",
+            "form": "10-Q",
+            "accession": "0001628280-24-020025",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 19301996000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2024-08-01",
+            "form": "10-Q",
+            "accession": "0001628280-24-034157",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 19920914000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2024-11-07",
+            "form": "10-Q",
+            "accession": "0001628280-24-046294",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 21267932000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 21469194000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2025-05-01",
+            "form": "10-Q",
+            "accession": "0001628280-25-021538",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 22157136000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2025-08-07",
+            "form": "10-Q",
+            "accession": "0001628280-25-038920",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 22507398000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2025-11-06",
+            "form": "10-Q",
+            "accession": "0001628280-25-050234",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 22204278000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "accession": "0001628280-26-069524",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 21715338000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-05-07",
+            "form": "10-Q",
+            "accession": "0001628280-26-032200",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 22047075000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-05",
+            "form": "10-Q",
+            "accession": "0001628280-26-053368",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 22907354000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "accession": "0001628280-26-069524",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "assets": [
+          {
+            "value": 33031308000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-24",
+            "form": "10-K",
+            "accession": "0001628280-25-007376",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 35612830000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2024-05-02",
+            "form": "10-Q",
+            "accession": "0001628280-24-020025",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 37546600000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2024-08-01",
+            "form": "10-Q",
+            "accession": "0001628280-24-034157",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 36355435000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2024-11-07",
+            "form": "10-Q",
+            "accession": "0001628280-24-046294",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 36777595000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 36395567000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2025-05-01",
+            "form": "10-Q",
+            "accession": "0001628280-25-021538",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 36858391000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2025-08-07",
+            "form": "10-Q",
+            "accession": "0001628280-25-038920",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 39182823000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2025-11-06",
+            "form": "10-Q",
+            "accession": "0001628280-25-050234",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 39549887000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "accession": "0001628280-26-069524",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 39986081000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-05-07",
+            "form": "10-Q",
+            "accession": "0001628280-26-032200",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 39156667000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-05",
+            "form": "10-Q",
+            "accession": "0001628280-26-053368",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 41235687000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "accession": "0001628280-26-069524",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "liabilities": [
+          {
+            "value": 14338472000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-12-31",
+            "filed": "2025-02-24",
+            "form": "10-K",
+            "accession": "0001628280-25-007376",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 16645634000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-03-31",
+            "filed": "2024-05-02",
+            "form": "10-Q",
+            "accession": "0001628280-24-020025",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 18253605000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-06-30",
+            "filed": "2024-08-01",
+            "form": "10-Q",
+            "accession": "0001628280-24-034157",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 16446140000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-09-30",
+            "filed": "2024-11-07",
+            "form": "10-Q",
+            "accession": "0001628280-24-046294",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 15542633000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-12-31",
+            "filed": "2026-02-26",
+            "form": "10-K",
+            "accession": "0001628280-26-012254",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 14960493000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-03-31",
+            "filed": "2025-05-01",
+            "form": "10-Q",
+            "accession": "0001628280-25-021538",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 14735499000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-06-30",
+            "filed": "2025-08-07",
+            "form": "10-Q",
+            "accession": "0001628280-25-038920",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 16709615000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-09-30",
+            "filed": "2025-11-06",
+            "form": "10-Q",
+            "accession": "0001628280-25-050234",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 17380005000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-12-31",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "accession": "0001628280-26-069524",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 18305053000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-03-31",
+            "filed": "2026-05-07",
+            "form": "10-Q",
+            "accession": "0001628280-26-032200",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 17145350000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-06-30",
+            "filed": "2026-08-05",
+            "form": "10-Q",
+            "accession": "0001628280-26-053368",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 18365501000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-09-30",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "accession": "0001628280-26-069524",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          }
+        ]
+      },
+      "evidence_hash_sha256": "0414c20a927819a0c1a8bdf6ce1412ebbae810cb35dc6c482d106df36ec426cf",
+      "orders_enabled": false
+    },
+    "ZS": {
+      "ticker": "ZS",
+      "issuer_name": "Zscaler Inc",
+      "cik": 1713683,
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001713683.json",
+      "observed_utc": "2026-11-22T16:14:32.460070+00:00",
+      "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
+      "primary_source_type": "ISSUER_XBRL_SEC",
+      "primary_statements_are_issuer_reported": true,
+      "latest_share_count": {
+        "value": 163054698.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-08-27",
+        "filed": "2026-09-03",
+        "form": "10-K",
+        "accession": "0001713683-26-000157",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei"
+      },
+      "annual_facts": {
+        "shares": [
+          {
+            "value": 153438623.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2024-11-30",
+            "filed": "2024-12-05",
+            "form": "10-Q",
+            "accession": "0001713683-24-000150",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 154724902.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-02-28",
+            "filed": "2025-03-10",
+            "form": "10-Q",
+            "accession": "0001713683-25-000033",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 155695672.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-05-23",
+            "filed": "2025-05-29",
+            "form": "10-Q",
+            "accession": "0001713683-25-000079",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 158300823.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-08-29",
+            "filed": "2025-09-11",
+            "form": "10-K",
+            "accession": "0001713683-25-000158",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 159471208.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-11-19",
+            "filed": "2025-11-25",
+            "form": "10-Q",
+            "accession": "0001713683-25-000205",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 160790703.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-02-19",
+            "filed": "2026-02-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000048",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 161709525.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-05-19",
+            "filed": "2026-05-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000096",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          },
+          {
+            "value": 163054698.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-08-27",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei"
+          }
+        ],
+        "revenue": [
+          {
+            "value": 80325000.0,
+            "unit": "USD",
+            "start": "2015-08-01",
+            "end": "2016-07-31",
+            "filed": "2018-09-13",
+            "form": "10-K",
+            "accession": "0001628280-18-011833",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 125717000.0,
+            "unit": "USD",
+            "start": "2016-08-01",
+            "end": "2017-07-31",
+            "filed": "2019-09-18",
+            "form": "10-K",
+            "accession": "0001713683-19-000030",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 190174000.0,
+            "unit": "USD",
+            "start": "2017-08-01",
+            "end": "2018-07-31",
+            "filed": "2020-09-17",
+            "form": "10-K",
+            "accession": "0001713683-20-000163",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 302836000.0,
+            "unit": "USD",
+            "start": "2018-08-01",
+            "end": "2019-07-31",
+            "filed": "2021-09-16",
+            "form": "10-K",
+            "accession": "0001713683-21-000175",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 431269000.0,
+            "unit": "USD",
+            "start": "2019-08-01",
+            "end": "2020-07-31",
+            "filed": "2022-09-15",
+            "form": "10-K",
+            "accession": "0001713683-22-000081",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 673100000.0,
+            "unit": "USD",
+            "start": "2020-08-01",
+            "end": "2021-07-31",
+            "filed": "2023-09-14",
+            "form": "10-K",
+            "accession": "0001713683-23-000113",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1090946000.0,
+            "unit": "USD",
+            "start": "2021-08-01",
+            "end": "2022-07-31",
+            "filed": "2024-09-12",
+            "form": "10-K",
+            "accession": "0001713683-24-000109",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1616952000.0,
+            "unit": "USD",
+            "start": "2022-08-01",
+            "end": "2023-07-31",
+            "filed": "2025-09-11",
+            "form": "10-K",
+            "accession": "0001713683-25-000158",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2167771000.0,
+            "unit": "USD",
+            "start": "2023-08-01",
+            "end": "2024-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2673115000.0,
+            "unit": "USD",
+            "start": "2024-08-01",
+            "end": "2025-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3352523000.0,
+            "unit": "USD",
+            "start": "2025-08-01",
+            "end": "2026-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "net_income": [
+          {
+            "value": -27438000.0,
+            "unit": "USD",
+            "start": "2015-08-01",
+            "end": "2016-07-31",
+            "filed": "2018-09-13",
+            "form": "10-K",
+            "accession": "0001628280-18-011833",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -35460000.0,
+            "unit": "USD",
+            "start": "2016-08-01",
+            "end": "2017-07-31",
+            "filed": "2019-09-18",
+            "form": "10-K",
+            "accession": "0001713683-19-000030",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -33646000.0,
+            "unit": "USD",
+            "start": "2017-08-01",
+            "end": "2018-07-31",
+            "filed": "2020-09-17",
+            "form": "10-K",
+            "accession": "0001713683-20-000163",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -28655000.0,
+            "unit": "USD",
+            "start": "2018-08-01",
+            "end": "2019-07-31",
+            "filed": "2021-09-16",
+            "form": "10-K",
+            "accession": "0001713683-21-000175",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -115116000.0,
+            "unit": "USD",
+            "start": "2019-08-01",
+            "end": "2020-07-31",
+            "filed": "2022-09-15",
+            "form": "10-K",
+            "accession": "0001713683-22-000081",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -262029000.0,
+            "unit": "USD",
+            "start": "2020-08-01",
+            "end": "2021-07-31",
+            "filed": "2023-09-14",
+            "form": "10-K",
+            "accession": "0001713683-23-000113",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -390278000.0,
+            "unit": "USD",
+            "start": "2021-08-01",
+            "end": "2022-07-31",
+            "filed": "2024-09-12",
+            "form": "10-K",
+            "accession": "0001713683-24-000109",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -202335000.0,
+            "unit": "USD",
+            "start": "2022-08-01",
+            "end": "2023-07-31",
+            "filed": "2025-09-11",
+            "form": "10-K",
+            "accession": "0001713683-25-000158",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -57706000.0,
+            "unit": "USD",
+            "start": "2023-08-01",
+            "end": "2024-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -41478000.0,
+            "unit": "USD",
+            "start": "2024-08-01",
+            "end": "2025-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -63179000.0,
+            "unit": "USD",
+            "start": "2025-08-01",
+            "end": "2026-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "NetIncomeLoss",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "operating_cash_flow": [
+          {
+            "value": -11916000.0,
+            "unit": "USD",
+            "start": "2015-08-01",
+            "end": "2016-07-31",
+            "filed": "2018-09-13",
+            "form": "10-K",
+            "accession": "0001628280-18-011833",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": -6019000.0,
+            "unit": "USD",
+            "start": "2016-08-01",
+            "end": "2017-07-31",
+            "filed": "2019-09-18",
+            "form": "10-K",
+            "accession": "0001713683-19-000030",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 17307000.0,
+            "unit": "USD",
+            "start": "2017-08-01",
+            "end": "2018-07-31",
+            "filed": "2020-09-17",
+            "form": "10-K",
+            "accession": "0001713683-20-000163",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 58027000.0,
+            "unit": "USD",
+            "start": "2018-08-01",
+            "end": "2019-07-31",
+            "filed": "2021-09-16",
+            "form": "10-K",
+            "accession": "0001713683-21-000175",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 79317000.0,
+            "unit": "USD",
+            "start": "2019-08-01",
+            "end": "2020-07-31",
+            "filed": "2022-09-15",
+            "form": "10-K",
+            "accession": "0001713683-22-000081",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 202040000.0,
+            "unit": "USD",
+            "start": "2020-08-01",
+            "end": "2021-07-31",
+            "filed": "2023-09-14",
+            "form": "10-K",
+            "accession": "0001713683-23-000113",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 321912000.0,
+            "unit": "USD",
+            "start": "2021-08-01",
+            "end": "2022-07-31",
+            "filed": "2024-09-12",
+            "form": "10-K",
+            "accession": "0001713683-24-000109",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 462343000.0,
+            "unit": "USD",
+            "start": "2022-08-01",
+            "end": "2023-07-31",
+            "filed": "2025-09-11",
+            "form": "10-K",
+            "accession": "0001713683-25-000158",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 779846000.0,
+            "unit": "USD",
+            "start": "2023-08-01",
+            "end": "2024-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 972453000.0,
+            "unit": "USD",
+            "start": "2024-08-01",
+            "end": "2025-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1129654000.0,
+            "unit": "USD",
+            "start": "2025-08-01",
+            "end": "2026-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "capex": [
+          {
+            "value": 5402000.0,
+            "unit": "USD",
+            "start": "2015-08-01",
+            "end": "2016-07-31",
+            "filed": "2018-09-13",
+            "form": "10-K",
+            "accession": "0001628280-18-011833",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 7783000.0,
+            "unit": "USD",
+            "start": "2016-08-01",
+            "end": "2017-07-31",
+            "filed": "2019-09-18",
+            "form": "10-K",
+            "accession": "0001713683-19-000030",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 13397000.0,
+            "unit": "USD",
+            "start": "2017-08-01",
+            "end": "2018-07-31",
+            "filed": "2020-09-17",
+            "form": "10-K",
+            "accession": "0001713683-20-000163",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 25520000.0,
+            "unit": "USD",
+            "start": "2018-08-01",
+            "end": "2019-07-31",
+            "filed": "2021-09-16",
+            "form": "10-K",
+            "accession": "0001713683-21-000175",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 43072000.0,
+            "unit": "USD",
+            "start": "2019-08-01",
+            "end": "2020-07-31",
+            "filed": "2022-09-15",
+            "form": "10-K",
+            "accession": "0001713683-22-000081",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 48165000.0,
+            "unit": "USD",
+            "start": "2020-08-01",
+            "end": "2021-07-31",
+            "filed": "2023-09-14",
+            "form": "10-K",
+            "accession": "0001713683-23-000113",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 69296000.0,
+            "unit": "USD",
+            "start": "2021-08-01",
+            "end": "2022-07-31",
+            "filed": "2024-09-12",
+            "form": "10-K",
+            "accession": "0001713683-24-000109",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 97197000.0,
+            "unit": "USD",
+            "start": "2022-08-01",
+            "end": "2023-07-31",
+            "filed": "2025-09-11",
+            "form": "10-K",
+            "accession": "0001713683-25-000158",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 144588000.0,
+            "unit": "USD",
+            "start": "2023-08-01",
+            "end": "2024-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 164252000.0,
+            "unit": "USD",
+            "start": "2024-08-01",
+            "end": "2025-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 277304000.0,
+            "unit": "USD",
+            "start": "2025-08-01",
+            "end": "2026-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "equity": [
+          {
+            "value": 807525000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-10-31",
+            "filed": "2025-03-10",
+            "form": "10-Q",
+            "accession": "0001713683-25-000033",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 958856000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-01-31",
+            "filed": "2025-05-29",
+            "form": "10-Q",
+            "accession": "0001713683-25-000079",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1093139000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-04-30",
+            "filed": "2025-05-29",
+            "form": "10-Q",
+            "accession": "0001713683-25-000079",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1274102000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1428545000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-10-31",
+            "filed": "2026-02-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000048",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1607346000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-01-31",
+            "filed": "2026-05-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000096",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1804939000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-04-30",
+            "filed": "2026-05-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000096",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1799273000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 1982328000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-10-31",
+            "filed": "2026-02-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000048",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2195948000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-01-31",
+            "filed": "2026-05-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000096",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2366595000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-04-30",
+            "filed": "2026-05-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000096",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2598261000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "StockholdersEquity",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "assets": [
+          {
+            "value": 3635584000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-10-31",
+            "filed": "2023-12-06",
+            "form": "10-Q",
+            "accession": "0001713683-23-000171",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3934226000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-01-31",
+            "filed": "2024-03-06",
+            "form": "10-Q",
+            "accession": "0001713683-24-000041",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4198751000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-04-30",
+            "filed": "2024-06-07",
+            "form": "10-Q",
+            "accession": "0001713683-24-000075",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4704968000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-07-31",
+            "filed": "2025-09-11",
+            "form": "10-K",
+            "accession": "0001713683-25-000158",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4709002000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-10-31",
+            "filed": "2024-12-05",
+            "form": "10-Q",
+            "accession": "0001713683-24-000150",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5005968000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-01-31",
+            "filed": "2025-03-10",
+            "form": "10-Q",
+            "accession": "0001713683-25-000033",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5339628000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-04-30",
+            "filed": "2025-05-29",
+            "form": "10-Q",
+            "accession": "0001713683-25-000079",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 6419888000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 6503087000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-10-31",
+            "filed": "2025-11-25",
+            "form": "10-Q",
+            "accession": "0001713683-25-000205",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 6753828000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-01-31",
+            "filed": "2026-02-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000048",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 7098079000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-04-30",
+            "filed": "2026-05-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000096",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 7866714000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "Assets",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "liabilities": [
+          {
+            "value": 2828059000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2023-10-31",
+            "filed": "2023-12-06",
+            "form": "10-Q",
+            "accession": "0001713683-23-000171",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 2975370000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-01-31",
+            "filed": "2024-03-06",
+            "form": "10-Q",
+            "accession": "0001713683-24-000041",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3105612000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-04-30",
+            "filed": "2024-06-07",
+            "form": "10-Q",
+            "accession": "0001713683-24-000075",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3430866000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-07-31",
+            "filed": "2025-09-11",
+            "form": "10-K",
+            "accession": "0001713683-25-000158",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3280457000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2024-10-31",
+            "filed": "2024-12-05",
+            "form": "10-Q",
+            "accession": "0001713683-24-000150",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3398622000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-01-31",
+            "filed": "2025-03-10",
+            "form": "10-Q",
+            "accession": "0001713683-25-000033",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 3534689000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-04-30",
+            "filed": "2025-05-29",
+            "form": "10-Q",
+            "accession": "0001713683-25-000079",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4620615000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4520759000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2025-10-31",
+            "filed": "2025-11-25",
+            "form": "10-Q",
+            "accession": "0001713683-25-000205",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4557880000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-01-31",
+            "filed": "2026-02-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000048",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 4731484000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-04-30",
+            "filed": "2026-05-26",
+            "form": "10-Q",
+            "accession": "0001713683-26-000096",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "value": 5268453000.0,
+            "unit": "USD",
+            "start": null,
+            "end": "2026-07-31",
+            "filed": "2026-09-03",
+            "form": "10-K",
+            "accession": "0001713683-26-000157",
+            "tag": "Liabilities",
+            "taxonomy": "us-gaap"
+          }
+        ]
+      },
+      "evidence_hash_sha256": "0f9f9406f64d7105ef7ef8dd0940c99eed7375c8458f0ef755dc14bf9eb116fa",
+      "orders_enabled": false
     }
   },
   "orders_enabled": false,
@@ -111298,20 +115950,15 @@
     "CCJ"
   ],
   "research_priority_is_not_a_buy_signal": true,
-  "remaining_eligible_uncached_before_run": 19,
+  "remaining_eligible_uncached_before_run": 7,
   "selected_issuer_tickers": [
-    "TSLA",
-    "TTE",
-    "UBER",
-    "UBS",
-    "UEC",
-    "UNH",
-    "URI",
-    "UUUU",
-    "V",
-    "VLO",
-    "VRT",
-    "VRTX"
+    "VST",
+    "WFC",
+    "WMT",
+    "WPM",
+    "XOM",
+    "XYZ",
+    "ZS"
   ],
   "non_sec_listed_tickers": [
     "BHP.AX",
@@ -111365,67 +116012,42 @@
   },
   "run_attempts": [
     {
-      "ticker": "TSLA",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "TTE",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 0
-    },
-    {
-      "ticker": "UBER",
+      "ticker": "VST",
       "status": "SEC_PRIMARY_SERIES_COLLECTED",
       "annual_fcf_periods": 9
     },
     {
-      "ticker": "UBS",
+      "ticker": "WFC",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 11
+    },
+    {
+      "ticker": "WMT",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 11
+    },
+    {
+      "ticker": "WPM",
       "status": "SEC_PRIMARY_SERIES_COLLECTED",
       "annual_fcf_periods": 0
     },
     {
-      "ticker": "UEC",
+      "ticker": "XOM",
       "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 15
+      "annual_fcf_periods": 0
     },
     {
-      "ticker": "UNH",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "URI",
+      "ticker": "XYZ",
       "status": "SEC_PRIMARY_SERIES_COLLECTED",
       "annual_fcf_periods": 11
     },
     {
-      "ticker": "UUUU",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "V",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 12
-    },
-    {
-      "ticker": "VLO",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "VRT",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 10
-    },
-    {
-      "ticker": "VRTX",
+      "ticker": "ZS",
       "status": "SEC_PRIMARY_SERIES_COLLECTED",
       "annual_fcf_periods": 11
     }
   ],
   "update_status": "OK",
-  "available_company_records": 154,
+  "available_company_records": 161,
   "non_sec_listed_count": 42
 }

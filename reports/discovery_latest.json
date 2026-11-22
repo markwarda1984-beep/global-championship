@@ -1,7 +1,7 @@
 {
   "schema_version": "5.2-discovery-radar-1",
-  "published_at_utc": "2026-11-22T11:13:14.947308+00:00",
-  "source_coverage": "COMPLETE_FOR_CONFIGURED_SAMPLES",
+  "published_at_utc": "2026-11-22T16:14:17.574472+00:00",
+  "source_coverage": "CORE_SOURCES_AVAILABLE_WITH_FALLBACK",
   "total_discovered_ever": 4,
   "monitor_count": 0,
   "pending_count": 4,
@@ -21,19 +21,22 @@
       "coverage": "at most latest 100 filings; not an exhaustive market screen"
     },
     "gdelt": {
-      "status": "ok",
-      "checked_theme": 3,
-      "themes_total": 3,
-      "article_count": 33,
-      "coverage": "One rotating topic per run; not exhaustive"
+      "status": "rate_limited",
+      "http_status": 429,
+      "checked_theme": 2,
+      "reason": "gdelt_doc: rate_limited_429",
+      "next_attempt_at_utc": "2026-11-23T04:14:17.574472+00:00",
+      "next_action": "RSS fallback; retry only after persistent cooldown"
     },
     "gdelt_control": {
-      "gdelt_retry_at_utc": null,
-      "gdelt_consecutive_429": 0
+      "gdelt_retry_at_utc": "2026-11-23T04:14:17.574472+00:00",
+      "gdelt_consecutive_429": 1
     },
     "google_news": {
-      "status": "not_needed",
-      "reason": "GDELT returned a valid response"
+      "status": "ok",
+      "checked_theme": 2,
+      "article_count": 7,
+      "coverage": "RSS headline sample only; source articles not independently verified"
     },
     "bing_news": {
       "status": "not_needed",
