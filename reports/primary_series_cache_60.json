@@ -1,6 +1,6 @@
 {
   "schema_version": "6.0-primary-series-cache-1",
-  "published_at_utc": "2026-11-22T16:14:32.460070+00:00",
+  "published_at_utc": "2026-11-22T22:15:05.302760+00:00",
   "source": "SEC issuer-filed XBRL companyfacts; bounded incremental research",
   "original_200_unchanged": true,
   "companies": {
@@ -115950,16 +115950,8 @@
     "CCJ"
   ],
   "research_priority_is_not_a_buy_signal": true,
-  "remaining_eligible_uncached_before_run": 7,
-  "selected_issuer_tickers": [
-    "VST",
-    "WFC",
-    "WMT",
-    "WPM",
-    "XOM",
-    "XYZ",
-    "ZS"
-  ],
+  "remaining_eligible_uncached_before_run": 0,
+  "selected_issuer_tickers": [],
   "non_sec_listed_tickers": [
     "BHP.AX",
     "CAT.AX",
@@ -116010,44 +116002,8 @@
       "retry_after_utc": "2026-11-23T00:04:57.144039+00:00"
     }
   },
-  "run_attempts": [
-    {
-      "ticker": "VST",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 9
-    },
-    {
-      "ticker": "WFC",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "WMT",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "WPM",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 0
-    },
-    {
-      "ticker": "XOM",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 0
-    },
-    {
-      "ticker": "XYZ",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "ZS",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    }
-  ],
-  "update_status": "OK",
+  "run_attempts": [],
+  "update_status": "NO_REFRESH_DUE",
   "available_company_records": 161,
   "non_sec_listed_count": 42
 }
