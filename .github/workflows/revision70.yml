@@ -1,0 +1,21 @@
+name: Championship 7.0 preview
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 0,3,6,10,15,21 * * *'
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest -v test_revision_70
+      - run: python report_70.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: championship-70-preview
+          path: reports/valuation_70_preview.json
