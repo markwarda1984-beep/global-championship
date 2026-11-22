@@ -1,8 +1,8 @@
 {
   "schema_version": "6.0-report-bridge-entry-retirement-1",
-  "published_at_utc": "2026-11-22T03:10:24.758570+00:00",
-  "scan_utc": "2026-11-22T03:10:13.117347+00:00",
-  "scan_sydney": "2026-11-22T14:10:13.117347+11:00",
+  "published_at_utc": "2026-11-22T06:15:07.419000+00:00",
+  "scan_utc": "2026-11-22T06:14:57.863295+00:00",
+  "scan_sydney": "2026-11-22T17:14:57.863295+11:00",
   "price_source": "YAHOO HISTORICAL DAILY BARS; NOT REAL TIME",
   "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
   "valuation_source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
@@ -11,6 +11,39 @@
   "model_available_count": 118,
   "valuation_rows_count": 200,
   "closest_to_buy_top_10": [
+    {
+      "ticker": "PYPL",
+      "company": "PayPal",
+      "currency": "USD",
+      "last_daily_close": 53.29,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 51.575,
+      "bear_60": 26.279,
+      "base_60": 51.575,
+      "bull_60": 80.376,
+      "margin_of_safety_entries_60": {
+        "10pct": 46.4175,
+        "15pct": 43.8388,
+        "20pct": 41.26
+      },
+      "selected_entry_60": 41.26,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 29.16,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
     {
       "ticker": "ADBE",
       "company": "Adobe",
@@ -299,39 +332,6 @@
       "selected_entry_60": 53.0821,
       "selected_margin_of_safety_pct_60": 10,
       "pct_above_selected_entry_60": 220.26,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "MDT",
-      "company": "Medtronic",
-      "currency": "USD",
-      "last_daily_close": 99.94,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 35.4476,
-      "bear_60": 17.8626,
-      "base_60": 35.4476,
-      "bull_60": 55.5489,
-      "margin_of_safety_entries_60": {
-        "10pct": 31.9028,
-        "15pct": 30.1305,
-        "20pct": 28.3581
-      },
-      "selected_entry_60": 30.1305,
-      "selected_margin_of_safety_pct_60": 15,
-      "pct_above_selected_entry_60": 231.69,
       "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
@@ -344,6 +344,39 @@
   ],
   "closest_research_entries_top_10_60": [
     {
+      "ticker": "PYPL",
+      "company": "PayPal",
+      "currency": "USD",
+      "last_daily_close": 53.29,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 51.575,
+      "bear_60": 26.279,
+      "base_60": 51.575,
+      "bull_60": 80.376,
+      "margin_of_safety_entries_60": {
+        "10pct": 46.4175,
+        "15pct": 43.8388,
+        "20pct": 41.26
+      },
+      "selected_entry_60": 41.26,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 29.16,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
       "ticker": "ADBE",
       "company": "Adobe",
       "currency": "USD",
@@ -639,42 +672,9 @@
       "buy_readiness_pct": null,
       "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "MDT",
-      "company": "Medtronic",
-      "currency": "USD",
-      "last_daily_close": 99.94,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 35.4476,
-      "bear_60": 17.8626,
-      "base_60": 35.4476,
-      "bull_60": 55.5489,
-      "margin_of_safety_entries_60": {
-        "10pct": 31.9028,
-        "15pct": 30.1305,
-        "20pct": 28.3581
-      },
-      "selected_entry_60": 30.1305,
-      "selected_margin_of_safety_pct_60": 15,
-      "pct_above_selected_entry_60": 231.69,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
     }
   ],
-  "entry_eligible_count_60": 31,
+  "entry_eligible_count_60": 35,
   "retired_legacy_provisional_entry_count": 200,
   "stocks": [
     {
@@ -1281,28 +1281,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 2.875,
+      "bear_60": 1.3345,
+      "base_60": 2.875,
+      "bull_60": 4.6988,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 2.5875,
+        "15pct": 2.4438,
+        "20pct": 2.3
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 2.3,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 6138.7,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -1331,7 +1329,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
@@ -2563,28 +2561,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 51.575,
+      "bear_60": 26.279,
+      "base_60": 51.575,
+      "bull_60": 80.376,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 46.4175,
+        "15pct": 43.8388,
+        "20pct": 41.26
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 41.26,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 29.16,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -2823,7 +2819,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -3099,7 +3095,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -4274,7 +4270,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -4964,7 +4960,8 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -5230,28 +5227,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 37.6278,
+      "bear_60": 19.1074,
+      "base_60": 37.6278,
+      "bull_60": 58.6854,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 33.865,
+        "15pct": 31.9836,
+        "20pct": 30.1022
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 30.1022,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 531.75,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -5570,28 +5565,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 74.2249,
+      "bear_60": 36.0973,
+      "base_60": 74.2249,
+      "bull_60": 118.4916,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 66.8024,
+        "15pct": 63.0912,
+        "20pct": 59.3799
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 59.3799,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 841.45,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -6876,7 +6869,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -7016,7 +7009,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -7366,7 +7359,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -7623,14 +7616,14 @@
   ],
   "bitcoin": {
     "XBTAUD": {
-      "last": 89770.5,
-      "bid": 89699.9,
-      "ask": 89787.0
+      "last": 89430.0,
+      "bid": 89284.6,
+      "ask": 89369.9
     },
     "XBTUSD": {
-      "last": 59256.0,
-      "bid": 59257.9,
-      "ask": 59258.0
+      "last": 58970.3,
+      "bid": 58970.3,
+      "ask": 58970.4
     }
   },
   "research_only": true,
