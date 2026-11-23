@@ -1,34 +1,19 @@
-CHAMPIONSHIP 8.0 — SAFE FIRST-STAGE EXPLOSIVE MOVE AUDIT
+Championship 8.1 — timestamped SEC filing pointers + cohort audit (research only)
 
-This is a RETROSPECTIVE research-only component, not a real-time 100% winner detector.
-It flags historical daily moves >=50% or relative volume >=3x within reports/latest.csv,
-if those column names exist. It explicitly marks every flagged candidate UNDETERMINED
-until first-party filings, dilution, liquidity, pre-move timestamps and losing controls
-are independently verified. No orders, signals or trades.
+1. Extract files into your global-championship repository root, preserving tests/.
+2. In repo root, run: python install_workflow_81.py
+3. Run: python -m unittest discover -s tests -p 'test_catalyst_radar_81.py' -v
+4. Commit and push catalyst_radar_81.py, tests/test_catalyst_radar_81.py,
+   install_workflow_81.py, and .github/workflows/discovery.yml.
+5. In GitHub Actions, run the Discovery workflow and inspect the 8.1 step and
+   reports/catalyst_radar_81_latest.json artifact.
 
-INSTALL
-1. Copy explosive_move_audit_80.py to the repository root.
-2. Copy tests/test_explosive_move_audit_80.py to the existing tests directory.
-3. Add the following TWO workflow steps to .github/workflows/discovery.yml
-   immediately after the existing 'Run entire offline test suite' step OR after
-   the discovery run; ensure the audit step runs after latest.csv is available:
+No trades. No automatic buys. SEC 8-K Atom feed is not a full global catalyst
+source; its metadata is NOT independently verified filing content. No true
+premarket prices, dilution validation, or proven missed-opportunity backtest.
+This stage records timestamps and both winners and losers for future research.
+SEC_USER_AGENT must contain a real contact email or SEC collection is skipped.
 
-      - name: Audit historical explosive moves (research only)
-        run: python explosive_move_audit_80.py
-      - name: Verify audit cannot produce trades
-        run: |
-          python - <<'PY'
-          import json
-          x=json.load(open('reports/explosive_move_audit_80.json'))
-          assert x['orders_enabled'] is False
-          assert x['buy_signals_generated'] == 0
-          assert not x['live_premarket_detector']
-          PY
-
-4. In the workflow's existing 'git add' section, add:
-      git add reports/explosive_move_audit_80.json
-5. Upload changes using GitSync -> Upload Changes (NOT overwrite).
-6. Check Actions success and verify reports/explosive_move_audit_80.json.
-
-LIMITATIONS: This does not yet ingest official filings or executable premarket quotes.
-It does NOT claim to detect moves before they happen. Existing 200 stock list unchanged.
+NOTE: This does not modify the fixed 200-stock list, valuation engine or
+existing 8.0 retrospective audit. GitHub app currently lacks write access,
+so uploading and committing must be performed by the repo owner.
