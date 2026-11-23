@@ -1,8 +1,8 @@
 {
   "schema_version": "6.0-report-bridge-entry-retirement-1",
-  "published_at_utc": "2026-11-22T03:10:24.758570+00:00",
-  "scan_utc": "2026-11-22T03:10:13.117347+00:00",
-  "scan_sydney": "2026-11-22T14:10:13.117347+11:00",
+  "published_at_utc": "2026-11-23T03:18:58.181208+00:00",
+  "scan_utc": "2026-11-23T03:18:43.466438+00:00",
+  "scan_sydney": "2026-11-23T14:18:43.466438+11:00",
   "price_source": "YAHOO HISTORICAL DAILY BARS; NOT REAL TIME",
   "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
   "valuation_source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
@@ -11,6 +11,39 @@
   "model_available_count": 118,
   "valuation_rows_count": 200,
   "closest_to_buy_top_10": [
+    {
+      "ticker": "PYPL",
+      "company": "PayPal",
+      "currency": "USD",
+      "last_daily_close": 53.29,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 51.575,
+      "bear_60": 26.279,
+      "base_60": 51.575,
+      "bull_60": 80.376,
+      "margin_of_safety_entries_60": {
+        "10pct": 46.4175,
+        "15pct": 43.8388,
+        "20pct": 41.26
+      },
+      "selected_entry_60": 41.26,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 29.16,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
     {
       "ticker": "ADBE",
       "company": "Adobe",
@@ -177,6 +210,39 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
+      "ticker": "UNH",
+      "company": "UnitedHealth",
+      "currency": "USD",
+      "last_daily_close": 339.85001,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 163.5017,
+      "bear_60": 86.6808,
+      "base_60": 163.5017,
+      "bull_60": 249.3514,
+      "margin_of_safety_entries_60": {
+        "10pct": 147.1515,
+        "15pct": 138.9764,
+        "20pct": 130.8014
+      },
+      "selected_entry_60": 130.8014,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 159.82,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
       "ticker": "AXP",
       "company": "American Express",
       "currency": "USD",
@@ -210,10 +276,10 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
-      "ticker": "PFE",
-      "company": "Pfizer",
+      "ticker": "UBER",
+      "company": "Uber",
       "currency": "USD",
-      "last_daily_close": 27.4,
+      "last_daily_close": 63.47,
       "quote_date": "2026-11-20T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -221,18 +287,18 @@
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
       "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 11.3534,
-      "bear_60": 6.0599,
-      "base_60": 11.3534,
-      "bull_60": 17.2437,
+      "verified_intrinsic_value_60": 26.3834,
+      "bear_60": 13.6479,
+      "base_60": 26.3834,
+      "bull_60": 40.7196,
       "margin_of_safety_entries_60": {
-        "10pct": 10.2181,
-        "15pct": 9.6504,
-        "20pct": 9.0827
+        "10pct": 23.7451,
+        "15pct": 22.4259,
+        "20pct": 21.1067
       },
-      "selected_entry_60": 9.0827,
+      "selected_entry_60": 21.1067,
       "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 201.67,
+      "pct_above_selected_entry_60": 200.71,
       "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
@@ -243,10 +309,10 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
-      "ticker": "NOC",
-      "company": "Northrop Grumman",
+      "ticker": "SLB",
+      "company": "SLB",
       "currency": "USD",
-      "last_daily_close": 534.31,
+      "last_daily_close": 45.89,
       "quote_date": "2026-11-20T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -254,84 +320,18 @@
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
       "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 214.106,
-      "bear_60": 116.0921,
-      "base_60": 214.106,
-      "bull_60": 321.3113,
+      "verified_intrinsic_value_60": 19.037,
+      "bear_60": 11.5878,
+      "base_60": 19.037,
+      "bull_60": 26.6518,
       "margin_of_safety_entries_60": {
-        "10pct": 192.6954,
-        "15pct": 181.9901,
-        "20pct": 171.2848
+        "10pct": 17.1333,
+        "15pct": 16.1814,
+        "20pct": 15.2296
       },
-      "selected_entry_60": 171.2848,
+      "selected_entry_60": 15.2296,
       "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 211.94,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange",
-      "currency": "USD",
-      "last_daily_close": 170.0,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 58.9801,
-      "bear_60": 28.8882,
-      "base_60": 58.9801,
-      "bull_60": 93.8045,
-      "margin_of_safety_entries_60": {
-        "10pct": 53.0821,
-        "15pct": 50.1331,
-        "20pct": 47.1841
-      },
-      "selected_entry_60": 53.0821,
-      "selected_margin_of_safety_pct_60": 10,
-      "pct_above_selected_entry_60": 220.26,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "MDT",
-      "company": "Medtronic",
-      "currency": "USD",
-      "last_daily_close": 99.94,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 35.4476,
-      "bear_60": 17.8626,
-      "base_60": 35.4476,
-      "bull_60": 55.5489,
-      "margin_of_safety_entries_60": {
-        "10pct": 31.9028,
-        "15pct": 30.1305,
-        "20pct": 28.3581
-      },
-      "selected_entry_60": 30.1305,
-      "selected_margin_of_safety_pct_60": 15,
-      "pct_above_selected_entry_60": 231.69,
+      "pct_above_selected_entry_60": 201.32,
       "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
@@ -344,6 +344,39 @@
   ],
   "closest_research_entries_top_10_60": [
     {
+      "ticker": "PYPL",
+      "company": "PayPal",
+      "currency": "USD",
+      "last_daily_close": 53.29,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 51.575,
+      "bear_60": 26.279,
+      "base_60": 51.575,
+      "bull_60": 80.376,
+      "margin_of_safety_entries_60": {
+        "10pct": 46.4175,
+        "15pct": 43.8388,
+        "20pct": 41.26
+      },
+      "selected_entry_60": 41.26,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 29.16,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
       "ticker": "ADBE",
       "company": "Adobe",
       "currency": "USD",
@@ -509,6 +542,39 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
+      "ticker": "UNH",
+      "company": "UnitedHealth",
+      "currency": "USD",
+      "last_daily_close": 339.85001,
+      "quote_date": "2026-11-20T00:00:00",
+      "provisional_entry": null,
+      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
+      "pct_above_entry": null,
+      "absolute_distance_pct": null,
+      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 163.5017,
+      "bear_60": 86.6808,
+      "base_60": 163.5017,
+      "bull_60": 249.3514,
+      "margin_of_safety_entries_60": {
+        "10pct": 147.1515,
+        "15pct": 138.9764,
+        "20pct": 130.8014
+      },
+      "selected_entry_60": 130.8014,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 159.82,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
+      "data_status": "DAILY HISTORY — NOT LIVE",
+      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
+      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
+      "buy_readiness_pct": null,
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
+      "decision": "RESEARCH ONLY — NOT AN ORDER"
+    },
+    {
       "ticker": "AXP",
       "company": "American Express",
       "currency": "USD",
@@ -542,10 +608,10 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
-      "ticker": "PFE",
-      "company": "Pfizer",
+      "ticker": "UBER",
+      "company": "Uber",
       "currency": "USD",
-      "last_daily_close": 27.4,
+      "last_daily_close": 63.47,
       "quote_date": "2026-11-20T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -553,18 +619,18 @@
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
       "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 11.3534,
-      "bear_60": 6.0599,
-      "base_60": 11.3534,
-      "bull_60": 17.2437,
+      "verified_intrinsic_value_60": 26.3834,
+      "bear_60": 13.6479,
+      "base_60": 26.3834,
+      "bull_60": 40.7196,
       "margin_of_safety_entries_60": {
-        "10pct": 10.2181,
-        "15pct": 9.6504,
-        "20pct": 9.0827
+        "10pct": 23.7451,
+        "15pct": 22.4259,
+        "20pct": 21.1067
       },
-      "selected_entry_60": 9.0827,
+      "selected_entry_60": 21.1067,
       "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 201.67,
+      "pct_above_selected_entry_60": 200.71,
       "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
@@ -575,10 +641,10 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
-      "ticker": "NOC",
-      "company": "Northrop Grumman",
+      "ticker": "SLB",
+      "company": "SLB",
       "currency": "USD",
-      "last_daily_close": 534.31,
+      "last_daily_close": 45.89,
       "quote_date": "2026-11-20T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -586,84 +652,18 @@
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
       "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 214.106,
-      "bear_60": 116.0921,
-      "base_60": 214.106,
-      "bull_60": 321.3113,
+      "verified_intrinsic_value_60": 19.037,
+      "bear_60": 11.5878,
+      "base_60": 19.037,
+      "bull_60": 26.6518,
       "margin_of_safety_entries_60": {
-        "10pct": 192.6954,
-        "15pct": 181.9901,
-        "20pct": 171.2848
+        "10pct": 17.1333,
+        "15pct": 16.1814,
+        "20pct": 15.2296
       },
-      "selected_entry_60": 171.2848,
+      "selected_entry_60": 15.2296,
       "selected_margin_of_safety_pct_60": 20,
-      "pct_above_selected_entry_60": 211.94,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange",
-      "currency": "USD",
-      "last_daily_close": 170.0,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 58.9801,
-      "bear_60": 28.8882,
-      "base_60": 58.9801,
-      "bull_60": 93.8045,
-      "margin_of_safety_entries_60": {
-        "10pct": 53.0821,
-        "15pct": 50.1331,
-        "20pct": 47.1841
-      },
-      "selected_entry_60": 53.0821,
-      "selected_margin_of_safety_pct_60": 10,
-      "pct_above_selected_entry_60": 220.26,
-      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
-      "missing_evidence_flags_60": [],
-      "data_status": "DAILY HISTORY — NOT LIVE",
-      "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
-      "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
-      "buy_readiness_pct": null,
-      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
-      "decision": "RESEARCH ONLY — NOT AN ORDER"
-    },
-    {
-      "ticker": "MDT",
-      "company": "Medtronic",
-      "currency": "USD",
-      "last_daily_close": 99.94,
-      "quote_date": "2026-11-20T00:00:00",
-      "provisional_entry": null,
-      "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
-      "pct_above_entry": null,
-      "absolute_distance_pct": null,
-      "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
-      "verified_intrinsic_value_60": 35.4476,
-      "bear_60": 17.8626,
-      "base_60": 35.4476,
-      "bull_60": 55.5489,
-      "margin_of_safety_entries_60": {
-        "10pct": 31.9028,
-        "15pct": 30.1305,
-        "20pct": 28.3581
-      },
-      "selected_entry_60": 30.1305,
-      "selected_margin_of_safety_pct_60": 15,
-      "pct_above_selected_entry_60": 231.69,
+      "pct_above_selected_entry_60": 201.32,
       "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
       "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
@@ -674,7 +674,7 @@
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     }
   ],
-  "entry_eligible_count_60": 31,
+  "entry_eligible_count_60": 41,
   "retired_legacy_provisional_entry_count": 200,
   "stocks": [
     {
@@ -716,8 +716,8 @@
       "ticker": "BHP.AX",
       "company": "BHP",
       "currency": "AUD",
-      "last_daily_close": 51.4,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 52.05,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -751,8 +751,8 @@
       "ticker": "CAT.AX",
       "company": "Catapult Sports",
       "currency": "AUD",
-      "last_daily_close": 2.68,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 2.675,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -878,7 +878,8 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -891,8 +892,8 @@
       "ticker": "LYC.AX",
       "company": "Lynas Rare Earths",
       "currency": "AUD",
-      "last_daily_close": 12.44,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 12.35,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -926,8 +927,8 @@
       "ticker": "LOT.AX",
       "company": "Lotus Resources",
       "currency": "AUD",
-      "last_daily_close": 0.155,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 0.16,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -961,8 +962,8 @@
       "ticker": "GG8.AX",
       "company": "Greenvale Energy",
       "currency": "AUD",
-      "last_daily_close": 0.355,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 0.357,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -996,8 +997,8 @@
       "ticker": "SFR.AX",
       "company": "Sandfire Resources",
       "currency": "AUD",
-      "last_daily_close": 16.27,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 16.365,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1281,28 +1282,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 2.875,
+      "bear_60": 1.3345,
+      "base_60": 2.875,
+      "bull_60": 4.6988,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 2.5875,
+        "15pct": 2.4438,
+        "20pct": 2.3
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 2.3,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 6138.7,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -1331,7 +1330,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
@@ -1450,8 +1449,8 @@
       "ticker": "RIO.AX",
       "company": "Rio Tinto",
       "currency": "AUD",
-      "last_daily_close": 135.05,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 135.50999,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1485,8 +1484,8 @@
       "ticker": "FMG.AX",
       "company": "Fortescue",
       "currency": "AUD",
-      "last_daily_close": 13.44,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 13.525,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1520,8 +1519,8 @@
       "ticker": "PDN.AX",
       "company": "Paladin Energy",
       "currency": "AUD",
-      "last_daily_close": 5.85,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 5.875,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1555,8 +1554,8 @@
       "ticker": "BOE.AX",
       "company": "Boss Energy",
       "currency": "AUD",
-      "last_daily_close": 1.25,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 1.287,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1590,8 +1589,8 @@
       "ticker": "MIN.AX",
       "company": "Mineral Resources",
       "currency": "AUD",
-      "last_daily_close": 38.69,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 39.17,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1625,8 +1624,8 @@
       "ticker": "WDS.AX",
       "company": "Woodside",
       "currency": "AUD",
-      "last_daily_close": 29.92,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 29.74,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1660,8 +1659,8 @@
       "ticker": "CSL.AX",
       "company": "CSL",
       "currency": "AUD",
-      "last_daily_close": 197.28999,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 199.44,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1695,8 +1694,8 @@
       "ticker": "WTC.AX",
       "company": "WiseTech",
       "currency": "AUD",
-      "last_daily_close": 44.98,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 44.9,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -1906,28 +1905,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 14.3655,
+      "bear_60": 8.2844,
+      "base_60": 14.3655,
+      "bull_60": 20.744,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 12.929,
+        "15pct": 12.2107,
+        "20pct": 11.4924
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 11.4924,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 2909.12,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -2125,7 +2122,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -2265,7 +2262,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -2405,7 +2402,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Market cap/share-count/price mismatch (split or ADR risk)",
@@ -2473,7 +2470,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -2493,28 +2490,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 26.3834,
+      "bear_60": 13.6479,
+      "base_60": 26.3834,
+      "bull_60": 40.7196,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 23.7451,
+        "15pct": 22.4259,
+        "20pct": 21.1067
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 21.1067,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 200.71,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -2563,28 +2558,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 51.575,
+      "bear_60": 26.279,
+      "base_60": 51.575,
+      "bull_60": 80.376,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 46.4175,
+        "15pct": 43.8388,
+        "20pct": 41.26
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 41.26,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 29.16,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -2613,7 +2606,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -2683,7 +2676,8 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -2823,7 +2817,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -2858,7 +2852,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -2994,7 +2988,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Positive equity free cash flow missing; no speculative multiple substituted",
@@ -3099,7 +3093,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -3134,7 +3128,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "SECOND_INDEPENDENT_DATED_PRIMARY_SHARE_COUNT_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -3224,28 +3218,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 19.037,
+      "bear_60": 11.5878,
+      "base_60": 19.037,
+      "bull_60": 26.6518,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 17.1333,
+        "15pct": 16.1814,
+        "20pct": 15.2296
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 15.2296,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 201.32,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -3344,7 +3336,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -3535,28 +3527,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 34.5035,
+      "bear_60": 21.0022,
+      "base_60": 34.5035,
+      "bull_60": 48.305,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 31.0532,
+        "15pct": 29.328,
+        "20pct": 27.6028
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 27.6028,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 317.53,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -3621,7 +3611,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -3691,7 +3681,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -3726,7 +3716,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "NORMALIZED_CYCLE_NONPOSITIVE"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -3901,7 +3891,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -4026,28 +4016,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 163.5017,
+      "bear_60": 86.6808,
+      "base_60": 163.5017,
+      "bull_60": 249.3514,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 147.1515,
+        "15pct": 138.9764,
+        "20pct": 130.8014
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 130.8014,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 159.82,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -4274,7 +4262,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -4309,7 +4297,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -4379,7 +4367,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -4756,7 +4744,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "EQUITY_YEAR_COMPARABILITY_UNVERIFIED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -4791,7 +4779,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -4964,7 +4952,8 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -5230,28 +5219,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 37.6278,
+      "bear_60": 19.1074,
+      "base_60": 37.6278,
+      "bull_60": 58.6854,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 33.865,
+        "15pct": 31.9836,
+        "20pct": 30.1022
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 30.1022,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 531.75,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -5550,7 +5537,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -5570,28 +5557,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 74.2249,
+      "bear_60": 36.0973,
+      "base_60": 74.2249,
+      "bull_60": 118.4916,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 66.8024,
+        "15pct": 63.0912,
+        "20pct": 59.3799
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 59.3799,
+      "selected_margin_of_safety_pct_60": 20,
+      "pct_above_selected_entry_60": 841.45,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -5620,7 +5605,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -5673,28 +5658,26 @@
       "pct_above_entry": null,
       "absolute_distance_pct": null,
       "entry_retirement_version": "CHAMPIONSHIP_6_0_ONLY",
-      "validation_status_60": "NOT VALIDATED",
-      "verified_intrinsic_value_60": null,
-      "bear_60": null,
-      "base_60": null,
-      "bull_60": null,
+      "validation_status_60": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
+      "verified_intrinsic_value_60": 18.8992,
+      "bear_60": 9.9041,
+      "base_60": 18.8992,
+      "bull_60": 28.9524,
       "margin_of_safety_entries_60": {
-        "10pct": null,
-        "15pct": null,
-        "20pct": null
+        "10pct": 17.0093,
+        "15pct": 16.0643,
+        "20pct": 15.1194
       },
-      "selected_entry_60": null,
-      "selected_margin_of_safety_pct_60": null,
-      "pct_above_selected_entry_60": null,
-      "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
-      "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
-      ],
+      "selected_entry_60": 17.0093,
+      "selected_margin_of_safety_pct_60": 10,
+      "pct_above_selected_entry_60": 652.24,
+      "source_confidence_60": "ISSUER_REPORTED_SEC_XBRL_MULTIPERIOD_NOT_INDEPENDENTLY_AUDITED",
+      "missing_evidence_flags_60": [],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
-      "buy_readiness_status": "NOT VALIDATED — NO ENTRY LEVEL",
+      "buy_readiness_status": "WAIT_FOR_MARGIN_OF_SAFETY",
       "decision": "RESEARCH ONLY — NOT AN ORDER"
     },
     {
@@ -5804,8 +5787,8 @@
       "ticker": "CBA.AX",
       "company": "Commonwealth Bank",
       "currency": "AUD",
-      "last_daily_close": 169.92,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 167.59,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -5839,8 +5822,8 @@
       "ticker": "NAB.AX",
       "company": "National Australia Bank",
       "currency": "AUD",
-      "last_daily_close": 36.24,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 35.865,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -5874,8 +5857,8 @@
       "ticker": "WBC.AX",
       "company": "Westpac",
       "currency": "AUD",
-      "last_daily_close": 35.94,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 35.435,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -5909,8 +5892,8 @@
       "ticker": "ANZ.AX",
       "company": "ANZ Group",
       "currency": "AUD",
-      "last_daily_close": 38.58,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 37.835,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -5944,8 +5927,8 @@
       "ticker": "MQG.AX",
       "company": "Macquarie Group",
       "currency": "AUD",
-      "last_daily_close": 220.03,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 222.35001,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -5979,8 +5962,8 @@
       "ticker": "QBE.AX",
       "company": "QBE Insurance",
       "currency": "AUD",
-      "last_daily_close": 26.11,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 26.05,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6014,8 +5997,8 @@
       "ticker": "SUN.AX",
       "company": "Suncorp Group",
       "currency": "AUD",
-      "last_daily_close": 20.59,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 20.565,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6049,8 +6032,8 @@
       "ticker": "IAG.AX",
       "company": "Insurance Australia Group",
       "currency": "AUD",
-      "last_daily_close": 9.05,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 9.1,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6084,8 +6067,8 @@
       "ticker": "WOW.AX",
       "company": "Woolworths Group",
       "currency": "AUD",
-      "last_daily_close": 41.98,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 41.91,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6119,8 +6102,8 @@
       "ticker": "WES.AX",
       "company": "Wesfarmers",
       "currency": "AUD",
-      "last_daily_close": 76.69,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 76.54,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6154,8 +6137,8 @@
       "ticker": "COL.AX",
       "company": "Coles Group",
       "currency": "AUD",
-      "last_daily_close": 21.66,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 21.58,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6189,8 +6172,8 @@
       "ticker": "JBH.AX",
       "company": "JB Hi-Fi",
       "currency": "AUD",
-      "last_daily_close": 75.31,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 74.52,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6224,8 +6207,8 @@
       "ticker": "REA.AX",
       "company": "REA Group",
       "currency": "AUD",
-      "last_daily_close": 157.85001,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 157.86,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6259,8 +6242,8 @@
       "ticker": "XRO.AX",
       "company": "Xero",
       "currency": "AUD",
-      "last_daily_close": 74.87,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 74.64,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6294,8 +6277,8 @@
       "ticker": "CAR.AX",
       "company": "CAR Group",
       "currency": "AUD",
-      "last_daily_close": 25.06,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 25.025,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6329,8 +6312,8 @@
       "ticker": "PME.AX",
       "company": "Pro Medicus",
       "currency": "AUD",
-      "last_daily_close": 187.75999,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 187.605,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6364,8 +6347,8 @@
       "ticker": "COH.AX",
       "company": "Cochlear",
       "currency": "AUD",
-      "last_daily_close": 149.99001,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 149.95,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6399,8 +6382,8 @@
       "ticker": "RMD.AX",
       "company": "ResMed",
       "currency": "AUD",
-      "last_daily_close": 35.44,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 35.23,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6434,8 +6417,8 @@
       "ticker": "GMG.AX",
       "company": "Goodman Group",
       "currency": "AUD",
-      "last_daily_close": 27.55,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 27.4,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6469,8 +6452,8 @@
       "ticker": "SCG.AX",
       "company": "Scentre Group",
       "currency": "AUD",
-      "last_daily_close": 3.57,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 3.55,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6504,8 +6487,8 @@
       "ticker": "TLS.AX",
       "company": "Telstra",
       "currency": "AUD",
-      "last_daily_close": 5.17,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 5.185,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6539,8 +6522,8 @@
       "ticker": "ALL.AX",
       "company": "Aristocrat Leisure",
       "currency": "AUD",
-      "last_daily_close": 64.66,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 64.405,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6574,8 +6557,8 @@
       "ticker": "STO.AX",
       "company": "Santos",
       "currency": "AUD",
-      "last_daily_close": 8.45,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 8.46,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6609,8 +6592,8 @@
       "ticker": "ORG.AX",
       "company": "Origin Energy",
       "currency": "AUD",
-      "last_daily_close": 12.46,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 12.505,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6644,8 +6627,8 @@
       "ticker": "PLS.AX",
       "company": "Pilbara Minerals",
       "currency": "AUD",
-      "last_daily_close": 2.62,
-      "quote_date": "2026-11-20T00:00:00",
+      "last_daily_close": 2.69,
+      "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -6876,7 +6859,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -7016,7 +6999,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -7121,7 +7104,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -7226,7 +7209,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -7366,7 +7349,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -7401,7 +7384,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -7471,7 +7454,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "PRIMARY_XBRL_NOT_COLLECTED"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -7623,14 +7606,14 @@
   ],
   "bitcoin": {
     "XBTAUD": {
-      "last": 89770.5,
-      "bid": 89699.9,
-      "ask": 89787.0
+      "last": 92137.5,
+      "bid": 92058.9,
+      "ask": 92151.9
     },
     "XBTUSD": {
-      "last": 59256.0,
-      "bid": 59257.9,
-      "ask": 59258.0
+      "last": 61109.5,
+      "bid": 61116.0,
+      "ask": 61116.1
     }
   },
   "research_only": true,
