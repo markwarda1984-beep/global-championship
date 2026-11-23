@@ -43,6 +43,9 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python discovery_engine.py
+
+              - name: Run Championship 8.0 audit
+        run: python explosive_move_audit_80.py
       - name: Verify primary-source provenance and prepare underfollowed research queue
         run: python intelligence_layer_51.py --mode discovery
       - name: Incrementally collect first-party SEC series for 200 plus discovered tickers
