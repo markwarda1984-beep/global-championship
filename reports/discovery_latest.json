@@ -1,6 +1,6 @@
 {
   "schema_version": "5.2-discovery-radar-1",
-  "published_at_utc": "2026-11-23T16:30:51.885007+00:00",
+  "published_at_utc": "2026-11-23T22:27:56.056484+00:00",
   "source_coverage": "CORE_SOURCES_AVAILABLE_WITH_FALLBACK",
   "total_discovered_ever": 4,
   "monitor_count": 0,
@@ -17,18 +17,20 @@
     },
     "sec_8k": {
       "status": "ok",
-      "latest_feed_matched_listed_tickers": 84,
+      "latest_feed_matched_listed_tickers": 80,
       "coverage": "at most latest 100 filings; not an exhaustive market screen"
     },
     "gdelt": {
-      "status": "cooldown",
+      "status": "rate_limited",
+      "http_status": 429,
       "checked_theme": 2,
-      "next_attempt_at_utc": "2026-11-23T16:31:57.561290+00:00",
-      "reason": "Prior 429: respect provider limit across scheduled runs"
+      "reason": "gdelt_doc: rate_limited_429",
+      "next_attempt_at_utc": "2026-11-24T22:27:56.056484+00:00",
+      "next_action": "RSS fallback; retry only after persistent cooldown"
     },
     "gdelt_control": {
-      "gdelt_retry_at_utc": "2026-11-23T16:31:57.561290+00:00",
-      "gdelt_consecutive_429": 1
+      "gdelt_retry_at_utc": "2026-11-24T22:27:56.056484+00:00",
+      "gdelt_consecutive_429": 2
     },
     "google_news": {
       "status": "ok",
