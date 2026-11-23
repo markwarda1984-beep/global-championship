@@ -1,13 +1,13 @@
 {
   "schema_version": "6.0-report-bridge-entry-retirement-1",
-  "published_at_utc": "2026-11-22T23:59:34.647664+00:00",
-  "scan_utc": "2026-11-22T23:59:23.306366+00:00",
-  "scan_sydney": "2026-11-23T10:59:23.306366+11:00",
+  "published_at_utc": "2026-11-23T03:18:58.181208+00:00",
+  "scan_utc": "2026-11-23T03:18:43.466438+00:00",
+  "scan_sydney": "2026-11-23T14:18:43.466438+11:00",
   "price_source": "YAHOO HISTORICAL DAILY BARS; NOT REAL TIME",
   "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
   "valuation_source": "Yahoo Finance via unofficial yfinance; company filings NOT verified",
   "universe_count": 200,
-  "price_available_count": 199,
+  "price_available_count": 200,
   "model_available_count": 118,
   "valuation_rows_count": 200,
   "closest_to_buy_top_10": [
@@ -681,8 +681,8 @@
       "ticker": "BABA",
       "company": "Alibaba",
       "currency": "USD",
-      "last_daily_close": null,
-      "quote_date": null,
+      "last_daily_close": 81.08,
+      "quote_date": "2026-11-20T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
       "pct_above_entry": null,
@@ -703,9 +703,9 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "DATED_PRICE_NOT_AVAILABLE"
+        "ADR_OR_FOREIGN_PRIMARY_SHARE_BASIS_NOT_RECONCILED"
       ],
-      "data_status": "UNAVAILABLE",
+      "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
       "valuation_as_of_utc": "2026-11-21T16:48:56.390616+00:00",
       "buy_readiness_pct": null,
@@ -716,7 +716,7 @@
       "ticker": "BHP.AX",
       "company": "BHP",
       "currency": "AUD",
-      "last_daily_close": 51.94,
+      "last_daily_close": 52.05,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -738,8 +738,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -752,7 +751,7 @@
       "ticker": "CAT.AX",
       "company": "Catapult Sports",
       "currency": "AUD",
-      "last_daily_close": 2.72,
+      "last_daily_close": 2.675,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -774,8 +773,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -894,7 +892,7 @@
       "ticker": "LYC.AX",
       "company": "Lynas Rare Earths",
       "currency": "AUD",
-      "last_daily_close": 12.345,
+      "last_daily_close": 12.35,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -916,8 +914,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -930,7 +927,7 @@
       "ticker": "LOT.AX",
       "company": "Lotus Resources",
       "currency": "AUD",
-      "last_daily_close": 0.162,
+      "last_daily_close": 0.16,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -952,8 +949,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -966,7 +962,7 @@
       "ticker": "GG8.AX",
       "company": "Greenvale Energy",
       "currency": "AUD",
-      "last_daily_close": 0.37,
+      "last_daily_close": 0.357,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -988,8 +984,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -1002,7 +997,7 @@
       "ticker": "SFR.AX",
       "company": "Sandfire Resources",
       "currency": "AUD",
-      "last_daily_close": 16.35,
+      "last_daily_close": 16.365,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1024,8 +1019,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -1455,7 +1449,7 @@
       "ticker": "RIO.AX",
       "company": "Rio Tinto",
       "currency": "AUD",
-      "last_daily_close": 135.25999,
+      "last_daily_close": 135.50999,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1477,8 +1471,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk); Market cap/share-count/price mismatch (split or ADR risk)",
@@ -1491,7 +1484,7 @@
       "ticker": "FMG.AX",
       "company": "Fortescue",
       "currency": "AUD",
-      "last_daily_close": 13.54,
+      "last_daily_close": 13.525,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1513,8 +1506,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -1527,7 +1519,7 @@
       "ticker": "PDN.AX",
       "company": "Paladin Energy",
       "currency": "AUD",
-      "last_daily_close": 6.03,
+      "last_daily_close": 5.875,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1549,8 +1541,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -1563,7 +1554,7 @@
       "ticker": "BOE.AX",
       "company": "Boss Energy",
       "currency": "AUD",
-      "last_daily_close": 1.32,
+      "last_daily_close": 1.287,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1585,8 +1576,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -1599,7 +1589,7 @@
       "ticker": "MIN.AX",
       "company": "Mineral Resources",
       "currency": "AUD",
-      "last_daily_close": 39.11,
+      "last_daily_close": 39.17,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1621,8 +1611,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -1635,7 +1624,7 @@
       "ticker": "WDS.AX",
       "company": "Woodside",
       "currency": "AUD",
-      "last_daily_close": 29.52,
+      "last_daily_close": 29.74,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1657,8 +1646,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -1671,7 +1659,7 @@
       "ticker": "CSL.AX",
       "company": "CSL",
       "currency": "AUD",
-      "last_daily_close": 198.75,
+      "last_daily_close": 199.44,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1693,8 +1681,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk); Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -1707,7 +1694,7 @@
       "ticker": "WTC.AX",
       "company": "WiseTech",
       "currency": "AUD",
-      "last_daily_close": 45.32,
+      "last_daily_close": 44.9,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -1729,8 +1716,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -5801,7 +5787,7 @@
       "ticker": "CBA.AX",
       "company": "Commonwealth Bank",
       "currency": "AUD",
-      "last_daily_close": 166.03,
+      "last_daily_close": 167.59,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -5823,8 +5809,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -5837,7 +5822,7 @@
       "ticker": "NAB.AX",
       "company": "National Australia Bank",
       "currency": "AUD",
-      "last_daily_close": 36.01,
+      "last_daily_close": 35.865,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -5859,8 +5844,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -5873,7 +5857,7 @@
       "ticker": "WBC.AX",
       "company": "Westpac",
       "currency": "AUD",
-      "last_daily_close": 35.54,
+      "last_daily_close": 35.435,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -5895,8 +5879,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -5909,7 +5892,7 @@
       "ticker": "ANZ.AX",
       "company": "ANZ Group",
       "currency": "AUD",
-      "last_daily_close": 37.99,
+      "last_daily_close": 37.835,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -5931,8 +5914,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Market cap or share-count missing",
@@ -5945,7 +5927,7 @@
       "ticker": "MQG.AX",
       "company": "Macquarie Group",
       "currency": "AUD",
-      "last_daily_close": 220.015,
+      "last_daily_close": 222.35001,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -5967,8 +5949,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk); No source-reported fiscal statement date; Market cap or share-count missing",
@@ -5981,7 +5962,7 @@
       "ticker": "QBE.AX",
       "company": "QBE Insurance",
       "currency": "AUD",
-      "last_daily_close": 26.205,
+      "last_daily_close": 26.05,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6003,8 +5984,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -6017,7 +5997,7 @@
       "ticker": "SUN.AX",
       "company": "Suncorp Group",
       "currency": "AUD",
-      "last_daily_close": 20.69,
+      "last_daily_close": 20.565,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6039,8 +6019,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6053,7 +6032,7 @@
       "ticker": "IAG.AX",
       "company": "Insurance Australia Group",
       "currency": "AUD",
-      "last_daily_close": 9.07,
+      "last_daily_close": 9.1,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6075,8 +6054,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6089,7 +6067,7 @@
       "ticker": "WOW.AX",
       "company": "Woolworths Group",
       "currency": "AUD",
-      "last_daily_close": 41.9,
+      "last_daily_close": 41.91,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6111,8 +6089,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Market cap or share-count missing",
@@ -6125,7 +6102,7 @@
       "ticker": "WES.AX",
       "company": "Wesfarmers",
       "currency": "AUD",
-      "last_daily_close": 76.51,
+      "last_daily_close": 76.54,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6147,8 +6124,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6161,7 +6137,7 @@
       "ticker": "COL.AX",
       "company": "Coles Group",
       "currency": "AUD",
-      "last_daily_close": 21.59,
+      "last_daily_close": 21.58,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6183,8 +6159,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6197,7 +6172,7 @@
       "ticker": "JBH.AX",
       "company": "JB Hi-Fi",
       "currency": "AUD",
-      "last_daily_close": 75.02,
+      "last_daily_close": 74.52,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6219,8 +6194,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6233,7 +6207,7 @@
       "ticker": "REA.AX",
       "company": "REA Group",
       "currency": "AUD",
-      "last_daily_close": 158.06,
+      "last_daily_close": 157.86,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6255,8 +6229,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6269,7 +6242,7 @@
       "ticker": "XRO.AX",
       "company": "Xero",
       "currency": "AUD",
-      "last_daily_close": 74.35,
+      "last_daily_close": 74.64,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6291,8 +6264,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -6305,7 +6277,7 @@
       "ticker": "CAR.AX",
       "company": "CAR Group",
       "currency": "AUD",
-      "last_daily_close": 25.04,
+      "last_daily_close": 25.025,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6327,8 +6299,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6341,7 +6312,7 @@
       "ticker": "PME.AX",
       "company": "Pro Medicus",
       "currency": "AUD",
-      "last_daily_close": 184.44,
+      "last_daily_close": 187.605,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6363,8 +6334,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6377,7 +6347,7 @@
       "ticker": "COH.AX",
       "company": "Cochlear",
       "currency": "AUD",
-      "last_daily_close": 149.87,
+      "last_daily_close": 149.95,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6399,8 +6369,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6413,7 +6382,7 @@
       "ticker": "RMD.AX",
       "company": "ResMed",
       "currency": "AUD",
-      "last_daily_close": 35.44,
+      "last_daily_close": 35.23,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6435,8 +6404,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk)",
@@ -6449,7 +6417,7 @@
       "ticker": "GMG.AX",
       "company": "Goodman Group",
       "currency": "AUD",
-      "last_daily_close": 27.26,
+      "last_daily_close": 27.4,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6471,8 +6439,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -6485,7 +6452,7 @@
       "ticker": "SCG.AX",
       "company": "Scentre Group",
       "currency": "AUD",
-      "last_daily_close": 3.555,
+      "last_daily_close": 3.55,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6507,8 +6474,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Specialist valuation required (AFFO, pipeline, capital structure, regulatory or asset model)",
@@ -6543,8 +6509,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6557,7 +6522,7 @@
       "ticker": "ALL.AX",
       "company": "Aristocrat Leisure",
       "currency": "AUD",
-      "last_daily_close": 64.31,
+      "last_daily_close": 64.405,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6579,8 +6544,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6593,7 +6557,7 @@
       "ticker": "STO.AX",
       "company": "Santos",
       "currency": "AUD",
-      "last_daily_close": 8.4,
+      "last_daily_close": 8.46,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6615,8 +6579,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "BLOCKED: Financial statement currency mismatch or missing (ADR/FX risk); Market cap or share-count missing",
@@ -6651,8 +6614,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "INDICATIVE MODEL — NOT VERIFIED OR APPROVED",
@@ -6665,7 +6627,7 @@
       "ticker": "PLS.AX",
       "company": "Pilbara Minerals",
       "currency": "AUD",
-      "last_daily_close": 2.645,
+      "last_daily_close": 2.69,
       "quote_date": "2026-11-23T00:00:00",
       "provisional_entry": null,
       "entry_basis": "RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED",
@@ -6687,8 +6649,7 @@
       "pct_above_selected_entry_60": null,
       "source_confidence_60": "INSUFFICIENT_PRIMARY_ECONOMIC_EVIDENCE",
       "missing_evidence_flags_60": [
-        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED",
-        "PRICE_STALE_OR_UNDATED"
+        "ASX_PRIMARY_STATEMENT_ADAPTER_REQUIRED"
       ],
       "data_status": "DAILY HISTORY — NOT LIVE",
       "model_status": "UNVALUED: Requires at least 3 positive annual free-cash-flow observations; assess cycle",
@@ -7645,14 +7606,14 @@
   ],
   "bitcoin": {
     "XBTAUD": {
-      "last": 92326.7,
-      "bid": 92099.5,
-      "ask": 92226.5
+      "last": 92137.5,
+      "bid": 92058.9,
+      "ask": 92151.9
     },
     "XBTUSD": {
-      "last": 61138.3,
-      "bid": 61138.2,
-      "ask": 61138.3
+      "last": 61109.5,
+      "bid": 61116.0,
+      "ask": 61116.1
     }
   },
   "research_only": true,
