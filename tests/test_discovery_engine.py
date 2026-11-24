@@ -227,7 +227,7 @@ class DiscoveryReliability51Tests(unittest.TestCase):
             status_code = 200
             def raise_for_status(self): pass
             def json(self): return {'articles': []}
-        for hour, expected_theme in [(2, 1), (8, 2), (10, 3), (13, 1), (16, 2), (21, 3)]:
+        for hour, expected_theme in [(2, 1), (8, 2), (10, 3), (13, 4), (16, 5), (21, 6)]:
             sess = unittest.mock.Mock()
             sess.get.return_value = Resp()
             result, health = d.discover_external(sess, NOW.replace(hour=hour), sec_configured=False)
