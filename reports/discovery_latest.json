@@ -1,6 +1,6 @@
 {
   "schema_version": "5.2-discovery-radar-1",
-  "published_at_utc": "2026-11-24T09:21:35.877858+00:00",
+  "published_at_utc": "2026-11-24T11:28:59.490695+00:00",
   "source_coverage": "CORE_SOURCES_AVAILABLE_WITH_FALLBACK",
   "total_discovered_ever": 4,
   "monitor_count": 0,
@@ -17,12 +17,12 @@
     },
     "sec_8k": {
       "status": "ok",
-      "latest_feed_matched_listed_tickers": 79,
+      "latest_feed_matched_listed_tickers": 81,
       "coverage": "at most latest 100 filings; not an exhaustive market screen"
     },
     "gdelt": {
       "status": "cooldown",
-      "checked_theme": 4,
+      "checked_theme": 6,
       "next_attempt_at_utc": "2026-11-24T22:27:56.056484+00:00",
       "reason": "Prior 429: respect provider limit across scheduled runs"
     },
@@ -32,13 +32,15 @@
     },
     "google_news": {
       "status": "ok",
-      "checked_theme": 4,
-      "article_count": 21,
+      "checked_theme": 6,
+      "article_count": 0,
       "coverage": "RSS headline sample only; source articles not independently verified"
     },
     "bing_news": {
-      "status": "not_needed",
-      "reason": "GDELT/Google news source was usable"
+      "status": "ok",
+      "checked_theme": 6,
+      "article_count": 0,
+      "coverage": "Bing RSS headline sample only; links are not primary filings"
     },
     "new_lead_coverage": {
       "corroborated_sec_and_news": 0,
