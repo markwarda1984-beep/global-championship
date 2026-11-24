@@ -70,7 +70,10 @@ class Models(unittest.TestCase):
     def test_all_200_assessed_without_financial_inputs(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp); (root/'watchlist.csv').write_text('ticker,name,sector\n'+''.join(f'T{i},Company,Technology\n' for i in range(200)))
+            (root/'reports').mkdir()
+            (root/'reports/priority_quotes_90.json').write_text(json.dumps({'quotes':{'HPE':{'price':39,'currency':'USD','quote_date':'2026-11-23','low_basis':'UNADJUSTED_DAILY_INTRADAY_LOW','low_52w':20}}}))
             out=build(root,now=NOW)
+            self.assertEqual(next(r for r in out['companies'] if r['ticker']=='HPE')['trading_lows']['trading_low_52w'],20)
             self.assertEqual(out['coverage_comparison']['original_200_assessed_after'],200)
             self.assertEqual(out['coverage_comparison']['original_200_valued_after'],0)
             self.assertEqual(len(out['companies']),203)

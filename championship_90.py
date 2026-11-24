@@ -204,6 +204,10 @@ def build(root, mode='scan', now=None):
     rows = []
     for name in names:
         t = name['ticker']; q = quotes.get(t, {}); src = cache.get(t, {}); prior = old.get(t, {})
+        # Discovery and priority collectors use low_52w for actual Low bars;
+        # the legacy scanner separately retains its close-only low_52w.
+        if 'trading_low_52w' not in q and q.get('low_basis') == 'UNADJUSTED_DAILY_INTRADAY_LOW':
+            q = {**q, 'trading_low_52w': q.get('low_52w')}
         sector = method(t, name['category']); price = positive(q.get('price'))
         vals = None; assumptions = None; flags = []; audit = {'status': 'NO_PRIMARY_SERIES'}
         adapter = adapters.get(t, {})
