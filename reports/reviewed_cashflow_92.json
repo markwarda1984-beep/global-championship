@@ -244,6 +244,125 @@
       "periods_sha256": "49c3dee1c8ba35e56f939fb3aeb60114da4ffb2209f47429c51cb4bf6e431f54",
       "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
       "orders_enabled": false
+    },
+    {
+      "ticker": "COP",
+      "rule": {
+        "components": [
+          "cop:PaymentToAcquireProductiveAssetsAndInvestments"
+        ],
+        "labels": [
+          "Capital expenditures and investments"
+        ]
+      },
+      "periods": [
+        {
+          "operating_cash_flow": {
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "accession": "0001163165-26-000009",
+            "filed": "2026-02-17",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+            "source_document_sha256": "ff08e72617f4fc1a0a271f1f4d573998f2f635ef276e7b2998a0460c5dac78e0",
+            "value": 19965000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          "capex": {
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "accession": "0001163165-26-000009",
+            "filed": "2026-02-17",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+            "source_document_sha256": "ff08e72617f4fc1a0a271f1f4d573998f2f635ef276e7b2998a0460c5dac78e0",
+            "value": 11248000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "cop:PaymentToAcquireProductiveAssetsAndInvestments": 11248000000.0
+            },
+            "source_row_labels": [
+              "Capital expenditures and investments"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
+          }
+        },
+        {
+          "operating_cash_flow": {
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "accession": "0001163165-26-000009",
+            "filed": "2026-02-17",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+            "source_document_sha256": "ff08e72617f4fc1a0a271f1f4d573998f2f635ef276e7b2998a0460c5dac78e0",
+            "value": 20124000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          "capex": {
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "accession": "0001163165-26-000009",
+            "filed": "2026-02-17",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+            "source_document_sha256": "ff08e72617f4fc1a0a271f1f4d573998f2f635ef276e7b2998a0460c5dac78e0",
+            "value": 12118000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "cop:PaymentToAcquireProductiveAssetsAndInvestments": 12118000000.0
+            },
+            "source_row_labels": [
+              "Capital expenditures and investments"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
+          }
+        },
+        {
+          "operating_cash_flow": {
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "accession": "0001163165-26-000009",
+            "filed": "2026-02-17",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+            "source_document_sha256": "ff08e72617f4fc1a0a271f1f4d573998f2f635ef276e7b2998a0460c5dac78e0",
+            "value": 19796000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          "capex": {
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "accession": "0001163165-26-000009",
+            "filed": "2026-02-17",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+            "source_document_sha256": "ff08e72617f4fc1a0a271f1f4d573998f2f635ef276e7b2998a0460c5dac78e0",
+            "value": 12553000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "cop:PaymentToAcquireProductiveAssetsAndInvestments": 12553000000.0
+            },
+            "source_row_labels": [
+              "Capital expenditures and investments"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
+          }
+        }
+      ],
+      "periods_sha256": "8974ab13283d1b93260db01e2bcb3782a3a93ed307b662d65ae167bfa4b6012a",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "orders_enabled": false,
+      "cash_flow_scope": "Conservative OCF less issuer cash capital expenditures AND investments; business acquisitions remain separate. Not reconciled distributable owner cash flow."
     }
   ],
   "orders_enabled": false
