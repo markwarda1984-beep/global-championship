@@ -1,15 +1,91 @@
 {
   "schema_version": "5.1-scan-changes-1",
-  "published_at_utc": "2026-11-24T09:03:40.121704+00:00",
-  "current_scan_utc": "2026-11-24T09:03:28.400439+00:00",
-  "prior_scan_utc": "2026-11-24T08:46:32.816438+00:00",
+  "published_at_utc": "2026-11-24T09:21:49.492479+00:00",
+  "current_scan_utc": "2026-11-24T09:21:32.814870+00:00",
+  "prior_scan_utc": "2026-11-24T09:03:28.400439+00:00",
   "comparison_status": "COMPARED",
   "universe_count": 200,
   "new_daily_bar_count": 0,
   "same_bar_revision_count": 0,
   "quote_date_regression_count": 0,
-  "research_field_change_count": 0,
-  "material_changes": [],
+  "research_field_change_count": 5,
+  "material_changes": [
+    {
+      "ticker": "WOW.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-24T00:00:00",
+      "new_quote_date": "2026-11-24T00:00:00",
+      "old_daily_close": 42.34,
+      "new_daily_close": 42.34,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "model_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    },
+    {
+      "ticker": "STO.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-24T00:00:00",
+      "new_quote_date": "2026-11-24T00:00:00",
+      "old_daily_close": 8.41,
+      "new_daily_close": 8.41,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "model_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    },
+    {
+      "ticker": "MQG.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-24T00:00:00",
+      "new_quote_date": "2026-11-24T00:00:00",
+      "old_daily_close": 227.64,
+      "new_daily_close": 227.64,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "model_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    },
+    {
+      "ticker": "LOT.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-24T00:00:00",
+      "new_quote_date": null,
+      "old_daily_close": 0.17,
+      "new_daily_close": null,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "data_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    },
+    {
+      "ticker": "ANZ.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-24T00:00:00",
+      "new_quote_date": "2026-11-24T00:00:00",
+      "old_daily_close": 38.67,
+      "new_daily_close": 38.67,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "model_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    }
+  ],
   "data_revisions_and_regressions": [],
   "meaning": "Daily-bar change is between different quote sessions, NOT intraday gain, executable return or trade signal",
   "orders_enabled": false
