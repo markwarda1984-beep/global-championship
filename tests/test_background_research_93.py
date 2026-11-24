@@ -92,3 +92,13 @@ class WorkerCheckpointTests(unittest.TestCase):
    self.assertEqual(saved['attempt_count'],1);self.assertGreater(saved['next_attempt_utc'],NOW.isoformat())
  def test_oversized_batch_rejected_before_source_calls(self):
   with self.assertRaises(ValueError):run(Path('/unused'),21)
+
+ def test_missing_one_filing_is_partial_even_when_facts_recovered(self):
+  class Fake:
+   def __init__(self,state,now,deadline):self.deadline=deadline;self.requests=0;self.retrieved=0
+  with tempfile.TemporaryDirectory() as folder:
+   root=Path(folder);rows=self.fixture(root)
+   write(root/'reports/primary_evidence_91.json',{'companies':{'AAA.AX':{'cik':1}}})
+   with patch('background_research_93.collect_sec',return_value={'sources':[{'url':'https://data.sec.gov/facts'}],'document_errors':['HTTPError'],'parsed_observations':0}):
+    out=run(root,1,1,NOW,Fake,lambda root,now:{'companies':rows})
+   self.assertEqual(out['source_health'],'PARTIAL_OR_UNAVAILABLE')
