@@ -20,13 +20,18 @@ MEMBERS={'us-gaap:CommonClassAMember','us-gaap:CommonClassBMember'}
 def equal_class_counts(html,required_excerpt,now):
  soup=BeautifulSoup(html,'html.parser');plain=' '.join(soup.get_text(' ',strip=True).split())
  if required_excerpt not in plain:return []
+ return class_counts(soup,MEMBERS,now,required_excerpt)
+
+def class_counts(soup,members,now,required_excerpt):
  contexts={};unknown_contexts=set()
  for c in soup.find_all(lambda x:x.name and x.name.split(':')[-1].lower()=='context'):
   instant=c.find(lambda x:x.name and x.name.split(':')[-1].lower()=='instant')
   dims=c.find_all(lambda x:x.name and x.name.split(':')[-1].lower() in ('explicitmember','typedmember'))
-  if not instant or len(dims)!=1:continue
+  if not instant:continue
+  if len(dims)!=1:
+   unknown_contexts.add(c.get("id"));continue
   member=dims[0].get_text(strip=True)
-  if member not in MEMBERS:
+  if member not in members:
    unknown_contexts.add(c.get('id'));continue
   end=instant.get_text(strip=True)
   if end>now.date().isoformat():continue
@@ -46,11 +51,11 @@ def equal_class_counts(html,required_excerpt,now):
  results={}
  for concept,end,_ in values:
   if (concept,end) in conflicts:continue
-  parts={m:values.get((concept,end,m)) for m in MEMBERS}
+  parts={m:values.get((concept,end,m)) for m in members}
   if any(v is None or v<=0 for v in parts.values()):continue
   r={'value':sum(parts.values()),'unit':'shares','start':None,'end':end,'tag':concept,
      'taxonomy':'dei' if concept.startswith('Entity') else 'us-gaap','class_components':parts,
-     'share_basis':'TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES','equality_source_excerpt':required_excerpt}
+     'share_basis':'REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES','equality_source_excerpt':required_excerpt}
   if end not in results or concept.startswith('Entity'):results[end]=r
  return sorted(results.values(),key=lambda r:r['end'])
 

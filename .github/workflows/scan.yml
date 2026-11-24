@@ -9,6 +9,14 @@ on:
     branches: [main]
     paths:
       - 'championship_90.py'
+      - 'reviewed_shares_94.py'
+      - 'share_classes_92.py'
+      - 'reviewed_cashflow_92.py'
+      - 'recovery_94.py'
+      - 'settings/reviewed_share_classes_94.json'
+      - 'settings/recovery_baseline_94.json'
+      - 'reports/reviewed_share_counts_94.json'
+      - 'reports/reviewed_cashflow_92.json'
       - 'dynamic_earnings_92.py'
       - 'collect_dynamic_92.py'
       - 'settings/dynamic_*.json'
@@ -152,6 +160,8 @@ jobs:
         run: python dynamic_earnings_92.py --mode scan
       - name: Independently verify the financial outputs and baseline preservation
         run: python verify_financial_outputs_92.py --mode scan
+      - name: Verify recovered denominators, financial outputs and coverage gain
+        run: python recovery_94.py --mode scan
       - name: Verify Championship 9.0 coverage and no orders
         run: python verify_90.py --mode scan
       - name: Publish full 200-stock evidence recovery audit
@@ -159,7 +169,8 @@ jobs:
       - name: Publish machine-readable report to repository
         run: |
           git add reports/coverage_recovery_91.json reports/coverage_recovery_91.md
-          git add reports/valuation_90_latest.json reports/coverage_90_latest.json reports/priority_quotes_90.json
+          git add reports/valuation_90_latest.json reports/coverage_90_latest.json
+          git add reports/recovery_94_latest.json reports/priority_quotes_90.json
           git add reports/dynamic_source_recovery_92_scan.json reports/dynamic_earnings_92_latest.json reports/dynamic_earnings_92_latest.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

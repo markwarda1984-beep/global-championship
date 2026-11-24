@@ -11,6 +11,14 @@ on:
       - 'evidence_recovery_91.py'
       - 'recover_documents_91.py'
       - 'championship_90.py'
+      - 'reviewed_shares_94.py'
+      - 'share_classes_92.py'
+      - 'reviewed_cashflow_92.py'
+      - 'recovery_94.py'
+      - 'settings/reviewed_share_classes_94.json'
+      - 'settings/recovery_baseline_94.json'
+      - 'reports/reviewed_share_counts_94.json'
+      - 'reports/reviewed_cashflow_92.json'
       - 'dynamic_earnings_92.py'
       - 'collect_dynamic_92.py'
       - 'settings/dynamic_*.json'
@@ -100,12 +108,15 @@ jobs:
         run: python dynamic_earnings_92.py --mode weekly
       - name: Independently verify the financial outputs and baseline preservation
         run: python verify_financial_outputs_92.py --mode weekly
+      - name: Verify recovered denominators, financial outputs and coverage gain
+        run: python recovery_94.py --mode weekly
       - name: Verify Championship 9.0 coverage and no orders
         run: python verify_90.py --mode weekly
       - name: Publish weekly valuation report to repository
         run: |
           git add reports/primary_evidence_91.json reports/share_basis_recovery_91.json reports/fx_recovery_91.json settings/primary_adapters_90.json
           git add reports/valuation_90_weekly.json reports/coverage_90_weekly.json
+          git add reports/recovery_94_weekly.json
           git add reports/dynamic_source_recovery_92_weekly.json reports/dynamic_earnings_92_weekly.json reports/dynamic_earnings_92_weekly.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
