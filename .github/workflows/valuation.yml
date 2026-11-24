@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
     paths:
+      - 'evidence_recovery_91.py'
+      - 'recover_documents_91.py'
       - 'championship_90.py'
       - 'settings/primary_adapters_90.json'
       - 'valuation_engine.py'
@@ -50,6 +52,16 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python evidence_upgrade_54.py --mode financials
+      - name: Refresh all 200 issuer statement sources when due
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python evidence_recovery_91.py --only-if-due
+      - name: Reconcile primary listed-share documents when due
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python recover_documents_91.py --only-if-due
+      - name: Refresh explicitly dated FX research
+        run: python refresh_fx_91.py
       - name: Championship 6.0 weekly full-cycle valuations from verified primary series
         run: python championship_60.py --mode weekly
       - name: Publish weekly evidence-only Top 10 and AUD offset sensitivities
@@ -76,6 +88,7 @@ jobs:
         run: python verify_90.py --mode weekly
       - name: Publish weekly valuation report to repository
         run: |
+          git add reports/primary_evidence_91.json reports/share_basis_recovery_91.json reports/fx_recovery_91.json settings/primary_adapters_90.json
           git add reports/valuation_90_weekly.json reports/coverage_90_weekly.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -109,6 +122,7 @@ jobs:
         with:
           name: championship-valuation-4-${{ github.run_number }}
           path: |
+            reports/*91*.json
             reports/*90*.json
             data/valuation_200.csv
             data/valuation_200.json

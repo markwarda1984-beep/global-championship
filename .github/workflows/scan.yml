@@ -138,8 +138,11 @@ jobs:
         run: python championship_90.py --mode scan
       - name: Verify Championship 9.0 coverage and no orders
         run: python verify_90.py --mode scan
+      - name: Publish full 200-stock evidence recovery audit
+        run: python coverage_recovery_audit_91.py
       - name: Publish machine-readable report to repository
         run: |
+          git add reports/coverage_recovery_91.json reports/coverage_recovery_91.md
           git add reports/valuation_90_latest.json reports/coverage_90_latest.json reports/priority_quotes_90.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -175,6 +178,8 @@ jobs:
         with:
           name: championship-200-dashboard-${{ github.run_number }}
           path: |
+            reports/*91*.json
+            reports/coverage_recovery_91.md
             reports/*90*.json
             data/
             reports/valuation_60_latest.json

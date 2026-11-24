@@ -9,6 +9,7 @@ import copy
 import hashlib
 import json
 import math
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -174,6 +175,13 @@ def priority(ticker, q, now):
     return {**rule, 'threshold_met': hit, 'below_previous_5d_low': price < low if valid and low else None,
             'rule_source': 'USER_CONFIRMED_2026_11_24', 'purpose': 'PRIORITY_RESEARCH_ENTRY_REVIEW', 'orders_enabled': False}
 
+def verified_pdf_record(record, now):
+    if record.get('status') != 'ISSUER_ANNUAL_REPORT_FIELDS_RECONCILED' or record.get('review_status') != 'PRIMARY_DOCUMENT_FIELDS_RECONCILED': return False
+    facts = record.get('annual_facts') or {}
+    if record.get('evidence_hash_sha256') != hashlib.sha256(json.dumps(facts,sort_keys=True).encode()).hexdigest(): return False
+    observations = [r for rows in facts.values() for r in rows]
+    return bool(observations and all(number(r.get('value')) is not None and recent(r.get('end'), now, 4200) and str(r.get('source_url','')).startswith('https://') and re.fullmatch('[0-9a-f]{64}',str(r.get('source_document_sha256',''))) and positive(r.get('pdf_page')) for r in observations))
+
 def build(root, mode='scan', now=None):
     from championship_60 import universe, latest_quote, method, scenario_values, combine_periods, ADR_OR_OVERSEAS_SHARE_BASIS, validate_cfg, DEFAULT_ASSUMPTIONS, evaluate_all
     now = now or datetime.now(timezone.utc)
@@ -196,6 +204,12 @@ def build(root, mode='scan', now=None):
     legacy = read(root/'reports'/legacy_name, {}) or {}
     old = {r['ticker']: r for r in legacy.get('companies', [])}
     cache = (read(root/'reports/primary_series_cache_60.json', {}) or {}).get('companies', {})
+    recovered = read(root/'reports/primary_evidence_91.json', {}) or {}
+    if recovered.get('orders_enabled') is True: raise ValueError('Unsafe recovered evidence')
+    cache = {**cache, **recovered.get('companies', {})}
+    reviewed = read(root/'reports/issuer_primary_records_91.json', {}) or {}
+    if reviewed.get('orders_enabled') is True: raise ValueError('Unsafe issuer PDF evidence')
+    cache.update({t:r for t,r in reviewed.get('companies',{}).items() if verified_pdf_record(r,now)})
     adapters = read(root/'settings/primary_adapters_90.json', {}) or {}
     cfg = validate_cfg(read(root/'settings/championship_60.json', DEFAULT_ASSUMPTIONS))
     # Recompute legacy eligibility against identical evidence/time, avoiding
@@ -211,7 +225,7 @@ def build(root, mode='scan', now=None):
         sector = method(t, name['category']); price = positive(q.get('price'))
         vals = None; assumptions = None; flags = []; audit = {'status': 'NO_PRIMARY_SERIES'}
         adapter = adapters.get(t, {})
-        if src.get('status') == 'OFFICIAL_SEC_COMPANYFACTS_RETRIEVED' and recent(src.get('observed_utc'), now, cfg['sec_refresh_days']+4):
+        if (src.get('status') == 'OFFICIAL_SEC_COMPANYFACTS_RETRIEVED' or verified_pdf_record(src,now)) and recent(src.get('observed_utc'), now, cfg['sec_refresh_days']+4):
             normalized, audit = reconcile(src, q.get('currency'), adapter.get('share_basis'), adapter.get('fx'), now,
                                           t in ADR_OR_OVERSEAS_SHARE_BASIS or name['category'] == 'International')
             if normalized:
@@ -247,18 +261,21 @@ def build(root, mode='scan', now=None):
                'priority_entry': priority(t, q, now), 'reconciliation': audit,
                'missing_inputs': sorted(set(flags)), 'assumptions': assumptions,
                'legacy_validation_status': prior.get('validation_status'),
+               'primary_extraction_version': src.get('extraction_version'),
                'research_only': True, 'orders_enabled': False, 'buy_signal': False}
         rows.append(row)
     fixed = [r for r in rows if r['universe'] == 'ORIGINAL_200']
     assert len(fixed) == 200 and len({r['ticker'] for r in rows}) == len(rows)
-    before = sum(comparable.get(r['ticker'], {}).get('validation_status') == 'PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL' for r in fixed)
+    baseline = read(root/'settings/coverage_baseline_90.json', {}) or {}
+    previous_names = set(baseline.get('valued_tickers', [t for t,r in comparable.items() if r.get('validation_status') == 'PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL']))
+    before = baseline.get('original_200_valued', len(previous_names))
     after = sum(r['scenarios'] is not None for r in fixed)
     ranked = sorted([r for r in rows if r['pre_recovery_candidate']], key=lambda r: (not r['preferred_25_50pct_upside'], r['recovery_from_5d_low_pct'], -r['base_upside_pct'], r['ticker']))
     coverage = {'original_200_assessed_before': sum(r['ticker'] in old for r in fixed), 'original_200_assessed_after': 200,
                 'original_200_valued_before': before, 'original_200_valued_after': after, 'change': after-before,
-                'newly_valued': [r['ticker'] for r in fixed if r['scenarios'] and comparable.get(r['ticker'], {}).get('validation_status') != 'PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL'],
-                'lost_valuation': [r['ticker'] for r in fixed if not r['scenarios'] and comparable.get(r['ticker'], {}).get('validation_status') == 'PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL'],
-                'comparison_basis': 'SAME_RUN_LEGACY_60_VS_90_FIXED_200', 'legacy_source_published_at': legacy.get('published_at_utc'), 'legacy_recomputed_at': now.isoformat()}
+                'newly_valued': [r['ticker'] for r in fixed if r['scenarios'] and r['ticker'] not in previous_names],
+                'lost_valuation': [r['ticker'] for r in fixed if not r['scenarios'] and r['ticker'] in previous_names],
+                'comparison_basis': 'FROZEN_PRE_RECOVERY_BASELINE' if baseline else 'SAME_RUN_LEGACY_60_VS_90_FIXED_200', 'baseline_source_commit': baseline.get('source_commit'), 'same_run_legacy_valued_count': sum(r.get('validation_status') == 'PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL' for r in comparable.values() if r.get('universe')=='ORIGINAL_200'), 'legacy_source_published_at': legacy.get('published_at_utc'), 'legacy_recomputed_at': now.isoformat()}
     out = {'schema_version': '9.0-research-1', 'published_at_utc': now.isoformat(), 'mode': mode,
            'original_watchlist_count': 200, 'reported_count': len(rows), 'companies': rows,
            'ranked_pre_recovery_top10': ranked[:10], 'coverage_comparison': coverage,
@@ -276,6 +293,8 @@ def build(root, mode='scan', now=None):
                 x = mapping.get(r['ticker'], {})
                 r['championship_90'] = {k:x.get(k) for k in ('assessment_status','trading_lows','priority_entry','base_upside_pct','pre_recovery_candidate')}
             bridge['championship_90_report'] = 'reports/valuation_90_latest.json'
+            bridge['primary_supported_valuation_count_90'] = coverage['original_200_valued_after']
+            bridge['coverage_comparison_90'] = coverage
             write(path, bridge)
     return out
 
