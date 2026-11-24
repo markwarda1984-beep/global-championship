@@ -1,0 +1,1681 @@
+{
+  "schema_version": "9.2-original-117-followup-1",
+  "published_at_utc": "2026-11-24T08:58:45.227974+00:00",
+  "original_remaining_count": 117,
+  "newly_supported": 6,
+  "still_unsupported": 111,
+  "companies": [
+    {
+      "ticker": "BABA",
+      "company": "Alibaba",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/baba-20260331.htm",
+          "accession": "0001193125-26-231755",
+          "filed": "2026-05-20",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BHP.AX",
+      "company": "BHP",
+      "supported_now": true,
+      "missing_inputs_now": [],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "CAT.AX",
+      "company": "Catapult Sports",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SLS",
+      "company": "SELLAS Life Sciences",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390478.json",
+          "sha256": "179bafc9a0f3ef3a9167a5bdc9d84de4a230a862f46f44055113f1f6469e9aca"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "LYC.AX",
+      "company": "Lynas Rare Earths",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "LOT.AX",
+      "company": "Lotus Resources",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "GG8.AX",
+      "company": "Greenvale Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SFR.AX",
+      "company": "Sandfire Resources",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "IREN",
+      "company": "IREN",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm",
+          "accession": "0001878848-26-000066",
+          "filed": "2026-11-05",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "LUNR",
+      "company": "Intuitive Machines",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1844452/000162828026073512/lunr-20260930.htm",
+          "accession": "0001628280-26-073512",
+          "filed": "2026-11-13",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "MP",
+      "company": "MP Materials",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001801368.json",
+          "sha256": "491200bc0dba49dcd9914e3bef5e9990d0878d2fba03b15287a32bea10670baf"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "TSM",
+      "company": "TSMC",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
+          "sha256": "d3ebb91e3ad78c9482e238c4db36df60b295a3b49ca137774706f4f5e526044a"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json",
+          "sha256": "162439f31208eaf4cd1a33939d80fd40479a559735b9488d32ac43d5516ff7bf"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "RKLB",
+      "company": "Rocket Lab",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001819994.json",
+          "sha256": "9f4f049ff10cc9a3f6cc00c91f908698a130e39bb6b8cb829418cf6fe34e69eb"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "ASTS",
+      "company": "AST SpaceMobile",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526453759/asts-20260930.htm",
+          "accession": "0001193125-26-453759",
+          "filed": "2026-11-09",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "COIN",
+      "company": "Coinbase",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001679788.json",
+          "sha256": "0206e8a8e19418d06a025c32266b284709920daf85bfece27f6e83734856a182"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "MSTR",
+      "company": "Strategy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001050446.json",
+          "sha256": "95319c1afa32d24e5d29e9f376899ab034f2ef63f9d5ca6146f13b61798f5233"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "RIO.AX",
+      "company": "Rio Tinto",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "FMG.AX",
+      "company": "Fortescue",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "PDN.AX",
+      "company": "Paladin Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BOE.AX",
+      "company": "Boss Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "MIN.AX",
+      "company": "Mineral Resources",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "WDS.AX",
+      "company": "Woodside",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "CSL.AX",
+      "company": "CSL",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "WTC.AX",
+      "company": "WiseTech",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "AMZN",
+      "company": "Amazon",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+          "sha256": "acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "supported_now": true,
+      "missing_inputs_now": [],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+          "accession": "0001628280-26-066773",
+          "filed": "2026-10-22",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "ORCL",
+      "company": "Oracle",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json",
+          "sha256": "fe93b258bc0ba8f3076ddebb5d8bb91c46deaa1f7b06d2ff2e3eaed85fee8a63"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001640147.json",
+          "sha256": "9d2289f4d9810ef19dfd4f5eef8c90b406db14947ca4b6fcb36dca6c41383144"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "supported_now": true,
+      "missing_inputs_now": [],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026070292/ddog-20260930.htm",
+          "accession": "0001628280-26-070292",
+          "filed": "2026-11-04",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "NET",
+      "company": "Cloudflare",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
+          "accession": "0001477333-26-000061",
+          "filed": "2026-11-05",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "CRWD",
+      "company": "CrowdStrike",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm",
+          "accession": "0001535527-26-000038",
+          "filed": "2026-11-23",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "ZS",
+      "company": "Zscaler",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001713683.json",
+          "sha256": "773e413d559a67c3097afb47da237a53bdf9eac7865c6bba01c9586714134887"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "OKTA",
+      "company": "Okta",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1660134/000166013426000069/okta-20260731.htm",
+          "accession": "0001660134-26-000069",
+          "filed": "2026-08-27",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "MDB",
+      "company": "MongoDB",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001441816.json",
+          "sha256": "8947052d6912d9ac6b35470f5e331ef6fe1f4b4cf782fab20822c9cb66738997"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "TEAM",
+      "company": "Atlassian",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000054/team-20260930.htm",
+          "accession": "0001650372-26-000054",
+          "filed": "2026-11-06",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SHOP",
+      "company": "Shopify",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000068/shop-20260930.htm",
+          "accession": "0001594805-26-000068",
+          "filed": "2026-11-03",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "ABNB",
+      "company": "Airbnb",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm",
+          "accession": "0001559720-26-000032",
+          "filed": "2026-11-05",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "XYZ",
+      "company": "Block",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm",
+          "accession": "0001628280-26-069524",
+          "filed": "2026-11-03",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "HOOD",
+      "company": "Robinhood",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001783879.json",
+          "sha256": "d28568285c96306f186e381906b682ee8bd3304c76e637762af6d89046eb270e"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SOFI",
+      "company": "SoFi",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001818874.json",
+          "sha256": "c39755526bcbfba1412bc51540521e992ad766c782f3915c68690b5bb4c51b55"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "AFRM",
+      "company": "Affirm",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001820953.json",
+          "sha256": "823f0ce51e2269ed87b4f9e1cd22865e81e50758ba4c5c5bdfc21c916f9cc528"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "APP",
+      "company": "AppLovin",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000010/app-20251231.htm",
+          "accession": "0001751008-26-000010",
+          "filed": "2026-02-19",
+          "form": "10-K"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001751008.json",
+          "sha256": "5a74cbf4b23978e7967e78dc9fff11def18a0b96af2315f4c81bb4891fdf1789"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "DUOL",
+      "company": "Duolingo",
+      "supported_now": true,
+      "missing_inputs_now": [],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026069692/duol-20260930.htm",
+          "accession": "0001628280-26-069692",
+          "filed": "2026-11-04",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "RDDT",
+      "company": "Reddit",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm",
+          "accession": "0001713445-26-000116",
+          "filed": "2026-10-30",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SMCI",
+      "company": "Super Micro Computer",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001375365.json",
+          "sha256": "604122b3f2f7cf4e7d1d0e1a8f0721d2127220622ac965226354af16ac593c7a"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "MRVL",
+      "company": "Marvell Technology",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001835632.json",
+          "sha256": "2190d7525c2749e96636b0f95376c5f7d73d9cb47a7452b3a94f70e156ec1169"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "XOM",
+      "company": "Exxon Mobil",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002115436.json",
+          "sha256": "a645889498c0edf616388372a882fc895a0ed1e6f0e5e3892b99388302552d21"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "COP",
+      "company": "ConocoPhillips",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001163165.json",
+          "sha256": "ff9fe5718463fb92148c7a1c1d8d55118337258af6533d896723d4935729b4c2"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "EOG",
+      "company": "EOG Resources",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000821189.json",
+          "sha256": "fa2e9b2550a36481305e3a627fcc9e4540a9387f8c8e8249ba6e5b0c499d5786"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026011499/vlo-20251231.htm",
+          "accession": "0001628280-26-011499",
+          "filed": "2026-02-25",
+          "form": "10-K"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001035002.json",
+          "sha256": "ba9baadcf9568df5228d6340a7308e4c5d9252d5a98542b2f4302927c97a9e6a"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "FSLR",
+      "company": "First Solar",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "NORMALIZED_CYCLE_NONPOSITIVE"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001274494.json",
+          "sha256": "f06c3b11399700b05057db8a105b3417c4503c2a4db88d2f67e115f7f20d5244"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "NEE",
+      "company": "NextEra Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000753308.json",
+          "sha256": "99e84510f602363147dc6c83321aa76859e185d0807019d1efc9e0da60491954"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "CEG",
+      "company": "Constellation Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json",
+          "sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "OKLO",
+      "company": "Oklo",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001849056.json",
+          "sha256": "270e634dd48a046c74a89303eaef251bbd5874e413135841ec3de6d7298ff598"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SMR",
+      "company": "NuScale Power",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001822966.json",
+          "sha256": "81803bb48ae2a5a4186aa4adfe31461baec7f592dc38f7a27c0606b1d3f2513d"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "UEC",
+      "company": "Uranium Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001334933.json",
+          "sha256": "89c82bce1145762ae139ec6bc8cec63cfb1c3da0bdb1fdf54c11acbb93d61798"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "UUUU",
+      "company": "Energy Fuels",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "NORMALIZED_CYCLE_NONPOSITIVE"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001385849.json",
+          "sha256": "3376d8270e4d4b0cc812254b255b20cb36b52d934ab0c473b008ef420637eb9b"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "LEU",
+      "company": "Centrus Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026070557/leu-20260930.htm",
+          "accession": "0001628280-26-070557",
+          "filed": "2026-11-05",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "WPM",
+      "company": "Wheaton Precious Metals",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001323404.json",
+          "sha256": "e7cb5720769933380e9290105e15c910b5c4e059446147bc79f4f5684c7a2ba3"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "PAAS",
+      "company": "Pan American Silver",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/771992/000077199226000019/paas-20251231.htm",
+          "accession": "0000771992-26-000019",
+          "filed": "2026-02-18",
+          "form": "40-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "supported_now": true,
+      "missing_inputs_now": [],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+          "accession": "0000059478-26-000013",
+          "filed": "2026-02-12",
+          "form": "10-K"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000059478.json",
+          "sha256": "72ec001637e16887021c76251eaf05056bdaaf9a4e68ef62316b9be99861dbdc"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "REGN",
+      "company": "Regeneron",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000034/regn-20260930.htm",
+          "accession": "0000872589-26-000034",
+          "filed": "2026-10-30",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "VRTX",
+      "company": "Vertex Pharmaceuticals",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000875320.json",
+          "sha256": "f945af214c4a738f8210c12cd72e3aeedd9257f77a8e0c060a23262ac1ae4e25"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "AZN",
+      "company": "AstraZeneca",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/901832/000110465926019130/azn-20251231x20f.htm",
+          "accession": "0001104659-26-019130",
+          "filed": "2026-02-24",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "V",
+      "company": "Visa",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000134/v-20260930.htm",
+          "accession": "0001403161-26-000134",
+          "filed": "2026-11-05",
+          "form": "10-K"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "MA",
+      "company": "Mastercard",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000124/ma-20260930.htm",
+          "accession": "0001141391-26-000124",
+          "filed": "2026-10-29",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BRK-B",
+      "company": "Berkshire Hathaway B",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json",
+          "sha256": "ecdd61c2ed055d8c38a9ba64cd3135a27f94580d3a35eba1aad6bd8352f7896c"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BLK",
+      "company": "BlackRock",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002012383.json",
+          "sha256": "433252efcac82512f7ddea1f332d5ad9f8946a6cca98c85c2db11fc6c3caff94"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SCHW",
+      "company": "Charles Schwab",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000316709.json",
+          "sha256": "f448abcbe6604385c5c606f01be554cdd20a3f3fab4e2bc2556882b8361b8f03"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "KKR",
+      "company": "KKR",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001404912.json",
+          "sha256": "c6bd3dd63e650e74207841ab0c9a9f6f2c780e69c943cc5dbb5300e708885a6e"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BX",
+      "company": "Blackstone",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001393818.json",
+          "sha256": "87c3e84295dba99c9f8893e09ebd76248bc15aa9692b23512b856cd07b848106"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "APO",
+      "company": "Apollo Global Management",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001858681.json",
+          "sha256": "e6d998d9788801fc40eae6c336b242cd4cee7cc12f6f026387eed1ab7a7ef325"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "CME",
+      "company": "CME Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000068/cme-20260930.htm",
+          "accession": "0001156375-26-000068",
+          "filed": "2026-10-23",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BA",
+      "company": "Boeing",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "NORMALIZED_CYCLE_NONPOSITIVE"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000012927.json",
+          "sha256": "794d5fb4c83e163b258afbc6828a6d9ce6657f3dae28d5fce0c29623619a957d"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "HON",
+      "company": "Honeywell",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/773840/000077384026000143/hon-20260930.htm",
+          "accession": "0000773840-26-000143",
+          "filed": "2026-10-22",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "VRT",
+      "company": "Vertiv",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json",
+          "sha256": "0577f6f8237c923220fb909046a8354e87c0cecaa57b8a10245d02c31e80a263"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "URI",
+      "company": "United Rentals",
+      "supported_now": true,
+      "missing_inputs_now": [],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
+          "accession": "0001067701-26-000007",
+          "filed": "2026-01-28",
+          "form": "10-K"
+        },
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067701.json",
+          "sha256": "79e2ce1d675e620c256486b2f00c9601f2ea80ee3943dc56cfe5ab6677794ccb"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "NKE",
+      "company": "Nike",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm",
+          "accession": "0000320187-26-000193",
+          "filed": "2026-10-02",
+          "form": "10-Q"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "MQG.AX",
+      "company": "Macquarie Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "QBE.AX",
+      "company": "QBE Insurance",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SUN.AX",
+      "company": "Suncorp Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "IAG.AX",
+      "company": "Insurance Australia Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "WOW.AX",
+      "company": "Woolworths Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "WES.AX",
+      "company": "Wesfarmers",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "COL.AX",
+      "company": "Coles Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "JBH.AX",
+      "company": "JB Hi-Fi",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "REA.AX",
+      "company": "REA Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "XRO.AX",
+      "company": "Xero",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "CAR.AX",
+      "company": "CAR Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "PME.AX",
+      "company": "Pro Medicus",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "COH.AX",
+      "company": "Cochlear",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "RMD.AX",
+      "company": "ResMed",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "GMG.AX",
+      "company": "Goodman Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SCG.AX",
+      "company": "Scentre Group",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "TLS.AX",
+      "company": "Telstra",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "ALL.AX",
+      "company": "Aristocrat Leisure",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "STO.AX",
+      "company": "Santos",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "ORG.AX",
+      "company": "Origin Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "PLS.AX",
+      "company": "Pilbara Minerals",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BIDU",
+      "company": "Baidu",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+          "accession": "0001193125-26-109289",
+          "filed": "2026-03-17",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "JD",
+      "company": "JD.com",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1549802/000119312526157870/d53690d20f.htm",
+          "accession": "0001193125-26-157870",
+          "filed": "2026-04-16",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "PDD",
+      "company": "PDD Holdings",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001737806.json",
+          "sha256": "eb9ff78bd9a69ea0497df69e77b95c900a28c0562cbcd39c08b27a702cf178a8"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "TCEHY",
+      "company": "Tencent Holdings",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SE",
+      "company": "Sea Limited",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1703399/000114036126015366/ef20067274_20f.htm",
+          "accession": "0001140361-26-015366",
+          "filed": "2026-04-17",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "GRAB",
+      "company": "Grab Holdings",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1855612/000185561226000020/ck0001855612-20251231.htm",
+          "accession": "0001855612-26-000020",
+          "filed": "2026-03-06",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "NU",
+      "company": "Nu Holdings",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001691493.json",
+          "sha256": "34ff78d0287b628207dc0708e33f6af7eb0e71688a3a6c80f50844f1b03cef45"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SHEL",
+      "company": "Shell",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001306965.json",
+          "sha256": "983ef410d735b30a1887f61084d4e2c5e67dfc1ec6817c824cabb5b40910de60"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BP",
+      "company": "BP",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/313807/000031380726000006/bp-20251231.htm",
+          "accession": "0000313807-26-000006",
+          "filed": "2026-03-06",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "TTE",
+      "company": "TotalEnergies",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000879764.json",
+          "sha256": "3ca45e4a26d4b49f0bbcbe7bbfa8927e311b6057eb72e7a16660d309c54c5eed"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "EQNR",
+      "company": "Equinor",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1140625/000114062526000013/eqnr-20251231.htm",
+          "accession": "0001140625-26-000013",
+          "filed": "2026-03-19",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "IBN",
+      "company": "ICICI Bank",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "INFY",
+      "company": "Infosys",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1067491/000119312526270520/infy-20260331.htm",
+          "accession": "0001193125-26-270520",
+          "filed": "2026-06-15",
+          "form": "20-F"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "CNQ",
+      "company": "Canadian Natural Resources",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001017413.json",
+          "sha256": "5fb96f54baabe2811f0bd38aed0a08e5f7671e88b3ca82b09fe58e75c23db5ec"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "SU",
+      "company": "Suncor Energy",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000311337.json",
+          "sha256": "9e2752f13e029d56dd0d26a391fd6758fd125d6c070d11ecc9b32644041a0b4f"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "CNI",
+      "company": "Canadian National Railway",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "MIXED_OR_MISSING_STATEMENT_CURRENCY"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000016868.json",
+          "sha256": "6ccf0b631dedd75ff5bad530ce5b0e22ed5e864515e2447709366fcb24b8ec40"
+        }
+      ],
+      "orders_enabled": false
+    },
+    {
+      "ticker": "BN",
+      "company": "Brookfield Corporation",
+      "supported_now": false,
+      "missing_inputs_now": [
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
+      ],
+      "additional_public_sources_retrieved": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001001085.json",
+          "sha256": "7fc2b1cb00ab42b7bc20039a32d63e87317cfae7a314ac24d87fa0fff4ff3f00"
+        }
+      ],
+      "orders_enabled": false
+    }
+  ],
+  "orders_enabled": false
+}

@@ -22884,9 +22884,85 @@
       "observed_utc": "2026-11-24T05:19:48.130324+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
-      "latest_share_count": null,
+      "latest_share_count": {
+        "value": 2556241253.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-10-16",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei",
+        "class_components": {
+          "us-gaap:CommonClassBMember": 341768886.0,
+          "us-gaap:CommonClassAMember": 2214472367.0
+        },
+        "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+        "equality_source_excerpt": "have identical liquidation and dividend rights but different voting rights",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+        "accession": "0001628280-26-066773",
+        "filed": "2026-10-22",
+        "form": "10-Q",
+        "source_document_sha256": "d1cea3e01199faf3b9e5e50dd57822639ddd06a24fb4fc887d58703aa178958f"
+      },
       "annual_facts": {
-        "shares": [],
+        "shares": [
+          {
+            "value": 2530000000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-12-31",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 343000000.0,
+              "us-gaap:CommonClassAMember": 2187000000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "have identical liquidation and dividend rights but different voting rights",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+            "accession": "0001628280-26-066773",
+            "filed": "2026-10-22",
+            "form": "10-Q",
+            "source_document_sha256": "d1cea3e01199faf3b9e5e50dd57822639ddd06a24fb4fc887d58703aa178958f"
+          },
+          {
+            "value": 2556000000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-09-30",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 342000000.0,
+              "us-gaap:CommonClassAMember": 2214000000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "have identical liquidation and dividend rights but different voting rights",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+            "accession": "0001628280-26-066773",
+            "filed": "2026-10-22",
+            "form": "10-Q",
+            "source_document_sha256": "d1cea3e01199faf3b9e5e50dd57822639ddd06a24fb4fc887d58703aa178958f"
+          },
+          {
+            "value": 2556241253.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-10-16",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 341768886.0,
+              "us-gaap:CommonClassAMember": 2214472367.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "have identical liquidation and dividend rights but different voting rights",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+            "accession": "0001628280-26-066773",
+            "filed": "2026-10-22",
+            "form": "10-Q",
+            "source_document_sha256": "d1cea3e01199faf3b9e5e50dd57822639ddd06a24fb4fc887d58703aa178958f"
+          }
+        ],
         "net_income": [
           {
             "value": 3669000000.0,
@@ -23851,7 +23927,7 @@
         ]
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "3d400220207ce28f1300e107239872c625e18e66058e72fff1e377c07eacba85",
+      "evidence_hash_sha256": "54a7e52829a2ff9b4765e76ab5c4048104341b86b8d98821af727697c7b70a5a",
       "raw_document_sha256": "21d64a9b4271bbc6e201c35e8e124375e1bba43b40131bb8333617c845961ceb",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
@@ -32159,7 +32235,25 @@
       "observed_utc": "2026-11-24T05:19:48.130324+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
-      "latest_share_count": null,
+      "latest_share_count": {
+        "value": 361042545.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-10-28",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei",
+        "class_components": {
+          "us-gaap:CommonClassBMember": 23735512.0,
+          "us-gaap:CommonClassAMember": 337307033.0
+        },
+        "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+        "equality_source_excerpt": "The rights of the holders of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026070292/ddog-20260930.htm",
+        "accession": "0001628280-26-070292",
+        "filed": "2026-11-04",
+        "form": "10-Q",
+        "source_document_sha256": "294548e65a9c81f33afa4517f8575de61e66304c17f32775986ef192b1cae586"
+      },
       "annual_facts": {
         "shares": [
           {
@@ -32173,6 +32267,63 @@
             "taxonomy": "us-gaap",
             "tag": "CommonStockSharesOutstanding",
             "concept_preference": 1
+          },
+          {
+            "value": 352525971.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-12-31",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 24408190.0,
+              "us-gaap:CommonClassAMember": 328117781.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of the holders of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026070292/ddog-20260930.htm",
+            "accession": "0001628280-26-070292",
+            "filed": "2026-11-04",
+            "form": "10-Q",
+            "source_document_sha256": "294548e65a9c81f33afa4517f8575de61e66304c17f32775986ef192b1cae586"
+          },
+          {
+            "value": 361023136.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-09-30",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 23813898.0,
+              "us-gaap:CommonClassAMember": 337209238.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of the holders of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026070292/ddog-20260930.htm",
+            "accession": "0001628280-26-070292",
+            "filed": "2026-11-04",
+            "form": "10-Q",
+            "source_document_sha256": "294548e65a9c81f33afa4517f8575de61e66304c17f32775986ef192b1cae586"
+          },
+          {
+            "value": 361042545.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-10-28",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 23735512.0,
+              "us-gaap:CommonClassAMember": 337307033.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of the holders of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026070292/ddog-20260930.htm",
+            "accession": "0001628280-26-070292",
+            "filed": "2026-11-04",
+            "form": "10-Q",
+            "source_document_sha256": "294548e65a9c81f33afa4517f8575de61e66304c17f32775986ef192b1cae586"
           }
         ],
         "net_income": [
@@ -33019,7 +33170,7 @@
         ]
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "5753df0e66d37750c89ac461b75e84b45f512de61d1d0c80d8c65a27274ff01b",
+      "evidence_hash_sha256": "86cf8e90a37ac917bbe3b85c93718969afd596773626bd432cf9fc5478e42a8c",
       "raw_document_sha256": "16ed2fff65f448da294e597272d79a5ad516f389ea211080d3521232c2451d47",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
@@ -33042,9 +33193,85 @@
       "observed_utc": "2026-11-24T05:19:48.130324+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
-      "latest_share_count": null,
+      "latest_share_count": {
+        "value": 358392255.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-10-22",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei",
+        "class_components": {
+          "us-gaap:CommonClassBMember": 33298276.0,
+          "us-gaap:CommonClassAMember": 325093979.0
+        },
+        "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+        "equality_source_excerpt": "The rights of the holders of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
+        "accession": "0001477333-26-000061",
+        "filed": "2026-11-05",
+        "form": "10-Q",
+        "source_document_sha256": "a0c68d657333abc0d00fcb5547721106ba54fce15648bfa6bd89c83aca060860"
+      },
       "annual_facts": {
-        "shares": [],
+        "shares": [
+          {
+            "value": 351887000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-12-31",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 34568000.0,
+              "us-gaap:CommonClassAMember": 317319000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of the holders of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
+            "accession": "0001477333-26-000061",
+            "filed": "2026-11-05",
+            "form": "10-Q",
+            "source_document_sha256": "a0c68d657333abc0d00fcb5547721106ba54fce15648bfa6bd89c83aca060860"
+          },
+          {
+            "value": 358240000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-09-30",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 33298000.0,
+              "us-gaap:CommonClassAMember": 324942000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of the holders of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
+            "accession": "0001477333-26-000061",
+            "filed": "2026-11-05",
+            "form": "10-Q",
+            "source_document_sha256": "a0c68d657333abc0d00fcb5547721106ba54fce15648bfa6bd89c83aca060860"
+          },
+          {
+            "value": 358392255.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-10-22",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 33298276.0,
+              "us-gaap:CommonClassAMember": 325093979.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of the holders of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
+            "accession": "0001477333-26-000061",
+            "filed": "2026-11-05",
+            "form": "10-Q",
+            "source_document_sha256": "a0c68d657333abc0d00fcb5547721106ba54fce15648bfa6bd89c83aca060860"
+          }
+        ],
         "net_income": [
           {
             "value": -10748000.0,
@@ -33889,7 +34116,7 @@
         ]
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "1662f70b6b74b40343583c95ba656ab95618259cc55f57b43aaa4320155edf0e",
+      "evidence_hash_sha256": "f51068b66f73076b8ab850b178ac3470985d038232612e0eafb4a22387cda1ba",
       "raw_document_sha256": "724bc8802e64e8c9b4c9a6137756c963fbbdcef8312fdd43300a264fe13226a0",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
@@ -39594,9 +39821,85 @@
       "observed_utc": "2026-11-24T05:19:48.130324+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
-      "latest_share_count": null,
+      "latest_share_count": {
+        "value": 251852974.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-10-30",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei",
+        "class_components": {
+          "us-gaap:CommonClassBMember": 94133617.0,
+          "us-gaap:CommonClassAMember": 157719357.0
+        },
+        "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+        "equality_source_excerpt": "As the liquidation and dividend rights for both Class A and Class B Common Stock are identical",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000054/team-20260930.htm",
+        "accession": "0001650372-26-000054",
+        "filed": "2026-11-06",
+        "form": "10-Q",
+        "source_document_sha256": "093b06daa2f7c3b9f2d52f7fdd6154b0177f3b233d8dfab4f8de2151e2cd0216"
+      },
       "annual_facts": {
-        "shares": [],
+        "shares": [
+          {
+            "value": 253401877.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-06-30",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 94133617.0,
+              "us-gaap:CommonClassAMember": 159268260.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "As the liquidation and dividend rights for both Class A and Class B Common Stock are identical",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000054/team-20260930.htm",
+            "accession": "0001650372-26-000054",
+            "filed": "2026-11-06",
+            "form": "10-Q",
+            "source_document_sha256": "093b06daa2f7c3b9f2d52f7fdd6154b0177f3b233d8dfab4f8de2151e2cd0216"
+          },
+          {
+            "value": 252156587.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-09-30",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 94133617.0,
+              "us-gaap:CommonClassAMember": 158022970.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "As the liquidation and dividend rights for both Class A and Class B Common Stock are identical",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000054/team-20260930.htm",
+            "accession": "0001650372-26-000054",
+            "filed": "2026-11-06",
+            "form": "10-Q",
+            "source_document_sha256": "093b06daa2f7c3b9f2d52f7fdd6154b0177f3b233d8dfab4f8de2151e2cd0216"
+          },
+          {
+            "value": 251852974.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-10-30",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 94133617.0,
+              "us-gaap:CommonClassAMember": 157719357.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "As the liquidation and dividend rights for both Class A and Class B Common Stock are identical",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000054/team-20260930.htm",
+            "accession": "0001650372-26-000054",
+            "filed": "2026-11-06",
+            "form": "10-Q",
+            "source_document_sha256": "093b06daa2f7c3b9f2d52f7fdd6154b0177f3b233d8dfab4f8de2151e2cd0216"
+          }
+        ],
         "net_income": [
           {
             "value": 4373000.0,
@@ -40537,7 +40840,7 @@
         ]
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "6866b85f80f6d662a8bec36b87ee529b0f851c39501bfbe92c609e33be7d4294",
+      "evidence_hash_sha256": "fe47eda425af41a74ae41f3eb92869ec2d5224b56143519672db8e609667caca",
       "raw_document_sha256": "02022bb9debaf1878e21b670008c3be86dc5fcb4a258b30caff1dfd3ab4a3acb",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
@@ -45725,9 +46028,85 @@
       "observed_utc": "2026-11-24T05:19:48.130324+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
-      "latest_share_count": null,
+      "latest_share_count": {
+        "value": 604522000.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-10-30",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei",
+        "class_components": {
+          "us-gaap:CommonClassBMember": 59976000.0,
+          "us-gaap:CommonClassAMember": 544546000.0
+        },
+        "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+        "equality_source_excerpt": "have identical liquidation and dividend rights but different voting rights",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm",
+        "accession": "0001628280-26-069524",
+        "filed": "2026-11-03",
+        "form": "10-Q",
+        "source_document_sha256": "bb9de72a3a84f8c387b31fa2d44191ca3f85413176f52e86636b4f08e31c771c"
+      },
       "annual_facts": {
-        "shares": [],
+        "shares": [
+          {
+            "value": 602078000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-12-31",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 59993000.0,
+              "us-gaap:CommonClassAMember": 542085000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "have identical liquidation and dividend rights but different voting rights",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm",
+            "accession": "0001628280-26-069524",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "source_document_sha256": "bb9de72a3a84f8c387b31fa2d44191ca3f85413176f52e86636b4f08e31c771c"
+          },
+          {
+            "value": 604517000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-09-30",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 59976000.0,
+              "us-gaap:CommonClassAMember": 544541000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "have identical liquidation and dividend rights but different voting rights",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm",
+            "accession": "0001628280-26-069524",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "source_document_sha256": "bb9de72a3a84f8c387b31fa2d44191ca3f85413176f52e86636b4f08e31c771c"
+          },
+          {
+            "value": 604522000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-10-30",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 59976000.0,
+              "us-gaap:CommonClassAMember": 544546000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "have identical liquidation and dividend rights but different voting rights",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm",
+            "accession": "0001628280-26-069524",
+            "filed": "2026-11-03",
+            "form": "10-Q",
+            "source_document_sha256": "bb9de72a3a84f8c387b31fa2d44191ca3f85413176f52e86636b4f08e31c771c"
+          }
+        ],
         "net_income": [
           {
             "value": -212017000.0,
@@ -46692,7 +47071,7 @@
         ]
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "3b7e96ad50ca05da7ceb1a5f56de84de7d65ec401c113566a70a9354c6678b81",
+      "evidence_hash_sha256": "71880a7185da6d801d1b5110842bb27b76cddba163b4d69cc8c91f515ee6d058",
       "raw_document_sha256": "15a6c5ffd9c9f0629b9a7ce56ce493ce278d542fba1a8dfd894448807f26b238",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
@@ -50221,7 +50600,25 @@
       "observed_utc": "2026-11-24T05:19:48.130324+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
-      "latest_share_count": null,
+      "latest_share_count": {
+        "value": 47178260.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-11-03",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei",
+        "class_components": {
+          "us-gaap:CommonClassBMember": 6399257.0,
+          "us-gaap:CommonClassAMember": 40779003.0
+        },
+        "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+        "equality_source_excerpt": "The rights of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026069692/duol-20260930.htm",
+        "accession": "0001628280-26-069692",
+        "filed": "2026-11-04",
+        "form": "10-Q",
+        "source_document_sha256": "e2a8886bdff6630fec2a2bc7d2e8bdcc1ee80a7d4e9cd768639886d543d4086c"
+      },
       "annual_facts": {
         "shares": [
           {
@@ -50259,6 +50656,63 @@
             "taxonomy": "us-gaap",
             "tag": "CommonStockSharesOutstanding",
             "concept_preference": 1
+          },
+          {
+            "value": 46628000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-12-31",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 6260000.0,
+              "us-gaap:CommonClassAMember": 40368000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026069692/duol-20260930.htm",
+            "accession": "0001628280-26-069692",
+            "filed": "2026-11-04",
+            "form": "10-Q",
+            "source_document_sha256": "e2a8886bdff6630fec2a2bc7d2e8bdcc1ee80a7d4e9cd768639886d543d4086c"
+          },
+          {
+            "value": 47107000.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-09-30",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 6399000.0,
+              "us-gaap:CommonClassAMember": 40708000.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026069692/duol-20260930.htm",
+            "accession": "0001628280-26-069692",
+            "filed": "2026-11-04",
+            "form": "10-Q",
+            "source_document_sha256": "e2a8886bdff6630fec2a2bc7d2e8bdcc1ee80a7d4e9cd768639886d543d4086c"
+          },
+          {
+            "value": 47178260.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-11-03",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 6399257.0,
+              "us-gaap:CommonClassAMember": 40779003.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "The rights of Class A and Class B common stock are identical, except with respect to voting and conversion.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026069692/duol-20260930.htm",
+            "accession": "0001628280-26-069692",
+            "filed": "2026-11-04",
+            "form": "10-Q",
+            "source_document_sha256": "e2a8886bdff6630fec2a2bc7d2e8bdcc1ee80a7d4e9cd768639886d543d4086c"
           }
         ],
         "net_income": [
@@ -50925,7 +51379,7 @@
         ]
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "12d0338e74c8f2c01a36c07c7ddc24cc002e0ad8945ab6b6f8f938cc73c7c168",
+      "evidence_hash_sha256": "3f9a22ced354aea584ffdb4cfbbc0a08432848359b037b2934cbae6d2b43e348",
       "raw_document_sha256": "27acbfc4923a4b7199204256880adfe4ba1de023fa64f90460dd247f294303d1",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
@@ -50948,9 +51402,85 @@
       "observed_utc": "2026-11-24T05:19:48.130324+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
-      "latest_share_count": null,
+      "latest_share_count": {
+        "value": 193093731.0,
+        "unit": "shares",
+        "start": null,
+        "end": "2026-10-28",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "taxonomy": "dei",
+        "class_components": {
+          "us-gaap:CommonClassBMember": 46151604.0,
+          "us-gaap:CommonClassAMember": 146942127.0
+        },
+        "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+        "equality_source_excerpt": "Holders of our Class A and Class B common stock have identical rights except with respect to voting, conversion, and transfer rights, and therefore share equally in our net income or losses.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm",
+        "accession": "0001713445-26-000116",
+        "filed": "2026-10-30",
+        "form": "10-Q",
+        "source_document_sha256": "89d5828d12cccb4693f15d9dec77f54183ca23d0d1277ad434b5d729bc845072"
+      },
       "annual_facts": {
-        "shares": [],
+        "shares": [
+          {
+            "value": 190892108.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2025-12-31",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 51673735.0,
+              "us-gaap:CommonClassAMember": 139218373.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "Holders of our Class A and Class B common stock have identical rights except with respect to voting, conversion, and transfer rights, and therefore share equally in our net income or losses.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm",
+            "accession": "0001713445-26-000116",
+            "filed": "2026-10-30",
+            "form": "10-Q",
+            "source_document_sha256": "89d5828d12cccb4693f15d9dec77f54183ca23d0d1277ad434b5d729bc845072"
+          },
+          {
+            "value": 193116334.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-09-30",
+            "tag": "CommonStockSharesOutstanding",
+            "taxonomy": "us-gaap",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 46151604.0,
+              "us-gaap:CommonClassAMember": 146964730.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "Holders of our Class A and Class B common stock have identical rights except with respect to voting, conversion, and transfer rights, and therefore share equally in our net income or losses.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm",
+            "accession": "0001713445-26-000116",
+            "filed": "2026-10-30",
+            "form": "10-Q",
+            "source_document_sha256": "89d5828d12cccb4693f15d9dec77f54183ca23d0d1277ad434b5d729bc845072"
+          },
+          {
+            "value": 193093731.0,
+            "unit": "shares",
+            "start": null,
+            "end": "2026-10-28",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "taxonomy": "dei",
+            "class_components": {
+              "us-gaap:CommonClassBMember": 46151604.0,
+              "us-gaap:CommonClassAMember": 146942127.0
+            },
+            "share_basis": "TWO_REVIEWED_ECONOMICALLY_EQUAL_COMMON_CLASSES",
+            "equality_source_excerpt": "Holders of our Class A and Class B common stock have identical rights except with respect to voting, conversion, and transfer rights, and therefore share equally in our net income or losses.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm",
+            "accession": "0001713445-26-000116",
+            "filed": "2026-10-30",
+            "form": "10-Q",
+            "source_document_sha256": "89d5828d12cccb4693f15d9dec77f54183ca23d0d1277ad434b5d729bc845072"
+          }
+        ],
         "net_income": [
           {
             "value": -158550000.0,
@@ -51495,7 +52025,7 @@
         ]
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "d4656cff285264b3c3f04a24311d7accaba8c1c27d14dd56b1e2c3c050333fb2",
+      "evidence_hash_sha256": "67d89c890321f573ffa39a2579ee9d8d7c32263bf5cce45e2c8384c23b01dd88",
       "raw_document_sha256": "b959b24b74178a9a8ee99357a2f64baaa1fcce942a30bb9312af6d4cef5aaaa0",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
@@ -85041,7 +85571,7 @@
       "issuer_name": "ELI LILLY AND COMPANY",
       "cik": 59478,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000059478.json",
-      "observed_utc": "2026-11-24T05:19:48.130324+00:00",
+      "observed_utc": "2026-11-24T08:57:31.387338+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "latest_share_count": {
@@ -85567,8 +86097,298 @@
             "concept_preference": 1
           }
         ],
-        "operating_cash_flow": [],
-        "capex": [],
+        "operating_cash_flow": [
+          {
+            "value": 2964600000.0,
+            "unit": "USD",
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-20",
+            "accession": "0000059478-18-000089",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "concept_preference": 0
+          },
+          {
+            "value": 4851000000.0,
+            "unit": "USD",
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-19",
+            "accession": "0000059478-19-000082",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "concept_preference": 0
+          },
+          {
+            "value": 5615600000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-19",
+            "accession": "0000059478-20-000057",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "concept_preference": 0
+          },
+          {
+            "value": 5524500000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-17",
+            "accession": "0000059478-21-000083",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "concept_preference": 0
+          },
+          {
+            "value": 4836600000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-23",
+            "accession": "0000059478-22-000068",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "concept_preference": 0
+          },
+          {
+            "value": 6499600000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-22",
+            "accession": "0000059478-23-000082",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "concept_preference": 0
+          },
+          {
+            "value": 7365900000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-21",
+            "accession": "0000059478-24-000065",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "concept_preference": 0
+          },
+          {
+            "value": 7585700000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-19",
+            "accession": "0000059478-25-000067",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "concept_preference": 0
+          },
+          {
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "accession": "0000059478-26-000013",
+            "filed": "2026-02-12",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+            "source_document_sha256": "6fdd8995f9a0d72925b41a00edf65ef245615a5e6430b406dd08985f3e19491c",
+            "value": 4240000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "accession": "0000059478-26-000013",
+            "filed": "2026-02-12",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+            "source_document_sha256": "6fdd8995f9a0d72925b41a00edf65ef245615a5e6430b406dd08985f3e19491c",
+            "value": 8818000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "accession": "0000059478-26-000013",
+            "filed": "2026-02-12",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+            "source_document_sha256": "6fdd8995f9a0d72925b41a00edf65ef245615a5e6430b406dd08985f3e19491c",
+            "value": 16813000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          }
+        ],
+        "capex": [
+          {
+            "value": 1066200000.0,
+            "unit": "USD",
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-20",
+            "accession": "0000059478-18-000089",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+            "concept_preference": 6
+          },
+          {
+            "value": 1037000000.0,
+            "unit": "USD",
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-19",
+            "accession": "0000059478-19-000082",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+            "concept_preference": 6
+          },
+          {
+            "value": 1076800000.0,
+            "unit": "USD",
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-19",
+            "accession": "0000059478-20-000057",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+            "concept_preference": 6
+          },
+          {
+            "value": 1210600000.0,
+            "unit": "USD",
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-17",
+            "accession": "0000059478-21-000083",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+            "concept_preference": 6
+          },
+          {
+            "value": 1033900000.0,
+            "unit": "USD",
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-23",
+            "accession": "0000059478-22-000068",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+            "concept_preference": 6
+          },
+          {
+            "value": 1387900000.0,
+            "unit": "USD",
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-22",
+            "accession": "0000059478-23-000082",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+            "concept_preference": 6
+          },
+          {
+            "value": 1309800000.0,
+            "unit": "USD",
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-21",
+            "accession": "0000059478-24-000065",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+            "concept_preference": 6
+          },
+          {
+            "value": 1854300000.0,
+            "unit": "USD",
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-19",
+            "accession": "0000059478-25-000067",
+            "form": "10-K",
+            "taxonomy": "us-gaap",
+            "tag": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+            "concept_preference": 6
+          },
+          {
+            "unit": "USD",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "accession": "0000059478-26-000013",
+            "filed": "2026-02-12",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+            "source_document_sha256": "6fdd8995f9a0d72925b41a00edf65ef245615a5e6430b406dd08985f3e19491c",
+            "value": 3448000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment": 3448000000.0
+            },
+            "source_row_labels": [
+              "Purchases of property and equipment"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
+          },
+          {
+            "unit": "USD",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "accession": "0000059478-26-000013",
+            "filed": "2026-02-12",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+            "source_document_sha256": "6fdd8995f9a0d72925b41a00edf65ef245615a5e6430b406dd08985f3e19491c",
+            "value": 5058000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment": 5058000000.0
+            },
+            "source_row_labels": [
+              "Purchases of property and equipment"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
+          },
+          {
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "accession": "0000059478-26-000013",
+            "filed": "2026-02-12",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+            "source_document_sha256": "6fdd8995f9a0d72925b41a00edf65ef245615a5e6430b406dd08985f3e19491c",
+            "value": 7841000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment": 7841000000.0
+            },
+            "source_row_labels": [
+              "Purchases of property and equipment"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
+          }
+        ],
         "equity": [
           {
             "value": 14571300000.0,
@@ -85852,15 +86672,15 @@
         "liabilities": []
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "c1da84caaccabab71ba380ab97d98b4f9b31b70abc42e690f14a602d6c1beacd",
+      "evidence_hash_sha256": "db9c45ad3087230b44725b50ce26be52783e8f13a1e5807ae896dadf0e085b38",
       "raw_document_sha256": "2dfbc70b5d61fedbd8d0539abf16f2312f51d1d8ebe3275b5028c5a6831837ef",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
         "shares": 20,
         "net_income": 11,
         "revenue": 11,
-        "operating_cash_flow": 0,
-        "capex": 0,
+        "operating_cash_flow": 11,
+        "capex": 11,
         "equity": 11,
         "assets": 12,
         "liabilities": 0
@@ -138029,28 +138849,43 @@
             "concept_preference": 0
           },
           {
-            "value": 4704000000.0,
             "unit": "USD",
             "start": "2023-01-01",
             "end": "2023-12-31",
-            "filed": "2025-01-29",
-            "accession": "0001067701-25-000008",
+            "accession": "0001067701-26-000007",
+            "filed": "2026-01-28",
             "form": "10-K",
-            "taxonomy": "us-gaap",
-            "tag": "NetCashProvidedByUsedInOperatingActivities",
-            "concept_preference": 0
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
+            "source_document_sha256": "158237ecca2eabe3bcd4705ad7fedaa276025657190ed27c091d7c219298a5f3",
+            "value": 4704000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
           },
           {
-            "value": 4546000000.0,
             "unit": "USD",
             "start": "2024-01-01",
             "end": "2024-12-31",
-            "filed": "2025-01-29",
-            "accession": "0001067701-25-000008",
+            "accession": "0001067701-26-000007",
+            "filed": "2026-01-28",
             "form": "10-K",
-            "taxonomy": "us-gaap",
-            "tag": "NetCashProvidedByUsedInOperatingActivities",
-            "concept_preference": 0
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
+            "source_document_sha256": "158237ecca2eabe3bcd4705ad7fedaa276025657190ed27c091d7c219298a5f3",
+            "value": 4546000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
+          },
+          {
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "accession": "0001067701-26-000007",
+            "filed": "2026-01-28",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
+            "source_document_sha256": "158237ecca2eabe3bcd4705ad7fedaa276025657190ed27c091d7c219298a5f3",
+            "value": 5190000000.0,
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "us-gaap"
           }
         ],
         "capex": [
@@ -138151,28 +138986,67 @@
             "concept_preference": 1
           },
           {
-            "value": 3864000000.0,
             "unit": "USD",
             "start": "2023-01-01",
             "end": "2023-12-31",
-            "filed": "2025-01-29",
-            "accession": "0001067701-25-000008",
+            "accession": "0001067701-26-000007",
+            "filed": "2026-01-28",
             "form": "10-K",
-            "taxonomy": "us-gaap",
-            "tag": "PaymentsToAcquireProductiveAssets",
-            "concept_preference": 1
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
+            "source_document_sha256": "158237ecca2eabe3bcd4705ad7fedaa276025657190ed27c091d7c219298a5f3",
+            "value": 4070000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "uri:PaymentsToAcquirePropertySubjectToOrAvailableForOperatingLease": 3714000000.0,
+              "uri:PaymentsToAcquirePropertyPlantAndEquipmentAndIntangibleAssets": 356000000.0
+            },
+            "source_row_labels": [
+              "Payments for purchases of rental equipment",
+              "Payments for purchases of non-rental equipment and intangible assets"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
           },
           {
-            "value": 4130000000.0,
             "unit": "USD",
             "start": "2024-01-01",
             "end": "2024-12-31",
-            "filed": "2025-01-29",
-            "accession": "0001067701-25-000008",
+            "accession": "0001067701-26-000007",
+            "filed": "2026-01-28",
             "form": "10-K",
-            "taxonomy": "us-gaap",
-            "tag": "PaymentsToAcquireProductiveAssets",
-            "concept_preference": 1
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
+            "source_document_sha256": "158237ecca2eabe3bcd4705ad7fedaa276025657190ed27c091d7c219298a5f3",
+            "value": 4127000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "uri:PaymentsToAcquirePropertySubjectToOrAvailableForOperatingLease": 3753000000.0,
+              "uri:PaymentsToAcquirePropertyPlantAndEquipmentAndIntangibleAssets": 374000000.0
+            },
+            "source_row_labels": [
+              "Payments for purchases of rental equipment",
+              "Payments for purchases of non-rental equipment and intangible assets"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
+          },
+          {
+            "unit": "USD",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "accession": "0001067701-26-000007",
+            "filed": "2026-01-28",
+            "form": "10-K",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
+            "source_document_sha256": "158237ecca2eabe3bcd4705ad7fedaa276025657190ed27c091d7c219298a5f3",
+            "value": 4528000000.0,
+            "tag": "REVIEWED_COMPLETE_PPE_CASH_OUTFLOW_COMPONENTS",
+            "component_values": {
+              "uri:PaymentsToAcquirePropertySubjectToOrAvailableForOperatingLease": 4149000000.0,
+              "uri:PaymentsToAcquirePropertyPlantAndEquipmentAndIntangibleAssets": 379000000.0
+            },
+            "source_row_labels": [
+              "Payments for purchases of rental equipment",
+              "Payments for purchases of non-rental equipment and intangible assets"
+            ],
+            "taxonomy": "issuer-reviewed-inline-xbrl"
           }
         ],
         "equity": [
@@ -138603,7 +139477,7 @@
         ]
       },
       "financial_currency": "USD",
-      "evidence_hash_sha256": "06415d9f72d6582b55b45c2e4d5a8b9d8719a2fbb104a23724448fbfdc315b52",
+      "evidence_hash_sha256": "ea8c1c6dfc637f511f8e371652a9013ee1dce3f0e5401ef8605b5b0bdd669239",
       "raw_document_sha256": "a561e5824d547c0154634c39e8a78b91dcd2dbb1d6ffd8f66bec23a24284c15c",
       "extraction_version": "9.1-primary-fact-recovery-1",
       "coverage": {
