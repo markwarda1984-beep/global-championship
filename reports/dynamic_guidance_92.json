@@ -1,0 +1,108 @@
+{
+  "schema_version": "9.2-reviewed-management-guidance-1",
+  "companies": {
+    "HPE": {
+      "issuer": "Hewlett Packard Enterprise Company",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000097/ex-991x11232026x8k.htm",
+      "source_document_sha256": "0af20af0b49b37054a1fa92f93678502ed2a465b8c38047f0786608626462c90",
+      "accession_or_document_id": "0af20af0b49b37054a1fa92f",
+      "as_of": "2026-10-31",
+      "published_at": "2026-11-23",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "source_location": "Fiscal 2027 Full Year Outlook",
+      "facts": {
+        "ticker": "HPE",
+        "currency": "USD",
+        "target_period_end": "2027-10-31",
+        "metric": "GAAP_DILUTED_EPS",
+        "low": 3.68,
+        "high": 3.98,
+        "revenue_low": 59400000000,
+        "revenue_high": 63100000000,
+        "non_gaap_eps_low": 5.05,
+        "non_gaap_eps_high": 5.35,
+        "non_gaap_eps_aftertax_exclusions": 1.37,
+        "reported_fcf_lower_bound": 5500000000,
+        "reported_fcf_upper_bound": null,
+        "fcf_basis": "ISSUER_NON_GAAP_NOT_FULLY_RECONCILABLE_FORWARD",
+        "per_share_basis": "LISTED_DILUTED_COMMON_SHARE"
+      },
+      "facts_sha256": "4e63f36c3f9cad3f52d7233134e1c5f944d10c9bafad760096848cc4015cebd4",
+      "orders_enabled": false,
+      "acquisition_regime_change": true,
+      "acquisition_note": "FY26 includes the first full fiscal year after Juniper acquisition; reported growth is not verified organic growth.",
+      "preferred_conversion_note": "Use direct diluted GAAP EPS. Preferred dividends and if-converted numerator differ from common basic numerator.",
+      "guidance_revision": {
+        "previous_source_url": "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-reports-fiscal-2026-third-quarter-results.html",
+        "previous_source_document_sha256": "f140fcf2d0831e211fea05a247107493a8f5e6e1a2c99c4a75e2d2d3531c5ad6",
+        "previous_published_at": "2026-09-02",
+        "same_target_period": "2027-10-31",
+        "previous_revenue_growth_pct": [
+          13,
+          17
+        ],
+        "current_revenue_growth_pct": [
+          27,
+          35
+        ],
+        "previous_fcf_floor": 5000000000,
+        "current_fcf_floor": 5500000000,
+        "fcf_floor_change_pct": 10.0,
+        "previous_eps_basis": "NON_GAAP_GROWTH_PERCENTAGE_16_TO_20_NOT_DIRECT_GAAP_EPS",
+        "gaap_eps_revision_pct": null,
+        "comparison_status": "REVENUE_GROWTH_FRAMEWORK_AND_FCF_FLOOR_COMPARABLE_EPS_BASIS_DIFFERS"
+      }
+    },
+    "SKS.AX": {
+      "issuer": "SKS Technologies Group Limited",
+      "source_url": "https://bulletin.webull.com/qbd/announcement/20261023/499500766/991a8976dcfb948255a0c990b03a6398.pdf",
+      "source_document_sha256": "5183b89ba7525a39e7db34089770def71c8ee1555d2d1aaab9caf0128db5d93e",
+      "accession_or_document_id": "5183b89ba7525a39e7db3408",
+      "as_of": "2026-10-23",
+      "published_at": "2026-10-23",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "source_location": "Page 1, FY27 guidance reaffirmation",
+      "facts": {
+        "ticker": "SKS.AX",
+        "currency": "AUD",
+        "target_period_end": "2027-06-30",
+        "metric": "PRETAX_PROFIT_POINT",
+        "point": 60000000,
+        "revenue_point": 500000000,
+        "management_guided_eps": null
+      },
+      "facts_sha256": "0658d11134e9a118e0e18d6b82fcd0c8bea8d1a26b3c8076502adee501df00ef",
+      "orders_enabled": false,
+      "acquisition_regime_change": true,
+      "acquisition_note": "Delta Elcom acquisition included cash consideration and new shares; forecast earnings are not organic-only."
+    },
+    "DUG.AX": {
+      "issuer": "DUG Technology Ltd",
+      "source_url": "https://dug.com/wp-content/uploads/2026/11/261119_DUG_AGM_2026_Presentation_ASX.pdf",
+      "source_document_sha256": "604466978c8852e5c9cdacb1b337876c23869343b47710d99704bdfe108e79f1",
+      "accession_or_document_id": "604466978c8852e5c9cdacb1",
+      "as_of": "2026-10-31",
+      "published_at": "2026-11-19",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "source_location": "AGM presentation PDF pages 20\u201322; four months to 31 October, not a quarter or annual forecast",
+      "facts": {
+        "ticker": "DUG.AX",
+        "currency": "USD",
+        "target_period_end": "2027-06-30",
+        "metric": "UNAUDITED_FOUR_MONTH_TRADING_UPDATE_NOT_EPS_GUIDANCE",
+        "revenue_ytd": 34400000,
+        "prior_revenue_ytd": 23100000,
+        "ebitda_ytd": 8800000,
+        "normalized_ebitda_ytd": 11300000,
+        "normalized_cloud_cost_exclusion": 2500000,
+        "contracted_revenue": 103400000,
+        "contracted_revenue_as_of": "2026-11-12",
+        "management_guided_eps": null,
+        "management_guided_net_income": null
+      },
+      "facts_sha256": "31176ab4650710433a60500c0ef974044e34f83fcca71f250476c0085171546c",
+      "orders_enabled": false
+    }
+  },
+  "orders_enabled": false
+}
