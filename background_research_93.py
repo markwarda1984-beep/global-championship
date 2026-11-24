@@ -221,7 +221,7 @@ def run(root,batch_size=20,max_minutes=8,now=None,fetcher_factory=Fetcher,assess
   'batch_limit':batch_size,'selected_count':len(selected),'processed_count':len(results),'http_requests':fetcher.requests,'successful_source_retrievals':fetcher.retrieved,
   'original_200_supported_before':sum(r['scenarios'] is not None for r in rows if r['universe']=='ORIGINAL_200'),'original_200_supported_after':supported,
   'original_200_still_unsupported':200-supported,'newly_supported_this_batch':newly,'results':results,
-  'source_health':'NO_CASES_DUE' if not results else 'PARTIAL_OR_UNAVAILABLE' if any(r['collection_status'] in ('PROVIDER_COOLDOWN','SOURCE_FETCH_OR_PARSE_FAILED') for r in results) else 'AVAILABLE_FOR_PROCESSED_BATCH',
+  'source_health':'NO_CASES_DUE' if not results else 'PARTIAL_OR_UNAVAILABLE' if any(r.get('document_errors') or r['collection_status'] in ('PROVIDER_COOLDOWN','SOURCE_FETCH_OR_PARSE_FAILED') for r in results) else 'AVAILABLE_FOR_PROCESSED_BATCH',
   'limitations':['Existing reviewed parsers can promote supported cases; new sector economics and unverified issuer tables require review.','Source collection is not a supported valuation. No completion date or valuation for all companies is guaranteed.'],
   'orders_enabled':False,'orders_generated':0}
  write(reports/'background_research_latest_93.json',summary);write(reports/'background_review_queue_93.json',{'schema_version':SCHEMA,'companies':queue,'orders_enabled':False,'orders_generated':0})
