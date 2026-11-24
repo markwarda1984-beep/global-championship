@@ -210,6 +210,13 @@ def build(root, mode='scan', now=None):
     from background_evidence_93 import merge_evidence, merge_adapters
     background = read(root/'reports/background_evidence_93.json', {}) or {}
     cache = merge_evidence(cache,background)
+    from reviewed_shares_94 import apply_overlay
+    share_report=read(root/'reports/reviewed_share_counts_94.json',{}) or {}
+    share_policies=read(root/'settings/reviewed_share_classes_94.json',{}) or {}
+    cache={t:apply_overlay(c,share_report,share_policies,now) for t,c in cache.items()}
+    from reviewed_cashflow_92 import apply_reviewed_overlay
+    cash_report=read(root/'reports/reviewed_cashflow_92.json',{}) or {}
+    cache={t:apply_reviewed_overlay(c,cash_report) for t,c in cache.items()}
     reviewed = read(root/'reports/issuer_primary_records_91.json', {}) or {}
     if reviewed.get('orders_enabled') is True: raise ValueError('Unsafe issuer PDF evidence')
     cache.update({t:r for t,r in reviewed.get('companies',{}).items() if verified_pdf_record(r,now)})

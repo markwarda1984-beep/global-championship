@@ -5,6 +5,7 @@ from datetime import datetime,timezone
 from bs4 import BeautifulSoup
 from evidence_recovery_91 import write,digest
 RULES={
+ 'COP':{'components':['cop:PaymentToAcquireProductiveAssetsAndInvestments'],'labels':['Capital expenditures and investments']},
  'LLY':{'components':['us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment'],'labels':['Purchases of property and equipment']},
  'URI':{'components':['uri:PaymentsToAcquirePropertySubjectToOrAvailableForOperatingLease','uri:PaymentsToAcquirePropertyPlantAndEquipmentAndIntangibleAssets'],'labels':['Payments for purchases of rental equipment','Payments for purchases of non-rental equipment and intangible assets']}}
 

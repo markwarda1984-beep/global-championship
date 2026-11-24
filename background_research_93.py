@@ -56,10 +56,10 @@ class Fetcher:
    return body.decode('utf-8',errors='replace'),hashlib.sha256(body).hexdigest()
   finally:response.close()
 
-def choose_batch(rows,state,now,limit):
+def choose_batch(rows,state,now,limit,reviewed_tickers=()):
  due=[]
  for row in rows:
-  if row.get('scenarios') is not None and row['ticker'] not in ('HPE','SKS.AX','DUG.AX'):continue
+  if row.get('scenarios') is not None and row['ticker'] not in ('HPE','SKS.AX','DUG.AX') and row['ticker'] not in reviewed_tickers:continue
   saved=state.get('companies',{}).get(row['ticker'],{});when=stamp(saved.get('next_attempt_utc'))
   if when and when>now:continue
   # Every never-attempted company gets a turn before completed attempts are repeated.
@@ -82,7 +82,7 @@ def note_candidates(html):
   if len(out)>=24:break
  return out
 
-def collect_sec(ticker,company,fetcher,delta,notes,now,overlay):
+def collect_sec(ticker,company,fetcher,delta,notes,now,overlay,share_report=None,share_policies=None):
  cik=company['cik'];url=f'https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json'
  text,sha=fetcher.get(url);raw=json.loads(text);rec=recover_series(ticker,raw,now,cik);rec=apply_reviewed_overlay(rec,overlay)
  sources=[{'url':url,'sha256':sha}];parsed=0;doc_errors=[]
@@ -95,6 +95,14 @@ def collect_sec(ticker,company,fetcher,delta,notes,now,overlay):
  meta_text,meta_sha=fetcher.get(f'https://data.sec.gov/submissions/CIK{cik:010d}.json');meta=json.loads(meta_text)
  if int(meta.get('cik',0))!=int(cik):raise ValueError('Submission issuer identity mismatch')
  recent,chosen=filing_selection(meta)
+ from reviewed_shares_94 import apply_overlay as apply_shares,reviewed_counts,policy_valid
+ policy=(share_policies or {}).get('companies',{}).get(ticker);rights_html=None
+ rec=apply_shares(rec,share_report or {},share_policies or {},now)
+ if policy and policy_valid(policy,now):
+  rights_html,rights_sha=fetcher.get(policy['rights_source_url'])
+  sources.append({'url':policy['rights_source_url'],'sha256':rights_sha})
+  older=[i for i,f in enumerate(recent['form']) if f in ('10-K','10-Q') and 150<=(now.date()-datetime.fromisoformat(recent['filingDate'][i]).date()).days<=500]
+  if older:chosen=list(dict.fromkeys(chosen+[older[0]]))
  for idx in chosen:
   acc=recent['accessionNumber'][idx];document=recent['primaryDocument'][idx]
   if '..' in document or document.startswith('/'):continue
@@ -108,6 +116,8 @@ def collect_sec(ticker,company,fetcher,delta,notes,now,overlay):
   notes.setdefault(ticker,{'documents':[]})['documents'].append({**sources[-1],'unreviewed_candidates':note_candidates(html)})
   notes[ticker]['documents']=notes[ticker]['documents'][-4:]
   shares=cover_shares(html)
+  if policy and rights_html:
+   shares=reviewed_counts(html,ticker,policy,metadata,now,rights_html) or shares
   if ticker in REVIEWED_EQUAL_CLASSES:
    reviewed=equal_class_counts(html,REVIEWED_EQUAL_CLASSES[ticker],now)
    if reviewed:shares=reviewed
@@ -186,7 +196,8 @@ def run(root,batch_size=20,max_minutes=8,now=None,fetcher_factory=Fetcher,assess
  assert sum(r['universe']=='ORIGINAL_200' for r in rows)==200,'Complete fixed-200 report required'
  unresolved=[r for r in rows if r.get('scenarios') is None]
  state.setdefault('baseline_original_unsupported',[r['ticker'] for r in unresolved if r['universe']=='ORIGINAL_200'])
- selected=choose_batch(rows,state,now,batch_size)
+ reviewed_tickers=set(read(root/'settings/reviewed_share_classes_94.json',{}).get('companies',{}))|set(RULES)
+ selected=choose_batch(rows,state,now,batch_size,reviewed_tickers)
  path=reports/'background_evidence_93.json';delta=read(path,{'schema_version':'9.3-background-primary-evidence-1','companies':{},'adapters':{},'orders_enabled':False,'orders_generated':0})
  # Validate committed inputs before making any requests.
  merge_evidence({},delta)
@@ -200,7 +211,7 @@ def run(root,batch_size=20,max_minutes=8,now=None,fetcher_factory=Fetcher,assess
   try:
    company=companies.get(ticker)
    if company and company.get('cik'):
-    result.update(collect_sec(ticker,company,fetcher,delta,notes['companies'],now,overlay));result['research_status']='PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING'
+    result.update(collect_sec(ticker,company,fetcher,delta,notes['companies'],now,overlay,read(reports/'reviewed_share_counts_94.json',{}),read(root/'settings/reviewed_share_classes_94.json',{})));result['research_status']='PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING'
    elif ticker.endswith('.AX'):result.update(collect_asx(ticker,fetcher,now))
    else:result.update(research_status='ISSUER_IDENTITY_REVIEW_REQUIRED',sources=[],parsed_observations=0)
   except ProviderBlocked as exc:result.update(research_status='PROVIDER_COOLDOWN',reason=str(exc),sources=[])
