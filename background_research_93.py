@@ -59,7 +59,7 @@ class Fetcher:
 def choose_batch(rows,state,now,limit):
  due=[]
  for row in rows:
-  if row.get('scenarios') is not None:continue
+  if row.get('scenarios') is not None and row['ticker'] not in ('HPE','SKS.AX','DUG.AX'):continue
   saved=state.get('companies',{}).get(row['ticker'],{});when=stamp(saved.get('next_attempt_utc'))
   if when and when>now:continue
   # Every never-attempted company gets a turn before completed attempts are repeated.
@@ -88,6 +88,10 @@ def collect_sec(ticker,company,fetcher,delta,notes,now,overlay):
  sources=[{'url':url,'sha256':sha}];parsed=0;doc_errors=[]
  # Save a successfully fetched facts record even if a later source fails.
  delta['companies'][ticker]=rec
+ # Feed the same retrieved issuer JSON into the quarterly/forward engine. No
+ # additional HTTP request and no automatic approval of guidance candidates.
+ from collect_dynamic_92 import extract as extract_periods
+ delta.setdefault('dynamic_periods',{})[ticker]=extract_periods(raw,ticker,now,url,now.isoformat())
  meta_text,meta_sha=fetcher.get(f'https://data.sec.gov/submissions/CIK{cik:010d}.json');meta=json.loads(meta_text)
  if int(meta.get('cik',0))!=int(cik):raise ValueError('Submission issuer identity mismatch')
  recent,chosen=filing_selection(meta)
@@ -128,6 +132,26 @@ def collect_sec(ticker,company,fetcher,delta,notes,now,overlay):
    previous=delta['adapters'].get(ticker,{}).get('share_basis',{})
    if basis['as_of']>=previous.get('as_of',''):delta['adapters'].setdefault(ticker,{})['share_basis']=basis
  rec['evidence_hash_sha256']=digest(rec['annual_facts']);delta['companies'][ticker]=rec
+ # 8-K exhibits often precede tagged quarterly facts. Follow only explicit
+ # public earnings-exhibit links; unknown issuers remain in the review queue.
+ from guidance_dynamic_92 import earnings_exhibit_links,extract_hpe
+ releases=[i for i,f in enumerate(recent['form']) if f=='8-K' and '2.02' in (recent.get('items',['']*len(recent['form']))[i] or '')]
+ if releases:
+  i=releases[0];acc=recent['accessionNumber'][i];document=recent['primaryDocument'][i]
+  if '..' not in document and not document.startswith('/'):
+   filing=f'https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace("-","")}/{quote(document,safe="/")}'
+   try:
+    html,_=fetcher.get(filing)
+    for url in earnings_exhibit_links(html,filing):
+     release,release_sha=fetcher.get(url)
+     metadata={'url':url,'sha256':release_sha,'accession':acc,'filed':recent['filingDate'][i]}
+     guidance=extract_hpe(release,metadata,rec,now) if ticker=='HPE' else None
+     if guidance:delta.setdefault('guidance',{})[ticker]=guidance
+     notes.setdefault(ticker,{'documents':[]})['documents'].append({**metadata,'form':'8-K_EX99.1','reviewed_guidance_extracted':bool(guidance),'unreviewed_candidates':note_candidates(release)})
+     notes[ticker]['documents']=notes[ticker]['documents'][-4:]
+     sources.append(metadata)
+   except (requests.RequestException,ValueError,ProviderBlocked,TimeoutError) as exc:
+    doc_errors.append(type(exc).__name__)
  return {'sources':sources,'parsed_observations':parsed,'document_errors':doc_errors,'unreviewed_documents':max(0,len(sources)-1)}
 
 def collect_asx(ticker,fetcher,now):
