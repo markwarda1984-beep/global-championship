@@ -223,11 +223,13 @@ def run(root,batch_size=20,max_minutes=8,now=None,fetcher_factory=Fetcher,assess
    if fx.get('from')==company.get('financial_currency') and fx.get('to')==quote_currency and date and 0<=(now-date).days<=7 and isinstance(fx.get('rate'),(float,int)) and fx['rate']>0:
     delta['adapters'].setdefault(ticker,{})['fx']=copy.deepcopy(fx)
  write(path,delta);after=assessment(root,now);mapping={r['ticker']:r for r in after['companies']};newly=[]
+ already_supported={r['ticker'] for r in rows if r.get('scenarios') is not None}
  for result in results:
   current=mapping[result['ticker']];supported=current['scenarios'] is not None
   result.update(supported_after=supported,missing_inputs_after=current['missing_inputs'])
   if supported:
-   newly.append(result['ticker']);result['research_status']='SUPPORTED_BY_EXISTING_REVIEWED_MODEL'
+   if result['ticker'] not in already_supported:newly.append(result['ticker'])
+   result['research_status']='SUPPORTED_BY_EXISTING_REVIEWED_MODEL'
   elif result['research_status']=='PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING':
    result['research_status']='REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH'
   state['companies'][result['ticker']].update(result)
