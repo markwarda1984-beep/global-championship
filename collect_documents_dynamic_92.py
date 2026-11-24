@@ -92,7 +92,7 @@ def collect_one(root, ticker, max_documents=1, now=None, session=None):
         write(path,state)
     return state
 
-def audit(root, now=None):
+def audit(root, now=None, mode='canonical'):
     now=now or datetime.now(timezone.utc);baseline=read(root/'settings/dynamic_baseline_92.json',{})
     old=read(root/'reports/coverage_recovery_91.json',{})
     missing_statements=set(baseline.get('missing_current_statement_tickers',[]))
@@ -114,7 +114,11 @@ def audit(root, now=None):
                      'remaining_model_inputs':row['missing_inputs'],'financial_model_supported':False,
                      'note':'Source recovery is not completed financial reconciliation. See dynamic valuation report for current model eligibility.',
                      'orders_enabled':False}
-    current=read(root/'reports/valuation_90_latest.json',{})
+    if mode=='canonical':
+        from background_research_93 import assess_without_overwriting_reports
+        current=assess_without_overwriting_reports(root,now)
+    else:
+        current=read(root/('reports/valuation_90_weekly.json' if mode=='weekly' else 'reports/valuation_90_latest.json'),{})
     mapping={r['ticker']:r for r in current.get('companies',[])}
     for ticker,row in out.items():
         row['financial_model_supported']=bool(mapping.get(ticker,{}).get('scenarios'))
@@ -127,12 +131,13 @@ def audit(root, now=None):
             'three_statement_sections_detected_unreviewed':sum(r['all_three_statement_sections_detected'] for r in out.values()),
             'remaining_model_count':sum(not r['financial_model_supported'] for r in out.values()),
             'companies':out,'orders_enabled':False,'orders_generated':0}
-    write(root/'reports/dynamic_source_recovery_92.json',result)
+    filename='dynamic_source_recovery_92.json' if mode=='canonical' else f'dynamic_source_recovery_92_{mode}.json'
+    write(root/'reports'/filename,result)
     return result
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,default=Path(__file__).resolve().parent)
-    p.add_argument('--tickers',nargs='*');p.add_argument('--max-documents',type=int,default=6);a=p.parse_args()
+    p.add_argument('--tickers',nargs='*');p.add_argument('--max-documents',type=int,default=6);p.add_argument('--audit-suffix',choices=['canonical','scan','weekly'],default='canonical');a=p.parse_args()
     if not 0<=a.max_documents<=100:raise ValueError('Document bound must be 0–100')
     tickers=a.tickers or list(read(a.root/'settings/dynamic_sources_92.json',{}).get('issuer_indices',{}))
     state=read(a.root/'reports/dynamic_documents_92.json',{})
@@ -142,4 +147,4 @@ if __name__=='__main__':
         return max(times) if times else ''
     if not a.tickers:tickers.sort(key=lambda t:(bool(last_attempt(t)),t not in priority,last_attempt(t),t))
     for ticker in tickers[:a.max_documents]:collect_one(a.root,ticker,max_documents=1)
-    print(json.dumps({k:v for k,v in audit(a.root).items() if k!='companies'},indent=2))
+    print(json.dumps({k:v for k,v in audit(a.root,mode=a.audit_suffix).items() if k!='companies'},indent=2))

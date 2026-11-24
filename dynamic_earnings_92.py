@@ -243,7 +243,8 @@ def build(root, mode='scan', now=None):
     for ticker,g in (read(root/'reports/background_evidence_93.json',{}) or {}).get('guidance',{}).items():
         if evidence_record(g,now,400) and g.get('published_at','')>guidance.get(ticker,{}).get('published_at',''):
             guidance[ticker]=g
-    source_audit=(read(root/'reports/dynamic_source_recovery_92.json',{}) or {}).get('companies',{})
+    audit_name='dynamic_source_recovery_92_weekly.json' if mode=='weekly' else 'dynamic_source_recovery_92_scan.json'
+    source_audit=(read(root/'reports'/audit_name,None) or read(root/'reports/dynamic_source_recovery_92.json',{}) or {}).get('companies',{})
     records=load_periods(root,now);rows=[]
     primary=(read(root/'reports/primary_evidence_91.json',{}) or {}).get('companies',{})
     raw_quotes={r['ticker']:r for r in (read(root/'data/latest.json',{}) or {}).get('stocks',[])}
