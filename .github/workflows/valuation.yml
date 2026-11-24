@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
     paths:
+      - 'championship_90.py'
+      - 'settings/primary_adapters_90.json'
       - 'valuation_engine.py'
       - 'intelligence_layer_51.py'
       - 'evidence_upgrade_54.py'
@@ -68,8 +70,13 @@ jobs:
           assert all(x.get('model_watch_entry') is None and x.get('model_deep_entry') is None for x in v['stocks'])
           print('Weekly legacy watch entry calculation fully retired; 6.0 evidence gate governs all active entries')
           PY
+      - name: Assess all companies with Championship 9.0
+        run: python championship_90.py --mode weekly
+      - name: Verify Championship 9.0 coverage and no orders
+        run: python verify_90.py --mode weekly
       - name: Publish weekly valuation report to repository
         run: |
+          git add reports/valuation_90_weekly.json reports/coverage_90_weekly.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/valuation_60_weekly.json reports/valuation_60_weekly_summary.json
@@ -102,6 +109,7 @@ jobs:
         with:
           name: championship-valuation-4-${{ github.run_number }}
           path: |
+            reports/*90*.json
             data/valuation_200.csv
             data/valuation_200.json
             data/valuation_200.html

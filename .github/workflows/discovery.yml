@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
     paths:
+      - 'championship_90.py'
+      - 'settings/primary_adapters_90.json'
       - 'discovery_engine.py'
       - 'intelligence_layer_51.py'
       - 'evidence_upgrade_54.py'
@@ -143,6 +145,7 @@ jobs:
         with:
           name: championship-5-discovery-${{ github.run_number }}
           path: |
+            reports/*90*.json
             reports/discovery_latest.json
             reports/discovery_watchlist.json
             reports/research_queue_latest.json

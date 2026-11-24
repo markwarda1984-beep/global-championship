@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
     paths:
+      - 'championship_90.py'
+      - 'settings/primary_adapters_90.json'
       - 'scan.py'
       - 'opportunity_engine.py'
       - 'report_bridge.py'
@@ -130,8 +132,15 @@ jobs:
           assert {'illustrative_5_8','unconfirmed_6_01'} <= {x['id'] for x in o['offset_rate_scenarios']}
           assert o['orders_enabled'] is False
           PY
+      - name: Refresh priority daily bars and session lows
+        run: python championship_90.py --mode quotes
+      - name: Assess all companies with Championship 9.0
+        run: python championship_90.py --mode scan
+      - name: Verify Championship 9.0 coverage and no orders
+        run: python verify_90.py --mode scan
       - name: Publish machine-readable report to repository
         run: |
+          git add reports/valuation_90_latest.json reports/coverage_90_latest.json reports/priority_quotes_90.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/valuation_60_latest.json reports/valuation_60_summary.json
@@ -166,6 +175,7 @@ jobs:
         with:
           name: championship-200-dashboard-${{ github.run_number }}
           path: |
+            reports/*90*.json
             data/
             reports/valuation_60_latest.json
             reports/valuation_60_summary.json
