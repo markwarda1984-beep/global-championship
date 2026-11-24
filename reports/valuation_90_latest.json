@@ -1,6 +1,6 @@
 {
   "schema_version": "9.0-research-1",
-  "published_at_utc": "2026-11-24T09:28:40.187353+00:00",
+  "published_at_utc": "2026-11-24T09:30:04.522598+00:00",
   "mode": "scan",
   "original_watchlist_count": 200,
   "reported_count": 205,
@@ -36,13 +36,13 @@
         "ordinary_shares_per_receipt": 8.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001577552.json",
         "primary_evidence_hash": "c016ca5a58a30d1a97d209fa3d5823abf200035c13521def555f469c2ed71253",
-        "fx_rate": 0.15007352828979492,
+        "fx_rate": 0.15006902813911438,
         "fx_source": {
           "from": "CNY",
           "to": "USD",
-          "rate": 0.15007352828979492,
+          "rate": 0.15006902813911438,
           "as_of": "2026-11-24",
-          "observed_utc": "2026-11-24T09:04:05.594347+00:00",
+          "observed_utc": "2026-11-24T09:25:09.978583+00:00",
           "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -1310,7 +1310,24 @@
         "primary_evidence_hash": "b8f3d3e0f80ea57e60a154097c8909a8cf36d7596773308c2719cfbf7e6c2b79",
         "fx_rate": 1.0,
         "fx_source": null,
-        "share_basis_source": null,
+        "share_basis_source": {
+          "issuer": "Coinbase Global, Inc.",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
+          "as_of": "2026-09-30",
+          "published_at": "2026-10-29",
+          "accession_or_document_id": "0001679788-26-000122",
+          "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+          "facts": {
+            "ticker": "COIN",
+            "quote_currency": "USD",
+            "ordinary_shares_per_receipt": 1.0,
+            "ordinary_shares_outstanding": 264756000.0
+          },
+          "facts_sha256": "e1c2c23d666955759b5f0cfcbde2fc84ffbee9b5edbb16a34c059be003aa938f",
+          "source_document_sha256": "21e862fd1379625d43a865960c5c4845ba83245d452963422f07322fb04b8ad0",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
+          "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Class A common stock, $0.00001 par value per share COIN The Nasdaq Stock Market LLC Indicate by chec"
+        },
         "share_count_basis": "ORDINARY_SHARES"
       },
       "missing_inputs": [
@@ -2900,10 +2917,27 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001535527.json",
-        "primary_evidence_hash": "b8658fab5e87685d3fe6c3e4ace135750ad138c9a72fa85a921cf92308988044",
+        "primary_evidence_hash": "9ec866665627ac9a7c8c70a4d23d7abe2d587b53576ceabcc74f1e14acb6d6d9",
         "fx_rate": 1.0,
         "fx_source": null,
-        "share_basis_source": null,
+        "share_basis_source": {
+          "issuer": "CROWDSTRIKE HOLDINGS, INC.",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm",
+          "as_of": "2026-11-19",
+          "published_at": "2026-11-23",
+          "accession_or_document_id": "0001535527-26-000038",
+          "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+          "facts": {
+            "ticker": "CRWD",
+            "quote_currency": "USD",
+            "ordinary_shares_per_receipt": 1.0,
+            "ordinary_shares_outstanding": 1030596521.0
+          },
+          "facts_sha256": "09a5d35d1d9e6b19e463b16a24c2f9199a5718abcb256814f19e1e9a1d24c2f0",
+          "source_document_sha256": "e264751f6f0c54a5d32a81ca50e5c1f82025ca3d1ed765a3e2490c45bd8ca769",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
+          "source_excerpt": "Title of each class Trading symbol(s) Name of each exchange on which registered Class A common stock, par value $0.0005 per share CRWD The Nasdaq Stock Market LLC (Nasdaq Global Se"
+        },
         "share_count_basis": "ORDINARY_SHARES"
       },
       "missing_inputs": [
@@ -4874,10 +4908,27 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001163165.json",
-        "primary_evidence_hash": "d78aa3409a8dc13038eba5429b5fa72e87ff11c559e90e075e7334b334bd7c14",
+        "primary_evidence_hash": "02987e878f53bdd4da9ea18cfde3a2e58cf3a1ce082f7a7dc2191dbc8473d0e2",
         "fx_rate": 1.0,
         "fx_source": null,
-        "share_basis_source": null,
+        "share_basis_source": {
+          "issuer": "ConocoPhillips",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000045/cop-20260930.htm",
+          "as_of": "2026-09-30",
+          "published_at": "2026-11-05",
+          "accession_or_document_id": "0001163165-26-000045",
+          "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+          "facts": {
+            "ticker": "COP",
+            "quote_currency": "USD",
+            "ordinary_shares_per_receipt": 1.0,
+            "ordinary_shares_outstanding": 1182335057.0
+          },
+          "facts_sha256": "f772a46c14a4d0866cf276f1b02f6cdc71c0b4f2f500d2267a5bc47e1c89e990",
+          "source_document_sha256": "e14875d43a6b3cfe74ab2700ec69b30456306df45d02347041576a4448325fcf",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
+          "source_excerpt": "Title of each class Trading symbols Name of each exchange on which registered Common Stock, $.01 Par Value COP New York Stock Exchange 7% Debentures due 2029 CUSIP\u2014718507BK1 New Yo"
+        },
         "share_count_basis": "ORDINARY_SHARES"
       },
       "missing_inputs": [
@@ -5012,10 +5063,27 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000821189.json",
-        "primary_evidence_hash": "efee56e60e93ef2895a1d64c9f8d01db94366cdb6e4a27c5f34668f21b2c5c87",
+        "primary_evidence_hash": "59797506cf814a11f9a0f018981bfee84deb33fd4e6d1b3171aa0992776e4174",
         "fx_rate": 1.0,
         "fx_source": null,
-        "share_basis_source": null,
+        "share_basis_source": {
+          "issuer": "EOG RESOURCES, INC.",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000227/eog-20260930.htm",
+          "as_of": "2026-10-29",
+          "published_at": "2026-11-05",
+          "accession_or_document_id": "0000821189-26-000227",
+          "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+          "facts": {
+            "ticker": "EOG",
+            "quote_currency": "USD",
+            "ordinary_shares_per_receipt": 1.0,
+            "ordinary_shares_outstanding": 518484224.0
+          },
+          "facts_sha256": "c8b8e26ca591121da4be477777e0a2b8d400aa2e4937b21d635ccb5430d3e88b",
+          "source_document_sha256": "c91012851fce88d47dc983880b1275d554fcd2d664bb3d1620dd460eec9007e7",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
+          "source_excerpt": "Title of each class Trading symbol(s) Name of each exchange on which registered Common Stock, par value $0.01 per share EOG New York Stock Exchange Indicate by check mark whether t"
+        },
         "share_count_basis": "ORDINARY_SHARES"
       },
       "missing_inputs": [
@@ -5373,10 +5441,27 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001274494.json",
-        "primary_evidence_hash": "6cccaf4f67a892c647745f3dfc97c2dcd2367130bbddd736f4f8f6abad91a700",
+        "primary_evidence_hash": "9bc69b50cbbff209c21b9cfee7c6873811a8f4e327d779d17f44939f20c3e581",
         "fx_rate": 1.0,
         "fx_source": null,
-        "share_basis_source": null,
+        "share_basis_source": {
+          "issuer": "First Solar, Inc.",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000212/fslr-20260930.htm",
+          "as_of": "2026-10-23",
+          "published_at": "2026-10-29",
+          "accession_or_document_id": "0001274494-26-000212",
+          "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+          "facts": {
+            "ticker": "FSLR",
+            "quote_currency": "USD",
+            "ordinary_shares_per_receipt": 1.0,
+            "ordinary_shares_outstanding": 107481151.0
+          },
+          "facts_sha256": "9edc364e0d8a04016baef2b0a512a089d1cda6387717f118ff8bf31431126b41",
+          "source_document_sha256": "a668812fd1301cb5152cea86b985f151260339405f0015c469615cc34847e754",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
+          "source_excerpt": "Title of each class Trading symbol(s) Name of each exchange on which registered Common stock, $0.001 par value FSLR The NASDAQ Stock Market LLC Indicate by check mark whether the r"
+        },
         "share_count_basis": "ORDINARY_SHARES"
       },
       "missing_inputs": [
@@ -5479,10 +5564,27 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json",
-        "primary_evidence_hash": "3afcf6b18e0ab25420944c5f262796cea72e34250d793498a44bd5336b20ea3a",
+        "primary_evidence_hash": "7818a072b394e8c95b78def7ebe0c32b63f97c0e9a5cdf55746ab011a11eaf60",
         "fx_rate": 1.0,
         "fx_source": null,
-        "share_basis_source": null,
+        "share_basis_source": {
+          "issuer": "CONSTELLATION ENERGY CORPORATION",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm",
+          "as_of": "2026-10-31",
+          "published_at": "2026-11-09",
+          "accession_or_document_id": "0001868275-26-000119",
+          "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+          "facts": {
+            "ticker": "CEG",
+            "quote_currency": "USD",
+            "ordinary_shares_per_receipt": 1.0,
+            "ordinary_shares_outstanding": 351608504.0
+          },
+          "facts_sha256": "41a6d95b92c41de66e2913cb0003b95613212cac7f612c2902276565f0f4d564",
+          "source_document_sha256": "07a4cdc113cbb659b6135da9ebb4b04b0d4eb963f8c9a5ac24d1be6e24965666",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
+          "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered CONSTELLATION ENERGY CORPORATION: Common Stock, without par value CEG The Nasdaq Stock Market LLC In"
+        },
         "share_count_basis": "ORDINARY_SHARES"
       },
       "missing_inputs": [
@@ -5490,10 +5592,10 @@
       ],
       "assumptions": {
         "historical_filing_share_count_check": {
-          "current_shares": 354307379.0,
-          "prior_shares": 362000000.0,
-          "prior_as_of": "2026-03-31",
-          "observed_share_basis_change_pct": -2.125
+          "current_shares": 351608504.0,
+          "prior_shares": 355000000.0,
+          "prior_as_of": "2026-06-30",
+          "observed_share_basis_change_pct": -0.955
         }
       },
       "legacy_validation_status": "NOT VALIDATED",
@@ -12649,7 +12751,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001140625.json",
-        "primary_evidence_hash": "c39228cef03ffb007fed92d3635025cbd48c495bb70b090c975d541c5d7d2566",
+        "primary_evidence_hash": "4b9aeeff271b909e611b4b6d74853dcd4bf911421ac93d953b9b2fbdf50b98cd",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -12667,7 +12769,7 @@
           },
           "facts_sha256": "bfcbae4ce4793e88c66c0a4dcb828968757641fc35811c241016a7790173be29",
           "source_document_sha256": "7b3756edcf7963bcbeed1597bf61651c6f3ba734f39bf80ba1c910844c5212f5",
-          "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "ed on the New York Stock Exchange are evidenced by American Depositary Receipts (ADR), and each ADS represents one ordinary share. B. Plan of Distribution Not applicable. C. Marke"
         },
         "share_count_basis": "ORDINARY_SHARES"
@@ -13337,7 +13439,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001017413.json",
-        "primary_evidence_hash": "13cc958395031db5f737441e5f35b40187965c37dc00caf567d5930b2c00a3f6",
+        "primary_evidence_hash": "95b8fbf7ad669c73c80d10c748e25d4dd9ca0ad927caea3a57f592b57ba5a05b",
         "fx_rate": 0.6969515085220337,
         "fx_source": {
           "from": "CAD",
@@ -13364,7 +13466,7 @@
           },
           "facts_sha256": "b0200abc57665a66cb31c964aa1f740486d61bde6017d12622828d3d7c1a9c7f",
           "source_document_sha256": "4af3d803ac123acd99186dfa8a7505c920806ea16797240bb70f30c7fa6823ac",
-          "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of Each Class: Trading Symbol(s): Name of each exchange on which registered: Common Shares, no par value CNQ New York Stock Exchange "
         },
         "share_count_basis": "ORDINARY_SHARES"
@@ -13617,7 +13719,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": null,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000016868.json",
-        "primary_evidence_hash": "3892701e9c1c6d9dc7a0842614cc2cd0a02ac33d64eed947a306cf2c173a3b09"
+        "primary_evidence_hash": "08e2d3bd30deeeb30eea1510becad96ed73cd6f89dfee146324283a7e0e000d6"
       },
       "missing_inputs": [
         "MIXED_OR_MISSING_STATEMENT_CURRENCY"
@@ -14072,8 +14174,8 @@
     "comparison_basis": "FROZEN_PRE_RECOVERY_BASELINE",
     "baseline_source_commit": "c15eb76c6752b36fd2b7b5e3d976150dca2024b3",
     "same_run_legacy_valued_count": 71,
-    "legacy_source_published_at": "2026-11-24T09:28:38.503370+00:00",
-    "legacy_recomputed_at": "2026-11-24T09:28:40.187353+00:00"
+    "legacy_source_published_at": "2026-11-24T09:30:03.159831+00:00",
+    "legacy_recomputed_at": "2026-11-24T09:30:04.522598+00:00"
   },
   "ranking_assumptions": {
     "minimum_base_upside_pct": 25,
