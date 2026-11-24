@@ -1,6 +1,6 @@
 {
   "schema_version": "9.1-full-200-evidence-audit-1",
-  "published_at_utc": "2026-11-24T08:46:48.965261+00:00",
+  "published_at_utc": "2026-11-24T09:03:41.593713+00:00",
   "companies": [
     {
       "ticker": "BABA",
@@ -37,11 +37,9 @@
     {
       "ticker": "BHP.AX",
       "company": "BHP",
-      "assessment_status": "ISSUER_TABLES_NOT_YET_RECONCILED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "DATED_DIRECTIONAL_FX_REQUIRED"
-      ],
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000811809.json",
       "structured_filing_attempt": {
         "ticker": "BHP.AX",
@@ -67,7 +65,7 @@
         }
       ],
       "share_basis_document_attempt": null,
-      "remaining_work": "Extract and verify the linked issuer annual-report financial tables, currency scale and listed-share basis. Filing index alone is not a valuation.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -628,10 +626,10 @@
     {
       "ticker": "RIO.AX",
       "company": "Rio Tinto",
-      "assessment_status": "PRIMARY_HISTORY_OR_CURRENCY_GAP",
+      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
       "has_supported_valuation": false,
       "missing_inputs": [
-        "DATED_DIRECTIONAL_FX_REQUIRED"
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
       ],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000863064.json",
       "structured_filing_attempt": {
@@ -647,7 +645,7 @@
       },
       "annual_report_sources": [],
       "share_basis_document_attempt": null,
-      "remaining_work": "Resolve the listed missing fields from dated primary statements; preserve nulls until supported.",
+      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
       "orders_enabled": false
     },
     {
@@ -773,7 +771,7 @@
       "assessment_status": "PRIMARY_HISTORY_OR_CURRENCY_GAP",
       "has_supported_valuation": false,
       "missing_inputs": [
-        "DATED_DIRECTIONAL_FX_REQUIRED"
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
       ],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000844551.json",
       "structured_filing_attempt": {
@@ -944,11 +942,9 @@
     {
       "ticker": "META",
       "company": "Meta Platforms",
-      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
-      ],
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
       "structured_filing_attempt": {
         "ticker": "META",
@@ -970,7 +966,7 @@
         "shares_recovered": 0,
         "ratio": 1.0
       },
-      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -1141,11 +1137,9 @@
     {
       "ticker": "DDOG",
       "company": "Datadog",
-      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
-      ],
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001561550.json",
       "structured_filing_attempt": {
         "ticker": "DDOG",
@@ -1167,16 +1161,16 @@
         "shares_recovered": 0,
         "ratio": 1.0
       },
-      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
       "ticker": "NET",
       "company": "Cloudflare",
-      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
+      "assessment_status": "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED",
       "has_supported_valuation": false,
       "missing_inputs": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477333.json",
       "structured_filing_attempt": {
@@ -1199,7 +1193,7 @@
         "shares_recovered": 0,
         "ratio": 1.0
       },
-      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
+      "remaining_work": "Obtain relevant project, AFFO/NAV, capital, or loss-making-business economics; do not substitute generic multiples.",
       "orders_enabled": false
     },
     {
@@ -1335,10 +1329,10 @@
     {
       "ticker": "TEAM",
       "company": "Atlassian",
-      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
+      "assessment_status": "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED",
       "has_supported_valuation": false,
       "missing_inputs": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001650372.json",
       "structured_filing_attempt": {
@@ -1361,7 +1355,7 @@
         "shares_recovered": 0,
         "ratio": 1.0
       },
-      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
+      "remaining_work": "Obtain relevant project, AFFO/NAV, capital, or loss-making-business economics; do not substitute generic multiples.",
       "orders_enabled": false
     },
     {
@@ -1500,10 +1494,10 @@
     {
       "ticker": "XYZ",
       "company": "Block",
-      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
+      "assessment_status": "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED",
       "has_supported_valuation": false,
       "missing_inputs": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001512673.json",
       "structured_filing_attempt": {
@@ -1526,7 +1520,7 @@
         "shares_recovered": 0,
         "ratio": 1.0
       },
-      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
+      "remaining_work": "Obtain relevant project, AFFO/NAV, capital, or loss-making-business economics; do not substitute generic multiples.",
       "orders_enabled": false
     },
     {
@@ -1650,11 +1644,9 @@
     {
       "ticker": "DUOL",
       "company": "Duolingo",
-      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
-      ],
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001562088.json",
       "structured_filing_attempt": {
         "ticker": "DUOL",
@@ -1676,16 +1668,16 @@
         "shares_recovered": 0,
         "ratio": 1.0
       },
-      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
       "ticker": "RDDT",
       "company": "Reddit",
-      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
+      "assessment_status": "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED",
       "has_supported_valuation": false,
       "missing_inputs": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
       ],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001713445.json",
       "structured_filing_attempt": {
@@ -1708,7 +1700,7 @@
         "shares_recovered": 0,
         "ratio": 1.0
       },
-      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
+      "remaining_work": "Obtain relevant project, AFFO/NAV, capital, or loss-making-business economics; do not substitute generic multiples.",
       "orders_enabled": false
     },
     {
@@ -2506,11 +2498,9 @@
     {
       "ticker": "LLY",
       "company": "Eli Lilly",
-      "assessment_status": "PRIMARY_HISTORY_OR_CURRENCY_GAP",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
-      ],
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000059478.json",
       "structured_filing_attempt": {
         "ticker": "LLY",
@@ -2525,7 +2515,7 @@
       },
       "annual_report_sources": [],
       "share_basis_document_attempt": null,
-      "remaining_work": "Resolve the listed missing fields from dated primary statements; preserve nulls until supported.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -3702,11 +3692,9 @@
     {
       "ticker": "URI",
       "company": "United Rentals",
-      "assessment_status": "PRIMARY_HISTORY_OR_CURRENCY_GAP",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
-      ],
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067701.json",
       "structured_filing_attempt": {
         "ticker": "URI",
@@ -3721,7 +3709,7 @@
       },
       "annual_report_sources": [],
       "share_basis_document_attempt": null,
-      "remaining_work": "Resolve the listed missing fields from dated primary statements; preserve nulls until supported.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -5394,16 +5382,16 @@
   ],
   "assessed_count": 200,
   "supported_before": 41,
-  "supported_after": 83,
-  "newly_supported_count": 42,
-  "still_unsupported_count": 117,
+  "supported_after": 89,
+  "newly_supported_count": 48,
+  "still_unsupported_count": 111,
   "status_counts": {
     "CORPORATE_ACTION_RECONCILIATION_REQUIRED": 6,
-    "ISSUER_TABLES_NOT_YET_RECONCILED": 33,
-    "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL": 83,
-    "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED": 31,
-    "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED": 25,
-    "PRIMARY_HISTORY_OR_CURRENCY_GAP": 22
+    "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL": 89,
+    "ISSUER_TABLES_NOT_YET_RECONCILED": 32,
+    "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED": 35,
+    "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED": 19,
+    "PRIMARY_HISTORY_OR_CURRENCY_GAP": 19
   },
   "orders_enabled": false,
   "orders_generated": 0
