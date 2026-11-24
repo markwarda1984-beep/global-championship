@@ -67,6 +67,18 @@ class BackgroundSourceTests(unittest.TestCase):
    with self.assertRaises(ValueError):f.get('https://www.asx.com.au/report')
   self.assertFalse(session.get.call_args.kwargs['allow_redirects'])
 class WorkerCheckpointTests(unittest.TestCase):
+ def test_supported_priority_refresh_is_not_a_new_valuation(self):
+  class Fake:
+   def __init__(self,state,now,deadline):self.deadline=deadline;self.requests=0;self.retrieved=0
+  with tempfile.TemporaryDirectory() as folder:
+   root=Path(folder);rows=[row('HPE',False)]+[row(f'T{i}',False) for i in range(199)]
+   write(root/'reports/valuation_90_latest.json',{'companies':rows})
+   write(root/'reports/primary_evidence_91.json',{'companies':{'HPE':{'cik':1645590}}})
+   with patch('background_research_93.collect_sec',return_value={'sources':[],'parsed_observations':0}):
+    out=run(root,1,1,NOW,Fake,lambda root,now:{'companies':rows})
+   self.assertEqual(out['results'][0]['ticker'],'HPE')
+   self.assertEqual(out['newly_supported_this_batch'],[])
+   self.assertEqual(out['original_200_supported_before'],out['original_200_supported_after'])
  def fixture(self,root):
   rows=[row('AAA.AX'),row('BBB.AX')]+[row(f'T{i}',False) for i in range(198)]
   write(root/'reports/valuation_90_latest.json',{'companies':rows})
