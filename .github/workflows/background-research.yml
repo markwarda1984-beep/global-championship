@@ -14,6 +14,9 @@ on:
     paths:
       - 'background_research_93.py'
       - 'background_evidence_93.py'
+      - 'collect_dynamic_92.py'
+      - 'collect_documents_dynamic_92.py'
+      - 'settings/dynamic_sources_92.json'
       - 'tests/test_background_research_93.py'
       - '.github/workflows/background-research.yml'
 permissions:
@@ -41,6 +44,10 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Research the next bounded batch and persist progress
         run: python background_research_93.py --batch-size "$BATCH_SIZE" --max-minutes 8
+      - name: Refresh quarterly periods across supported and outstanding companies
+        run: python collect_dynamic_92.py --limit 20
+      - name: Recover the next registered issuer financial documents
+        run: python collect_documents_dynamic_92.py --max-documents 2
       - name: Verify complete progress and zero orders
         run: |
           python - <<'PY'
@@ -62,6 +69,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/dynamic_sec_periods_92.json.gz reports/dynamic_documents_92.json reports/dynamic_source_recovery_92.json
+          git add reports/dynamic_manual_periods_92.json reports/dynamic_release_periods_92.json reports/dynamic_historical_records_92.json
           git add reports/background_evidence_93.json reports/background_research_state_93.json reports/background_source_notes_93.json
           git add reports/background_research_latest_93.json reports/background_research_latest_93.md reports/background_review_queue_93.json reports/background_research_history_93.json
           if ! git diff --cached --quiet; then
