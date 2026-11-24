@@ -101,6 +101,11 @@ def run(root,raw_dir,contact):
     r.raise_for_status();html_path.write_text(r.text);time.sleep(.2)
    html=html_path.read_text();sha=hashlib.sha256(html.encode()).hexdigest()
    shares=cover_shares(html)
+   from share_classes_92 import REVIEWED_EQUAL_CLASSES,equal_class_counts
+   if ticker in REVIEWED_EQUAL_CLASSES:
+    reconciled=equal_class_counts(html,REVIEWED_EQUAL_CLASSES[ticker],now)
+    if reconciled:shares=reconciled
+   for s in shares:s['source_document_sha256']=sha
    for s in shares:s.update(filed=date,form=recent['form'][chosen],accession=acc,source_url=url)
    if shares:
     prior=company['annual_facts']['shares'];periods={r['end']:r for r in prior}
