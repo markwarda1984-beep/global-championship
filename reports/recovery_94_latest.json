@@ -1,0 +1,48 @@
+{
+  "source_valuation_report": "valuation_90_latest.json",
+  "original_200_count": 200,
+  "original_supported_baseline": 89,
+  "pre_repair_supported_count": 92,
+  "supported_after": 98,
+  "net_gain_this_repair": 6,
+  "net_gain_from_original_baseline": 9,
+  "previously_supported_lost": [],
+  "newly_supported_this_repair": [
+    "CME",
+    "COP",
+    "LEU",
+    "MA",
+    "NKE",
+    "REGN"
+  ],
+  "still_unsupported": 102,
+  "remaining_blockers": {
+    "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW": 6,
+    "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED": 31,
+    "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 9,
+    "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED": 18,
+    "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 9,
+    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 12,
+    "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL": 15,
+    "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 3,
+    "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED": 10,
+    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 12,
+    "NORMALIZED_CYCLE_NONPOSITIVE": 3,
+    "MIXED_OR_MISSING_STATEMENT_CURRENCY": 1
+  },
+  "financial_checks": {
+    "reviewed_share_denominators": {
+      "NKE": 1485308829,
+      "REGN": 103447859,
+      "MA": 871176114,
+      "CME": 357933884,
+      "LEU": 20618450
+    },
+    "COP_2025_OCF_USD": 19796000000,
+    "COP_2025_capital_expenditure_and_investments_USD": 12553000000,
+    "COP_2025_conservative_cash_flow_USD": 7243000000
+  },
+  "scope": "Historical supported models; these additions are not validated forward buy opportunities. Missing specialist inputs remain null.",
+  "orders_enabled": false,
+  "orders_generated": 0
+}
