@@ -1,6 +1,6 @@
 {
   "schema_version": "5.2-discovery-radar-1",
-  "published_at_utc": "2026-11-24T09:03:37.398815+00:00",
+  "published_at_utc": "2026-11-24T09:21:35.877858+00:00",
   "source_coverage": "CORE_SOURCES_AVAILABLE_WITH_FALLBACK",
   "total_discovered_ever": 4,
   "monitor_count": 0,
@@ -31,16 +31,14 @@
       "gdelt_consecutive_429": 2
     },
     "google_news": {
-      "status": "unavailable",
-      "http_status": 503,
-      "reason": "google_news_rss: http_503",
-      "checked_theme": 4
-    },
-    "bing_news": {
       "status": "ok",
       "checked_theme": 4,
-      "article_count": 0,
-      "coverage": "Bing RSS headline sample only; links are not primary filings"
+      "article_count": 21,
+      "coverage": "RSS headline sample only; source articles not independently verified"
+    },
+    "bing_news": {
+      "status": "not_needed",
+      "reason": "GDELT/Google news source was usable"
     },
     "new_lead_coverage": {
       "corroborated_sec_and_news": 0,
