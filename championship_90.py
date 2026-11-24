@@ -227,7 +227,7 @@ def build(root, mode='scan', now=None):
         adapter = adapters.get(t, {})
         if (src.get('status') == 'OFFICIAL_SEC_COMPANYFACTS_RETRIEVED' or verified_pdf_record(src,now)) and recent(src.get('observed_utc'), now, cfg['sec_refresh_days']+4):
             normalized, audit = reconcile(src, q.get('currency'), adapter.get('share_basis'), adapter.get('fx'), now,
-                                          t in ADR_OR_OVERSEAS_SHARE_BASIS or name['category'] == 'International')
+                                          t in ADR_OR_OVERSEAS_SHARE_BASIS or name['category'] == 'International' or t == 'RIO.AX')
             if normalized:
                 vals, assumptions, flags = scenario_values(sector, combine_periods(normalized), normalized, cfg, now)
             else: flags += audit['flags']

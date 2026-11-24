@@ -33,9 +33,12 @@ def write(path, data):
  path.parent.mkdir(parents=True,exist_ok=True)
  path.write_text(json.dumps(data,indent=2,allow_nan=False)+'\n')
 
-def candidates(raw, kind, now):
+# Reviewed against Lilly's annual cash-flow row 'Purchases of property and equipment'.
+ISSUER_EXTRA_CONCEPTS={'LLY':{'capex':[('us-gaap','PaymentsToAcquireOtherPropertyPlantAndEquipment')]}}
+
+def candidates(raw, kind, now, extra=()):
  out=[];annual=kind in ('net_income','revenue','operating_cash_flow','capex')
- for preference,(taxonomy,tag) in enumerate(CONCEPTS[kind]):
+ for preference,(taxonomy,tag) in enumerate(CONCEPTS[kind]+list(extra)):
   units=raw.get('facts',{}).get(taxonomy,{}).get(tag,{}).get('units',{})
   for unit,records in units.items():
    if (kind=='shares' and unit!='shares') or (kind!='shares' and not re.fullmatch('[A-Z]{3}',unit)):continue
@@ -67,7 +70,7 @@ def select(records, currency=None):
 
 def recover_series(ticker,raw,now,cik):
  if int(raw.get('cik',0))!=int(cik) or not raw.get('entityName'):raise ValueError('CIK/issuer mismatch')
- all_records={k:candidates(raw,k,now) for k in CONCEPTS}
+ all_records={k:candidates(raw,k,now,ISSUER_EXTRA_CONCEPTS.get(ticker,{}).get(k,())) for k in CONCEPTS}
  income=select(all_records['net_income'])
  newest=max(income,key=lambda r:r['end']) if income else None
  currency=newest['unit'] if newest else None
@@ -133,6 +136,10 @@ def collect(root, raw_dir, contact, force=False, limit=None):
       row['status']=f'SEC_HTTP_{r.status_code}';blocked=True;assessments.append(row);continue
      r.raise_for_status();local.write_text(r.text);time.sleep(.2)
     raw=json.loads(local.read_text());rec=recover_series(ticker,raw,now,cik)
+    overlay=root/'reports/reviewed_cashflow_92.json'
+    if overlay.exists():
+     from reviewed_cashflow_92 import apply_reviewed_overlay
+     rec=apply_reviewed_overlay(rec,json.loads(overlay.read_text()))
     companies[ticker]=rec
     row.update(status='PRIMARY_FACTS_RECOVERED',currency=rec['financial_currency'],annual_fcf_periods=sum(x['fcf'] is not None for x in combine_periods(rec)),current_shares=bool(rec['latest_share_count']),source_url=rec['source_url'])
    except (requests.RequestException,ValueError,KeyError) as exc:
