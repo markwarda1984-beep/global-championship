@@ -181,7 +181,7 @@ def fetch_batch(tickers: list[str]) -> dict[str, dict]:
     """Batch 25 Yahoo Finance daily OHLCV histories. Partial failures are represented as missing."""
     import yfinance as yf
 
-    frame = yf.download(tickers, period="1y", interval="1d", group_by="ticker",
+    frame = yf.download(tickers, period="2y", interval="1d", group_by="ticker",
                         auto_adjust=False, actions=False, progress=False,
                         threads=4, timeout=12, multi_level_index=True)
     if frame is None or frame.empty:

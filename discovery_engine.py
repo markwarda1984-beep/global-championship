@@ -654,7 +654,7 @@ def fetch_quotes(tickers: list[str], now: datetime, max_names: int = MAX_CANDIDA
     for ticker in tickers[:max_names]:
         try:
             asset = yf.Ticker(ticker)
-            frame = asset.history(period="1y", interval="1d", auto_adjust=False, actions=False)
+            frame = asset.history(period="2y", interval="1d", auto_adjust=False, actions=False)
             if frame.empty or len(frame) < 25:
                 raise ValueError("fewer than 25 daily bars")
             pairs = [(float(x), float(v)) for x, v in zip(frame["Close"].tail(20), frame["Volume"].tail(20))
