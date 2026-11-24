@@ -207,10 +207,13 @@ def build(root, mode='scan', now=None):
     recovered = read(root/'reports/primary_evidence_91.json', {}) or {}
     if recovered.get('orders_enabled') is True: raise ValueError('Unsafe recovered evidence')
     cache = {**cache, **recovered.get('companies', {})}
+    from background_evidence_93 import merge_evidence, merge_adapters
+    background = read(root/'reports/background_evidence_93.json', {}) or {}
+    cache = merge_evidence(cache,background)
     reviewed = read(root/'reports/issuer_primary_records_91.json', {}) or {}
     if reviewed.get('orders_enabled') is True: raise ValueError('Unsafe issuer PDF evidence')
     cache.update({t:r for t,r in reviewed.get('companies',{}).items() if verified_pdf_record(r,now)})
-    adapters = read(root/'settings/primary_adapters_90.json', {}) or {}
+    adapters = merge_adapters(read(root/'settings/primary_adapters_90.json', {}) or {}, background)
     cfg = validate_cfg(read(root/'settings/championship_60.json', DEFAULT_ASSUMPTIONS))
     # Recompute legacy eligibility against identical evidence/time, avoiding
     # false coverage gains from comparing an older weekly snapshot.

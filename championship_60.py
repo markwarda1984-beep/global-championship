@@ -509,6 +509,8 @@ def evaluate_all(root:Path,now:datetime,cfg:dict)->dict:
     if recovery.get('orders_enabled') is True:raise ValueError('Unsafe recovered evidence')
     if recovery.get('schema_version')=='9.1-primary-fact-recovery-1':
         cache={**cache,'companies':{**cache.get('companies',{}),**recovery.get('companies',{})}}
+    from background_evidence_93 import merge_evidence
+    cache={**cache,'companies':merge_evidence(cache.get('companies',{}),read(root/'reports/background_evidence_93.json',{}) or {})}
     report=[];verified=0;flag_totals={}
     for name in names:
         t=name['ticker'];sector=method(t,name['category']);p=prices.get(t,{}) or {}
