@@ -1,6 +1,10 @@
 name: Championship 4.0 weekly valuation research
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: [Championship background evidence research]
+    types: [completed]
+    branches: [main]
   push:
     branches: [main]
     paths:
@@ -27,6 +31,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   valuation:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:

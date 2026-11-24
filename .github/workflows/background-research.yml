@@ -1,0 +1,84 @@
+name: Championship background evidence research
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: Maximum companies in this bounded run (1-20)
+        default: '20'
+        required: false
+  schedule:
+    - cron: '45 0,4,8,12,16,20 * * *'
+      timezone: Australia/Sydney
+  push:
+    branches: [main]
+    paths:
+      - 'background_research_93.py'
+      - 'background_evidence_93.py'
+      - 'tests/test_background_research_93.py'
+      - '.github/workflows/background-research.yml'
+permissions:
+  contents: write
+concurrency:
+  group: championship-background-evidence
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    env:
+      BATCH_SIZE: ${{ github.event.inputs.batch_size || '20' }}
+      SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+    steps:
+      - name: Check out current published inputs
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Test queue, source boundaries and existing models
+        run: python -m unittest discover -s tests -v
+      - name: Research the next bounded batch and persist progress
+        run: python background_research_93.py --batch-size "$BATCH_SIZE" --max-minutes 8
+      - name: Verify complete progress and zero orders
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=Path('reports')
+          s=json.loads((r/'background_research_latest_93.json').read_text())
+          d=json.loads((r/'background_evidence_93.json').read_text())
+          q=json.loads((r/'background_review_queue_93.json').read_text())
+          assert s['orders_enabled'] is False and s['orders_generated']==0
+          assert d['orders_enabled'] is False and d['orders_generated']==0
+          assert q['orders_enabled'] is False and q['orders_generated']==0
+          assert s['processed_count']<=s['selected_count']<=s['batch_limit']<=20
+          assert s['original_200_supported_after']+s['original_200_still_unsupported']==200
+          assert len({x['ticker'] for x in q['companies']})==len(q['companies'])
+          print('Background issuer research verified; incomplete models remain in review queue')
+          PY
+      - name: Publish dedicated research evidence and progress
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/background_evidence_93.json reports/background_research_state_93.json reports/background_source_notes_93.json
+          git add reports/background_research_latest_93.json reports/background_research_latest_93.md reports/background_review_queue_93.json reports/background_research_history_93.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: advance background issuer research [skip ci]"
+            for attempt in 1 2 3 4 5 6; do
+              git fetch origin main
+              git rebase FETCH_HEAD
+              if git push origin HEAD:main; then exit 0; fi
+              if [ "$attempt" -eq 6 ]; then exit 1; fi
+              sleep $((attempt * 2))
+            done
+          fi
+      - name: Save progress for this run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: background-research-${{ github.run_number }}
+          path: reports/background_*93*
+          retention-days: 14
+          if-no-files-found: warn

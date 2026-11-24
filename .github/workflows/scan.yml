@@ -1,6 +1,10 @@
 name: Championship intensive 200-stock scan
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: [Championship background evidence research]
+    types: [completed]
+    branches: [main]
   push:
     branches: [main]
     paths:
@@ -32,6 +36,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   intensive_scan:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
