@@ -1,6 +1,6 @@
 {
   "schema_version": "9.1-full-200-evidence-audit-1",
-  "published_at_utc": "2026-11-24T11:14:58.765002+00:00",
+  "published_at_utc": "2026-11-24T14:43:36.118787+00:00",
   "companies": [
     {
       "ticker": "BABA",
@@ -213,7 +213,6 @@
       "assessment_status": "ISSUER_TABLES_NOT_YET_RECONCILED",
       "has_supported_valuation": false,
       "missing_inputs": [
-        "CURRENT_DATED_QUOTE_REQUIRED",
         "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
       ],
       "financial_source": null,
@@ -1675,10 +1674,10 @@
     {
       "ticker": "RDDT",
       "company": "Reddit",
-      "assessment_status": "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED",
+      "assessment_status": "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED",
       "has_supported_valuation": false,
       "missing_inputs": [
-        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
       ],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001713445.json",
       "structured_filing_attempt": {
@@ -1701,7 +1700,7 @@
         "shares_recovered": 0,
         "ratio": 1.0
       },
-      "remaining_work": "Obtain relevant project, AFFO/NAV, capital, or loss-making-business economics; do not substitute generic multiples.",
+      "remaining_work": "Verify complete economic share classes and exact receipt/CDI terms; no market-cap inference.",
       "orders_enabled": false
     },
     {
@@ -5390,8 +5389,8 @@
     "CORPORATE_ACTION_RECONCILIATION_REQUIRED": 6,
     "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL": 89,
     "ISSUER_TABLES_NOT_YET_RECONCILED": 32,
-    "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED": 35,
-    "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED": 19,
+    "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED": 34,
+    "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED": 20,
     "PRIMARY_HISTORY_OR_CURRENCY_GAP": 19
   },
   "orders_enabled": false,
