@@ -241,7 +241,7 @@ def build(root, mode='scan', now=None):
     adapters=read(root/'settings/primary_adapters_90.json',{})
     guidance=(read(root/'reports/dynamic_guidance_92.json',{}) or {}).get('companies',{})
     for ticker,g in (read(root/'reports/background_evidence_93.json',{}) or {}).get('guidance',{}).items():
-        if evidence_record(g,now,400) and g.get('published_at','')>=guidance.get(ticker,{}).get('published_at',''):
+        if evidence_record(g,now,400) and g.get('published_at','')>guidance.get(ticker,{}).get('published_at',''):
             guidance[ticker]=g
     source_audit=(read(root/'reports/dynamic_source_recovery_92.json',{}) or {}).get('companies',{})
     records=load_periods(root,now);rows=[]
