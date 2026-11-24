@@ -147,7 +147,7 @@ jobs:
       - name: Assess all companies with Championship 9.0
         run: python championship_90.py --mode scan
       - name: Audit recovery against the frozen 111 outstanding companies
-        run: python collect_documents_dynamic_92.py --max-documents 0
+        run: python collect_documents_dynamic_92.py --max-documents 0 --audit-suffix scan
       - name: Build and verify separate historical and dynamic forward views
         run: python dynamic_earnings_92.py --mode scan
       - name: Independently verify the financial outputs and baseline preservation
@@ -160,7 +160,7 @@ jobs:
         run: |
           git add reports/coverage_recovery_91.json reports/coverage_recovery_91.md
           git add reports/valuation_90_latest.json reports/coverage_90_latest.json reports/priority_quotes_90.json
-          git add reports/dynamic_source_recovery_92.json reports/dynamic_earnings_92_latest.json reports/dynamic_earnings_92_latest.md
+          git add reports/dynamic_source_recovery_92_scan.json reports/dynamic_earnings_92_latest.json reports/dynamic_earnings_92_latest.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/valuation_60_latest.json reports/valuation_60_summary.json
