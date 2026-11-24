@@ -1,6 +1,6 @@
 {
   "schema_version": "9.1-full-200-evidence-audit-1",
-  "published_at_utc": "2026-11-24T18:39:36.710659+00:00",
+  "published_at_utc": "2026-11-24T20:07:19.991978+00:00",
   "companies": [
     {
       "ticker": "BABA",
@@ -3968,12 +3968,10 @@
     {
       "ticker": "MQG.AX",
       "company": "Macquarie Group",
-      "assessment_status": "ISSUER_TABLES_NOT_YET_RECONCILED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
-      ],
-      "financial_source": null,
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
+      "financial_source": "https://www.macquarie.com/assets/macq/investor/reports/2026/macquarie-group-fy26-annual-report.pdf",
       "structured_filing_attempt": {
         "ticker": "MQG.AX",
         "original_universe": true,
@@ -3984,7 +3982,7 @@
       },
       "annual_report_sources": [],
       "share_basis_document_attempt": null,
-      "remaining_work": "Extract and verify the linked issuer annual-report financial tables, currency scale and listed-share basis. Filing index alone is not a valuation.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -4268,12 +4266,10 @@
     {
       "ticker": "PME.AX",
       "company": "Pro Medicus",
-      "assessment_status": "ISSUER_TABLES_NOT_YET_RECONCILED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
-      ],
-      "financial_source": null,
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
+      "financial_source": "https://www.promed.com.au/wp-content/uploads/2026/08/Financial-Report-30-June-2026.pdf",
       "structured_filing_attempt": {
         "ticker": "PME.AX",
         "original_universe": true,
@@ -4295,7 +4291,7 @@
         }
       ],
       "share_basis_document_attempt": null,
-      "remaining_work": "Extract and verify the linked issuer annual-report financial tables, currency scale and listed-share basis. Filing index alone is not a valuation.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -4334,12 +4330,10 @@
     {
       "ticker": "RMD.AX",
       "company": "ResMed",
-      "assessment_status": "ISSUER_TABLES_NOT_YET_RECONCILED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
-      ],
-      "financial_source": null,
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
+      "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000943819.json",
       "structured_filing_attempt": {
         "ticker": "RMD.AX",
         "original_universe": true,
@@ -4356,7 +4350,7 @@
         }
       ],
       "share_basis_document_attempt": null,
-      "remaining_work": "Extract and verify the linked issuer annual-report financial tables, currency scale and listed-share basis. Filing index alone is not a valuation.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -5382,13 +5376,13 @@
   ],
   "assessed_count": 200,
   "supported_before": 41,
-  "supported_after": 89,
-  "newly_supported_count": 48,
-  "still_unsupported_count": 111,
+  "supported_after": 92,
+  "newly_supported_count": 51,
+  "still_unsupported_count": 108,
   "status_counts": {
     "CORPORATE_ACTION_RECONCILIATION_REQUIRED": 6,
-    "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL": 89,
-    "ISSUER_TABLES_NOT_YET_RECONCILED": 32,
+    "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL": 92,
+    "ISSUER_TABLES_NOT_YET_RECONCILED": 29,
     "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED": 34,
     "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED": 20,
     "PRIMARY_HISTORY_OR_CURRENCY_GAP": 19
