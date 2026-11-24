@@ -1,6 +1,6 @@
 {
   "schema_version": "9.2-dynamic-earnings-1",
-  "published_at_utc": "2026-11-24T22:17:52.513701+00:00",
+  "published_at_utc": "2026-11-24T22:42:45.146816+00:00",
   "mode": "scan",
   "coverage_comparison": {
     "baseline_supported": 89,
@@ -10121,6 +10121,41 @@
               "period": "2026-06-30",
               "published_at": "2026-10-13",
               "kind": "ANNUAL"
+            },
+            "format": "PDF",
+            "page_count": 238,
+            "statement_sections_detected": {
+              "balance": {
+                "page": 14,
+                "locator": "balance sheet",
+                "heading_excerpt": " EBITDA and EBITDA our financial flexibility and rebuilding balance sheet margin at $585.8 million and 42%. capacity. We enter FY27 with a stronger foundation to invest in growth while maintaining disciplined That discipline extends to the balance sheet. capital management. Following the largest acquisition in our history, deleveraging has remained a key priority and we "
+              },
+              "income": {
+                "page": 94,
+                "locator": "consolidated. Excluding e2open, gross profit",
+                "heading_excerpt": "s a dilutive impact on our Group\u2019s gross profit margin when consolidated. Excluding e2open, gross profit margin was 85% (FY25: 86%). 1 e2open was acquired in August 2025 therefore prior period comparison is not reported. 2 Recurring revenue percentage is the sum of revenue categorized as Recurring On-Demand License revenue and Recurring Subscription and One-Time License (OTL) Maintenance revenue divid"
+              },
+              "cash_flow": {
+                "page": 137,
+                "locator": "Consolidated statement of changes in equity 138 Consolidated statement of cash flow",
+                "heading_excerpt": "income 136 Consolidated statement of financial position 137 Consolidated statement of changes in equity 138 Consolidated statement of cash flows 140 Notes to the consolidated financial statements 1. Corporate information 141 2. Basis of preparation 141 3. Revenue 143 4. Income tax 145 5. Earnings per share 148 6. Dividends 148 7. Intangible assets 149 8. Property, plant and equipment 153 9. Cash and cash equivalents 154 10. Trade receivabl"
+              }
+            },
+            "all_three_sections_detected": true,
+            "issuer_identity_review_required": true,
+            "financial_table_values_reviewed": false,
+            "counts_toward_supported_valuation_coverage": false,
+            "content_excerpt": "wisetechglobal.com"
+          },
+          {
+            "ticker": "WTC.AX",
+            "source_url": "https://wisetechglobal.com/media/4o1lj2yf/wisetech-global-2026-annual-report.pdf",
+            "source_document_sha256": "d5bcc58ceb499876c19af9b7d1f44003f49f46fb7ad7dcdbeca78a8b314a2ae4",
+            "observed_utc": "2026-11-24T22:41:50.626460+00:00",
+            "source_registration": {
+              "url": "https://wisetechglobal.com/media/4o1lj2yf/wisetech-global-2026-annual-report.pdf",
+              "kind": "ISSUER_ANNUAL_CANDIDATE_UNREVIEWED",
+              "issuer_index_url": "https://wisetechglobal.com/investors/shareholder-services/"
             },
             "format": "PDF",
             "page_count": 238,
@@ -28270,15 +28305,15 @@
       "recovery_context": {
         "status": "AT_OR_BELOW_PREVIOUS_FIVE_DAY_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.266430973756509,
+        "distance_from_5d_low_in_daily_sigma": 0.2681770375188021,
         "observed_daily_log_return_stddev": 0.07260762044182544,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 1.9533244381788606,
+      "recovery_from_5d_low_pct": 1.966250648687251,
       "trading_lows": {
-        "low_5d": 39.41999816894531,
-        "low_30d": 39.41999816894531,
+        "low_5d": 39.415000915527344,
+        "low_30d": 39.415000915527344,
         "trading_low_52w": 19.84000015258789,
         "previous_5d_low": 40.47999954223633,
         "low_basis": "UNADJUSTED_DAILY_INTRADAY_LOW",
@@ -36491,14 +36526,14 @@
       "recovery_context": {
         "status": "AT_OR_BELOW_PREVIOUS_FIVE_DAY_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.22466642832711348,
+        "distance_from_5d_low_in_daily_sigma": 0.221181395885789,
         "observed_daily_log_return_stddev": 0.07598813950872409,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 1.7218543046357615,
+      "recovery_from_5d_low_pct": 1.6949197746701783,
       "trading_lows": {
-        "low_5d": 18.875,
+        "low_5d": 18.8799991607666,
         "low_30d": 18.53499984741211,
         "trading_low_52w": 18.53499984741211,
         "previous_5d_low": 19.6299991607666,
@@ -80907,7 +80942,7 @@
       "ticker": "BTDR",
       "universe": "DISCOVERY",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 2.775,
+      "price": 2.78,
       "currency": "USD",
       "quote_date": "2026-11-24",
       "price_source": "unofficial yfinance daily bars \u2014 not executable",
@@ -80995,7 +81030,7 @@
         "sessions_observed": 0,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.544773540164403,
+      "recovery_from_5d_low_pct": 3.7313406996962284,
       "trading_lows": {
         "low_5d": 2.680000066757202,
         "low_30d": 2.680000066757202,
@@ -81570,7 +81605,7 @@
       "ticker": "PENG",
       "universe": "DISCOVERY",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 37.64,
+      "price": 37.57,
       "currency": "USD",
       "quote_date": "2026-11-24",
       "price_source": "unofficial yfinance daily bars \u2014 not executable",
@@ -81658,7 +81693,7 @@
         "sessions_observed": 0,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 5.641310332947147,
+      "recovery_from_5d_low_pct": 5.444846684612759,
       "trading_lows": {
         "low_5d": 35.630001068115234,
         "low_30d": 35.630001068115234,
@@ -82362,7 +82397,7 @@
       "recovery_context": {
         "status": "AT_OR_BELOW_PREVIOUS_FIVE_DAY_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.266430973756509,
+        "distance_from_5d_low_in_daily_sigma": 0.2681770375188021,
         "observed_daily_log_return_stddev": 0.07260762044182544,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
@@ -84774,15 +84809,15 @@
       "recovery_context": {
         "status": "AT_OR_BELOW_PREVIOUS_FIVE_DAY_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.266430973756509,
+        "distance_from_5d_low_in_daily_sigma": 0.2681770375188021,
         "observed_daily_log_return_stddev": 0.07260762044182544,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 1.9533244381788606,
+      "recovery_from_5d_low_pct": 1.966250648687251,
       "trading_lows": {
-        "low_5d": 39.41999816894531,
-        "low_30d": 39.41999816894531,
+        "low_5d": 39.415000915527344,
+        "low_30d": 39.415000915527344,
         "trading_low_52w": 19.84000015258789,
         "previous_5d_low": 40.47999954223633,
         "low_basis": "UNADJUSTED_DAILY_INTRADAY_LOW",
