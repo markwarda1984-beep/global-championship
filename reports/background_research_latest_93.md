@@ -2,7 +2,7 @@
 
 Supported: **92/200**. Still unresolved: **108**.
 
-This batch processed **17** cases; retrieved **66** sources. Newly supported: **HPE**.
+This batch processed **0** cases; retrieved **0** sources. Newly supported: **none**.
 
 Six bounded batches daily at 00:45, 04:45, 08:45, 12:45, 16:45 and 20:45 Australia/Sydney.
 
