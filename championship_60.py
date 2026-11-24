@@ -505,6 +505,10 @@ def evaluate_all(root:Path,now:datetime,cfg:dict)->dict:
     prices=latest_quote(root,original)
     cache=read(root/'reports/primary_series_cache_60.json',{}) or {}
     if cache and cache.get('orders_enabled') is True:raise ValueError('Unsafe evidence cache')
+    recovery=read(root/'reports/primary_evidence_91.json',{}) or {}
+    if recovery.get('orders_enabled') is True:raise ValueError('Unsafe recovered evidence')
+    if recovery.get('schema_version')=='9.1-primary-fact-recovery-1':
+        cache={**cache,'companies':{**cache.get('companies',{}),**recovery.get('companies',{})}}
     report=[];verified=0;flag_totals={}
     for name in names:
         t=name['ticker'];sector=method(t,name['category']);p=prices.get(t,{}) or {}
