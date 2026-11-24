@@ -462,9 +462,23 @@ def latest_quote(root:Path,original:set[str])->dict[str,dict]:
     bridge=read(root/'reports/latest.json',{}) or {}
     for r in bridge.get('stocks',[]):
         p=prices.setdefault(str(r.get('ticker')).upper(),{})
-        p.setdefault('price',r.get('last_daily_close'))
-        p.setdefault('quote_date',r.get('quote_date'))
-        p.setdefault('currency',r.get('currency'))
+        if not pos(p.get('price')) and pos(r.get('last_daily_close')):
+            p.update(price=r['last_daily_close'],quote_date=r.get('quote_date'),currency=r.get('currency'),
+                     price_source='LAST_SUCCESSFUL_DATED_SNAPSHOT_FALLBACK_NOT_LIVE')
+            for key,value in (r.get('championship_90',{}).get('trading_lows') or {}).items():
+                p[key]=value
+        else:
+            p.setdefault('quote_date',r.get('quote_date'))
+            p.setdefault('currency',r.get('currency'))
+    # The bridge may already have been rebuilt from an incomplete scan. The
+    # prior historical report is another dated snapshot, never a live quote.
+    prior=read(root/'reports/valuation_90_latest.json',{}) or {}
+    for r in prior.get('companies',[]):
+        ticker=str(r.get('ticker')).upper();p=prices.setdefault(ticker,{})
+        if not pos(p.get('price')) and pos(r.get('price')):
+            p.update(price=r['price'],quote_date=r.get('quote_date'),currency=r.get('currency'),
+                     price_source='LAST_SUCCESSFUL_DATED_SNAPSHOT_FALLBACK_NOT_LIVE')
+            p.update(r.get('trading_lows') or {})
     d=read(root/'reports/discovery_watchlist.json',{}) or {}
     for ticker,c in (d.get('candidates') or {}).items():
         if ticker in original:continue

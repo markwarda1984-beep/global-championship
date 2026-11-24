@@ -115,7 +115,7 @@ def collect(root, raw_dir, contact, force=False, limit=None):
  directory.raise_for_status();d=directory.json();fields=d['fields']
  listed={str(r[fields.index('ticker')]).upper():int(r[fields.index('cik')]) for r in d['data']}
  # ASX dual-listed issuers: SEC ticker is resolved from the official directory.
- aliases={'BHP.AX':'BHP','RIO.AX':'RIO','WDS.AX':'WDS'}
+ aliases={'BHP.AX':'BHP','RIO.AX':'RIO','WDS.AX':'WDS','RMD.AX':'RMD'}
  attempted=0;blocked=False
  for meta in names:
   ticker=meta['ticker'];symbol=aliases.get(ticker,ticker);cik=listed.get(symbol)

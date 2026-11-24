@@ -1,0 +1,581 @@
+{
+  "source_commit": "6bb8da7",
+  "source_report": "reports/valuation_90_latest.json",
+  "source_published_at_utc": "2026-11-24T10:40:33.308235+00:00",
+  "supported_count": 89,
+  "original_count": 200,
+  "valued_tickers": [
+    "AAPL",
+    "ABBV",
+    "ADBE",
+    "AEM",
+    "AMD",
+    "AMGN",
+    "ANZ.AX",
+    "ARM",
+    "ASML",
+    "AVGO",
+    "AXP",
+    "BAC",
+    "BHP.AX",
+    "BSX",
+    "C",
+    "CAT",
+    "CBA.AX",
+    "CCJ",
+    "COST",
+    "CP",
+    "CRM",
+    "CVX",
+    "DDOG",
+    "DE",
+    "DELL",
+    "DHR",
+    "DUOL",
+    "DXCM",
+    "ENB",
+    "ENPH",
+    "ETN",
+    "FCX",
+    "FTNT",
+    "GD",
+    "GE",
+    "GILD",
+    "GOOGL",
+    "GS",
+    "HD",
+    "HPE",
+    "HSBC",
+    "ICE",
+    "INTU",
+    "ISRG",
+    "JNJ",
+    "JPM",
+    "LLY",
+    "LMT",
+    "LOW",
+    "MDT",
+    "MELI",
+    "META",
+    "MPC",
+    "MRK",
+    "MS",
+    "MSFT",
+    "NAB.AX",
+    "NEM",
+    "NFLX",
+    "NOC",
+    "NOW",
+    "NTES",
+    "NVDA",
+    "NVO",
+    "NVS",
+    "OXY",
+    "PANW",
+    "PFE",
+    "PGR",
+    "PLTR",
+    "PWR",
+    "PYPL",
+    "QCOM",
+    "RTX",
+    "RY",
+    "SAP",
+    "SLB",
+    "SPOT",
+    "TD",
+    "TMO",
+    "TSLA",
+    "UBER",
+    "UBS",
+    "UNH",
+    "URI",
+    "VST",
+    "WBC.AX",
+    "WFC",
+    "WMT"
+  ],
+  "historical_scenarios": {
+    "BHP.AX": {
+      "bear": 14.9579,
+      "base": 24.5737,
+      "bull": 34.4031
+    },
+    "PANW": {
+      "bear": 12.7421,
+      "base": 28.2307,
+      "bull": 46.7568
+    },
+    "NVDA": {
+      "bear": 10.0115,
+      "base": 19.3117,
+      "bull": 29.7681
+    },
+    "AMD": {
+      "bear": 6.6004,
+      "base": 13.7766,
+      "bull": 22.1631
+    },
+    "ASML": {
+      "bear": 114.0795,
+      "base": 225.1146,
+      "bull": 351.4942
+    },
+    "PLTR": {
+      "bear": 1.3345,
+      "base": 2.875,
+      "bull": 4.6988
+    },
+    "AAPL": {
+      "bear": 36.4325,
+      "base": 71.4402,
+      "bull": 111.1543
+    },
+    "MSFT": {
+      "bear": 52.6063,
+      "base": 97.866,
+      "bull": 147.7612
+    },
+    "GOOGL": {
+      "bear": 31.9406,
+      "base": 60.9795,
+      "bull": 93.4574
+    },
+    "META": {
+      "bear": 94.055,
+      "base": 182.538,
+      "bull": 282.3592
+    },
+    "TSLA": {
+      "bear": 8.3051,
+      "base": 14.3973,
+      "bull": 20.7857
+    },
+    "AVGO": {
+      "bear": 16.6332,
+      "base": 33.9345,
+      "bull": 53.9499
+    },
+    "CRM": {
+      "bear": 50.0998,
+      "base": 105.7674,
+      "bull": 171.1348
+    },
+    "ADBE": {
+      "bear": 85.8658,
+      "base": 174.277,
+      "bull": 276.312
+    },
+    "NOW": {
+      "bear": 11.4094,
+      "base": 23.898,
+      "bull": 38.5145
+    },
+    "DDOG": {
+      "bear": 5.8031,
+      "base": 13.3156,
+      "bull": 22.4081
+    },
+    "FTNT": {
+      "bear": 11.2542,
+      "base": 22.5947,
+      "bull": 35.6147
+    },
+    "INTU": {
+      "bear": 85.8888,
+      "base": 176.786,
+      "bull": 282.3665
+    },
+    "UBER": {
+      "bear": 13.6479,
+      "base": 26.3834,
+      "bull": 40.7196
+    },
+    "PYPL": {
+      "bear": 26.279,
+      "base": 51.575,
+      "bull": 80.376
+    },
+    "DUOL": {
+      "bear": 14.3863,
+      "base": 31.8174,
+      "bull": 52.6538
+    },
+    "SPOT": {
+      "bear": 24.9911,
+      "base": 55.3712,
+      "bull": 91.7097
+    },
+    "NFLX": {
+      "bear": 8.6376,
+      "base": 16.9075,
+      "bull": 26.2804
+    },
+    "DELL": {
+      "bear": 31.2464,
+      "base": 61.1314,
+      "bull": 94.993
+    },
+    "HPE": {
+      "bear": 4.5314,
+      "base": 8.3857,
+      "bull": 12.6396
+    },
+    "ARM": {
+      "bear": 3.5489,
+      "base": 7.1302,
+      "bull": 11.2434
+    },
+    "QCOM": {
+      "bear": 36.1234,
+      "base": 68.0204,
+      "bull": 103.6139
+    },
+    "CVX": {
+      "bear": 39.594,
+      "base": 65.0472,
+      "bull": 91.0661
+    },
+    "SLB": {
+      "bear": 11.5878,
+      "base": 19.037,
+      "bull": 26.6518
+    },
+    "OXY": {
+      "bear": 16.3979,
+      "base": 26.9393,
+      "bull": 37.7151
+    },
+    "MPC": {
+      "bear": 78.1549,
+      "base": 128.3973,
+      "bull": 179.7563
+    },
+    "ENPH": {
+      "bear": 8.4143,
+      "base": 13.8234,
+      "bull": 19.3528
+    },
+    "VST": {
+      "bear": 19.7496,
+      "base": 32.4457,
+      "bull": 45.424
+    },
+    "CCJ": {
+      "bear": 2.0921,
+      "base": 3.437,
+      "bull": 4.8118
+    },
+    "FCX": {
+      "bear": 5.0584,
+      "base": 8.3102,
+      "bull": 11.6343
+    },
+    "NEM": {
+      "bear": 12.6236,
+      "base": 20.7388,
+      "bull": 29.0343
+    },
+    "AEM": {
+      "bear": 5.9349,
+      "base": 9.7503,
+      "bull": 13.6504
+    },
+    "LLY": {
+      "bear": 35.2929,
+      "base": 65.0754,
+      "bull": 97.6459
+    },
+    "NVO": {
+      "bear": 11.3239,
+      "base": 20.3606,
+      "bull": 30.1246
+    },
+    "UNH": {
+      "bear": 86.6808,
+      "base": 163.5017,
+      "bull": 249.3514
+    },
+    "JNJ": {
+      "bear": 41.0916,
+      "base": 77.9138,
+      "bull": 118.982
+    },
+    "ABBV": {
+      "bear": 24.1616,
+      "base": 51.0729,
+      "bull": 82.9675
+    },
+    "MRK": {
+      "bear": 24.5986,
+      "base": 44.5407,
+      "bull": 66.2113
+    },
+    "PFE": {
+      "bear": 6.0599,
+      "base": 11.3534,
+      "bull": 17.2437
+    },
+    "AMGN": {
+      "bear": 57.4171,
+      "base": 109.5672,
+      "bull": 168.1938
+    },
+    "GILD": {
+      "bear": 26.4189,
+      "base": 53.8566,
+      "bull": 85.6664
+    },
+    "ISRG": {
+      "bear": 23.2161,
+      "base": 42.6869,
+      "bull": 63.9402
+    },
+    "TMO": {
+      "bear": 75.4522,
+      "base": 140.9918,
+      "bull": 213.7248
+    },
+    "DHR": {
+      "bear": 27.6741,
+      "base": 52.2178,
+      "bull": 79.652
+    },
+    "BSX": {
+      "bear": 6.8969,
+      "base": 13.9005,
+      "bull": 21.9563
+    },
+    "MDT": {
+      "bear": 17.8626,
+      "base": 35.4476,
+      "bull": 55.5489
+    },
+    "DXCM": {
+      "bear": 7.6895,
+      "base": 15.1185,
+      "bull": 23.5582
+    },
+    "JPM": {
+      "bear": 99.9028,
+      "base": 149.2056,
+      "bull": 191.4805
+    },
+    "BAC": {
+      "bear": 16.8142,
+      "base": 25.1121,
+      "bull": 32.2272
+    },
+    "GS": {
+      "bear": 196.7925,
+      "base": 293.9108,
+      "bull": 377.1856
+    },
+    "MS": {
+      "bear": 36.4278,
+      "base": 54.4051,
+      "bull": 69.8199
+    },
+    "C": {
+      "bear": 26.8463,
+      "base": 40.0951,
+      "bull": 51.4554
+    },
+    "WFC": {
+      "bear": 28.5294,
+      "base": 42.6089,
+      "bull": 54.6814
+    },
+    "AXP": {
+      "bear": 72.8662,
+      "base": 142.3094,
+      "bull": 221.5253
+    },
+    "ICE": {
+      "bear": 28.8882,
+      "base": 58.9801,
+      "bull": 93.8045
+    },
+    "PGR": {
+      "bear": 60.8285,
+      "base": 90.8478,
+      "bull": 116.588
+    },
+    "LMT": {
+      "bear": 119.2541,
+      "base": 232.1944,
+      "bull": 360.1418
+    },
+    "RTX": {
+      "bear": 19.1074,
+      "base": 37.6278,
+      "bull": 58.6854
+    },
+    "NOC": {
+      "bear": 116.0921,
+      "base": 214.106,
+      "bull": 321.3113
+    },
+    "GD": {
+      "bear": 63.5705,
+      "base": 122.8019,
+      "bull": 189.59
+    },
+    "GE": {
+      "bear": 30.3504,
+      "base": 56.61,
+      "bull": 85.5449
+    },
+    "DE": {
+      "bear": 113.1109,
+      "base": 185.8251,
+      "bull": 260.1552
+    },
+    "CAT": {
+      "bear": 69.5456,
+      "base": 114.2535,
+      "bull": 159.9549
+    },
+    "ETN": {
+      "bear": 43.7033,
+      "base": 84.8673,
+      "bull": 131.3209
+    },
+    "PWR": {
+      "bear": 36.0973,
+      "base": 74.2249,
+      "bull": 118.4916
+    },
+    "URI": {
+      "bear": 107.9448,
+      "base": 177.3379,
+      "bull": 248.2731
+    },
+    "COST": {
+      "bear": 85.9619,
+      "base": 167.5538,
+      "bull": 259.8181
+    },
+    "WMT": {
+      "bear": 9.9041,
+      "base": 18.8992,
+      "bull": 28.9524
+    },
+    "HD": {
+      "bear": 68.7004,
+      "base": 131.1959,
+      "bull": 201.2526
+    },
+    "LOW": {
+      "bear": 58.9085,
+      "base": 114.1712,
+      "bull": 176.6116
+    },
+    "CBA.AX": {
+      "bear": 29.3987,
+      "base": 43.9072,
+      "bull": 56.3476
+    },
+    "NAB.AX": {
+      "bear": 10.4174,
+      "base": 15.5585,
+      "bull": 19.9667
+    },
+    "WBC.AX": {
+      "bear": 9.2326,
+      "base": 13.789,
+      "bull": 17.6959
+    },
+    "ANZ.AX": {
+      "bear": 10.3898,
+      "base": 15.5172,
+      "bull": 19.9137
+    },
+    "NTES": {
+      "bear": 39.0017,
+      "base": 78.0421,
+      "bull": 122.7914
+    },
+    "MELI": {
+      "bear": 369.5329,
+      "base": 817.074,
+      "bull": 1352.0008
+    },
+    "SAP": {
+      "bear": 22.0088,
+      "base": 43.6283,
+      "bull": 68.293
+    },
+    "HSBC": {
+      "bear": 34.9427,
+      "base": 52.1871,
+      "bull": 66.9734
+    },
+    "UBS": {
+      "bear": 10.6712,
+      "base": 15.9375,
+      "bull": 20.4531
+    },
+    "NVS": {
+      "bear": 36.9966,
+      "base": 73.6077,
+      "bull": 115.4533
+    },
+    "RY": {
+      "bear": 40.244,
+      "base": 60.1046,
+      "bull": 77.1343
+    },
+    "TD": {
+      "bear": 29.1887,
+      "base": 43.5935,
+      "bull": 55.945
+    },
+    "ENB": {
+      "bear": 7.3054,
+      "base": 13.6248,
+      "bull": 20.6358
+    },
+    "CP": {
+      "bear": 10.5504,
+      "base": 18.4937,
+      "bull": 26.9046
+    }
+  },
+  "missing_current_statement_tickers": [
+    "CAT.AX",
+    "LYC.AX",
+    "LOT.AX",
+    "GG8.AX",
+    "SFR.AX",
+    "FMG.AX",
+    "PDN.AX",
+    "BOE.AX",
+    "MIN.AX",
+    "CSL.AX",
+    "WTC.AX",
+    "MQG.AX",
+    "QBE.AX",
+    "SUN.AX",
+    "IAG.AX",
+    "WOW.AX",
+    "WES.AX",
+    "COL.AX",
+    "JBH.AX",
+    "REA.AX",
+    "XRO.AX",
+    "CAR.AX",
+    "PME.AX",
+    "COH.AX",
+    "RMD.AX",
+    "GMG.AX",
+    "SCG.AX",
+    "TLS.AX",
+    "ALL.AX",
+    "STO.AX",
+    "ORG.AX",
+    "PLS.AX",
+    "TCEHY",
+    "IBN"
+  ]
+}

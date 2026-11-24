@@ -213,6 +213,9 @@ def build(root, mode='scan', now=None):
     reviewed = read(root/'reports/issuer_primary_records_91.json', {}) or {}
     if reviewed.get('orders_enabled') is True: raise ValueError('Unsafe issuer PDF evidence')
     cache.update({t:r for t,r in reviewed.get('companies',{}).items() if verified_pdf_record(r,now)})
+    dynamic = read(root/'reports/dynamic_historical_records_92.json', {}) or {}
+    if dynamic.get('orders_enabled') is True: raise ValueError('Unsafe dynamic evidence')
+    cache.update({t:r for t,r in dynamic.get('companies',{}).items() if verified_pdf_record(r,now)})
     adapters = merge_adapters(read(root/'settings/primary_adapters_90.json', {}) or {}, background)
     cfg = validate_cfg(read(root/'settings/championship_60.json', DEFAULT_ASSUMPTIONS))
     # Recompute legacy eligibility against identical evidence/time, avoiding
@@ -256,6 +259,7 @@ def build(root, mode='scan', now=None):
         row = {'ticker': t, 'universe': name['universe'], 'sector_method': sector,
                'assessment_status': 'PRIMARY_INPUTS_RECONCILED_FORECASTS_HYPOTHETICAL' if vals else 'MISSING_EVIDENCE',
                'price': price, 'currency': q.get('currency'), 'quote_date': q.get('quote_date'),
+               'price_source': q.get('price_source') or 'DATED_DAILY_BARS_NOT_LIVE',
                'scenarios': vals, 'base_upside_pct': round(upside, 2) if upside is not None else None,
                'preferred_25_50pct_upside': bool(upside is not None and 25 <= upside <= 50),
                'pre_recovery_candidate': eligible, 'recovery_from_5d_low_pct': recovery,
@@ -306,7 +310,7 @@ def collect_priority_quotes(root):
     now = datetime.now(timezone.utc); quotes = {}
     raw = fetch_batch(list(PRIORITIES))
     for t, q in raw.items():
-        quotes[t] = {'price':q['closes'][-1], 'currency':q.get('currency') or currency_for(t), 'quote_date':q['quote_date'], **trading_lows(q.get('lows', []), q['closes'])}
+        quotes[t] = {'price':q['closes'][-1], 'currency':q.get('currency') or currency_for(t), 'quote_date':q['quote_date'], 'history':q['closes'][-30:], **trading_lows(q.get('lows', []), q['closes'])}
     out = {'published_at_utc':now.isoformat(), 'quotes':quotes, 'missing_tickers':sorted(set(PRIORITIES)-set(quotes)), 'orders_enabled':False}
     write(root/'reports/priority_quotes_90.json', out)
     return out

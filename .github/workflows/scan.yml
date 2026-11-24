@@ -9,6 +9,11 @@ on:
     branches: [main]
     paths:
       - 'championship_90.py'
+      - 'dynamic_earnings_92.py'
+      - 'collect_dynamic_92.py'
+      - 'settings/dynamic_*.json'
+      - 'reports/dynamic_historical_records_92.json'
+      - 'reports/dynamic_guidance_92.json'
       - 'settings/primary_adapters_90.json'
       - 'scan.py'
       - 'opportunity_engine.py'
@@ -141,6 +146,12 @@ jobs:
         run: python championship_90.py --mode quotes
       - name: Assess all companies with Championship 9.0
         run: python championship_90.py --mode scan
+      - name: Audit recovery against the frozen 111 outstanding companies
+        run: python collect_documents_dynamic_92.py --max-documents 0
+      - name: Build and verify separate historical and dynamic forward views
+        run: python dynamic_earnings_92.py --mode scan
+      - name: Independently verify the financial outputs and baseline preservation
+        run: python verify_financial_outputs_92.py --mode scan
       - name: Verify Championship 9.0 coverage and no orders
         run: python verify_90.py --mode scan
       - name: Publish full 200-stock evidence recovery audit
@@ -149,6 +160,7 @@ jobs:
         run: |
           git add reports/coverage_recovery_91.json reports/coverage_recovery_91.md
           git add reports/valuation_90_latest.json reports/coverage_90_latest.json reports/priority_quotes_90.json
+          git add reports/dynamic_source_recovery_92.json reports/dynamic_earnings_92_latest.json reports/dynamic_earnings_92_latest.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/valuation_60_latest.json reports/valuation_60_summary.json
@@ -183,6 +195,7 @@ jobs:
         with:
           name: championship-200-dashboard-${{ github.run_number }}
           path: |
+            reports/dynamic*92*
             reports/*91*.json
             reports/coverage_recovery_91.md
             reports/*90*.json
