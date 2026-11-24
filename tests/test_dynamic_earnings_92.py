@@ -167,6 +167,23 @@ class DynamicFinancialTests(unittest.TestCase):
         self.assertFalse(r['financial_table_values_reviewed'])
         self.assertFalse(r['counts_toward_supported_valuation_coverage'])
 
+    def test_scan_weekly_and_background_have_distinct_recovery_snapshots(self):
+        from collect_documents_dynamic_92 import audit
+        from championship_90 import write
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            write(root/'settings/dynamic_baseline_92.json',self.fixture['baseline'])
+            write(root/'reports/coverage_recovery_91.json',{'companies':[
+                {'ticker':r['ticker'],'missing_inputs':r.get('missing_inputs') or []}
+                for r in self.fixture['historical_report']['companies'] if r['universe']=='ORIGINAL_200']})
+            for suffix in ['latest','weekly']:
+                write(root/f'reports/valuation_90_{suffix}.json',self.fixture['historical_report'])
+            audit(root,NOW,'scan');audit(root,NOW,'weekly')
+            with patch('background_research_93.assess_without_overwriting_reports',return_value=self.fixture['historical_report']):
+                result=audit(root,NOW,'canonical')
+            self.assertEqual(result['remaining_model_count'],108)
+            self.assertEqual(len(list((root/'reports').glob('dynamic_source_recovery_92*.json'))),3)
+
     def test_all_200_baseline_and_priority_rules_survive(self):
         import shutil
         with tempfile.TemporaryDirectory() as folder:
