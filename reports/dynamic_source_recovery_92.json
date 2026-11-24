@@ -1,6 +1,6 @@
 {
   "schema_version": "9.2-primary-source-recovery-1",
-  "published_at_utc": "2026-11-24T20:48:20.603831+00:00",
+  "published_at_utc": "2026-11-24T22:41:57.717034+00:00",
   "baseline_outstanding_count": 111,
   "missing_current_statement_priority_count": 34,
   "outstanding_companies_assessed": 111,
@@ -911,6 +911,41 @@
             "period": "2026-06-30",
             "published_at": "2026-10-13",
             "kind": "ANNUAL"
+          },
+          "format": "PDF",
+          "page_count": 238,
+          "statement_sections_detected": {
+            "balance": {
+              "page": 14,
+              "locator": "balance sheet",
+              "heading_excerpt": " EBITDA and EBITDA our financial flexibility and rebuilding balance sheet margin at $585.8 million and 42%. capacity. We enter FY27 with a stronger foundation to invest in growth while maintaining disciplined That discipline extends to the balance sheet. capital management. Following the largest acquisition in our history, deleveraging has remained a key priority and we "
+            },
+            "income": {
+              "page": 94,
+              "locator": "consolidated. Excluding e2open, gross profit",
+              "heading_excerpt": "s a dilutive impact on our Group\u2019s gross profit margin when consolidated. Excluding e2open, gross profit margin was 85% (FY25: 86%). 1 e2open was acquired in August 2025 therefore prior period comparison is not reported. 2 Recurring revenue percentage is the sum of revenue categorized as Recurring On-Demand License revenue and Recurring Subscription and One-Time License (OTL) Maintenance revenue divid"
+            },
+            "cash_flow": {
+              "page": 137,
+              "locator": "Consolidated statement of changes in equity 138 Consolidated statement of cash flow",
+              "heading_excerpt": "income 136 Consolidated statement of financial position 137 Consolidated statement of changes in equity 138 Consolidated statement of cash flows 140 Notes to the consolidated financial statements 1. Corporate information 141 2. Basis of preparation 141 3. Revenue 143 4. Income tax 145 5. Earnings per share 148 6. Dividends 148 7. Intangible assets 149 8. Property, plant and equipment 153 9. Cash and cash equivalents 154 10. Trade receivabl"
+            }
+          },
+          "all_three_sections_detected": true,
+          "issuer_identity_review_required": true,
+          "financial_table_values_reviewed": false,
+          "counts_toward_supported_valuation_coverage": false,
+          "content_excerpt": "wisetechglobal.com"
+        },
+        {
+          "ticker": "WTC.AX",
+          "source_url": "https://wisetechglobal.com/media/4o1lj2yf/wisetech-global-2026-annual-report.pdf",
+          "source_document_sha256": "d5bcc58ceb499876c19af9b7d1f44003f49f46fb7ad7dcdbeca78a8b314a2ae4",
+          "observed_utc": "2026-11-24T22:41:50.626460+00:00",
+          "source_registration": {
+            "url": "https://wisetechglobal.com/media/4o1lj2yf/wisetech-global-2026-annual-report.pdf",
+            "kind": "ISSUER_ANNUAL_CANDIDATE_UNREVIEWED",
+            "issuer_index_url": "https://wisetechglobal.com/investors/shareholder-services/"
           },
           "format": "PDF",
           "page_count": 238,

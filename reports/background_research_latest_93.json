@@ -1,103 +1,20 @@
 {
   "schema_version": "9.3-background-research-1",
-  "run_started_utc": "2026-11-24T20:47:43.817305+00:00",
-  "run_finished_utc": "2026-11-24T20:47:55.314055+00:00",
-  "workflow_run_url": "https://github.com/markwarda1984-beep/global-championship/actions/runs/45484422430",
+  "run_started_utc": "2026-11-24T22:41:29.678874+00:00",
+  "run_finished_utc": "2026-11-24T22:41:30.853435+00:00",
+  "workflow_run_url": "https://github.com/markwarda1984-beep/global-championship/actions/runs/45503222126",
   "schedule_description": "Six bounded batches daily at 00:45, 04:45, 08:45, 12:45, 16:45 and 20:45 Australia/Sydney",
   "batch_limit": 20,
-  "selected_count": 2,
-  "processed_count": 2,
-  "http_requests": 12,
-  "successful_source_retrievals": 12,
-  "original_200_supported_before": 92,
+  "selected_count": 0,
+  "processed_count": 0,
+  "http_requests": 0,
+  "successful_source_retrievals": 0,
+  "original_200_supported_before": 98,
   "original_200_supported_after": 98,
   "original_200_still_unsupported": 102,
   "newly_supported_this_batch": [],
-  "results": [
-    {
-      "ticker": "LLY",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000059478.json",
-          "sha256": "72ec001637e16887021c76251eaf05056bdaaf9a4e68ef62316b9be99861dbdc"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000108/lly-20260930.htm",
-          "sha256": "ddb5cdac1cf4103eaf61261ced62ada208878660ca0b054019a56f5fa243134c",
-          "filed": "2026-10-29",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
-          "sha256": "6fdd8995f9a0d72925b41a00edf65ef245615a5e6430b406dd08985f3e19491c",
-          "filed": "2026-02-12",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm",
-          "sha256": "afcab4fd97c4bcf72421a6ed8a24db7e1603dcb247922eeba94b52c1e8f29f93",
-          "accession": "0000059478-26-000104",
-          "filed": "2026-10-29"
-        }
-      ],
-      "parsed_observations": 5,
-      "document_errors": [],
-      "unreviewed_documents": 3,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-24T20:47:43.817305+00:00",
-      "attempt_count": 1,
-      "next_attempt_utc": "2026-12-01T20:47:43.817305+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    },
-    {
-      "ticker": "URI",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067701.json",
-          "sha256": "79e2ce1d675e620c256486b2f00c9601f2ea80ee3943dc56cfe5ab6677794ccb"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000034/uri-20260930.htm",
-          "sha256": "cb7eb3847b58d54eab0716d70bc95c1f3557c0469195920be7f55f8d0d1ea85d",
-          "filed": "2026-10-21",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
-          "sha256": "158237ecca2eabe3bcd4705ad7fedaa276025657190ed27c091d7c219298a5f3",
-          "filed": "2026-01-28",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000036/uri-9302026xex991.htm",
-          "sha256": "fd414b8286b15f9e3fb253c0028d1638646af005199630f4aec8eaa7729b5f8f",
-          "accession": "0001067701-26-000036",
-          "filed": "2026-10-21"
-        }
-      ],
-      "parsed_observations": 5,
-      "document_errors": [],
-      "unreviewed_documents": 3,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-24T20:47:43.817305+00:00",
-      "attempt_count": 1,
-      "next_attempt_utc": "2026-12-01T20:47:43.817305+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    }
-  ],
-  "source_health": "AVAILABLE_FOR_PROCESSED_BATCH",
+  "results": [],
+  "source_health": "NO_CASES_DUE",
   "limitations": [
     "Existing reviewed parsers can promote supported cases; new sector economics and unverified issuer tables require review.",
     "Source collection is not a supported valuation. No completion date or valuation for all companies is guaranteed."
