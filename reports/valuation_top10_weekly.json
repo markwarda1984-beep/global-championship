@@ -1,41 +1,41 @@
 {
   "schema_version": "6.0-evidence-only-valuation-top10-1",
-  "published_at_utc": "2026-11-24T20:12:54.640217+00:00",
-  "source_valuation_snapshot_utc": "2026-11-24T20:12:54.433345+00:00",
+  "published_at_utc": "2026-11-24T20:14:40.327459+00:00",
+  "source_valuation_snapshot_utc": "2026-11-24T20:14:39.950142+00:00",
   "model_data_available_count": 71,
   "eligible_for_research_count": 2,
   "ranked_top_10": [
     {
       "rank": 1,
-      "ticker": "AMD",
-      "company": "AMD",
+      "ticker": "BSX",
+      "company": "Boston Scientific",
       "currency": "USD",
       "quote_date": "2026-11-24T00:00:00",
-      "last_daily_close": 411.23499,
-      "bear_value": 6.6004,
-      "base_value": 13.7766,
-      "bull_value": 22.1631,
+      "last_daily_close": 44.015,
+      "bear_value": 6.8969,
+      "base_value": 13.9005,
+      "bull_value": 21.9563,
       "model_watch_entry": null,
-      "selected_6_0_entry": 11.7101,
+      "selected_6_0_entry": 11.1204,
       "margin_of_safety_entries_60": {
-        "10pct": 12.3989,
-        "15pct": 11.7101,
-        "20pct": 11.0213
+        "10pct": 12.5104,
+        "15pct": 11.8154,
+        "20pct": 11.1204
       },
-      "pct_to_indicative_base": -96.65,
-      "pct_to_indicative_bear": -98.39,
+      "pct_to_indicative_base": -68.42,
+      "pct_to_indicative_bear": -84.33,
       "pct_to_unverified_watch_entry": null,
       "research_priority_score_not_probability": 0.0,
       "fundamental_as_of": null,
-      "valuation_snapshot_utc": "2026-11-24T20:12:54.433345+00:00",
+      "valuation_snapshot_utc": "2026-11-24T20:14:39.950142+00:00",
       "model_type": "NORMALIZED_EARNINGS_AND_DCF",
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 2760000000.0,
-        "median_annual_net_income_filed": 1480500000.0,
-        "historical_fcf_cagr_observed_pct": 29.308,
+        "cashflow_median_of_filed_years": 2218500000.0,
+        "median_annual_net_income_filed": 1711500000.0,
+        "historical_fcf_cagr_observed_pct": 57.403,
         "assumed_forward_growth_capped_pct": 8.0,
-        "illustrative_next_year_net_income_not_issuer_guidance": 4681800000.0,
+        "illustrative_next_year_net_income_not_issuer_guidance": 3129840000.0,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -50,33 +50,33 @@
         "history_years": 4,
         "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
         "historical_filing_share_count_check": {
-          "current_shares": 1640087251.0,
-          "prior_shares": 1632000000.0,
-          "prior_as_of": "2026-06-27",
-          "observed_share_basis_change_pct": 0.496
+          "current_shares": 1449473222.0,
+          "prior_shares": 1486355179.0,
+          "prior_as_of": "2026-04-29",
+          "observed_share_basis_change_pct": -2.481
         },
         "hypothetical_future_issuance_pct": {
           "bear": 15,
           "base": 5,
           "bull": 0
         },
-        "issued_share_count_primary": 1640087251.0,
+        "issued_share_count_primary": 1449473222.0,
         "source_dates": {
-          "shares": "2026-10-28",
+          "shares": "2026-10-29",
           "net_income_fiscal_years": [
-            "2017-12-30",
-            "2018-12-29",
-            "2019-12-28",
-            "2020-12-26",
-            "2021-12-25",
+            "2017-12-31",
+            "2018-12-31",
+            "2019-12-31",
+            "2020-12-31",
+            "2021-12-31",
             "2022-12-31",
-            "2023-12-30",
-            "2024-12-28",
-            "2025-12-27"
+            "2023-12-31",
+            "2024-12-31",
+            "2025-12-31"
           ]
         }
       },
-      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000885725.json",
       "source_verification": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "research_gaps": [
         "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
@@ -95,55 +95,62 @@
     },
     {
       "rank": 2,
-      "ticker": "C",
-      "company": "Citigroup",
+      "ticker": "GILD",
+      "company": "Gilead Sciences",
       "currency": "USD",
       "quote_date": "2026-11-24T00:00:00",
-      "last_daily_close": 113.525,
-      "bear_value": 26.8463,
-      "base_value": 40.0951,
-      "bull_value": 51.4554,
+      "last_daily_close": 178.59,
+      "bear_value": 26.4189,
+      "base_value": 53.8566,
+      "bull_value": 85.6664,
       "model_watch_entry": null,
-      "selected_6_0_entry": 32.0761,
+      "selected_6_0_entry": 48.4709,
       "margin_of_safety_entries_60": {
-        "10pct": 36.0856,
-        "15pct": 34.0808,
-        "20pct": 32.0761
+        "10pct": 48.4709,
+        "15pct": 45.7781,
+        "20pct": 43.0853
       },
-      "pct_to_indicative_base": -64.68,
-      "pct_to_indicative_bear": -76.35,
+      "pct_to_indicative_base": -69.84,
+      "pct_to_indicative_bear": -85.21,
       "pct_to_unverified_watch_entry": null,
       "research_priority_score_not_probability": 0.0,
       "fundamental_as_of": null,
-      "valuation_snapshot_utc": "2026-11-24T20:12:54.433345+00:00",
-      "model_type": "BANK_INSURER_JUSTIFIED_BOOK",
+      "valuation_snapshot_utc": "2026-11-24T20:14:39.950142+00:00",
+      "model_type": "NORMALIZED_EARNINGS_AND_DCF",
       "assumptions": {
-        "formula": "BOOK_VALUE_PER_SHARE × (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-        "book_value_per_share_primary": 121.356367,
-        "median_annual_net_income_primary": 12239500000.0,
-        "normalized_roe_assumption_from_filed_history_pct": 5.816,
-        "discount_rates_pct": {
-          "bear": 17,
-          "base": 13,
-          "bull": 11
+        "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
+        "cashflow_median_of_filed_years": 8900000000.0,
+        "median_annual_net_income_filed": 5128500000.0,
+        "historical_fcf_cagr_observed_pct": 4.258,
+        "assumed_forward_growth_capped_pct": 4.258,
+        "illustrative_next_year_net_income_not_issuer_guidance": 8872389845.95,
+        "dcf_forecast_years": 5,
+        "base_discount_pct": 14,
+        "bear_discount_pct": 18,
+        "bull_discount_pct": 12,
+        "terminal_growth_pct": 2,
+        "earnings_capitalization_yields_pct": {
+          "bear": 14,
+          "base": 10,
+          "bull": 8
         },
-        "growth_pct": 2,
-        "years_observed": 4,
-        "provenance": "SEC XBRL filed net-income, shareholders equity and issued shares; forecast cost of equity remains ASSUMPTION",
+        "earnings_weight_pct": 40,
+        "history_years": 4,
+        "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
         "historical_filing_share_count_check": {
-          "current_shares": 1749319009.0,
-          "prior_shares": 1789266159.0,
-          "prior_as_of": "2025-09-30",
-          "observed_share_basis_change_pct": -2.233
+          "current_shares": 1240338614.0,
+          "prior_shares": 1241569874.0,
+          "prior_as_of": "2026-04-30",
+          "observed_share_basis_change_pct": -0.099
         },
         "hypothetical_future_issuance_pct": {
           "bear": 15,
           "base": 5,
           "bull": 0
         },
-        "issued_share_count_primary": 1749319009.0,
+        "issued_share_count_primary": 1240338614.0,
         "source_dates": {
-          "shares": "2026-01-31",
+          "shares": "2026-10-23",
           "net_income_fiscal_years": [
             "2017-12-31",
             "2018-12-31",
@@ -157,13 +164,13 @@
           ]
         }
       },
-      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000831001.json",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000882095.json",
       "source_verification": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "research_gaps": [
         "Forecast growth, discount rates and future dilution are scenarios, not issuer-verified outcomes",
         "Historical cycles may not repeat; financing, debt, FX and corporate actions require review",
         "SEC XBRL facts are issuer reported, not independently audited by this system",
-        "Credit losses, underwriting reserves and regulatory capital may invalidate book-value ROE estimates"
+        "Forecast-growth extrapolation, capital intensity and competitive durability remain unverified"
       ],
       "verified_buy_signal": false,
       "buy_readiness_pct": null,
