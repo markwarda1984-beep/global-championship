@@ -1,6 +1,6 @@
 {
   "schema_version": "5.1-aftertax-offset-sensitivity-1",
-  "published_at_utc": "2026-11-24T18:39:49.898609+00:00",
+  "published_at_utc": "2026-11-24T20:12:54.640217+00:00",
   "principal_aud": 1000.0,
   "horizon_months": 13.0,
   "annual_owner_occupied_mortgage_rate_assumption_pct": 5.8,
@@ -50,7 +50,248 @@
       "marginal_plus_medicare_pct": 32.0
     }
   ],
-  "ranked_research_scenarios": [],
+  "ranked_research_scenarios": [
+    {
+      "rank": 1,
+      "ticker": "AMD",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-24T20:12:54.433345+00:00",
+      "aud_per_currency": 1.51079996,
+      "status": "SCENARIO_ONLY_NOT_A_PREDICTION",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {
+        "bear": {
+          "income_158k": {
+            "gross_profit_after_fees_aud": -987.16,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -987.16,
+            "less_offset_savings_aud": -1049.99,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -1049.99,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -1052.27,
+                "beats_this_offset_scenario": false
+              }
+            }
+          },
+          "income_110k": {
+            "gross_profit_after_fees_aud": -987.16,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -987.16,
+            "less_offset_savings_aud": -1049.99,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -1049.99,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -1052.27,
+                "beats_this_offset_scenario": false
+              }
+            }
+          }
+        },
+        "base": {
+          "income_158k": {
+            "gross_profit_after_fees_aud": -969.93,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -969.93,
+            "less_offset_savings_aud": -1032.77,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -1032.76,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -1035.04,
+                "beats_this_offset_scenario": false
+              }
+            }
+          },
+          "income_110k": {
+            "gross_profit_after_fees_aud": -969.93,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -969.93,
+            "less_offset_savings_aud": -1032.77,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -1032.76,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -1035.04,
+                "beats_this_offset_scenario": false
+              }
+            }
+          }
+        },
+        "bull": {
+          "income_158k": {
+            "gross_profit_after_fees_aud": -949.8,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -949.8,
+            "less_offset_savings_aud": -1012.64,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -1012.63,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -1014.91,
+                "beats_this_offset_scenario": false
+              }
+            }
+          },
+          "income_110k": {
+            "gross_profit_after_fees_aud": -949.8,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -949.8,
+            "less_offset_savings_aud": -1012.64,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -1012.63,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -1014.91,
+                "beats_this_offset_scenario": false
+              }
+            }
+          }
+        }
+      },
+      "verified_buy_signal": false
+    },
+    {
+      "rank": 2,
+      "ticker": "C",
+      "price_currency": "USD",
+      "source_model_utc": "2026-11-24T20:12:54.433345+00:00",
+      "aud_per_currency": 1.51079996,
+      "status": "SCENARIO_ONLY_NOT_A_PREDICTION",
+      "offset_savings_aud": 62.83,
+      "hypothetical_outcomes": {
+        "bear": {
+          "income_158k": {
+            "gross_profit_after_fees_aud": -769.58,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -769.58,
+            "less_offset_savings_aud": -832.42,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -832.41,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -834.69,
+                "beats_this_offset_scenario": false
+              }
+            }
+          },
+          "income_110k": {
+            "gross_profit_after_fees_aud": -769.58,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -769.58,
+            "less_offset_savings_aud": -832.42,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -832.41,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -834.69,
+                "beats_this_offset_scenario": false
+              }
+            }
+          }
+        },
+        "base": {
+          "income_158k": {
+            "gross_profit_after_fees_aud": -654.39,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -654.39,
+            "less_offset_savings_aud": -717.22,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -717.22,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -719.5,
+                "beats_this_offset_scenario": false
+              }
+            }
+          },
+          "income_110k": {
+            "gross_profit_after_fees_aud": -654.39,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -654.39,
+            "less_offset_savings_aud": -717.22,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -717.22,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -719.5,
+                "beats_this_offset_scenario": false
+              }
+            }
+          }
+        },
+        "bull": {
+          "income_158k": {
+            "gross_profit_after_fees_aud": -555.62,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -555.62,
+            "less_offset_savings_aud": -618.45,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -618.45,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -620.73,
+                "beats_this_offset_scenario": false
+              }
+            }
+          },
+          "income_110k": {
+            "gross_profit_after_fees_aud": -555.62,
+            "conservative_tax_stress_aud": 0.0,
+            "illustrative_after_tax_profit_aud": -555.62,
+            "less_offset_savings_aud": -618.45,
+            "beats_offset_in_this_hypothetical_scenario": false,
+            "offset_comparisons_by_rate": {
+              "illustrative_5_8": {
+                "net_profit_minus_offset_aud": -618.45,
+                "beats_this_offset_scenario": false
+              },
+              "unconfirmed_6_01": {
+                "net_profit_minus_offset_aud": -620.73,
+                "beats_this_offset_scenario": false
+              }
+            }
+          }
+        }
+      },
+      "verified_buy_signal": false
+    }
+  ],
   "tax_law_warning": "Australian CGT reforms applying from 1 July 2027 may require splitting pre-/post-commencement gains and indexation. The conservative full-gain marginal-rate stress is NOT actual tax payable; confirm current ATO requirements and transaction dates.",
   "source_urls": [
     "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
