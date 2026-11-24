@@ -1,0 +1,28 @@
+{
+  "schema_version": "9.2-forward-assumptions-1",
+  "future_issuance_stress": {
+    "bear": 0.15,
+    "base": 0.05,
+    "bull": 0
+  },
+  "sector_policies": {
+    "NORMALIZED_EARNINGS_AND_DCF": {
+      "method": "DIRECT_DILUTED_GAAP_EARNINGS_CAPITALIZATION",
+      "earnings_multiples": {
+        "bear": 10,
+        "base": 14,
+        "bull": 18
+      },
+      "status": "FIXED_RESEARCH_ASSUMPTIONS_NOT_PRICE_TARGET_CALIBRATION"
+    }
+  },
+  "minimum_preferred_upside_pct": 25,
+  "maximum_preferred_upside_pct": 50,
+  "orders_enabled": false,
+  "timing_policy": {
+    "method": "OBSERVED_VOLATILITY_OR_NEW_FIVE_DAY_LOW",
+    "maximum_daily_sigma_from_low": 1,
+    "recovering_companies_remain_in_research_rankings": true
+  },
+  "forward_growth_policy": "PRIMARY_MANAGEMENT_GUIDANCE_WITHOUT_BLANKET_GROWTH_CAP; unguided sensitivities are provisional and never improve supported coverage"
+}
