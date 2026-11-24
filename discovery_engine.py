@@ -56,16 +56,22 @@ QUERY_TERMS = (
     '("AI infrastructure" OR "data center" OR "GPU cluster") (contract OR earnings OR agreement)',
     '("counter drone" OR "satellite" OR "small modular reactor") (contract OR order OR approval)',
     '("phase 3" OR photonics OR "rare earth") (results OR contract OR award)',
+    '(ASX OR Australia OR Canada OR TSX) (smallcap OR microcap) (contract OR backlog OR earnings)',
+    '(Japan OR Tokyo OR Europe OR London) (smallcap OR semiconductor OR robotics) (earnings OR contract)',
+    '(India OR Singapore OR Hong Kong) (smallcap OR infrastructure) (earnings OR order)',
 )
 GOOGLE_NEWS_TERMS = (
     '"AI infrastructure" contract OR "data center" deal OR "GPU cloud" agreement when:7d',
     '"counter drone" contract OR satellite order OR "nuclear" approval when:7d',
     '"phase 3" results OR photonics contract OR "rare earth" award when:7d',
+    'ASX OR TSX smallcap contract backlog earnings when:7d',
+    'Japan Europe London smallcap robotics semiconductor earnings when:7d',
+    'India Singapore Hong Kong smallcap infrastructure earnings order when:7d',
 )
 MIN_PRICE = 0.50
 MIN_MEDIAN_DOLLAR_VOLUME = 150_000.0
 MAX_MARKET_CAP = 20_000_000_000.0
-MAX_CANDIDATES_PER_RUN = 35
+MAX_CANDIDATES_PER_RUN = 60
 MAX_REGISTRY_SIZE = 1500
 MAX_OPEN_RESEARCH = 160
 MAX_NEWS_ONLY_PER_RUN = 8
@@ -244,7 +250,7 @@ def extract_unverified_news_leads(articles: list[dict], now: datetime) -> list[d
     PENDING_EVIDENCE lead, even when liquidity and market cap pass the gate.
     """
     results: dict[str, dict] = {}
-    pattern = re.compile(r"\b(NASDAQ|NYSE|ASX)\s*:\s*\$?([A-Z][A-Z0-9.\-]{0,10})\b", re.I)
+    pattern = re.compile(r"\b(NASDAQ|NYSE|ASX|TSXV|TSX|LSE|HKEX|TSE|SGX|XETRA|NSE)\s*:\s*\$?([A-Z0-9][A-Z0-9.\-]{0,10})\b", re.I)
     for article in articles:
         if not isinstance(article, dict):
             continue
@@ -269,7 +275,8 @@ def extract_unverified_news_leads(articles: list[dict], now: datetime) -> list[d
             ticker = safe_ticker(raw)
             if not ticker:
                 continue
-            ticker = ticker + ".AX" if exchange.upper() == "ASX" and not ticker.endswith(".AX") else ticker
+            suffix = {"ASX": ".AX", "TSX": ".TO", "TSXV": ".V", "LSE": ".L", "HKEX": ".HK", "TSE": ".T", "SGX": ".SI", "XETRA": ".DE", "NSE": ".NS"}.get(exchange.upper(), "")
+            if suffix and not ticker.endswith(suffix): ticker += suffix
             if ticker in results:
                 continue
             results[ticker] = {
@@ -647,7 +654,7 @@ def fetch_quotes(tickers: list[str], now: datetime, max_names: int = MAX_CANDIDA
     for ticker in tickers[:max_names]:
         try:
             asset = yf.Ticker(ticker)
-            frame = asset.history(period="4mo", interval="1d", auto_adjust=False, actions=False)
+            frame = asset.history(period="1y", interval="1d", auto_adjust=False, actions=False)
             if frame.empty or len(frame) < 25:
                 raise ValueError("fewer than 25 daily bars")
             pairs = [(float(x), float(v)) for x, v in zip(frame["Close"].tail(20), frame["Volume"].tail(20))
@@ -665,7 +672,10 @@ def fetch_quotes(tickers: list[str], now: datetime, max_names: int = MAX_CANDIDA
                 cap = float(cap) if cap is not None else None
             except Exception:
                 cap = None
-            quotes[ticker] = {"price": round(px, 5), "quote_date": qtime,
+            from championship_90 import trading_lows
+            from scan import currency_for
+            levels = trading_lows([float(x) for x in frame["Low"]], [float(x) for x in frame["Close"]])
+            quotes[ticker] = {**levels, "currency": currency_for(ticker), "price": round(px, 5), "quote_date": qtime,
                               "stale_days": max(0, (now.date() - day.date()).days),
                               "median_dollar_volume_20d": round(median, 2),
                               "market_cap": cap, "price_source": "unofficial yfinance daily bars — not executable"}

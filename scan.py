@@ -56,7 +56,7 @@ def load_watchlist(path: Path) -> list[dict]:
 def currency_for(ticker: str) -> str:
     suffix = ticker.upper().split(".")[-1] if "." in ticker else ""
     return {"AX": "AUD", "TO": "CAD", "V": "CAD", "L": "GBP", "HK": "HKD",
-            "DE": "EUR", "PA": "EUR", "SW": "CHF", "T": "JPY"}.get(suffix, "USD")
+            "DE": "EUR", "PA": "EUR", "SW": "CHF", "T": "JPY", "SI": "SGD", "NS": "INR"}.get(suffix, "USD")
 
 
 def percentage_change(current: float, prior: float | None):
@@ -142,8 +142,12 @@ def compute_metrics(quote: dict, metadata: dict, now: datetime) -> dict:
     if stale_days is not None and stale_days > 7:
         signal = "STALE DATA — REVIEW"
 
+    from championship_90 import trading_lows
+    levels = trading_lows(quote.get("lows", []), closes)
+    levels["trading_low_52w"] = levels.pop("low_52w")
     return {
-        "currency": currency_for(metadata["ticker"]),
+        **levels,
+        "currency": quote.get("currency") or currency_for(metadata["ticker"]),
         "price": round(last, 5),
         "quote_date": quote_date,
         "stale_days": stale_days,
@@ -186,18 +190,20 @@ def fetch_batch(tickers: list[str]) -> dict[str, dict]:
     for ticker in tickers:
         try:
             block = frame[ticker]  # top-level ticker index with group_by=ticker
-            rows = block[["Close", "Volume"]].dropna(subset=["Close"])
-            closes, volumes, valid_dates = [], [], []
+            rows = block[["Close", "Low", "Volume"]].dropna(subset=["Close"])
+            closes, volumes, valid_dates, lows = [], [], [], []
             for dt, row in rows.iterrows():
                 close, vol = float(row["Close"]), float(row["Volume"])
                 if math.isfinite(close) and close > 0:
                     closes.append(close)
+                    low = float(row["Low"])
+                    lows.append(low if math.isfinite(low) and low > 0 else None)
                     volumes.append(vol if math.isfinite(vol) and vol >= 0 else 0.0)
                     valid_dates.append(dt)
             if len(closes) < 2:
                 continue
             # Use the timestamp of the last valid trading row, not current clock time.
-            out[ticker] = {"closes": closes, "volumes": volumes,
+            out[ticker] = {"closes": closes, "volumes": volumes, "lows": lows,
                            "quote_date": valid_dates[-1].isoformat()}
         except (KeyError, TypeError, ValueError, AttributeError):
             continue
