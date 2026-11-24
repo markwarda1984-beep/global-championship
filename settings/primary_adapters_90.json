@@ -1,1 +1,627 @@
-{}
+{
+  "BABA": {
+    "share_basis": {
+      "issuer": "Alibaba Group Holding Ltd",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/baba-20260331.htm",
+      "as_of": "2026-03-31",
+      "published_at": "2026-05-20",
+      "accession_or_document_id": "0001193125-26-231755",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "BABA",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 8,
+        "ordinary_shares_outstanding": 1858037427.0
+      },
+      "facts_sha256": "bff87c4ef716265a1c5b7ea183c6f9b937daec08859bd7d940a7e44fa7355f83",
+      "source_document_sha256": "3a4eca153bce4c8ecdf28b08ecc0b9f484e4d5a42126bcf6d803ca52b3f46e0d",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "KD Counter) 89988 (RMB Counter) The Stock Exchange of Hong Kong Limited American Depositary Shares, each representing eight Ordinary Shares BABA New York Stock Exchange Securities "
+    },
+    "fx": {
+      "from": "CNY",
+      "to": "USD",
+      "rate": 0.1501411348581314,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945252+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "TSM": {
+    "share_basis": {
+      "issuer": "Taiwan Semiconductor Manufacturing Company Limited",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-04-16",
+      "accession_or_document_id": "0001628280-26-025362",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "TSM",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 5,
+        "ordinary_shares_outstanding": 25932524521.0
+      },
+      "facts_sha256": "862cb43edff157bb2110171ef9ac8f85957bf80f30562b7d107320d6b8ca57a8",
+      "source_document_sha256": "5ede160170a1a5838e049804f7f5f4124ea34f5de6dbd734be54b179a929832f",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "ompany was calculated by including both common shares and shares held in the form of ADSs (each ADS represents five (5) common shares) held by such individuals. (3) Represented sha"
+    },
+    "fx": {
+      "from": "TWD",
+      "to": "USD",
+      "rate": 0.030440472066402435,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945741+00:00",
+      "source_url": "https://finance.yahoo.com/quote/TWDUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "ASML": {
+    "share_basis": {
+      "issuer": "ASML HOLDING NV",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026011378/asml-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-02-25",
+      "accession_or_document_id": "0001628280-26-011378",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "ASML",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 385417665.0
+      },
+      "facts_sha256": "10801ca2a65d011c9a7dea0a70fa78914c7484a9973c293fb4c3a05deed8ded5",
+      "source_document_sha256": "dfa708606c5b966df537afce760b75c96dfb377e6ee2bd6c2c86bf84388d0ef2",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading Symbol Name of each exchange on which registered Ordinary Shares ASML The Nasdaq Stock Market LLC (nominal value \u20ac0.09 per share) "
+    },
+    "fx": {
+      "from": "EUR",
+      "to": "USD",
+      "rate": 1.0913456678390503,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945589+00:00",
+      "source_url": "https://finance.yahoo.com/quote/EURUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "ARM": {
+    "share_basis": {
+      "issuer": "ARM HOLDINGS PLC /UK",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm",
+      "as_of": "2026-03-31",
+      "published_at": "2026-05-26",
+      "accession_or_document_id": "0001973239-26-000097",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "ARM",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1,
+        "ordinary_shares_outstanding": 1064055252.0
+      },
+      "facts_sha256": "c0016117b99ae89989b7aed8de826964238a0784ccfd26d272463efbe2f05954",
+      "source_document_sha256": "41ca9a1e4ff75f1d7732488c1a2b895b34da6462a856b75a322f0405851fdb76",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": " each class Trading symbol(s) Name of each exchange on which registered American Depositary Shares, each representing one Ordinary Share, nominal value \u00a30.001 per share ARM The Nas"
+    }
+  },
+  "NVO": {
+    "share_basis": {
+      "issuer": "NOVO NORDISK A/S",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/353278/000035327826000012/nvo-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-02-04",
+      "accession_or_document_id": "0000353278-26-000012",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "NVO",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1,
+        "ordinary_shares_outstanding": 4444000000.0
+      },
+      "facts_sha256": "9bb40eccc99fa312c19a096097c606cea41ed7b1351695e8dbc549dd2617a5e1",
+      "source_document_sha256": "95dc0d619905b4f1d5a1b15aae6bfb1168724a335591d8770da63b64cae8e4d9",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "ered: B shares, nominal value DKK 0.10 each New York Stock Exchange * American Depositary Receipts, each representing one B Share NVO New York Stock Exchange * Not for trading, bu"
+    },
+    "fx": {
+      "from": "DKK",
+      "to": "USD",
+      "rate": 0.1459924429655075,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945433+00:00",
+      "source_url": "https://finance.yahoo.com/quote/DKKUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "NTES": {
+    "share_basis": {
+      "issuer": "NETEASE, INC.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1110646/000110465926043468/ntes-20251231x20f.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-04-15",
+      "accession_or_document_id": "0001104659-26-043468",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "NTES",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 5,
+        "ordinary_shares_outstanding": 3192111251.0
+      },
+      "facts_sha256": "2e1c207850cf775ea35273c5e0b36b7bf8e4916aba22209849cf465fc72715b0",
+      "source_document_sha256": "7d5a4c3f2da391a2d1a083dd0c037a3fb96d940986fe769377819a8d77d7746e",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": " Each Class Trading Symbol(s) Name of Each Exchange On Which Registered American Depositary Shares, each representing five ordinary shares, par value US$0.0001 per share NTES The N"
+    },
+    "fx": {
+      "from": "CNY",
+      "to": "USD",
+      "rate": 0.1501411348581314,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945252+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "MELI": {
+    "share_basis": {
+      "issuer": "MercadoLibre, Inc.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000006/meli-20251231.htm",
+      "as_of": "2026-11-04",
+      "published_at": "2026-02-25",
+      "accession_or_document_id": "0001099590-26-000006",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "MELI",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 50696802.0
+      },
+      "facts_sha256": "c99cb266ed9328d6e9efc396bc4564ff3dca8d63854269581e1a0e4bc3eda90c",
+      "source_document_sha256": "df2611fad0828e4f51b03f48bb14676e08af3449f8a066f15196d76b2c69751c",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, $0.001 par value per share MELI Nasdaq Global Select Market 3.125% Notes due 2031 MELI"
+    }
+  },
+  "SAP": {
+    "share_basis": {
+      "issuer": "SAP SE",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1000184/000110465926020058/sap-20251231x20f.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-02-26",
+      "accession_or_document_id": "0001104659-26-020058",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "SAP",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1,
+        "ordinary_shares_outstanding": 1228504232.0
+      },
+      "facts_sha256": "aa5747d361aed12c35da1b9e57b7ed23adb1a01016b8a1ad5d110887d08bf049",
+      "source_document_sha256": "49ee6e964ef8693af70dbcf84cfd2e5e46492ebdbe9fb1c2e67a8ea71759cace",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class (SAP) SAP Name of each exchange on which registered American Depositary Shares, each Representing one Ordinary Share, without nominal value \u200b New York Stock Exc"
+    },
+    "fx": {
+      "from": "EUR",
+      "to": "USD",
+      "rate": 1.0913456678390503,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945589+00:00",
+      "source_url": "https://finance.yahoo.com/quote/EURUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "EQNR": {
+    "share_basis": {
+      "issuer": "EQUINOR ASA",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1140625/000114062526000013/eqnr-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-03-19",
+      "accession_or_document_id": "0001140625-26-000013",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "EQNR",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1,
+        "ordinary_shares_outstanding": 2500271030.0
+      },
+      "facts_sha256": "bfcbae4ce4793e88c66c0a4dcb828968757641fc35811c241016a7790173be29",
+      "source_document_sha256": "7b3756edcf7963bcbeed1597bf61651c6f3ba734f39bf80ba1c910844c5212f5",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "ed on the New York Stock Exchange are evidenced by American Depositary Receipts (ADR), and each ADS represents one ordinary share. B. Plan of Distribution Not applicable. C. Marke"
+    }
+  },
+  "RY": {
+    "share_basis": {
+      "issuer": "ROYAL BANK OF CANADA",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312525305927/d95203d40f.htm",
+      "as_of": "2025-10-31",
+      "published_at": "2025-12-03",
+      "accession_or_document_id": "0001193125-25-305927",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "RY",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 1400635338.0
+      },
+      "facts_sha256": "9e324f53ec294a43683e64addf3aeee26445a105644437719bcb970b96f76b91",
+      "source_document_sha256": "5193a97abd20b8b183e3af9289531c1167dba6e43931891243a39ea1bf71d0bd",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Shares RY New York Stock Exchange "
+    },
+    "fx": {
+      "from": "CAD",
+      "to": "USD",
+      "rate": 0.6964030861854553,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.944733+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "CNQ": {
+    "share_basis": {
+      "issuer": "CANADIAN NATURAL RESOURCES LIMITED",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1017413/000101741326000018/cnq-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-03-26",
+      "accession_or_document_id": "0001017413-26-000018",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "CNQ",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 2081578000.0
+      },
+      "facts_sha256": "b0200abc57665a66cb31c964aa1f740486d61bde6017d12622828d3d7c1a9c7f",
+      "source_document_sha256": "4af3d803ac123acd99186dfa8a7505c920806ea16797240bb70f30c7fa6823ac",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of Each Class: Trading Symbol(s): Name of each exchange on which registered: Common Shares, no par value CNQ New York Stock Exchange "
+    },
+    "fx": {
+      "from": "CAD",
+      "to": "USD",
+      "rate": 0.6964030861854553,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.944733+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "SU": {
+    "share_basis": {
+      "issuer": "SUNCOR ENERGY INC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/311337/000110465926020411/su-20251231x40f.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-02-26",
+      "accession_or_document_id": "0001104659-26-020411",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "SU",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 1193519494.0
+      },
+      "facts_sha256": "da4d85a7c9ae92fd4ba37e86ea9cd17200a656bf4fbc04da7f256d20f60928af",
+      "source_document_sha256": "4410a64281c4ed48ba8d135ae76f253c9db4682265b3d623f6efcf98f2bba51e",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class: Trading Symbol(s): Name of each exchange on which registered: Common shares SU New York Stock Exchange \u200b "
+    },
+    "fx": {
+      "from": "CAD",
+      "to": "USD",
+      "rate": 0.6964030861854553,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.944733+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "ENB": {
+    "share_basis": {
+      "issuer": "ENBRIDGE INC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/895728/000119312526049810/enb-20251231.htm",
+      "as_of": "2026-10-30",
+      "published_at": "2026-02-13",
+      "accession_or_document_id": "0001193125-26-049810",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "ENB",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 2228888088.0
+      },
+      "facts_sha256": "3c371de577f37eff7105b4721f276bc0e54d4b4b11db66b46291060d306844ed",
+      "source_document_sha256": "f471800fed10f6b2623a9f8a77fdf87ea5df62e7b84baba8087cee3b56c95690",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Shares ENB New York Stock Exchange "
+    },
+    "fx": {
+      "from": "CAD",
+      "to": "USD",
+      "rate": 0.6964030861854553,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.944733+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "CNI": {
+    "share_basis": {
+      "issuer": "CANADIAN NATIONAL RAILWAY CO",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/16868/000110465926010352/tm261145d1_40f.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-02-04",
+      "accession_or_document_id": "0001104659-26-010352",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "CNI",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 614433951.0
+      },
+      "facts_sha256": "1b3714052665d1d750d94e23e12a4380e8b1ece7bd63d3a218b52ef553abb7a6",
+      "source_document_sha256": "79d737f22ef54f858569b2225f99bee84ec469c95c4d478525258e07cef6734e",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common shares CNI New York Stock Exchange CNR Toronto Stock Exchange "
+    }
+  },
+  "CP": {
+    "share_basis": {
+      "issuer": "CANADIAN PACIFIC KANSAS CITY  LTD/CN",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/16875/000001687526000008/cp-20251231.htm",
+      "as_of": "2026-10-27",
+      "published_at": "2026-02-26",
+      "accession_or_document_id": "0000016875-26-000008",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "CP",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 869554740.0
+      },
+      "facts_sha256": "8ea46be49743c9b0f0e94cb1c56a17df3f7352cc1a98b0e83ea0e03c92a9d547",
+      "source_document_sha256": "42b0ef11d0b248a9a26fd4399cb5113eb21a5212d10398d3fa721a6fcf9ea1f3",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which Registered Common Shares, without par value, of Canadian Pacific Kansas City Limited CP New York Stock Exchange"
+    },
+    "fx": {
+      "from": "CAD",
+      "to": "USD",
+      "rate": 0.6964030861854553,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.944733+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "AZN": {},
+  "BIDU": {
+    "fx": {
+      "from": "CNY",
+      "to": "USD",
+      "rate": 0.1501411348581314,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945252+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "JD": {
+    "fx": {
+      "from": "CNY",
+      "to": "USD",
+      "rate": 0.1501411348581314,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945252+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "PDD": {
+    "share_basis": {
+      "issuer": "PDD Holdings\u00a0Inc.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-04-29",
+      "accession_or_document_id": "0001104659-26-050727",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "PDD",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 4,
+        "ordinary_shares_outstanding": 5693585848.0
+      },
+      "facts_sha256": "5a84eced717da14b44e1db5ccb5d70e5d7b8a5b0c1cb5fe3b159ffea9096e3ca",
+      "source_document_sha256": "d8b5224e1fe69c7f2e9ef1737dd72f786596f380303739c910b11e18a005cde5",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Name of each exchange on which registered American Depositary Shares (one American depositary share representing four Class A ordinary shares, par value US$0.000005 per share) \u200b PD"
+    },
+    "fx": {
+      "from": "CNY",
+      "to": "USD",
+      "rate": 0.1501411348581314,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945252+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "SE": {},
+  "GRAB": {},
+  "NU": {},
+  "SHEL": {
+    "share_basis": {
+      "issuer": "Shell plc",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1306965/000162828026017024/shel-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-03-12",
+      "accession_or_document_id": "0001628280-26-017024",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "SHEL",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 2,
+        "ordinary_shares_outstanding": 5689891670.0
+      },
+      "facts_sha256": "28660ce22fa112341972a2c6543dae0d53213cca59b4774d16d373cf9ef31a57",
+      "source_document_sha256": "bdc0bea0148c887f878deaaccd6202a769b42778c9adf094900695705c42c164",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": " of Each Class Trading Symbols Name of Each Exchange on Which Registered American Depositary Shares representing two ordinary shares with a nominal value of \u20ac0.07 each SHEL New Yor"
+    }
+  },
+  "BP": {},
+  "TTE": {
+    "share_basis": {
+      "issuer": "TotalEnergies SE",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/879764/000110465926035876/tot-20251231x20f.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-03-27",
+      "accession_or_document_id": "0001104659-26-035876",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "TTE",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 2206585543.0
+      },
+      "facts_sha256": "2afa155abd743b2984638a50b29366e5956febbdf7090cd07010b3b4bf516995",
+      "source_document_sha256": "b2aa4edcd607b1ac3c4ffde1cfde62007682562e7858d3ec0c8501d09f9aa9a7",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading symbol(s) Name of each exchange on which registered Shares TTE New York Stock Exchange \u200b \u200b "
+    }
+  },
+  "HSBC": {
+    "share_basis": {
+      "issuer": "HSBC HOLDINGS PLC",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1089113/000108911326000010/hsbc-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-02-26",
+      "accession_or_document_id": "0001089113-26-000010",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "HSBC",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 5.0,
+        "ordinary_shares_outstanding": 17175239862.0
+      },
+      "facts_sha256": "3dfccaf0a4e990fb9d131e61437a8e54889b0f0803754bcb796e110fc430f1ea",
+      "source_document_sha256": "7ce32e37116c0e32ec9359f162160df08ebf84e6edaf6e11007b4caf2867e572",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": " Exchange HSBC.BH Bermuda Stock Exchange HSBC New York Stock Exchange * American Depositary Shares, each representing 5 Ordinary Shares of nominal value US$0.50 each (US4042804066)"
+    }
+  },
+  "UBS": {
+    "share_basis": {
+      "issuer": "UBS Group AG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1610520/000161052026000023/ubs-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-03-09",
+      "accession_or_document_id": "0001610520-26-000023",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "UBS",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 3341581714.0
+      },
+      "facts_sha256": "29b0e891e57bbfc81e4f86e0eebbe7b882c3f6b717f0a98c6a2b423e3f61e2b9",
+      "source_document_sha256": "2ec99c78b1e9daf30c6b1fddefd6317d240fc099c96ca2cc5958d855c9c9bebf",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading symbol(s) Name of each exchange on which registered Ordinary Shares (par value of USD 0.10 each) UBS New York Stock Exchange "
+    }
+  },
+  "NVS": {
+    "share_basis": {
+      "issuer": "Novartis AG",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1114448/000111444826000004/nvs-20251231.htm",
+      "as_of": "2025-12-31",
+      "published_at": "2026-02-04",
+      "accession_or_document_id": "0001114448-26-000004",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "NVS",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 1908151679.0
+      },
+      "facts_sha256": "dfb93c75ca1071788673a6fc9d9f54012cb01b6f1f38585f70da422baa6df389",
+      "source_document_sha256": "1079031f230d4dd466f1f0b416e9b75427e04a594d8a62fc7f4f1d8d700c4c7e",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "f each class Trading Symbol(s) Name of each exchange on which registered American Depositary Shares each representing 1 share NVS New York Stock Exchange Ordinary shares, nomi"
+    }
+  },
+  "INFY": {},
+  "TD": {
+    "share_basis": {
+      "issuer": "TORONTO DOMINION BANK",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/947263/000156276225000289/40f20251031.htm",
+      "as_of": "2025-10-31",
+      "published_at": "2025-12-04",
+      "accession_or_document_id": "0001562762-25-000289",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "facts": {
+        "ticker": "TD",
+        "quote_currency": "USD",
+        "ordinary_shares_per_receipt": 1.0,
+        "ordinary_shares_outstanding": 1689495505.0
+      },
+      "facts_sha256": "fe33dec16347373baec76b571e4851de01f3c9d9ca80579d4aaf6f13a76ffffd",
+      "source_document_sha256": "acacde4b77178323f40f577f085b5c2593dc0b0b9f15a23a25c9cf1911654a23",
+      "extraction_method": "INLINE_XBRL_CURRENT_SHARES_AND_EXPLICIT_REGISTERED_SECURITY_ROW",
+      "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Shares TD New York Stock Exchange "
+    },
+    "fx": {
+      "from": "CAD",
+      "to": "USD",
+      "rate": 0.6964030861854553,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.944733+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "BN": {},
+  "CCJ": {
+    "fx": {
+      "from": "CAD",
+      "to": "USD",
+      "rate": 0.6964030861854553,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.944733+00:00",
+      "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  },
+  "SPOT": {
+    "fx": {
+      "from": "EUR",
+      "to": "USD",
+      "rate": 1.0913456678390503,
+      "as_of": "2026-11-24",
+      "observed_utc": "2026-11-24T05:32:09.945589+00:00",
+      "source_url": "https://finance.yahoo.com/quote/EURUSD=X/history/",
+      "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
+      "orders_enabled": false
+    }
+  }
+}
