@@ -131,5 +131,8 @@ if __name__=='__main__':
    if (datetime.now(timezone.utc)-stamp).days<7:
     print('Share-basis document refresh not yet due; preserving source dates');raise SystemExit(0)
  contact=os.environ.get('SEC_USER_AGENT','').strip()
- if '@' not in contact:raise SystemExit('SEC_USER_AGENT contact required')
+ if '@' not in contact:
+  if a.only_if_due:
+   print('SEC_USER_AGENT contact is not configured; preserving dated share-basis evidence.');raise SystemExit(0)
+  raise SystemExit('SEC_USER_AGENT contact required')
  run(a.root,a.raw_dir,contact)
