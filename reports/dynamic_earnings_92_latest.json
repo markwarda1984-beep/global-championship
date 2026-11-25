@@ -1,6 +1,6 @@
 {
   "schema_version": "9.2-dynamic-earnings-1",
-  "published_at_utc": "2026-11-25T02:28:44.669277+00:00",
+  "published_at_utc": "2026-11-25T02:32:50.619336+00:00",
   "mode": "scan",
   "coverage_comparison": {
     "baseline_supported": 89,
@@ -401,21 +401,21 @@
       "ticker": "BHP.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 51.99,
+      "price": 52.02,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 14.9341,
-          "base": 24.5346,
-          "bull": 34.3484
+          "bear": 14.9519,
+          "base": 24.5639,
+          "bull": 34.3895
         },
         "assumptions": {
           "formula": "(MEDIAN_7Y_EARNINGS + MEDIAN_7Y_FREE_CASH_FLOW)/2 \u00f7 capitalization_yield \u00f7 diluted_shares",
           "annual_years": 7,
-          "earnings_median_filed": 13578104130.15,
-          "fcf_median_filed": 17838669014.1,
+          "earnings_median_filed": 13594338873.74,
+          "fcf_median_filed": 17859997928.26,
           "capitalization_yields_pct": {
             "bear": 18,
             "base": 12,
@@ -673,12 +673,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.8222360549527548,
-        "observed_daily_log_return_stddev": 0.024813980949153824,
+        "distance_from_5d_low_in_daily_sigma": 0.8462265005512714,
+        "observed_daily_log_return_stddev": 0.024792200923179637,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.061251279148002,
+      "recovery_from_5d_low_pct": 2.120144095812271,
       "trading_lows": {
         "low_5d": 50.939998626708984,
         "low_30d": 50.939998626708984,
@@ -2411,7 +2411,7 @@
       "ticker": "LYC.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 12.84,
+      "price": 12.85,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -2494,12 +2494,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.4825045970583157,
-        "observed_daily_log_return_stddev": 0.04339336395795524,
+        "distance_from_5d_low_in_daily_sigma": 1.5009055209190605,
+        "observed_daily_log_return_stddev": 0.0433800620501669,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 6.644518610312744,
+      "recovery_from_5d_low_pct": 6.727575088981208,
       "trading_lows": {
         "low_5d": 12.039999961853027,
         "low_30d": 10.6899995803833,
@@ -5452,17 +5452,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 114.5675,
-          "base": 226.0776,
-          "bull": 352.9979
+          "bear": 114.5424,
+          "base": 226.028,
+          "bull": 352.9205
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 8942518567.09,
-          "median_annual_net_income_filed": 8452501019.99,
+          "cashflow_median_of_filed_years": 8940556514.74,
+          "median_annual_net_income_filed": 8450646480.99,
           "historical_fcf_cagr_observed_pct": 15.443,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 11384545749.76,
+          "illustrative_next_year_net_income_not_issuer_guidance": 11382047899.23,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -8632,7 +8632,7 @@
       "ticker": "RIO.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 134.935,
+      "price": 134.99001,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -8847,12 +8847,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.5133861119312569,
-        "observed_daily_log_return_stddev": 0.022431493884667336,
+        "distance_from_5d_low_in_daily_sigma": 0.5319111380560249,
+        "observed_daily_log_return_stddev": 0.022416549062331995,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 1.1582582033293543,
+      "recovery_from_5d_low_pct": 1.199498176529512,
       "trading_lows": {
         "low_5d": 133.38999938964844,
         "low_30d": 133.38999938964844,
@@ -9079,7 +9079,7 @@
       "ticker": "PDN.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 5.88,
+      "price": 5.885,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -9162,12 +9162,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.7829914902721,
-        "observed_daily_log_return_stddev": 0.06003388179894076,
+        "distance_from_5d_low_in_daily_sigma": 0.7972344381822924,
+        "observed_daily_log_return_stddev": 0.06002750895632258,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 4.8128317301207035,
+      "recovery_from_5d_low_pct": 4.901958287714359,
       "trading_lows": {
         "low_5d": 5.610000133514404,
         "low_30d": 5.610000133514404,
@@ -9237,7 +9237,7 @@
       "ticker": "BOE.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 1.3325,
+      "price": 1.335,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -9320,12 +9320,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.8047914775474092,
-        "observed_daily_log_return_stddev": 0.05114871936269251,
+        "distance_from_5d_low_in_daily_sigma": 1.8418943231262535,
+        "observed_daily_log_return_stddev": 0.05113604315134516,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 9.67077888011756,
+      "recovery_from_5d_low_pct": 9.87654019133728,
       "trading_lows": {
         "low_5d": 1.215000033378601,
         "low_30d": 1.190000057220459,
@@ -9415,7 +9415,7 @@
       "ticker": "MIN.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 38.1,
+      "price": 38.11,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -9498,12 +9498,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.16031353537788723,
-        "observed_daily_log_return_stddev": 0.041065419382847475,
+        "distance_from_5d_low_in_daily_sigma": 0.16675588796417562,
+        "observed_daily_log_return_stddev": 0.04105267525920416,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 0.6605060395176388,
+      "recovery_from_5d_low_pct": 0.6869261198429788,
       "trading_lows": {
         "low_5d": 37.849998474121094,
         "low_30d": 37.849998474121094,
@@ -9573,7 +9573,7 @@
       "ticker": "WDS.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 29.99,
+      "price": 29.98,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -9813,12 +9813,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.2055056090851557,
-        "observed_daily_log_return_stddev": 0.019308498111800364,
+        "distance_from_5d_low_in_daily_sigma": 1.1893404904877225,
+        "observed_daily_log_return_stddev": 0.01929052518922575,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.354951470669975,
+      "recovery_from_5d_low_pct": 2.320821776948523,
       "trading_lows": {
         "low_5d": 29.299999237060547,
         "low_30d": 29.299999237060547,
@@ -10011,7 +10011,7 @@
       "ticker": "WTC.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 45.89,
+      "price": 45.895,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -10094,12 +10094,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 2.1098461047671377,
-        "observed_daily_log_return_stddev": 0.024806331849833402,
+        "distance_from_5d_low_in_daily_sigma": 2.1146452891159346,
+        "observed_daily_log_return_stddev": 0.02480155568462758,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 5.373136174358728,
+      "recovery_from_5d_low_pct": 5.384617230817046,
       "trading_lows": {
         "low_5d": 43.54999923706055,
         "low_30d": 33.689998626708984,
@@ -16607,9 +16607,9 @@
           "forecast_status": "ANALYST_HYPOTHESIS_NOT_VERIFIED_FORWARD_GUIDANCE",
           "historical_filing_share_count_check": {
             "current_shares": 361042545.0,
-            "prior_shares": 352525971.0,
-            "prior_as_of": "2025-12-31",
-            "observed_share_basis_change_pct": 2.416
+            "prior_shares": 352576081.0,
+            "prior_as_of": "2026-02-05",
+            "observed_share_basis_change_pct": 2.401
           },
           "hypothetical_future_issuance_pct": {
             "bear": 15,
@@ -26379,17 +26379,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 25.0981,
-          "base": 55.6081,
-          "bull": 92.1021
+          "bear": 25.0926,
+          "base": 55.5959,
+          "bull": 92.0819
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 1622422100.19,
-          "median_annual_net_income_filed": 388328210.59,
+          "cashflow_median_of_filed_years": 1622066129.21,
+          "median_annual_net_income_filed": 388243008.61,
           "historical_fcf_cagr_observed_pct": 415.215,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2620623056.43,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2620048073.04,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -37038,15 +37038,15 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 2.1042,
-          "base": 3.457,
-          "bull": 4.8398
+          "bear": 2.105,
+          "base": 3.4582,
+          "bull": 4.8414
         },
         "assumptions": {
           "formula": "(MEDIAN_7Y_EARNINGS + MEDIAN_7Y_FREE_CASH_FLOW)/2 \u00f7 capitalization_yield \u00f7 diluted_shares",
           "annual_years": 7,
-          "earnings_median_filed": 62652544.36,
-          "fcf_median_filed": 316699492.33,
+          "earnings_median_filed": 62674073.12,
+          "fcf_median_filed": 316808317.07,
           "capitalization_yields_pct": {
             "bear": 18,
             "base": 12,
@@ -41057,17 +41057,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 11.374,
-          "base": 20.4506,
-          "bull": 30.2576
+          "bear": 11.37,
+          "base": 20.4434,
+          "bull": 30.247
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 10313216309.25,
-          "median_annual_net_income_filed": 13551189790.07,
+          "cashflow_median_of_filed_years": 10309584821.31,
+          "median_annual_net_income_filed": 13546418147.47,
           "historical_fcf_cagr_observed_pct": -4.047,
           "assumed_forward_growth_capped_pct": -4.047,
-          "illustrative_next_year_net_income_not_issuer_guidance": 14424895874.27,
+          "illustrative_next_year_net_income_not_issuer_guidance": 14419816582.44,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -67087,7 +67087,7 @@
       "ticker": "CBA.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "BANK_INSURER_JUSTIFIED_BOOK",
-      "price": 168.58,
+      "price": 168.97,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -67207,12 +67207,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.544193647982251,
-        "observed_daily_log_return_stddev": 0.012802420609298114,
+        "distance_from_5d_low_in_daily_sigma": 1.7300048270647397,
+        "observed_daily_log_return_stddev": 0.012763077906759662,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 1.9966125635744403,
+      "recovery_from_5d_low_pct": 2.232575779257173,
       "trading_lows": {
         "low_5d": 165.27999877929688,
         "low_30d": 151.6999969482422,
@@ -67231,7 +67231,7 @@
       "ticker": "NAB.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "BANK_INSURER_JUSTIFIED_BOOK",
-      "price": 36.17,
+      "price": 36.24,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -67350,12 +67350,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.6409953409960778,
-        "observed_daily_log_return_stddev": 0.018221313131293927,
+        "distance_from_5d_low_in_daily_sigma": 0.7485821944674327,
+        "observed_daily_log_return_stddev": 0.018185327056098162,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 1.1748251748251892,
+      "recovery_from_5d_low_pct": 1.3706293706293726,
       "trading_lows": {
         "low_5d": 35.75,
         "low_30d": 35.75,
@@ -67374,7 +67374,7 @@
       "ticker": "WBC.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "BANK_INSURER_JUSTIFIED_BOOK",
-      "price": 35.245,
+      "price": 35.335,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -67491,14 +67491,14 @@
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_context": {
-        "status": "AT_OR_BELOW_PREVIOUS_FIVE_DAY_LOW",
+        "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.14070251759756355,
-        "observed_daily_log_return_stddev": 0.013119361851158197,
+        "distance_from_5d_low_in_daily_sigma": 0.3391960589784248,
+        "observed_daily_log_return_stddev": 0.012960722987026137,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 0.18476320142228886,
+      "recovery_from_5d_low_pct": 0.4405903737340733,
       "trading_lows": {
         "low_5d": 35.18000030517578,
         "low_30d": 34.630001068115234,
@@ -67517,7 +67517,7 @@
       "ticker": "ANZ.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "BANK_INSURER_JUSTIFIED_BOOK",
-      "price": 38.16,
+      "price": 38.25,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -67636,12 +67636,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.0918327847538631,
-        "observed_daily_log_return_stddev": 0.012809849443402091,
+        "distance_from_5d_low_in_daily_sigma": 1.285459557133953,
+        "observed_daily_log_return_stddev": 0.012712906595803255,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 1.408447825779735,
+      "recovery_from_5d_low_pct": 1.6476186932933734,
       "trading_lows": {
         "low_5d": 37.630001068115234,
         "low_30d": 37.630001068115234,
@@ -67660,7 +67660,7 @@
       "ticker": "MQG.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "BANK_INSURER_JUSTIFIED_BOOK",
-      "price": 222.11,
+      "price": 222.49001,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -67820,12 +67820,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.3093561875295578,
-        "observed_daily_log_return_stddev": 0.01918530048892302,
+        "distance_from_5d_low_in_daily_sigma": 1.404657037053653,
+        "observed_daily_log_return_stddev": 0.01910063329946398,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.5438567595658768,
+      "recovery_from_5d_low_pct": 2.7192999679185093,
       "trading_lows": {
         "low_5d": 216.60000610351562,
         "low_30d": 216.60000610351562,
@@ -68282,7 +68282,7 @@
       "ticker": "IAG.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "BANK_INSURER_JUSTIFIED_BOOK",
-      "price": 9.27,
+      "price": 9.265,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -68365,12 +68365,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 4.3244690135971515,
-        "observed_daily_log_return_stddev": 0.007865277384692683,
+        "distance_from_5d_low_in_daily_sigma": 4.265120981745946,
+        "observed_daily_log_return_stddev": 0.007848224853707867,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.4598209880938535,
+      "recovery_from_5d_low_pct": 3.4040174169028825,
       "trading_lows": {
         "low_5d": 8.960000038146973,
         "low_30d": 8.28499984741211,
@@ -68441,7 +68441,7 @@
       "ticker": "WOW.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 42.88,
+      "price": 42.94,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -68746,12 +68746,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 2.4314710493296148,
-        "observed_daily_log_return_stddev": 0.014445822451385738,
+        "distance_from_5d_low_in_daily_sigma": 2.5186239567914734,
+        "observed_daily_log_return_stddev": 0.014501122592717549,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.574875409596201,
+      "recovery_from_5d_low_pct": 3.719802940486483,
       "trading_lows": {
         "low_5d": 41.400001525878906,
         "low_30d": 39.09000015258789,
@@ -68819,7 +68819,7 @@
       "ticker": "WES.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 78.41,
+      "price": 78.43,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -68902,12 +68902,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.7904044778310815,
-        "observed_daily_log_return_stddev": 0.018171740598444584,
+        "distance_from_5d_low_in_daily_sigma": 1.8042279316877667,
+        "observed_daily_log_return_stddev": 0.018173869356135942,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.3069807953367114,
+      "recovery_from_5d_low_pct": 3.333331255940064,
       "trading_lows": {
         "low_5d": 75.9000015258789,
         "low_30d": 73.02999877929688,
@@ -68977,7 +68977,7 @@
       "ticker": "COL.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 21.875,
+      "price": 21.9,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -69282,12 +69282,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.940393521893302,
-        "observed_daily_log_return_stddev": 0.022848239879165743,
+        "distance_from_5d_low_in_daily_sigma": 0.9894751888614411,
+        "observed_daily_log_return_stddev": 0.0228692357348005,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.171883026164978,
+      "recovery_from_5d_low_pct": 2.2886508924805815,
       "trading_lows": {
         "low_5d": 21.40999984741211,
         "low_30d": 20.469999313354492,
@@ -69355,7 +69355,7 @@
       "ticker": "JBH.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 77.4,
+      "price": 77.34,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -69438,12 +69438,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.9499232984777677,
-        "observed_daily_log_return_stddev": 0.023106991216155795,
+        "distance_from_5d_low_in_daily_sigma": 1.9175086674967947,
+        "observed_daily_log_return_stddev": 0.023093176507712865,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 4.608733929833297,
+      "recovery_from_5d_low_pct": 4.527641888027212,
       "trading_lows": {
         "low_5d": 73.98999786376953,
         "low_30d": 68.16000366210938,
@@ -69513,7 +69513,7 @@
       "ticker": "REA.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 161.845,
+      "price": 161.39999,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -69596,12 +69596,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.1784220355767112,
-        "observed_daily_log_return_stddev": 0.031213842522509708,
+        "distance_from_5d_low_in_daily_sigma": 1.0915627944156252,
+        "observed_daily_log_return_stddev": 0.03117519835096511,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.7467948717948785,
+      "recovery_from_5d_low_pct": 3.461532051282057,
       "trading_lows": {
         "low_5d": 156.0,
         "low_30d": 154.5500030517578,
@@ -69673,7 +69673,7 @@
       "ticker": "XRO.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 74.75,
+      "price": 74.56,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -69756,12 +69756,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.8391602072731033,
-        "observed_daily_log_return_stddev": 0.03806530806227107,
+        "distance_from_5d_low_in_daily_sigma": 0.769985705568588,
+        "observed_daily_log_return_stddev": 0.03817973463323088,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.2458541776150485,
+      "recovery_from_5d_low_pct": 2.9834232439194253,
       "trading_lows": {
         "low_5d": 72.4000015258789,
         "low_30d": 55.68000030517578,
@@ -69832,7 +69832,7 @@
       "ticker": "CAR.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 25.36,
+      "price": 25.375,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -69915,12 +69915,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.1704233246189806,
-        "observed_daily_log_return_stddev": 0.02253018586710198,
+        "distance_from_5d_low_in_daily_sigma": 1.1970509415607307,
+        "observed_daily_log_return_stddev": 0.022522987037319548,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.672061605968956,
+      "recovery_from_5d_low_pct": 2.7327903490324434,
       "trading_lows": {
         "low_5d": 24.700000762939453,
         "low_30d": 22.479999542236328,
@@ -69990,7 +69990,7 @@
       "ticker": "PME.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 202.19,
+      "price": 201.78999,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -70317,12 +70317,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 3.609881077033102,
-        "observed_daily_log_return_stddev": 0.028792706770302295,
+        "distance_from_5d_low_in_daily_sigma": 3.554845451844551,
+        "observed_daily_log_return_stddev": 0.02868138782682811,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 10.95319362367988,
+      "recovery_from_5d_low_pct": 10.733685304863872,
       "trading_lows": {
         "low_5d": 182.22999572753906,
         "low_30d": 159.38999938964844,
@@ -70390,7 +70390,7 @@
       "ticker": "COH.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 152.34,
+      "price": 152.47501,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -70473,12 +70473,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.4192351825208038,
-        "observed_daily_log_return_stddev": 0.022128600467895155,
+        "distance_from_5d_low_in_daily_sigma": 1.4591097049290376,
+        "observed_daily_log_return_stddev": 0.022130986475723178,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.190405040578481,
+      "recovery_from_5d_low_pct": 3.281856639531666,
       "trading_lows": {
         "low_5d": 147.6300048828125,
         "low_30d": 125.61000061035156,
@@ -70555,17 +70555,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 7.3098,
-          "base": 14.6398,
-          "bull": 23.0454
+          "bear": 7.3186,
+          "base": 14.6574,
+          "bull": 23.0729
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 2221624135.49,
-          "median_annual_net_income_filed": 1822915053.85,
+          "cashflow_median_of_filed_years": 2224280434.03,
+          "median_annual_net_income_filed": 1825094633.43,
           "historical_fcf_cagr_observed_pct": 42.204,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2476782952.96,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2479744333.7,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -71140,7 +71140,7 @@
       "ticker": "GMG.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "PROPERTY_ASSET_NAV_OR_AFFO",
-      "price": 27.94,
+      "price": 27.98,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -71224,12 +71224,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.6310681027629335,
-        "observed_daily_log_return_stddev": 0.023712602392157424,
+        "distance_from_5d_low_in_daily_sigma": 1.6924167150066605,
+        "observed_daily_log_return_stddev": 0.02369835067701366,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.9434556262209597,
+      "recovery_from_5d_low_pct": 4.092265154676533,
       "trading_lows": {
         "low_5d": 26.8799991607666,
         "low_30d": 24.700000762939453,
@@ -71301,7 +71301,7 @@
       "ticker": "SCG.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "PROPERTY_ASSET_NAV_OR_AFFO",
-      "price": 3.61,
+      "price": 3.615,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -71385,12 +71385,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.8787905355048047,
-        "observed_daily_log_return_stddev": 0.016470598113326698,
+        "distance_from_5d_low_in_daily_sigma": 1.9632932705461779,
+        "observed_daily_log_return_stddev": 0.01646666221514952,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 3.142857142857136,
+      "recovery_from_5d_low_pct": 3.285714285714292,
       "trading_lows": {
         "low_5d": 3.5,
         "low_30d": 3.380000114440918,
@@ -71462,7 +71462,7 @@
       "ticker": "TLS.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 5.255,
+      "price": 5.26,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -71817,12 +71817,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 3.435725848607532,
-        "observed_daily_log_return_stddev": 0.007574989616761168,
+        "distance_from_5d_low_in_daily_sigma": 3.5395234276535485,
+        "observed_daily_log_return_stddev": 0.007621537362680382,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.63672104410948,
+      "recovery_from_5d_low_pct": 2.7343772962922674,
       "trading_lows": {
         "low_5d": 5.119999885559082,
         "low_30d": 4.704999923706055,
@@ -71925,7 +71925,7 @@
       "ticker": "ALL.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 64.95,
+      "price": 64.955,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -72008,12 +72008,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.9251572519090132,
-        "observed_daily_log_return_stddev": 0.012464523501777751,
+        "distance_from_5d_low_in_daily_sigma": 1.9314612490240826,
+        "observed_daily_log_return_stddev": 0.012463696672293549,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.428639262409238,
+      "recovery_from_5d_low_pct": 2.436524454038369,
       "trading_lows": {
         "low_5d": 63.40999984741211,
         "low_30d": 61.18000030517578,
@@ -72084,7 +72084,7 @@
       "ticker": "STO.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 8.5,
+      "price": 8.49,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -72165,14 +72165,14 @@
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_context": {
-        "status": "RECOVERY_ALREADY_UNDERWAY",
-        "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.0240530396223109,
-        "observed_daily_log_return_stddev": 0.016217692662776274,
+        "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
+        "pre_recovery": true,
+        "distance_from_5d_low_in_daily_sigma": 0.954407371845911,
+        "observed_daily_log_return_stddev": 0.01616774424543412,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 1.6746453238300596,
+      "recovery_from_5d_low_pct": 1.555028094037314,
       "trading_lows": {
         "low_5d": 8.359999656677246,
         "low_30d": 8.359999656677246,
@@ -72400,7 +72400,7 @@
       "ticker": "PLS.AX",
       "universe": "ORIGINAL_200",
       "sector_method": "FULL_CYCLE_NORMALIZED_EARNINGS",
-      "price": 2.645,
+      "price": 2.64,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -72483,12 +72483,12 @@
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.8226740136125095,
-        "observed_daily_log_return_stddev": 0.0453862466118741,
+        "distance_from_5d_low_in_daily_sigma": 1.7790302800889364,
+        "observed_daily_log_return_stddev": 0.04543609236307819,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 8.624232532044541,
+      "recovery_from_5d_low_pct": 8.41889371818434,
       "trading_lows": {
         "low_5d": 2.434999942779541,
         "low_30d": 2.434999942779541,
@@ -73814,17 +73814,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 39.0017,
-          "base": 78.0421,
-          "bull": 122.7914
+          "bear": 39.0298,
+          "base": 78.0983,
+          "bull": 122.8799
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 5359881324.05,
-          "median_annual_net_income_filed": 4435669291.36,
+          "cashflow_median_of_filed_years": 5363744588.68,
+          "median_annual_net_income_filed": 4438866407.72,
           "historical_fcf_cagr_observed_pct": 24.714,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 5471686988.63,
+          "illustrative_next_year_net_income_not_issuer_guidance": 5475630839.91,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -75680,17 +75680,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 22.103,
-          "base": 43.815,
-          "bull": 68.5852
+          "bear": 22.0981,
+          "base": 43.8053,
+          "bull": 68.5701
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 5611562037.53,
-          "median_annual_net_income_filed": 5080627421.92,
+          "cashflow_median_of_filed_years": 5610330820.8,
+          "median_annual_net_income_filed": 5079512696.03,
           "historical_fcf_cagr_observed_pct": 20.841,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 8483852489.65,
+          "illustrative_next_year_net_income_not_issuer_guidance": 8481991071.91,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -75739,9 +75739,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 66.9153,
-          "base": 93.6814,
-          "bull": 120.4476
+          "bear": 66.9006,
+          "base": 93.6609,
+          "bull": 120.4211
         },
         "currency": "USD",
         "source": {
@@ -78691,14 +78691,14 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 40.4778,
-          "base": 60.4539,
-          "bull": 77.5825
+          "bear": 40.4917,
+          "base": 60.4746,
+          "bull": 77.6091
         },
         "assumptions": {
           "formula": "BOOK_VALUE_PER_SHARE \u00d7 (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-          "book_value_per_share_primary": 69.609052,
-          "median_annual_net_income_primary": 11223652863.26,
+          "book_value_per_share_primary": 69.632971,
+          "median_annual_net_income_primary": 11227509551.53,
           "normalized_roe_assumption_from_filed_history_pct": 12.031,
           "discount_rates_pct": {
             "bear": 17,
@@ -79113,14 +79113,14 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 29.3583,
-          "base": 43.8468,
-          "bull": 56.2701
+          "bear": 29.3684,
+          "base": 43.8619,
+          "bull": 56.2894
         },
         "assumptions": {
           "formula": "BOOK_VALUE_PER_SHARE \u00d7 (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-          "book_value_per_share_primary": 53.033978,
-          "median_annual_net_income_primary": 9835416259.74,
+          "book_value_per_share_primary": 53.052201,
+          "median_annual_net_income_primary": 9838795920.07,
           "normalized_roe_assumption_from_filed_history_pct": 11.549,
           "discount_rates_pct": {
             "bear": 17,
@@ -80065,17 +80065,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 7.3478,
-          "base": 13.704,
-          "bull": 20.7557
+          "bear": 7.3503,
+          "base": 13.7087,
+          "bull": 20.7628
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 4371140348.2,
-          "median_annual_net_income_filed": 3817387802.48,
+          "cashflow_median_of_filed_years": 4372642365.93,
+          "median_annual_net_income_filed": 3818699538.95,
           "historical_fcf_cagr_observed_pct": -20.586,
           "assumed_forward_growth_capped_pct": -5.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 4709279877.38,
+          "illustrative_next_year_net_income_not_issuer_guidance": 4710898087.12,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -80124,9 +80124,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 22.5707,
-          "base": 31.5989,
-          "bull": 40.6272
+          "bear": 22.5784,
+          "base": 31.6098,
+          "bull": 40.6412
         },
         "currency": "USD",
         "source": {
@@ -81006,17 +81006,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 10.6117,
-          "base": 18.6011,
-          "bull": 27.061
+          "bear": 10.6154,
+          "base": 18.6075,
+          "bull": 27.0703
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 1630065246.91,
-          "median_annual_net_income_filed": 2679391273.41,
+          "cashflow_median_of_filed_years": 1630625372.35,
+          "median_annual_net_income_filed": 2680311969.82,
           "historical_fcf_cagr_observed_pct": -5.133,
           "assumed_forward_growth_capped_pct": -5.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2757512439.51,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2758459980.03,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -81065,9 +81065,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 31.613,
-          "base": 44.2581,
-          "bull": 56.9033
+          "bear": 31.6238,
+          "base": 44.2734,
+          "bull": 56.9229
         },
         "currency": "USD",
         "source": {
@@ -82598,7 +82598,7 @@
       "ticker": "SKS.AX",
       "universe": "DISCOVERY",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 5.045000076293945,
+      "price": 5.03000020980835,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -82841,7 +82841,7 @@
       },
       "provisional_forward": null,
       "forward_missing_inputs": [],
-      "forward_base_upside_pct": -6.07,
+      "forward_base_upside_pct": -5.79,
       "financial_currency": "AUD",
       "latest_primary_metrics": {
         "revenue": {
@@ -83217,12 +83217,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.699313957153498,
-        "observed_daily_log_return_stddev": 0.04170150481142768,
+        "distance_from_5d_low_in_daily_sigma": 0.6245642803531136,
+        "observed_daily_log_return_stddev": 0.041924910001132694,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.959183226620743,
+      "recovery_from_5d_low_pct": 2.6530635083828358,
       "trading_lows": {
         "low_5d": 4.900000095367432,
         "low_30d": 4.900000095367432,
@@ -83443,13 +83443,13 @@
     {
       "ticker": "SKS.AX",
       "valuation_status": "PRIMARY_GUIDANCE_BACKED_MODEL_FORECASTS_HYPOTHETICAL",
-      "base_upside_pct": -6.07,
+      "base_upside_pct": -5.79,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.699313957153498,
-        "observed_daily_log_return_stddev": 0.04170150481142768,
+        "distance_from_5d_low_in_daily_sigma": 0.6245642803531136,
+        "observed_daily_log_return_stddev": 0.041924910001132694,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
@@ -83687,7 +83687,7 @@
     {
       "ticker": "ENB",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -31.66,
+      "base_upside_pct": -31.64,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -84129,7 +84129,7 @@
     {
       "ticker": "CP",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -52.32,
+      "base_upside_pct": -52.3,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -84230,7 +84230,7 @@
     {
       "ticker": "SAP",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -55.12,
+      "base_upside_pct": -55.13,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -85750,7 +85750,7 @@
       "ticker": "SKS.AX",
       "universe": "DISCOVERY",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 5.045000076293945,
+      "price": 5.03000020980835,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
@@ -85993,7 +85993,7 @@
       },
       "provisional_forward": null,
       "forward_missing_inputs": [],
-      "forward_base_upside_pct": -6.07,
+      "forward_base_upside_pct": -5.79,
       "financial_currency": "AUD",
       "latest_primary_metrics": {
         "revenue": {
@@ -86369,12 +86369,12 @@
       "recovery_context": {
         "status": "WITHIN_ONE_OBSERVED_DAILY_VOLATILITY_OF_LOW",
         "pre_recovery": true,
-        "distance_from_5d_low_in_daily_sigma": 0.699313957153498,
-        "observed_daily_log_return_stddev": 0.04170150481142768,
+        "distance_from_5d_low_in_daily_sigma": 0.6245642803531136,
+        "observed_daily_log_return_stddev": 0.041924910001132694,
         "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 2.959183226620743,
+      "recovery_from_5d_low_pct": 2.6530635083828358,
       "trading_lows": {
         "low_5d": 4.900000095367432,
         "low_30d": 4.900000095367432,
