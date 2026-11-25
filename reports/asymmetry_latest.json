@@ -1,6 +1,6 @@
 {
   "schema_version": "5.4-asymmetry-evidence-gated-1",
-  "published_at_utc": "2026-11-25T11:21:02.726954+00:00",
+  "published_at_utc": "2026-11-25T14:52:38.998513+00:00",
   "universe_count": 200,
   "source_valuation_snapshot_utc": "2026-11-25T10:47:05.968108+00:00",
   "verification_coverage": "FIRST_PASS_SEC_FILINGS_FOR_PRELIMINARY_TOP10_ONLY; NOT ALL_200",
@@ -14,7 +14,7 @@
       "ticker": "SHEL",
       "company": "Shell",
       "currency": "USD",
-      "last_daily_close": 93.42,
+      "last_daily_close": 93.515,
       "dilution_adjusted_values": {
         "bear": 54.3528,
         "base": 122.2799,
@@ -28,9 +28,9 @@
       "issuer_filing_share_count": null,
       "vendor_share_count": 2820462530.0,
       "share_basis_adjustment": null,
-      "base_upside_pct": 30.89,
-      "bear_downside_pct": -41.82,
-      "asymmetry_ratio_not_probability": 0.739,
+      "base_upside_pct": 30.76,
+      "bear_downside_pct": -41.88,
+      "asymmetry_ratio_not_probability": 0.735,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ],
@@ -45,7 +45,7 @@
       "ticker": "BP",
       "company": "BP",
       "currency": "USD",
-      "last_daily_close": 42.77,
+      "last_daily_close": 43.18,
       "dilution_adjusted_values": {
         "bear": 22.8934,
         "base": 51.5042,
@@ -59,9 +59,9 @@
       "issuer_filing_share_count": null,
       "vendor_share_count": 2575652107.0,
       "share_basis_adjustment": null,
-      "base_upside_pct": 20.42,
-      "bear_downside_pct": -46.47,
-      "asymmetry_ratio_not_probability": 0.439,
+      "base_upside_pct": 19.28,
+      "bear_downside_pct": -46.98,
+      "asymmetry_ratio_not_probability": 0.41,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ],
@@ -73,41 +73,10 @@
     },
     {
       "research_position": 3,
-      "ticker": "OXY",
-      "company": "Occidental Petroleum",
-      "currency": "USD",
-      "last_daily_close": 53.38,
-      "dilution_adjusted_values": {
-        "bear": 24.9666,
-        "base": 56.1426,
-        "bull": 104.9104
-      },
-      "hypothetical_future_dilution_rates_pct": {
-        "bear": 15.0,
-        "base": 5.0,
-        "bull": 0.0
-      },
-      "issuer_filing_share_count": null,
-      "vendor_share_count": 999894745.0,
-      "share_basis_adjustment": null,
-      "base_upside_pct": 5.18,
-      "bear_downside_pct": -53.23,
-      "asymmetry_ratio_not_probability": 0.097,
-      "source_flags": [
-        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
-      ],
-      "primary_model_economics_verified": false,
-      "verified_buy_signal": false,
-      "orders_enabled": false,
-      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
-      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
-    },
-    {
-      "research_position": 4,
       "ticker": "CRM",
       "company": "Salesforce",
       "currency": "USD",
-      "last_daily_close": 193.25999,
+      "last_daily_close": 189.27,
       "dilution_adjusted_values": {
         "bear": 89.0586,
         "base": 199.4171,
@@ -121,9 +90,40 @@
       "issuer_filing_share_count": null,
       "vendor_share_count": 823000000.0,
       "share_basis_adjustment": null,
-      "base_upside_pct": 3.19,
-      "bear_downside_pct": -53.92,
-      "asymmetry_ratio_not_probability": 0.059,
+      "base_upside_pct": 5.36,
+      "bear_downside_pct": -52.95,
+      "asymmetry_ratio_not_probability": 0.101,
+      "source_flags": [
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+      ],
+      "primary_model_economics_verified": false,
+      "verified_buy_signal": false,
+      "orders_enabled": false,
+      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
+      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
+    },
+    {
+      "research_position": 4,
+      "ticker": "OXY",
+      "company": "Occidental Petroleum",
+      "currency": "USD",
+      "last_daily_close": 54.0626,
+      "dilution_adjusted_values": {
+        "bear": 24.9666,
+        "base": 56.1426,
+        "bull": 104.9104
+      },
+      "hypothetical_future_dilution_rates_pct": {
+        "bear": 15.0,
+        "base": 5.0,
+        "bull": 0.0
+      },
+      "issuer_filing_share_count": null,
+      "vendor_share_count": 999894745.0,
+      "share_basis_adjustment": null,
+      "base_upside_pct": 3.85,
+      "bear_downside_pct": -53.82,
+      "asymmetry_ratio_not_probability": 0.071,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ],
@@ -135,14 +135,14 @@
     },
     {
       "research_position": 5,
-      "ticker": "AAPL",
-      "company": "Apple",
+      "ticker": "NFLX",
+      "company": "Netflix",
       "currency": "USD",
-      "last_daily_close": 354.07001,
+      "last_daily_close": 57.605,
       "dilution_adjusted_values": {
-        "bear": 30.5703,
-        "base": 68.4869,
-        "bull": 127.7555
+        "bear": 26.135,
+        "base": 58.5538,
+        "bull": 109.2293
       },
       "hypothetical_future_dilution_rates_pct": {
         "bear": 15.0,
@@ -150,11 +150,11 @@
         "bull": 0.0
       },
       "issuer_filing_share_count": null,
-      "vendor_share_count": 14532182000.0,
+      "vendor_share_count": 4106325903.0,
       "share_basis_adjustment": null,
-      "base_upside_pct": -80.66,
-      "bear_downside_pct": -91.37,
-      "asymmetry_ratio_not_probability": 0.0,
+      "base_upside_pct": 1.65,
+      "bear_downside_pct": -54.63,
+      "asymmetry_ratio_not_probability": 0.03,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
       ],
@@ -166,41 +166,10 @@
     },
     {
       "research_position": 6,
-      "ticker": "ABBV",
-      "company": "AbbVie",
-      "currency": "USD",
-      "last_daily_close": 300.28,
-      "dilution_adjusted_values": {
-        "bear": 40.9843,
-        "base": 91.7445,
-        "bull": 171.0733
-      },
-      "hypothetical_future_dilution_rates_pct": {
-        "bear": 15.0,
-        "base": 5.0,
-        "bull": 0.0
-      },
-      "issuer_filing_share_count": null,
-      "vendor_share_count": 1767616306.0,
-      "share_basis_adjustment": null,
-      "base_upside_pct": -69.45,
-      "bear_downside_pct": -86.35,
-      "asymmetry_ratio_not_probability": 0.0,
-      "source_flags": [
-        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
-      ],
-      "primary_model_economics_verified": false,
-      "verified_buy_signal": false,
-      "orders_enabled": false,
-      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
-      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
-    },
-    {
-      "research_position": 7,
       "ticker": "ADBE",
       "company": "Adobe",
       "currency": "USD",
-      "last_daily_close": 232.08,
+      "last_daily_close": 228.27,
       "dilution_adjusted_values": {
         "bear": 103.2744,
         "base": 231.5198,
@@ -214,8 +183,39 @@
       "issuer_filing_share_count": null,
       "vendor_share_count": 389200000.0,
       "share_basis_adjustment": null,
-      "base_upside_pct": -0.24,
-      "bear_downside_pct": -55.5,
+      "base_upside_pct": 1.42,
+      "bear_downside_pct": -54.76,
+      "asymmetry_ratio_not_probability": 0.026,
+      "source_flags": [
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+      ],
+      "primary_model_economics_verified": false,
+      "verified_buy_signal": false,
+      "orders_enabled": false,
+      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
+      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
+    },
+    {
+      "research_position": 7,
+      "ticker": "AAPL",
+      "company": "Apple",
+      "currency": "USD",
+      "last_daily_close": 349.61499,
+      "dilution_adjusted_values": {
+        "bear": 30.5703,
+        "base": 68.4869,
+        "bull": 127.7555
+      },
+      "hypothetical_future_dilution_rates_pct": {
+        "bear": 15.0,
+        "base": 5.0,
+        "bull": 0.0
+      },
+      "issuer_filing_share_count": null,
+      "vendor_share_count": 14532182000.0,
+      "share_basis_adjustment": null,
+      "base_upside_pct": -80.41,
+      "bear_downside_pct": -91.26,
       "asymmetry_ratio_not_probability": 0.0,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
@@ -228,10 +228,41 @@
     },
     {
       "research_position": 8,
+      "ticker": "ABBV",
+      "company": "AbbVie",
+      "currency": "USD",
+      "last_daily_close": 298.35361,
+      "dilution_adjusted_values": {
+        "bear": 40.9843,
+        "base": 91.7445,
+        "bull": 171.0733
+      },
+      "hypothetical_future_dilution_rates_pct": {
+        "bear": 15.0,
+        "base": 5.0,
+        "bull": 0.0
+      },
+      "issuer_filing_share_count": null,
+      "vendor_share_count": 1767616306.0,
+      "share_basis_adjustment": null,
+      "base_upside_pct": -69.25,
+      "bear_downside_pct": -86.26,
+      "asymmetry_ratio_not_probability": 0.0,
+      "source_flags": [
+        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
+      ],
+      "primary_model_economics_verified": false,
+      "verified_buy_signal": false,
+      "orders_enabled": false,
+      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
+      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
+    },
+    {
+      "research_position": 9,
       "ticker": "AEM",
       "company": "Agnico Eagle Mines",
       "currency": "USD",
-      "last_daily_close": 156.46001,
+      "last_daily_close": 148.13,
       "dilution_adjusted_values": {
         "bear": 19.5805,
         "base": 43.991,
@@ -245,8 +276,8 @@
       "issuer_filing_share_count": null,
       "vendor_share_count": 505546481.0,
       "share_basis_adjustment": null,
-      "base_upside_pct": -71.88,
-      "bear_downside_pct": -87.49,
+      "base_upside_pct": -70.3,
+      "bear_downside_pct": -86.78,
       "asymmetry_ratio_not_probability": 0.0,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
@@ -258,7 +289,7 @@
       "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
     },
     {
-      "research_position": 9,
+      "research_position": 10,
       "ticker": "ALL.AX",
       "company": "Aristocrat Leisure",
       "currency": "AUD",
@@ -278,37 +309,6 @@
       "share_basis_adjustment": null,
       "base_upside_pct": -82.53,
       "bear_downside_pct": -92.11,
-      "asymmetry_ratio_not_probability": 0.0,
-      "source_flags": [
-        "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
-      ],
-      "primary_model_economics_verified": false,
-      "verified_buy_signal": false,
-      "orders_enabled": false,
-      "valuation_warning": "Future issuance stresses assume no incremental value from proceeds; actual dilution, warrants, convertibles and capital raises require independent review",
-      "rank_blocked_reason": "MISSING_PRIMARY_ECONOMIC_INPUT_VERIFICATION_OR_NO_BASE_UPSIDE"
-    },
-    {
-      "research_position": 10,
-      "ticker": "AMD",
-      "company": "AMD",
-      "currency": "USD",
-      "last_daily_close": 413.26999,
-      "dilution_adjusted_values": {
-        "bear": 16.9336,
-        "base": 35.0636,
-        "bull": 59.3765
-      },
-      "hypothetical_future_dilution_rates_pct": {
-        "bear": 15.0,
-        "base": 5.0,
-        "bull": 0.0
-      },
-      "issuer_filing_share_count": null,
-      "vendor_share_count": 1655065573.0,
-      "share_basis_adjustment": null,
-      "base_upside_pct": -91.52,
-      "bear_downside_pct": -95.9,
       "asymmetry_ratio_not_probability": 0.0,
       "source_flags": [
         "SEC_PRIMARY_FINANCIALS_UNAVAILABLE"
