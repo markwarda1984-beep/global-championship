@@ -13,6 +13,12 @@ on:
     branches: [main]
     paths:
       - 'background_research_93.py'
+      - 'guidance_95.py'
+      - 'reviewed_pdf_95.py'
+      - 'pdf_rows_dynamic_92.py'
+      - 'evidence_recovery_91.py'
+      - 'settings/reviewed_pdf_95.json'
+      - 'tests/test_intelligence_95.py'
       - 'reviewed_shares_94.py'
       - 'reviewed_cashflow_92.py'
       - 'share_classes_92.py'
@@ -78,6 +84,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/dynamic_sec_periods_92.json.gz reports/dynamic_documents_92.json reports/dynamic_source_recovery_92.json
           git add reports/dynamic_manual_periods_92.json reports/dynamic_release_periods_92.json reports/dynamic_historical_records_92.json
+          git add reports/issuer_primary_records_95.json
           git add reports/background_evidence_93.json reports/background_research_state_93.json reports/background_source_notes_93.json
           git add reports/background_research_latest_93.json reports/background_research_latest_93.md reports/background_review_queue_93.json reports/background_research_history_93.json
           if ! git diff --cached --quiet; then
