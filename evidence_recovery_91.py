@@ -36,7 +36,7 @@ def write(path, data):
 # Reviewed against Lilly's annual cash-flow row 'Purchases of property and equipment'.
 ISSUER_EXTRA_CONCEPTS={'LLY':{'capex':[('us-gaap','PaymentsToAcquireOtherPropertyPlantAndEquipment')]}}
 
-def candidates(raw, kind, now, extra=()):
+def candidates(raw, kind, now, extra=(), extra_forms=()):
  out=[];annual=kind in ('net_income','revenue','operating_cash_flow','capex')
  for preference,(taxonomy,tag) in enumerate(CONCEPTS[kind]+list(extra)):
   units=raw.get('facts',{}).get(taxonomy,{}).get(tag,{}).get('units',{})
@@ -46,7 +46,7 @@ def candidates(raw, kind, now, extra=()):
     start,end,filed=dt(r.get('start')),dt(r.get('end')),dt(r.get('filed'));value=finite(r.get('val'))
     if value is None or not end or not filed or end>now.date() or filed>now.date() or not r.get('accn'):continue
     if (now.date()-end).days>4200:continue
-    if r.get('form') not in (FORM_TYPES if annual else INSTANT_FORM_TYPES):continue
+    if r.get('form') not in ((FORM_TYPES if annual else INSTANT_FORM_TYPES)|set(extra_forms)):continue
     if annual and (not start or not 330<=(end-start).days<=385):continue
     if not annual and start:continue
     if kind=='shares' and value<=0:continue
@@ -68,9 +68,29 @@ def select(records, currency=None):
   if prior is None or (-r['concept_preference'],r['filed'],r['accession'])>(-prior['concept_preference'],prior['filed'],prior['accession']):out[key]=r
  return sorted(out.values(),key=lambda r:(r['end'],r['filed']))
 
+def reviewed_eog_capex(raw,now):
+ """Two disjoint cash rows in EOG's filed consolidated cash-flow statement.
+ Business acquisitions are separate and are not mislabeled recurring CAPEX.
+ Source: 0000821189-26-000054, consolidated statement of cash flows.
+ """
+ tags=['PaymentsToAcquireOilAndGasPropertyAndEquipment','PaymentsToAcquireOtherPropertyPlantAndEquipment']
+ parts=[]
+ for tag in tags:
+  rows=candidates(raw,'capex',now,[('us-gaap',tag)])
+  parts.append({(r['start'],r['end'],r['unit'],r['accession']):r for r in rows if r['tag']==tag and r['taxonomy']=='us-gaap'})
+ out=[]
+ for key in parts[0].keys()&parts[1].keys():
+  a,b=parts[0][key],parts[1][key]
+  out.append({**a,'value':a['value']+b['value'],'tag':'REVIEWED_EOG_DISJOINT_CAPEX_COMPONENTS','concept_preference':-1,'component_values':{tags[0]:a['value'],tags[1]:b['value']},'reviewed_row_labels':['Additions to Oil and Gas Properties','Additions to Other Property, Plant and Equipment'],'reviewed_source_url':'https://www.sec.gov/Archives/edgar/data/821189/000082118926000054/eog-20251231.htm'})
+ return out
+
 def recover_series(ticker,raw,now,cik):
  if int(raw.get('cik',0))!=int(cik) or not raw.get('entityName'):raise ValueError('CIK/issuer mismatch')
- all_records={k:candidates(raw,k,now,ISSUER_EXTRA_CONCEPTS.get(ticker,{}).get(k,())) for k in CONCEPTS}
+ # CNI's 40-F explicitly incorporates these audited annual statements filed
+ # in 6-K accession 0000016868-26-000011. Annual-duration checks still apply.
+ extra_forms={'6-K'} if ticker=='CNI' and int(cik)==16868 else set()
+ all_records={k:candidates(raw,k,now,ISSUER_EXTRA_CONCEPTS.get(ticker,{}).get(k,()),extra_forms) for k in CONCEPTS}
+ if ticker=='EOG' and int(cik)==821189:all_records['capex'].extend(reviewed_eog_capex(raw,now))
  income=select(all_records['net_income'])
  newest=max(income,key=lambda r:r['end']) if income else None
  currency=newest['unit'] if newest else None

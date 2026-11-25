@@ -54,7 +54,7 @@ def collect_one(root, ticker, max_documents=1, now=None, session=None):
         host=urlparse(url).hostname;cooldown=state['provider_cooldowns'].get(host)
         if cooldown and datetime.fromisoformat(cooldown)>now:continue
         old=state['documents'].get(key);prior=state['attempts'].get(key,{})
-        if old and (now-datetime.fromisoformat(old['observed_utc'])).total_seconds()<7*86400:continue
+        if old and (now-datetime.fromisoformat(old['observed_utc'])).total_seconds()<86400:continue
         if prior.get('retry_after_utc') and datetime.fromisoformat(prior['retry_after_utc'])>now:continue
         attempted+=1;attempt={'ticker':ticker,'source_url':url,'attempted_at_utc':now.isoformat()}
         try:

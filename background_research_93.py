@@ -14,7 +14,7 @@ from reviewed_cashflow_92 import RULES,extract,apply_reviewed_overlay
 
 SCHEMA='9.3-background-research-1'
 PUBLIC_CONTACT='ChampionshipResearch https://github.com/markwarda1984-beep/global-championship'
-HOSTS={'data.sec.gov','www.sec.gov','www.asx.com.au','announcements.asx.com.au'}
+HOSTS={'data.sec.gov','www.sec.gov','www.asx.com.au','announcements.asx.com.au','www.woolworthsgroup.com.au','www.colesgroup.com.au','www.telstra.com.au'}
 
 def read(path,default):return json.loads(path.read_text()) if path.exists() else copy.deepcopy(default)
 def write(path,obj):
@@ -26,12 +26,33 @@ def stamp(value):
   return d if d.tzinfo else None
  except (TypeError,ValueError):return None
 
+RETRY_POLICY_VERSION='9.5-bounded-four-hour-research'
+def retry_hours(status,attempts,supported=False):
+ if status=='PROVIDER_COOLDOWN':return 24
+ if status=='SOURCE_FETCH_OR_PARSE_FAILED':return min(24,2**min(attempts,5))
+ return 24 if supported else 4
+
+def migrate_retry_policy(state,now):
+ """Shorten legacy seven-day scheduling once; never erase provider cooldowns."""
+ if state.get('retry_policy_version')==RETRY_POLICY_VERSION:return
+ for case in state.get('companies',{}).values():
+  previous=stamp(case.get('last_attempt_utc'));due=stamp(case.get('next_attempt_utc'))
+  if not previous or not due:continue
+  status=case.get('collection_status',case.get('research_status',''))
+  target=previous+timedelta(hours=retry_hours(status,case.get('attempt_count',0),case.get('supported_after',False)))
+  if target<due:case['next_attempt_utc']=target.isoformat()
+ state['retry_policy_version']=RETRY_POLICY_VERSION
+
 class ProviderBlocked(Exception):pass
 class Fetcher:
  def __init__(self,state,now,deadline,session=None):
   self.state=state;self.now=now;self.deadline=deadline;self.session=session or requests.Session();self.requests=0;self.retrieved=0
   self.session.headers.update({'User-Agent':os.environ.get('SEC_USER_AGENT') or PUBLIC_CONTACT})
  def get(self,url):
+  body,sha=self.get_bytes(url)
+  return body.decode('utf-8',errors='replace'),sha
+ def get_bytes(self,url,max_bytes=20_000_000):
+  if not 0<max_bytes<=80_000_000:raise ValueError('Document bound exceeded')
   host=urlparse(url).hostname
   if urlparse(url).scheme!='https' or host not in HOSTS or urlparse(url).port not in (None,443):raise ValueError('Unapproved primary source host')
   due=stamp(self.state.setdefault('provider_cooldowns',{}).get(host))
@@ -50,10 +71,10 @@ class Fetcher:
    response.raise_for_status();chunks=[];size=0
    for block in response.iter_content(65536):
     size+=len(block)
-    if size>20_000_000:raise ValueError('Source exceeds bounded document size')
+    if size>max_bytes:raise ValueError('Source exceeds bounded document size')
     chunks.append(block)
    body=b''.join(chunks);self.retrieved+=1
-   return body.decode('utf-8',errors='replace'),hashlib.sha256(body).hexdigest()
+   return body,hashlib.sha256(body).hexdigest()
   finally:response.close()
 
 def choose_batch(rows,state,now,limit,reviewed_tickers=()):
@@ -155,7 +176,8 @@ def collect_sec(ticker,company,fetcher,delta,notes,now,overlay,share_report=None
     for url in earnings_exhibit_links(html,filing):
      release,release_sha=fetcher.get(url)
      metadata={'url':url,'sha256':release_sha,'accession':acc,'filed':recent['filingDate'][i]}
-     guidance=extract_hpe(release,metadata,rec,now) if ticker=='HPE' else None
+     from guidance_95 import extract as extract_reviewed_guidance
+     guidance=extract_hpe(release,metadata,rec,now) if ticker=='HPE' else extract_reviewed_guidance(ticker,release,metadata,rec,now)
      if guidance:delta.setdefault('guidance',{})[ticker]=guidance
      notes.setdefault(ticker,{'documents':[]})['documents'].append({**metadata,'form':'8-K_EX99.1','reviewed_guidance_extracted':bool(guidance),'unreviewed_candidates':note_candidates(release)})
      notes[ticker]['documents']=notes[ticker]['documents'][-4:]
@@ -192,11 +214,13 @@ def run(root,batch_size=20,max_minutes=8,now=None,fetcher_factory=Fetcher,assess
  if not 1<=batch_size<=20 or not 1<=max_minutes<=12:raise ValueError('Batch/time bounds exceeded')
  reports=root/'reports';state_path=reports/'background_research_state_93.json';state=read(state_path,{'schema_version':SCHEMA,'companies':{},'provider_cooldowns':{},'orders_enabled':False,'orders_generated':0})
  if state.get('orders_enabled') is not False or state.get('orders_generated')!=0:raise ValueError('Unsafe research state')
+ migrate_retry_policy(state,now)
  model=read(reports/'valuation_90_latest.json',{});rows=model.get('companies',[])
  assert sum(r['universe']=='ORIGINAL_200' for r in rows)==200,'Complete fixed-200 report required'
  unresolved=[r for r in rows if r.get('scenarios') is None]
  state.setdefault('baseline_original_unsupported',[r['ticker'] for r in unresolved if r['universe']=='ORIGINAL_200'])
- reviewed_tickers=set(read(root/'settings/reviewed_share_classes_94.json',{}).get('companies',{}))|set(RULES)
+ # Forward evidence is needed even when the historical model is supported.
+ reviewed_tickers={r['ticker'] for r in rows if r['universe']=='ORIGINAL_200'}|set(RULES)
  selected=choose_batch(rows,state,now,batch_size,reviewed_tickers)
  path=reports/'background_evidence_93.json';delta=read(path,{'schema_version':'9.3-background-primary-evidence-1','companies':{},'adapters':{},'orders_enabled':False,'orders_generated':0})
  # Validate committed inputs before making any requests.
@@ -212,7 +236,9 @@ def run(root,batch_size=20,max_minutes=8,now=None,fetcher_factory=Fetcher,assess
    company=companies.get(ticker)
    if company and company.get('cik'):
     result.update(collect_sec(ticker,company,fetcher,delta,notes['companies'],now,overlay,read(reports/'reviewed_share_counts_94.json',{}),read(root/'settings/reviewed_share_classes_94.json',{})));result['research_status']='PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING'
-   elif ticker.endswith('.AX'):result.update(collect_asx(ticker,fetcher,now))
+   elif ticker.endswith('.AX'):
+    from reviewed_pdf_95 import collect_one as collect_reviewed_pdf
+    result.update(collect_reviewed_pdf(root,ticker,fetcher,now) or collect_asx(ticker,fetcher,now))
    else:result.update(research_status='ISSUER_IDENTITY_REVIEW_REQUIRED',sources=[],parsed_observations=0)
   except ProviderBlocked as exc:result.update(research_status='PROVIDER_COOLDOWN',reason=str(exc),sources=[])
   except (requests.RequestException,ValueError,KeyError,IndexError,TimeoutError) as exc:
@@ -221,8 +247,9 @@ def run(root,batch_size=20,max_minutes=8,now=None,fetcher_factory=Fetcher,assess
   result['collection_status']=result['research_status']
   made=fetcher.requests-before;attempts=previous.get('attempt_count',0)+(1 if made else 0)
   result.update(http_requests=made,last_attempt_utc=now.isoformat(),attempt_count=attempts)
-  retry_hours=24 if result['research_status']=='PROVIDER_COOLDOWN' else min(168,2**min(attempts,7)) if result['research_status']=='SOURCE_FETCH_OR_PARSE_FAILED' else 168
-  result['next_attempt_utc']=(now+timedelta(hours=retry_hours)).isoformat()
+  delay=retry_hours(result['research_status'],attempts,row.get('scenarios') is not None)
+  result['retry_interval_hours']=delay
+  result['next_attempt_utc']=(now+timedelta(hours=delay)).isoformat()
   state['companies'][ticker]={**previous,**result};results.append(result)
   delta['updated_at_utc']=now.isoformat();write(path,delta);write(state_path,state);write(reports/'background_source_notes_93.json',notes)
  # Ensure empty/no-due runs are equally reviewable and don't edit legacy reports.

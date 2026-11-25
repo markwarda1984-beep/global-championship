@@ -11,6 +11,16 @@ on:
       - 'evidence_recovery_91.py'
       - 'recover_documents_91.py'
       - 'championship_90.py'
+      - 'guidance_95.py'
+      - 'reviewed_pdf_95.py'
+      - 'pdf_rows_dynamic_92.py'
+      - 'session_quotes_95.py'
+      - 'verify_outputs_95.py'
+      - 'reports/issuer_form_recovery_95.json'
+      - 'reports/issuer_primary_records_95.json'
+      - 'reports/reviewed_guidance_95.json'
+      - 'settings/reviewed_pdf_95.json'
+      - 'settings/recovery_baseline_95.json'
       - 'reviewed_shares_94.py'
       - 'share_classes_92.py'
       - 'reviewed_cashflow_92.py'
@@ -60,6 +70,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Obtain latest available 200 daily-bar prices
         run: python scan.py
+      - name: Collect separately timestamped pre-market and after-hours sessions
+        run: python session_quotes_95.py --mode weekly
       - name: Assess all 200 company fundamentals and estimate indicative scenarios
         run: python valuation_engine.py --workers 3 --max-minutes 28
       - name: Prepare weekly valuation report
@@ -110,13 +122,15 @@ jobs:
         run: python verify_financial_outputs_92.py --mode weekly
       - name: Verify recovered denominators, financial outputs and coverage gain
         run: python recovery_94.py --mode weekly
+      - name: Independently inspect new primary financial and session outputs
+        run: python verify_outputs_95.py --mode weekly
       - name: Verify Championship 9.0 coverage and no orders
         run: python verify_90.py --mode weekly
       - name: Publish weekly valuation report to repository
         run: |
           git add reports/primary_evidence_91.json reports/share_basis_recovery_91.json reports/fx_recovery_91.json settings/primary_adapters_90.json
           git add reports/valuation_90_weekly.json reports/coverage_90_weekly.json
-          git add reports/recovery_94_weekly.json
+          git add reports/recovery_94_weekly.json reports/recovery_95_weekly.json reports/session_quotes_95_weekly.json
           git add reports/dynamic_source_recovery_92_weekly.json reports/dynamic_earnings_92_weekly.json reports/dynamic_earnings_92_weekly.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

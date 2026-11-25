@@ -91,6 +91,9 @@ def build(scan, valuation=None, championship_60=None):
         out.append({
             'ticker':ticker,'company':stock.get('name'),'currency':currency,
             'last_daily_close':last,'quote_date':date,
+            'valuation_price_session':'DAILY_CLOSE',
+            'market_sessions':stock.get('market_sessions'),
+            **{k:stock.get(k) for k in ('pre_market_price','pre_market_as_of_utc','regular_price','regular_as_of_utc','after_hours_price','after_hours_as_of_utc')},
             # Compatibility keys are null by design: never resurrect US$33.3938.
             'provisional_entry':None,
             'entry_basis':'RETIRED — UNVERIFIED ENTRY CALCULATION DISABLED',
