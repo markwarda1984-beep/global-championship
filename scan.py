@@ -274,7 +274,8 @@ def render_html(data: dict) -> str:
                   "distance_to_watch_zone_pct", "distance_to_validated_buy_pct", "rsi_14",
                   "sma_50", "sma_200", "low_52w", "high_52w", "drawdown_from_high_pct",
                   "change_20d_pct", "volatility_20d_annual_pct", "volume_ratio_20d",
-                  "quote_date", "signal", "buy_validation", "data_status"]
+                  "quote_date", "signal", "buy_validation", "data_status",
+                  "pre_market_price", "pre_market_as_of_utc", "regular_price", "regular_as_of_utc", "after_hours_price", "after_hours_as_of_utc"]
         vals = [format_cell(row.get(k)) for k in fields]
         # Use data state for the client-side filter; all 200 are included equally.
         text_data = escape(" ".join(str(row.get(k, "")) for k in ("ticker", "name", "sector", "signal")))
@@ -293,7 +294,7 @@ def render_html(data: dict) -> str:
                "Historical deep", "Validated buy", "Manual provisional buy", "% above watch",
                "% above validated", "RSI 14", "SMA 50", "SMA 200", "52w low", "52w high",
                "% from 52w high", "20-session return %", "20d vol annual %", "Relative volume",
-               "Bar date", "Research alert", "Buy validation", "Quote status", "Price-level bar", "30-day sparkline"]
+               "Bar date", "Research alert", "Buy validation", "Quote status", "Pre-market sample", "Pre-market UTC", "Regular-session sample", "Regular-session UTC", "After-hours sample", "After-hours UTC", "Price-level bar", "30-day sparkline"]
     page = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>200-stock Global Investment Championship</title><style>
 :root{color-scheme:dark}body{font:14px system-ui,sans-serif;background:#0b1220;color:#e2e8f0;margin:0;padding:14px}

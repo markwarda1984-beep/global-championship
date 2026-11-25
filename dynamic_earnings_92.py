@@ -43,7 +43,7 @@ def load_periods(root, now):
             merged['observed_utc'] = record['observed_utc']
             merged['owner_cashflow_components_reviewed'] = record.get('owner_cashflow_components_reviewed',False)
     from championship_90 import verified_pdf_record
-    for ticker,record in (read(root/'reports/dynamic_historical_records_92.json',{}) or {}).get('companies',{}).items():
+    for ticker,record in {**(read(root/'reports/dynamic_historical_records_92.json',{}) or {}).get('companies',{}),**(read(root/'reports/issuer_primary_records_95.json',{}) or {}).get('companies',{})}.items():
         if ticker in records or not verified_pdf_record(record,now):continue
         metrics={}
         for key,facts in record['annual_facts'].items():
@@ -238,9 +238,11 @@ def build(root, mode='scan', now=None):
     historical=read(root/f'reports/valuation_90_{suffix}.json',{})
     baseline=read(root/'settings/dynamic_baseline_92.json',{})
     policy=read(root/'settings/dynamic_earnings_92.json',{})
-    adapters=read(root/'settings/primary_adapters_90.json',{})
+    from background_evidence_93 import merge_adapters
+    adapters=merge_adapters(merge_adapters(read(root/'settings/primary_adapters_90.json',{}),read(root/'reports/issuer_form_recovery_95.json',{})),read(root/'reports/background_evidence_93.json',{}))
     guidance=(read(root/'reports/dynamic_guidance_92.json',{}) or {}).get('companies',{})
-    for ticker,g in (read(root/'reports/background_evidence_93.json',{}) or {}).get('guidance',{}).items():
+    extra_guidance={**(read(root/'reports/reviewed_guidance_95.json',{}) or {}).get('companies',{}),**(read(root/'reports/background_evidence_93.json',{}) or {}).get('guidance',{})}
+    for ticker,g in extra_guidance.items():
         if evidence_record(g,now,400) and g.get('published_at','')>guidance.get(ticker,{}).get('published_at',''):
             guidance[ticker]=g
     audit_name='dynamic_source_recovery_92_weekly.json' if mode=='weekly' else 'dynamic_source_recovery_92_scan.json'
@@ -266,6 +268,8 @@ def build(root, mode='scan', now=None):
         provisional=provisional_model(record,old,policy,adapters,now) if vals is None else None
         timing=recovery_context(old,raw_quotes.get(ticker,{}))
         flags=[]
+        if vals and (date.fromisoformat(vals['guidance_source']['facts']['target_period_end'])-now.date()).days<=90:
+            flags.append('GUIDANCE_YEAR_END_WITHIN_90_DAYS_NEXT_YEAR_OUTLOOK_REQUIRED')
         if 'FALLBACK' in old.get('price_source',''):flags.append('LATEST_QUOTE_REFRESH_FAILED_USING_ORIGINAL_DATED_SNAPSHOT')
         if metrics['acquisition_cash_paid'] and metrics['acquisition_cash_paid']['value']>0:flags.append('ACQUISITIONS_REPORTED_GROWTH_NOT_ORGANIC')
         if guidance.get(ticker,{}).get('acquisition_regime_change'):flags.append('ACQUISITION_REGIME_CHANGE_HISTORICAL_AND_FORWARD_NOT_COMPARABLE')

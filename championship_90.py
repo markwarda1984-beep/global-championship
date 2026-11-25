@@ -208,8 +208,16 @@ def build(root, mode='scan', now=None):
     if recovered.get('orders_enabled') is True: raise ValueError('Unsafe recovered evidence')
     cache = {**cache, **recovered.get('companies', {})}
     from background_evidence_93 import merge_evidence, merge_adapters
+    forms = read(root/'reports/issuer_form_recovery_95.json', {}) or {}
+    cache = merge_evidence(cache,forms)
     background = read(root/'reports/background_evidence_93.json', {}) or {}
     cache = merge_evidence(cache,background)
+    # A more recently fetched record from the previous parser can be empty.
+    # Retain dated, reviewed annual evidence until the upgraded worker refreshes it.
+    for t,c in merge_evidence({},forms).items():
+        present=cache.get(t,{})
+        if (t=='CNI' and not present.get('financial_currency')) or (t=='EOG' and not present.get('annual_facts',{}).get('capex')):
+            cache[t]=c
     from reviewed_shares_94 import apply_overlay
     share_report=read(root/'reports/reviewed_share_counts_94.json',{}) or {}
     share_policies=read(root/'settings/reviewed_share_classes_94.json',{}) or {}
@@ -223,7 +231,10 @@ def build(root, mode='scan', now=None):
     dynamic = read(root/'reports/dynamic_historical_records_92.json', {}) or {}
     if dynamic.get('orders_enabled') is True: raise ValueError('Unsafe dynamic evidence')
     cache.update({t:r for t,r in dynamic.get('companies',{}).items() if verified_pdf_record(r,now)})
-    adapters = merge_adapters(read(root/'settings/primary_adapters_90.json', {}) or {}, background)
+    pdf95=read(root/'reports/issuer_primary_records_95.json',{}) or {}
+    if pdf95.get('orders_enabled') is True:raise ValueError('Unsafe PDF evidence')
+    cache.update({t:r for t,r in pdf95.get('companies',{}).items() if verified_pdf_record(r,now)})
+    adapters = merge_adapters(merge_adapters(read(root/'settings/primary_adapters_90.json', {}) or {}, forms), background)
     cfg = validate_cfg(read(root/'settings/championship_60.json', DEFAULT_ASSUMPTIONS))
     # Recompute legacy eligibility against identical evidence/time, avoiding
     # false coverage gains from comparing an older weekly snapshot.
