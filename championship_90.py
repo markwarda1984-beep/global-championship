@@ -115,6 +115,11 @@ def reconcile(primary, quote_currency, basis, fx, now, foreign=False):
             audit['flags'].append('DATED_DIRECTIONAL_FX_REQUIRED')
             return None, audit
         rate = fx['rate']
+    ordinary_count=positive((p.get('latest_share_count') or {}).get('value'))
+    audit['ordinary_share_count_before_receipt_conversion']=ordinary_count
+    audit['listed_receipt_equivalent_denominator']=ordinary_count/ratio if ordinary_count else None
+    audit['denominator_definition']='ORDINARY_SHARES_DIVIDED_BY_SHARES_PER_RECEIPT; ECONOMIC_EQUIVALENTS_NOT_ACTUAL_ADRS_ISSUED' if ratio!=1 else 'ORDINARY_SHARES'
+    audit['supplemental_primary_document_urls']=sorted({r['source_url'] for vals in p.get('annual_facts',{}).values() for r in vals if str(r.get('source_url','')).startswith('https://') and '/Archives/' in r['source_url']})
     if p.get('latest_share_count'):
         p['latest_share_count'] = dict(p['latest_share_count'])
     for k, rows in p.get('annual_facts', {}).items():
@@ -231,10 +236,18 @@ def build(root, mode='scan', now=None):
     dynamic = read(root/'reports/dynamic_historical_records_92.json', {}) or {}
     if dynamic.get('orders_enabled') is True: raise ValueError('Unsafe dynamic evidence')
     cache.update({t:r for t,r in dynamic.get('companies',{}).items() if verified_pdf_record(r,now)})
+    from reviewed_native_96 import apply as apply_native
+    native96=read(root/'reports/reviewed_native_96.json',{}) or {}
+    cache={t:apply_native(c,native96) for t,c in cache.items()}
+    from reviewed_bank_96 import verified as verified_bank
+    bank96=read(root/'reports/reviewed_bank_96.json',{}) or {}
+    if bank96 and (bank96.get('orders_enabled') is not False or bank96.get('orders_generated')!=0):raise ValueError('Unsafe bank evidence')
+    cache.update({t:r for t,r in bank96.get('companies',{}).items() if verified_bank(r,now)})
     pdf95=read(root/'reports/issuer_primary_records_95.json',{}) or {}
     if pdf95.get('orders_enabled') is True:raise ValueError('Unsafe PDF evidence')
     cache.update({t:r for t,r in pdf95.get('companies',{}).items() if verified_pdf_record(r,now)})
     adapters = merge_adapters(merge_adapters(read(root/'settings/primary_adapters_90.json', {}) or {}, forms), background)
+    adapters = merge_adapters(adapters,bank96)
     cfg = validate_cfg(read(root/'settings/championship_60.json', DEFAULT_ASSUMPTIONS))
     # Recompute legacy eligibility against identical evidence/time, avoiding
     # false coverage gains from comparing an older weekly snapshot.
@@ -249,11 +262,14 @@ def build(root, mode='scan', now=None):
         sector = method(t, name['category']); price = positive(q.get('price'))
         vals = None; assumptions = None; flags = []; audit = {'status': 'NO_PRIMARY_SERIES'}
         adapter = adapters.get(t, {})
-        if (src.get('status') == 'OFFICIAL_SEC_COMPANYFACTS_RETRIEVED' or verified_pdf_record(src,now)) and recent(src.get('observed_utc'), now, cfg['sec_refresh_days']+4):
+        if (src.get('status') == 'OFFICIAL_SEC_COMPANYFACTS_RETRIEVED' or verified_pdf_record(src,now) or verified_bank(src,now)) and recent(src.get('observed_utc'), now, cfg['sec_refresh_days']+4):
             normalized, audit = reconcile(src, q.get('currency'), adapter.get('share_basis'), adapter.get('fx'), now,
                                           t in ADR_OR_OVERSEAS_SHARE_BASIS or name['category'] == 'International' or t == 'RIO.AX')
             if normalized:
                 vals, assumptions, flags = scenario_values(sector, combine_periods(normalized), normalized, cfg, now)
+                if verified_bank(src,now) and assumptions:
+                    assumptions['provenance']='Issuer-filed U.S. GAAP reconciliation of owner income and owner equity; exact ordinary shares and verified receipt ratio; cost of equity and growth remain assumptions'
+                    assumptions['accounting_basis']='US_GAAP_RECONCILED_FROM_INDIAN_GAAP'
             else: flags += audit['flags']
         else: flags.append('CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED')
         if vals is None:

@@ -103,9 +103,11 @@ def note_candidates(html):
   if len(out)>=24:break
  return out
 
-def collect_sec(ticker,company,fetcher,delta,notes,now,overlay,share_report=None,share_policies=None):
+def collect_sec(ticker,company,fetcher,delta,notes,now,overlay,share_report=None,share_policies=None,native_report=None):
  cik=company['cik'];url=f'https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json'
  text,sha=fetcher.get(url);raw=json.loads(text);rec=recover_series(ticker,raw,now,cik);rec=apply_reviewed_overlay(rec,overlay)
+ from reviewed_native_96 import apply as apply_native,extract as extract_native,dynamic_record,RULES as NATIVE_RULES
+ rec=apply_native(rec,native_report or {})
  sources=[{'url':url,'sha256':sha}];parsed=0;doc_errors=[]
  # Save a successfully fetched facts record even if a later source fails.
  delta['companies'][ticker]=rec
@@ -136,6 +138,20 @@ def collect_sec(ticker,company,fetcher,delta,notes,now,overlay,share_report=None
   sources.append({'url':url,'sha256':doc_sha,'filed':metadata['filed'],'form':metadata['form']})
   notes.setdefault(ticker,{'documents':[]})['documents'].append({**sources[-1],'unreviewed_candidates':note_candidates(html)})
   notes[ticker]['documents']=notes[ticker]['documents'][-4:]
+  if ticker in NATIVE_RULES:
+   native=extract_native(html,ticker,metadata,now)
+   if native and native.get('net_income'):
+    entry={'annual_facts':native,'review_status':'PRIMARY_DOCUMENT_FIELDS_RECONCILED','facts_sha256':digest(native)}
+    rec=apply_native(rec,{'companies':{ticker:entry},'orders_enabled':False})
+    incoming=dynamic_record(ticker,entry,now.isoformat())
+    periods=delta['dynamic_periods'][ticker]
+    for metric,values in incoming['metrics'].items():
+     by={(r['period_start'],r['period_end'],r['unit']):r for r in periods['metrics'].get(metric,[])}
+     by.update({(r['period_start'],r['period_end'],r['unit']):r for r in values});periods['metrics'][metric]=list(by.values())
+    periods['facts_sha256']=digest(periods['metrics'])
+    periods['owner_cashflow_components_reviewed']=incoming.get('owner_cashflow_components_reviewed',False)
+    periods['owner_cashflow_required_components']=incoming.get('owner_cashflow_required_components',[])
+    parsed+=sum(len(v) for v in native.values())
   shares=cover_shares(html)
   if policy and rights_html:
    shares=reviewed_counts(html,ticker,policy,metadata,now,rights_html) or shares
@@ -234,8 +250,11 @@ def run(root,batch_size=20,max_minutes=8,now=None,fetcher_factory=Fetcher,assess
   result={'ticker':ticker,'universe':row['universe'],'missing_inputs_before':row['missing_inputs'],'orders_enabled':False}
   try:
    company=companies.get(ticker)
-   if company and company.get('cik'):
-    result.update(collect_sec(ticker,company,fetcher,delta,notes['companies'],now,overlay,read(reports/'reviewed_share_counts_94.json',{}),read(root/'settings/reviewed_share_classes_94.json',{})));result['research_status']='PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING'
+   if ticker=='IBN':
+    from reviewed_bank_96 import collect as collect_bank
+    result.update(collect_bank(root,fetcher,now))
+   elif company and company.get('cik'):
+    result.update(collect_sec(ticker,company,fetcher,delta,notes['companies'],now,overlay,read(reports/'reviewed_share_counts_94.json',{}),read(root/'settings/reviewed_share_classes_94.json',{}),read(reports/'reviewed_native_96.json',{})));result['research_status']='PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING'
    elif ticker.endswith('.AX'):
     from reviewed_pdf_95 import collect_one as collect_reviewed_pdf
     result.update(collect_reviewed_pdf(root,ticker,fetcher,now) or collect_asx(ticker,fetcher,now))

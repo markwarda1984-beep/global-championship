@@ -9,13 +9,18 @@ def required_pairs(companies):
  """Resolve direction from the actual listed security, including ASX dual listings."""
  out={}
  for ticker,company in companies.items():
-  native=company.get('financial_currency');listed='AUD' if ticker.endswith('.AX') else 'USD'
+  units={r.get('unit') for k,rows in company.get('annual_facts',{}).items() if k!='shares' for r in rows}
+  native=company.get('financial_currency') or (next(iter(units)) if len(units)==1 else None);listed='AUD' if ticker.endswith('.AX') else 'USD'
   if native and native!=listed:out[ticker]=(native,listed)
  return out
 
 def run(root):
  evidence=json.loads((root/'reports/primary_evidence_91.json').read_text());path=root/'settings/primary_adapters_90.json'
- adapters=json.loads(path.read_text());needed=required_pairs(evidence['companies']);pairs={pair:pair[0]+pair[1]+'=X' for pair in sorted(set(needed.values()))}
+ adapters=json.loads(path.read_text());companies=dict(evidence['companies'])
+ for name in ['reviewed_native_96.json','reviewed_bank_96.json']:
+  source=root/'reports'/name
+  if source.exists():companies.update(json.loads(source.read_text()).get('companies',{}))
+ needed=required_pairs(companies);pairs={pair:pair[0]+pair[1]+'=X' for pair in sorted(set(needed.values()))}
  records=[]
  try:
   frame=yf.download(list(pairs.values()),period='5d',interval='1d',group_by='ticker',auto_adjust=False,progress=False,threads=False)

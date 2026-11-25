@@ -42,6 +42,19 @@ def load_periods(root, now):
                 merged['metrics'][metric] = list(by.values())
             merged['observed_utc'] = record['observed_utc']
             merged['owner_cashflow_components_reviewed'] = record.get('owner_cashflow_components_reviewed',False)
+    from reviewed_native_96 import dynamic_record
+    for ticker,entry in (read(root/'reports/reviewed_native_96.json',{}) or {}).get('companies',{}).items():
+        native=dynamic_record(ticker,entry,entry.get('observed_utc',''))
+        if not valid_record(native,now):continue
+        merged=records.setdefault(ticker,{'metrics':{},'orders_enabled':False})
+        for metric,values in native['metrics'].items():
+            by={(r['period_start'],r['period_end'],r['unit']):r for r in merged['metrics'].get(metric,[])}
+            for value in values:
+                key=(value['period_start'],value['period_end'],value['unit']);old=by.get(key)
+                if not old or value['filed']>=old['filed']:by[key]=value
+            merged['metrics'][metric]=list(by.values())
+        merged['owner_cashflow_components_reviewed']=native.get('owner_cashflow_components_reviewed',False)
+        merged['owner_cashflow_required_components']=native.get('owner_cashflow_required_components',[])
     from championship_90 import verified_pdf_record
     for ticker,record in {**(read(root/'reports/dynamic_historical_records_92.json',{}) or {}).get('companies',{}),**(read(root/'reports/issuer_primary_records_95.json',{}) or {}).get('companies',{})}.items():
         if ticker in records or not verified_pdf_record(record,now):continue
@@ -111,9 +124,14 @@ def matched_cash(record, currency, now):
                      if (r['period_start'],r['period_end'],r['accession'])==(ocf['period_start'],ocf['period_end'],ocf['accession'])),None)
     capex=same('capex')
     adjustments={k:same(k) for k in ('capitalized_development','lease_principal','financing_lease_interest','financing_borrowing_interest')}
+    if same('capitalized_intangibles'):
+        adjustments.pop('capitalized_development');adjustments['capitalized_intangibles']=same('capitalized_intangibles')
+    if same('financing_interest_paid'):
+        adjustments.pop('financing_lease_interest');adjustments.pop('financing_borrowing_interest');adjustments['financing_interest_paid']=same('financing_interest_paid')
     simple=ocf['value']-capex['value'] if capex and capex['value']>=0 else None
     # Absence of a lease/development row in generic XBRL is NOT evidence of zero.
-    owner=simple-sum(r['value'] for r in adjustments.values() if r) if simple is not None and record.get('owner_cashflow_components_reviewed') else None
+    reviewed=record.get('owner_cashflow_components_reviewed') and all(same(k) is not None for k in record.get('owner_cashflow_required_components',[]))
+    owner=simple-sum(r['value'] for r in adjustments.values() if r) if simple is not None and reviewed else None
     return {'status':'MATCHED_PERIOD_CASH_FLOW' if simple is not None else 'CAPEX_INTERVAL_OR_ACCESSION_NOT_RECONCILED',
             'period_type':ocf['period_type'],'operating_cash_flow':ocf,'capex':capex,'simple_fcf':simple,
             'owner_cash_flow':owner,'owner_cashflow_components':adjustments,
@@ -241,9 +259,9 @@ def build(root, mode='scan', now=None):
     from background_evidence_93 import merge_adapters
     adapters=merge_adapters(merge_adapters(read(root/'settings/primary_adapters_90.json',{}),read(root/'reports/issuer_form_recovery_95.json',{})),read(root/'reports/background_evidence_93.json',{}))
     guidance=(read(root/'reports/dynamic_guidance_92.json',{}) or {}).get('companies',{})
-    extra_guidance={**(read(root/'reports/reviewed_guidance_95.json',{}) or {}).get('companies',{}),**(read(root/'reports/background_evidence_93.json',{}) or {}).get('guidance',{})}
-    for ticker,g in extra_guidance.items():
-        if evidence_record(g,now,400) and g.get('published_at','')>guidance.get(ticker,{}).get('published_at',''):
+    extra_guidance=list((read(root/'reports/reviewed_guidance_95.json',{}) or {}).get('companies',{}).items())+list((read(root/'reports/background_evidence_93.json',{}) or {}).get('guidance',{}).items())
+    for ticker,g in extra_guidance:
+        if evidence_record(g,now,400) and g.get('published_at','')>=guidance.get(ticker,{}).get('published_at',''):
             guidance[ticker]=g
     audit_name='dynamic_source_recovery_92_weekly.json' if mode=='weekly' else 'dynamic_source_recovery_92_scan.json'
     source_audit=(read(root/'reports'/audit_name,None) or read(root/'reports/dynamic_source_recovery_92.json',{}) or {}).get('companies',{})

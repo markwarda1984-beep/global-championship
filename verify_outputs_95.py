@@ -5,6 +5,10 @@ from datetime import datetime
 from collections import Counter
 from evidence_recovery_91 import write
 
+def guidance_expectation(seed,source,report_date):
+ if not source or source.get('published_at','')<seed['published_at']:source=seed
+ return source,datetime.fromisoformat(source['facts']['target_period_end']).date()>=report_date
+
 def check(root,mode='scan'):
  suffix='weekly' if mode=='weekly' else 'latest';p=root/'reports';baseline=json.loads((root/'settings/recovery_baseline_95.json').read_text());historical=json.loads((p/f'valuation_90_{suffix}.json').read_text());dynamic=json.loads((p/f'dynamic_earnings_92_{suffix}.json').read_text());sessions=json.loads((p/f'session_quotes_95_{suffix}.json').read_text())
  rows={r['ticker']:r for r in historical['companies'] if r['universe']=='ORIGINAL_200'};supported={t for t,r in rows.items() if r['scenarios'] is not None}
@@ -26,12 +30,23 @@ def check(root,mode='scan'):
   assert rows[t]['assumptions']['issued_share_count_primary']==shares
   financial_checks[t]={'owner_cash_flow_conservative':ocf-spending,'shares_net_of_trust':shares,'currency':'AUD'}
  fixed={r['ticker']:r for r in dynamic['companies'] if r['universe']=='ORIGINAL_200'}
+ guidance_seeds=json.loads((p/'reviewed_guidance_95.json').read_text())['companies']
+ background=json.loads((p/'background_evidence_93.json').read_text()).get('guidance',{})
+ report_date=datetime.fromisoformat(dynamic['published_at_utc']).date()
+ expected_active=0
  for t,low,high in [('ADBE',18.12,18.17),('DELL',28.24,28.24),('UNH',19.5,19.5)]:
-  f=fixed[t]['forward'];assert f and f['eps_range']=={'low':low,'high':high}
-  m=f['assumptions']['policy']['earnings_multiples'];eps={'bear':low,'base':(low+high)/2,'bull':high}
+  seed=guidance_seeds[t];assert (seed['facts']['low'],seed['facts']['high'])==(low,high)
+  source,active=guidance_expectation(seed,background.get(t),report_date)
+  if not active:
+   assert fixed[t]['forward'] is None and 'GUIDANCE_TARGET_PERIOD_ENDED' in fixed[t]['forward_missing_inputs']
+   financial_checks[t]={'status':'GUIDANCE_TARGET_ENDED_NO_FORWARD_VALUE'};continue
+  expected_active+=1;f=fixed[t]['forward'];assert f
+  assert f['guidance_source']['facts_sha256']==source['facts_sha256']
+  lo,hi=source['facts']['low'],source['facts']['high'];assert f['eps_range']=={'low':lo,'high':hi}
+  m=f['assumptions']['policy']['earnings_multiples'];eps={'bear':lo,'base':(lo+hi)/2,'bull':hi}
   for k in eps:assert abs(f['scenarios'][k]-eps[k]*m[k])<.00011
-  financial_checks[t]={'forward_scenarios':f['scenarios'],'target_period_end':f['guidance_source']['facts']['target_period_end'],'guidance_shape':f['guidance_source']['facts']['guidance_shape']}
- assert sum(bool(r['forward']) for r in fixed.values())>=4
+  financial_checks[t]={'forward_scenarios':f['scenarios'],'target_period_end':source['facts']['target_period_end'],'guidance_shape':source['facts']['guidance_shape']}
+ assert sum(bool(r['forward']) for r in fixed.values())>=expected_active
  for record in sessions['companies'].values():
   observed=datetime.fromisoformat(record['retrieved_at_utc']) if record.get('retrieved_at_utc') else None
   for label,sample in record['sessions'].items():
