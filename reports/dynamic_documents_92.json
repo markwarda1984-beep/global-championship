@@ -42,7 +42,7 @@
       "ticker": "CAT.AX",
       "source_url": "https://announcements.asx.com.au/asxpdf/20260630/pdf/0714zwcmt6v3jn.pdf",
       "source_document_sha256": "7aadf32daab5894fbb77074249d655c70ec89ff7a89e8d89213f66e6348abc82",
-      "observed_utc": "2026-11-24T19:40:05.285263+00:00",
+      "observed_utc": "2026-11-25T22:40:10.909428+00:00",
       "source_registration": {
         "url": "https://announcements.asx.com.au/asxpdf/20260630/pdf/0714zwcmt6v3jn.pdf",
         "period": "2026-03-31",
@@ -1549,7 +1549,7 @@
     "dcaf3a8262b1966cc0ae390cdfcb6b98d297f2c67a469635e09693e0982bdc9a": {
       "ticker": "CAT.AX",
       "source_url": "https://announcements.asx.com.au/asxpdf/20260630/pdf/0714zwcmt6v3jn.pdf",
-      "attempted_at_utc": "2026-11-24T19:40:05.285263+00:00",
+      "attempted_at_utc": "2026-11-25T22:40:10.909428+00:00",
       "status": "PRIMARY_DOCUMENT_RETRIEVED_REVIEW_REQUIRED"
     },
     "dc7fee4e49cec5f7a25f13b8a2b359ee8b3c93e36a0ed49de1ff9c95dbca8fa5": {
@@ -1585,8 +1585,10 @@
     "fbb625ae38e2f425a5308f93fb21495d4c44b6354807eab6895b4ff3202f1b25": {
       "ticker": "GG8.AX",
       "source_url": "https://greenvaleenergy.com.au/announcements/kaEx3g-annual-report-to-shareholders",
-      "attempted_at_utc": "2026-11-24T19:40:42.783915+00:00",
-      "status": "PRIMARY_DOCUMENT_RETRIEVED_REVIEW_REQUIRED"
+      "attempted_at_utc": "2026-11-25T22:40:14.176946+00:00",
+      "status": "SOURCE_UNAVAILABLE_OR_REVIEW_REQUIRED",
+      "reason": "PROVIDER_COOLDOWN_HTTP_429",
+      "retry_after_utc": "2026-11-26T22:40:14.176946+00:00"
     },
     "7cf4b32a050e6af083a62501531861be1fe98c93632937263851c24197fe3c70": {
       "ticker": "PDN.AX",
@@ -1837,6 +1839,7 @@
   },
   "orders_enabled": false,
   "provider_cooldowns": {
-    "docs.publicnow.com": "2026-11-25T19:45:03.206219+00:00"
+    "docs.publicnow.com": "2026-11-25T19:45:03.206219+00:00",
+    "greenvaleenergy.com.au": "2026-11-26T22:40:14.176946+00:00"
   }
 }
