@@ -1038,47 +1038,18 @@
           "filed": "2026-03-18",
           "form": "40-F",
           "unreviewed_candidates": []
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1001085/000100108526000006/bn-20251231.htm",
+          "sha256": "842269756ba49c7754f825f56d535301c8cc1140dee4d26eff525ee2b90f0688",
+          "filed": "2026-03-18",
+          "form": "40-F",
+          "unreviewed_candidates": []
         }
       ]
     },
     "BRK-B": {
       "documents": [
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm",
-          "sha256": "bc4475205f71a8034e83f2a3af3100f3d38c25bd5dc6d7b86db3b124b8b8daa6",
-          "filed": "2026-11-09",
-          "form": "10-Q",
-          "unreviewed_candidates": [
-            {
-              "row_excerpt": "Average equivalent Class A shares outstanding 1,426,372 1,438,223 1,433,603 1,438,223",
-              "inline_concepts": [
-                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
-              ],
-              "usable_for_valuation": false
-            },
-            {
-              "row_excerpt": "Average equivalent Class B shares outstanding 2,139,557,257 2,157,335,139 2,150,404,500 2,157,335,139",
-              "inline_concepts": [
-                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
-              ],
-              "usable_for_valuation": false
-            },
-            {
-              "row_excerpt": "Net cash flows from operating activities 33,914 34,777",
-              "inline_concepts": [
-                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
-              ],
-              "usable_for_valuation": false
-            },
-            {
-              "row_excerpt": "Purchases of property, plant and equipment and equipment held for lease ( 16,137 ) ( 14,725 )",
-              "inline_concepts": [
-                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
-              ],
-              "usable_for_valuation": false
-            }
-          ]
-        },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-20251231.htm",
           "sha256": "b1b7d0a8e7f845ae38317c8f22b5b1527cd7c10dc6b1b8ce0ccd5f8feed2176b",
@@ -1121,19 +1092,79 @@
               "usable_for_valuation": false
             }
           ]
-        }
-      ]
-    },
-    "BX": {
-      "documents": [
+        },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526451802/d179995d10q.htm",
-          "sha256": "433b7c1c95b91881ba286effc5027996ca9dbb21fe9fd5e7cbf14bc16be5e2f9",
-          "filed": "2026-11-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm",
+          "sha256": "3d73304109ce9fad83d4a2a9d681463028971e500156a8db168b411df0fea9ca",
+          "filed": "2026-11-09",
           "form": "10-Q",
           "unreviewed_candidates": [
             {
-              "row_excerpt": "Net Cash Provided by Operating Activities 4,895,387 3,595,366",
+              "row_excerpt": "Average equivalent Class A shares outstanding 1,426,372 1,438,223 1,433,603 1,438,223",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Average equivalent Class B shares outstanding 2,139,557,257 2,157,335,139 2,150,404,500 2,157,335,139",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Net cash flows from operating activities 33,914 34,777",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property, plant and equipment and equipment held for lease ( 16,137 ) ( 14,725 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-20251231.htm",
+          "sha256": "51016fe204bdc739324dcb843119c68c4b8d9b4976bab632ba44f9c6a5085fc8",
+          "filed": "2026-03-02",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Average equivalent Class A shares outstanding 1,438,223 1,437,720 1,448,880",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Average equivalent Class B shares outstanding 2,157,335,139 2,156,580,296 2,173,319,709",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Net cash flows from operating activities 45,969 30,592 49,196",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property, plant and equipment and equipment held for lease ( 20,927 ) ( 18,976 ) ( 19,409 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Net cash flows from operating activities 12,617 13,970 7,611",
               "inline_concepts": [
                 "us-gaap:NetCashProvidedByUsedInOperatingActivities"
               ],
@@ -1141,6 +1172,19 @@
             }
           ]
         },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452530/brka-ex99_1.htm",
+          "sha256": "7b89f525b50684421b1a853022515c785f28a5318a0cf2ecb7c89f94f47efb9e",
+          "accession": "0001193125-26-452530",
+          "filed": "2026-11-09",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        }
+      ]
+    },
+    "BX": {
+      "documents": [
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526082531/d48618d10k.htm",
           "sha256": "64f38aa79af7686c0c8f2f1d23dbf8335b4e85f344156c03a484c0963389967d",
@@ -1155,57 +1199,50 @@
               "usable_for_valuation": false
             }
           ]
-        }
-      ]
-    },
-    "CEG": {
-      "documents": [
+        },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm",
-          "sha256": "07a4cdc113cbb659b6135da9ebb4b04b0d4eb963f8c9a5ac24d1be6e24965666",
-          "filed": "2026-11-09",
+          "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526451802/d179995d10q.htm",
+          "sha256": "7962916c1c3a85d78e88b61868019145dca2d911b0f85d9868a2aeda8b348a43",
+          "filed": "2026-11-06",
           "form": "10-Q",
           "unreviewed_candidates": [
             {
-              "row_excerpt": "Net cash flows provided by (used in) operating activities 4,979 3,432",
+              "row_excerpt": "Net Cash Provided by Operating Activities 4,895,387 3,595,366",
               "inline_concepts": [
                 "us-gaap:NetCashProvidedByUsedInOperatingActivities"
-              ],
-              "usable_for_valuation": false
-            },
-            {
-              "row_excerpt": "Capital expenditures ( 3,461 ) ( 1,963 )",
-              "inline_concepts": [
-                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
-              ],
-              "usable_for_valuation": false
-            },
-            {
-              "row_excerpt": "Common stock ( No par value, 1,000 shares authorized, 352 and 312 shares outstanding, respectively) 25,702 11,043",
-              "inline_concepts": [
-                "us-gaap:CommonStockParOrStatedValuePerShare",
-                "us-gaap:CommonStockSharesAuthorized",
-                "us-gaap:CommonStockSharesOutstanding",
-                "us-gaap:CommonStockValue"
-              ],
-              "usable_for_valuation": false
-            },
-            {
-              "row_excerpt": "Net cash flows provided by (used in) operating activities 4,973 3,332",
-              "inline_concepts": [
-                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
-              ],
-              "usable_for_valuation": false
-            },
-            {
-              "row_excerpt": "Capital expenditures ( 3,461 ) ( 1,963 )",
-              "inline_concepts": [
-                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
               ],
               "usable_for_valuation": false
             }
           ]
         },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526082531/d48618d10k.htm",
+          "sha256": "79a92a43c07767ebfa3078d94a6ed09350204800b735cd17633c4841b49bed12",
+          "filed": "2026-02-27",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net Cash Provided by Operating Activities 4,663,161 3,481,662 4,056,906",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526428297/d160590dex991.htm",
+          "sha256": "e8cc965fe0e12d531aa426077c6ee1ef743ad47629fac2d11770309ae3419441",
+          "accession": "0001193125-26-428297",
+          "filed": "2026-10-22",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        }
+      ]
+    },
+    "CEG": {
+      "documents": [
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000032/ceg-20251231.htm",
           "sha256": "846801522412b044161356befd4b29033c27df87296821a707a6424657e9b8ba",
@@ -1251,6 +1288,107 @@
               "usable_for_valuation": false
             }
           ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm",
+          "sha256": "89dde4071d904d25830037f7c18743cbfcb2d53202d025f1e70c9fb9b2ff3249",
+          "filed": "2026-11-09",
+          "form": "10-Q",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash flows provided by (used in) operating activities 4,979 3,432",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Capital expenditures ( 3,461 ) ( 1,963 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Common stock ( No par value, 1,000 shares authorized, 352 and 312 shares outstanding, respectively) 25,702 11,043",
+              "inline_concepts": [
+                "us-gaap:CommonStockParOrStatedValuePerShare",
+                "us-gaap:CommonStockSharesAuthorized",
+                "us-gaap:CommonStockSharesOutstanding",
+                "us-gaap:CommonStockValue"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Net cash flows provided by (used in) operating activities 4,973 3,332",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Capital expenditures ( 3,461 ) ( 1,963 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000032/ceg-20251231.htm",
+          "sha256": "469c8d81600709037c6ab8184051ce9a461796cdc412358b4c2386eddefbbbc1",
+          "filed": "2026-02-24",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash flows provided by (used in) operating activities 4,237 ( 2,464 ) ( 5,301 )",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Capital expenditures ( 2,949 ) ( 2,565 ) ( 2,422 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Common stock ( No par value, 1,000 shares authorized, 312 shares and 313 shares outstanding, respectively) 11,043 11,402",
+              "inline_concepts": [
+                "us-gaap:CommonStockParOrStatedValuePerShare",
+                "us-gaap:CommonStockSharesAuthorized",
+                "us-gaap:CommonStockSharesOutstanding",
+                "us-gaap:CommonStockValue"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Net cash flows provided by (used in) operating activities 4,169 ( 2,470 ) ( 5,388 )",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Capital expenditures ( 2,949 ) ( 2,565 ) ( 2,422 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000116/ceg-20261109991.htm",
+          "sha256": "d035decaa48f28489b5625d00c8d5e245589cff1ef5b84c90f2b2cb85e63185a",
+          "accession": "0001868275-26-000116",
+          "filed": "2026-11-09",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
         }
       ]
     },
@@ -1258,7 +1396,7 @@
       "documents": [
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000068/cme-20260930.htm",
-          "sha256": "228520e06327925db22ccfd41e27ef1cb6ae1be960f226ee6cb0038aef8c65ab",
+          "sha256": "c8a2c7a758f9b6d7fd7492d461e3f188aa10e5fb634feadfa8d15323bbdcfb6b",
           "filed": "2026-10-23",
           "form": "10-Q",
           "unreviewed_candidates": [
@@ -1280,7 +1418,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000009/cme-20251231.htm",
-          "sha256": "a1f94c58769de2935084c5cc00643cc38ca69082d7249645b46d5e36c88915b1",
+          "sha256": "dd5f951cb90d99fa553ee7cec858fe397816882fa30afdf56550c134268c3d9e",
           "filed": "2026-02-26",
           "form": "10-K",
           "unreviewed_candidates": [
@@ -1299,6 +1437,37 @@
               "usable_for_valuation": false
             }
           ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000020/cme-20260331.htm",
+          "sha256": "526a570bca5118168a76fb5f45a142bc9bd84b3b4f68a3085344fca9526ae059",
+          "filed": "2026-04-24",
+          "form": "10-Q",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net Cash Provided by Operating Activities 1,259.9 1,116.6",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property, net ( 21.8 ) ( 14.2 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000065/exhibit9919302026.htm",
+          "sha256": "896ceeb2502b147e98f698083166ea71941da16ed17ecfa9bd91dd4ca4565f34",
+          "accession": "0001156375-26-000065",
+          "filed": "2026-10-21",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
         }
       ]
     },
@@ -1310,6 +1479,13 @@
           "filed": "2026-02-04",
           "form": "40-F",
           "unreviewed_candidates": []
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/16868/000110465926010352/tm261145d1_40f.htm",
+          "sha256": "854032622ee74801e44786c59362af4b167e26ea6ad4a550002734f0d1e359eb",
+          "filed": "2026-02-04",
+          "form": "40-F",
+          "unreviewed_candidates": []
         }
       ]
     },
@@ -1318,6 +1494,28 @@
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1017413/000101741326000018/cnq-20251231.htm",
           "sha256": "4af3d803ac123acd99186dfa8a7505c920806ea16797240bb70f30c7fa6823ac",
+          "filed": "2026-03-26",
+          "form": "40-F",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Weighted average common shares outstanding \u2013 basic (thousands of shares) 2,091,134 2,125,804 2,182,623",
+              "inline_concepts": [
+                "ifrs-full:WeightedAverageShares"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Weighted average common shares outstanding \u2013 diluted (thousands of shares) 2,097,906 2,140,429 2,204,248",
+              "inline_concepts": [
+                "ifrs-full:AdjustedWeightedAverageShares"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1017413/000101741326000018/cnq-20251231.htm",
+          "sha256": "e46262b7229e20c2962da49f8c86c60fbdf88270d32e9610a4a4ab5ffbdc45dd",
           "filed": "2026-03-26",
           "form": "40-F",
           "unreviewed_candidates": [
@@ -1370,14 +1568,108 @@
               "usable_for_valuation": false
             }
           ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
+          "sha256": "0f4cfc6734bb450588f5355961bcbca1c77985eabe5158433e32492970340a7e",
+          "filed": "2026-10-29",
+          "form": "10-Q",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 785,515 1,802,687",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm",
+          "sha256": "49d99c0fe909db4fb51c82f64914ad4c656a922f81262c91be801a5a0529f5c0",
+          "filed": "2026-02-12",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 2,426,383 3,103,935 673,376",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
         }
       ]
     },
     "COP": {
       "documents": [
         {
+          "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+          "sha256": "ff08e72617f4fc1a0a271f1f4d573998f2f635ef276e7b2998a0460c5dac78e0",
+          "filed": "2026-02-17",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 19,796 20,124 19,965",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Capital expenditures and investments ( 12,553 ) ( 12,118 ) ( 11,248 )",
+              "inline_concepts": [
+                "cop:PaymentToAcquireProductiveAssetsAndInvestments"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Weighted-average common shares outstanding (in millions) 1,252 1,179 1,203",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Weighted-average common shares outstanding (in millions) 1,252 1,179 1,203",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Weighted-average diluted shares outstanding (in millions) 1,253 1,181 1,206",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Capital expenditures and investments 3,607 6,702 593 1,194 342 12,438 115 12,553",
+              "inline_concepts": [
+                "cop:SegmentReportingInformationCapitalExpendituresAndInvestments"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Capital expenditures and investments 3,194 6,510 551 1,021 370 11,646 472 12,118",
+              "inline_concepts": [
+                "cop:SegmentReportingInformationCapitalExpendituresAndInvestments"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Capital expenditures and investments 1,705 6,487 456 1,111 354 10,113 1,135 11,248",
+              "inline_concepts": [
+                "cop:SegmentReportingInformationCapitalExpendituresAndInvestments"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
           "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000045/cop-20260930.htm",
-          "sha256": "e14875d43a6b3cfe74ab2700ec69b30456306df45d02347041576a4448325fcf",
+          "sha256": "3cf11d2be3c6685da6da525980f7e54b39d975ba2c21ce23093d3c7e278f6cf6",
           "filed": "2026-11-05",
           "form": "10-Q",
           "unreviewed_candidates": [
@@ -1448,7 +1740,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
-          "sha256": "ff08e72617f4fc1a0a271f1f4d573998f2f635ef276e7b2998a0460c5dac78e0",
+          "sha256": "f96b4db3c7624bd854c369a4217d3d60da51424d218adece5a84954cc8821095",
           "filed": "2026-02-17",
           "form": "10-K",
           "unreviewed_candidates": [
@@ -1509,33 +1801,20 @@
               "usable_for_valuation": false
             }
           ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm",
+          "sha256": "d09a3ce313317dbf902aff24b5f98941cb20e169e4b6d84b1be61d9ecc788c97",
+          "accession": "0001163165-26-000043",
+          "filed": "2026-11-05",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
         }
       ]
     },
     "CRWD": {
       "documents": [
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm",
-          "sha256": "e264751f6f0c54a5d32a81ca50e5c1f82025ca3d1ed765a3e2490c45bd8ca769",
-          "filed": "2026-11-23",
-          "form": "10-Q",
-          "unreviewed_candidates": [
-            {
-              "row_excerpt": "Net cash provided by operating activities 1,786,381 1,114,480",
-              "inline_concepts": [
-                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
-              ],
-              "usable_for_valuation": false
-            },
-            {
-              "row_excerpt": "Purchases of property and equipment ( 384,793 ) ( 199,643 )",
-              "inline_concepts": [
-                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
-              ],
-              "usable_for_valuation": false
-            }
-          ]
-        },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000010/crwd-20260131.htm",
           "sha256": "0b127766ca3652ae6ff2c088076c9159d34f3507e86256f444c6d38fdab14e5f",
@@ -1557,26 +1836,64 @@
               "usable_for_valuation": false
             }
           ]
-        }
-      ]
-    },
-    "EOG": {
-      "documents": [
+        },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000227/eog-20260930.htm",
-          "sha256": "c91012851fce88d47dc983880b1275d554fcd2d664bb3d1620dd460eec9007e7",
-          "filed": "2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm",
+          "sha256": "a1450f985a3450bea2d8d24de48bed66ca1c9cd43c039d929bbc58af35d04054",
+          "filed": "2026-11-23",
           "form": "10-Q",
           "unreviewed_candidates": [
             {
-              "row_excerpt": "Net Cash Provided by Operating Activities 11,448 7,432",
+              "row_excerpt": "Net cash provided by operating activities 1,786,381 1,114,480",
               "inline_concepts": [
                 "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property and equipment ( 384,793 ) ( 199,643 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
               ],
               "usable_for_valuation": false
             }
           ]
         },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000010/crwd-20260131.htm",
+          "sha256": "fa92052b1f031fb7dc9469cef4bc98c926662a561acc2acfd744545bc39a3d9c",
+          "filed": "2026-03-05",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 1,612,349 1,381,727 1,166,207",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property and equipment ( 302,108 ) ( 254,852 ) ( 176,529 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000035/crwd-20261123xex991.htm",
+          "sha256": "1db0761cc9b370639483a2df06d41336af95b19532ef3fdc9bed1f4023cdbd7e",
+          "accession": "0001535527-26-000035",
+          "filed": "2026-11-23",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        }
+      ]
+    },
+    "EOG": {
+      "documents": [
         {
           "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000054/eog-20251231.htm",
           "sha256": "6b765c6c42e43d4c843b8b692d9bb280115ad66336653a3340502c7bc8682aaf",
@@ -1591,6 +1908,45 @@
               "usable_for_valuation": false
             }
           ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000227/eog-20260930.htm",
+          "sha256": "40940ffbad25973c93efadc92bc8c00801896e289884ecab95b83c89b432389a",
+          "filed": "2026-11-05",
+          "form": "10-Q",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net Cash Provided by Operating Activities 11,448 7,432",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000054/eog-20251231.htm",
+          "sha256": "bfd4ebb5d809a8a544f14e69f2995a240144505438f0f04ede7b4a066d88df22",
+          "filed": "2026-02-24",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net Cash Provided by Operating Activities 10,044 12,143 11,340",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000226/exh99-1110526.htm",
+          "sha256": "b375d751399546c5fcbe10760b3121dd6125bf0901522efae1e004223546b6e8",
+          "accession": "0000821189-26-000226",
+          "filed": "2026-11-05",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
         }
       ]
     },

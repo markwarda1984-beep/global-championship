@@ -1,236 +1,19 @@
 {
   "schema_version": "9.3-background-research-1",
-  "run_started_utc": "2026-11-25T10:42:02.924001+00:00",
-  "run_finished_utc": "2026-11-25T10:44:52.588059+00:00",
-  "workflow_run_url": "https://github.com/markwarda1984-beep/global-championship/actions/runs/45597412416",
+  "run_started_utc": "2026-11-25T14:48:30.550214+00:00",
+  "run_finished_utc": "2026-11-25T14:50:48.822521+00:00",
+  "workflow_run_url": "https://github.com/markwarda1984-beep/global-championship/actions/runs/45638036994",
   "schedule_description": "Six bounded batches daily at 00:45, 04:45, 08:45, 12:45, 16:45 and 20:45 Australia/Sydney",
   "batch_limit": 20,
   "selected_count": 20,
   "processed_count": 20,
-  "http_requests": 86,
-  "successful_source_retrievals": 85,
+  "http_requests": 68,
+  "successful_source_retrievals": 67,
   "original_200_supported_before": 103,
   "original_200_supported_after": 103,
   "original_200_still_unsupported": 97,
   "newly_supported_this_batch": [],
   "results": [
-    {
-      "ticker": "UBS",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001610520.json",
-          "sha256": "9022d33b731de76b10b3b055524398860164403375dda07f849d2824a8ef2c66"
-        }
-      ],
-      "parsed_observations": 0,
-      "document_errors": [
-        "ValueError"
-      ],
-      "unreviewed_documents": 0,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 3,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 1,
-      "retry_interval_hours": 24,
-      "next_attempt_utc": "2026-11-26T10:42:02.924001+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    },
-    {
-      "ticker": "UNH",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000731766.json",
-          "sha256": "d75b31039d2282ac4c9725f96571a0acab3742ca8a34c034f625adaabdebe63b"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000266/unh-20260930.htm",
-          "sha256": "6ebef8decf987d5e4f11215111dc0202e5643e7d5de52aa68f27e120667615db",
-          "filed": "2026-11-03",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000062/unh-20251231.htm",
-          "sha256": "54ae71e84daaca437d375bb7bd80804d7533ae3f42b7ee07f4b49900dbd4577b",
-          "filed": "2026-03-02",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/earningsrelease3q26unh.htm",
-          "sha256": "20409f931fd6634f8cb2fca1ecd79041b9e6e5082d12aef14501530279355c2d",
-          "accession": "0000731766-26-000255",
-          "filed": "2026-10-13"
-        }
-      ],
-      "parsed_observations": 2,
-      "document_errors": [],
-      "unreviewed_documents": 3,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 1,
-      "retry_interval_hours": 24,
-      "next_attempt_utc": "2026-11-26T10:42:02.924001+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    },
-    {
-      "ticker": "VST",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001692819.json",
-          "sha256": "4d2345d460a729356565747520cc82ee318f4e33f0525eb8d98f0a906d257308"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000025/vistra-20260930.htm",
-          "sha256": "b2d83ae176d463180a13b6c398fa0a090843d1c505a81e9041bd85f02fb825b3",
-          "filed": "2026-11-09",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000006/vistra-20251231.htm",
-          "sha256": "c5636181a8c07de71f776313271eda7881932b590bb64e9dbe2448d681904020",
-          "filed": "2026-02-27",
-          "form": "10-K"
-        }
-      ],
-      "parsed_observations": 2,
-      "document_errors": [],
-      "unreviewed_documents": 2,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 5,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 1,
-      "retry_interval_hours": 24,
-      "next_attempt_utc": "2026-11-26T10:42:02.924001+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    },
-    {
-      "ticker": "WBC.AX",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=WBC&by=asxCode&period=M6&timeframe=D",
-          "sha256": "a0292fd50a1a70ae7b8d1bbc3b691acbdd0750bb4e6943ec896138d6323f1c27"
-        }
-      ],
-      "filings": [
-        {
-          "title": "Westpac 2026 Group Annual Report and Appendix 4E 255 pages 17.1MB",
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160745"
-        }
-      ],
-      "parsed_observations": 0,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "remaining_work": "Verify issuer-hosted annual report tables and a reviewed parser. ASX acknowledgement terms are not automatically accepted. Index links are not financial inputs.",
-      "collection_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
-      "http_requests": 1,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 1,
-      "retry_interval_hours": 24,
-      "next_attempt_utc": "2026-11-26T10:42:02.924001+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    },
-    {
-      "ticker": "WFC",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000072971.json",
-          "sha256": "864442066ad6fcc16b1661a5d61c45f195b42ccc40f52f289675e598a353e9fc"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000327/wfc-20260930.htm",
-          "sha256": "7eb03624d1b123e90d916fe461ad083457d19c77c36d636c22abe15acac17afd",
-          "filed": "2026-10-28",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000133/wfc-20251231_d2.htm",
-          "sha256": "bb21d698ef9757bd2fa1528a52b9b20dc7b411101d1fe27025021de2ecfd2a6d",
-          "filed": "2026-02-24",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000318/wfc3qer10-13x26ex991xrelea.htm",
-          "sha256": "30594eae766226470fd1ea847480d3ee538e0569ff59cef5cfac2ac5cf4ad9d8",
-          "accession": "0000072971-26-000318",
-          "filed": "2026-10-13"
-        }
-      ],
-      "parsed_observations": 1,
-      "document_errors": [],
-      "unreviewed_documents": 3,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 1,
-      "retry_interval_hours": 24,
-      "next_attempt_utc": "2026-11-26T10:42:02.924001+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    },
-    {
-      "ticker": "WMT",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
-          "sha256": "49330f98609f70fcef4054edc90bc811398a58c4bf26dc0b218d607967a8dbe4"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/wmt-20260731.htm",
-          "sha256": "06806e924c95c56e176f310cd7c602467a610e6b9916beec228ed952685871f6",
-          "filed": "2026-08-28",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm",
-          "sha256": "acbec562d6f576cc6685bde81f3a01930d22b4b8a32f165dae2820e14d56c3a4",
-          "filed": "2026-03-13",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
-          "sha256": "f3702fca4e08dd3fd1248c39415e1597150f3ac840b0cc46e4abf2c642a18049",
-          "accession": "0000104169-26-000168",
-          "filed": "2026-11-19"
-        }
-      ],
-      "parsed_observations": 2,
-      "document_errors": [],
-      "unreviewed_documents": 3,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 1,
-      "retry_interval_hours": 24,
-      "next_attempt_utc": "2026-11-26T10:42:02.924001+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    },
     {
       "ticker": "DUG.AX",
       "universe": "DISCOVERY",
@@ -241,7 +24,7 @@
       "sources": [
         {
           "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=DUG&by=asxCode&period=M6&timeframe=D",
-          "sha256": "8f2441ab79d738cc23653085937b18dd00a078a0185e220be09e23580f38b94d"
+          "sha256": "c92036de7c47899e07e61ee5c7e83db798a90177a8c4041ddd7f84fca1c43438"
         }
       ],
       "filings": [
@@ -255,134 +38,53 @@
       "remaining_work": "Verify issuer-hosted annual report tables and a reviewed parser. ASX acknowledgement terms are not automatically accepted. Index links are not financial inputs.",
       "collection_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
       "http_requests": 1,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 2,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 3,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
         "DATED_DIRECTIONAL_FX_REQUIRED"
       ]
     },
     {
-      "ticker": "SKS.AX",
-      "universe": "DISCOVERY",
-      "missing_inputs_before": [],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=SKS&by=asxCode&period=M6&timeframe=D",
-          "sha256": "1d47bf8f85eeb3d4afa49cb19aa4e9827817cbefef418a2e6a9933bf2356b0fc"
-        }
-      ],
-      "filings": [
-        {
-          "title": "Annual Report to shareholders 93 pages 14.4MB",
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03143418"
-        }
-      ],
-      "parsed_observations": 0,
-      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
-      "remaining_work": "Verify issuer-hosted annual report tables and a reviewed parser. ASX acknowledgement terms are not automatically accepted. Index links are not financial inputs.",
-      "collection_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
-      "http_requests": 1,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 2,
-      "retry_interval_hours": 24,
-      "next_attempt_utc": "2026-11-26T10:42:02.924001+00:00",
-      "supported_after": true,
-      "missing_inputs_after": []
-    },
-    {
-      "ticker": "ABNB",
+      "ticker": "BN",
       "universe": "ORIGINAL_200",
       "missing_inputs_before": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
-      ],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001559720.json",
-          "sha256": "84c3ff1f4d1c2a59b9ec83e7712f507ba202df8dab48dabd673a7856a5795b28"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm",
-          "sha256": "7f6682ff4f32e1fad6974fb71ae0a4ea4c03c318c96dd09e2616e4616590c16f",
-          "filed": "2026-11-05",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm",
-          "sha256": "5758f99851fcafd8dde0c43ac431077b5183f7eae86d1f9e7943882d75f81073",
-          "filed": "2026-02-12",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526449727/d437988dex991.htm",
-          "sha256": "58bfda4eb77968f3e88abd580dcfa9e6d7061cead1db260949340e2adf81cbb6",
-          "accession": "0001193125-26-449727",
-          "filed": "2026-11-05"
-        }
-      ],
-      "parsed_observations": 0,
-      "document_errors": [],
-      "unreviewed_documents": 3,
-      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 2,
-      "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
-      "supported_after": false,
-      "missing_inputs_after": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
-      ]
-    },
-    {
-      "ticker": "AFRM",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED",
         "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
       ],
       "orders_enabled": false,
       "sources": [
         {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001820953.json",
-          "sha256": "823f0ce51e2269ed87b4f9e1cd22865e81e50758ba4c5c5bdfc21c916f9cc528"
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001001085.json",
+          "sha256": "7fc2b1cb00ab42b7bc20039a32d63e87317cfae7a314ac24d87fa0fff4ff3f00"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/1820953/000162828026071153/afrm-20260930.htm",
-          "sha256": "2023370ed8206003fb4652c88a2d3064e328e0b44178f59839aae7e0f684718c",
-          "filed": "2026-11-05",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1820953/000162828026059279/afrm-20260630.htm",
-          "sha256": "172ba540cd7344d44ddff90cdded167554abbd4e737f9f9e72fd36024b2af5d4",
-          "filed": "2026-08-27",
-          "form": "10-K"
+          "url": "https://www.sec.gov/Archives/edgar/data/1001085/000100108526000006/bn-20251231.htm",
+          "sha256": "842269756ba49c7754f825f56d535301c8cc1140dee4d26eff525ee2b90f0688",
+          "filed": "2026-03-18",
+          "form": "40-F"
         }
       ],
       "parsed_observations": 0,
       "document_errors": [],
-      "unreviewed_documents": 2,
+      "unreviewed_documents": 1,
       "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
       "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 5,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
+      "http_requests": 3,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
       "attempt_count": 2,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED",
         "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
       ]
     },
     {
-      "ticker": "ALL.AX",
+      "ticker": "BOE.AX",
       "universe": "ORIGINAL_200",
       "missing_inputs_before": [
         "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
@@ -390,195 +92,89 @@
       "orders_enabled": false,
       "sources": [
         {
-          "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=ALL&by=asxCode&period=M6&timeframe=D",
-          "sha256": "e8c3d123d2320d71ad84a7d2890a181e45e3771ed472009121061da8514f4dcd"
+          "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=BOE&by=asxCode&period=M6&timeframe=D",
+          "sha256": "f8e85a0f53003bac5a34953757fab1889f5584a93ea605af8f7314c79d00bc3c"
         }
       ],
-      "filings": [],
+      "filings": [
+        {
+          "title": "2026 Annual Report to Shareholders and Appendix 4E 112 pages 4.6MB",
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130809"
+        }
+      ],
       "parsed_observations": 0,
       "research_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
       "remaining_work": "Verify issuer-hosted annual report tables and a reviewed parser. ASX acknowledgement terms are not automatically accepted. Index links are not financial inputs.",
       "collection_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
       "http_requests": 1,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
       "attempt_count": 2,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
         "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
       ]
     },
     {
-      "ticker": "AMZN",
+      "ticker": "BP",
       "universe": "ORIGINAL_200",
       "missing_inputs_before": [
-        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
       ],
       "orders_enabled": false,
       "sources": [
         {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
-          "sha256": "acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
-          "sha256": "7c33b9f14cb63288951c9e414e9ad83d716926b0d722f5f7a65d58bcd2af9e82",
-          "filed": "2026-10-30",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
-          "sha256": "29c6c57172b0b0cf6cfe5963000870b3a81a804bc66fcd0167899a8f9b2b7146",
-          "filed": "2026-02-06",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
-          "sha256": "442c7c2f25ece048e61e47e43933c8a09e65b1a48f347f04407d99ed046b34cc",
-          "accession": "0001018724-26-000038",
-          "filed": "2026-10-29"
-        }
-      ],
-      "parsed_observations": 2,
-      "document_errors": [],
-      "unreviewed_documents": 3,
-      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 2,
-      "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
-      "supported_after": false,
-      "missing_inputs_after": [
-        "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL"
-      ]
-    },
-    {
-      "ticker": "APO",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [
-        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
-        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
-        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
-      ],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001858681.json",
-          "sha256": "e6d998d9788801fc40eae6c336b242cd4cee7cc12f6f026387eed1ab7a7ef325"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000067/apo-20260930.htm",
-          "sha256": "624785d3b02f98dc6023b37879aea39859df8e4885af5a9d21f82366c3584faa",
-          "filed": "2026-11-05",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000013/apo-20251231.htm",
-          "sha256": "0c6dc8ba7a05a4875277f5b005440e6ee1f33be5b8b93a05ea9bdc242288c5d1",
-          "filed": "2026-02-25",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000063/erex9913q2026.htm",
-          "sha256": "19249d5b14c806ec6df4c66c54bacb51736ae2067bc01892751d09126fbb7313",
-          "accession": "0001858681-26-000063",
-          "filed": "2026-11-03"
-        }
-      ],
-      "parsed_observations": 2,
-      "document_errors": [],
-      "unreviewed_documents": 3,
-      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 2,
-      "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
-      "supported_after": false,
-      "missing_inputs_after": [
-        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
-        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
-        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
-      ]
-    },
-    {
-      "ticker": "APP",
-      "universe": "ORIGINAL_200",
-      "missing_inputs_before": [
-        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
-      ],
-      "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001751008.json",
-          "sha256": "5a74cbf4b23978e7967e78dc9fff11def18a0b96af2315f4c81bb4891fdf1789"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000069/app-20260930.htm",
-          "sha256": "30f95cdbfc76d08a51accc79e063e2f9065edf272e9b85a2ce9b1d1e8e69c952",
-          "filed": "2026-11-04",
-          "form": "10-Q"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000010/app-20251231.htm",
-          "sha256": "46c391093688b57d4c0e9ee96041584653d8ce81bf967f86342ade0959f5d93f",
-          "filed": "2026-02-19",
-          "form": "10-K"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000068/exhibit991-3q26earningspre.htm",
-          "sha256": "52e8bed30d6874da77426efdd1939f6f9aefaf31ac0c786469a4f277d4106171",
-          "accession": "0001751008-26-000068",
-          "filed": "2026-11-04"
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000313807.json",
+          "sha256": "e1c8c5ef577166a92b10cf9300ffdd428a02bf60e11f1028088235089591ad8e"
         }
       ],
       "parsed_observations": 0,
-      "document_errors": [],
-      "unreviewed_documents": 3,
+      "document_errors": [
+        "ValueError"
+      ],
+      "unreviewed_documents": 0,
       "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
       "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
+      "http_requests": 3,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
       "attempt_count": 2,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
-        "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING"
+        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
       ]
     },
     {
-      "ticker": "ASTS",
+      "ticker": "BRK-B",
       "universe": "ORIGINAL_200",
       "missing_inputs_before": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
       ],
       "orders_enabled": false,
       "sources": [
         {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001780312.json",
-          "sha256": "8831ec35705d0141bf7a8a401a0866f12ed1ea6b472a1ed11cc860c12578dba8"
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json",
+          "sha256": "ecdd61c2ed055d8c38a9ba64cd3135a27f94580d3a35eba1aad6bd8352f7896c"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526453759/asts-20260930.htm",
-          "sha256": "b7e9d51901fb9d1c36c5065e932f07bde4537a663117357d1578ccfd1f3bdab1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm",
+          "sha256": "3d73304109ce9fad83d4a2a9d681463028971e500156a8db168b411df0fea9ca",
           "filed": "2026-11-09",
           "form": "10-Q"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/1780312/000178031226000006/asts-20251231.htm",
-          "sha256": "208c25489a25bb2379aa731a952db6baeca867f43c3f3e1fd887cb8b069ccb35",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-20251231.htm",
+          "sha256": "51016fe204bdc739324dcb843119c68c4b8d9b4976bab632ba44f9c6a5085fc8",
           "filed": "2026-03-02",
           "form": "10-K"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526453758/asts-ex99_1.htm",
-          "sha256": "472fb5d0cab7e7560662acf21c2c9900e1aed737518a64e0f7b25a4c18151b3d",
-          "accession": "0001193125-26-453758",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452530/brka-ex99_1.htm",
+          "sha256": "7b89f525b50684421b1a853022515c785f28a5318a0cf2ecb7c89f94f47efb9e",
+          "accession": "0001193125-26-452530",
           "filed": "2026-11-09"
         }
       ],
@@ -588,78 +184,68 @@
       "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
       "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
       "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
       "attempt_count": 2,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
-        "CURRENT_PRIMARY_SHARE_COUNT_MISSING"
+        "CURRENT_PRIMARY_SHARE_COUNT_MISSING",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED"
       ]
     },
     {
-      "ticker": "AZN",
-      "universe": "ORIGINAL_200",
+      "ticker": "BTDR",
+      "universe": "DISCOVERY",
       "missing_inputs_before": [
-        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+        "MIXED_OR_MISSING_STATEMENT_CURRENCY"
       ],
       "orders_enabled": false,
-      "sources": [
-        {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000901832.json",
-          "sha256": "f8ee3de56da6ad61aca941be6c4d301e0a2edd61519473aa237f05c26d05206c"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/901832/000110465926019130/azn-20251231x20f.htm",
-          "sha256": "75a9d5452f82734d74e9bd38b4bd96146b7717eb3c09abaef8bcc90418e2abb4",
-          "filed": "2026-02-24",
-          "form": "20-F"
-        }
-      ],
+      "research_status": "ISSUER_IDENTITY_REVIEW_REQUIRED",
+      "sources": [],
       "parsed_observations": 0,
-      "document_errors": [],
-      "unreviewed_documents": 1,
-      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 3,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
-      "attempt_count": 2,
+      "collection_status": "ISSUER_IDENTITY_REVIEW_REQUIRED",
+      "http_requests": 0,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 0,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
-        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+        "MIXED_OR_MISSING_STATEMENT_CURRENCY"
       ]
     },
     {
-      "ticker": "BA",
+      "ticker": "BX",
       "universe": "ORIGINAL_200",
       "missing_inputs_before": [
-        "NORMALIZED_CYCLE_NONPOSITIVE"
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ],
       "orders_enabled": false,
       "sources": [
         {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000012927.json",
-          "sha256": "794d5fb4c83e163b258afbc6828a6d9ce6657f3dae28d5fce0c29623619a957d"
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001393818.json",
+          "sha256": "87c3e84295dba99c9f8893e09ebd76248bc15aa9692b23512b856cd07b848106"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
-          "sha256": "f878f620cf770f5549c82de95b72fadb7cfa27eb6837a0a9f0e4699f6b269039",
-          "filed": "2026-10-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526451802/d179995d10q.htm",
+          "sha256": "7962916c1c3a85d78e88b61868019145dca2d911b0f85d9868a2aeda8b348a43",
+          "filed": "2026-11-06",
           "form": "10-Q"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/ba-20251231.htm",
-          "sha256": "03fa2203f8cf730ddced8af50caf69a912fed681494316128e02301c8b88301c",
-          "filed": "2026-01-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526082531/d48618d10k.htm",
+          "sha256": "79a92a43c07767ebfa3078d94a6ed09350204800b735cd17633c4841b49bed12",
+          "filed": "2026-02-27",
           "form": "10-K"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm",
-          "sha256": "0c1eb1b4dc4f51e410f5446bda08a66f6ff20e69ac38774dfc60665706265173",
-          "accession": "0001628280-26-067411",
-          "filed": "2026-10-27"
+          "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526428297/d160590dex991.htm",
+          "sha256": "e8cc965fe0e12d531aa426077c6ee1ef743ad47629fac2d11770309ae3419441",
+          "accession": "0001193125-26-428297",
+          "filed": "2026-10-22"
         }
       ],
       "parsed_observations": 2,
@@ -668,32 +254,232 @@
       "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
       "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
       "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
       "attempt_count": 2,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
-        "NORMALIZED_CYCLE_NONPOSITIVE"
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
       ]
     },
     {
-      "ticker": "BABA",
+      "ticker": "CAR.AX",
       "universe": "ORIGINAL_200",
       "missing_inputs_before": [
-        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
       ],
       "orders_enabled": false,
       "sources": [
         {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001577552.json",
-          "sha256": "f279f7ebed84764698a3a232290c428d2f5afa094dcaee5c9537b7e0affe26fd"
+          "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=CAR&by=asxCode&period=M6&timeframe=D",
+          "sha256": "9d01dea98a1e96c7d17a55c6270773e086990b00ff0d62e5e79c5bb70d819f7d"
+        }
+      ],
+      "filings": [
+        {
+          "title": "FY26 Appendix 4E and Annual Report 153 pages 7.1MB",
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03123323"
+        }
+      ],
+      "parsed_observations": 0,
+      "research_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
+      "remaining_work": "Verify issuer-hosted annual report tables and a reviewed parser. ASX acknowledgement terms are not automatically accepted. Index links are not financial inputs.",
+      "collection_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
+      "http_requests": 1,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 4,
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
+      "supported_after": false,
+      "missing_inputs_after": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ]
+    },
+    {
+      "ticker": "CAT.AX",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=CAT&by=asxCode&period=M6&timeframe=D",
+          "sha256": "26e8191c5b14b00ae837bfc075adc2aa55078651e2fd01634a1125b48eafad31"
+        }
+      ],
+      "filings": [
+        {
+          "title": "2026 Annual Report 128 pages 8.3MB",
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03109281"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/baba-20260331.htm",
-          "sha256": "20a86efaf80ac67543c27f24a47ee74544630eb43119a619d61a91f6923312bc",
-          "filed": "2026-05-20",
-          "form": "20-F"
+          "title": "Release and Dispatch of 2026 Annual Report 1 page 57.2KB",
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03109265"
+        }
+      ],
+      "parsed_observations": 0,
+      "research_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
+      "remaining_work": "Verify issuer-hosted annual report tables and a reviewed parser. ASX acknowledgement terms are not automatically accepted. Index links are not financial inputs.",
+      "collection_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
+      "http_requests": 1,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 4,
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
+      "supported_after": false,
+      "missing_inputs_after": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json",
+          "sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm",
+          "sha256": "89dde4071d904d25830037f7c18743cbfcb2d53202d025f1e70c9fb9b2ff3249",
+          "filed": "2026-11-09",
+          "form": "10-Q"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000032/ceg-20251231.htm",
+          "sha256": "469c8d81600709037c6ab8184051ce9a461796cdc412358b4c2386eddefbbbc1",
+          "filed": "2026-02-24",
+          "form": "10-K"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000116/ceg-20261109991.htm",
+          "sha256": "d035decaa48f28489b5625d00c8d5e245589cff1ef5b84c90f2b2cb85e63185a",
+          "accession": "0001868275-26-000116",
+          "filed": "2026-11-09"
+        }
+      ],
+      "parsed_observations": 2,
+      "document_errors": [],
+      "unreviewed_documents": 3,
+      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
+      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
+      "http_requests": 6,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 4,
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
+      "supported_after": false,
+      "missing_inputs_after": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ]
+    },
+    {
+      "ticker": "CME",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001156375.json",
+          "sha256": "8b12c0ae5c33f2d035d7d0c0c17a2fd1f23849c155f69f9e1fc6d98e19f62914"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637522000076/cme-2021123110kex411.htm",
+          "sha256": "2d37c7bd525e588f3ad2162a3a0a580af7007263162ec2216f0aba67fd10efb1"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000068/cme-20260930.htm",
+          "sha256": "c8a2c7a758f9b6d7fd7492d461e3f188aa10e5fb634feadfa8d15323bbdcfb6b",
+          "filed": "2026-10-23",
+          "form": "10-Q"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000009/cme-20251231.htm",
+          "sha256": "dd5f951cb90d99fa553ee7cec858fe397816882fa30afdf56550c134268c3d9e",
+          "filed": "2026-02-26",
+          "form": "10-K"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000020/cme-20260331.htm",
+          "sha256": "526a570bca5118168a76fb5f45a142bc9bd84b3b4f68a3085344fca9526ae059",
+          "filed": "2026-04-24",
+          "form": "10-Q"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000065/exhibit9919302026.htm",
+          "sha256": "896ceeb2502b147e98f698083166ea71941da16ed17ecfa9bd91dd4ca4565f34",
+          "accession": "0001156375-26-000065",
+          "filed": "2026-10-21"
+        }
+      ],
+      "parsed_observations": 0,
+      "document_errors": [],
+      "unreviewed_documents": 5,
+      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
+      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
+      "http_requests": 8,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 24,
+      "next_attempt_utc": "2026-11-26T14:48:30.550214+00:00",
+      "supported_after": true,
+      "missing_inputs_after": []
+    },
+    {
+      "ticker": "CNI",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000016868.json",
+          "sha256": "6ccf0b631dedd75ff5bad530ce5b0e22ed5e864515e2447709366fcb24b8ec40"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/16868/000110465926010352/tm261145d1_40f.htm",
+          "sha256": "854032622ee74801e44786c59362af4b167e26ea6ad4a550002734f0d1e359eb",
+          "filed": "2026-02-04",
+          "form": "40-F"
+        }
+      ],
+      "parsed_observations": 1,
+      "document_errors": [],
+      "unreviewed_documents": 1,
+      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
+      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
+      "http_requests": 3,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 24,
+      "next_attempt_utc": "2026-11-26T14:48:30.550214+00:00",
+      "supported_after": true,
+      "missing_inputs_after": []
+    },
+    {
+      "ticker": "CNQ",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001017413.json",
+          "sha256": "5fb96f54baabe2811f0bd38aed0a08e5f7671e88b3ca82b09fe58e75c23db5ec"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1017413/000101741326000018/cnq-20251231.htm",
+          "sha256": "e46262b7229e20c2962da49f8c86c60fbdf88270d32e9610a4a4ab5ffbdc45dd",
+          "filed": "2026-03-26",
+          "form": "40-F"
         }
       ],
       "parsed_observations": 1,
@@ -702,98 +488,275 @@
       "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
       "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
       "http_requests": 3,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
       "attempt_count": 2,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
+      "supported_after": false,
+      "missing_inputs_after": [
+        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
+      ]
+    },
+    {
+      "ticker": "COH.AX",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=COH&by=asxCode&period=M6&timeframe=D",
+          "sha256": "fb4dbeb237a84d967a966692519214c9b7d596440a9868d70604fbeb3a66ef95"
+        }
+      ],
+      "filings": [
+        {
+          "title": "Annual Report 203 pages 11.9MB",
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126043"
+        },
+        {
+          "title": "Appendix 4E 2 pages 171.1KB",
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126040"
+        }
+      ],
+      "parsed_observations": 0,
+      "research_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
+      "remaining_work": "Verify issuer-hosted annual report tables and a reviewed parser. ASX acknowledgement terms are not automatically accepted. Index links are not financial inputs.",
+      "collection_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
+      "http_requests": 1,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 4,
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
+      "supported_after": false,
+      "missing_inputs_after": [
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
+      ]
+    },
+    {
+      "ticker": "COIN",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001679788.json",
+          "sha256": "0206e8a8e19418d06a025c32266b284709920daf85bfece27f6e83734856a182"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
+          "sha256": "0f4cfc6734bb450588f5355961bcbca1c77985eabe5158433e32492970340a7e",
+          "filed": "2026-10-29",
+          "form": "10-Q"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm",
+          "sha256": "49d99c0fe909db4fb51c82f64914ad4c656a922f81262c91be801a5a0529f5c0",
+          "filed": "2026-02-12",
+          "form": "10-K"
+        }
+      ],
+      "parsed_observations": 0,
+      "document_errors": [],
+      "unreviewed_documents": 2,
+      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
+      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
+      "http_requests": 5,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 4,
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
+      "supported_after": false,
+      "missing_inputs_after": [
+        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
+        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
+        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
+      ]
+    },
+    {
+      "ticker": "COL.AX",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://www.colesgroup.com.au/FormBuilder/_Resource/_module/ir5sKeTxxEOndzdh00hWJw/file/Annual_Report_Print_2026.pdf",
+          "sha256": "0b518b0b8f37d9a984309a64281a2584374eb04f853ab3b3ca222d6ff625ee21"
+        }
+      ],
+      "parsed_observations": 10,
+      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
+      "collection_status": "REVIEWED_PRIMARY_PDF_ADAPTER_APPLIED",
+      "http_requests": 1,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 24,
+      "next_attempt_utc": "2026-11-26T14:48:30.550214+00:00",
+      "supported_after": true,
+      "missing_inputs_after": []
+    },
+    {
+      "ticker": "COP",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001163165.json",
+          "sha256": "ff9fe5718463fb92148c7a1c1d8d55118337258af6533d896723d4935729b4c2"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000045/cop-20260930.htm",
+          "sha256": "3cf11d2be3c6685da6da525980f7e54b39d975ba2c21ce23093d3c7e278f6cf6",
+          "filed": "2026-11-05",
+          "form": "10-Q"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+          "sha256": "f96b4db3c7624bd854c369a4217d3d60da51424d218adece5a84954cc8821095",
+          "filed": "2026-02-17",
+          "form": "10-K"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm",
+          "sha256": "d09a3ce313317dbf902aff24b5f98941cb20e169e4b6d84b1be61d9ecc788c97",
+          "accession": "0001163165-26-000043",
+          "filed": "2026-11-05"
+        }
+      ],
+      "parsed_observations": 5,
+      "document_errors": [],
+      "unreviewed_documents": 3,
+      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
+      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
+      "http_requests": 6,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 24,
+      "next_attempt_utc": "2026-11-26T14:48:30.550214+00:00",
+      "supported_after": true,
+      "missing_inputs_after": []
+    },
+    {
+      "ticker": "CRWD",
+      "universe": "ORIGINAL_200",
+      "missing_inputs_before": [
+        "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
+      ],
+      "orders_enabled": false,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001535527.json",
+          "sha256": "548a35b1b41837c602b93c13d7d3b7ede62aef1ed15a943f543aa00aafd82ed8"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm",
+          "sha256": "a1450f985a3450bea2d8d24de48bed66ca1c9cd43c039d929bbc58af35d04054",
+          "filed": "2026-11-23",
+          "form": "10-Q"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000010/crwd-20260131.htm",
+          "sha256": "fa92052b1f031fb7dc9469cef4bc98c926662a561acc2acfd744545bc39a3d9c",
+          "filed": "2026-03-05",
+          "form": "10-K"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000035/crwd-20261123xex991.htm",
+          "sha256": "1db0761cc9b370639483a2df06d41336af95b19532ef3fdc9bed1f4023cdbd7e",
+          "accession": "0001535527-26-000035",
+          "filed": "2026-11-23"
+        }
+      ],
+      "parsed_observations": 1,
+      "document_errors": [],
+      "unreviewed_documents": 3,
+      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
+      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
+      "http_requests": 6,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
+      "attempt_count": 2,
+      "retry_interval_hours": 4,
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
         "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW"
       ]
     },
     {
-      "ticker": "BIDU",
+      "ticker": "CSL.AX",
       "universe": "ORIGINAL_200",
       "missing_inputs_before": [
-        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
       ],
       "orders_enabled": false,
       "sources": [
         {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001329099.json",
-          "sha256": "2ea7659af468d1708f51fa4d20f8cba0ddcd403d9849ba0f8c8ec4cac903b44b"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
-          "sha256": "1b526eee655e66967a914ae5793d39b314b2d851355af1b53f20fabe295cdf79",
-          "filed": "2026-03-17",
-          "form": "20-F"
+          "url": "https://www.asx.com.au/asx/v2/statistics/announcements.do?asxCode=CSL&by=asxCode&period=M6&timeframe=D",
+          "sha256": "d5072499a7e6546557168cea032fb6fa79b41ed13d3e000c4bf8b19b19b26b89"
         }
       ],
+      "filings": [],
       "parsed_observations": 0,
-      "document_errors": [],
-      "unreviewed_documents": 1,
-      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
-      "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
-      "http_requests": 3,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
+      "research_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
+      "remaining_work": "Verify issuer-hosted annual report tables and a reviewed parser. ASX acknowledgement terms are not automatically accepted. Index links are not financial inputs.",
+      "collection_status": "ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED",
+      "http_requests": 1,
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
       "attempt_count": 2,
       "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
+      "next_attempt_utc": "2026-11-25T18:48:30.550214+00:00",
       "supported_after": false,
       "missing_inputs_after": [
-        "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED"
+        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
       ]
     },
     {
-      "ticker": "BLK",
+      "ticker": "EOG",
       "universe": "ORIGINAL_200",
-      "missing_inputs_before": [
-        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
-        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
-        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
-      ],
+      "missing_inputs_before": [],
       "orders_enabled": false,
       "sources": [
         {
-          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002012383.json",
-          "sha256": "433252efcac82512f7ddea1f332d5ad9f8946a6cca98c85c2db11fc6c3caff94"
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000821189.json",
+          "sha256": "fa2e9b2550a36481305e3a627fcc9e4540a9387f8c8e8249ba6e5b0c499d5786"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526447043/blk-20260930.htm",
-          "sha256": "9dc92fdd4a38648561cff2038ebea15860aee6ea6a9d186a7c35e49cde268baa",
-          "filed": "2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000227/eog-20260930.htm",
+          "sha256": "40940ffbad25973c93efadc92bc8c00801896e289884ecab95b83c89b432389a",
+          "filed": "2026-11-05",
           "form": "10-Q"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526071966/blk-20251231.htm",
-          "sha256": "de096c843371e5de54e59c743e051d078cb8c8994d1696655c714c9db4d73eaf",
-          "filed": "2026-02-25",
+          "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000054/eog-20251231.htm",
+          "sha256": "bfd4ebb5d809a8a544f14e69f2995a240144505438f0f04ede7b4a066d88df22",
+          "filed": "2026-02-24",
           "form": "10-K"
         },
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526420979/blk-ex99_1.htm",
-          "sha256": "3e8a1a2f965dc26f36c11dccf6da1a5c80a723f03936690231ce69ccfd5f01a7",
-          "accession": "0001193125-26-420979",
-          "filed": "2026-10-14"
+          "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000226/exh99-1110526.htm",
+          "sha256": "b375d751399546c5fcbe10760b3121dd6125bf0901522efae1e004223546b6e8",
+          "accession": "0000821189-26-000226",
+          "filed": "2026-11-05"
         }
       ],
-      "parsed_observations": 0,
+      "parsed_observations": 2,
       "document_errors": [],
       "unreviewed_documents": 3,
-      "research_status": "REVIEW_REQUIRED_AFTER_PRIMARY_REFRESH",
+      "research_status": "SUPPORTED_BY_EXISTING_REVIEWED_MODEL",
       "collection_status": "PRIMARY_SERIES_REFRESHED_REASSESSMENT_PENDING",
       "http_requests": 6,
-      "last_attempt_utc": "2026-11-25T10:42:02.924001+00:00",
+      "last_attempt_utc": "2026-11-25T14:48:30.550214+00:00",
       "attempt_count": 2,
-      "retry_interval_hours": 4,
-      "next_attempt_utc": "2026-11-25T14:42:02.924001+00:00",
-      "supported_after": false,
-      "missing_inputs_after": [
-        "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED",
-        "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED",
-        "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED"
-      ]
+      "retry_interval_hours": 24,
+      "next_attempt_utc": "2026-11-26T14:48:30.550214+00:00",
+      "supported_after": true,
+      "missing_inputs_after": []
     }
   ],
   "source_health": "PARTIAL_OR_UNAVAILABLE",
