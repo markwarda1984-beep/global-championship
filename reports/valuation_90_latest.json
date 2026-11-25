@@ -1,6 +1,6 @@
 {
   "schema_version": "9.0-research-1",
-  "published_at_utc": "2026-11-25T10:47:10.798727+00:00",
+  "published_at_utc": "2026-11-25T11:21:03.847402+00:00",
   "mode": "scan",
   "original_watchlist_count": 200,
   "reported_count": 205,
@@ -13656,11 +13656,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 7.3773,
-        "base": 14.775,
-        "bull": 23.2582
+        "bear": 7.388,
+        "base": 14.7964,
+        "bull": 23.2918
       },
-      "base_upside_pct": -59.75,
+      "base_upside_pct": -59.69,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 4.557104419920477,
@@ -13682,13 +13682,13 @@
         "ordinary_shares_per_receipt": 0.1,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000943819.json",
         "primary_evidence_hash": "bf1e06ad59a3282b3f82ef7b1303df3b4b92ab29bd9ea4f6936b2f5c337110dc",
-        "fx_rate": 1.5194000005722046,
+        "fx_rate": 1.5216000080108643,
         "fx_source": {
           "from": "USD",
           "to": "AUD",
-          "rate": 1.5194000005722046,
+          "rate": 1.5216000080108643,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T06:49:15.932043+00:00",
+          "observed_utc": "2026-11-25T10:47:17.845588+00:00",
           "source_url": "https://finance.yahoo.com/quote/USDAUD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -13715,11 +13715,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 2242136037.64,
-        "median_annual_net_income_filed": 1839745738.49,
+        "cashflow_median_of_filed_years": 2245382527.02,
+        "median_annual_net_income_filed": 1842409588.9,
         "historical_fcf_cagr_observed_pct": 42.204,
         "assumed_forward_growth_capped_pct": 8.0,
-        "illustrative_next_year_net_income_not_issuer_guidance": 2499650695.88,
+        "illustrative_next_year_net_income_not_issuer_guidance": 2503270052.28,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -16587,8 +16587,8 @@
     "comparison_basis": "FROZEN_PRE_RECOVERY_BASELINE",
     "baseline_source_commit": "c15eb76c6752b36fd2b7b5e3d976150dca2024b3",
     "same_run_legacy_valued_count": 71,
-    "legacy_source_published_at": "2026-11-25T10:47:08.615238+00:00",
-    "legacy_recomputed_at": "2026-11-25T10:47:10.798727+00:00"
+    "legacy_source_published_at": "2026-11-25T11:21:01.699454+00:00",
+    "legacy_recomputed_at": "2026-11-25T11:21:03.847402+00:00"
   },
   "ranking_assumptions": {
     "minimum_base_upside_pct": 25,
