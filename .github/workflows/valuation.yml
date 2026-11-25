@@ -11,6 +11,14 @@ on:
       - 'evidence_recovery_91.py'
       - 'recover_documents_91.py'
       - 'championship_90.py'
+      - 'reviewed_native_96.py'
+      - 'reviewed_bank_96.py'
+      - 'reports/reviewed_native_96.json'
+      - 'reports/reviewed_bank_96.json'
+      - 'tests/test_native_96.py'
+      - 'tests/test_bank_96.py'
+      - 'refresh_fx_91.py'
+      - 'verify_outputs_96.py'
       - 'guidance_95.py'
       - 'reviewed_pdf_95.py'
       - 'pdf_rows_dynamic_92.py'
@@ -124,12 +132,15 @@ jobs:
         run: python recovery_94.py --mode weekly
       - name: Independently inspect new primary financial and session outputs
         run: python verify_outputs_95.py --mode weekly
+      - name: Verify native statements and financial outputs
+        run: python verify_outputs_96.py --mode weekly
       - name: Verify Championship 9.0 coverage and no orders
         run: python verify_90.py --mode weekly
       - name: Publish weekly valuation report to repository
         run: |
           git add reports/primary_evidence_91.json reports/share_basis_recovery_91.json reports/fx_recovery_91.json settings/primary_adapters_90.json
           git add reports/valuation_90_weekly.json reports/coverage_90_weekly.json
+          git add reports/recovery_96_weekly.json
           git add reports/recovery_94_weekly.json reports/recovery_95_weekly.json reports/session_quotes_95_weekly.json
           git add reports/dynamic_source_recovery_92_weekly.json reports/dynamic_earnings_92_weekly.json reports/dynamic_earnings_92_weekly.md
           git config user.name "github-actions[bot]"
