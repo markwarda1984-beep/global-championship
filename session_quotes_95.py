@@ -40,7 +40,8 @@ def parse(payload,ticker,now,source_url,expected_currency=None):
  return out
 
 def collect(root,now=None,limit=None,mode='scan'):
- now=now or datetime.now(timezone.utc);watchlist=list(csv.DictReader((root/'watchlist.csv').open()));currencies={r['ticker']:r['currency'] for r in watchlist};symbols=list(currencies);selected=symbols[:limit] if limit else symbols
+ from scan import load_watchlist,currency_for
+ now=now or datetime.now(timezone.utc);watchlist=load_watchlist(root/'watchlist.csv');currencies={r['ticker']:currency_for(r['ticker']) for r in watchlist};symbols=list(currencies);selected=symbols[:limit] if limit else symbols
  stop=threading.Event();lock=threading.Lock();last=[0.];deadline=time.monotonic()+180
  def work(t):
   url=f'https://query1.finance.yahoo.com/v8/finance/chart/{quote(t,safe="")}?interval=1m&range=1d&includePrePost=true'
