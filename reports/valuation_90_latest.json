@@ -1,6 +1,6 @@
 {
   "schema_version": "9.0-research-1",
-  "published_at_utc": "2026-11-25T22:19:07.197460+00:00",
+  "published_at_utc": "2026-11-25T22:42:02.964747+00:00",
   "mode": "scan",
   "original_watchlist_count": 200,
   "reported_count": 205,
@@ -37,13 +37,13 @@
         "ordinary_shares_per_receipt": 8.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001577552.json",
         "primary_evidence_hash": "0151f405d2ab197f33ce8722e7e62741a4c831c342b5f93d36a39ca52ce9f330",
-        "fx_rate": 0.15013661980628967,
+        "fx_rate": 0.15018849074840546,
         "fx_source": {
           "from": "CNY",
           "to": "USD",
-          "rate": 0.15013661980628967,
+          "rate": 0.15018849074840546,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.488175+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618920+00:00",
           "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -88,11 +88,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 15.072,
-        "base": 24.7611,
-        "bull": 34.6655
+        "bear": 14.9658,
+        "base": 24.5867,
+        "bull": 34.4214
       },
-      "base_upside_pct": -52.58,
+      "base_upside_pct": -52.92,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 2.512762873573937,
@@ -114,13 +114,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000811809.json",
         "primary_evidence_hash": "4021a4166b1e30325f1450513e903b4375822f3241b285646b99d25f4fc276ef",
-        "fx_rate": 1.5194000005722046,
+        "fx_rate": 1.5087000131607056,
         "fx_source": {
           "from": "USD",
           "to": "AUD",
-          "rate": 1.5194000005722046,
+          "rate": 1.5087000131607056,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.489888+00:00",
+          "observed_utc": "2026-11-25T18:34:50.619987+00:00",
           "source_url": "https://finance.yahoo.com/quote/USDAUD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -132,8 +132,8 @@
       "assumptions": {
         "formula": "(MEDIAN_7Y_EARNINGS + MEDIAN_7Y_FREE_CASH_FLOW)/2 \u00f7 capitalization_yield \u00f7 diluted_shares",
         "annual_years": 7,
-        "earnings_median_filed": 13703468605.16,
-        "fcf_median_filed": 18003370606.78,
+        "earnings_median_filed": 13606965418.7,
+        "fcf_median_filed": 17876586455.94,
         "capitalization_yields_pct": {
           "bear": 18,
           "base": 12,
@@ -552,7 +552,7 @@
       "price": 0.17,
       "currency": "AUD",
       "quote_date": "2026-11-25T00:00:00",
-      "price_source": "DATED_DAILY_BARS_NOT_LIVE",
+      "price_source": "LAST_SUCCESSFUL_DATED_SNAPSHOT_FALLBACK_NOT_LIVE",
       "scenarios": null,
       "base_upside_pct": null,
       "preferred_25_50pct_upside": false,
@@ -797,7 +797,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001801368.json",
-        "primary_evidence_hash": "e53a0813006275e9c436fa8dd105135974c870fa22f198cfbdd600fae32bc5d4",
+        "primary_evidence_hash": "d2021762025ce41aee8365b54117368d2543e8b81e5c5e35e3ca5fa99a3dfb2c",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -814,7 +814,7 @@
             "ordinary_shares_outstanding": 178267976.0
           },
           "facts_sha256": "8144506085f7166ff677a17b670cba8780f3d116dfca1c15b2a8387c3f9ef801",
-          "source_document_sha256": "d176847fdd5a9dd0fca5e2c55245f1d72d9a7b12a2ad2bdd7cbde7d77bb5f51d",
+          "source_document_sha256": "77088bf4110d4340e6785bb868bfb3b98ac846e06e1974a51a457db157ac9831",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, par value of $0.0001 per share MP New York Stock Exchange Indicate by check mark wheth"
         },
@@ -981,13 +981,13 @@
         "ordinary_shares_per_receipt": 5.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
         "primary_evidence_hash": "d63029aa56cfc6e0a54c1c5a39881f4fcd78179ef5331e0548968dc449c17766",
-        "fx_rate": 0.030077900737524033,
+        "fx_rate": 0.030119573697447777,
         "fx_source": {
           "from": "TWD",
           "to": "USD",
-          "rate": 0.030077900737524033,
+          "rate": 0.030119573697447777,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.489480+00:00",
+          "observed_utc": "2026-11-25T18:34:50.619740+00:00",
           "source_url": "https://finance.yahoo.com/quote/TWDUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -1039,11 +1039,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 114.3793,
-        "base": 225.7062,
-        "bull": 352.418
+        "bear": 114.769,
+        "base": 226.4751,
+        "bull": 353.6186
       },
-      "base_upside_pct": -82.68,
+      "base_upside_pct": -82.62,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 5.504006619529922,
@@ -1065,13 +1065,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000937966.json",
         "primary_evidence_hash": "dca03bb0649f730123a3fe4e8771b3fe9797b74776dbe20cea673eff1ce29056",
-        "fx_rate": 1.095170259475708,
+        "fx_rate": 1.0989010334014893,
         "fx_source": {
           "from": "EUR",
           "to": "USD",
-          "rate": 1.095170259475708,
+          "rate": 1.0989010334014893,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.489075+00:00",
+          "observed_utc": "2026-11-25T18:34:50.619466+00:00",
           "source_url": "https://finance.yahoo.com/quote/EURUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -1099,11 +1099,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 8927827955.25,
-        "median_annual_net_income_filed": 8438615400.34,
+        "cashflow_median_of_filed_years": 8958241224.29,
+        "median_annual_net_income_filed": 8467362132.67,
         "historical_fcf_cagr_observed_pct": 15.443,
         "assumed_forward_growth_capped_pct": 8.0,
-        "illustrative_next_year_net_income_not_issuer_guidance": 11365843418.72,
+        "illustrative_next_year_net_income_not_issuer_guidance": 11404561957.6,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -1181,11 +1181,11 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json",
-        "primary_evidence_hash": "ca7d9944bfccb1c02e523d8b378e37c854e53770807e58f439a715bec8781385",
+        "primary_evidence_hash": "c59d7ea271d6862c8e78d223669dfb346fda9a5fc539eccd11a6582cfeb2ecf5",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
-          "issuer": "Micron Technology, Inc.",
+          "issuer": "Micron Technology,\u00a0Inc.",
           "source_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
           "as_of": "2026-10-02",
           "published_at": "2026-10-09",
@@ -1198,7 +1198,7 @@
             "ordinary_shares_outstanding": 1131423212.0
           },
           "facts_sha256": "9011d7a3ec8b33f8ca0ff2992ca3083ea9358dd17f5947cd6a2733c247a3a1cc",
-          "source_document_sha256": "b3172f1f374e1080d06ab02771048e4ac718ad91eb76bb4b831faa5d4c20716f",
+          "source_document_sha256": "aca08f63c48a9237e934b6a0e45067804e6b956b27f322a5fe9793f0ee450f56",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol Name of each exchange on which registered Common Stock, par value $0.10 per share MU Nasdaq Global Select Market "
         },
@@ -1796,13 +1796,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000844551.json",
         "primary_evidence_hash": "ed72f30bf0be32b1686a303edcd5b9e4c01e9147eee54f5085acd7db9b22739f",
-        "fx_rate": 1.5194000005722046,
+        "fx_rate": 1.5087000131607056,
         "fx_source": {
           "from": "USD",
           "to": "AUD",
-          "rate": 1.5194000005722046,
+          "rate": 1.5087000131607056,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.489888+00:00",
+          "observed_utc": "2026-11-25T18:34:50.619987+00:00",
           "source_url": "https://finance.yahoo.com/quote/USDAUD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -2658,7 +2658,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json",
-        "primary_evidence_hash": "f7855beeee4195cce19c6aea7b654a678ba8701608f1af79dcb384a8713ca788",
+        "primary_evidence_hash": "f871f9c5f2f62534d26d47040ac380ee0e85e28cc2fd798f32acee9b71af1ac4",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": null,
@@ -3214,7 +3214,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477333.json",
-        "primary_evidence_hash": "5ed4170996e13ca5d8a64cb790f28666ab5f749e8fafcdafa8faad030891ad6a",
+        "primary_evidence_hash": "5380e0c94a102f1e06fde39b80738943689111f7db3af387fb271c1f24e4741a",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -3231,7 +3231,7 @@
             "ordinary_shares_outstanding": 358392255.0
           },
           "facts_sha256": "c7aae17971f21255bd4f231016d91e43cee3c251a31e2b2ea57923846a6f3fbf",
-          "source_document_sha256": "a0c68d657333abc0d00fcb5547721106ba54fce15648bfa6bd89c83aca060860",
+          "source_document_sha256": "247e8a22800456ee826e4eb182ec03237b0bd71683863ac83ea159ac9bfa4da7",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of Each Class Trading Symbol Name of Each Exchange on Which Registered Class A Common Stock, $0.001 par value NET The New York Stock Exchange Indicate by check mark whether t"
         },
@@ -3579,7 +3579,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001441816.json",
-        "primary_evidence_hash": "b071db724a4b46f7d7d683bcdfd4ac3138b0e8d55c58063c37fac2fa61cb0272",
+        "primary_evidence_hash": "00d68ace13db23b076951ccf237cfb059b5cf52589943a8c743d1c4d1575d889",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -3596,7 +3596,7 @@
             "ordinary_shares_outstanding": 80556341.0
           },
           "facts_sha256": "3419b84202ee384966494191d9cccb9a1e85bface2ed37f714d9c9807f04b050",
-          "source_document_sha256": "7790991d6070fdcbf37fd318818c403b3c5d1d3b3c435fa9afb9394227f34200",
+          "source_document_sha256": "e91525d37b10c713c7ec76c4498f04fc19ac92acaff48b9ad6e4e0481897ead3",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, par value $0.001 per share MDB The Nasdaq Stock Market LLC (Nasdaq Global Market) Indi"
         },
@@ -4597,11 +4597,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 25.0568,
-        "base": 55.5168,
-        "bull": 91.9508
+        "bear": 25.1422,
+        "base": 55.7059,
+        "bull": 92.264
       },
-      "base_upside_pct": -90.99,
+      "base_upside_pct": -90.96,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 7.560425233856849,
@@ -4623,13 +4623,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001639920.json",
         "primary_evidence_hash": "31ccb99bf31bc524167cdf31d20279e59a055b8d6bd1c8e5d97091208d6c0f2f",
-        "fx_rate": 1.095170259475708,
+        "fx_rate": 1.0989010334014893,
         "fx_source": {
           "from": "EUR",
           "to": "USD",
-          "rate": 1.095170259475708,
+          "rate": 1.0989010334014893,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.489075+00:00",
+          "observed_utc": "2026-11-25T18:34:50.619466+00:00",
           "source_url": "https://finance.yahoo.com/quote/EURUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -4657,11 +4657,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 1619756813.76,
-        "median_annual_net_income_filed": 387690271.85,
+        "cashflow_median_of_filed_years": 1625274628.4,
+        "median_annual_net_income_filed": 389010965.82,
         "historical_fcf_cagr_observed_pct": 415.215,
         "assumed_forward_growth_capped_pct": 8.0,
-        "illustrative_next_year_net_income_not_issuer_guidance": 2616317943.08,
+        "illustrative_next_year_net_income_not_issuer_guidance": 2625230612.75,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -4976,7 +4976,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001645590.json",
-        "primary_evidence_hash": "83bd60c5d474ef23e55ab547eb75e068ce71d36d8b179166dd1b8197dc4f7c96",
+        "primary_evidence_hash": "d77490f3d1854a14cc5db466c473d90900d42a443f728fda0e7c69d21af003b8",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -4993,7 +4993,7 @@
             "ordinary_shares_outstanding": 1327464779.0
           },
           "facts_sha256": "5ec3434126df849138bb7d4c414f334134b9e758a66f1161b2a0245479d60efd",
-          "source_document_sha256": "e4da6e7adad62f5bd2b5b8a92d079b6420278c647e65f2bf6c01356ed8423b48",
+          "source_document_sha256": "9640adeff4667a44f2dc1be5f016becd0c30e49205de86ba9154e1f8eb319cf8",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common stock, par value $0.01 per share HPE New York Stock Exchange 7.625% Series C Mandatory Conver"
         },
@@ -5246,7 +5246,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001835632.json",
-        "primary_evidence_hash": "ee6ff118f35fe30ecf069817bc16f445fbb4057a872a73be48a4b2a3d6fb07a4",
+        "primary_evidence_hash": "44661837c3cc1b16fe35121d7e83ce2ccd0533c6099b8d6219f3cb395debf69c",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -5263,7 +5263,7 @@
             "ordinary_shares_outstanding": 876900000.0
           },
           "facts_sha256": "2ee2838c110320c461a53dbc990c928d93a51675e8a2cdd822999ac99e1eea27",
-          "source_document_sha256": "ac9009a5431f2da57bf37ab1d1cedccdd73dbe98025654a91e135c87994deb7a",
+          "source_document_sha256": "c5a6a38fb4a23af10b0d36c503f5bbc6359a2338d82f29aa06ff34a9fe45decc",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, par value $0.002 per share MRVL The Nasdaq Global Select Market Indicate by check mark"
         },
@@ -6363,7 +6363,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000753308.json",
-        "primary_evidence_hash": "891fee212db9d70cd653a497b5600faa9888c9b096156d5363e727cbf6c14a32",
+        "primary_evidence_hash": "25ca7b2c6d962342082abf184cba9c2886a4ba83a940ae511e42543fc309cc7a",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -6380,7 +6380,7 @@
             "ordinary_shares_outstanding": 2097306049.0
           },
           "facts_sha256": "76c8f36846cd1134a8df37f3cde22364982861d7c42c60beb302f581b7f67256",
-          "source_document_sha256": "670c95c1585b592de4dafe08e7edbc923a71e9fa27c03941702c3c0731ba6e48",
+          "source_document_sha256": "1a87471d102853a1e1039d6b8c450d41d0639fb828462e2d4630637f8f2343c3",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered NextEra Energy, Inc. Common Stock, $0.01 Par Value NEE New York Stock Exchange 7.299% Corporate Unit"
         },
@@ -6608,7 +6608,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001849056.json",
-        "primary_evidence_hash": "f8a1db677d8e16b340d8fe047b35b7a32c5df9a555a2fe48d36c62578ffdf205",
+        "primary_evidence_hash": "78a39b0adf2dfa8b7733e8302953754461e89b76cbd08feaf8a2695ee7048387",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -6625,7 +6625,7 @@
             "ordinary_shares_outstanding": 195289593.0
           },
           "facts_sha256": "5d42b8d4a8f654a98c2a1f0af084faa54ee1246d086eb1efc63ea22bfc53aef8",
-          "source_document_sha256": "d63e00b0cbce611dc8eeb772f944b0e9073cf06a0dd17baf5bbcd31af4104d1c",
+          "source_document_sha256": "d94fcdef2cececd1a7688c8b573ed9652c2d9d02b6f87f5685f744029fdcdb85",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Class A common stock, par value $0.0001 per share OKLO New York Stock Exchange Indicate by check mar"
         },
@@ -6708,11 +6708,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 2.1097,
-        "base": 3.466,
-        "bull": 4.8524
+        "bear": 2.1146,
+        "base": 3.4739,
+        "bull": 4.8635
       },
-      "base_upside_pct": -94.37,
+      "base_upside_pct": -94.36,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 8.455095152674662,
@@ -6734,13 +6734,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001009001.json",
         "primary_evidence_hash": "229df36cf1dfd434993107422c22bbfd705b475d8861c581bc372461ed7a493c",
-        "fx_rate": 0.7027801871299744,
+        "fx_rate": 0.7043890357017517,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7027801871299744,
+          "rate": 0.7043890357017517,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.487718+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618576+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -6752,8 +6752,8 @@
       "assumptions": {
         "formula": "(MEDIAN_7Y_EARNINGS + MEDIAN_7Y_FREE_CASH_FLOW)/2 \u00f7 capitalization_yield \u00f7 diluted_shares",
         "annual_years": 7,
-        "earnings_median_filed": 62815898.69,
-        "fcf_median_filed": 317525224.69,
+        "earnings_median_filed": 62959700.79,
+        "fcf_median_filed": 318252123.39,
         "capitalization_yields_pct": {
           "bear": 18,
           "base": 12,
@@ -7432,7 +7432,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000771992.json",
-        "primary_evidence_hash": "82c4d537c784f9e6dc59d8dfe48ffcec0d0dcdf2fc256d8c1233f9e1dc8749bd",
+        "primary_evidence_hash": "afc7fe50521d9977f373106fbf02da99ad886c6cf66a221e90805480b1753a0b",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -7449,7 +7449,7 @@
             "ordinary_shares_outstanding": 421847046.0
           },
           "facts_sha256": "e496ead9c1f645ca2db62698a8757f2ae2c49e37058da9fb1bb510bf55f9d0ba",
-          "source_document_sha256": "5acfb135316c14a45cfdbf71f13f8a45fc3102b73ec209cc142e736918ba690a",
+          "source_document_sha256": "fdbcc4a6f5b60ce5d3c9382469c981f8415f03e0c83b1546aea7cebbd0e18863",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of Each Class Trading Symbol Name of Each Exchange on Which Registered Common Shares, No Par Value PAAS The New York Stock Exchange "
         },
@@ -7587,11 +7587,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 11.3532,
-        "base": 20.4132,
-        "bull": 30.2023
+        "bear": 11.3928,
+        "base": 20.4845,
+        "bull": 30.3079
       },
-      "base_upside_pct": -50.18,
+      "base_upside_pct": -50.0,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 8.529801324503318,
@@ -7613,13 +7613,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000353278.json",
         "primary_evidence_hash": "35287006205c2746d0651c5864e105a3d3efd5aa314f117a8e1da3ac3177043e",
-        "fx_rate": 0.14649201929569244,
+        "fx_rate": 0.1470041275024414,
         "fx_source": {
           "from": "DKK",
           "to": "USD",
-          "rate": 0.14649201929569244,
+          "rate": 0.1470041275024414,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.488605+00:00",
+          "observed_utc": "2026-11-25T18:34:50.619195+00:00",
           "source_url": "https://finance.yahoo.com/quote/DKKUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -7647,11 +7647,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 10294360425.96,
-        "median_annual_net_income_filed": 13526413847.68,
+        "cashflow_median_of_filed_years": 10330347549.92,
+        "median_annual_net_income_filed": 13573699615.0,
         "historical_fcf_cagr_observed_pct": -4.047,
         "assumed_forward_growth_capped_pct": -4.047,
-        "illustrative_next_year_net_income_not_issuer_guidance": 14398522515.56,
+        "illustrative_next_year_net_income_not_issuer_guidance": 14448857008.74,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -9959,7 +9959,24 @@
         "primary_evidence_hash": "d8deeb947aa72bd6b4771cab73e70e0ffa3c9e0021422455feb64a2e3b34d5cd",
         "fx_rate": 1.0,
         "fx_source": null,
-        "share_basis_source": null,
+        "share_basis_source": {
+          "issuer": "Mastercard Incorporated",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000124/ma-20260930.htm",
+          "as_of": "2026-10-26",
+          "published_at": "2026-10-29",
+          "accession_or_document_id": "0001141391-26-000124",
+          "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+          "facts": {
+            "ticker": "MA",
+            "quote_currency": "USD",
+            "ordinary_shares_per_receipt": 1.0,
+            "ordinary_shares_outstanding": 871176114.0
+          },
+          "facts_sha256": "4512a923fb47444f2d724530b91827835f95faebd2ec46e748a63029db142dd8",
+          "source_document_sha256": "98f4ad1fb33492628324544a8feeedd1563caecddde572e3f3350af844da6ae0",
+          "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
+          "source_excerpt": "Title of each class Trading Symbol Name of each exchange of which registered Class A Common Stock, par value $0.0001 per share MA New York Stock Exchange 2.1% Notes due 2027 MA27 N"
+        },
         "share_count_basis": "ORDINARY_SHARES"
       },
       "missing_inputs": [],
@@ -10010,7 +10027,7 @@
           ]
         }
       },
-      "legacy_validation_status": "NOT VALIDATED",
+      "legacy_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "primary_extraction_version": "9.1-primary-fact-recovery-1",
       "research_only": true,
       "orders_enabled": false,
@@ -12655,7 +12672,7 @@
           ]
         }
       },
-      "legacy_validation_status": "NOT VALIDATED",
+      "legacy_validation_status": "PRIMARY_INPUTS_VALIDATED_FORECASTS_HYPOTHETICAL",
       "primary_extraction_version": "9.1-primary-fact-recovery-1",
       "research_only": true,
       "orders_enabled": false,
@@ -14236,13 +14253,13 @@
         "ordinary_shares_per_receipt": 4.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001737806.json",
         "primary_evidence_hash": "a5c94013e9caec922857d2e5d01254d23e7ceb13c52f9787f74b3993f80bf6a6",
-        "fx_rate": 0.15013661980628967,
+        "fx_rate": 0.15018849074840546,
         "fx_source": {
           "from": "CNY",
           "to": "USD",
-          "rate": 0.15013661980628967,
+          "rate": 0.15018849074840546,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.488175+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618920+00:00",
           "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -14261,7 +14278,7 @@
             "ordinary_shares_outstanding": 5693585848.0
           },
           "facts_sha256": "5a84eced717da14b44e1db5ccb5d70e5d7b8a5b0c1cb5fe3b159ffea9096e3ca",
-          "source_document_sha256": "d8b5224e1fe69c7f2e9ef1737dd72f786596f380303739c910b11e18a005cde5",
+          "source_document_sha256": "59cd70d4aeef1ea32fe09cc0eda421997174c8e64975d2d79cb166eebcadd956",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Name of each exchange on which registered American Depositary Shares (one American depositary share representing four Class A ordinary shares, par value US$0.000005 per share) \u200b PD"
         },
@@ -14331,11 +14348,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 39.0186,
-        "base": 78.076,
-        "bull": 122.8449
+        "bear": 39.0321,
+        "base": 78.103,
+        "bull": 122.8873
       },
-      "base_upside_pct": -25.11,
+      "base_upside_pct": -25.09,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 5.494281157889325,
@@ -14357,13 +14374,13 @@
         "ordinary_shares_per_receipt": 5.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001110646.json",
         "primary_evidence_hash": "1fbb96e430c887d61d93bdf2c1348a4af14043cb73beab5c591de28732c258e4",
-        "fx_rate": 0.15013661980628967,
+        "fx_rate": 0.15018849074840546,
         "fx_source": {
           "from": "CNY",
           "to": "USD",
-          "rate": 0.15013661980628967,
+          "rate": 0.15018849074840546,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.488175+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618920+00:00",
           "source_url": "https://finance.yahoo.com/quote/CNYUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -14391,11 +14408,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 5362214503.85,
-        "median_annual_net_income_filed": 4437600157.61,
+        "cashflow_median_of_filed_years": 5364067103.95,
+        "median_annual_net_income_filed": 4439133311.22,
         "historical_fcf_cagr_observed_pct": 24.714,
         "assumed_forward_growth_capped_pct": 8.0,
-        "illustrative_next_year_net_income_not_issuer_guidance": 5474068837.92,
+        "illustrative_next_year_net_income_not_issuer_guidance": 5475960082.77,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -14700,11 +14717,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 22.0667,
-        "base": 43.743,
-        "bull": 68.4725
+        "bear": 22.1419,
+        "base": 43.892,
+        "bull": 68.7058
       },
-      "base_upside_pct": -79.11,
+      "base_upside_pct": -79.04,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 5.502647125061877,
@@ -14726,13 +14743,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001000184.json",
         "primary_evidence_hash": "0a5fea5f86965a7a50624b11d0b534a5996ba1405a313e662d45f034db247b43",
-        "fx_rate": 1.095170259475708,
+        "fx_rate": 1.0989010334014893,
         "fx_source": {
           "from": "EUR",
           "to": "USD",
-          "rate": 1.095170259475708,
+          "rate": 1.0989010334014893,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.489075+00:00",
+          "observed_utc": "2026-11-25T18:34:50.619466+00:00",
           "source_url": "https://finance.yahoo.com/quote/EURUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -14760,11 +14777,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 5602343462.35,
-        "median_annual_net_income_filed": 5072281056.76,
+        "cashflow_median_of_filed_years": 5621428236.37,
+        "median_annual_net_income_filed": 5089560136.2,
         "historical_fcf_cagr_observed_pct": 20.841,
         "assumed_forward_growth_capped_pct": 8.0,
-        "illustrative_next_year_net_income_not_issuer_guidance": 8469915366.35,
+        "illustrative_next_year_net_income_not_issuer_guidance": 8498768724.2,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -15476,11 +15493,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 40.5833,
-        "base": 60.6115,
-        "bull": 77.7848
+        "bear": 40.6763,
+        "base": 60.7502,
+        "bull": 77.9628
       },
-      "base_upside_pct": -68.0,
+      "base_upside_pct": -67.93,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 3.344430650012442,
@@ -15502,13 +15519,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001000275.json",
         "primary_evidence_hash": "4dacbd808e5de894d04cd78e4b85a09aa16c0596663aaea332e3e9e6ef733a38",
-        "fx_rate": 0.7027801871299744,
+        "fx_rate": 0.7043890357017517,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7027801871299744,
+          "rate": 0.7043890357017517,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.487718+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618576+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -15536,8 +15553,8 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BOOK_VALUE_PER_SHARE \u00d7 (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-        "book_value_per_share_primary": 69.790544,
-        "median_annual_net_income_primary": 11252916356.33,
+        "book_value_per_share_primary": 69.950313,
+        "median_annual_net_income_primary": 11278677239.66,
         "normalized_roe_assumption_from_filed_history_pct": 12.031,
         "discount_rates_pct": {
           "bear": 17,
@@ -15590,11 +15607,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 29.4349,
-        "base": 43.9612,
-        "bull": 56.4168
+        "bear": 29.5022,
+        "base": 44.0618,
+        "bull": 56.546
       },
-      "base_upside_pct": -62.12,
+      "base_upside_pct": -62.04,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 2.9174456458901377,
@@ -15616,13 +15633,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000947263.json",
         "primary_evidence_hash": "690ab5870f1750f2b0bbb90bbac1290f7d0ed4f9e9ecff756e508ea776c64f25",
-        "fx_rate": 0.7027801871299744,
+        "fx_rate": 0.7043890357017517,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7027801871299744,
+          "rate": 0.7043890357017517,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.487718+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618576+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -15650,8 +15667,8 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BOOK_VALUE_PER_SHARE \u00d7 (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-        "book_value_per_share_primary": 53.172253,
-        "median_annual_net_income_primary": 9861060195.71,
+        "book_value_per_share_primary": 53.293979,
+        "median_annual_net_income_primary": 9883634754.45,
         "normalized_roe_assumption_from_filed_history_pct": 11.549,
         "discount_rates_pct": {
           "bear": 17,
@@ -15726,13 +15743,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001017413.json",
         "primary_evidence_hash": "db8730edf5eea8f4ca190db7faf635c281fafba9479230288fdf9b482d243a56",
-        "fx_rate": 0.7027801871299744,
+        "fx_rate": 0.7043890357017517,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7027801871299744,
+          "rate": 0.7043890357017517,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.487718+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618576+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -15806,13 +15823,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000311337.json",
         "primary_evidence_hash": "c2177baa592d132a1466854ce267aad18ff18b6098416c25da6e6bbc360988d5",
-        "fx_rate": 0.7027801871299744,
+        "fx_rate": 0.7043890357017517,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7027801871299744,
+          "rate": 0.7043890357017517,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.487718+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618576+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -15864,11 +15881,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 7.367,
-        "base": 13.7398,
-        "bull": 20.8098
+        "bear": 7.3838,
+        "base": 13.7712,
+        "bull": 20.8575
       },
-      "base_upside_pct": -70.74,
+      "base_upside_pct": -70.67,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 3.9867074491445553,
@@ -15890,13 +15907,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000895728.json",
         "primary_evidence_hash": "9f92333da7fa89f52d931d03c7435cf45f78cb6520e95fc64d97b0e5c75357f7",
-        "fx_rate": 0.7027801871299744,
+        "fx_rate": 0.7043890357017517,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7027801871299744,
+          "rate": 0.7043890357017517,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.487718+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618576+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -15924,11 +15941,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 4382537246.94,
-        "median_annual_net_income_filed": 3827340899.11,
+        "cashflow_median_of_filed_years": 4392570026.64,
+        "median_annual_net_income_filed": 3836102688.43,
         "historical_fcf_cagr_observed_pct": -20.586,
         "assumed_forward_growth_capped_pct": -5.0,
-        "illustrative_next_year_net_income_not_issuer_guidance": 4721558409.21,
+        "illustrative_next_year_net_income_not_issuer_guidance": 4732367297.46,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -15985,11 +16002,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 20.5216,
-        "base": 36.6329,
-        "bull": 53.9482
+        "bear": 20.5686,
+        "base": 36.7168,
+        "bull": 54.0717
       },
-      "base_upside_pct": -71.02,
+      "base_upside_pct": -70.95,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 3.4793274015806563,
@@ -16011,13 +16028,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000016868.json",
         "primary_evidence_hash": "37cc6d0d4d4c780072bd178e7d530763b75c3d4189d498f7b29354d0d99a5a6f",
-        "fx_rate": 0.7027801871299744,
+        "fx_rate": 0.7043890357017517,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7027801871299744,
+          "rate": 0.7043890357017517,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.487718+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618576+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -16045,11 +16062,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 2519115580.77,
-        "median_annual_net_income_filed": 3456975740.49,
+        "cashflow_median_of_filed_years": 2524882498.47,
+        "median_annual_net_income_filed": 3464889666.62,
         "historical_fcf_cagr_observed_pct": -4.693,
         "assumed_forward_growth_capped_pct": -4.693,
-        "illustrative_next_year_net_income_not_issuer_guidance": 3161449488.59,
+        "illustrative_next_year_net_income_not_issuer_guidance": 3168686877.45,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -16106,11 +16123,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 10.6394,
-        "base": 18.6496,
-        "bull": 27.1315
+        "bear": 10.6637,
+        "base": 18.6923,
+        "bull": 27.1937
       },
-      "base_upside_pct": -79.99,
+      "base_upside_pct": -79.94,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 4.473097744692733,
@@ -16132,13 +16149,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000016875.json",
         "primary_evidence_hash": "c81f1b244789a79abed9cc5ac954e1377333236fc9d354d64eecfa0d47f8b824",
-        "fx_rate": 0.7027801871299744,
+        "fx_rate": 0.7043890357017517,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7027801871299744,
+          "rate": 0.7043890357017517,
           "as_of": "2026-11-25",
-          "observed_utc": "2026-11-25T14:52:54.487718+00:00",
+          "observed_utc": "2026-11-25T18:34:50.618576+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -16166,11 +16183,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 1634315325.17,
-        "median_annual_net_income_filed": 2686377265.3,
+        "cashflow_median_of_filed_years": 1638056702.52,
+        "median_annual_net_income_filed": 2692527088.97,
         "historical_fcf_cagr_observed_pct": -5.133,
         "assumed_forward_growth_capped_pct": -5.0,
-        "illustrative_next_year_net_income_not_issuer_guidance": 2764702117.16,
+        "illustrative_next_year_net_income_not_issuer_guidance": 2771031247.0,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -16268,7 +16285,7 @@
       "universe": "DISCOVERY",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
       "assessment_status": "MISSING_EVIDENCE",
-      "price": 2.985,
+      "price": 3.05,
       "currency": "USD",
       "quote_date": "2026-11-25",
       "price_source": "unofficial yfinance daily bars \u2014 not executable",
@@ -16276,7 +16293,7 @@
       "base_upside_pct": null,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
-      "recovery_from_5d_low_pct": 14.5873312147486,
+      "recovery_from_5d_low_pct": 17.082532731987676,
       "new_5d_low": false,
       "trading_lows": {
         "low_5d": 2.6050000190734863,
@@ -16284,7 +16301,7 @@
         "trading_low_52w": 2.6050000190734863,
         "previous_5d_low": 2.680000066757202,
         "low_basis": "UNADJUSTED_DAILY_INTRADAY_LOW",
-        "available_sessions": 502
+        "available_sessions": 501
       },
       "priority_entry": null,
       "reconciliation": {
@@ -16404,7 +16421,7 @@
       "universe": "DISCOVERY",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
       "assessment_status": "MISSING_EVIDENCE",
-      "price": 34.035,
+      "price": 37.03,
       "currency": "USD",
       "quote_date": "2026-11-25",
       "price_source": "unofficial yfinance daily bars \u2014 not executable",
@@ -16412,15 +16429,15 @@
       "base_upside_pct": null,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
-      "recovery_from_5d_low_pct": 0.8743281175396911,
-      "new_5d_low": true,
+      "recovery_from_5d_low_pct": 10.273966589706273,
+      "new_5d_low": false,
       "trading_lows": {
-        "low_5d": 33.7400016784668,
-        "low_30d": 33.7400016784668,
+        "low_5d": 33.58000183105469,
+        "low_30d": 33.58000183105469,
         "trading_low_52w": 16.040000915527344,
         "previous_5d_low": 35.630001068115234,
         "low_basis": "UNADJUSTED_DAILY_INTRADAY_LOW",
-        "available_sessions": 502
+        "available_sessions": 501
       },
       "priority_entry": null,
       "reconciliation": {
@@ -16620,9 +16637,9 @@
     "lost_valuation": [],
     "comparison_basis": "FROZEN_PRE_RECOVERY_BASELINE",
     "baseline_source_commit": "c15eb76c6752b36fd2b7b5e3d976150dca2024b3",
-    "same_run_legacy_valued_count": 75,
-    "legacy_source_published_at": "2026-11-25T22:19:05.139391+00:00",
-    "legacy_recomputed_at": "2026-11-25T22:19:07.197460+00:00"
+    "same_run_legacy_valued_count": 77,
+    "legacy_source_published_at": "2026-11-25T22:42:00.537502+00:00",
+    "legacy_recomputed_at": "2026-11-25T22:42:02.964747+00:00"
   },
   "ranking_assumptions": {
     "minimum_base_upside_pct": 25,
