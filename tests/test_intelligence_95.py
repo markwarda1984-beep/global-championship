@@ -85,3 +85,18 @@ class PdfGeometryTests(unittest.TestCase):
   r=self.read_table(90);self.assertEqual(r[0]['label'],'Profit');self.assertEqual(r[0]['values'],{'2026':'10','2025':'9'})
  def test_unrelated_duplicate_year_text_is_not_ambiguous_table_header(self):self.assertEqual(len(self.read_table()),1)
  def test_actual_ambiguous_year_columns_still_rejected(self):self.assertEqual(self.read_table(duplicate_header=True),[])
+
+class SessionCollectorIntegrationTests(unittest.TestCase):
+ def test_real_watchlist_has_no_currency_column_and_daily_close_is_preserved(self):
+  import shutil
+  from unittest.mock import Mock,patch
+  from session_quotes_95 import collect
+  source=Path(__file__).resolve().parents[1]/'watchlist.csv'
+  with tempfile.TemporaryDirectory() as folder:
+   root=Path(folder);shutil.copyfile(source,root/'watchlist.csv');(root/'data').mkdir()
+   payload={'stocks':[{'ticker':'BABA','name':'Alibaba','sector':'Original 30','currency':'USD','price':123,'history':[]}],'bitcoin':{},'scan_sydney':'2026-11-25','stock_quotes_available':1,'validated_buy_count':0}
+   (root/'data/latest.json').write_text(json.dumps(payload))
+   doc=SessionTests().doc();doc['chart']['result'][0]['meta']['symbol']='BABA';response=Mock(status_code=200);response.json.return_value=doc
+   with patch('session_quotes_95.requests.get',return_value=response):report=collect(root,now=NOW,limit=1)
+   self.assertEqual(len(report['companies']),200);row=json.loads((root/'data/latest.json').read_text())['stocks'][0]
+   self.assertEqual(row['price'],123);self.assertEqual(row['pre_market_price'],40);self.assertEqual(row['valuation_price_session'],'DAILY_CLOSE');self.assertIn('Pre-market UTC',(root/'data/index.html').read_text())
