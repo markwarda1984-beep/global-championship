@@ -1,0 +1,90 @@
+{
+  "baseline_historical_supported": 98,
+  "historical_supported_after": 103,
+  "new_historical_supported": [
+    "CNI",
+    "COL.AX",
+    "EOG",
+    "TLS.AX",
+    "WOW.AX"
+  ],
+  "lost_historical_supported": [],
+  "still_unsupported": 97,
+  "baseline_forward_supported": 1,
+  "forward_supported_after": 4,
+  "session_sample_counts": {
+    "pre_market": 150,
+    "regular": 200,
+    "after_hours": 160
+  },
+  "financial_checks": {
+    "CNI": {
+      "operating_cash_flow": 7049000000.0,
+      "capital_spending": 3658000000.0,
+      "currency": "CAD"
+    },
+    "EOG": {
+      "operating_cash_flow": 10044000000.0,
+      "capital_spending": 6594000000.0,
+      "currency": "USD"
+    },
+    "WOW.AX": {
+      "owner_cash_flow_conservative": 1215000000,
+      "shares_net_of_trust": 1219200000,
+      "currency": "AUD"
+    },
+    "COL.AX": {
+      "owner_cash_flow_conservative": 913000000,
+      "shares_net_of_trust": 1338600000,
+      "currency": "AUD"
+    },
+    "TLS.AX": {
+      "owner_cash_flow_conservative": 2112000000,
+      "shares_net_of_trust": 11128345952,
+      "currency": "AUD"
+    },
+    "ADBE": {
+      "forward_scenarios": {
+        "bear": 181.2,
+        "base": 254.03,
+        "bull": 327.06
+      },
+      "target_period_end": "2026-11-27",
+      "guidance_shape": "RANGE"
+    },
+    "DELL": {
+      "forward_scenarios": {
+        "bear": 282.4,
+        "base": 395.36,
+        "bull": 508.32
+      },
+      "target_period_end": "2027-01-29",
+      "guidance_shape": "POINT"
+    },
+    "UNH": {
+      "forward_scenarios": {
+        "bear": 195.0,
+        "base": 273.0,
+        "bull": 351.0
+      },
+      "target_period_end": "2026-12-31",
+      "guidance_shape": "FLOOR"
+    }
+  },
+  "remaining_work": {
+    "PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW": 6,
+    "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED": 28,
+    "PROPERTY_APPRAISAL_OR_AFFO_OR_RESERVE_VALUE_NOT_VERIFIED": 9,
+    "SECTOR_PRIMARY_DOCUMENT_ADAPTER_REQUIRED": 18,
+    "SPECIALIST_ASSET_OR_PIPELINE_EVIDENCE_REQUIRED": 9,
+    "CURRENT_PRIMARY_SHARE_COUNT_MISSING": 12,
+    "LOSS_OR_NEGATIVE_FREE_CASH_FLOW_NEEDS_SPECIALIST_MODEL": 15,
+    "MINIMUM_FOUR_YEAR_PRIMARY_EARNINGS_AND_FCF_HISTORY_MISSING": 3,
+    "DATED_PRIMARY_LISTED_SHARE_BASIS_REQUIRED": 10,
+    "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED": 11,
+    "NORMALIZED_CYCLE_NONPOSITIVE": 3
+  },
+  "scope": "All 200 assessed. Source collection and workflow success are not financial validation. Remaining engineering work is not described as an external blocker.",
+  "orders_enabled": false,
+  "orders_generated": 0
+}

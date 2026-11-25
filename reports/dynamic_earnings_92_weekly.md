@@ -1,8 +1,8 @@
 # Championship 9.2 Dynamic Earnings Intelligence
 
-Historical coverage: **89/200 → 98/200** (+9).
-Previously supported lost: 0. New: CME, COP, LEU, MA, MQG.AX, NKE, PME.AX, REGN, RMD.AX.
-Still unsupported historically: 102. Source recovery is reported separately.
+Historical coverage: **89/200 → 103/200** (+14).
+Previously supported lost: 0. New: CME, CNI, COL.AX, COP, EOG, LEU, MA, MQG.AX, NKE, PME.AX, REGN, RMD.AX, TLS.AX, WOW.AX.
+Still unsupported historically: 97. Source recovery is reported separately.
 
 | Case | Historical base | Forward base | Currency | Entry review threshold | Forward status |
 |---|---:|---:|---|---|---|
