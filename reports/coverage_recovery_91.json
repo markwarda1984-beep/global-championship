@@ -1,6 +1,6 @@
 {
   "schema_version": "9.1-full-200-evidence-audit-1",
-  "published_at_utc": "2026-11-25T00:05:41.925196+00:00",
+  "published_at_utc": "2026-11-25T02:28:46.873603+00:00",
   "companies": [
     {
       "ticker": "BABA",
@@ -1995,11 +1995,9 @@
     {
       "ticker": "EOG",
       "company": "EOG Resources",
-      "assessment_status": "PRIMARY_HISTORY_OR_CURRENCY_GAP",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CYCLICAL_FULL_CYCLE_SEVEN_YEARS_NOT_EVIDENCED"
-      ],
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000821189.json",
       "structured_filing_attempt": {
         "ticker": "EOG",
@@ -2014,7 +2012,7 @@
       },
       "annual_report_sources": [],
       "share_basis_document_attempt": null,
-      "remaining_work": "Resolve the listed missing fields from dated primary statements; preserve nulls until supported.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -4059,12 +4057,10 @@
     {
       "ticker": "WOW.AX",
       "company": "Woolworths Group",
-      "assessment_status": "ISSUER_TABLES_NOT_YET_RECONCILED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
-      ],
-      "financial_source": null,
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
+      "financial_source": "https://www.woolworthsgroup.com.au/content/dam/wwg/investors/reports/f26/Woolworths Group 2026 Annual Report.pdf",
       "structured_filing_attempt": {
         "ticker": "WOW.AX",
         "original_universe": true,
@@ -4081,7 +4077,7 @@
         }
       ],
       "share_basis_document_attempt": null,
-      "remaining_work": "Extract and verify the linked issuer annual-report financial tables, currency scale and listed-share basis. Filing index alone is not a valuation.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -4115,12 +4111,10 @@
     {
       "ticker": "COL.AX",
       "company": "Coles Group",
-      "assessment_status": "ISSUER_TABLES_NOT_YET_RECONCILED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
-      ],
-      "financial_source": null,
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
+      "financial_source": "https://www.colesgroup.com.au/FormBuilder/_Resource/_module/ir5sKeTxxEOndzdh00hWJw/file/Annual_Report_Print_2026.pdf",
       "structured_filing_attempt": {
         "ticker": "COL.AX",
         "original_universe": true,
@@ -4137,7 +4131,7 @@
         }
       ],
       "share_basis_document_attempt": null,
-      "remaining_work": "Extract and verify the linked issuer annual-report financial tables, currency scale and listed-share basis. Filing index alone is not a valuation.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -4417,12 +4411,10 @@
     {
       "ticker": "TLS.AX",
       "company": "Telstra",
-      "assessment_status": "ISSUER_TABLES_NOT_YET_RECONCILED",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED"
-      ],
-      "financial_source": null,
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
+      "financial_source": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-i/telstra-financial-results-and-annual-report-for-the-year-ended-30-jun-2026.pdf",
       "structured_filing_attempt": {
         "ticker": "TLS.AX",
         "original_universe": true,
@@ -4439,7 +4431,7 @@
         }
       ],
       "share_basis_document_attempt": null,
-      "remaining_work": "Extract and verify the linked issuer annual-report financial tables, currency scale and listed-share basis. Filing index alone is not a valuation.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -5269,11 +5261,9 @@
     {
       "ticker": "CNI",
       "company": "Canadian National Railway",
-      "assessment_status": "PRIMARY_HISTORY_OR_CURRENCY_GAP",
-      "has_supported_valuation": false,
-      "missing_inputs": [
-        "MIXED_OR_MISSING_STATEMENT_CURRENCY"
-      ],
+      "assessment_status": "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL",
+      "has_supported_valuation": true,
+      "missing_inputs": [],
       "financial_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000016868.json",
       "structured_filing_attempt": {
         "ticker": "CNI",
@@ -5295,7 +5285,7 @@
         "source_url": "https://www.sec.gov/Archives/edgar/data/16868/000110465926010352/tm261145d1_40f.htm",
         "shares_recovered": 1
       },
-      "remaining_work": "Resolve the listed missing fields from dated primary statements; preserve nulls until supported.",
+      "remaining_work": "Continue dated filing and price refresh; future outcomes remain assumptions.",
       "orders_enabled": false
     },
     {
@@ -5364,16 +5354,16 @@
   ],
   "assessed_count": 200,
   "supported_before": 41,
-  "supported_after": 98,
-  "newly_supported_count": 57,
-  "still_unsupported_count": 102,
+  "supported_after": 103,
+  "newly_supported_count": 62,
+  "still_unsupported_count": 97,
   "status_counts": {
     "CORPORATE_ACTION_RECONCILIATION_REQUIRED": 6,
-    "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL": 98,
-    "ISSUER_TABLES_NOT_YET_RECONCILED": 29,
+    "SUPPORTED_PRIMARY_INPUTS_FORECASTS_HYPOTHETICAL": 103,
+    "ISSUER_TABLES_NOT_YET_RECONCILED": 26,
     "BUSINESS_SPECIFIC_ECONOMICS_REQUIRED": 34,
     "SHARE_CLASS_OR_RECEIPT_EVIDENCE_REQUIRED": 15,
-    "PRIMARY_HISTORY_OR_CURRENCY_GAP": 18
+    "PRIMARY_HISTORY_OR_CURRENCY_GAP": 16
   },
   "orders_enabled": false,
   "orders_generated": 0
