@@ -1,0 +1,90 @@
+{
+  "companies": {
+    "ADBE": {
+      "issuer": "ADOBE INC.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "source_document_sha256": "6f7075d1d96e38e255be924bc7f0a6403b41beab74328c91c293958ce43d7194",
+      "accession_or_document_id": "0000796343-26-000147",
+      "as_of": "2026-09-10",
+      "published_at": "2026-09-10",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "parser": "REVIEWED_ADBE_ANNUAL_GAAP_EPS_95",
+      "source_location": "Annual outlook; RANGE",
+      "source_excerpt": "Earnings per share 2 GAAP: $18.12 to $18.17",
+      "fiscal_calendar_evidence": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+        "accession": "0000796343-26-000003",
+        "published_at": "2026-01-15",
+        "excerpt": "Our fiscal year is a 52- or 53-week year that ends on the Friday closest to November 30.",
+        "reviewed_guidance_year": 2026
+      },
+      "facts": {
+        "ticker": "ADBE",
+        "currency": "USD",
+        "target_period_end": "2026-11-27",
+        "metric": "GAAP_DILUTED_EPS",
+        "per_share_basis": "LISTED_DILUTED_COMMON_SHARE",
+        "low": 18.12,
+        "high": 18.17,
+        "guidance_shape": "RANGE",
+        "scenario_eps_note": "Explicit management annual GAAP diluted EPS range."
+      },
+      "facts_sha256": "192275ffe5b893cb94e5c7c3d21b4830f935fd776f3e8130153f534e5aacb342",
+      "orders_enabled": false
+    },
+    "DELL": {
+      "issuer": "Dell Technologies Inc.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm",
+      "source_document_sha256": "def965fdf29ab053ebd44a90675ca3e5d29721372b010110513e262d2693a78f",
+      "accession_or_document_id": "0001571996-26-000050",
+      "as_of": "2026-11-24",
+      "published_at": "2026-11-24",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "parser": "REVIEWED_DELL_ANNUAL_GAAP_EPS_95",
+      "source_location": "Annual outlook; POINT",
+      "source_excerpt": "GAAP diluted EPS $ 24.37 $ 28.24",
+      "fiscal_calendar_evidence": null,
+      "facts": {
+        "ticker": "DELL",
+        "currency": "USD",
+        "target_period_end": "2027-01-29",
+        "metric": "GAAP_DILUTED_EPS",
+        "per_share_basis": "LISTED_DILUTED_COMMON_SHARE",
+        "low": 28.24,
+        "high": 28.24,
+        "guidance_shape": "POINT",
+        "scenario_eps_note": "A management point estimate is held constant across earnings scenarios."
+      },
+      "facts_sha256": "2b289b5feaba916e22ea6eaab3001af2677b3eb10a9e719099219841c3d4bb58",
+      "orders_enabled": false
+    },
+    "UNH": {
+      "issuer": "UnitedHealth Group Incorporated",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/earningsrelease3q26unh.htm",
+      "source_document_sha256": "20409f931fd6634f8cb2fca1ecd79041b9e6e5082d12aef14501530279355c2d",
+      "accession_or_document_id": "0000731766-26-000255",
+      "as_of": "2026-10-13",
+      "published_at": "2026-10-13",
+      "review_status": "PRIMARY_DOCUMENT_FIELDS_RECONCILED",
+      "parser": "REVIEWED_UNH_ANNUAL_GAAP_EPS_95",
+      "source_location": "Annual outlook; FLOOR",
+      "source_excerpt": "Updated Full Year 2026 Earnings Outlook to At Least $19.50 Per Share; Adjusted Earnings",
+      "fiscal_calendar_evidence": null,
+      "facts": {
+        "ticker": "UNH",
+        "currency": "USD",
+        "target_period_end": "2026-12-31",
+        "metric": "GAAP_DILUTED_EPS",
+        "per_share_basis": "LISTED_DILUTED_COMMON_SHARE",
+        "low": 19.5,
+        "high": 19.5,
+        "guidance_shape": "FLOOR",
+        "scenario_eps_note": "A guided floor is held constant in every earnings scenario; no upper earnings estimate is invented.",
+        "high_is_guided_ceiling": false
+      },
+      "facts_sha256": "f394d1087ce06bccb10824ccfb64dad7b3130d5ab293659677d8110873daffda",
+      "orders_enabled": false
+    }
+  },
+  "orders_enabled": false
+}
