@@ -1,6 +1,6 @@
 {
   "schema_version": "5.2-discovery-radar-1",
-  "published_at_utc": "2026-11-25T11:32:35.275053+00:00",
+  "published_at_utc": "2026-11-25T16:40:28.204395+00:00",
   "source_coverage": "CORE_SOURCES_AVAILABLE_WITH_FALLBACK",
   "total_discovered_ever": 4,
   "monitor_count": 0,
@@ -17,28 +17,30 @@
     },
     "sec_8k": {
       "status": "ok",
-      "latest_feed_matched_listed_tickers": 69,
+      "latest_feed_matched_listed_tickers": 72,
       "coverage": "at most latest 100 filings; not an exhaustive market screen"
     },
     "gdelt": {
-      "status": "cooldown",
-      "checked_theme": 6,
-      "next_attempt_at_utc": "2026-11-25T14:22:57.210791+00:00",
-      "reason": "Prior 429: respect provider limit across scheduled runs"
+      "status": "rate_limited",
+      "http_status": 429,
+      "checked_theme": 5,
+      "reason": "gdelt_doc: rate_limited_429",
+      "next_attempt_at_utc": "2026-11-26T16:40:28.204395+00:00",
+      "next_action": "RSS fallback; retry only after persistent cooldown"
     },
     "gdelt_control": {
-      "gdelt_retry_at_utc": "2026-11-25T14:22:57.210791+00:00",
-      "gdelt_consecutive_429": 1
+      "gdelt_retry_at_utc": "2026-11-26T16:40:28.204395+00:00",
+      "gdelt_consecutive_429": 2
     },
     "google_news": {
       "status": "ok",
-      "checked_theme": 6,
+      "checked_theme": 5,
       "article_count": 0,
       "coverage": "RSS headline sample only; source articles not independently verified"
     },
     "bing_news": {
       "status": "ok",
-      "checked_theme": 6,
+      "checked_theme": 5,
       "article_count": 0,
       "coverage": "Bing RSS headline sample only; links are not primary filings"
     },
