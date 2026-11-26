@@ -10,6 +10,9 @@ on:
     paths:
       - 'evidence_recovery_91.py'
       - 'recover_documents_91.py'
+      - 'reporting_bridge.py'
+      - 'verify_reporting_bridge_api.py'
+      - 'tests/test_reporting_bridge.py'
       - 'championship_90.py'
       - 'guidance_95.py'
       - 'reviewed_pdf_95.py'
@@ -50,7 +53,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: championship-valuation-research
+  group: championship-report-publish
   cancel-in-progress: false
 jobs:
   valuation:
@@ -126,12 +129,15 @@ jobs:
         run: python verify_outputs_95.py --mode weekly
       - name: Verify Championship 9.0 coverage and no orders
         run: python verify_90.py --mode weekly
+      - name: Build and verify bounded GitHub reporting bridge
+        run: python reporting_bridge.py --mode weekly
       - name: Publish weekly valuation report to repository
         run: |
           git add reports/primary_evidence_91.json reports/share_basis_recovery_91.json reports/fx_recovery_91.json settings/primary_adapters_90.json
           git add reports/valuation_90_weekly.json reports/coverage_90_weekly.json
           git add reports/recovery_94_weekly.json reports/recovery_95_weekly.json reports/session_quotes_95_weekly.json
           git add reports/dynamic_source_recovery_92_weekly.json reports/dynamic_earnings_92_weekly.json reports/dynamic_earnings_92_weekly.md
+          git add reports/bridge
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/valuation_60_weekly.json reports/valuation_60_weekly_summary.json
@@ -158,12 +164,17 @@ jobs:
             done
             test "$published" = true
           fi
+      - name: Verify published bridge through standard GitHub Contents API
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python verify_reporting_bridge_api.py --ref "$(git rev-parse HEAD)"
       - name: Upload all 200 valuation research rows and data provenance
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: championship-valuation-4-${{ github.run_number }}
           path: |
+            reports/bridge/
             reports/dynamic*92*
             reports/*91*.json
             reports/*90*.json

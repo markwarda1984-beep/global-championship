@@ -8,6 +8,9 @@ on:
   push:
     branches: [main]
     paths:
+      - 'reporting_bridge.py'
+      - 'verify_reporting_bridge_api.py'
+      - 'tests/test_reporting_bridge.py'
       - 'championship_90.py'
       - 'guidance_95.py'
       - 'reviewed_pdf_95.py'
@@ -55,7 +58,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: championship-price-scan
+  group: championship-report-publish
   cancel-in-progress: false
 jobs:
   intensive_scan:
@@ -180,12 +183,15 @@ jobs:
         run: python verify_90.py --mode scan
       - name: Publish full 200-stock evidence recovery audit
         run: python coverage_recovery_audit_91.py
+      - name: Build and verify bounded GitHub reporting bridge
+        run: python reporting_bridge.py --mode scan
       - name: Publish machine-readable report to repository
         run: |
           git add reports/coverage_recovery_91.json reports/coverage_recovery_91.md
           git add reports/valuation_90_latest.json reports/coverage_90_latest.json
           git add reports/recovery_94_latest.json reports/recovery_95_latest.json reports/session_quotes_95_latest.json reports/priority_quotes_90.json
           git add reports/dynamic_source_recovery_92_scan.json reports/dynamic_earnings_92_latest.json reports/dynamic_earnings_92_latest.md
+          git add reports/bridge
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/valuation_60_latest.json reports/valuation_60_summary.json
@@ -214,12 +220,17 @@ jobs:
             done
             test "$published" = true
           fi
+      - name: Verify published bridge through standard GitHub Contents API
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python verify_reporting_bridge_api.py --ref "$(git rev-parse HEAD)"
       - name: Upload all 200 rows, dashboard and JSON
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: championship-200-dashboard-${{ github.run_number }}
           path: |
+            reports/bridge/
             reports/dynamic*92*
             reports/*91*.json
             reports/coverage_recovery_91.md
