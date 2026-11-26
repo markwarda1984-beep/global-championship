@@ -1,6 +1,6 @@
 {
   "schema_version": "9.2-dynamic-earnings-1",
-  "published_at_utc": "2026-11-26T10:44:51.462293+00:00",
+  "published_at_utc": "2026-11-26T11:18:48.276908+00:00",
   "mode": "scan",
   "coverage_comparison": {
     "baseline_supported": 89,
@@ -404,7 +404,7 @@
       "price": 53.99,
       "currency": "AUD",
       "quote_date": "2026-11-26T00:00:00",
-      "price_source": "DATED_DAILY_BARS_NOT_LIVE",
+      "price_source": "LAST_SUCCESSFUL_DATED_SNAPSHOT_FALLBACK_NOT_LIVE",
       "historical": {
         "scenarios": {
           "bear": 14.945,
@@ -660,22 +660,24 @@
         "non_gaap_eps_not_substituted_for_gaap": true
       },
       "adjustment_and_risk_flags": [
+        "LATEST_QUOTE_REFRESH_FAILED_USING_ORIGINAL_DATED_SNAPSHOT",
         "OWNER_CASHFLOW_COMPONENTS_NOT_FULLY_RECONCILED",
         "COMPLETE_DEBT_AND_CASH_RECONCILIATION_REQUIRED"
       ],
       "credible_forward_candidate": false,
       "forward_validation_blockers": [
+        "LATEST_QUOTE_REFRESH_FAILED_USING_ORIGINAL_DATED_SNAPSHOT",
         "OWNER_CASHFLOW_COMPONENTS_NOT_FULLY_RECONCILED",
         "COMPLETE_DEBT_AND_CASH_RECONCILIATION_REQUIRED"
       ],
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_context": {
-        "status": "RECOVERY_ALREADY_UNDERWAY",
+        "status": "TIMING_EVIDENCE_UNAVAILABLE",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 2.2277447191795723,
-        "observed_daily_log_return_stddev": 0.026102812022057782,
-        "sessions_observed": 30,
+        "distance_from_5d_low_in_daily_sigma": null,
+        "observed_daily_log_return_stddev": null,
+        "sessions_observed": 0,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
       "recovery_from_5d_low_pct": 5.987439056764776,
