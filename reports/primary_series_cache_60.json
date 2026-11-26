@@ -1,6 +1,6 @@
 {
   "schema_version": "6.0-primary-series-cache-1",
-  "published_at_utc": "2026-11-25T22:30:17.022143+00:00",
+  "published_at_utc": "2026-11-26T00:27:47.153102+00:00",
   "source": "SEC issuer-filed XBRL companyfacts; bounded incremental research",
   "original_200_unchanged": true,
   "companies": {
@@ -9,7 +9,7 @@
       "issuer_name": "BITDEER TECHNOLOGIES GROUP",
       "cik": 1899123,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001899123.json",
-      "observed_utc": "2026-11-23T00:11:52.903661+00:00",
+      "observed_utc": "2026-11-26T00:27:47.153102+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -87,7 +87,7 @@
       "issuer_name": "PENGUIN SOLUTIONS, INC.",
       "cik": 1616533,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001616533.json",
-      "observed_utc": "2026-11-23T00:11:52.903661+00:00",
+      "observed_utc": "2026-11-26T00:27:47.153102+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -7322,7 +7322,7 @@
       "issuer_name": "AMAZON.COM, INC.",
       "cik": 1018724,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
-      "observed_utc": "2026-11-23T00:11:52.903661+00:00",
+      "observed_utc": "2026-11-26T00:27:47.153102+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -10837,7 +10837,7 @@
       "issuer_name": "Broadcom Inc.",
       "cik": 1730168,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json",
-      "observed_utc": "2026-11-23T00:11:52.903661+00:00",
+      "observed_utc": "2026-11-26T00:27:47.153102+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -115950,8 +115950,14 @@
     "CCJ"
   ],
   "research_priority_is_not_a_buy_signal": true,
-  "remaining_eligible_uncached_before_run": 0,
-  "selected_issuer_tickers": [],
+  "remaining_eligible_uncached_before_run": 5,
+  "selected_issuer_tickers": [
+    "AMZN",
+    "AVGO",
+    "PENG",
+    "BTDR",
+    "IBN"
+  ],
   "non_sec_listed_tickers": [
     "BHP.AX",
     "CAT.AX",
@@ -115999,11 +116005,36 @@
   "temporary_failures": {
     "IBN": {
       "status": "SEC_HTTP_404",
-      "retry_after_utc": "2026-11-26T00:26:23.938964+00:00"
+      "retry_after_utc": "2026-11-27T00:27:47.153102+00:00"
     }
   },
-  "run_attempts": [],
-  "update_status": "NO_REFRESH_DUE",
+  "run_attempts": [
+    {
+      "ticker": "AMZN",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 11
+    },
+    {
+      "ticker": "AVGO",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 10
+    },
+    {
+      "ticker": "PENG",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 12
+    },
+    {
+      "ticker": "BTDR",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 0
+    },
+    {
+      "ticker": "IBN",
+      "status": "SEC_HTTP_404"
+    }
+  ],
+  "update_status": "PARTIAL_OR_UNAVAILABLE",
   "available_company_records": 161,
   "non_sec_listed_count": 42
 }
