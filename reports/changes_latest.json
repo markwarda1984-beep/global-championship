@@ -1,15 +1,76 @@
 {
   "schema_version": "5.1-scan-changes-1",
-  "published_at_utc": "2026-11-26T06:46:49.164232+00:00",
-  "current_scan_utc": "2026-11-26T06:45:52.350652+00:00",
-  "prior_scan_utc": "2026-11-26T06:19:04.340414+00:00",
+  "published_at_utc": "2026-11-26T10:44:48.322538+00:00",
+  "current_scan_utc": "2026-11-26T10:43:51.028763+00:00",
+  "prior_scan_utc": "2026-11-26T06:45:52.350652+00:00",
   "comparison_status": "COMPARED",
   "universe_count": 200,
   "new_daily_bar_count": 0,
   "same_bar_revision_count": 0,
   "quote_date_regression_count": 0,
-  "research_field_change_count": 0,
-  "material_changes": [],
+  "research_field_change_count": 4,
+  "material_changes": [
+    {
+      "ticker": "WOW.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-26T00:00:00",
+      "new_quote_date": "2026-11-26T00:00:00",
+      "old_daily_close": 41.81,
+      "new_daily_close": 41.81,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "model_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    },
+    {
+      "ticker": "STO.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-26T00:00:00",
+      "new_quote_date": "2026-11-26T00:00:00",
+      "old_daily_close": 8.57,
+      "new_daily_close": 8.57,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "model_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    },
+    {
+      "ticker": "MQG.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-26T00:00:00",
+      "new_quote_date": "2026-11-26T00:00:00",
+      "old_daily_close": 226.45,
+      "new_daily_close": 226.45,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "model_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    },
+    {
+      "ticker": "ANZ.AX",
+      "category": "UNCHANGED_OR_UNCOMPARABLE",
+      "old_quote_date": "2026-11-26T00:00:00",
+      "new_quote_date": "2026-11-26T00:00:00",
+      "old_daily_close": 38.81,
+      "new_daily_close": 38.81,
+      "daily_bar_change_pct": null,
+      "research_field_changes": [
+        "model_status"
+      ],
+      "current_provisional_entry": null,
+      "research_only": true,
+      "buy_signal": false
+    }
+  ],
   "data_revisions_and_regressions": [],
   "meaning": "Daily-bar change is between different quote sessions, NOT intraday gain, executable return or trade signal",
   "orders_enabled": false
