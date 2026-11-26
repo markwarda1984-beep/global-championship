@@ -102,7 +102,7 @@ def publish(root=ROOT, mode='scan'):
     chunks('closest_top10', [dict(r,rank=i+1) for i,r in enumerate(ranked[:10])])
     chunks('forward_rankings', dyn.get('validated_forward_rankings',[]))
     chunks('pre_recovery_rankings', dyn.get('validated_pre_recovery_rankings',[]))
-    chunks('priority_quotes',[dict(r, daily_bar_source=priority.get('quotes',{}).get(r['ticker'])) for r in rows if r['priority_entry'] is not None])
+    chunks('priority_quotes',[dict(r, daily_bar_source=priority.get('quotes',{}).get(r['ticker'])) for r in rows+discovery if r['priority_entry'] is not None])
     chunks('april_2026_comparison',[{'ticker':r['ticker'],**r['april_2026']} for r in rows])
     write('coverage.json',envelope(coverage=dyn.get('coverage_comparison'),historical_supported=sum(bool(r['historical']['scenarios']) for r in rows),forward_supported=sum(bool(r['forward']['scenarios']) for r in rows),universe_count=200))
     chunks('weekly_valuations', [{'ticker':r['ticker'],'price':r.get('price'),'currency':r.get('currency'),'quote_date':r.get('quote_date'),'historical':{k:(r.get('historical') or {}).get(k) for k in ('scenarios','status','missing_inputs','report')},'forward':{k:(r.get('forward') or {}).get(k) for k in ('scenarios','status','eps_basis')},'forward_source':((r.get('forward') or {}).get('guidance_source') or {}).get('source_url'),'forward_missing_inputs':r.get('forward_missing_inputs'),'forward_validation_blockers':r.get('forward_validation_blockers'),'priority_entry':r.get('priority_entry')} for r in weekly.get('companies',[])])
