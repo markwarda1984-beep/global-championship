@@ -36,6 +36,7 @@ def publish(root=ROOT, mode='scan'):
     entries = read('valuation_60_'+suffix+'.json')
     weekly = read('dynamic_earnings_92_weekly.json')
     priority = read('priority_quotes_90.json')
+    top10 = read('valuation_top10_'+suffix+'.json')
     april = read('april_2026_valuation_comparison.json')
     radar = read('discovery_latest.json')
     radar_watchlist = read('discovery_watchlist.json')
@@ -104,6 +105,7 @@ def publish(root=ROOT, mode='scan'):
     # Explicit legacy evidence gate; newer scenario values never become invented entry limits.
     chunks('closest_top30', [dict(r,rank=i+1) for i,r in enumerate(ranked[:30])])
     chunks('closest_top10', [dict(r,rank=i+1) for i,r in enumerate(ranked[:10])])
+    chunks('top10_rankings', top10.get('ranked_top_10', []))
     chunks('forward_rankings', dyn.get('validated_forward_rankings',[]))
     chunks('pre_recovery_rankings', dyn.get('validated_pre_recovery_rankings',[]))
     chunks('priority_quotes',[dict(r, daily_bar_source=priority.get('quotes',{}).get(r['ticker'])) for r in rows+discovery if r['priority_entry'] is not None])
