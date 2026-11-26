@@ -7525,6 +7525,13 @@
           "filed": "2026-03-31",
           "form": "40-F",
           "unreviewed_candidates": []
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1323404/000119312526134908/d56281d40f.htm",
+          "sha256": "c0fdd6f219369160de1501185daa0eccedda76f49cc34dab7b1b271b91ab0235",
+          "filed": "2026-03-31",
+          "form": "40-F",
+          "unreviewed_candidates": []
         }
       ]
     },
@@ -7555,6 +7562,37 @@
         {
           "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000018/livef8k3q26991.htm",
           "sha256": "e9c1b484ebc8cced60ef38cc631c6870eb8990d318e438ba94fa8e856320bcde",
+          "accession": "0002115436-26-000018",
+          "filed": "2026-10-30",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000020/xom-20260930.htm",
+          "sha256": "d974ec7be025e12ca94ea4a1c597ab53d902b733cc7777d33b16430ce2539041",
+          "filed": "2026-11-02",
+          "form": "10-Q",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 57,910 39,291",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Weighted-average number of common shares outstanding (millions of shares) (1) 4,140 4,285 4,172 4,328",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000018/livef8k3q26991.htm",
+          "sha256": "24844d3a28af361b62dc0a6f9c659639fd9f24b7962f2fc96f74af34220d3158",
           "accession": "0002115436-26-000018",
           "filed": "2026-10-30",
           "form": "8-K_EX99.1",
@@ -7622,6 +7660,64 @@
               "usable_for_valuation": false
             }
           ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm",
+          "sha256": "0964f191f3c739941c6b321689ea37af346894d8170ff3ac7904a797c32e920d",
+          "filed": "2026-11-03",
+          "form": "10-Q",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 3,001,581 1,958,714",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property and equipment ( 127,996 ) ( 113,838 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property and equipment in accounts payable and accrued expenses 11,166 6,121",
+              "inline_concepts": [
+                "xyz:ChangeInCapitalExpendituresIncurredButNotYetPaid"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026012254/xyz-20251231.htm",
+          "sha256": "55729e87fa01009a50040cf1a3c533f03013929907cbbf9fc03f8a5becc57f9d",
+          "filed": "2026-02-26",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 2,579,714 1,707,350 100,961",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property and equipment ( 155,038 ) ( 153,947 ) ( 151,151 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property and equipment in accounts payable and accrued expenses 8,806 3,266 3,921",
+              "inline_concepts": [
+                "xyz:ChangeinCapitalExpendituresIncurredbutNotyetPaid"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
         }
       ]
     },
@@ -7657,14 +7753,54 @@
           "form": "8-K_EX99.1",
           "reviewed_guidance_extracted": false,
           "unreviewed_candidates": []
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000157/zs-20260731.htm",
+          "sha256": "ad08b95b38bd61a8977a71dcf313af3d23cf2a2e292f336e736471d66d3040af",
+          "filed": "2026-09-03",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 1,129,654 972,453 779,846",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property, equipment and other assets ( 277,304 ) ( 164,252 ) ( 144,588 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1713683/000119312526470942/d255961dex991.htm",
+          "sha256": "3be8c27b3e180d37bb589cfd4521f20da2f0e74cc85f55594be6c1e8a3664663",
+          "accession": "0001193125-26-470942",
+          "filed": "2026-11-23",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
         }
       ]
     },
     "LLY": {
       "documents": [
         {
+          "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm",
+          "sha256": "afcab4fd97c4bcf72421a6ed8a24db7e1603dcb247922eeba94b52c1e8f29f93",
+          "accession": "0000059478-26-000104",
+          "filed": "2026-10-29",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        },
+        {
           "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000108/lly-20260930.htm",
-          "sha256": "ddb5cdac1cf4103eaf61261ced62ada208878660ca0b054019a56f5fa243134c",
+          "sha256": "e9caa7855b5ada28ebc23723856f74a47b797590494961f1f60085a424d28e7c",
           "filed": "2026-10-29",
           "form": "10-Q",
           "unreviewed_candidates": [
@@ -7686,7 +7822,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
-          "sha256": "6fdd8995f9a0d72925b41a00edf65ef245615a5e6430b406dd08985f3e19491c",
+          "sha256": "55db6b72255a229c8f1bb0927535c8ba4ff99536a71a7d889c8fe09f87a1b01c",
           "filed": "2026-02-12",
           "form": "10-K",
           "unreviewed_candidates": [
@@ -7708,7 +7844,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm",
-          "sha256": "afcab4fd97c4bcf72421a6ed8a24db7e1603dcb247922eeba94b52c1e8f29f93",
+          "sha256": "1efa2efe1c20133564d6b12188c46a3268061eb15febf3aa8a3219348b75b38d",
           "accession": "0000059478-26-000104",
           "filed": "2026-10-29",
           "form": "8-K_EX99.1",
@@ -7720,8 +7856,17 @@
     "URI": {
       "documents": [
         {
+          "url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000036/uri-9302026xex991.htm",
+          "sha256": "fd414b8286b15f9e3fb253c0028d1638646af005199630f4aec8eaa7729b5f8f",
+          "accession": "0001067701-26-000036",
+          "filed": "2026-10-21",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        },
+        {
           "url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000034/uri-20260930.htm",
-          "sha256": "cb7eb3847b58d54eab0716d70bc95c1f3557c0469195920be7f55f8d0d1ea85d",
+          "sha256": "a0a19f84d00b905fc2be998b1f02b8c6948aa8624566413784d8978ac3082901",
           "filed": "2026-10-21",
           "form": "10-Q",
           "unreviewed_candidates": [
@@ -7757,7 +7902,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000007/uri-20251231.htm",
-          "sha256": "158237ecca2eabe3bcd4705ad7fedaa276025657190ed27c091d7c219298a5f3",
+          "sha256": "4f02ad5706d113df53892ec93fde1ceb7c3dddb21cd481ded2a47f6bec1120bb",
           "filed": "2026-01-28",
           "form": "10-K",
           "unreviewed_candidates": [
@@ -7793,7 +7938,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000036/uri-9302026xex991.htm",
-          "sha256": "fd414b8286b15f9e3fb253c0028d1638646af005199630f4aec8eaa7729b5f8f",
+          "sha256": "67f06bc64dced63917f6167403fae5a5225327a561b8b4b6dbb26c67c6cde631",
           "accession": "0001067701-26-000036",
           "filed": "2026-10-21",
           "form": "8-K_EX99.1",
@@ -7827,14 +7972,47 @@
           "form": "8-K_EX99.1",
           "reviewed_guidance_extracted": false,
           "unreviewed_candidates": []
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+          "sha256": "f5480847e8c5394f04af46be31d9e8b1b290bc3838af3e2fb38133dd3d26aee7",
+          "filed": "2026-11-03",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Weighted-average basic shares outstanding 14,661,935 14,948,500 15,343,783",
+              "inline_concepts": [
+                "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm",
+          "sha256": "2df7591d9585620a4b2deca1b569c926ba4b02c9e3ce1bebb40255155e724d16",
+          "accession": "0000320193-26-000024",
+          "filed": "2026-11-02",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
         }
       ]
     },
     "ABBV": {
       "documents": [
         {
+          "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm",
+          "sha256": "7a5129911c00ab1e066103c37e4a6c4d74cae35a293d36f96610bdb58a747a06",
+          "accession": "0001551152-26-000033",
+          "filed": "2026-10-30",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        },
+        {
           "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000037/abbv-20260930.htm",
-          "sha256": "4f985a6e071eb9f2cb7270f51788d90f19cbe8863c426655f51c7f1e011727ba",
+          "sha256": "cd298ebcef83dd986e3016f71c5efaf854582102301e53c1891ed1cc2eeafe7c",
           "filed": "2026-11-03",
           "form": "10-Q",
           "unreviewed_candidates": [
@@ -7870,7 +8048,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/abbv-20251231.htm",
-          "sha256": "3601a4c52e4b383e18f5e17d31911b90a070539c3e59a239391c37cb0687fadc",
+          "sha256": "a9d79ec4d7ebdda2af11b413f4e5d19e8430fac95587d139e683b647b3e5b9a4",
           "filed": "2026-02-20",
           "form": "10-K",
           "unreviewed_candidates": [
@@ -7892,7 +8070,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm",
-          "sha256": "7a5129911c00ab1e066103c37e4a6c4d74cae35a293d36f96610bdb58a747a06",
+          "sha256": "17bb8dd89184f7b4ecfe26376fdbbb8453b9e2e46c1fe0ab98579c6531e56966",
           "accession": "0001551152-26-000033",
           "filed": "2026-10-30",
           "form": "8-K_EX99.1",
@@ -7904,8 +8082,17 @@
     "ADBE": {
       "documents": [
         {
+          "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+          "sha256": "6f7075d1d96e38e255be924bc7f0a6403b41beab74328c91c293958ce43d7194",
+          "accession": "0000796343-26-000147",
+          "filed": "2026-09-10",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": true,
+          "unreviewed_candidates": []
+        },
+        {
           "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm",
-          "sha256": "b184d60df769f3c6141e88bcd6c5552eefa4c460aa6d6fe0edf07ba37f42fb32",
+          "sha256": "7dcb2da37cf65174d98001f8f0aebe50f6eeba47d17633ea8b295b16ec166476",
           "filed": "2026-09-22",
           "form": "10-Q",
           "unreviewed_candidates": [
@@ -7938,7 +8125,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
-          "sha256": "53199b26e7379c01414739dc6658dc2202daa1e60247e78e01ddb6454cd23d90",
+          "sha256": "961197fae86c2c9f1935e5b974272224891a9459d5c6f6c4f9d3bbbee2652402",
           "filed": "2026-01-15",
           "form": "10-K",
           "unreviewed_candidates": [
@@ -7971,7 +8158,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
-          "sha256": "6f7075d1d96e38e255be924bc7f0a6403b41beab74328c91c293958ce43d7194",
+          "sha256": "0b5913367a3f1c32a9132df44d331c99584dd7ade2c5609a9dec9e731eb0a001",
           "accession": "0000796343-26-000147",
           "filed": "2026-09-10",
           "form": "8-K_EX99.1",
@@ -7988,14 +8175,30 @@
           "filed": "2026-03-19",
           "form": "40-F",
           "unreviewed_candidates": []
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2809/000110465926032153/aem-20251231x40f.htm",
+          "sha256": "e7fff589bd155012f1339c051ae31b3f495aff366d07d201c0d850f3b5e6fcdc",
+          "filed": "2026-03-19",
+          "form": "40-F",
+          "unreviewed_candidates": []
         }
       ]
     },
     "AMD": {
       "documents": [
         {
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm",
+          "sha256": "1e669949d970595467327c7b67a0f18bdb9fe93d868fc7beba3d343989c7825e",
+          "accession": "0000002488-26-000188",
+          "filed": "2026-11-03",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        },
+        {
           "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
-          "sha256": "80f2c163f7f9d1e363a27fe7008af5000a0fc1d7b1ec836570e813feaab6f381",
+          "sha256": "dd415d9cb92ee11ef214a77f6294370452328671e3cc09da31b249ced0b328e3",
           "filed": "2026-11-04",
           "form": "10-Q",
           "unreviewed_candidates": [
@@ -8056,7 +8259,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
-          "sha256": "2aa42a0705a444834e4681f00c12b9cd2f3dd8e85652183310b3573c16533b58",
+          "sha256": "91aa6e5c45cb2364d4182615b545063bcb760ec65cd22b7467e6ec7086fe4a12",
           "filed": "2026-02-04",
           "form": "10-K",
           "unreviewed_candidates": [
@@ -8117,7 +8320,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm",
-          "sha256": "1e669949d970595467327c7b67a0f18bdb9fe93d868fc7beba3d343989c7825e",
+          "sha256": "1b08f5cfc687282c670e8d44515a3685d33475a11c8f88bd938f5f779b2b8bc7",
           "accession": "0000002488-26-000188",
           "filed": "2026-11-03",
           "form": "8-K_EX99.1",
@@ -8171,6 +8374,50 @@
               "usable_for_valuation": false
             }
           ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000155/amgn-20260930.htm",
+          "sha256": "b31e1c2f9fe1b342b1803be758b6df096465e7bb1ff659ac6b432c3321aab257",
+          "filed": "2026-11-04",
+          "form": "10-Q",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 10,432 8,355",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property, plant and equipment ( 1,812 ) ( 1,216 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm",
+          "sha256": "f867d0fc38adeffac9f5a6b1ae21fe7306a35b4cf77cd96d71550dfc8df708fc",
+          "filed": "2026-02-13",
+          "form": "10-K",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by operating activities 9,958 11,490 8,471",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property, plant and equipment ( 1,858 ) ( 1,096 ) ( 1,112 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
         }
       ]
     },
@@ -8197,14 +8444,45 @@
               "usable_for_valuation": false
             }
           ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm",
+          "sha256": "82a8c8dc2b600426ebe4ff8a52626ad796b93a7e169f3db2615887625bbc5a55",
+          "filed": "2026-05-26",
+          "form": "20-F",
+          "unreviewed_candidates": [
+            {
+              "row_excerpt": "Net cash provided by (used for) operating activities $ 1,524 $ 397 $ 1,090",
+              "inline_concepts": [
+                "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+              ],
+              "usable_for_valuation": false
+            },
+            {
+              "row_excerpt": "Purchases of property and equipment ( 545 ) ( 219 ) ( 92 )",
+              "inline_concepts": [
+                "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+              ],
+              "usable_for_valuation": false
+            }
+          ]
         }
       ]
     },
     "AVGO": {
       "documents": [
         {
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+          "sha256": "613e4a649922ae8a5bdc10254f2521d03f875e89a5e406083f6a16f6c13c44cb",
+          "accession": "0001730168-26-000076",
+          "filed": "2026-09-02",
+          "form": "8-K_EX99.1",
+          "reviewed_guidance_extracted": false,
+          "unreviewed_candidates": []
+        },
+        {
           "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
-          "sha256": "c938256a130561fdde13f8dc7fc1a9e207f009b2751ad5c83e610c432fb2ff92",
+          "sha256": "0b5f8330ffc5f5ce85c7e3bae76b5b1a3452433fdfe285dfe571ea874989e1d9",
           "filed": "2026-09-10",
           "form": "10-Q",
           "unreviewed_candidates": [
@@ -8240,7 +8518,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
-          "sha256": "2d213489480ab610e2bb1bc5a236b1e6d1235d4dd3bd3f4b9c18ce4741cfaed3",
+          "sha256": "47239414ddd717316a12a29d32bae8de72531c7ae8e5297d6a9b0b08c957d240",
           "filed": "2025-12-18",
           "form": "10-K",
           "unreviewed_candidates": [
@@ -8276,7 +8554,7 @@
         },
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
-          "sha256": "613e4a649922ae8a5bdc10254f2521d03f875e89a5e406083f6a16f6c13c44cb",
+          "sha256": "f39350629e3d950249ed9f15c8fd09c5c2e8770128d32e6212fe32b3f5f7763a",
           "accession": "0001730168-26-000076",
           "filed": "2026-09-02",
           "form": "8-K_EX99.1",
