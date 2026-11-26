@@ -1,6 +1,6 @@
 {
   "schema_version": "9.2-dynamic-earnings-1",
-  "published_at_utc": "2026-11-26T11:18:48.276908+00:00",
+  "published_at_utc": "2026-11-26T14:48:58.518879+00:00",
   "mode": "scan",
   "coverage_comparison": {
     "baseline_supported": 89,
@@ -404,18 +404,18 @@
       "price": 53.99,
       "currency": "AUD",
       "quote_date": "2026-11-26T00:00:00",
-      "price_source": "LAST_SUCCESSFUL_DATED_SNAPSHOT_FALLBACK_NOT_LIVE",
+      "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 14.945,
-          "base": 24.5525,
-          "bull": 34.3735
+          "bear": 14.9569,
+          "base": 24.572,
+          "bull": 34.4009
         },
         "assumptions": {
           "formula": "(MEDIAN_7Y_EARNINGS + MEDIAN_7Y_FREE_CASH_FLOW)/2 \u00f7 capitalization_yield \u00f7 diluted_shares",
           "annual_years": 7,
-          "earnings_median_filed": 13588025601.27,
-          "fcf_median_filed": 17851703664.42,
+          "earnings_median_filed": 13598848046.9,
+          "fcf_median_filed": 17865921998.86,
           "capitalization_yields_pct": {
             "bear": 18,
             "base": 12,
@@ -660,24 +660,22 @@
         "non_gaap_eps_not_substituted_for_gaap": true
       },
       "adjustment_and_risk_flags": [
-        "LATEST_QUOTE_REFRESH_FAILED_USING_ORIGINAL_DATED_SNAPSHOT",
         "OWNER_CASHFLOW_COMPONENTS_NOT_FULLY_RECONCILED",
         "COMPLETE_DEBT_AND_CASH_RECONCILIATION_REQUIRED"
       ],
       "credible_forward_candidate": false,
       "forward_validation_blockers": [
-        "LATEST_QUOTE_REFRESH_FAILED_USING_ORIGINAL_DATED_SNAPSHOT",
         "OWNER_CASHFLOW_COMPONENTS_NOT_FULLY_RECONCILED",
         "COMPLETE_DEBT_AND_CASH_RECONCILIATION_REQUIRED"
       ],
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_context": {
-        "status": "TIMING_EVIDENCE_UNAVAILABLE",
+        "status": "RECOVERY_ALREADY_UNDERWAY",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": null,
-        "observed_daily_log_return_stddev": null,
-        "sessions_observed": 0,
+        "distance_from_5d_low_in_daily_sigma": 2.2277447191795723,
+        "observed_daily_log_return_stddev": 0.026102812022057782,
+        "sessions_observed": 30,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
       "recovery_from_5d_low_pct": 5.987439056764776,
@@ -5454,17 +5452,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 114.5298,
-          "base": 226.0033,
-          "bull": 352.8818
+          "bear": 114.6556,
+          "base": 226.2514,
+          "bull": 353.2692
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 8939576946.26,
-          "median_annual_net_income_filed": 8449720589.3,
+          "cashflow_median_of_filed_years": 8949391095.16,
+          "median_annual_net_income_filed": 8458996958.48,
           "historical_fcf_cagr_observed_pct": 15.443,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 11380800829.73,
+          "illustrative_next_year_net_income_not_issuer_guidance": 11393295031.04,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -26381,17 +26379,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 25.0898,
-          "base": 55.5898,
-          "bull": 92.0718
+          "bear": 25.1174,
+          "base": 55.6509,
+          "bull": 92.1729
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 1621888408.18,
-          "median_annual_net_income_filed": 388200470.92,
+          "cashflow_median_of_filed_years": 1623668968.32,
+          "median_annual_net_income_filed": 388626649.62,
           "historical_fcf_cagr_observed_pct": 415.215,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2619761008.53,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2622637064.61,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -26440,9 +26438,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 115.2539,
-          "base": 161.3554,
-          "bull": 207.457
+          "bear": 115.3804,
+          "base": 161.5326,
+          "bull": 207.6847
         },
         "currency": "USD",
         "source": {
@@ -27286,7 +27284,7 @@
         "guidance_source": {
           "issuer": "Dell Technologies Inc.",
           "source_url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm",
-          "source_document_sha256": "def965fdf29ab053ebd44a90675ca3e5d29721372b010110513e262d2693a78f",
+          "source_document_sha256": "0e94f10779f32333518dc8a152640cc1ebce3c67d55b551e58568298755529ad",
           "accession_or_document_id": "0001571996-26-000050",
           "as_of": "2026-11-24",
           "published_at": "2026-11-24",
@@ -37077,15 +37075,15 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 2.1108,
-          "base": 3.4677,
-          "bull": 4.8548
+          "bear": 2.1098,
+          "base": 3.4661,
+          "bull": 4.8525
         },
         "assumptions": {
           "formula": "(MEDIAN_7Y_EARNINGS + MEDIAN_7Y_FREE_CASH_FLOW)/2 \u00f7 capitalization_yield \u00f7 diluted_shares",
           "annual_years": 7,
-          "earnings_median_filed": 62847704.35,
-          "fcf_median_filed": 317685997.7,
+          "earnings_median_filed": 62817662.12,
+          "fcf_median_filed": 317534138.57,
           "capitalization_yields_pct": {
             "bear": 18,
             "base": 12,
@@ -41096,17 +41094,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 11.3701,
-          "base": 20.4436,
-          "bull": 30.2474
+          "bear": 11.3821,
+          "base": 20.4652,
+          "bull": 30.2792
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 10309720949.75,
-          "median_annual_net_income_filed": 13546597015.28,
+          "cashflow_median_of_filed_years": 10320576669.31,
+          "median_annual_net_income_filed": 13560861034.53,
           "historical_fcf_cagr_observed_pct": -4.047,
           "assumed_forward_growth_capped_pct": -4.047,
-          "illustrative_next_year_net_income_not_issuer_guidance": 14420006982.65,
+          "illustrative_next_year_net_income_not_issuer_guidance": 14435190667.31,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -66134,14 +66132,14 @@
       "latest_primary_metrics": {
         "revenue": {
           "metric": "revenue",
-          "value": 25956000000.0,
+          "value": 22756000000.0,
           "unit": "USD",
           "currency": "USD",
-          "period_start": "2026-05-02",
-          "period_end": "2026-07-31",
+          "period_start": "2026-08-01",
+          "period_end": "2026-10-30",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66153,14 +66151,14 @@
         },
         "net_income": {
           "metric": "net_income",
-          "value": 2392000000.0,
+          "value": 1668000000.0,
           "unit": "USD",
           "currency": "USD",
-          "period_start": "2026-05-02",
-          "period_end": "2026-07-31",
+          "period_start": "2026-08-01",
+          "period_end": "2026-10-30",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66173,14 +66171,14 @@
         "group_net_income": null,
         "eps_diluted": {
           "metric": "eps_diluted",
-          "value": 4.27,
+          "value": 2.98,
           "unit": "USD/shares",
           "currency": "USD",
-          "period_start": "2026-05-02",
-          "period_end": "2026-07-31",
+          "period_start": "2026-08-01",
+          "period_end": "2026-10-30",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66192,14 +66190,14 @@
         },
         "cash": {
           "metric": "cash",
-          "value": 3172000000.0,
+          "value": 3428000000.0,
           "unit": "USD",
           "currency": "USD",
           "period_start": null,
-          "period_end": "2026-07-31",
+          "period_end": "2026-10-30",
           "period_type": "INSTANT",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66233,14 +66231,14 @@
         "lease_noncurrent": null,
         "issued_shares": {
           "metric": "issued_shares",
-          "value": 561054019.0,
+          "value": 561047916.0,
           "unit": "shares",
           "currency": null,
           "period_start": null,
-          "period_end": "2026-08-25",
+          "period_end": "2026-11-23",
           "period_type": "INSTANT",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "dei",
@@ -66255,11 +66253,11 @@
           "value": 560000000.0,
           "unit": "shares",
           "currency": null,
-          "period_start": "2026-05-02",
-          "period_end": "2026-07-31",
+          "period_start": "2026-08-01",
+          "period_end": "2026-10-30",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66271,14 +66269,14 @@
         },
         "acquisition_cash_paid": {
           "metric": "acquisition_cash_paid",
-          "value": 5000000.0,
+          "value": 40000000.0,
           "unit": "USD",
           "currency": "USD",
           "period_start": "2026-01-31",
-          "period_end": "2026-07-31",
-          "period_type": "HALF_YEAR_OR_YTD",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "period_end": "2026-10-30",
+          "period_type": "NINE_MONTH_YTD",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66290,14 +66288,14 @@
         },
         "stock_based_compensation": {
           "metric": "stock_based_compensation",
-          "value": 132000000.0,
+          "value": 204000000.0,
           "unit": "USD",
           "currency": "USD",
           "period_start": "2026-01-31",
-          "period_end": "2026-07-31",
-          "period_type": "HALF_YEAR_OR_YTD",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "period_end": "2026-10-30",
+          "period_type": "NINE_MONTH_YTD",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66330,17 +66328,17 @@
       },
       "cash_flow": {
         "status": "MATCHED_PERIOD_CASH_FLOW",
-        "period_type": "HALF_YEAR_OR_YTD",
+        "period_type": "NINE_MONTH_YTD",
         "operating_cash_flow": {
           "metric": "operating_cash_flow",
-          "value": 7009000000.0,
+          "value": 8690000000.0,
           "unit": "USD",
           "currency": "USD",
           "period_start": "2026-01-31",
-          "period_end": "2026-07-31",
-          "period_type": "HALF_YEAR_OR_YTD",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "period_end": "2026-10-30",
+          "period_type": "NINE_MONTH_YTD",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66352,14 +66350,14 @@
         },
         "capex": {
           "metric": "capex",
-          "value": 1063000000.0,
+          "value": 1664000000.0,
           "unit": "USD",
           "currency": "USD",
           "period_start": "2026-01-31",
-          "period_end": "2026-07-31",
-          "period_type": "HALF_YEAR_OR_YTD",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "period_end": "2026-10-30",
+          "period_type": "NINE_MONTH_YTD",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66369,7 +66367,7 @@
           "source_type": "PRIMARY_ISSUER_XBRL",
           "concept_preference": 0
         },
-        "simple_fcf": 5946000000.0,
+        "simple_fcf": 7026000000.0,
         "owner_cash_flow": null,
         "owner_cashflow_components": {
           "capitalized_development": null,
@@ -66383,14 +66381,14 @@
         "status": "COMPARABLE_REPORTED_GROWTH",
         "latest": {
           "metric": "revenue",
-          "value": 25956000000.0,
+          "value": 22756000000.0,
           "unit": "USD",
           "currency": "USD",
-          "period_start": "2026-05-02",
-          "period_end": "2026-07-31",
+          "period_start": "2026-08-01",
+          "period_end": "2026-10-30",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66402,14 +66400,14 @@
         },
         "prior_year": {
           "metric": "revenue",
-          "value": 23959000000.0,
+          "value": 20813000000.0,
           "unit": "USD",
           "currency": "USD",
-          "period_start": "2025-05-03",
-          "period_end": "2025-08-01",
+          "period_start": "2025-08-02",
+          "period_end": "2025-10-31",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66419,23 +66417,23 @@
           "source_type": "PRIMARY_ISSUER_XBRL",
           "concept_preference": 0
         },
-        "yoy_pct": 8.335,
-        "previous_quarter_yoy_pct": 10.263,
-        "acceleration_pp": -1.928,
+        "yoy_pct": 9.336,
+        "previous_quarter_yoy_pct": 8.335,
+        "acceleration_pp": 1.001,
         "comparison_note": "Reported results; acquisition and impairment effects are not organic growth."
       },
       "quarterly_earnings": {
         "status": "COMPARABLE_REPORTED_GROWTH",
         "latest": {
           "metric": "net_income",
-          "value": 2392000000.0,
+          "value": 1668000000.0,
           "unit": "USD",
           "currency": "USD",
-          "period_start": "2026-05-02",
-          "period_end": "2026-07-31",
+          "period_start": "2026-08-01",
+          "period_end": "2026-10-30",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66447,14 +66445,14 @@
         },
         "prior_year": {
           "metric": "net_income",
-          "value": 2391000000.0,
+          "value": 1612000000.0,
           "unit": "USD",
           "currency": "USD",
-          "period_start": "2025-05-03",
-          "period_end": "2025-08-01",
+          "period_start": "2025-08-02",
+          "period_end": "2025-10-31",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66464,24 +66462,24 @@
           "source_type": "PRIMARY_ISSUER_XBRL",
           "concept_preference": 0
         },
-        "yoy_pct": 0.042,
-        "previous_quarter_yoy_pct": -0.795,
-        "acceleration_pp": 0.837,
+        "yoy_pct": 3.474,
+        "previous_quarter_yoy_pct": 0.042,
+        "acceleration_pp": 3.432,
         "comparison_note": "Reported results; acquisition and impairment effects are not organic growth."
       },
       "ttm_net_income": null,
-      "issued_share_change_pct": 0.177,
+      "issued_share_change_pct": 0.061,
       "acquisition_adjustments": {
         "reported_acquisition_cash_paid": {
           "metric": "acquisition_cash_paid",
-          "value": 5000000.0,
+          "value": 40000000.0,
           "unit": "USD",
           "currency": "USD",
           "period_start": "2026-01-31",
-          "period_end": "2026-07-31",
-          "period_type": "HALF_YEAR_OR_YTD",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "period_end": "2026-10-30",
+          "period_type": "NINE_MONTH_YTD",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -66493,14 +66491,14 @@
         },
         "amortization": {
           "metric": "intangibles_amortization",
-          "value": 98000000.0,
+          "value": 99000000.0,
           "unit": "USD",
           "currency": "USD",
-          "period_start": "2026-05-02",
-          "period_end": "2026-07-31",
+          "period_start": "2026-08-01",
+          "period_end": "2026-10-30",
           "period_type": "QUARTER",
-          "filed": "2026-08-27",
-          "accession": "0000060667-26-000117",
+          "filed": "2026-11-25",
+          "accession": "0000060667-26-000130",
           "form": "10-Q",
           "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
           "taxonomy": "us-gaap",
@@ -69503,7 +69501,7 @@
             "ticker": "JBH.AX",
             "source_url": "https://assets.ctfassets.net/xa93kvziwaye/rgASLD1fyIMo8wEcBtFIW/89a744e4b012e86593f446b587d8c87f/Appendix_4E_and_Financial_Report_2026_Full_Year.pdf",
             "source_document_sha256": "7260eb2f92d32b1c542fd0475c32bc8450abe06335bde686f9b83bf32ca44b96",
-            "observed_utc": "2026-11-24T19:42:52.497229+00:00",
+            "observed_utc": "2026-11-26T14:47:09.305083+00:00",
             "source_registration": {
               "url": "https://assets.ctfassets.net/xa93kvziwaye/rgASLD1fyIMo8wEcBtFIW/89a744e4b012e86593f446b587d8c87f/Appendix_4E_and_Financial_Report_2026_Full_Year.pdf",
               "kind": "ANNUAL_CANDIDATE",
@@ -69661,7 +69659,7 @@
             "ticker": "REA.AX",
             "source_url": "https://onlinereports.irmau.com/2026/REA/",
             "source_document_sha256": "840ce4a1c0814d998421b58dfc37fe0a22cf750d60eae5a35ed59dbf5b0a853f",
-            "observed_utc": "2026-11-24T19:42:59.169490+00:00",
+            "observed_utc": "2026-11-26T14:47:11.411822+00:00",
             "source_registration": {
               "url": "https://onlinereports.irmau.com/2026/REA/",
               "kind": "ANNUAL_HTML",
@@ -70594,17 +70592,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 7.3152,
-          "base": 14.6505,
-          "bull": 23.0622
+          "bear": 7.321,
+          "base": 14.6622,
+          "bull": 23.0806
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 2223247468.13,
-          "median_annual_net_income_filed": 1824247051.22,
+          "cashflow_median_of_filed_years": 2225018216.55,
+          "median_annual_net_income_filed": 1825700008.05,
           "historical_fcf_cagr_observed_pct": 42.204,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2478592729.22,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2480566852.3,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -73853,17 +73851,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 39.004,
-          "base": 78.0467,
-          "bull": 122.7988
+          "bear": 39.0808,
+          "base": 78.2005,
+          "bull": 123.0407
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 5360202774.91,
-          "median_annual_net_income_filed": 4435935313.99,
+          "cashflow_median_of_filed_years": 5370761690.79,
+          "median_annual_net_income_filed": 4444673540.84,
           "historical_fcf_cagr_observed_pct": 24.714,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 5472015144.87,
+          "illustrative_next_year_net_income_not_issuer_guidance": 5482794316.86,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -75719,17 +75717,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 22.0957,
-          "base": 43.8005,
-          "bull": 68.5626
+          "bear": 22.12,
+          "base": 43.8486,
+          "bull": 68.6379
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 5609716127.16,
-          "median_annual_net_income_filed": 5078956161.26,
+          "cashflow_median_of_filed_years": 5615874650.06,
+          "median_annual_net_income_filed": 5084531999.17,
           "historical_fcf_cagr_observed_pct": 20.841,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 8481061745.97,
+          "illustrative_next_year_net_income_not_issuer_guidance": 8490372522.45,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -75778,9 +75776,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 66.8933,
-          "base": 93.6506,
-          "bull": 120.4079
+          "bear": 66.9667,
+          "base": 93.7534,
+          "bull": 120.5401
         },
         "currency": "USD",
         "source": {
@@ -78730,14 +78728,14 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 40.6039,
-          "base": 60.6422,
-          "bull": 77.8241
+          "bear": 40.5845,
+          "base": 60.6132,
+          "bull": 77.7869
         },
         "assumptions": {
           "formula": "BOOK_VALUE_PER_SHARE \u00d7 (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-          "book_value_per_share_primary": 69.825881,
-          "median_annual_net_income_primary": 11258614062.07,
+          "book_value_per_share_primary": 69.792503,
+          "median_annual_net_income_primary": 11253232259.27,
           "normalized_roe_assumption_from_filed_history_pct": 12.031,
           "discount_rates_pct": {
             "bear": 17,
@@ -79152,14 +79150,14 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 29.4498,
-          "base": 43.9834,
-          "bull": 56.4454
+          "bear": 29.4357,
+          "base": 43.9624,
+          "bull": 56.4184
         },
         "assumptions": {
           "formula": "BOOK_VALUE_PER_SHARE \u00d7 (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-          "book_value_per_share_primary": 53.199176,
-          "median_annual_net_income_primary": 9866053160.88,
+          "book_value_per_share_primary": 53.173746,
+          "median_annual_net_income_primary": 9861337025.11,
           "normalized_roe_assumption_from_filed_history_pct": 11.549,
           "discount_rates_pct": {
             "bear": 17,
@@ -80104,17 +80102,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 7.3707,
-          "base": 13.7467,
-          "bull": 20.8204
+          "bear": 7.3672,
+          "base": 13.7401,
+          "bull": 20.8104
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 4384756263.49,
-          "median_annual_net_income_filed": 3829278802.28,
+          "cashflow_median_of_filed_years": 4382660277.84,
+          "median_annual_net_income_filed": 3827448343.99,
           "historical_fcf_cagr_observed_pct": -20.586,
           "assumed_forward_growth_capped_pct": -5.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 4723949082.85,
+          "illustrative_next_year_net_income_not_issuer_guidance": 4721690957.45,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -80163,9 +80161,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 22.641,
-          "base": 31.6974,
-          "bull": 40.7538
+          "bear": 22.6302,
+          "base": 31.6822,
+          "bull": 40.7343
         },
         "currency": "USD",
         "source": {
@@ -80634,17 +80632,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 20.532,
-          "base": 36.6514,
-          "bull": 53.9756
+          "bear": 20.5222,
+          "base": 36.6339,
+          "bull": 53.9498
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 2520391088.28,
-          "median_annual_net_income_filed": 3458726116.12,
+          "cashflow_median_of_filed_years": 2519186299.86,
+          "median_annual_net_income_filed": 3457072788.12,
           "historical_fcf_cagr_observed_pct": -4.693,
           "assumed_forward_growth_capped_pct": -4.693,
-          "illustrative_next_year_net_income_not_issuer_guidance": 3163050229.98,
+          "illustrative_next_year_net_income_not_issuer_guidance": 3161538239.91,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -80693,9 +80691,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 53.2274,
-          "base": 74.5184,
-          "bull": 95.8093
+          "bear": 53.202,
+          "base": 74.4827,
+          "bull": 95.7635
         },
         "currency": "USD",
         "source": {
@@ -81045,17 +81043,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 10.6448,
-          "base": 18.6591,
-          "bull": 27.1453
+          "bear": 10.6397,
+          "base": 18.6502,
+          "bull": 27.1323
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 1635142830.46,
-          "median_annual_net_income_filed": 2687737462.67,
+          "cashflow_median_of_filed_years": 1634361205.28,
+          "median_annual_net_income_filed": 2686452679.93,
           "historical_fcf_cagr_observed_pct": -5.133,
           "assumed_forward_growth_capped_pct": -5.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2766101972.86,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2764779730.6,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -81104,9 +81102,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 31.7114,
-          "base": 44.396,
-          "bull": 57.0806
+          "bear": 31.6963,
+          "base": 44.3748,
+          "bull": 57.0533
         },
         "currency": "USD",
         "source": {
@@ -83833,7 +83831,7 @@
     {
       "ticker": "ENB",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -32.49,
+      "base_upside_pct": -32.52,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -83981,7 +83979,7 @@
     {
       "ticker": "CNI",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -41.05,
+      "base_upside_pct": -41.07,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -84275,7 +84273,7 @@
     {
       "ticker": "CP",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -52.36,
+      "base_upside_pct": -52.38,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -84400,7 +84398,7 @@
     {
       "ticker": "SAP",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -55.27,
+      "base_upside_pct": -55.22,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -84894,7 +84892,7 @@
     {
       "ticker": "SPOT",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -73.83,
+      "base_upside_pct": -73.8,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
