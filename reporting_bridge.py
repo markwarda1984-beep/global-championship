@@ -2,7 +2,6 @@
 import argparse
 import hashlib
 import json
-import math
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -38,6 +37,8 @@ def publish(root=ROOT, mode='scan'):
     weekly = read('dynamic_earnings_92_weekly.json')
     priority = read('priority_quotes_90.json')
     april = read('april_2026_valuation_comparison.json')
+    radar = read('discovery_latest.json')
+    radar_watchlist = read('discovery_watchlist.json')
     by = lambda d, k='companies': d.get(k, {}) if isinstance(d.get(k), dict) else {r['ticker']: r for r in d.get(k, [])}
     ds, ss, ls, es = by(dyn), by(sessions), by(legacy, 'stocks'), by(entries)
     now = datetime.now(timezone.utc).isoformat()
@@ -96,6 +97,9 @@ def publish(root=ROOT, mode='scan'):
     if len(rows)!=200 or len({r['ticker'] for r in rows})!=200: raise ValueError('Expected 200 unique original stocks')
     chunks('dashboard', rows)
     chunks('discovery', discovery)
+    candidates=radar_watchlist.get('candidates', {})
+    chunks('discovery_candidates', list(candidates.values()) if isinstance(candidates,dict) else candidates)
+    write('discovery_radar_summary.json', envelope(source_as_of_utc=radar.get('published_at_utc'), missing=not bool(radar), summary={k:v for k,v in radar.items() if k not in ('active_watchlist','orders_enabled')}, source='reports/discovery_latest.json'))
     ranked=sorted((r for r in rows if r['pct_above_entry'] is not None), key=lambda r:(abs(r['pct_above_entry']),r['ticker']))
     # Explicit legacy evidence gate; newer scenario values never become invented entry limits.
     chunks('closest_top30', [dict(r,rank=i+1) for i,r in enumerate(ranked[:30])])
