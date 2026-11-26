@@ -8,6 +8,7 @@ class ReportingBridgeTests(unittest.TestCase):
     def fixture(self, root):
         reports=root/'reports';reports.mkdir()
         rows=[{'ticker':f'T{i:03}', 'universe':'ORIGINAL_200','price':10,'currency':'USD','quote_date':'2026-11-25','scenarios':{'base':20},'assessment_status':'SUPPORTED','missing_inputs':[]} for i in range(200)]
+        rows.append({'ticker':'DUG.AX','universe':'DISCOVERY','priority_entry':{'operator':'<=','threshold':1.5,'currency':'AUD'}})
         for name,value in {
             'valuation_90_latest.json':{'companies':rows},
             'dynamic_earnings_92_latest.json':{'companies':[], 'coverage_comparison':{'all_200_assessed':200}},
@@ -26,6 +27,9 @@ class ReportingBridgeTests(unittest.TestCase):
             self.assertTrue(all(p.stat().st_size<LIMIT for p in out.glob('*.json')))
             idx=json.loads((out/'dashboard.json').read_text())
             rows=[r for part in idx['chunks'] for r in json.loads((root/part['path']).read_text())['rows']]
+            priority=json.loads((out/'priority_quotes_001.json').read_text())['rows']
+            self.assertEqual(priority[0]['ticker'],'DUG.AX')
+            self.assertEqual(priority[0]['priority_entry']['threshold'],1.5)
             self.assertEqual(rows[0]['entry_limit'],8)
             self.assertEqual(rows[0]['pct_above_entry'],25)
             self.assertIsNone(rows[1]['entry_limit'])
@@ -44,5 +48,5 @@ class ReportingBridgeTests(unittest.TestCase):
             path=reports/'valuation_90_latest.json';data=json.loads(path.read_text())
             data['orders_enabled']=True;path.write_text(json.dumps(data))
             with self.assertRaises(ValueError):publish(root)
-            data.pop('orders_enabled');data['companies'].pop();path.write_text(json.dumps(data))
+            data.pop('orders_enabled');data['companies'].pop(0);path.write_text(json.dumps(data))
             with self.assertRaises(ValueError):publish(root)
