@@ -2,7 +2,7 @@
 
 Supported: **103/200**. Still unresolved: **97**.
 
-This batch processed **20** cases; retrieved **66** sources. Newly supported: **none**.
+This batch processed **20** cases; retrieved **72** sources. Newly supported: **none**.
 
 Six bounded batches daily at 00:45, 04:45, 08:45, 12:45, 16:45 and 20:45 Australia/Sydney.
 
@@ -110,4 +110,5 @@ Known parsers process verified issuer fields. New valuation methods and unverifi
 | BTDR | ISSUER_IDENTITY_REVIEW_REQUIRED | MIXED_OR_MISSING_STATEMENT_CURRENCY |
 | DUG.AX | ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED | DATED_DIRECTIONAL_FX_REQUIRED |
 | EOS.AX | ISSUER_TABLE_EXTRACTION_REVIEW_REQUIRED | CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED |
+| MDA.TO | ISSUER_IDENTITY_REVIEW_REQUIRED | CURRENT_PRIMARY_STATEMENT_SERIES_REQUIRED |
 | PENG | ISSUER_IDENTITY_REVIEW_REQUIRED | PRIMARY_SHARE_BASIS_CHANGE_OVER_15PCT_SPLIT_OR_DILUTION_REVIEW |
