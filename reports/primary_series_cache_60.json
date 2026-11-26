@@ -1,6 +1,6 @@
 {
   "schema_version": "6.0-primary-series-cache-1",
-  "published_at_utc": "2026-11-26T00:27:47.153102+00:00",
+  "published_at_utc": "2026-11-26T03:35:23.059474+00:00",
   "source": "SEC issuer-filed XBRL companyfacts; bounded incremental research",
   "original_200_unchanged": true,
   "companies": {
@@ -115950,14 +115950,8 @@
     "CCJ"
   ],
   "research_priority_is_not_a_buy_signal": true,
-  "remaining_eligible_uncached_before_run": 5,
-  "selected_issuer_tickers": [
-    "AMZN",
-    "AVGO",
-    "PENG",
-    "BTDR",
-    "IBN"
-  ],
+  "remaining_eligible_uncached_before_run": 0,
+  "selected_issuer_tickers": [],
   "non_sec_listed_tickers": [
     "BHP.AX",
     "CAT.AX",
@@ -116000,7 +115994,8 @@
     "PLS.AX",
     "TCEHY",
     "DUG.AX",
-    "EOS.AX"
+    "EOS.AX",
+    "MDA.TO"
   ],
   "temporary_failures": {
     "IBN": {
@@ -116008,33 +116003,8 @@
       "retry_after_utc": "2026-11-27T00:27:47.153102+00:00"
     }
   },
-  "run_attempts": [
-    {
-      "ticker": "AMZN",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "AVGO",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 10
-    },
-    {
-      "ticker": "PENG",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 12
-    },
-    {
-      "ticker": "BTDR",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 0
-    },
-    {
-      "ticker": "IBN",
-      "status": "SEC_HTTP_404"
-    }
-  ],
-  "update_status": "PARTIAL_OR_UNAVAILABLE",
+  "run_attempts": [],
+  "update_status": "NO_REFRESH_DUE",
   "available_company_records": 161,
-  "non_sec_listed_count": 42
+  "non_sec_listed_count": 43
 }
