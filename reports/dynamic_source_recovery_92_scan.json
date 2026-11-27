@@ -1,12 +1,12 @@
 {
   "schema_version": "9.2-primary-source-recovery-1",
-  "published_at_utc": "2026-11-27T16:26:41.391455+00:00",
+  "published_at_utc": "2026-11-27T18:40:05.630978+00:00",
   "baseline_outstanding_count": 111,
   "missing_current_statement_priority_count": 34,
   "outstanding_companies_assessed": 111,
   "structured_primary_recovered": 78,
   "primary_documents_retrieved": 34,
-  "three_statement_sections_detected_unreviewed": 32,
+  "three_statement_sections_detected_unreviewed": 33,
   "remaining_model_count": 97,
   "companies": {
     "BABA": {
@@ -784,7 +784,7 @@
           "ticker": "MIN.AX",
           "source_url": "https://cdn.sanity.io/files/o6ep64o3/production/5208cb60acd5a97e58ecc7c12ab409dd40d7abbd.pdf",
           "source_document_sha256": "1abf2dacd23dd62e5d7f49666ce35a2c4be883f6d2a2e7f1c93b5a7524f5cdfa",
-          "observed_utc": "2026-11-24T19:45:13.155703+00:00",
+          "observed_utc": "2026-11-27T18:36:22.261310+00:00",
           "source_registration": {
             "url": "https://cdn.sanity.io/files/o6ep64o3/production/5208cb60acd5a97e58ecc7c12ab409dd40d7abbd.pdf",
             "kind": "ANNUAL_CANDIDATE",
@@ -2526,8 +2526,8 @@
         {
           "ticker": "RMD.AX",
           "source_url": "https://investor.resmed.com/sec-filings/content/0000943819-26-000047/rmd-20260630.htm",
-          "source_document_sha256": "73395d5e696f4e6b5f974af0a53bb6b28af63b8a5b03d8948e2d7bf1da2a7316",
-          "observed_utc": "2026-11-24T19:45:19.521909+00:00",
+          "source_document_sha256": "4cbae0c3263af0663c499ae74597b892a1c9a65020bafac6765a54d007071719",
+          "observed_utc": "2026-11-27T18:36:25.553932+00:00",
           "source_registration": {
             "url": "https://investor.resmed.com/sec-filings/content/0000943819-26-000047/rmd-20260630.htm",
             "kind": "PRIMARY_10K_CURRENT_STATEMENTS_AND_CDI_TERMS",
@@ -2535,15 +2535,31 @@
           },
           "format": "HTML",
           "page_count": null,
-          "statement_sections_detected": {},
-          "all_three_sections_detected": false,
+          "statement_sections_detected": {
+            "income": {
+              "page": null,
+              "locator": "statement income",
+              "heading_excerpt": "ng a 15% corporate minimum income tax on adjusted financial statement income for companies whose average adjusted net income for any consecutive three-year period beginning after December 31, 2022 exceeds $1.0 billion. While we do not anticipate any materially adverse impacts to our effective tax rate, we cannot provide any assurances that these provisions will not have a m"
+            },
+            "balance": {
+              "page": null,
+              "locator": "balance sheet",
+              "heading_excerpt": "ed tax asset. The realizability assessments made at a given balance sheet date are subject to change in the future, particularly if earnings of a subsidiary are significantly higher or lower than expected, or if we take operational or tax planning actions that could impact the future taxable earnings of a subsidiary. The calculation of our tax liabilities involves dealin"
+            },
+            "cash_flow": {
+              "page": null,
+              "locator": "consolidated statements of cash flow",
+              "heading_excerpt": "ative instruments are presented in the same category on the consolidated statements of cash flows as the hedged item. The purpose of the cross-currency swaps for the fair value hedge is to mitigate foreign currency risk associated with changes in spot rates on foreign denominated intercompany debt between USD and EUR. For these hedges, we excluded certain components from the assessment of hedg"
+            }
+          },
+          "all_three_sections_detected": true,
           "issuer_identity_review_required": true,
           "financial_table_values_reviewed": false,
           "counts_toward_supported_valuation_coverage": false,
           "content_excerpt": "August 13, 2026 - 10-K: Annual report [Section 13 and 15(d), not S-K Item 405] | ResMed Inc. (RMD) August 13, 2026 >\r\n                                                                Form 10-K >\r\n                                                                ResMed Inc. Document Links Form: 10-K Annual report [Section 13 and 15(d), not S-K Item 405] August 13, 2026 Documents 10-K \u00bb EX-21.1 \u00bb EX-23.1 \u00bb EX-31.1 \u00bb EX-31.2 \u00bb EX-32.1 \u00bb 10-K: Annual report [Section 13 and 15(d), not S-K Item 405] Publ"
         }
       ],
-      "all_three_statement_sections_detected": false,
+      "all_three_statement_sections_detected": true,
       "identity_review": null,
       "remaining_model_inputs": [],
       "financial_model_supported": true,
