@@ -1,6 +1,6 @@
 {
   "schema_version": "6.0-primary-series-cache-1",
-  "published_at_utc": "2026-11-27T00:32:09.700770+00:00",
+  "published_at_utc": "2026-11-27T03:37:58.102052+00:00",
   "source": "SEC issuer-filed XBRL companyfacts; bounded incremental research",
   "original_200_unchanged": true,
   "companies": {
@@ -115950,19 +115950,8 @@
     "CCJ"
   ],
   "research_priority_is_not_a_buy_signal": true,
-  "remaining_eligible_uncached_before_run": 10,
-  "selected_issuer_tickers": [
-    "NVDA",
-    "MSFT",
-    "GOOGL",
-    "META",
-    "CRM",
-    "SHEL",
-    "BP",
-    "OXY",
-    "TSM",
-    "IBN"
-  ],
+  "remaining_eligible_uncached_before_run": 0,
+  "selected_issuer_tickers": [],
   "non_sec_listed_tickers": [
     "BHP.AX",
     "CAT.AX",
@@ -116014,58 +116003,8 @@
       "retry_after_utc": "2026-11-28T00:32:09.700770+00:00"
     }
   },
-  "run_attempts": [
-    {
-      "ticker": "NVDA",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "MSFT",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 12
-    },
-    {
-      "ticker": "GOOGL",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "META",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "CRM",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "SHEL",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 0
-    },
-    {
-      "ticker": "BP",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 0
-    },
-    {
-      "ticker": "OXY",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 11
-    },
-    {
-      "ticker": "TSM",
-      "status": "SEC_PRIMARY_SERIES_COLLECTED",
-      "annual_fcf_periods": 0
-    },
-    {
-      "ticker": "IBN",
-      "status": "SEC_HTTP_404"
-    }
-  ],
-  "update_status": "PARTIAL_OR_UNAVAILABLE",
+  "run_attempts": [],
+  "update_status": "NO_REFRESH_DUE",
   "available_company_records": 161,
   "non_sec_listed_count": 43
 }
