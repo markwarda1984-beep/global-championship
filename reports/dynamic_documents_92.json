@@ -842,7 +842,7 @@
       "ticker": "SCG.AX",
       "source_url": "https://announcements.asx.com.au/asxpdf/20260224/pdf/06wnx8rm6sy9jx.pdf",
       "source_document_sha256": "1b25357bd9d2e245b712bc4ba6e7bb1108c84c6a05d18fecd2a0e54a5ed13edf",
-      "observed_utc": "2026-11-24T19:43:34.878321+00:00",
+      "observed_utc": "2026-11-27T02:44:57.671128+00:00",
       "source_registration": {
         "url": "https://announcements.asx.com.au/asxpdf/20260224/pdf/06wnx8rm6sy9jx.pdf",
         "kind": "ANNUAL",
@@ -1689,7 +1689,7 @@
     "eec7302ef3cd5aa861f7e1044d410ef6ce93815a2a8e21cc490b4f5c3ca59f72": {
       "ticker": "SCG.AX",
       "source_url": "https://announcements.asx.com.au/asxpdf/20260224/pdf/06wnx8rm6sy9jx.pdf",
-      "attempted_at_utc": "2026-11-24T19:43:34.878321+00:00",
+      "attempted_at_utc": "2026-11-27T02:44:57.671128+00:00",
       "status": "PRIMARY_DOCUMENT_RETRIEVED_REVIEW_REQUIRED"
     },
     "c2aa41af4463de318b4dfa94789d8420ccd710fcaf338f09142f93b642df567c": {
@@ -1701,8 +1701,10 @@
     "ba1348036621b0914ed5e64e3b7746e563d0c585eed4e6e070296d502d30b6c0": {
       "ticker": "ALL.AX",
       "source_url": "https://ir.aristocrat.com/static-files/763a9203-f50f-4a86-b970-5eb9bc48c4e2",
-      "attempted_at_utc": "2026-11-24T19:43:45.986654+00:00",
-      "status": "PRIMARY_DOCUMENT_RETRIEVED_REVIEW_REQUIRED"
+      "attempted_at_utc": "2026-11-27T02:45:02.419368+00:00",
+      "status": "SOURCE_UNAVAILABLE_OR_REVIEW_REQUIRED",
+      "reason": "PROVIDER_COOLDOWN_HTTP_403",
+      "retry_after_utc": "2026-11-28T02:45:02.419368+00:00"
     },
     "286a517b893ee5b7e362ddbb95da09628cfc7ea5fe6d95484308d825407d2f23": {
       "ticker": "STO.AX",
@@ -1840,6 +1842,7 @@
   "orders_enabled": false,
   "provider_cooldowns": {
     "docs.publicnow.com": "2026-11-25T19:45:03.206219+00:00",
-    "greenvaleenergy.com.au": "2026-11-26T22:40:14.176946+00:00"
+    "greenvaleenergy.com.au": "2026-11-26T22:40:14.176946+00:00",
+    "ir.aristocrat.com": "2026-11-28T02:45:02.419368+00:00"
   }
 }
