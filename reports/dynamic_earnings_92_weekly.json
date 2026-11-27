@@ -1,6 +1,6 @@
 {
   "schema_version": "9.2-dynamic-earnings-1",
-  "published_at_utc": "2026-11-27T06:49:28.065448+00:00",
+  "published_at_utc": "2026-11-27T10:44:16.330038+00:00",
   "mode": "weekly",
   "coverage_comparison": {
     "baseline_supported": 89,
@@ -407,15 +407,15 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 14.8775,
-          "base": 24.4417,
-          "bull": 34.2183
+          "bear": 14.8676,
+          "base": 24.4254,
+          "bull": 34.1955
         },
         "assumptions": {
           "formula": "(MEDIAN_7Y_EARNINGS + MEDIAN_7Y_FREE_CASH_FLOW)/2 \u00f7 capitalization_yield \u00f7 diluted_shares",
           "annual_years": 7,
-          "earnings_median_filed": 13526695900.68,
-          "fcf_median_filed": 17771129806.76,
+          "earnings_median_filed": 13517677554.37,
+          "fcf_median_filed": 17759281665.56,
           "capitalization_yields_pct": {
             "bear": 18,
             "base": 12,
@@ -5452,17 +5452,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 114.7311,
-          "base": 226.4005,
-          "bull": 353.502
+          "bear": 114.6556,
+          "base": 226.2514,
+          "bull": 353.2692
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 8955288913.73,
-          "median_annual_net_income_filed": 8464571598.01,
+          "cashflow_median_of_filed_years": 8949391095.16,
+          "median_annual_net_income_filed": 8458996958.48,
           "historical_fcf_cagr_observed_pct": 15.443,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 11400803428.68,
+          "illustrative_next_year_net_income_not_issuer_guidance": 11393295031.04,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -26379,17 +26379,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 25.1339,
-          "base": 55.6875,
-          "bull": 92.2336
+          "bear": 25.1174,
+          "base": 55.6509,
+          "bull": 92.1729
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 1624738996.98,
-          "median_annual_net_income_filed": 388882761.96,
+          "cashflow_median_of_filed_years": 1623668968.32,
+          "median_annual_net_income_filed": 388626649.62,
           "historical_fcf_cagr_observed_pct": 415.215,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2624365432.21,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2622637064.61,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -26438,9 +26438,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 115.4564,
-          "base": 161.639,
-          "bull": 207.8216
+          "bear": 115.3804,
+          "base": 161.5326,
+          "bull": 207.6847
         },
         "currency": "USD",
         "source": {
@@ -37075,15 +37075,15 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 2.1096,
-          "base": 3.4658,
-          "bull": 4.8522
+          "bear": 2.1081,
+          "base": 3.4634,
+          "bull": 4.8487
         },
         "assumptions": {
           "formula": "(MEDIAN_7Y_EARNINGS + MEDIAN_7Y_FREE_CASH_FLOW)/2 \u00f7 capitalization_yield \u00f7 diluted_shares",
           "annual_years": 7,
-          "earnings_median_filed": 62813250.88,
-          "fcf_median_filed": 317511840.4,
+          "earnings_median_filed": 62768259.44,
+          "fcf_median_filed": 317284415.26,
           "capitalization_yields_pct": {
             "bear": 18,
             "base": 12,
@@ -41094,17 +41094,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 11.3899,
-          "base": 20.4792,
-          "bull": 30.3
+          "bear": 11.381,
+          "base": 20.4632,
+          "bull": 30.2763
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 10327660583.93,
-          "median_annual_net_income_filed": 13570169039.77,
+          "cashflow_median_of_filed_years": 10319576648.85,
+          "median_annual_net_income_filed": 13559547044.14,
           "historical_fcf_cagr_observed_pct": -4.047,
           "assumed_forward_growth_capped_pct": -4.047,
-          "illustrative_next_year_net_income_not_issuer_guidance": 14445098801.46,
+          "illustrative_next_year_net_income_not_issuer_guidance": 14433791958.06,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -68428,7 +68428,7 @@
             "ticker": "IAG.AX",
             "source_url": "https://cdn2.app.viostream.com/a782012a-cb4c-4683-beb6-ad9c0065cb95/assets/eb6c4ed3-9c7a-4be6-9954-c3e2e7809fe2.pdf?response-content-disposition=inline%3Bfilename%3DFY26_Appendix_4E_and_Annual_Report.pdf",
             "source_document_sha256": "77bc7b540a4159f624d47c81a1c57cee6804081998de225b7a62097f38fa70fe",
-            "observed_utc": "2026-11-24T19:44:28.180894+00:00",
+            "observed_utc": "2026-11-27T10:40:35.859721+00:00",
             "source_registration": {
               "url": "https://cdn2.app.viostream.com/a782012a-cb4c-4683-beb6-ad9c0065cb95/assets/eb6c4ed3-9c7a-4be6-9954-c3e2e7809fe2.pdf?response-content-disposition=inline%3Bfilename%3DFY26_Appendix_4E_and_Annual_Report.pdf",
               "period": "2026-06-30",
@@ -70592,17 +70592,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 7.2822,
-          "base": 14.5844,
-          "bull": 22.9581
+          "bear": 7.2773,
+          "base": 14.5747,
+          "bull": 22.9428
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 2213212816.63,
-          "median_annual_net_income_filed": 1816013292.41,
+          "cashflow_median_of_filed_years": 2211737251.58,
+          "median_annual_net_income_filed": 1814802543.18,
           "historical_fcf_cagr_observed_pct": 42.204,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2467405574.11,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2465760536.91,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -73795,7 +73795,7 @@
             "ticker": "TCEHY",
             "source_url": "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf",
             "source_document_sha256": "2a7547168077c3d9994af673125e77612e8656bc0f17ad189371d7e4088f4e98",
-            "observed_utc": "2026-11-24T19:44:09.721169+00:00",
+            "observed_utc": "2026-11-27T10:40:32.223036+00:00",
             "source_registration": {
               "url": "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf",
               "period": "2025-12-31",
@@ -73851,17 +73851,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 39.0063,
-          "base": 78.0514,
-          "bull": 122.8062
+          "bear": 39.0532,
+          "base": 78.1453,
+          "bull": 122.9538
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 5360524225.78,
-          "median_annual_net_income_filed": 4436201336.62,
+          "cashflow_median_of_filed_years": 5366968677.0,
+          "median_annual_net_income_filed": 4441534561.87,
           "historical_fcf_cagr_observed_pct": 24.714,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 5472343301.12,
+          "illustrative_next_year_net_income_not_issuer_guidance": 5478922181.84,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -75717,17 +75717,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 22.1346,
-          "base": 43.8775,
-          "bull": 68.6831
+          "bear": 22.12,
+          "base": 43.8486,
+          "bull": 68.6379
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 5619575618.03,
-          "median_annual_net_income_filed": 5087882802.25,
+          "cashflow_median_of_filed_years": 5615874650.06,
+          "median_annual_net_income_filed": 5084531999.17,
           "historical_fcf_cagr_observed_pct": 20.841,
           "assumed_forward_growth_capped_pct": 8.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 8495967839.07,
+          "illustrative_next_year_net_income_not_issuer_guidance": 8490372522.45,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -75776,9 +75776,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 67.0109,
-          "base": 93.8152,
-          "bull": 120.6196
+          "bear": 66.9667,
+          "base": 93.7534,
+          "bull": 120.5401
         },
         "currency": "USD",
         "source": {
@@ -78728,14 +78728,14 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 40.5816,
-          "base": 60.6089,
-          "bull": 77.7815
+          "bear": 40.5526,
+          "base": 60.5655,
+          "bull": 77.7258
         },
         "assumptions": {
           "formula": "BOOK_VALUE_PER_SHARE \u00d7 (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-          "book_value_per_share_primary": 69.787602,
-          "median_annual_net_income_primary": 11252442024.71,
+          "book_value_per_share_primary": 69.737615,
+          "median_annual_net_income_primary": 11244382204.77,
           "normalized_roe_assumption_from_filed_history_pct": 12.031,
           "discount_rates_pct": {
             "bear": 17,
@@ -79150,14 +79150,14 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 29.4336,
-          "base": 43.9593,
-          "bull": 56.4144
+          "bear": 29.4125,
+          "base": 43.9278,
+          "bull": 56.374
         },
         "assumptions": {
           "formula": "BOOK_VALUE_PER_SHARE \u00d7 (NORMALIZED_ROE - g)/(COST_OF_EQUITY-g)",
-          "book_value_per_share_primary": 53.170012,
-          "median_annual_net_income_primary": 9860644533.46,
+          "book_value_per_share_primary": 53.131928,
+          "median_annual_net_income_primary": 9853581620.42,
           "normalized_roe_assumption_from_filed_history_pct": 11.549,
           "discount_rates_pct": {
             "bear": 17,
@@ -80102,17 +80102,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 7.3667,
-          "base": 13.7392,
-          "bull": 20.8089
+          "bear": 7.3614,
+          "base": 13.7293,
+          "bull": 20.794
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 4382352514.74,
-          "median_annual_net_income_filed": 3827179569.48,
+          "cashflow_median_of_filed_years": 4379213554.14,
+          "median_annual_net_income_filed": 3824438264.25,
           "historical_fcf_cagr_observed_pct": -20.586,
           "assumed_forward_growth_capped_pct": -5.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 4721359386.63,
+          "illustrative_next_year_net_income_not_issuer_guidance": 4717977604.58,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -80161,9 +80161,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 22.6286,
-          "base": 31.68,
-          "bull": 40.7314
+          "bear": 22.6124,
+          "base": 31.6573,
+          "bull": 40.7022
         },
         "currency": "USD",
         "source": {
@@ -80632,17 +80632,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 20.5207,
-          "base": 36.6314,
-          "bull": 53.946
+          "bear": 20.506,
+          "base": 36.6051,
+          "bull": 53.9073
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 2519009395.3,
-          "median_annual_net_income_filed": 3456830022.45,
+          "cashflow_median_of_filed_years": 2517205096.99,
+          "median_annual_net_income_filed": 3454353988.59,
           "historical_fcf_cagr_observed_pct": -4.693,
           "assumed_forward_growth_capped_pct": -4.693,
-          "illustrative_next_year_net_income_not_issuer_guidance": 3161316227.54,
+          "illustrative_next_year_net_income_not_issuer_guidance": 3159051862.21,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -80691,9 +80691,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 53.1982,
-          "base": 74.4775,
-          "bull": 95.7568
+          "bear": 53.1601,
+          "base": 74.4242,
+          "bull": 95.6882
         },
         "currency": "USD",
         "source": {
@@ -81043,17 +81043,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 10.6389,
-          "base": 18.6489,
-          "bull": 27.1304
+          "bear": 10.6313,
+          "base": 18.6355,
+          "bull": 27.111
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 1634246435.7,
-          "median_annual_net_income_filed": 2686264029.44,
+          "cashflow_median_of_filed_years": 1633075869.17,
+          "median_annual_net_income_filed": 2684339931.16,
           "historical_fcf_cagr_observed_pct": -5.133,
           "assumed_forward_growth_capped_pct": -5.0,
-          "illustrative_next_year_net_income_not_issuer_guidance": 2764585579.76,
+          "illustrative_next_year_net_income_not_issuer_guidance": 2762605381.87,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -81102,9 +81102,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 31.6941,
-          "base": 44.3717,
-          "bull": 57.0493
+          "bear": 31.6713,
+          "base": 44.3399,
+          "bull": 57.0084
         },
         "currency": "USD",
         "source": {
@@ -83831,7 +83831,7 @@
     {
       "ticker": "ENB",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -32.52,
+      "base_upside_pct": -32.57,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -83979,7 +83979,7 @@
     {
       "ticker": "CNI",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -41.08,
+      "base_upside_pct": -41.12,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -84273,7 +84273,7 @@
     {
       "ticker": "CP",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -52.39,
+      "base_upside_pct": -52.42,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -84398,7 +84398,7 @@
     {
       "ticker": "SAP",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -55.19,
+      "base_upside_pct": -55.22,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
@@ -84892,7 +84892,7 @@
     {
       "ticker": "SPOT",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -73.78,
+      "base_upside_pct": -73.8,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
