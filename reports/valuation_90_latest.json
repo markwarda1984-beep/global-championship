@@ -1,6 +1,6 @@
 {
   "schema_version": "9.0-research-1",
-  "published_at_utc": "2026-11-27T06:23:45.943444+00:00",
+  "published_at_utc": "2026-11-27T06:51:10.860924+00:00",
   "mode": "scan",
   "original_watchlist_count": 200,
   "reported_count": 206,
@@ -36,7 +36,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 8.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001577552.json",
-        "primary_evidence_hash": "0151f405d2ab197f33ce8722e7e62741a4c831c342b5f93d36a39ca52ce9f330",
+        "primary_evidence_hash": "0608644ca3c5620bd34414ecbd24b950508867d4a67e1766b50dcf5d1e98e86b",
         "fx_rate": 0.150089293718338,
         "fx_source": {
           "from": "CNY",
@@ -62,7 +62,7 @@
             "ordinary_shares_outstanding": 1858037427.0
           },
           "facts_sha256": "bff87c4ef716265a1c5b7ea183c6f9b937daec08859bd7d940a7e44fa7355f83",
-          "source_document_sha256": "20a86efaf80ac67543c27f24a47ee74544630eb43119a619d61a91f6923312bc",
+          "source_document_sha256": "a535a1b2423a710aa4fe5c04a341f42c9409cb986ef0ec5a7bd48f6bcec75371",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "KD Counter) 89988 (RMB Counter) The Stock Exchange of Hong Kong Limited American Depositary Shares, each representing eight Ordinary Shares BABA New York Stock Exchange Securities "
         },
@@ -957,7 +957,7 @@
       "price": 342.34,
       "currency": "USD",
       "quote_date": "2026-11-25T00:00:00",
-      "price_source": "DATED_DAILY_BARS_NOT_LIVE",
+      "price_source": "LAST_SUCCESSFUL_DATED_SNAPSHOT_FALLBACK_NOT_LIVE",
       "scenarios": null,
       "base_upside_pct": null,
       "preferred_25_50pct_upside": false,
@@ -4408,7 +4408,7 @@
             "ordinary_shares_outstanding": 331322000.0
           },
           "facts_sha256": "ea190a2e6cb3b418a16731866954c86a9bcae05ac2b8494055d66ee2e79f3a13",
-          "source_document_sha256": "30f95cdbfc76d08a51accc79e063e2f9065edf272e9b85a2ce9b1d1e8e69c952",
+          "source_document_sha256": "0abc60a8dc202a3954e5eec5d07a9896e510bfb01f8459a19f59911bb6e74609",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Class A common stock, par value $0.00003 per share APP The Nasdaq Stock Market LLC Indicate by check"
         },
@@ -6509,7 +6509,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001692819.json",
-        "primary_evidence_hash": "8d0a372553e8ca02f109b6a4dbca9224c3830466c0ad22dd410ec8678c92d9e0",
+        "primary_evidence_hash": "f762c8939f3da6f22c36538347ef6a24a029eeeb56cbd0958e59ffe566513017",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -6526,7 +6526,7 @@
             "ordinary_shares_outstanding": 339394683.0
           },
           "facts_sha256": "be9bf1690db47025aa1fe4c4ebe652ebe691ccd482b209c729e779385ffeec92",
-          "source_document_sha256": "b2d83ae176d463180a13b6c398fa0a090843d1c505a81e9041bd85f02fb825b3",
+          "source_document_sha256": "3c68e9fa944eea5bfa30a5e1fee38c140102e54bc63cf40e3a0d9372c971e5ea",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of Each Class Trading Symbol(s) Name of Each Exchange on Which Registered Common stock, par value $0.01 per share VST New York Stock Exchange NYSE Texas Indicate by check mar"
         },
@@ -7731,7 +7731,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000731766.json",
-        "primary_evidence_hash": "cae117a2049623251dd55a6a13cd4a71f5671f325d303c54afa9a5b0ee64922e",
+        "primary_evidence_hash": "1e873961efcf3ca2f8d97e2e715952811deea4f8d80f1988dd1d328f5b674cb2",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -7748,7 +7748,7 @@
             "ordinary_shares_outstanding": 896022611.0
           },
           "facts_sha256": "3cb81e9ee84e3d41157703de29781ea5f4fa1b4195a89cc6edfb4a9f11417083",
-          "source_document_sha256": "6ebef8decf987d5e4f11215111dc0202e5643e7d5de52aa68f27e120667615db",
+          "source_document_sha256": "9792240e11720ae5186e8ae3f1f74ec644bcc3eb95b8389202442dbd12b0c873",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, $.01 par value UNH New York Stock Exchange Indicate by check mark whether the registra"
         },
@@ -9838,7 +9838,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000072971.json",
-        "primary_evidence_hash": "f82054ac3fadc716085f7271ab87d9f63a9c279d9915f92218ccb598977576ca",
+        "primary_evidence_hash": "3c1fcfc3c262d5e2f68992c80573810efbade8c60d210d38630f8f7611720195",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": null,
@@ -10258,7 +10258,7 @@
             "ordinary_shares_outstanding": 154606029.0
           },
           "facts_sha256": "5b6929579e42e17c5e3891430fce4606245376f1a7c00d2fdbb9c992bb5fc27b",
-          "source_document_sha256": "9dc92fdd4a38648561cff2038ebea15860aee6ea6a9d186a7c35e49cde268baa",
+          "source_document_sha256": "07cc94395f8b039ccbf4e684395a873d9ccb8121c55e16fe5b20759d3c67f29f",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, $.01 par value BLK New York Stock Exchange 3.750% Notes due 2035 BLK 35 New York Stock"
         },
@@ -10443,7 +10443,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001393818.json",
-        "primary_evidence_hash": "4cc10ceeab19e44657c263b189b81f6858dcc71f50f794a6d928f2c1098c8d52",
+        "primary_evidence_hash": "ece0d4d3bbc0a458da539c31aa44f8827db08d74310b37b3740fb978082aa457",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -10460,7 +10460,7 @@
             "ordinary_shares_outstanding": 751115317.0
           },
           "facts_sha256": "d25c8ac32ea6984c996fe4a2ba9aeac07dc7105a23a9a98ff767da8c2fb4daa4",
-          "source_document_sha256": "7962916c1c3a85d78e88b61868019145dca2d911b0f85d9868a2aeda8b348a43",
+          "source_document_sha256": "04831ea9085aeb3d5ae96af37a1f3e66319492b59afe0ac05c11be47506298d4",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock BX New York Stock Exchange Indicate by check mark whether the registrant (1) has filed "
         },
@@ -11366,7 +11366,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000012927.json",
-        "primary_evidence_hash": "011cd53bcec83fbd9579c0c3b852740e86942c58e6d43baec7cb413188a16152",
+        "primary_evidence_hash": "e6b833eeb395993634030c3398d0524d447b1b68b2a4a59310d52ef3ed0f3ce7",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": null,
@@ -12299,7 +12299,7 @@
         "quote_currency": "USD",
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
-        "primary_evidence_hash": "0c257fa45ddb1a9b1fbe001ab75fa424a5de8f6611b0d401a926aab3df80018d",
+        "primary_evidence_hash": "04231e9601770aaf632a95409678be1d7effd55803c07179b72973145c97d1c4",
         "fx_rate": 1.0,
         "fx_source": null,
         "share_basis_source": {
@@ -12316,7 +12316,7 @@
             "ordinary_shares_outstanding": 7933746241.0
           },
           "facts_sha256": "591998534ce4e14010b108811ceab4d06414ec7b2363e7feb9aab87410b8288f",
-          "source_document_sha256": "06806e924c95c56e176f310cd7c602467a610e6b9916beec228ed952685871f6",
+          "source_document_sha256": "2a3e376bb629b40581eb3cad10d3fc4f4929b5738befe1b115ea85aa0a8eab72",
           "extraction_method": "REVIEWED_EXISTING_COVER_PARSER",
           "source_excerpt": "Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, par value $0.10 per share WMT The Nasdaq Stock Market LLC 1.050% Notes due 2026 WMT26A"
         },
@@ -16019,11 +16019,11 @@
       "quote_date": "2026-11-25T00:00:00",
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "scenarios": {
-        "bear": 20.5046,
-        "base": 36.6025,
-        "bull": 53.9035
+        "bear": 20.5207,
+        "base": 36.6314,
+        "bull": 53.946
       },
-      "base_upside_pct": -71.04,
+      "base_upside_pct": -71.02,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_from_5d_low_pct": 3.4793274015806563,
@@ -16045,13 +16045,13 @@
         "ordinary_shares_per_receipt": 1.0,
         "primary_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000016868.json",
         "primary_evidence_hash": "37cc6d0d4d4c780072bd178e7d530763b75c3d4189d498f7b29354d0d99a5a6f",
-        "fx_rate": 0.7021978497505188,
+        "fx_rate": 0.702750563621521,
         "fx_source": {
           "from": "CAD",
           "to": "USD",
-          "rate": 0.7021978497505188,
-          "as_of": "2026-11-26",
-          "observed_utc": "2026-11-26T22:44:40.295917+00:00",
+          "rate": 0.702750563621521,
+          "as_of": "2026-11-27",
+          "observed_utc": "2026-11-27T02:48:46.175213+00:00",
           "source_url": "https://finance.yahoo.com/quote/CADUSD=X/history/",
           "source_type": "SECONDARY_DATED_DAILY_FX_NOT_ISSUER_FINANCIALS",
           "orders_enabled": false
@@ -16079,11 +16079,11 @@
       "missing_inputs": [],
       "assumptions": {
         "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-        "cashflow_median_of_filed_years": 2517028192.43,
-        "median_annual_net_income_filed": 3454111222.92,
+        "cashflow_median_of_filed_years": 2519009395.3,
+        "median_annual_net_income_filed": 3456830022.45,
         "historical_fcf_cagr_observed_pct": -4.693,
         "assumed_forward_growth_capped_pct": -4.693,
-        "illustrative_next_year_net_income_not_issuer_guidance": 3158829849.84,
+        "illustrative_next_year_net_income_not_issuer_guidance": 3161316227.54,
         "dcf_forecast_years": 5,
         "base_discount_pct": 14,
         "bear_discount_pct": 18,
@@ -16401,7 +16401,7 @@
       "universe": "DISCOVERY",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
       "assessment_status": "MISSING_EVIDENCE",
-      "price": 7.02,
+      "price": 7.1,
       "currency": "AUD",
       "quote_date": "2026-11-27",
       "price_source": "unofficial yfinance daily bars \u2014 not executable",
@@ -16409,7 +16409,7 @@
       "base_upside_pct": null,
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
-      "recovery_from_5d_low_pct": 11.07594635008704,
+      "recovery_from_5d_low_pct": 12.341769100515387,
       "new_5d_low": false,
       "trading_lows": {
         "low_5d": 6.320000171661377,
@@ -16692,8 +16692,8 @@
     "comparison_basis": "FROZEN_PRE_RECOVERY_BASELINE",
     "baseline_source_commit": "c15eb76c6752b36fd2b7b5e3d976150dca2024b3",
     "same_run_legacy_valued_count": 78,
-    "legacy_source_published_at": "2026-11-27T06:23:44.210305+00:00",
-    "legacy_recomputed_at": "2026-11-27T06:23:45.943444+00:00"
+    "legacy_source_published_at": "2026-11-27T06:51:09.267213+00:00",
+    "legacy_recomputed_at": "2026-11-27T06:51:10.860924+00:00"
   },
   "ranking_assumptions": {
     "minimum_base_upside_pct": 25,

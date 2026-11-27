@@ -1,6 +1,6 @@
 {
   "schema_version": "9.2-dynamic-earnings-1",
-  "published_at_utc": "2026-11-27T06:23:48.585950+00:00",
+  "published_at_utc": "2026-11-27T06:51:13.065751+00:00",
   "mode": "scan",
   "coverage_comparison": {
     "baseline_supported": 89,
@@ -5132,7 +5132,7 @@
       "price": 342.34,
       "currency": "USD",
       "quote_date": "2026-11-25T00:00:00",
-      "price_source": "DATED_DAILY_BARS_NOT_LIVE",
+      "price_source": "LAST_SUCCESSFUL_DATED_SNAPSHOT_FALLBACK_NOT_LIVE",
       "historical": {
         "scenarios": null,
         "assumptions": {
@@ -5392,12 +5392,14 @@
         "non_gaap_eps_not_substituted_for_gaap": true
       },
       "adjustment_and_risk_flags": [
+        "LATEST_QUOTE_REFRESH_FAILED_USING_ORIGINAL_DATED_SNAPSHOT",
         "OWNER_CASHFLOW_COMPONENTS_NOT_FULLY_RECONCILED",
         "COMPLETE_DEBT_AND_CASH_RECONCILIATION_REQUIRED",
         "CURRENT_COMMON_EARNINGS_NOT_RECOVERED"
       ],
       "credible_forward_candidate": false,
       "forward_validation_blockers": [
+        "LATEST_QUOTE_REFRESH_FAILED_USING_ORIGINAL_DATED_SNAPSHOT",
         "OWNER_CASHFLOW_COMPONENTS_NOT_FULLY_RECONCILED",
         "COMPLETE_DEBT_AND_CASH_RECONCILIATION_REQUIRED",
         "CURRENT_COMMON_EARNINGS_NOT_RECOVERED"
@@ -5405,11 +5407,11 @@
       "preferred_25_50pct_upside": false,
       "pre_recovery_candidate": false,
       "recovery_context": {
-        "status": "RECOVERY_ALREADY_UNDERWAY",
+        "status": "TIMING_EVIDENCE_UNAVAILABLE",
         "pre_recovery": false,
-        "distance_from_5d_low_in_daily_sigma": 1.2993615593551537,
-        "observed_daily_log_return_stddev": 0.05560013805178182,
-        "sessions_observed": 30,
+        "distance_from_5d_low_in_daily_sigma": null,
+        "observed_daily_log_return_stddev": null,
+        "sessions_observed": 0,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
       "recovery_from_5d_low_pct": 7.491832514002317,
@@ -41486,7 +41488,7 @@
         "guidance_source": {
           "issuer": "UnitedHealth Group Incorporated",
           "source_url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/earningsrelease3q26unh.htm",
-          "source_document_sha256": "20409f931fd6634f8cb2fca1ecd79041b9e6e5082d12aef14501530279355c2d",
+          "source_document_sha256": "09ec880c47c7853396f3594d7c8e36054317e5fe7869c9cfba80e21f8543fc1a",
           "accession_or_document_id": "0000731766-26-000255",
           "as_of": "2026-10-13",
           "published_at": "2026-10-13",
@@ -72546,7 +72548,7 @@
             "ticker": "PLS.AX",
             "source_url": "https://www.pls.com/storage/announcements/2026-annual-report-incorporating-appendix-4e-2026-08-24.pdf",
             "source_document_sha256": "eb0b4bc51dff94eb5eb3ea66baa65f3f0066daf660972d2e0850dd20177091fe",
-            "observed_utc": "2026-11-24T19:44:04.184676+00:00",
+            "observed_utc": "2026-11-27T06:47:20.097425+00:00",
             "source_registration": {
               "url": "https://www.pls.com/storage/announcements/2026-annual-report-incorporating-appendix-4e-2026-08-24.pdf",
               "kind": "ISSUER_ANNUAL_CANDIDATE_UNREVIEWED",
@@ -80632,17 +80634,17 @@
       "price_source": "DATED_DAILY_BARS_NOT_LIVE",
       "historical": {
         "scenarios": {
-          "bear": 20.5046,
-          "base": 36.6025,
-          "bull": 53.9035
+          "bear": 20.5207,
+          "base": 36.6314,
+          "bull": 53.946
         },
         "assumptions": {
           "formula": "BLEND: 60% 5-YEAR EQUITY FCF DCF + 40% NORMALIZED EARNINGS CAPITALIZATION",
-          "cashflow_median_of_filed_years": 2517028192.43,
-          "median_annual_net_income_filed": 3454111222.92,
+          "cashflow_median_of_filed_years": 2519009395.3,
+          "median_annual_net_income_filed": 3456830022.45,
           "historical_fcf_cagr_observed_pct": -4.693,
           "assumed_forward_growth_capped_pct": -4.693,
-          "illustrative_next_year_net_income_not_issuer_guidance": 3158829849.84,
+          "illustrative_next_year_net_income_not_issuer_guidance": 3161316227.54,
           "dcf_forecast_years": 5,
           "base_discount_pct": 14,
           "bear_discount_pct": 18,
@@ -80691,9 +80693,9 @@
       "provisional_forward": {
         "status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
         "scenarios": {
-          "bear": 53.1564,
-          "base": 74.4189,
-          "bull": 95.6815
+          "bear": 53.1982,
+          "base": 74.4775,
+          "bull": 95.7568
         },
         "currency": "USD",
         "source": {
@@ -82421,7 +82423,7 @@
       "ticker": "EOS.AX",
       "universe": "DISCOVERY",
       "sector_method": "NORMALIZED_EARNINGS_AND_DCF",
-      "price": 7.02,
+      "price": 7.1,
       "currency": "AUD",
       "quote_date": "2026-11-27",
       "price_source": "unofficial yfinance daily bars \u2014 not executable",
@@ -82509,7 +82511,7 @@
         "sessions_observed": 0,
         "basis": "Volatility-aware research timing; recovering companies remain visible in provisional and validated forward rankings."
       },
-      "recovery_from_5d_low_pct": 11.07594635008704,
+      "recovery_from_5d_low_pct": 12.341769100515387,
       "trading_lows": {
         "low_5d": 6.320000171661377,
         "low_30d": 6.320000171661377,
@@ -83979,7 +83981,7 @@
     {
       "ticker": "CNI",
       "valuation_status": "PROVISIONAL_RESEARCH_ONLY_NOT_VALIDATED_FORWARD_EARNINGS",
-      "base_upside_pct": -41.12,
+      "base_upside_pct": -41.08,
       "preferred_25_50pct_upside": false,
       "recovery_context": {
         "status": "RECOVERY_ALREADY_UNDERWAY",
