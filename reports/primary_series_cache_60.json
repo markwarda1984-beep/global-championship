@@ -1,6 +1,6 @@
 {
   "schema_version": "6.0-primary-series-cache-1",
-  "published_at_utc": "2026-11-26T22:32:00.213420+00:00",
+  "published_at_utc": "2026-11-27T00:32:09.700770+00:00",
   "source": "SEC issuer-filed XBRL companyfacts; bounded incremental research",
   "original_200_unchanged": true,
   "companies": {
@@ -16724,7 +16724,7 @@
       "issuer_name": "BP PLC",
       "cik": 313807,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000313807.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -23316,7 +23316,7 @@
       "issuer_name": "NVIDIA CORP",
       "cik": 1045810,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -24148,7 +24148,7 @@
       "issuer_name": "MICROSOFT CORP",
       "cik": 789019,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -25179,7 +25179,7 @@
       "issuer_name": "Alphabet Inc.",
       "cik": 1652044,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -26166,7 +26166,7 @@
       "issuer_name": "Meta Platforms, Inc.",
       "cik": 1326801,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -27065,7 +27065,7 @@
       "issuer_name": "Salesforce, Inc.",
       "cik": 1108524,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -28063,7 +28063,7 @@
       "issuer_name": "Shell plc",
       "cik": 1306965,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001306965.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -28141,7 +28141,7 @@
       "issuer_name": "OCCIDENTAL PETROLEUM CORPORATION",
       "cik": 797468,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000797468.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -28984,7 +28984,7 @@
       "issuer_name": "Taiwan Semiconductor Manufacturing Company Limited",
       "cik": 1046179,
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json",
-      "observed_utc": "2026-11-24T00:26:14.978784+00:00",
+      "observed_utc": "2026-11-27T00:32:09.700770+00:00",
       "status": "OFFICIAL_SEC_COMPANYFACTS_RETRIEVED",
       "primary_source_type": "ISSUER_XBRL_SEC",
       "primary_statements_are_issuer_reported": true,
@@ -115950,8 +115950,19 @@
     "CCJ"
   ],
   "research_priority_is_not_a_buy_signal": true,
-  "remaining_eligible_uncached_before_run": 0,
-  "selected_issuer_tickers": [],
+  "remaining_eligible_uncached_before_run": 10,
+  "selected_issuer_tickers": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "CRM",
+    "SHEL",
+    "BP",
+    "OXY",
+    "TSM",
+    "IBN"
+  ],
   "non_sec_listed_tickers": [
     "BHP.AX",
     "CAT.AX",
@@ -116000,11 +116011,61 @@
   "temporary_failures": {
     "IBN": {
       "status": "SEC_HTTP_404",
-      "retry_after_utc": "2026-11-27T00:27:47.153102+00:00"
+      "retry_after_utc": "2026-11-28T00:32:09.700770+00:00"
     }
   },
-  "run_attempts": [],
-  "update_status": "NO_REFRESH_DUE",
+  "run_attempts": [
+    {
+      "ticker": "NVDA",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 11
+    },
+    {
+      "ticker": "MSFT",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 12
+    },
+    {
+      "ticker": "GOOGL",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 11
+    },
+    {
+      "ticker": "META",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 11
+    },
+    {
+      "ticker": "CRM",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 11
+    },
+    {
+      "ticker": "SHEL",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 0
+    },
+    {
+      "ticker": "BP",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 0
+    },
+    {
+      "ticker": "OXY",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 11
+    },
+    {
+      "ticker": "TSM",
+      "status": "SEC_PRIMARY_SERIES_COLLECTED",
+      "annual_fcf_periods": 0
+    },
+    {
+      "ticker": "IBN",
+      "status": "SEC_HTTP_404"
+    }
+  ],
+  "update_status": "PARTIAL_OR_UNAVAILABLE",
   "available_company_records": 161,
   "non_sec_listed_count": 43
 }
