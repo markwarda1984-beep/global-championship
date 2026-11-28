@@ -1,6 +1,6 @@
 {
   "schema_version": "6.0-primary-series-cache-1",
-  "published_at_utc": "2026-11-27T22:32:04.231389+00:00",
+  "published_at_utc": "2026-11-28T00:27:11.495651+00:00",
   "source": "SEC issuer-filed XBRL companyfacts; bounded incremental research",
   "original_200_unchanged": true,
   "companies": {
@@ -115950,8 +115950,10 @@
     "CCJ"
   ],
   "research_priority_is_not_a_buy_signal": true,
-  "remaining_eligible_uncached_before_run": 0,
-  "selected_issuer_tickers": [],
+  "remaining_eligible_uncached_before_run": 1,
+  "selected_issuer_tickers": [
+    "IBN"
+  ],
   "non_sec_listed_tickers": [
     "BHP.AX",
     "CAT.AX",
@@ -116000,11 +116002,16 @@
   "temporary_failures": {
     "IBN": {
       "status": "SEC_HTTP_404",
-      "retry_after_utc": "2026-11-28T00:32:09.700770+00:00"
+      "retry_after_utc": "2026-11-29T00:27:11.495651+00:00"
     }
   },
-  "run_attempts": [],
-  "update_status": "NO_REFRESH_DUE",
+  "run_attempts": [
+    {
+      "ticker": "IBN",
+      "status": "SEC_HTTP_404"
+    }
+  ],
+  "update_status": "PARTIAL_OR_UNAVAILABLE",
   "available_company_records": 161,
   "non_sec_listed_count": 43
 }
